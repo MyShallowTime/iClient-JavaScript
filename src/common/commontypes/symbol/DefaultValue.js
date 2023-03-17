@@ -16,3 +16,8 @@ export const IMAGE_POINT_DEFAULT_VALUE = {
     rotate: COMMON_DEFAULT_VALUE.rotate,
     translate: COMMON_DEFAULT_VALUE.translate
 }
+
+export const POLYGON_DEFAULT_VALUE = {
+    color: COMMON_DEFAULT_VALUE.color,
+    opacity: COMMON_DEFAULT_VALUE.opacity
+}
