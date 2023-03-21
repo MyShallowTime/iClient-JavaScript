@@ -2,6 +2,8 @@
  * This program are made available under the terms of the Apache License, Version 2.0
  * which accompanies this distribution and is available at http://www.apache.org/licenses/LICENSE-2.0.html.*/
 import mapboxgl from 'mapbox-gl';
+import CompositeLayersManager from './symbol/CompositeLayersManager';
+import SymbolLayerManager from './symbol/SymbolLayerManager';
 
 /**
  * @function MapExtend
@@ -10,9 +12,17 @@ import mapboxgl from 'mapbox-gl';
  */
 export var MapExtend = (function () {
   mapboxgl.Map.prototype.overlayLayersManager = {};
+  mapboxgl.Map.prototype.compositeLayersManager = CompositeLayersManager();
+  mapboxgl.Map.prototype.symbolLayerManager = SymbolLayerManager();
+
   if (mapboxgl.Map.prototype.addLayerBak === undefined) {
     mapboxgl.Map.prototype.addLayerBak = mapboxgl.Map.prototype.addLayer;
     mapboxgl.Map.prototype.addLayer = function (layer, before) {
+      if(layer.symbol) {
+        this.symbolLayerManager('mapbox', this).addLayer(layer, layer.symbol);
+        return this;
+      }
+
       if (layer.source || layer.type === 'custom' || layer.type === 'background') {
         this.addLayerBak(layer, before);
         return this;
@@ -114,6 +124,10 @@ export var MapExtend = (function () {
         { type: 'text/javascript' }
       )
     );
+  };
+
+  maplibregl.Map.prototype.setSymbol = function (layerId, symbol) {
+    this.symbolLayerManager('mapbox', this).setSymbol(layerId, symbol);
   };
 
   function addLayer(layer, map) {
