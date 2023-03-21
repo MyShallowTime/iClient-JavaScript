@@ -1,6 +1,6 @@
 import MapboxSymbolLayerManager from "./MapboxSymbolLayerManager";
 
-export const SymbolLayerManager = () => {
+const SymbolLayerManager = () => {
     const result = {};
     return (type) => {
         if(!result[type]) {
@@ -11,3 +11,4 @@ export const SymbolLayerManager = () => {
         return result[type];
     }
 }
+export default SymbolLayerManager;

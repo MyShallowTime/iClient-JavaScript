@@ -24,7 +24,7 @@ export function getSymbolPaintLayout(symbolInfo) {
         paint: {
             'icon-color': symbolInfo.color || IMAGE_POINT_DEFAULT_VALUE.color,
             'icon-opacity': symbolInfo.opacity || IMAGE_POINT_DEFAULT_VALUE.opacity,
-            'icon-translate': symbolInfo.translate || IMAGE_POINT_DEFAULT_VALUE.translate,
+            'icon-translate': symbolInfo.translate || IMAGE_POINT_DEFAULT_VALUE.translate
         },
         layout: {
             'icon-size': symbolInfo.size || IMAGE_POINT_DEFAULT_VALUE.size,
@@ -51,7 +51,7 @@ export function getCirclePaintLayout(symbolInfo) {
             'circle-stroke-color': symbolInfo.stroke || SIMPLE_POINT_DEFAULT_VALUE.stroke,
             'circle-stroke-width': symbolInfo.strokeWidth || SIMPLE_POINT_DEFAULT_VALUE.strokeWidth,
             'circle-stroke-opacity': symbolInfo.strokeOpacity || SIMPLE_POINT_DEFAULT_VALUE.strokeOpacity,
-            'circle-translate': symbolInfo.translate || SIMPLE_POINT_DEFAULT_VALUE.translate,
+            'circle-translate': symbolInfo.translate || SIMPLE_POINT_DEFAULT_VALUE.translate
             // 符号库暂未支持的属性
             // 'circle-translate-anchor': symbolInfo.translateAnchor
         },

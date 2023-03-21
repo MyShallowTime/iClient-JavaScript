@@ -126,8 +126,22 @@ export var MapExtend = (function () {
     );
   };
 
-  maplibregl.Map.prototype.setSymbol = function (layerId, symbol) {
+  mapboxgl.Map.prototype.setSymbol = function (layerId, symbol) {
     this.symbolLayerManager('mapbox', this).setSymbol(layerId, symbol);
+  };
+
+  if(!(mapboxgl.Map.prototype).setStyleBak) {
+    (mapboxgl.Map.prototype).setStyleBak = mapboxgl.Map.prototype.setStyle;
+    mapboxgl.Map.prototype.setStyle = function (style, options) {
+      this.setStyleBak(style, options);
+      this.style.once('style.load', () => {
+        const symbolLayers = style.layers.filter(l => l.symbol);
+        symbolLayers.forEach((l) => {
+          this.setSymbol(l.id, l.symbol);
+        });
+      });
+      return this;
+    }
   };
 
   function addLayer(layer, map) {
