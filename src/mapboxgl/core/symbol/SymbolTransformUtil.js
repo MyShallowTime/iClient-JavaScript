@@ -1,4 +1,4 @@
-import {  IMAGE_POINT_DEFAULT_VALUE, LINE_DEFAULT_VALUE, POLYGON_DEFAULT_VALUE, SIMPLE_POINT_DEFAULT_VALUE } from "../../../common/commontypes/symbol/DefaultValue";
+import {  IMAGE_POINT_DEFAULT_VALUE, LINE_DEFAULT_VALUE, POLYGON_DEFAULT_VALUE, SIMPLE_POINT_DEFAULT_VALUE, TEXT_DEFAULT_VALUE } from "../../../common/commontypes/symbol/DefaultValue";
 
 // 根据symbol类型，获取图层类型
 export function getLayerTypeByRender(symbolInfo) {
@@ -22,14 +22,14 @@ export function getLayerTypeByRender(symbolInfo) {
 export function getSymbolPaintLayout(symbolInfo) {
     return {
         paint: {
-            'icon-color': symbolInfo.color || IMAGE_POINT_DEFAULT_VALUE.color,
-            'icon-opacity': symbolInfo.opacity || IMAGE_POINT_DEFAULT_VALUE.opacity,
-            'icon-translate': symbolInfo.translate || IMAGE_POINT_DEFAULT_VALUE.translate
+            'icon-color': symbolInfo.color ?? IMAGE_POINT_DEFAULT_VALUE.color,
+            'icon-opacity': symbolInfo.opacity ?? IMAGE_POINT_DEFAULT_VALUE.opacity,
+            'icon-translate': symbolInfo.translate ?? IMAGE_POINT_DEFAULT_VALUE.translate
         },
         layout: {
-            'icon-size': symbolInfo.size || IMAGE_POINT_DEFAULT_VALUE.size,
+            'icon-size': symbolInfo.size ?? IMAGE_POINT_DEFAULT_VALUE.size,
             'icon-image': symbolInfo.image,
-            'icon-rotate': symbolInfo.rotate || IMAGE_POINT_DEFAULT_VALUE.rotate
+            'icon-rotate': symbolInfo.rotate ?? IMAGE_POINT_DEFAULT_VALUE.rotate
             // 符号库暂未支持的属性
             // 'icon-anchor': symbolInfo.anchor,
             // 'icon-allow-overlap': symbolInfo.allowOverlap,
@@ -44,14 +44,14 @@ export function getSymbolPaintLayout(symbolInfo) {
 export function getCirclePaintLayout(symbolInfo) {
     return {
         paint: {
-            'circle-blur': symbolInfo.blur || SIMPLE_POINT_DEFAULT_VALUE.blur,
-            'circle-color': symbolInfo.color || SIMPLE_POINT_DEFAULT_VALUE.color,
-            'circle-opacity': symbolInfo.opacity || SIMPLE_POINT_DEFAULT_VALUE.opacity,
-            'circle-radius': symbolInfo.size || SIMPLE_POINT_DEFAULT_VALUE.size,
-            'circle-stroke-color': symbolInfo.stroke || SIMPLE_POINT_DEFAULT_VALUE.stroke,
-            'circle-stroke-width': symbolInfo.strokeWidth || SIMPLE_POINT_DEFAULT_VALUE.strokeWidth,
-            'circle-stroke-opacity': symbolInfo.strokeOpacity || SIMPLE_POINT_DEFAULT_VALUE.strokeOpacity,
-            'circle-translate': symbolInfo.translate || SIMPLE_POINT_DEFAULT_VALUE.translate
+            'circle-blur': symbolInfo.blur ?? SIMPLE_POINT_DEFAULT_VALUE.blur,
+            'circle-color': symbolInfo.color ?? SIMPLE_POINT_DEFAULT_VALUE.color,
+            'circle-opacity': symbolInfo.opacity ?? SIMPLE_POINT_DEFAULT_VALUE.opacity,
+            'circle-radius': symbolInfo.size ?? SIMPLE_POINT_DEFAULT_VALUE.size,
+            'circle-stroke-color': symbolInfo.strokeColor ?? SIMPLE_POINT_DEFAULT_VALUE.strokeColor,
+            'circle-stroke-width': symbolInfo.strokeWidth ?? SIMPLE_POINT_DEFAULT_VALUE.strokeWidth,
+            'circle-stroke-opacity': symbolInfo.strokeOpacity ?? SIMPLE_POINT_DEFAULT_VALUE.strokeOpacity,
+            'circle-translate': symbolInfo.translate ?? SIMPLE_POINT_DEFAULT_VALUE.translate
             // 符号库暂未支持的属性
             // 'circle-translate-anchor': symbolInfo.translateAnchor
         },
@@ -148,26 +148,26 @@ export function polygonSymbolToPaintLayout(symbolInfo) {
  * @returns 
  */
 export function textSymbolToPaintLayout(symbolInfo) {
-    const {field, color, opacity, size, fontFamily} = symbolInfo;
+    const {field, color, opacity, size, fontFamily, translate, haloWidth, anchor, allowOverlap} = symbolInfo;
     return {
         type: 'symbol',
         paint: {
-            'text-color': color,
-            'text-opacity': opacity
+            'text-color': color ?? TEXT_DEFAULT_VALUE.color,
+            'text-opacity': opacity ?? TEXT_DEFAULT_VALUE.opacity,
+            'text-translate': translate ?? TEXT_DEFAULT_VALUE.translate,
+            'text-halo-width': haloWidth ?? TEXT_DEFAULT_VALUE.haloWidth
             // 符号库暂未支持的属性
             // 'text-halo-blur': symbolInfo.textHaloBlur,
             // 'text-halo-color': symbolInfo.textHaloColor,
-            // 'text-halo-width': symbolInfo.textHaloWidth,
-            // 'text-translate': symbolInfo.textTranslate,
             // 'text-translate-anchor': symbolInfo.textTranslateAnchor
         },
         layout: {
-            'text-field': field,
-            'text-size': size,
-            'text-font': fontFamily
+            'text-field': field ?? TEXT_DEFAULT_VALUE.field,
+            'text-size': size ?? TEXT_DEFAULT_VALUE.size,
+            'text-font': fontFamily ?? TEXT_DEFAULT_VALUE.fontFamily,
+            'text-anchor': anchor ?? TEXT_DEFAULT_VALUE.anchor,
+            'text-allow-overlap': allowOverlap ?? TEXT_DEFAULT_VALUE.allowOverlap
             // 符号库暂未支持的属性
-            // 'text-allow-overlap': symbolInfo.textAllowOverlap,
-            // 'text-anchor': symbolInfo.textAnchor,
             // 'text-ignore-placement': symbolInfo.textIgnorePlacement,
             // 'text-justify': symbolInfo.justify,
             // 'text-letter-spacing': symbolInfo.textLetterSpacing,

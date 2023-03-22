@@ -23,7 +23,7 @@ export const IMAGE_POINT_DEFAULT_VALUE = {
 export const SIMPLE_POINT_DEFAULT_VALUE = {
     ...POINT_DEFAULT_VALUE,
     shape: 'circle',
-    stroke: '#fff',
+    strokeColor: '#FFF',
     strokeWidth: 0,
     strokeOpacity: COMMON_DEFAULT_VALUE.opacity,
     blur: COMMON_DEFAULT_VALUE.blur,
@@ -45,4 +45,17 @@ export const LINE_DEFAULT_VALUE = {
 export const POLYGON_DEFAULT_VALUE = {
     color: COMMON_DEFAULT_VALUE.color,
     opacity: COMMON_DEFAULT_VALUE.opacity
+}
+
+export const TEXT_DEFAULT_VALUE = {
+    field: '',
+    size: 16,
+    color: COMMON_DEFAULT_VALUE.color,
+    opacity: COMMON_DEFAULT_VALUE.opacity,
+    translate: COMMON_DEFAULT_VALUE.translate,
+    fontFamily: ["Open Sans Regular","Arial Unicode MS Regular"],
+    haloWidth: 0,
+    anchor: 'center',
+    spacing: 0,
+    allowOverlap: false
 }

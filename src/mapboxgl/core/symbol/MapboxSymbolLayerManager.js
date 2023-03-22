@@ -134,7 +134,9 @@ const MapboxSymbolLayerManager = (m) => {
                     this.setSimpleSymbol(layerIds[index], style);
                 } else {
                     const layer = map.getLayer(layerId);
-                    if (!layer) return;
+                    if (!layer) {
+                        return;
+                    }
                     const { source, sourceLayer, filter } = layer;
                     id = uniqueId(layerId + '_');
                     const layerInfo = {

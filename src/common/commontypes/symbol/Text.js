@@ -1,0 +1,136 @@
+/* Copyright© 2000 - 2022 SuperMap Software Co.Ltd. All rights reserved.
+* This program are made available under the terms of the Apache License, Version 2.0
+* which accompanies this distribution and is available at http://www.apache.org/licenses/LICENSE-2.0.html.*/
+import {Symbol} from '../Symbol';
+import {Util} from '../Util';
+import { TEXT_DEFAULT_VALUE } from './DefaultValue';
+
+/**
+ * @class TextSymbol
+ * @aliasclass Symbol.Text
+ * @classdesc 文本符号类。
+ * @category BaseTypes Symbol
+ * @extends {Symbol}
+ * @param {number} [field = ''] - 文本标签。
+ * @param {number} [size = 16] - 文本大小。
+ * @param {string} [color = "#000"] - 文本颜色。
+ * @param {number} [opacity = 1] - 文本透明度。
+ * @param {number} [translate = [0, 0]] - 文本偏移值。
+ * @param {number} [fontFamily = ["Open Sans Regular", "Arial Unicode MS Regular"]] - 文本字体。
+ * @param {number} [haloWidth = 0] - 文本光晕宽度。
+ * @param {number} [anchor = 'center'] - 文本锚点。
+ * @param {number} [spacing = 0] - 文本间隔。
+ * @param {number} [allowOverlap = false] - 文本是否允许压盖。
+ * @param {string} [type = 'Text'] - 符号类型。
+ * @example
+ * const symbol = new TextSymbol();
+ * @usage
+ */
+export class Text extends Symbol {
+
+    constructor(option) {
+        super();
+        const { field, size, color, opacity, translate, fontFamily, haloWidth, anchor, spacing, allowOverlap } = option ?? {};
+
+        /**
+         * @member {number} TextSymbol.prototype.field
+         * @description 文本标签，默认值：""。
+         */
+        this.field = field ?? TEXT_DEFAULT_VALUE.field;
+
+         /**
+          * @member {number} TextSymbol.prototype.size
+          * @description 文本大小，默认值：16。
+          */
+        this.size = size ?? TEXT_DEFAULT_VALUE.size;
+
+        /**
+         * @member {string} TextSymbol.prototype.color
+         * @description 文本颜色，默认值："#000"。
+         */
+        this.color = color ?? TEXT_DEFAULT_VALUE.color;
+
+        /**
+         * @member {number} TextSymbol.prototype.opacity
+         * @description 文本透明度，默认值：1
+         */
+        this.opacity = opacity ?? TEXT_DEFAULT_VALUE.opacity;
+
+        /**
+         * @member {number} TextSymbol.prototype.translate
+         * @description  文本偏移值，默认值：[0, 0]
+         */
+        this.translate = translate ?? TEXT_DEFAULT_VALUE.translate;
+
+        /**
+         * @member {number} TextSymbol.prototype.fontFamily
+         * @description  文本字体，默认值：[0, 0]
+         */
+        this.fontFamily = fontFamily ?? TEXT_DEFAULT_VALUE.fontFamily;
+         
+        /**
+         * @member {number} TextSymbol.prototype.haloWidth
+         * @description  文本光晕宽度，默认值：0
+         */
+        this.haloWidth = haloWidth ?? TEXT_DEFAULT_VALUE.haloWidth;
+                 
+        /**
+         * @member {number} TextSymbol.prototype.anchor
+         * @description  文本对齐锚点，默认值：'center'
+         */
+        this.anchor = anchor ?? TEXT_DEFAULT_VALUE.anchor;                 
+        
+        /**
+          * @member {number} TextSymbol.prototype.spacing
+          * @description  文本间隔，默认值：0
+          */
+        this.spacing = spacing ?? TEXT_DEFAULT_VALUE.spacing;
+                          
+        /**
+         * @member {number} TextSymbol.prototype.allowOverlap
+         * @description  文本是否允许覆盖，默认值：false
+         */
+        this.allowOverlap = allowOverlap ?? TEXT_DEFAULT_VALUE.allowOverlap;
+         
+        /**
+         * @member {string} TextSymbol.prototype.type
+         * @description 文本符号的类型。
+         */
+        this.type = "Text";
+        this.CLASS_NAME = "SuperMap.Symbol.Text";
+    }
+
+    /**
+     * @function TextSymbol.prototype.clone
+     * @description 克隆文本符号。
+     * @returns {TextSymbol} 克隆后的文本符号。
+     */
+    clone(obj) {
+        if (obj == null) {
+            obj = new Text();
+        }
+
+        // catch any randomly tagged-on properties
+        Util.applyDefaults(obj, this);
+
+        return obj;
+    }
+
+    /**
+     * @function TextSymbol.prototype.destroy
+     * @description 释放符号资源。
+     */
+    destroy() {
+        this.field = null;
+        this.size = null;
+        this.color = null;
+        this.opacity = null;
+        this.translate = null;
+        this.fontFamily = null;
+        this.haloWidth = null;
+        this.anchor = null;
+        this.spacing = null;
+        this.allowOverlap = null;
+        super.destroy();
+    }
+}
