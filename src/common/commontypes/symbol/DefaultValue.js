@@ -42,6 +42,10 @@ export const LINE_DEFAULT_VALUE = {
     join: 'miter'
 }
 
+export const LINE_DASH_DEFAULT_VALUE = {
+    color: LINE_DEFAULT_VALUE.color
+}
+
 export const POLYGON_DEFAULT_VALUE = {
     color: COMMON_DEFAULT_VALUE.color,
     opacity: COMMON_DEFAULT_VALUE.opacity
