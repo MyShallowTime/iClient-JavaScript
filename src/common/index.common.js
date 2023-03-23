@@ -97,7 +97,16 @@ import {
     Size,
     CommonUtil,
     Browser,
-    FeatureVector
+    FeatureVector,
+    PointSymbol,
+    SimplePointSymbol,
+    ImagePointSymbol,
+    PolygonSymbol,
+    ImagePolygonSymbol,
+    LineSymbol,
+    SimpleLineSymbol,
+    ImageLineSymbol,
+    TextSymbol
 } from './commontypes';
 import { Format, GeoJSONFormat, JSONFormat, WKTFormat } from './format';
 
@@ -703,3 +712,14 @@ export { KeyServiceParameter, SecurityManager, ServerInfo, TokenServiceParameter
 export { CartoCSS, ThemeStyle };
 export { ElasticSearch };
 export { Lang };
+export {
+    PointSymbol,
+    SimplePointSymbol,
+    ImagePointSymbol,
+    PolygonSymbol,
+    ImagePolygonSymbol,
+    LineSymbol,
+    SimpleLineSymbol,
+    ImageLineSymbol,
+    TextSymbol
+};

@@ -9,8 +9,8 @@ import {Line} from './Line';
  * @class SimpleLineSymbol
  * @classdesc 基本线符号类
  * @category BaseTypes Symbol
- * @extends {Symbol}
- * @param {object} options - 可选参数。
+ * @extends {LineSymbol}
+ * @param {object} [options] - 参数。
  * @param {Array<number>} [options.dashArray] - 虚线的间隔。
  * @param {string} [options.color] - 线颜色。
  * @param {number} [options.offset] - 线偏移值。
@@ -23,9 +23,9 @@ import {Line} from './Line';
  */
 export class SimpleLine extends Line {
 
-    constructor(option) {
-        super(option);
-        const { dashArray, color, offset, translate, blur, cap, join } = option ?? {};
+    constructor(options) {
+        super(options);
+        const { dashArray, color, offset, translate, blur, cap, join } = options ?? {};
 
         /**
          * @member {Array<number>} SimpleLineSymbol.prototype.dashArray

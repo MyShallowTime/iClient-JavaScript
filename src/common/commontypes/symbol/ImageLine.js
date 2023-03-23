@@ -2,7 +2,6 @@
 * This program are made available under the terms of the Apache License, Version 2.0
 * which accompanies this distribution and is available at http://www.apache.org/licenses/LICENSE-2.0.html.*/
 import {Util} from '../Util';
-import {BaseLine} from './BaseLine';
 import {Line} from './Line';
 
 /**
@@ -10,18 +9,20 @@ import {Line} from './Line';
  * @aliasclass Symbol.ImageLine
  * @classdesc 图片线符号
  * @category BaseTypes Symbol
- * @extends {Symbol}
+ * @extends {LineSymbol}
  * @param {object} options - 参数。
- * @param {string} [options.image] - 线贴图。
+ * @param {string} options.image - 线贴图。
  * @example
- * const symbol = new ImageLineSymbol();
+ * const symbol = new ImageLineSymbol({
+ *  image: "xx.png"
+ * });
  * @usage
  */
 export class ImageLine extends Line {
 
-    constructor(option) {
-        super(option);
-        const { image } = option ?? {};
+    constructor(options) {
+        super(options);
+        const { image } = options ?? {};
 
         /**
          * @member {string} BaseLineSymbol.prototype.image

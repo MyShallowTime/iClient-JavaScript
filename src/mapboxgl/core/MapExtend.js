@@ -142,7 +142,7 @@ export var MapExtend = (function () {
       });
       return this;
     }
-  };
+  }
 
   function addLayer(layer, map) {
     layer.onAdd && layer.onAdd(map);

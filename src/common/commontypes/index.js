@@ -34,6 +34,17 @@ import {
   IS_GECKO
 } from './Util';
 import { Vector as FeatureVector } from './Vector';
+import {
+  PointSymbol,
+  SimplePointSymbol,
+  ImagePointSymbol,
+  LineSymbol,
+  SimpleLineSymbol,
+  ImageLineSymbol,
+  PolygonSymbol,
+  ImagePolygonSymbol,
+  TextSymbol
+} from './symbol/index';
 
 export {
   GeometryCollection,
@@ -60,3 +71,15 @@ export { Pixel };
 export { Size };
 export { CommonUtil, Browser, INCHES_PER_UNIT, METERS_PER_INCH, DOTS_PER_INCH, IS_GECKO };
 export { FeatureVector };
+
+export {
+  PointSymbol,
+  SimplePointSymbol,
+  ImagePointSymbol,
+  LineSymbol,
+  SimpleLineSymbol,
+  ImageLineSymbol,
+  PolygonSymbol,
+  ImagePolygonSymbol,
+  TextSymbol
+}

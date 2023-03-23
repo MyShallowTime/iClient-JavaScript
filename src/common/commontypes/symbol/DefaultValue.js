@@ -48,7 +48,6 @@ export const POLYGON_DEFAULT_VALUE = {
 }
 
 export const TEXT_DEFAULT_VALUE = {
-    field: '',
     size: 16,
     color: COMMON_DEFAULT_VALUE.color,
     opacity: COMMON_DEFAULT_VALUE.opacity,

@@ -10,19 +10,18 @@ import { POLYGON_DEFAULT_VALUE } from './DefaultValue';
  * @aliasclass Symbol.Polygon
  * @classdesc 面符号类。
  * @category BaseTypes Symbol
- * @extends {Symbol}
- * @param {string} [color = "#000"] - 符号颜色。
- * @param {number} [opacity = 1] - 符号透明度。
- * @param {string} [type = 'Polygon'] - 符号类型。
+ * @param {object} [options] - 参数。 
+ * @param {string} [options.color = "#000"] - 符号颜色。
+ * @param {number} [options.opacity = 1] - 符号透明度。
  * @example
  * const symbol = new PolygonSymbol();
  * @usage
  */
 export class Polygon extends Symbol {
 
-    constructor(option) {
+    constructor(options) {
         super();
-        const { color, opacity } = option ?? {};
+        const { color, opacity } = options ?? {};
 
         /**
          * @member {string} PolygonSymbol.prototype.color

@@ -1,7 +1,6 @@
-
 /**
  * 组合图层管理器
- * @returns 
+ * @returns {Object} 
  */
  const CompositeLayersManager = () => {
     const layers = {};
@@ -20,8 +19,9 @@
 
         /**
          * 删除图层
-         * @param id 
-         * @param childId 
+         * @param {*} id 
+         * @param {*} childId 
+         * @returns {undefined}
          */
         removeLayer(id, childId) {
             if (childId) {
@@ -37,7 +37,7 @@
         /**
          * 获取图层
          * @param id 
-         * @returns 
+         * @returns {Array}
          */
         getLayers(id) {
             return layers[id];
@@ -46,7 +46,7 @@
         /**
          * 获取组合图层ID
          * @param {*} childId 
-         * @returns 
+         * @returns {string}
          */
         getCompositeLayerId(childId) {
             for (const id in layers) {

@@ -3,7 +3,7 @@ import { lineSymbolToPaintLayout, polygonSymbolToPaintLayout, textSymbolToPaintL
 
 /**
  * 符号图层管理器
- * @returns 
+ * @returns {Object}
  */
 const MapboxSymbolLayerManager = (m) => {
     const map = m;
@@ -11,7 +11,7 @@ const MapboxSymbolLayerManager = (m) => {
         /**
          * 是否为组合符号
          * @param {*} type 
-         * @returns 
+         * @returns {boolean}
          */
         isMultiSymbol(type) {
             return ['MultiLine'].includes(type);
@@ -21,7 +21,7 @@ const MapboxSymbolLayerManager = (m) => {
          * 符号转换成图层
          * @param {*} layer 
          * @param {*} symbol 
-         * @returns 
+         * @returns {undefined}
          */
         addLayer(layer, symbol) {
             delete layer.symbol;
@@ -35,7 +35,7 @@ const MapboxSymbolLayerManager = (m) => {
         /**
          * 符号转换成图层样式
          * @param symbol 
-         * @returns 
+         * @returns {Object}
          */
         symbolToLayerStyle(symbol) {
             const transRules = {
@@ -51,7 +51,6 @@ const MapboxSymbolLayerManager = (m) => {
     
         /**
          * 添加单个符号
-         * @param {*} map 
          * @param {*} layer 
          * @param {*} symbol 
          */
@@ -71,7 +70,6 @@ const MapboxSymbolLayerManager = (m) => {
     
         /**
          * 添加组合符号
-         * @param {*} map 
          * @param {*} layer 
          * @param {*} symbol 
          */
@@ -88,7 +86,7 @@ const MapboxSymbolLayerManager = (m) => {
          * 更新图层上的symbol
          * @param layerId 
          * @param symbol 
-         * @returns 
+         * @returns {undefined}
          */
         setSymbol(layerId, symbol) {
             const layerIds = map.compositeLayersManager.getLayers(layerId) ?? [layerId];
@@ -122,9 +120,9 @@ const MapboxSymbolLayerManager = (m) => {
     
         /**
          * 添加组合符号（同类型的图层切换）
-         * @param {*} map 
-         * @param {*} layer 
+         * @param {*} layerId 
          * @param {*} symbol 
+         * @param {*} layerIds 
          */
         setMultiSymbol(layerId, symbol, layerIds) {
             const { styles } = symbol;

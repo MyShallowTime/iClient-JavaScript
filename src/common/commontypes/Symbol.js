@@ -6,7 +6,7 @@
  * @class Symbol
  * @category BaseTypes Symbol
  * @classdesc Web 符号类，描述地理要素的图形属性。
- * @usage
+ * @private
  */
 export class Symbol {
 

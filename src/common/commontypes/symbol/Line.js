@@ -10,19 +10,18 @@ import { LINE_DEFAULT_VALUE } from './DefaultValue';
  * @aliasclass Symbol.Line
  * @classdesc 线符号类。
  * @category BaseTypes Symbol
- * @extends {Symbol}
- * @param {number} [width = 1] - 线宽度。
- * @param {number} [opacity = 1] - 符号透明度。
- * @param {string} [type = 'Line'] - 符号类型。
+ * @param {object} [options] - 参数。 
+ * @param {number} [options.width = 1] - 线宽度。
+ * @param {number} [options.opacity = 1] - 符号透明度。
  * @example
  * const symbol = new LineSymbol();
  * @usage
  */
 export class Line extends Symbol {
 
-    constructor(option) {
+    constructor(options) {
         super();
-        const { width, opacity } = option ?? {};
+        const { width, opacity } = options ?? {};
 
         /**
          * @member {number} LineSymbol.prototype.width

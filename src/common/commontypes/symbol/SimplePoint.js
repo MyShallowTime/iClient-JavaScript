@@ -10,22 +10,22 @@ import { SIMPLE_POINT_DEFAULT_VALUE } from './DefaultValue';
  * @aliasclass Symbol.SimplePoint
  * @classdesc 简单点符号类。
  * @category BaseTypes Symbol
- * @extends {Point}
- * @param {number} [strokeColor = "#FFF"] - 符号边框颜色。
- * @param {string} [strokeWidth = 0] - 符号边框宽度。
- * @param {number} [strokeOpacity = 1] - 符号边框透明度。
- * @param {number} [translate = [0, 0]] - 符号偏移值。
- * @param {number} [blur = 0] - 符号模糊半径。
- * @param {string} [type = 'SimplePoint'] - 符号类型。
+ * @extends {PointSymbol}
+ * @param {object} [options] - 参数。 
+ * @param {number} [options.strokeColor = "#FFF"] - 符号边框颜色。
+ * @param {string} [options.strokeWidth = 0] - 符号边框宽度。
+ * @param {number} [options.strokeOpacity = 1] - 符号边框透明度。
+ * @param {number} [options.translate = [0, 0]] - 符号偏移值。
+ * @param {number} [options.blur = 0] - 符号模糊半径。
  * @example
  * const symbol = new SimplePointSymbol();
  * @usage
  */
 export class SimplePoint extends Point {
 
-    constructor(option) {
-        super();
-        const { strokeColor, strokeWidth, strokeOpacity, translate, blur } = option ?? {};
+    constructor(options) {
+        super(options);
+        const { strokeColor, strokeWidth, strokeOpacity, translate, blur } = options ?? {};
 
         /**
          * @member {number} SimplePointSymbol.prototype.strokeColor

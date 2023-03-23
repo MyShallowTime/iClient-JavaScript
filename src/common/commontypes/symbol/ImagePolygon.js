@@ -9,9 +9,9 @@ import {Util} from '../Util';
  * @aliasclass Symbol.ImagePolygon
  * @classdesc 图片面符号类。
  * @category BaseTypes Symbol
- * @extends {Polygon}
- * @param {string} image - 符号图片。
- * @param {string} [type = 'ImagePolygon'] - 符号类型。
+ * @extends {PolygonSymbol}
+ * @param {object} options - 参数。 
+ * @param {string} options.image - 符号图片。
  * @example
  * const symbol = new ImagePolygonSymbol({
  *      image: "xx.png"
@@ -20,9 +20,9 @@ import {Util} from '../Util';
  */
 export class ImagePolygon extends Polygon {
 
-    constructor(option) {
-        super(option);
-        const { image, color } = option ?? {};
+    constructor(options) {
+        super(options);
+        const { image, color } = options ?? {};
 
         /**
          * @member {string} ImagePolygonSymbol.prototype.image

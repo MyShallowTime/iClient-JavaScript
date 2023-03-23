@@ -10,20 +10,19 @@ import { POINT_DEFAULT_VALUE } from './DefaultValue';
  * @aliasclass Symbol.Point
  * @classdesc 点符号类。
  * @category BaseTypes Symbol
- * @extends {Symbol}
- * @param {number} [size = 1] - 符号大小。
- * @param {string} [color = "#000"] - 符号颜色。
- * @param {number} [opacity = 1] - 符号透明度。
- * @param {string} [type = 'Point'] - 符号类型。
+ * @param {object} [options] - 参数。 
+ * @param {number} [options.size = 1] - 符号大小。
+ * @param {string} [options.color = "#000"] - 符号颜色。
+ * @param {number} [options.opacity = 1] - 符号透明度。
  * @example
  * const symbol = new PointSymbol();
  * @usage
  */
 export class Point extends Symbol {
 
-    constructor(option) {
+    constructor(options) {
         super();
-        const { size, color, opacity } = option ?? {};
+        const { size, color, opacity } = options ?? {};
 
         /**
          * @member {number} PointSymbol.prototype.size

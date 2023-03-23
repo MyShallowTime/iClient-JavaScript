@@ -10,11 +10,11 @@ import { IMAGE_POINT_DEFAULT_VALUE } from './DefaultValue';
  * @aliasclass Symbol.ImagePoint
  * @classdesc 图片点符号类。
  * @category BaseTypes Symbol
- * @extends {Point}
- * @param {string} image - 符号图片。
- * @param {number} [rotate = 0] - 符号旋转角度。
- * @param {[number, number]} [translate = [0, 0]] - 符号偏移值。
- * @param {string} [type = 'ImagePoint'] - 符号类型。
+ * @extends {PointSymbol}
+ * @param {object} options - 参数。 
+ * @param {string} options.image - 符号图片。
+ * @param {number} [options.rotate = 0] - 符号旋转角度。
+ * @param {Array.<number>} [options.translate = [0, 0]] - 符号偏移值。
  * @example
  * const symbol = new ImagePointSymbol({
  *      image: "xx.png"
@@ -23,9 +23,9 @@ import { IMAGE_POINT_DEFAULT_VALUE } from './DefaultValue';
  */
 export class ImagePoint extends Point {
 
-    constructor(option) {
-        super(option);
-        const { image, color, rotate, translate } = option ?? {};
+    constructor(options) {
+        super(options);
+        const { image, color, rotate, translate } = options ?? {};
 
         /**
          * @member {string} ImagePointSymbol.prototype.image

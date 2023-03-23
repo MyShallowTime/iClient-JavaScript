@@ -10,33 +10,32 @@ import { TEXT_DEFAULT_VALUE } from './DefaultValue';
  * @aliasclass Symbol.Text
  * @classdesc 文本符号类。
  * @category BaseTypes Symbol
- * @extends {Symbol}
- * @param {number} [field = ''] - 文本标签。
- * @param {number} [size = 16] - 文本大小。
- * @param {string} [color = "#000"] - 文本颜色。
- * @param {number} [opacity = 1] - 文本透明度。
- * @param {number} [translate = [0, 0]] - 文本偏移值。
- * @param {number} [fontFamily = ["Open Sans Regular", "Arial Unicode MS Regular"]] - 文本字体。
- * @param {number} [haloWidth = 0] - 文本光晕宽度。
- * @param {number} [anchor = 'center'] - 文本锚点。
- * @param {number} [spacing = 0] - 文本间隔。
- * @param {number} [allowOverlap = false] - 文本是否允许压盖。
- * @param {string} [type = 'Text'] - 符号类型。
+ * @param {object} options - 可选参数。 
+ * @param {number} options.field - 文本标签。
+ * @param {number} [options.size = 16] - 文本大小。
+ * @param {string} [options.color = "#000"] - 文本颜色。
+ * @param {number} [options.opacity = 1] - 文本透明度。
+ * @param {number} [options.translate = [0, 0]] - 文本偏移值。
+ * @param {number} [options.fontFamily = ["Open Sans Regular", "Arial Unicode MS Regular"]] - 文本字体。
+ * @param {number} [options.haloWidth = 0] - 文本光晕宽度。
+ * @param {number} [options.anchor = 'center'] - 文本锚点。
+ * @param {number} [options.spacing = 0] - 文本间隔。
+ * @param {number} [options.allowOverlap = false] - 文本是否允许压盖。
  * @example
  * const symbol = new TextSymbol();
  * @usage
  */
 export class Text extends Symbol {
 
-    constructor(option) {
+    constructor(options) {
         super();
-        const { field, size, color, opacity, translate, fontFamily, haloWidth, anchor, spacing, allowOverlap } = option ?? {};
+        const { field, size, color, opacity, translate, fontFamily, haloWidth, anchor, spacing, allowOverlap } = options ?? {};
 
         /**
          * @member {number} TextSymbol.prototype.field
-         * @description 文本标签，默认值：""。
+         * @description 文本标签。
          */
-        this.field = field ?? TEXT_DEFAULT_VALUE.field;
+        this.field = field;
 
          /**
           * @member {number} TextSymbol.prototype.size

@@ -1,6 +1,10 @@
 import {  IMAGE_POINT_DEFAULT_VALUE, LINE_DEFAULT_VALUE, POLYGON_DEFAULT_VALUE, SIMPLE_POINT_DEFAULT_VALUE, TEXT_DEFAULT_VALUE } from "../../../common/commontypes/symbol/DefaultValue";
 
-// 根据symbol类型，获取图层类型
+/**
+ * 根据symbol类型，获取图层类型
+ * @param {*} symbolInfo 
+ * @returns {string}
+ */
 export function getLayerTypeByRender(symbolInfo) {
     // renderSetting中以下key值满足这些条件，即可使用circle图层渲染，否则使用'symbol'
     const CircleRenderSymbolRules = {
@@ -18,7 +22,11 @@ export function getLayerTypeByRender(symbolInfo) {
     return symbolProperty.length ? 'symbol' : 'circle';
 }
 
-// 获取symbol图层样式
+/**
+ * 获取symbol图层样式
+ * @param {*} symbolInfo 
+ * @returns {Object}
+ */
 export function getSymbolPaintLayout(symbolInfo) {
     return {
         paint: {
@@ -40,7 +48,11 @@ export function getSymbolPaintLayout(symbolInfo) {
 
 }
 
-// 获取circle图层样式
+/**
+ * 获取circle图层样式
+ * @param {*} symbolInfo 
+ * @returns {Object}
+ */
 export function getCirclePaintLayout(symbolInfo) {
     return {
         paint: {
@@ -70,7 +82,7 @@ const getPaintLayout = {
 /**
  * SimplePointSymbol、ImagePointSymbol 转换成mapbox 的paint、layout
  * @param {*} symbolInfo 
- * @returns 
+ * @returns {Object}
  */
 export function transformSymbol2LayerInfo(symbolInfo) {
     const layerType = getLayerTypeByRender(symbolInfo)
@@ -84,7 +96,7 @@ export function transformSymbol2LayerInfo(symbolInfo) {
 /**
  * LineSymbol 转换成mapbox 的paint、layout
  * @param {*} symbolInfo 
- * @returns 
+ * @returns {Object}
  */
 export function lineSymbolToPaintLayout(symbolInfo) {
     const {opacity, color, width, offset, translate, blur, dasharray, texture, cap, join} = symbolInfo;
@@ -118,7 +130,7 @@ export function lineSymbolToPaintLayout(symbolInfo) {
 /**
  * PolygonSymbol 转换成mapbox 的paint、layout
  * @param {*} symbolInfo 
- * @returns 
+ * @returns {Object} 
  */
 export function polygonSymbolToPaintLayout(symbolInfo) {
     const {opacity, color, image} = symbolInfo;
@@ -145,7 +157,7 @@ export function polygonSymbolToPaintLayout(symbolInfo) {
 /**
  * TextSymbol 转换成mapbox 的paint、layout
  * @param {*} symbolInfo 
- * @returns 
+ * @returns {Object} 
  */
 export function textSymbolToPaintLayout(symbolInfo) {
     const {field, color, opacity, size, fontFamily, translate, haloWidth, anchor, allowOverlap} = symbolInfo;
