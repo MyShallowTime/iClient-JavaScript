@@ -14,7 +14,7 @@
             if (!layers[id]) {
                 layers[id] = [];
             }
-            layers[id].push(childId);
+            !layers[id].includes(childId) && layers[id].push(childId);
         },
 
         /**

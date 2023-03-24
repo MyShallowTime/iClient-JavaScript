@@ -99,7 +99,7 @@ export function transformSymbol2LayerInfo(symbolInfo) {
  * @returns {Object}
  */
 export function lineSymbolToPaintLayout(symbolInfo) {
-    const {opacity, color, width, offset, translate, blur, dasharray, texture, cap, join} = symbolInfo;
+    const {opacity, color, width, offset, translate, blur, dasharray, image, cap, join} = symbolInfo;
     
     return {
         type: 'line',
@@ -111,7 +111,7 @@ export function lineSymbolToPaintLayout(symbolInfo) {
             "line-translate": translate ?? LINE_DEFAULT_VALUE.translate,
             "line-blur": blur ?? LINE_DEFAULT_VALUE.blur,
             "line-dasharray": dasharray ?? LINE_DEFAULT_VALUE.dasharray,
-            "line-pattern": texture
+            "line-pattern": image
             // 符号库暂未支持的属性
             // "line-translate-anchor": "",
             // "line-gap-width": "",
