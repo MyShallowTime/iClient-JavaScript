@@ -1,7 +1,7 @@
 /* Copyright© 2000 - 2022 SuperMap Software Co.Ltd. All rights reserved.
  * This program are made available under the terms of the Apache License, Version 2.0
  * which accompanies this distribution and is available at http://www.apache.org/licenses/LICENSE-2.0.html.*/
-import { uniqueId } from 'lodash';
+import { Util } from '@supermap/iclient-common/commontypes/Util';
 import mapboxgl from 'mapbox-gl';
 import CompositeLayersManager from './symbol/CompositeLayersManager';
 import SymbolLayerManager from './symbol/SymbolLayerManager';
@@ -165,7 +165,7 @@ export var MapExtend = (function () {
           resolve(undefined);
           return;
         }
-        const id = uniqueId();
+        const id = Util.createUniqueID('SuperMap.Symbol_');
         map.addImage(id, image);
         // 为了解决sdf问题，需要把load后的image信息存下
         map.symbolManager.addImageInfo(id, image);

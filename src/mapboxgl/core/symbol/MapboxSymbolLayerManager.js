@@ -1,4 +1,4 @@
-import { uniqueId } from "lodash";
+import { Util } from "@supermap/iclient-common/commontypes/Util";
 import { lineSymbolToPaintLayout, polygonSymbolToPaintLayout, textSymbolToPaintLayout, transformSymbol2LayerInfo } from "./SymbolTransformUtil";
 
 /**
@@ -76,7 +76,7 @@ const MapboxSymbolLayerManager = (m) => {
         addMultiSymbol(layer, symbol) {
             const { styles } = symbol;
             styles.forEach((style, index) => {
-                const id = index === 0 ? layer.id : uniqueId(layer.id + '_');
+                const id = index === 0 ? layer.id : Util.createUniqueID('SuperMap.Symbol_');
                 this.addSimpleSymbol({...layer, id}, style);
                 map.compositeLayersManager.addLayer(layer.id, id);
             })
@@ -136,7 +136,7 @@ const MapboxSymbolLayerManager = (m) => {
                         return;
                     }
                     const { source, sourceLayer, filter } = layer;
-                    id = uniqueId(layerId + '_');
+                    id = Util.createUniqueID('SuperMap.Symbol_');
                     const layerInfo = {
                         id,
                         source: source,
