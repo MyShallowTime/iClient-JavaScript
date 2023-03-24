@@ -1,9 +1,11 @@
 /* Copyright© 2000 - 2022 SuperMap Software Co.Ltd. All rights reserved.
  * This program are made available under the terms of the Apache License, Version 2.0
  * which accompanies this distribution and is available at http://www.apache.org/licenses/LICENSE-2.0.html.*/
+import { uniqueId } from 'lodash';
 import mapboxgl from 'mapbox-gl';
 import CompositeLayersManager from './symbol/CompositeLayersManager';
 import SymbolLayerManager from './symbol/SymbolLayerManager';
+import SymbolManager from './symbol/SymbolManager';
 
 /**
  * @function MapExtend
@@ -14,12 +16,19 @@ export var MapExtend = (function () {
   mapboxgl.Map.prototype.overlayLayersManager = {};
   mapboxgl.Map.prototype.compositeLayersManager = CompositeLayersManager();
   mapboxgl.Map.prototype.symbolLayerManager = SymbolLayerManager();
+  mapboxgl.Map.prototype.symbolManager = new SymbolManager();
 
   if (mapboxgl.Map.prototype.addLayerBak === undefined) {
     mapboxgl.Map.prototype.addLayerBak = mapboxgl.Map.prototype.addLayer;
     mapboxgl.Map.prototype.addLayer = function (layer, before) {
-      if(layer.symbol) {
-        this.symbolLayerManager('mapbox', this).addLayer(layer, layer.symbol);
+      const id = layer.symbol;
+      if(id) {
+        const symbol = this.symbolManager.getSymbol(id);
+        if (!symbol) {
+          console.warn(`Symbol "${id}" could not be loaded. Please make sure you have added the symbol with map.addSymbol().`);
+          return;
+        }          
+        this.symbolLayerManager('mapbox', this).addLayer(layer, symbol);
         return this;
       }
 
@@ -126,7 +135,12 @@ export var MapExtend = (function () {
     );
   };
 
-  mapboxgl.Map.prototype.setSymbol = function (layerId, symbol) {
+  mapboxgl.Map.prototype.setSymbol = function (layerId, id) {
+    const symbol = this.symbolManager.getSymbol(id);
+    if (!symbol) {
+      console.warn(`Symbol "${id}" could not be loaded. Please make sure you have added the symbol with map.addSymbol().`);
+      return;
+    }
     this.symbolLayerManager('mapbox', this).setSymbol(layerId, symbol);
   };
 
@@ -143,6 +157,70 @@ export var MapExtend = (function () {
       return this;
     }
   }
+
+  const addImageToMap = (map, url) => {
+    return new Promise((resolve) => {
+      map.loadImage(url, (_error, image) => {
+        if(_error) {
+          resolve(undefined);
+          return;
+        }
+        const id = uniqueId();
+        map.addImage(id, image);
+        // 为了解决sdf问题，需要把load后的image信息存下
+        map.symbolManager.addImageInfo(id, image);
+        resolve(id);
+      });
+    });
+  };
+
+  const getSymbol = () => {}
+
+  mapboxgl.Map.prototype.loadSymbol = async function (symbol, callback) {
+    let error;
+    const symbolInfo = typeof symbol === 'string' ? await getSymbol(symbol) : symbol;
+    if(!symbolInfo) {
+      error = {
+        message: 'this symbol is not exists.'
+      }
+    } else if(['point-image', 'ImageLine', 'polygon-image'].includes(symbolInfo.type)) {
+      // 如果需要使用到image 的需要loadimage
+      const imageId = await addImageToMap(this, symbolInfo.image);
+      if(!imageId) {
+        error = {
+          message: 'this symbol.image is not found.'
+        }
+      } else {
+        symbolInfo.image = imageId;
+      }
+    }
+    // 这里需不需要创建对应的符号类?
+    callback(error, symbolInfo);
+  };
+  
+  mapboxgl.Map.prototype.addSymbol = function (id, symbol) {
+    if (this.symbolManager.getSymbol(id)) {
+      return this.fire('error', {
+        error: new Error('An symbol with this name already exists.')
+      });
+    }
+    this.symbolManager.addSymbol(id, symbol);
+  };
+  
+  mapboxgl.Map.prototype.hasSymbol = function(id) {
+    if (!id) {
+        this.fire('error', {
+          error: new Error('Missing required symbol id')
+        });
+        return false;
+    }
+
+    return !!this.symbolManager.getSymbol(id);
+  }
+
+  mapboxgl.Map.prototype.removeSymbol = function (id) {
+    this.symbolManager.removeSymbol(id);
+  };
 
   function addLayer(layer, map) {
     layer.onAdd && layer.onAdd(map);
