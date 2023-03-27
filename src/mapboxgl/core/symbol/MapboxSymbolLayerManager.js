@@ -42,6 +42,7 @@ const MapboxSymbolLayerManager = (m) => {
                 Point: transformSymbol2LayerInfo,
                 ImagePoint: transformSymbol2LayerInfo,
                 Line: lineSymbolToPaintLayout,
+                ImageLine: lineSymbolToPaintLayout,
                 Polygon: polygonSymbolToPaintLayout,
                 ImagePolygon: polygonSymbolToPaintLayout,
                 Text: textSymbolToPaintLayout

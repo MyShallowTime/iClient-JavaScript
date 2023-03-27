@@ -183,7 +183,7 @@ export var MapExtend = (function () {
       error = {
         message: 'this symbol is not exists.'
       }
-    } else if(['point-image', 'ImageLine', 'polygon-image'].includes(symbolInfo.type)) {
+    } else if(['ImagePoint', 'ImageLine', 'ImagePolygon'].includes(symbolInfo.type)) {
       // 如果需要使用到image 的需要loadimage
       const imageId = await addImageToMap(this, symbolInfo.image);
       if(!imageId) {
