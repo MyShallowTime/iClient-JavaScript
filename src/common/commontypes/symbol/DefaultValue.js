@@ -56,5 +56,6 @@ export const TEXT_DEFAULT_VALUE = {
     haloWidth: 0,
     anchor: 'center',
     spacing: 0,
-    allowOverlap: false
+    allowOverlap: false,
+    padding: 0
 }

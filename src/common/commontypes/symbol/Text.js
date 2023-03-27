@@ -21,6 +21,7 @@ import { TEXT_DEFAULT_VALUE } from './DefaultValue';
  * @param {number} [options.anchor = 'center'] - 文本锚点。
  * @param {number} [options.spacing = 0] - 文本间隔。
  * @param {number} [options.allowOverlap = false] - 文本是否允许压盖。
+ * @param {number} [options.padding = 0] - 文本边框填充值。
  * @example
  * const symbol = new TextSymbol();
  * @usage
@@ -29,7 +30,7 @@ export class Text extends Symbol {
 
     constructor(options) {
         super();
-        const { field, size, color, opacity, translate, fontFamily, haloWidth, anchor, spacing, allowOverlap } = options ?? {};
+        const { field, size, color, opacity, translate, fontFamily, haloWidth, anchor, spacing, allowOverlap, padding } = options ?? {};
 
         /**
          * @member {number} TextSymbol.prototype.field
@@ -89,7 +90,13 @@ export class Text extends Symbol {
          * @member {number} TextSymbol.prototype.allowOverlap
          * @description  文本是否允许覆盖，默认值：false
          */
-        this.allowOverlap = allowOverlap ?? TEXT_DEFAULT_VALUE.allowOverlap;
+        this.allowOverlap = allowOverlap ?? TEXT_DEFAULT_VALUE.allowOverlap;                 
+        
+        /**
+          * @member {number} TextSymbol.prototype.padding
+          * @description  文本边框填充值，默认值：0
+          */
+        this.padding = padding ?? TEXT_DEFAULT_VALUE.padding;
          
         /**
          * @member {string} TextSymbol.prototype.type

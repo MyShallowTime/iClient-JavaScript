@@ -160,7 +160,7 @@ export function polygonSymbolToPaintLayout(symbolInfo) {
  * @returns {Object} 
  */
 export function textSymbolToPaintLayout(symbolInfo) {
-    const {field, color, opacity, size, fontFamily, translate, haloWidth, anchor, allowOverlap} = symbolInfo;
+    const {field, color, opacity, size, fontFamily, translate, haloWidth, anchor, allowOverlap, padding} = symbolInfo;
     return {
         type: 'symbol',
         paint: {
@@ -178,7 +178,8 @@ export function textSymbolToPaintLayout(symbolInfo) {
             'text-size': size ?? TEXT_DEFAULT_VALUE.size,
             'text-font': fontFamily ?? TEXT_DEFAULT_VALUE.fontFamily,
             'text-anchor': anchor ?? TEXT_DEFAULT_VALUE.anchor,
-            'text-allow-overlap': allowOverlap ?? TEXT_DEFAULT_VALUE.allowOverlap
+            'text-allow-overlap': allowOverlap ?? TEXT_DEFAULT_VALUE.allowOverlap,
+            'text-padding': padding ?? TEXT_DEFAULT_VALUE.padding
             // 符号库暂未支持的属性
             // 'text-ignore-placement': symbolInfo.textIgnorePlacement,
             // 'text-justify': symbolInfo.justify,
