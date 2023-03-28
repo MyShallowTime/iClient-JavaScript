@@ -9,7 +9,7 @@ const COMMON_DEFAULT_VALUE = {
 }
 
 export const POINT_DEFAULT_VALUE = {
-    size: 1,
+    size: 0.16,
     color: COMMON_DEFAULT_VALUE.color,
     opacity: COMMON_DEFAULT_VALUE.opacity
 }
