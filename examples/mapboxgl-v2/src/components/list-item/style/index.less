@@ -1,0 +1,48 @@
+.list-item-content {
+    position: relative;
+
+    .list-item {
+        width: 248px;
+        height: 32px;
+        margin-bottom: 8px;
+        border-radius: 4px;
+        line-height: 30px;
+        padding: 0 8px;
+        cursor: pointer;
+        font-size: 12px;
+        color: rgba(0, 0, 0, 0.65);
+        border: 1px solid rgba(0, 0, 0, 0.08);
+        background: #FFFFFF;
+
+        &-disable {
+            background: rgba(0, 0, 0, 0.06);
+        }
+
+        &-active {
+            border-color: #269FF0;
+        }
+
+        span {
+            vertical-align: sub;
+
+            svg {
+                width: 16px;
+                height: 16px;
+                margin-right: 4px;
+                color: rgba(0, 0, 0, 0.65);
+            }
+        }
+    }
+
+    .list-item-visibility {
+        position: absolute;
+        top: 8px;
+        right: 18px;
+
+        svg {
+            width: 16px;
+            height: 16px;
+            color: rgba(0, 0, 0, 0.55);
+        }
+    }
+}

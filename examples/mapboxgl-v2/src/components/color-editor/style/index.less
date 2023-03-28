@@ -1,0 +1,34 @@
+.color-picker-content {
+    padding: 8px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    width: 160px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+
+    #selected-color {
+        width: 142px;
+        height: 10px;
+        border-radius: 0;
+        border: none;
+
+        &.fv-button-disable {
+            cursor: no-drop;
+        }
+    }
+}
+
+.fv-popup.fv-color-picker .fv-popup-content {
+    background: #F5F5F5;
+
+    .sketch-picker {
+        background: #FFFFFF !important;
+
+        input {
+            border-radius: 4px;
+            background: #FFFFFF !important;
+            color: rgba(0, 0, 0, 0.45) !important;
+            border: 1px solid rgba(0, 0, 0, 0.45) !important;
+        }
+    }
+}
