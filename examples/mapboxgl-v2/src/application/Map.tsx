@@ -11,7 +11,8 @@ const Map = (props: MapProps) => {
   const { onLoadedMap } = props;
 
   useEffect(() => {
-    const map = new window.mapboxgl.Map({
+    const map = new (window as any).maplibregl.Map({
+    // const map = new window.mapboxgl.Map({
       container: 'map',
       style: BaseMapStyle
     });
