@@ -6,13 +6,12 @@ import NumberEditor from '../../components/number-editor';
 interface SingleLineStyleContentProps {
     layerId: string;
     symbolId: string;
-    index: number;
     changeLayerStyle: (layerId: string, key: string, value: any) => void;
     getLayerPropertyStyle: (id: string, key: string) => any;
 }
 
 const SingleLineStyleSetting = (props: SingleLineStyleContentProps) => {
-    const { changeLayerStyle, layerId, getLayerPropertyStyle, symbolId, index } = props;
+    const { changeLayerStyle, layerId, getLayerPropertyStyle, symbolId } = props;
 
     const defaultStyle = {
         width: 1,
@@ -42,10 +41,9 @@ const SingleLineStyleSetting = (props: SingleLineStyleContentProps) => {
     }, [layerId, symbolId]);
 
     const { width, color, offset } = style;
-    
+
     return (
         <>
-            <div className='style-item-title'>{`线段${index + 1}:`}</div>
             <div className='style-setting-item'>
                 <EditorLayout title='颜色'>
                     <ColorEditor color={color} onColorChange={onColorChange} />
@@ -56,7 +54,6 @@ const SingleLineStyleSetting = (props: SingleLineStyleContentProps) => {
                     <NumberEditor
                         value={width}
                         onChange={(v: any) => {
-                            if (!v) return;
                             changeLayerStyle(layerId, 'width', v);
                             changeStyle('width', v);
                         }}
@@ -70,7 +67,6 @@ const SingleLineStyleSetting = (props: SingleLineStyleContentProps) => {
                     <NumberEditor
                         value={offset}
                         onChange={(v: any) => {
-                            if (!v) return;
                             changeLayerStyle(layerId, 'offset', v);
                             changeStyle('offset', v);
                         }}

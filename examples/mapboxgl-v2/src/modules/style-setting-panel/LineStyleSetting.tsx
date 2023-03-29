@@ -18,11 +18,14 @@ const LineStyleSetting = (props: LineStyleSettingProps) => {
     useEffect(() => {
         setLineIds(getCompositeLayersIds(layerId) ?? [layerId]);
     }, [symbolId]);
-    
+
     const getContent = () => {
         return lineIds?.map((id, index) => {
             return (
-                <SingleLineStyleSetting key={id} layerId={id} changeLayerStyle={changeLayerStyle} getLayerPropertyStyle={getLayerPropertyStyle} symbolId={symbolId} index={index} />
+                <div key={id}>
+                    {lineIds.length !== 1 && <div className='style-item-title'>{`线段${index + 1}:`}</div>}
+                    <SingleLineStyleSetting layerId={id} changeLayerStyle={changeLayerStyle} getLayerPropertyStyle={getLayerPropertyStyle} symbolId={symbolId} />
+                </div>
             )
         })
     }

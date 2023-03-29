@@ -113,7 +113,7 @@ const App = () => {
         addMVTLayer('capital', 'China_Capital_pt@China', 'point', capitalSymbol, newLayersInfo);
         addMVTLayer('city', 'China_ProCenCity_pt@China', 'point', citySymbol, newLayersInfo);
         addMVTLayer('nationText', 'China_Nation_B_pt@China', 'text', nationTextSymbol, newLayersInfo);
-        addMVTLayer('cityText', 'China_ProCenCity_pt@China', 'text', cityTextSymbol, newLayersInfo);
+        // addMVTLayer('cityText', 'China_ProCenCity_pt@China', 'text', cityTextSymbol, newLayersInfo);
         setLayersInfo(newLayersInfo.reverse());
     };
 

@@ -28,7 +28,7 @@ export var MapExtend = (function () {
           console.warn(`Symbol "${id}" could not be loaded. Please make sure you have added the symbol with map.addSymbol().`);
           return;
         }          
-        this.symbolLayerManager('mapbox', this).addLayer(layer, symbol);
+        this.symbolLayerManager('mapbox', this).addLayer(layer, symbol, before);
         return this;
       }
 
