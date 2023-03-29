@@ -23,13 +23,13 @@ const MapboxSymbolLayerManager = (m) => {
          * @param {*} symbol 
          * @returns {undefined}
          */
-        addLayer(layer, symbol) {
+        addLayer(layer, symbol, before) {
             delete layer.symbol;
             if(this.isMultiSymbol(symbol.type)) {
-                this.addMultiSymbol(layer, symbol);
+                this.addMultiSymbol(layer, symbol, before);
                 return;
             }
-            this.addSimpleSymbol(layer, symbol);
+            this.addSimpleSymbol(layer, symbol, before);
         },
 
         /**
@@ -55,7 +55,7 @@ const MapboxSymbolLayerManager = (m) => {
          * @param {*} layer 
          * @param {*} symbol 
          */
-        addSimpleSymbol(layer, symbol) {
+        addSimpleSymbol(layer, symbol, before) {
             const style = this.symbolToLayerStyle(symbol);
             const paint = {}, layout = {};
             // 过滤掉为undefined的key
@@ -66,7 +66,7 @@ const MapboxSymbolLayerManager = (m) => {
             Object.keys(style.layout).forEach(k => {
                 style.layout[k] !== undefined && (layout[k] = style.layout[k]);
             })
-            map.addLayerBak({...layer, ...style, paint, layout});
+            map.addLayerBak({...layer, ...style, paint, layout}, before);
         },
     
         /**
@@ -74,11 +74,11 @@ const MapboxSymbolLayerManager = (m) => {
          * @param {*} layer 
          * @param {*} symbol 
          */
-        addMultiSymbol(layer, symbol) {
+        addMultiSymbol(layer, symbol, before) {
             const { styles } = symbol;
             styles.forEach((style, index) => {
                 const id = index === 0 ? layer.id : Util.createUniqueID('SuperMap.Symbol_');
-                this.addSimpleSymbol({...layer, id}, style);
+                this.addSimpleSymbol({...layer, id}, style, before);
                 map.compositeLayersManager.addLayer(layer.id, id);
             })
         },
@@ -133,6 +133,9 @@ const MapboxSymbolLayerManager = (m) => {
                     this.setSimpleSymbol(layerIds[index], style);
                 } else {
                     const layer = map.getLayer(layerId);
+                    const layers = map.getStyle().layers;
+                    const ids = map.compositeLayersManager.getLayers(layerId);
+                    const beforeIndex = layers.findIndex(el => el.id === ids[ids.length - 1]) + 1;
                     if (!layer) {
                         return;
                     }
@@ -144,7 +147,7 @@ const MapboxSymbolLayerManager = (m) => {
                         "source-layer": sourceLayer
                     };
                     filter && (layerInfo['filter'] = filter);
-                    this.addSimpleSymbol(layerInfo, style);
+                    this.addSimpleSymbol(layerInfo, style, layers[beforeIndex]?.id);
                 }
                 map.compositeLayersManager.addLayer(layerId, id);
             });

@@ -13,7 +13,9 @@ const Map = (props: MapProps) => {
   useEffect(() => {
     const map = new window.mapboxgl.Map({
       container: 'map',
-      style: BaseMapStyle
+      style: BaseMapStyle,
+      center: [100, 35],
+      zoom: 2.9
     });
     map.on('load', async () => {
       (window as any).map = map;

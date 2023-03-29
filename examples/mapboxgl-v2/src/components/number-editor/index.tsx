@@ -1,5 +1,4 @@
 import { InputNumber, InputNumberProps } from '@ispeco/iptl-components-react';
-import { ValueType } from '@tensorflow/tfjs-converter/dist/operations/types';
 import React from 'react';
 import classnames from 'classnames';
 import './style';

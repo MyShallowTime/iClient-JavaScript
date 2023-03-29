@@ -4,6 +4,7 @@ import ColorEditor from '../../components/color-editor';
 import NumberEditor from '../../components/number-editor';
 import EditorLayout from '../../components/editor-layout';
 import './style';
+import { MathUtil } from '../../utils/MathUtil';
 
 interface PointStyleSettingProps {
     layerId: string;
@@ -59,9 +60,8 @@ const PointStyleSetting = (props: PointStyleSettingProps) => {
             <div className='style-setting-item'>
                 <EditorLayout title='大小'>
                     <NumberEditor
-                        value={size * width}
+                        value={MathUtil.accMul(size, width)}
                         onChange={(v: any) => {
-                            if (!v) return;
                             changeLayerStyle(layerId, 'size', v / width);
                             changeStyle('size', v / width);
                         }}
@@ -75,7 +75,6 @@ const PointStyleSetting = (props: PointStyleSettingProps) => {
                     <NumberEditor
                         value={isDataDrivenRotation ? rotate[1][1] : rotate}
                         onChange={(v: any) => {
-                            if (!v) return;
                             changeLayerStyle(layerId, 'rotate', v);
                             changeStyle('rotate', v);
                         }}

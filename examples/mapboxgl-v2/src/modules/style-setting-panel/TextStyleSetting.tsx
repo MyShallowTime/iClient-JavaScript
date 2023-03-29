@@ -61,7 +61,6 @@ const TextStyleSetting = (props: TextStyleSettingProps) => {
                     <NumberEditor
                         value={size}
                         onChange={(v: any) => {
-                            if (!v) return;
                             changeLayerStyle(layerId, 'size', v);
                             changeStyle('size', v)
                         }}
@@ -80,7 +79,6 @@ const TextStyleSetting = (props: TextStyleSettingProps) => {
                         size={'middle'}
                         value={opacity}
                         onChange={(v: any) => {
-                            if (!v) return;
                             changeLayerStyle(layerId, 'opacity', v);
                             changeStyle('opacity', v)
                         }}
@@ -122,7 +120,6 @@ const TextStyleSetting = (props: TextStyleSettingProps) => {
                         size={'middle'}
                         value={translateX}
                         onChange={(v: any) => {
-                            if (!v) return;
                             changeLayerStyle(layerId, 'translate', [v, translateY]);
                             changeStyle('translateX', v);
                         }}
@@ -139,7 +136,6 @@ const TextStyleSetting = (props: TextStyleSettingProps) => {
                         size={'middle'}
                         value={translateY}
                         onChange={(v: any) => {
-                            if (!v) return;
                             changeLayerStyle(layerId, 'translate', [translateX, v]);
                             changeStyle('translateY', v);
                         }}
