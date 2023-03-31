@@ -67,6 +67,7 @@ const TextStyleSetting = (props: TextStyleSettingProps) => {
                         min={0}
                         max={100}
                         suffix={'PX'}
+                        precision={2}
                     />
                 </EditorLayout>
             </div>
@@ -82,6 +83,7 @@ const TextStyleSetting = (props: TextStyleSettingProps) => {
                             changeLayerStyle(layerId, 'opacity', v);
                             changeStyle('opacity', v)
                         }}
+                        precision={2}
                     />
                 </EditorLayout>
             </div>
@@ -124,6 +126,7 @@ const TextStyleSetting = (props: TextStyleSettingProps) => {
                             changeStyle('translateX', v);
                         }}
                         suffix={'PX'}
+                        precision={2}
                     />
                 </EditorLayout>
             </div>
@@ -140,6 +143,7 @@ const TextStyleSetting = (props: TextStyleSettingProps) => {
                             changeStyle('translateY', v);
                         }}
                         suffix={'PX'}
+                        precision={2}
                     />
                 </EditorLayout>
             </div>

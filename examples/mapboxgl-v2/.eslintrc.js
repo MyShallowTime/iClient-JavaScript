@@ -29,7 +29,7 @@ module.exports = {
       //不强制规定引号的使用
       "quotes": "off",
       //强制所有控制语句使用一致的括号风格
-      "curly": ["error", "multi-or-nest", "consistent"],
+      // "curly": ["error", "multi-or-nest", "consistent"],
       //允许有console输出
       "no-console": "off",
       //禁止多次声明同一变量

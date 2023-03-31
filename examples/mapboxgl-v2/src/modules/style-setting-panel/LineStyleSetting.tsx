@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { ScrollPanel } from '@ispeco/iptl-components-react';
 import SingleLineStyleSetting from './SingleLineStyleSetting';
-// import SingleLineStyleContent from './SingleLineStyleContent';
+import EditorLayout from '../../components/editor-layout';
+import NumberEditor from '../../components/number-editor';
 
 interface LineStyleSettingProps {
     layerId: string;
@@ -15,19 +16,62 @@ interface LineStyleSettingProps {
 const LineStyleSetting = (props: LineStyleSettingProps) => {
     const { changeLayerStyle, layerId, getLayerPropertyStyle, symbolId, getCompositeLayersIds } = props;
     const [lineIds, setLineIds] = useState<string[]>([]);
+    const [wholeWidth, setWholeWidth] = useState(0);
+    const isSingleLine = lineIds.length === 1;
+
+    const updateWholeWidth = (): void => {
+        let topBoundary;
+        let bottomBoundary;
+        lineIds.forEach((id) => {
+            const width = getLayerPropertyStyle(id, 'width');
+            const offset = getLayerPropertyStyle(id, 'offset');
+            const top = offset + width / 2;
+            const bottom = offset - width / 2;
+            (top > topBoundary || topBoundary === undefined) && (topBoundary = top);
+            (bottom < bottomBoundary || bottomBoundary === undefined) && (bottomBoundary = bottom);
+        });
+        setWholeWidth(topBoundary - bottomBoundary);
+    };
+
     useEffect(() => {
-        setLineIds(getCompositeLayersIds(layerId) ?? [layerId]);
+        const ids = getCompositeLayersIds(layerId);
+        setLineIds(ids ?? [layerId]);
     }, [symbolId]);
 
+    useEffect(() => {
+        updateWholeWidth();
+    }, [lineIds])
+
     const getContent = () => {
-        return lineIds?.map((id, index) => {
-            return (
-                <div key={id}>
-                    {lineIds.length !== 1 && <div className='style-item-title'>{`线段${index + 1}:`}</div>}
-                    <SingleLineStyleSetting layerId={id} changeLayerStyle={changeLayerStyle} getLayerPropertyStyle={getLayerPropertyStyle} symbolId={symbolId} />
-                </div>
-            )
-        })
+        return <>
+            {!isSingleLine && <div className='style-setting-item'>
+                <EditorLayout title='整体线宽'>
+                    <NumberEditor
+                        value={wholeWidth}
+                        onChange={(v: any) => {
+                            const percent = v / wholeWidth;
+                            lineIds.forEach(id => {
+                                changeLayerStyle(id, 'width', getLayerPropertyStyle(id, 'width') * percent);
+                                changeLayerStyle(id, 'offset', getLayerPropertyStyle(id, 'offset') * percent);
+                                setWholeWidth(v);
+                            });
+                        }}
+                        min={0.01}
+                        max={100}
+                        suffix={'PX'}
+                        precision={2}
+                    />
+                </EditorLayout>
+            </div>}
+            {lineIds?.map((id, index) => {
+                return (
+                    <div key={id}>
+                        {!isSingleLine && <div className='style-item-title'>{`线段${index + 1}:`}</div>}
+                        <SingleLineStyleSetting layerId={id} changeLayerStyle={changeLayerStyle} getLayerPropertyStyle={getLayerPropertyStyle} symbolId={symbolId} wholeWidth={wholeWidth} updateWholeWidth={updateWholeWidth} />
+                    </div>
+                )
+            })}
+        </>
     }
     return (
         <div className='style-setting-content'>

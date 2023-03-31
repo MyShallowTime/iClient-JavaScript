@@ -6,12 +6,14 @@ import NumberEditor from '../../components/number-editor';
 interface SingleLineStyleContentProps {
     layerId: string;
     symbolId: string;
+    wholeWidth: number;
     changeLayerStyle: (layerId: string, key: string, value: any) => void;
     getLayerPropertyStyle: (id: string, key: string) => any;
+    updateWholeWidth: () => void;
 }
 
 const SingleLineStyleSetting = (props: SingleLineStyleContentProps) => {
-    const { changeLayerStyle, layerId, getLayerPropertyStyle, symbolId } = props;
+    const { layerId, symbolId, wholeWidth, changeLayerStyle, getLayerPropertyStyle, updateWholeWidth } = props;
 
     const defaultStyle = {
         width: 1,
@@ -38,9 +40,13 @@ const SingleLineStyleSetting = (props: SingleLineStyleContentProps) => {
             color: getLayerPropertyStyle(layerId, 'color'),
             offset: getLayerPropertyStyle(layerId, 'offset') ?? 0
         });
-    }, [layerId, symbolId]);
+    }, [layerId, symbolId, wholeWidth]);
 
     const { width, color, offset } = style;
+
+    useEffect(() => {
+        updateWholeWidth();
+    }, [width, offset]);
 
     return (
         <>
@@ -59,7 +65,9 @@ const SingleLineStyleSetting = (props: SingleLineStyleContentProps) => {
                         }}
                         min={0}
                         max={100}
-                        suffix={'PX'} />
+                        suffix={'PX'}
+                        precision={2}
+                    />
                 </EditorLayout>
             </div>
             <div className='style-setting-item'>
@@ -72,7 +80,9 @@ const SingleLineStyleSetting = (props: SingleLineStyleContentProps) => {
                         }}
                         min={-100}
                         max={100}
-                        suffix={'PX'} />
+                        suffix={'PX'}
+                        precision={2}
+                    />
                 </EditorLayout>
             </div>
         </>

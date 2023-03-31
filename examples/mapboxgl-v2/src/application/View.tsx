@@ -33,9 +33,10 @@ const View = (props: PanelLayoutProps) => {
         setIsSettingOpen(false);
     }
 
-    const onClickCard = async (symbolId) => {
-        await onIconClick(symbolId, layerId);
-        setSymbolId(symbolId);
+    const onClickCard = async (id) => {
+        if (id === symbolId) return;
+        await onIconClick(id, layerId);
+        setSymbolId(id);
     };
     const settingRender = {
         line: <LineSetting key={layerId} layerId={layerId} symbolId={symbolId} onIconClick={onClickCard} getLayerPropertyStyle={getLayerPropertyStyle} changeLayerStyle={changeLayerStyle} getCompositeLayersIds={getCompositeLayersIds} onClosePanal={onClosePanal} />,
