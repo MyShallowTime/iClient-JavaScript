@@ -1,9 +1,34 @@
 .style-setting-content {
-    padding: 16px 0;
-    height: 182px;
+    padding-top: 16px;
 
     .style-item-title {
         color: rgba(0, 0, 0, 0.85);
         margin-bottom: 4px;
+    }
+
+    .font-family-layout {
+        .ant-select-disabled {
+            background-color: #9e9e9e40;
+        }
+        .ant-select-selector {
+            padding: 0 8px;
+            &::after,
+            .ant-select-selection-search {
+                display: none;
+            }
+            .ant-select-selection-item {
+                height: 26px;
+                margin: 0;
+                padding: 0;
+                border: 0;
+                overflow: hidden;
+                line-height: 26px;
+                text-overflow: ellipsis;
+                .ant-select-selection-item-content {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
     }
 }

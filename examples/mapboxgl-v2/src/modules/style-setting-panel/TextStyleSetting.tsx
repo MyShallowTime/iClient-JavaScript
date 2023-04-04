@@ -4,23 +4,28 @@ import ColorEditor from '../../components/color-editor';
 import EditorLayout from '../../components/editor-layout';
 import NumberEditor from '../../components/number-editor';
 import SelectEditor from '../../components/select-editor';
+import InputNumbersEditor from '../../components/input-numbers-editor';
 
 interface TextStyleSettingProps {
     layerId: string;
+    fields: string[];
     changeLayerStyle: (layerId: string, key: string, value: any) => void;
     getLayerPropertyStyle: (id: string, key: string) => any;
 }
 
 const TextStyleSetting = (props: TextStyleSettingProps) => {
-    const { changeLayerStyle, layerId, getLayerPropertyStyle } = props;
+    const { layerId, fields, changeLayerStyle, getLayerPropertyStyle } = props;
     const defaultStyle = {
         size: 1,
         color: '#000',
-        translateX: 0,
-        translateY: 0,
         opacity: 1,
         anchor: 'center',
-        allowOverlap: false
+        allowOverlap: false,
+        haloWidth: 0,
+        spacing: 0,
+        fontFamily: ["Open Sans Regular", "Arial Unicode MS Regular"],
+        field: '',
+        translate: [0, 0]
     };
     const [style, setStyle] = useState(defaultStyle);
 
@@ -28,29 +33,46 @@ const TextStyleSetting = (props: TextStyleSettingProps) => {
         setStyle({
             size: getLayerPropertyStyle(layerId, 'size'),
             color: getLayerPropertyStyle(layerId, 'color'),
-            translateX: getLayerPropertyStyle(layerId, 'translate')?.[0] ?? 0,
-            translateY: getLayerPropertyStyle(layerId, 'translate')?.[1] ?? 0,
             opacity: getLayerPropertyStyle(layerId, 'opacity'),
-            anchor: getLayerPropertyStyle(layerId, 'anchor') ?? 'center',
-            allowOverlap: getLayerPropertyStyle(layerId, 'allowOverlap')
+            anchor: getLayerPropertyStyle(layerId, 'anchor'),
+            allowOverlap: getLayerPropertyStyle(layerId, 'allowOverlap'),
+            haloWidth: getLayerPropertyStyle(layerId, 'haloWidth'),
+            spacing: getLayerPropertyStyle(layerId, 'spacing'),
+            fontFamily: getLayerPropertyStyle(layerId, 'fontFamily'),
+            field: getLayerPropertyStyle(layerId, 'field'),
+            translate: getLayerPropertyStyle(layerId, 'translate')
         });
     }, [layerId]);
 
-    const { size, color, translateX, translateY, opacity, anchor, allowOverlap } = style;
+    const { size, color, opacity, anchor, allowOverlap, haloWidth, spacing, fontFamily, field, translate } = style;
 
     const changeStyle = (key, value): void => {
+        changeLayerStyle(layerId, key, value);
         setStyle({ ...style, [key]: value })
     };
 
     const onColorChange = (color: any) => {
         const { r, g, b, a } = color.rgb;
         const rgba = `rgba(${r},${g},${b},${a})`;
-        changeLayerStyle(layerId, 'color', rgba);
         changeStyle('color', rgba);
     };
-    
+
     return (
         <div className='style-setting-content style-setting-text-content'>
+            <div className='style-setting-item'>
+                <EditorLayout title='文本字段'>
+                    <SelectEditor
+                        options={fields.map((field) => {
+                            return {
+                                label: field,
+                                value: `{${field}}`
+                            }
+                        })}
+                        value={field} onChange={(v) => {
+                            changeStyle('field', v);
+                        }} />
+                </EditorLayout>
+            </div>
             <div className='style-setting-item'>
                 <EditorLayout title='颜色'>
                     <ColorEditor color={color} onColorChange={onColorChange} />
@@ -61,8 +83,7 @@ const TextStyleSetting = (props: TextStyleSettingProps) => {
                     <NumberEditor
                         value={size}
                         onChange={(v: any) => {
-                            changeLayerStyle(layerId, 'size', v);
-                            changeStyle('size', v)
+                            changeStyle('size', v);
                         }}
                         min={0}
                         max={100}
@@ -80,9 +101,23 @@ const TextStyleSetting = (props: TextStyleSettingProps) => {
                         size={'middle'}
                         value={opacity}
                         onChange={(v: any) => {
-                            changeLayerStyle(layerId, 'opacity', v);
-                            changeStyle('opacity', v)
+                            changeStyle('opacity', v);
                         }}
+                        precision={2}
+                    />
+                </EditorLayout>
+            </div>
+            <div className='style-setting-item'>
+                <EditorLayout title='文字间距'>
+                    <NumberEditor
+                        min={0}
+                        max={100}
+                        size={'middle'}
+                        value={spacing}
+                        onChange={(v: any) => {
+                            changeStyle('spacing', v);
+                        }}
+                        suffix={'ems'}
                         precision={2}
                     />
                 </EditorLayout>
@@ -91,9 +126,22 @@ const TextStyleSetting = (props: TextStyleSettingProps) => {
                 <EditorLayout title='允许文字压盖'>
                     <CheckBoxEditor
                         checked={allowOverlap} onChange={(v) => {
-                            changeStyle('allowOverlap', v.target.checked)
-                            changeLayerStyle(layerId, 'allowOverlap', v.target.checked);
+                            changeStyle('allowOverlap', v.target.checked);
                         }} />
+                </EditorLayout>
+            </div>
+            <div className='style-setting-item'>
+                <EditorLayout title='晕轮宽度'>
+                    <NumberEditor
+                        value={haloWidth}
+                        onChange={(v: any) => {
+                            changeStyle('haloWidth', v);
+                        }}
+                        min={0}
+                        max={size / 4}
+                        suffix={'PX'}
+                        precision={2}
+                    />
                 </EditorLayout>
             </div>
             <div className='style-setting-item'>
@@ -109,40 +157,32 @@ const TextStyleSetting = (props: TextStyleSettingProps) => {
                         { label: 'bottom-left', value: 'bottom-left' },
                         { label: 'bottom-right', value: 'bottom-right' }
                     ]} value={anchor} onChange={(v) => {
-                        changeLayerStyle(layerId, 'anchor', v);
-                        changeStyle('anchor', v)
+                        changeStyle('anchor', v);
                     }} />
                 </EditorLayout>
             </div>
             <div className='style-setting-item'>
-                <EditorLayout title='偏移量X'>
-                    <NumberEditor
-                        min={-100}
-                        max={100}
-                        size={'middle'}
-                        value={translateX}
-                        onChange={(v: any) => {
-                            changeLayerStyle(layerId, 'translate', [v, translateY]);
-                            changeStyle('translateX', v);
-                        }}
-                        suffix={'PX'}
-                        precision={2}
+                <EditorLayout title='字体' className='font-family-layout'>
+                    <SelectEditor
+                        value={fontFamily}
+                        mode={'tags'}
+                        disabled={true}
                     />
                 </EditorLayout>
             </div>
             <div className='style-setting-item'>
-                <EditorLayout title='偏移量Y'>
-                    <NumberEditor
+                <EditorLayout title='相对偏移值'>
+                    <InputNumbersEditor
                         className='input-number-content'
                         min={-100}
                         max={100}
                         size={'middle'}
-                        value={translateY}
-                        onChange={(v: any) => {
-                            changeLayerStyle(layerId, 'translate', [translateX, v]);
-                            changeStyle('translateY', v);
+                        values={translate}
+                        onChange={(values: any) => {
+                            changeStyle('translate', values);
                         }}
                         suffix={'PX'}
+                        subfix={['X', 'Y']}
                         precision={2}
                     />
                 </EditorLayout>

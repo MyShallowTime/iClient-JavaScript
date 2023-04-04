@@ -42,8 +42,8 @@ const LineStyleSetting = (props: LineStyleSettingProps) => {
         updateWholeWidth();
     }, [lineIds])
 
-    const getContent = () => {
-        return <>
+    return (
+        <div className='style-setting-content'>
             {!isSingleLine && <div className='style-setting-item'>
                 <EditorLayout title='整体线宽'>
                     <NumberEditor
@@ -71,13 +71,6 @@ const LineStyleSetting = (props: LineStyleSettingProps) => {
                     </div>
                 )
             })}
-        </>
-    }
-    return (
-        <div className='style-setting-content'>
-            <ScrollPanel style={{ height: 150, width: '100%' }}>
-                {getContent()}
-            </ScrollPanel>
         </div>
     )
 }
