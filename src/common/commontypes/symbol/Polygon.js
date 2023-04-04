@@ -8,26 +8,16 @@ import { POLYGON_DEFAULT_VALUE } from './DefaultValue';
 /**
  * @class PolygonSymbol
  * @aliasclass Symbol.Polygon
- * @classdesc 面符号类。
- * @category BaseTypes Symbol
+ * @classdesc 面符号抽象类。
+ * @category Symbol Polygon
  * @param {object} [options] - 参数。 
- * @param {string} [options.color = "#000"] - 符号颜色。
  * @param {number} [options.opacity = 1] - 符号透明度。
- * @example
- * const symbol = new PolygonSymbol();
- * @usage
  */
 export class Polygon extends Symbol {
 
     constructor(options) {
         super();
-        const { color, opacity } = options ?? {};
-
-        /**
-         * @member {string} PolygonSymbol.prototype.color
-         * @description 面符号的颜色，默认值："#000"。
-         */
-        this.color = color ?? POLYGON_DEFAULT_VALUE.color;
+        const { opacity } = options ?? {};
 
         /**
          * @member {number} PolygonSymbol.prototype.opacity
@@ -64,7 +54,6 @@ export class Polygon extends Symbol {
      * @description 释放面符号的资源。
      */
     destroy() {
-        this.color = null;
         this.opacity = null;
         super.destroy();
     }

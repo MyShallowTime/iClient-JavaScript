@@ -8,7 +8,7 @@ import {Util} from '../Util';
  * @class ImagePolygonSymbol
  * @aliasclass Symbol.ImagePolygon
  * @classdesc 图片面符号类。
- * @category BaseTypes Symbol
+ * @category Symbol Polygon
  * @extends {PolygonSymbol}
  * @param {object} options - 参数。 
  * @param {string} options.image - 符号图片。
@@ -31,7 +31,7 @@ export class ImagePolygon extends Polygon {
         this.image = image;
 
         /**
-         * @member {string} PolygonSymbol.prototype.color
+         * @member {string} ImagePolygonSymbol.prototype.color
          * @description 符号颜色，如果为undefined，显示图片自身颜色。
          */
         this.color = color;
@@ -68,6 +68,7 @@ export class ImagePolygon extends Polygon {
      */
     destroy() {
         this.image = null;
+        this.color = null;
         super.destroy();
     }
 }
