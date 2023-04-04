@@ -8,7 +8,7 @@ import {Line} from './Line';
 /**
  * @class SimpleLineSymbol
  * @classdesc 基本线符号类
- * @category BaseTypes Symbol
+ * @category Symbol Line
  * @extends {LineSymbol}
  * @param {object} [options] - 参数。
  * @param {Array<number>} [options.dashArray] - 虚线的间隔。

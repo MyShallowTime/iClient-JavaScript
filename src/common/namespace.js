@@ -502,13 +502,10 @@ SuperMap.Geometry.MultiPolygon = GeometryMultiPolygon;
 SuperMap.Geometry.Point = GeometryPoint;
 SuperMap.Geometry.Polygon = GeometryPolygon;
 SuperMap.Geometry.Rectangle = GeometryRectangle;
-SuperMap.Symbol.Point = PointSymbol;
 SuperMap.Symbol.SimplePoint = SimplePointSymbol;
 SuperMap.Symbol.ImagePoint = ImagePointSymbol;
-SuperMap.Symbol.Line = LineSymbol;
 SuperMap.Symbol.SimpleLine = SimpleLineSymbol;
 SuperMap.Symbol.ImageLine = ImageLineSymbol;
-SuperMap.Symbol.Polygon = PolygonSymbol;
 SuperMap.Symbol.ImagePolygon = ImagePolygonSymbol;
 SuperMap.Symbol.Text = TextSymbol;
 // Components

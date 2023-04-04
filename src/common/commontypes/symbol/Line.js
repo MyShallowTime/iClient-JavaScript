@@ -8,14 +8,11 @@ import { LINE_DEFAULT_VALUE } from './DefaultValue';
 /**
  * @class LineSymbol
  * @aliasclass Symbol.Line
- * @classdesc 线符号类。
- * @category BaseTypes Symbol
+ * @classdesc 线符号抽象类。
+ * @category Symbol Line
  * @param {object} [options] - 参数。 
  * @param {number} [options.width = 1] - 线宽度。
  * @param {number} [options.opacity = 1] - 符号透明度。
- * @example
- * const symbol = new LineSymbol();
- * @usage
  */
 export class Line extends Symbol {
 
