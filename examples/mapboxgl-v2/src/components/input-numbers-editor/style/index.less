@@ -1,0 +1,20 @@
+.input-numbers-component {
+    width: 160px;
+    display: flex;
+    justify-content: flex-start;
+
+    .input-numbers-item {
+        width: 78px;
+        &:nth-child(odd) {
+            margin-right: 4px;
+        }
+        .input-number-content.fv-input-number-content {
+            height: 28px;
+            width: 100%;
+            margin-bottom: 4px;
+        }
+        .input-numbers-item-subfix {
+            color: rgba(0, 0, 0, 0.65);
+        }
+    }
+}

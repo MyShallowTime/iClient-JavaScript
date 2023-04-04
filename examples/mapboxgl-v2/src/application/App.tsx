@@ -7,6 +7,7 @@ import { getMapboxKey, isPaintKey } from '../utils/StyleSettingUtil';
 const App = () => {
     const [map, setMap] = useState<any>();
     const [layersInfo, setLayersInfo] = useState<any[]>([]);
+    const url = 'http://172.16.14.12:8090/iserver/services/map-china400/rest/maps/China';
     enum SymbolType {
         Polygon = 'Polygon',
         Line = 'Line',
@@ -41,7 +42,7 @@ const App = () => {
     };
 
     const addMVTLayer = (layerId: string, sourceLayer: string, type: string, symbol: string, layersInfo): void => {
-        layersInfo.push({ id: layerId, type });
+        layersInfo.push({ id: layerId, type, sourceLayer, url });
         map.addLayer({
             "id": layerId,
             "type": "symbol",
@@ -53,14 +54,14 @@ const App = () => {
 
     const addStyle = async (): Promise<void> => {
         map.addSource("ChinaSource", {
-            "tiles": ["http://172.16.14.12:8090/iserver/services/map-china400/rest/maps/China/tileFeature.mvt?returnAttributes=true&width=512&height=512&z={z}&x={x}&y={y}"],
+            "tiles": [url + "/tileFeature.mvt?returnAttributes=true&width=512&height=512&z={z}&x={x}&y={y}"],
             "bounds": [-180, -90, 180, 90],
             "type": "vector"
         });
 
         const newLayersInfo = [];
 
-        const riverSymbol = await loadPreSymbol({
+        const riverPolygonSymbol = await loadPreSymbol({
             type: SymbolType.Polygon,
             symbolId: 'polygon-23010124'
         });
@@ -72,9 +73,15 @@ const App = () => {
             type: SymbolType.Point,
             symbolId: 'point-83030559'
         });
-        const citySymbol = await loadPreSymbol({
+        const citySymbol = loadCustomSymbol({
             type: SymbolType.Point,
-            symbolId: 'point-285'
+            size: 8,
+            color: '#fff',
+            opacity: 1,
+            strokeColor: "rgba(208,2,27,1)",
+            strokeWidth: 2,
+            stroleOpacity: 0.8,
+            blur: 0.8
         });
         const chinaSymbol = loadCustomSymbol({
             type: SymbolType.Polygon,
@@ -93,7 +100,7 @@ const App = () => {
             size: 20,
             color: '#F5A623',
             opacity: 1,
-            font: ['Microsoft YaHei Bold']
+            fontFamily: ['Microsoft YaHei Bold']
         });
         const cityTextSymbol = loadCustomSymbol({
             type: SymbolType.Text,
@@ -101,19 +108,18 @@ const App = () => {
             size: 12,
             color: '#000',
             opacity: 0.8,
-            font: ['Microsoft YaHei Bold'],
-            translate: [2.6, 1],
+            translate: [28, 10],
             allowOverlap: true
         });
 
         addMVTLayer('chinaPolygon', 'China_Province_pg@China', 'polygon', chinaSymbol, newLayersInfo);
-        addMVTLayer('riverpolygon', 'Main_River_pg@China', 'polygon', riverSymbol, newLayersInfo);
+        addMVTLayer('riverpolygon', 'Main_River_pg@China', 'polygon', riverPolygonSymbol, newLayersInfo);
         addMVTLayer('RiverLine', 'Main_River_ln@China', 'line', riverLineSymbol, newLayersInfo);
         addMVTLayer('provinceLine', 'China_Province_ln@China', 'line', provinceLineSymbol, newLayersInfo);
         addMVTLayer('capital', 'China_Capital_pt@China', 'point', capitalSymbol, newLayersInfo);
-        addMVTLayer('city', 'China_ProCenCity_pt@China', 'point', citySymbol, newLayersInfo);
+        addMVTLayer('city', 'China_ProCenCity_pt@China', 'circle', citySymbol, newLayersInfo);
         addMVTLayer('nationText', 'China_Nation_B_pt@China', 'text', nationTextSymbol, newLayersInfo);
-        // addMVTLayer('cityText', 'China_ProCenCity_pt@China', 'text', cityTextSymbol, newLayersInfo);
+        addMVTLayer('cityText', 'China_ProCenCity_pt@China', 'text', cityTextSymbol, newLayersInfo);
         setLayersInfo(newLayersInfo.reverse());
     };
 
@@ -145,7 +151,7 @@ const App = () => {
         const type = getLayerType(compositeLayerId ?? layerId);
         const layer = getLayer(layerId);
         const mapboxKey = type && getMapboxKey[type](key);
-        return isPaintKey(mapboxKey) ? layer?.paint?.[mapboxKey] : layer?.layout?.[mapboxKey]
+        return isPaintKey(mapboxKey) ? layer?.paint?.[mapboxKey] : layer?.layout?.[mapboxKey];
     };
 
     const changeLayerStyle = (layerId: string, key: string, value: string): void => {
@@ -168,7 +174,7 @@ const App = () => {
                 map.setLayoutProperty(layerId, mapboxKey, value);
             });
             return;
-        };
+        }
         isPaintKey(mapboxKey) ? map.setPaintProperty(layerId, mapboxKey, value) : map.setLayoutProperty(layerId, mapboxKey, value);
     };
 

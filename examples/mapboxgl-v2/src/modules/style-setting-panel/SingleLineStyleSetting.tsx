@@ -2,33 +2,42 @@ import React, { useEffect, useState } from 'react';
 import EditorLayout from '../../components/editor-layout';
 import ColorEditor from '../../components/color-editor';
 import NumberEditor from '../../components/number-editor';
+import SelectEditor from '../../components/select-editor';
+import InputNumbersEditor from '../../components/input-numbers-editor';
 
 interface SingleLineStyleContentProps {
     layerId: string;
     symbolId: string;
+    wholeWidth: number;
     changeLayerStyle: (layerId: string, key: string, value: any) => void;
     getLayerPropertyStyle: (id: string, key: string) => any;
+    updateWholeWidth: () => void;
 }
 
 const SingleLineStyleSetting = (props: SingleLineStyleContentProps) => {
-    const { changeLayerStyle, layerId, getLayerPropertyStyle, symbolId } = props;
+    const { layerId, symbolId, wholeWidth, changeLayerStyle, getLayerPropertyStyle, updateWholeWidth } = props;
 
     const defaultStyle = {
         width: 1,
         offset: 0,
-        color: '#000'
+        color: '#000',
+        opacity: 1,
+        blur: 0,
+        join: 'miter',
+        cap: 'butt',
+        translate: [0, 0]
     };
 
     const [style, setStyle] = useState(defaultStyle);
 
     const changeStyle = (key, value): void => {
+        changeLayerStyle(layerId, key, value);
         setStyle({ ...style, [key]: value });
     };
 
     const onColorChange = (color: any) => {
         const { r, g, b, a } = color.rgb;
         const rgba = `rgba(${r},${g},${b},${a})`;
-        changeLayerStyle(layerId, 'color', rgba);
         changeStyle('color', rgba);
     };
 
@@ -36,11 +45,20 @@ const SingleLineStyleSetting = (props: SingleLineStyleContentProps) => {
         setStyle({
             width: getLayerPropertyStyle(layerId, 'width'),
             color: getLayerPropertyStyle(layerId, 'color'),
-            offset: getLayerPropertyStyle(layerId, 'offset') ?? 0
+            offset: getLayerPropertyStyle(layerId, 'offset'),
+            opacity: getLayerPropertyStyle(layerId, 'opacity'),
+            blur: getLayerPropertyStyle(layerId, 'blur'),
+            join: getLayerPropertyStyle(layerId, 'join'),
+            cap: getLayerPropertyStyle(layerId, 'cap'),
+            translate: getLayerPropertyStyle(layerId, 'translate')
         });
-    }, [layerId, symbolId]);
+    }, [layerId, symbolId, wholeWidth]);
 
-    const { width, color, offset } = style;
+    const { width, color, offset, opacity, blur, join, cap, translate } = style;
+
+    useEffect(() => {
+        updateWholeWidth();
+    }, [width, offset]);
 
     return (
         <>
@@ -50,16 +68,31 @@ const SingleLineStyleSetting = (props: SingleLineStyleContentProps) => {
                 </EditorLayout>
             </div>
             <div className='style-setting-item'>
+                <EditorLayout title='透明度'>
+                    <NumberEditor
+                        value={opacity}
+                        onChange={(v: any) => {
+                            changeStyle('opacity', v);
+                        }}
+                        min={0}
+                        max={1}
+                        precision={1}
+                        step={0.1}
+                    />
+                </EditorLayout>
+            </div>
+            <div className='style-setting-item'>
                 <EditorLayout title='线宽'>
                     <NumberEditor
                         value={width}
                         onChange={(v: any) => {
-                            changeLayerStyle(layerId, 'width', v);
                             changeStyle('width', v);
                         }}
-                        min={0}
+                        min={0.01}
                         max={100}
-                        suffix={'PX'} />
+                        suffix={'PX'}
+                        precision={2}
+                    />
                 </EditorLayout>
             </div>
             <div className='style-setting-item'>
@@ -67,12 +100,65 @@ const SingleLineStyleSetting = (props: SingleLineStyleContentProps) => {
                     <NumberEditor
                         value={offset}
                         onChange={(v: any) => {
-                            changeLayerStyle(layerId, 'offset', v);
                             changeStyle('offset', v);
                         }}
                         min={-100}
                         max={100}
-                        suffix={'PX'} />
+                        suffix={'PX'}
+                        precision={2}
+                    />
+                </EditorLayout>
+            </div>
+            <div className='style-setting-item'>
+                <EditorLayout title='模糊度'>
+                    <NumberEditor
+                        value={blur}
+                        onChange={(v: any) => {
+                            changeStyle('blur', v);
+                        }}
+                        min={0}
+                        max={100}
+                        precision={2}
+                    />
+                </EditorLayout>
+            </div>
+            <div className='style-setting-item'>
+                <EditorLayout title='线段连接方式'>
+                    <SelectEditor options={[
+                        { label: 'bevel', value: 'bevel' },
+                        { label: 'round', value: 'round' },
+                        { label: 'miter', value: 'miter' }
+                    ]} value={join} onChange={(v) => {
+                        changeStyle('join', v)
+                    }} />
+                </EditorLayout>
+            </div>
+            <div className='style-setting-item'>
+                <EditorLayout title='线段端点样式'>
+                    <SelectEditor options={[
+                        { label: 'butt', value: 'butt' },
+                        { label: 'round', value: 'round' },
+                        { label: 'square', value: 'square' }
+                    ]} value={cap} onChange={(v) => {
+                        changeStyle('cap', v)
+                    }} />
+                </EditorLayout>
+            </div>
+            <div className='style-setting-item'>
+                <EditorLayout title='相对偏移值'>
+                    <InputNumbersEditor
+                        className='input-number-content'
+                        min={-100}
+                        max={100}
+                        size={'middle'}
+                        values={translate}
+                        onChange={(values: any) => {
+                            changeStyle('translate', values);
+                        }}
+                        suffix={'PX'}
+                        subfix={['X', 'Y']}
+                        precision={2}
+                    />
                 </EditorLayout>
             </div>
         </>

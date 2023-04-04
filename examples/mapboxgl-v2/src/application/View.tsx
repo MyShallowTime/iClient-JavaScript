@@ -6,6 +6,7 @@ import TextSetting from '../modules/text-setting/TextSetting';
 import PolygonSetting from '../modules/polygon-setting/PolygonSetting';
 import Map, { MapProps } from './Map';
 import './ComponentsStyle';
+import CircleSetting from '../modules/circle-setting/CircleSetting';
 
 type PanelLayoutProps = {
     mapParams: MapProps,
@@ -26,22 +27,26 @@ const View = (props: PanelLayoutProps) => {
     const { changeLayerStyle, getLayerPropertyStyle, getCompositeLayersIds, getImageInfo } = props.styleSettingParams;
     const [layerId, setLayerId] = useState('');
     const type = layersInfo?.find(el => el?.id === layerId)?.type;
+    const sourceLayer = layersInfo?.find(el => el?.id === layerId)?.sourceLayer;
+    const url = layersInfo?.find(el => el?.id === layerId)?.url;
     const [isSettingOpen, setIsSettingOpen] = useState(false);
     const [symbolId, setSymbolId] = useState('');
 
     const onClosePanal = () => {
         setIsSettingOpen(false);
-    }
+    };
 
-    const onClickCard = async (symbolId) => {
-        await onIconClick(symbolId, layerId);
-        setSymbolId(symbolId);
+    const onClickCard = async (id) => {
+        if (id === symbolId) return;
+        await onIconClick(id, layerId);
+        setSymbolId(id);
     };
     const settingRender = {
         line: <LineSetting key={layerId} layerId={layerId} symbolId={symbolId} onIconClick={onClickCard} getLayerPropertyStyle={getLayerPropertyStyle} changeLayerStyle={changeLayerStyle} getCompositeLayersIds={getCompositeLayersIds} onClosePanal={onClosePanal} />,
         point: <PointSetting key={layerId} layerId={layerId} symbolId={symbolId} onIconClick={onClickCard} getLayerPropertyStyle={getLayerPropertyStyle} changeLayerStyle={changeLayerStyle} onClosePanal={onClosePanal} getImageInfo={getImageInfo} />,
         polygon: <PolygonSetting key={layerId} layerId={layerId} symbolId={symbolId} onIconClick={onClickCard} getLayerPropertyStyle={getLayerPropertyStyle} changeLayerStyle={changeLayerStyle} onClosePanal={onClosePanal} />,
-        text: <TextSetting key={layerId} layerId={layerId} getLayerPropertyStyle={getLayerPropertyStyle} changeLayerStyle={changeLayerStyle} onClosePanal={onClosePanal} />
+        text: <TextSetting key={layerId} layerId={layerId} getLayerPropertyStyle={getLayerPropertyStyle} changeLayerStyle={changeLayerStyle} onClosePanal={onClosePanal} sourceLayer={sourceLayer} url={url} />,
+        circle: <CircleSetting key={layerId} layerId={layerId} getLayerPropertyStyle={getLayerPropertyStyle} changeLayerStyle={changeLayerStyle} onClosePanal={onClosePanal} />
     };
 
     return <>

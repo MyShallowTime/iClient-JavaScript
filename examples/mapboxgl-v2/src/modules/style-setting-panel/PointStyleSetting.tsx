@@ -4,7 +4,7 @@ import ColorEditor from '../../components/color-editor';
 import NumberEditor from '../../components/number-editor';
 import EditorLayout from '../../components/editor-layout';
 import './style';
-import { MathUtil } from '../../utils/MathUtil';
+import InputNumbersEditor from '../../components/input-numbers-editor';
 
 interface PointStyleSettingProps {
     layerId: string;
@@ -20,30 +20,34 @@ const PointStyleSetting = (props: PointStyleSettingProps) => {
     const defaultStyle = {
         size: 1,
         color: '#fff',
-        rotate: 0
+        rotate: 0,
+        opacity: 1,
+        translate: [0, 0]
     };
     const [style, setStyle] = useState(defaultStyle);
 
     useEffect(() => {
         setStyle({
             ...style,
-            size: getLayerPropertyStyle(layerId, 'size') ?? 1,
+            size: getLayerPropertyStyle(layerId, 'size'),
             color: getLayerPropertyStyle(layerId, 'color'),
-            rotate: getLayerPropertyStyle(layerId, 'rotate') ?? 0
+            rotate: getLayerPropertyStyle(layerId, 'rotate'),
+            opacity: getLayerPropertyStyle(layerId, 'opacity'),
+            translate: getLayerPropertyStyle(layerId, 'translate')
         });
     }, [symbolId]);
 
-    const { size, color, rotate } = style
+    const { size, color, translate, rotate, opacity } = style
     const isDataDrivenRotation = isArray(rotate) && isArray(rotate[1]);
 
     const changeStyle = (key, value): void => {
+        changeLayerStyle(layerId, key, value);
         setStyle({ ...style, [key]: value })
     };
 
     const onColorChange = (color: any) => {
         const { r, g, b, a } = color.rgb;
         const rgba = `rgba(${r},${g},${b},${a})`;
-        changeLayerStyle(layerId, 'color', rgba);
         changeStyle('color', rgba);
     };
 
@@ -60,14 +64,46 @@ const PointStyleSetting = (props: PointStyleSettingProps) => {
             <div className='style-setting-item'>
                 <EditorLayout title='大小'>
                     <NumberEditor
-                        value={MathUtil.accMul(size, width)}
+                        value={size * width}
                         onChange={(v: any) => {
-                            changeLayerStyle(layerId, 'size', v / width);
                             changeStyle('size', v / width);
                         }}
                         min={0}
                         max={100}
-                        suffix={'PX'} />
+                        suffix={'PX'}
+                        precision={2}
+                    />
+                </EditorLayout>
+            </div>
+            <div className='style-setting-item'>
+                <EditorLayout title='透明度'>
+                    <NumberEditor
+                        value={opacity}
+                        onChange={(v: any) => {
+                            changeStyle('opacity', v);
+                        }}
+                        min={0}
+                        max={1}
+                        precision={1}
+                        step={0.1}
+                    />
+                </EditorLayout>
+            </div>
+            <div className='style-setting-item'>
+                <EditorLayout title='相对偏移值'>
+                    <InputNumbersEditor
+                        className='input-number-content'
+                        min={-100}
+                        max={100}
+                        size={'middle'}
+                        values={translate}
+                        onChange={(values: any) => {
+                            changeStyle('translate', values);
+                        }}
+                        suffix={'PX'}
+                        subfix={['X', 'Y']}
+                        precision={2}
+                    />
                 </EditorLayout>
             </div>
             <div className='style-setting-item'>
@@ -75,13 +111,13 @@ const PointStyleSetting = (props: PointStyleSettingProps) => {
                     <NumberEditor
                         value={isDataDrivenRotation ? rotate[1][1] : rotate}
                         onChange={(v: any) => {
-                            changeLayerStyle(layerId, 'rotate', v);
                             changeStyle('rotate', v);
                         }}
                         suffix={!isDataDrivenRotation && '°'}
                         disabled={isDataDrivenRotation}
                         min={0}
                         max={100}
+                        precision={2}
                     />
                 </EditorLayout>
             </div>
