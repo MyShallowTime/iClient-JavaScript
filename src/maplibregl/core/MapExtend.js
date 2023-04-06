@@ -27,6 +27,7 @@ export var MapExtend = (function () {
             console.warn(`Symbol "${id}" could not be loaded. Please make sure you have added the symbol with map.addSymbol().`);
             return;
             }          
+            this.symbolManager.setSymbolTolayer(layer.id, id);
             this.symbolLayerManager('mapbox', this).addLayer(layer, symbol);
             return this;
         }
@@ -40,7 +41,12 @@ export var MapExtend = (function () {
         console.warn(`Symbol "${id}" could not be loaded. Please make sure you have added the symbol with map.addSymbol().`);
         return;
         }
+        this.symbolManager.setSymbolTolayer(layerId, id);
         this.symbolLayerManager('mapbox', this).setSymbol(layerId, symbol);
+    };
+
+    maplibregl.Map.prototype.setSymbolProperty = function (layerId, name, value) {
+        this.symbolLayerManager('mapbox', this).setSymbolProperty(layerId, name, value);
     };
 
     if(!(maplibregl.Map.prototype).setStyleBak) {

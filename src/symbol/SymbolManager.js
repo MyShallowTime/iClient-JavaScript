@@ -1,10 +1,12 @@
 class SymbolManager {
-    symbols;
+    symbols;// addSymbol接口添加的symbol信息
     images; // 在loadImage的时候存下image
+    #layerSymbols; // 图层与symbol的映射关系
 
     constructor() {
         this.symbols = {};
         this.images = {};
+        this.#layerSymbols = {};
     }
 
     addSymbol(id, symbol) {
@@ -25,6 +27,18 @@ class SymbolManager {
 
     getImageInfo(id) {
         return this.images[id];
+    }
+
+    getImageInfoByLayerId(layerId) {
+        return this.getImageInfo(this.getSymbolByLayerId(layerId)?.image);
+    }
+
+    setSymbolTolayer(layerId, symbolId) {
+        this.#layerSymbols[layerId] = symbolId;
+    }
+
+    getSymbolByLayerId(layerId) {
+        return this.getSymbol(this.#layerSymbols[layerId]);
     }
 }
 

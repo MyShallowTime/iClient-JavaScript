@@ -3,6 +3,7 @@ import View from './View';
 import './style';
 import { cloneDeep, uniqueId } from 'lodash';
 import { getMapboxKey, isPaintKey } from '../utils/StyleSettingUtil';
+import '../../../../src/maplibregl/core/MapExtend';
 
 const App = () => {
     const [map, setMap] = useState<any>();
@@ -158,7 +159,6 @@ const App = () => {
         const compositeLayerId = map.compositeLayersManager.getCompositeLayerId(layerId);
         const type = getLayerType(compositeLayerId ?? layerId);
         const layer = getLayer(layerId);
-        const mapboxKey = type && getMapboxKey?.[type](key);
 
         if (type === 'point' && key === 'color') {
             const ImageId: string = layer?.layout?.['icon-image'];
@@ -166,16 +166,16 @@ const App = () => {
                 const sdfImageId = uniqueId('sdf_');
                 const image = map.symbolManager.getImageInfo(ImageId);
                 map.addImage(sdfImageId, image, { sdf: true });
-                map.setLayoutProperty(layerId, 'icon-image', sdfImageId);
+                map.setSymbolProperty(layerId, 'image', sdfImageId);
             }
         } else if (type === 'line' && key === 'visibility') {
             const layerIds = map.compositeLayersManager.getLayers(layerId) ?? [layerId];
             layerIds.forEach((layerId) => {
-                map.setLayoutProperty(layerId, mapboxKey, value);
+                map.setSymbolProperty(layerId, key, value);
             });
             return;
         }
-        isPaintKey(mapboxKey) ? map.setPaintProperty(layerId, mapboxKey, value) : map.setLayoutProperty(layerId, mapboxKey, value);
+        map.setSymbolProperty(layerId, key, value);
     };
 
     const getCompositeLayersIds = (layerId: string): string[] => {

@@ -108,10 +108,10 @@ export const WATER_POLYGON_DEFAULT_VALUE = {
 
 export const POLYGON_3D_DEFAULT_VALUE = {
     height: 0,
-    raisingHeight: 0,
     topsurface: true,
     sidesurface: true,
-    heightfixed: false
+    raisingHeight: COMMON_DEFAULT_VALUE.raisingHeight,
+    heightfixed: COMMON_DEFAULT_VALUE.heightfixed
 }
 
 export const TEXT_DEFAULT_VALUE = {

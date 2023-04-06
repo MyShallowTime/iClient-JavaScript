@@ -191,3 +191,238 @@ export function textSymbolToPaintLayout(symbolInfo) {
         }
     }
 }
+const circleProperty = {
+    color: {
+        type: 'paint',
+        name: 'circle-color'
+    },
+    opacity: {
+        type: 'paint',
+        name: 'circle-opacity'
+    },
+    radius: {
+        type: 'paint',
+        name: 'circle-radius'
+    },
+    strokeColor: {
+        type: 'paint',
+        name: 'circle-stroke-color'
+    },
+    strokeWidth: {
+        type: 'paint',
+        name: 'circle-stroke-width'
+    },
+    strokeOpacity: {
+        type: 'paint',
+        name: 'circle-stroke-opacity'
+    },
+    translate: {
+        type: 'paint',
+        name: 'circle-translate'
+    },
+    blur: {
+        type: 'paint',
+        name: 'circle-blur'
+    },
+    visibility: {
+        type: 'layout',
+        name: 'visibility'
+    }
+};
+export function getCircleProperty(key, value) {
+    if(circleProperty[key]) {
+        const {type, name} = circleProperty[key];
+        return {
+            type,
+            name,
+            value
+        }
+    }
+}
+const symbolProperty = {
+    color: {
+        type: 'paint',
+        name: 'icon-color'
+    },
+    opacity: {
+        type: 'paint',
+        name: 'icon-opacity'
+    },
+    translate: {
+        type: 'paint',
+        name: 'icon-translate'
+    },
+    size: {
+        type: 'layout',
+        name: 'icon-size',
+        transform: (v, imageWidth) => {
+            return v / (imageWidth ?? 1);
+        }
+    },
+    image: {
+        type: 'layout',
+        name: 'icon-image'
+    },
+    rotate: {
+        type: 'layout',
+        name: 'icon-rotate'
+    },
+    visibility: {
+        type: 'layout',
+        name: 'visibility'
+    }
+};
+export function getSymbolProperty(key, value, imageWidth) {
+    if(symbolProperty[key]) {
+        const {type, name, transform} = symbolProperty[key];
+        return {
+            type,
+            name,
+            value: transform?.(value, imageWidth) ?? value //此处有些别扭，如果是其他key有转换， 并且参数不是imagewidth呢？
+        }
+    }
+}
+const lineProperty = {
+    color: {
+        type: 'paint',
+        name: 'line-color'
+    },
+    opacity: {
+        type: 'paint',
+        name: 'line-opacity'
+    },
+    width: {
+        type: 'paint',
+        name: 'line-width'
+    },
+    offset: {
+        type: 'paint',
+        name: 'line-offset'
+    },
+    blur: {
+        type: 'paint',
+        name: 'line-blur'
+    },
+    dasharray: {
+        type: 'paint',
+        name: 'line-dasharray'
+    },
+    translate: {
+        type: 'paint',
+        name: 'line-translate'
+    },
+    image: {
+        type: 'paint',
+        name: 'line-pattern'
+    },
+    cap: {
+        type: 'layout',
+        name: 'line-cap'
+    },
+    join: {
+        type: 'layout',
+        name: 'line-join'
+    },
+    visibility: {
+        type: 'layout',
+        name: 'visibility'
+    }
+};
+export function getLineProperty(key, value) {
+    if(lineProperty[key]) {
+        const {type, name} = lineProperty[key];
+        return {
+            type,
+            name,
+            value
+        }
+    }
+}
+const fillProperty = {
+    color: {
+        type: 'paint',
+        name: 'fill-color'
+    },
+    opacity: {
+        type: 'paint',
+        name: 'fill-opacity'
+    },
+    image: {
+        type: 'paint',
+        name: 'fill-pattern'
+    },
+    visibility: {
+        type: 'layout',
+        name: 'visibility'
+    }
+};
+export function getFillProperty(key, value) {
+    if(fillProperty[key]) {
+        const {type, name} = fillProperty[key];
+        return {
+            type,
+            name,
+            value
+        }
+    }
+}
+const textProperty = {
+    color: {
+        type: 'paint',
+        name: 'text-color'
+    },
+    opacity: {
+        type: 'paint',
+        name: 'text-opacity'
+    },
+    translate: {
+        type: 'paint',
+        name: 'text-translate'
+    },
+    haloWidth: {
+        type: 'paint',
+        name: 'text-halo-width'
+    },
+    size: {
+        type: 'layout',
+        name: 'text-size'
+    },
+    field: {
+        type: 'layout',
+        name: 'text-field'
+    },
+    fontFamily: {
+        type: 'layout',
+        name: 'text-font'
+    },
+    anchor: {
+        type: 'layout',
+        name: 'text-anchor'
+    },
+    allowOverlap: {
+        type: 'layout',
+        name: 'text-allow-overlap'
+    },
+    padding: {
+        type: 'layout',
+        name: 'text-padding'
+    },
+    spacing: {
+        type: 'layout',
+        name: 'text-letter-spacing'
+    },
+    visibility: {
+        type: 'layout',
+        name: 'visibility'
+    }
+};
+export function getTextProperty(key, value) {
+    if(textProperty[key]) {
+        const {type, name} = textProperty[key];
+        return {
+            type,
+            name,
+            value
+        }
+    }
+}

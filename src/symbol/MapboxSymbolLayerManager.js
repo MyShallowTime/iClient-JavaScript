@@ -1,5 +1,5 @@
 import { Util } from "@supermap/iclient-common/commontypes/Util";
-import { lineSymbolToPaintLayout, polygonSymbolToPaintLayout, textSymbolToPaintLayout, transformSymbol2LayerInfo } from "./SymbolTransformUtil";
+import { lineSymbolToPaintLayout, getCircleProperty, getSymbolProperty, polygonSymbolToPaintLayout, textSymbolToPaintLayout, transformSymbol2LayerInfo, getLineProperty, getFillProperty, getTextProperty } from "./SymbolTransformUtil";
 
 /**
  * 符号图层管理器
@@ -101,6 +101,35 @@ const MapboxSymbolLayerManager = (m) => {
                 return;
             }
             this.setSimpleSymbol(layerId, symbol);
+        },
+
+        /**
+         * 更新图层上的symbol属性
+         * @param layerId 
+         * @param symbol 
+         * @returns {undefined}
+         */
+        setSymbolProperty(layerId, name, value) {
+            const imageInfo = map.symbolManager.getImageInfoByLayerId(layerId);
+            const symbolInfo = map.symbolManager.getSymbolByLayerId(layerId);
+            const layer = map.getLayer(layerId);
+            const transRules = {
+                circle: getCircleProperty,
+                symbol: getSymbolProperty,
+                line: getLineProperty,
+                fill: getFillProperty,
+                text: getTextProperty
+            };
+            const key = symbolInfo?.type === 'Text' ? 'text' : layer?.type;
+            const result = transRules[key]?.(name, value, imageInfo?.width);
+            if(result) {
+                const {type, name, value} = result;
+                const rule = {
+                    paint: 'setPaintProperty',
+                    layout: 'setLayoutProperty'
+                }
+                map[rule[type]](layerId, name, value);
+            }
         },
 
         /**
