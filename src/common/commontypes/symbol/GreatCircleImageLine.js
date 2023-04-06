@@ -9,7 +9,7 @@ import {LINE_DEFAULT_VALUE} from './DefaultValue';
  * @class GreatCircleImageLineSymbol
  * @aliasclass Symbol.GreatCircleImageLine
  * @classdesc 大圆航线图片符号类
- * @category BaseTypes Symbol
+ * @category Symbol Line
  * @extends {ImageLineSymbol}
  * @param {object} [options] - 参数。
  * @param {number} [options.segmentNumber=30] - 弧线分段，分段越多越平滑，消耗越大。

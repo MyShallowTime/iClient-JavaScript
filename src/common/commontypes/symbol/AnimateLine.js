@@ -8,7 +8,7 @@ import {Line} from './Line';
  * @class AnimateLineSymbol
  * @aliasclass Symbol.AnimateLine
  * @classdesc 动画线符号类
- * @category BaseTypes Symbol
+ * @category Symbol Line
  * @extends {LineSymbol}
  * @param {object} options - 参数。
  * @param {number} [options.interval] - 轨迹间隔, 取值区间 0 - 1。

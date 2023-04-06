@@ -9,7 +9,7 @@ import {Line3D} from './Line3D';
  * @class WallLineSymbol3D
  * @aliasclass Symbol.WallLine3D
  * @classdesc 3D墙符号类
- * @category BaseTypes Symbol
+ * @category Symbol Line
  * @extends {LineSymbol3D}
  * @param {object} [options] - 参数。
  * @param {Linear | Solid | Dash} [options.pattern] - 线型模式。

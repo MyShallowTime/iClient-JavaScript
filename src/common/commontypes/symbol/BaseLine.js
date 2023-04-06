@@ -29,7 +29,7 @@ import {Line} from './Line';
  * @class BaseLineSymbol
  * @aliasclass Symbol.BaseLine
  * @classdesc 基础线符号类
- * @category BaseTypes Symbol
+ * @category Symbol Line
  * @extends {LineSymbol}
  * @param {object} options - 可选参数。
  * @param {Linear | Solid | Dash} [options.pattern] - 线型模式。

@@ -9,7 +9,7 @@ import { WAVE_ANIMATE_POINT_DEFAULT_VALUE } from './DefaultValue';
  * @class WaveAnimatePointSymbol
  * @aliasclass Symbol.WaveAnimatePoint
  * @classdesc 水波动画点符号类。
- * @category BaseTypes Symbol
+ * @category Symbol Point
  * @extends {AnimatePointSymbol}
  * @param {object} [options] - 参数。 
  * @param {number} [options.size = 1] - 大小。

@@ -9,7 +9,7 @@ import {LINE_DEFAULT_VALUE} from './DefaultValue';
  * @class ArcAnimateLineSymbol3D
  * @aliasclass Symbol.ArcAnimateLine3D
  * @classdesc 动画3D弧线符号类
- * @category BaseTypes Symbol
+ * @category Symbol Line
  * @extends {AnimateLineSymbol3D}
  * @param {object} [options] - 参数。
  * @param {number} [options.segmentNumber=30] - 弧线分段，分段越多越平滑，消耗越大。

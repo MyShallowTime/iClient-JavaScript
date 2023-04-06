@@ -8,7 +8,7 @@ import { AnimatePoint } from './AnimatePointSymbol';
  * @class RadarAnimatePointSymbol
  * @aliasclass Symbol.RadarAnimatePoint
  * @classdesc 雷达动画点符号类。
- * @category BaseTypes Symbol
+ * @category Symbol Point
  * @extends {AnimatePointSymbol}
  * @param {object} [options] - 参数。 
  * @param {number} [options.size = 1] - 大小。

@@ -8,7 +8,7 @@ import {Line} from './Line';
  * @class LineSymbol3D
  * @aliasclass Symbol.Line3D
  * @classdesc 3D线符号类
- * @category BaseTypes Symbol
+ * @category Symbol Line
  * @extends {LineSymbol}
  * @param {object} options - 可选参数。
  * @example

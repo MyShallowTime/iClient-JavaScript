@@ -9,7 +9,7 @@ import {Line3D} from './Line3D';
  * @class ArcLineSymbol3D
  * @aliasclass Symbol.ArcLine3D
  * @classdesc 3D弧线符号类
- * @category BaseTypes Symbol
+ * @category Symbol Line
  * @extends {LineSymbol3D}
  * @param {object} [options] - 参数。
  * @param {Linear | Solid | Dash} [options.pattern] - 线型模式。

@@ -9,7 +9,7 @@ import {ImageLine} from './ImageLine';
  * @class SimpleImageLineSymbol
  * @aliasclass Symbol.SimpleImageLine
  * @classdesc 简单线图片符号
- * @category BaseTypes Symbol
+ * @category Symbol Line
  * @extends {ImageLineSymbol}
  * @param {object} options - 参数。
  * @param {number} [options.blur] - 图形模糊分布。
