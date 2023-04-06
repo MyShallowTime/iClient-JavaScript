@@ -6315,7 +6315,7 @@ function getCirclePaintLayout(symbolInfo) {
             'circle-blur': symbolInfo.blur ?? SIMPLE_POINT_DEFAULT_VALUE.blur,
             'circle-color': symbolInfo.color ?? SIMPLE_POINT_DEFAULT_VALUE.color,
             'circle-opacity': symbolInfo.opacity ?? SIMPLE_POINT_DEFAULT_VALUE.opacity,
-            'circle-radius': symbolInfo.size ?? SIMPLE_POINT_DEFAULT_VALUE.size,
+            'circle-radius': symbolInfo.size / 2 ?? SIMPLE_POINT_DEFAULT_VALUE.size / 2,
             'circle-stroke-color': symbolInfo.strokeColor ?? SIMPLE_POINT_DEFAULT_VALUE.strokeColor,
             'circle-stroke-width': symbolInfo.strokeWidth ?? SIMPLE_POINT_DEFAULT_VALUE.strokeWidth,
             'circle-stroke-opacity': symbolInfo.strokeOpacity ?? SIMPLE_POINT_DEFAULT_VALUE.strokeOpacity,
@@ -6416,7 +6416,7 @@ function polygonSymbolToPaintLayout(symbolInfo) {
  * @returns {Object} 
  */
 function textSymbolToPaintLayout(symbolInfo) {
-    const {field, color, opacity, size, fontFamily, translate, haloWidth, anchor, allowOverlap, padding} = symbolInfo;
+    const { field, color, opacity, size, fontFamily, translate, haloWidth, anchor, allowOverlap, padding, spacing } = symbolInfo;
     return {
         type: 'symbol',
         paint: {
@@ -6435,11 +6435,11 @@ function textSymbolToPaintLayout(symbolInfo) {
             'text-font': fontFamily ?? TEXT_DEFAULT_VALUE.fontFamily,
             'text-anchor': anchor ?? TEXT_DEFAULT_VALUE.anchor,
             'text-allow-overlap': allowOverlap ?? TEXT_DEFAULT_VALUE.allowOverlap,
-            'text-padding': padding ?? TEXT_DEFAULT_VALUE.padding
+            'text-padding': padding ?? TEXT_DEFAULT_VALUE.padding,
+            'text-letter-spacing': spacing ?? TEXT_DEFAULT_VALUE.spacing
             // 符号库暂未支持的属性
             // 'text-ignore-placement': symbolInfo.textIgnorePlacement,
             // 'text-justify': symbolInfo.justify,
-            // 'text-letter-spacing': symbolInfo.textLetterSpacing,
             // 'text-line-height': symbolInfo.lineHeight,
             // 'text-max-width': symbolInfo.maxWidth,
             // 'text-rotate': symbolInfo.textRotate,

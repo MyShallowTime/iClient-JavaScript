@@ -483,5 +483,27 @@
         "name_en": "Constant"
       }
     }
+  },
+  "Symbol": {
+    "name": "Web 符号类",
+    "name_en": "Web Symbol",
+    "content": {
+      "Point": {
+        "name": "点符号",
+        "name_en": "PointSymbol"
+      },
+      "Line": {
+        "name": "线符号",
+        "name_en": "LineSymbol"
+      },
+      "Polygon": {
+        "name": "面符号",
+        "name_en": "PolygonSymbol"
+      },
+      "Text": {
+        "name": "文本符号",
+        "name_en": "TextSymbol"
+      }
+    }
   }
 }

@@ -18,5 +18,5 @@
             "maxzoom": 22
         }
     ],
-    "glyphs": "http://172.16.14.12:8090/iserver/services/map-china400/rest/maps/China/tileFeature/sdffonts/{fontstack}/{range}.pbf"
+    "glyphs": "https://iserver.supermap.io/iserver/services/map-china400/rest/maps/China/tileFeature/sdffonts/{fontstack}/{range}.pbf"
 }

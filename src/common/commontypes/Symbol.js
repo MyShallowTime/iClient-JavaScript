@@ -4,30 +4,12 @@
 
 /**
  * @class Symbol
- * @category BaseTypes Symbol
- * @classdesc Web 符号类，描述地理要素的图形属性。
- * @private
+ * @category Symbol
+ * @classdesc Web 符号抽象类，描述地理要素的图形属性。
+ * @usage
  */
 export class Symbol {
-
     constructor() {
         this.CLASS_NAME = "SuperMap.Symbol";
-    }
-
-    /**
-     * @function Symbol.prototype.clone
-     * @description 克隆符号。
-     * @returns {Symbol} 克隆的符号。
-     */
-    clone() {
-        return new Symbol();
-    }
-
-    /**
-     * @function Symbol.prototype.destroy
-     * @description 解构 Symbol 类，释放资源。
-     */
-    destroy() {
-        this.CLASS_NAME = null;
     }
 }

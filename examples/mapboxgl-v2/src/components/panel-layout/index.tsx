@@ -1,4 +1,4 @@
-import { Button } from '@ispeco/iptl-components-react';
+import { Button, ScrollPanel } from '@ispeco/iptl-components-react';
 import React from 'react';
 import './style';
 type PanelLayoutProps = {
@@ -22,7 +22,11 @@ const PanelLayout = (props: PanelLayoutProps) => {
                 onClick={onClickClose}
             />}
         </div>
-        <div className='style-setting-panel'>{children}</div>
+        <ScrollPanel style={{ height: 844 }}>
+            <div className='style-setting-panel'>
+                {children}
+            </div>
+        </ScrollPanel>
     </div>;
 }
 

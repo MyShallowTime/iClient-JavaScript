@@ -9,14 +9,18 @@ import { SIMPLE_POINT_DEFAULT_VALUE } from './DefaultValue';
  * @class SimplePointSymbol
  * @aliasclass Symbol.SimplePoint
  * @classdesc 简单点符号类。
- * @category BaseTypes Symbol
+ * @category Symbol Point
  * @extends {PointSymbol}
  * @param {object} [options] - 参数。 
- * @param {number} [options.strokeColor = "#FFF"] - 符号边框颜色。
- * @param {string} [options.strokeWidth = 0] - 符号边框宽度。
+ * @param { SimplePointShapeType } [options.shape = 'circle'] - 符号形状。
+ * @param {number} [options.size = 1] - 符号大小。
+ * @param {string} [options.strokeColor = "#FFF"] - 符号边框颜色。
+ * @param {number} [options.strokeWidth = 0] - 符号边框宽度。
  * @param {number} [options.strokeOpacity = 1] - 符号边框透明度。
- * @param {number} [options.translate = [0, 0]] - 符号偏移值。
+ * @param {Array<number>} [options.translate = [0, 0]] - 符号偏移值。
  * @param {number} [options.blur = 0] - 符号模糊半径。
+ * @param {number} [options.raisingHeight = 0] - 符号抬升高度。
+ * @param {boolean} [options.heightfixed = false] - 符号抬升高度是否随 zoom 变化。
  * @example
  * const symbol = new SimplePointSymbol();
  * @usage
@@ -25,7 +29,19 @@ export class SimplePoint extends Point {
 
     constructor(options) {
         super(options);
-        const { strokeColor, strokeWidth, strokeOpacity, translate, blur } = options ?? {};
+        const { shape, size, strokeColor, strokeWidth, strokeOpacity, translate, blur, raisingHeight, heightfixed } = options ?? {};
+        
+        /**
+         * @member {SimplePointShapeType} SimplePointSymbol.prototype.shape
+         * @description 符号形状，默认值："circle"。
+         */
+        this.shape = shape ?? SIMPLE_POINT_DEFAULT_VALUE.shape;
+
+        /**
+         * @member {number} SimplePointSymbol.prototype.size
+         * @description 点符号的大小，默认值：1。
+         */
+        this.size = size ?? SIMPLE_POINT_DEFAULT_VALUE.size;
 
         /**
          * @member {number} SimplePointSymbol.prototype.strokeColor
@@ -40,13 +56,13 @@ export class SimplePoint extends Point {
         this.strokeWidth = strokeWidth ?? SIMPLE_POINT_DEFAULT_VALUE.strokeWidth;
 
         /**
-         * @member {string} SimplePointSymbol.prototype.strokeOpacity
+         * @member {number} SimplePointSymbol.prototype.strokeOpacity
          * @description 符号边框透明度，默认值：1。
          */
         this.strokeOpacity = strokeOpacity ?? SIMPLE_POINT_DEFAULT_VALUE.strokeOpacity;
 
         /**
-         * @member {number} SimplePointSymbol.prototype.translate
+         * @member {Array<number>} SimplePointSymbol.prototype.translate
          * @description  符号偏移值，默认值：[0, 0]
          */
         this.translate = translate ?? SIMPLE_POINT_DEFAULT_VALUE.translate;
@@ -58,8 +74,20 @@ export class SimplePoint extends Point {
         this.blur = blur ?? SIMPLE_POINT_DEFAULT_VALUE.blur;
 
         /**
+         * @member {number} SimplePointSymbol.prototype.raisingHeight
+         * @description 符号抬升高度，默认值：0
+         */
+        this.raisingHeight = raisingHeight ?? SIMPLE_POINT_DEFAULT_VALUE.raisingHeight;
+
+        /**
+         * @member {boolean} SimplePointSymbol.prototype.heightfixed
+         * @description 符号抬升高度是否随 zoom 变化，默认值：false
+         */
+        this.heightfixed = heightfixed ?? SIMPLE_POINT_DEFAULT_VALUE.heightfixed;
+
+        /**
          * @member {string} SimplePointSymbol.prototype.type
-         * @description 符号类型。
+         * @description 符号类型 - "SimplePoint"。
          */
         this.type = "SimplePoint";
         this.CLASS_NAME = "SuperMap.Symbol.SimplePoint";
@@ -86,11 +114,15 @@ export class SimplePoint extends Point {
      * @description 释放符号的资源。
      */
     destroy() {
+        this.shape = null;
+        this.size = null;
         this.strokeColor = null;
         this.strokeWidth = null;
         this.strokeOpacity = null;
         this.translate = null;
         this.blur = null;
+        this.raisingHeight = null;
+        this.heightfixed = null;
         super.destroy();
     }
 }

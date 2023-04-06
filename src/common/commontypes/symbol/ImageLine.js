@@ -9,7 +9,7 @@ import {Line} from './Line';
  * @class ImageLineSymbol
  * @aliasclass Symbol.ImageLine
  * @classdesc 图片线符号
- * @category BaseTypes Symbol
+ * @category Symbol Line
  * @extends {LineSymbol}
  * @param {object} options - 参数。
  * @param {string} options.image - 线贴图。

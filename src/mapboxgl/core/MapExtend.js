@@ -3,9 +3,9 @@
  * which accompanies this distribution and is available at http://www.apache.org/licenses/LICENSE-2.0.html.*/
 import { Util } from '@supermap/iclient-common/commontypes/Util';
 import mapboxgl from 'mapbox-gl';
-import CompositeLayersManager from './symbol/CompositeLayersManager';
-import SymbolLayerManager from './symbol/SymbolLayerManager';
-import SymbolManager from './symbol/SymbolManager';
+import CompositeLayersManager from '../../symbol/CompositeLayersManager';
+import SymbolLayerManager from '../../symbol/SymbolLayerManager';
+import SymbolManager from '../../symbol/SymbolManager';
 
 /**
  * @function MapExtend

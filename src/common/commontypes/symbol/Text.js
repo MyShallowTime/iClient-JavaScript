@@ -9,7 +9,7 @@ import { TEXT_DEFAULT_VALUE } from './DefaultValue';
  * @class TextSymbol
  * @aliasclass Symbol.Text
  * @classdesc 文本符号类。
- * @category BaseTypes Symbol
+ * @category Symbol Text
  * @param {object} options - 可选参数。 
  * @param {number} options.field - 文本标签。
  * @param {number} [options.size = 16] - 文本大小。

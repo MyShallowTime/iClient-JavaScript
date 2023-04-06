@@ -43,7 +43,9 @@
     "build-docs-mapboxgl": "rimraf ./docs/mapboxgl && jsdoc -c ./build/jsdocs/mapboxgl/docs.json -R ./build/jsdocs/mapboxgl/index.md",
     "build-docs-classic": "rimraf ./docs/classic && jsdoc -c ./build/jsdocs/classic/docs.json -R ./build/jsdocs/classic/index.md",
     "pre-publish": "node ./build/publish.js --leaflet && node  ./build/publish.js --openlayers && node  ./build/publish.js --mapboxgl && node  ./build/publish.js --classic",
-    "publish": "npm run pre-publish && cd ./src/common && npm publish && cd ../leaflet && npm publish && cd ../openlayers && npm publish && cd ../mapboxgl && npm publish && cd ../classic && npm publish"
+    "publish": "npm run pre-publish && cd ./src/common && npm publish && cd ../leaflet && npm publish && cd ../openlayers && npm publish && cd ../mapboxgl && npm publish && cd ../classic && npm publish",
+    "release-maplibregl-es5": "cross-env moduleVersion=es5 npm run deploy-maplibregl ./src/maplibregl/namespace.js",
+    "deploy-maplibregl": "webpack --config ./build/webpack.config.maplibregl.js --color"
   },
   "keywords": [
     "SuperMap",
@@ -147,7 +149,8 @@
     "three": "0.129.0",
     "util": "^0.12.4",
     "xlsx": "0.18.5",
-    "xml-js": "1.6.11"
+    "xml-js": "1.6.11",
+    "axios": "^0.21.3"
   },
   "pre-commit": [
     "lint"

@@ -9,7 +9,7 @@ import {LINE_DEFAULT_VALUE} from './DefaultValue';
  * @class SimpleLineSymbol
  * @aliasclass Symbol.SimpleLine
  * @classdesc 基本线符号类
- * @category BaseTypes Symbol
+ * @category Symbol Line
  * @extends {BaseLineSymbol}
  * @param {object} [options] - 参数。
  * @param {number} [options.blur] - 线模糊度。
