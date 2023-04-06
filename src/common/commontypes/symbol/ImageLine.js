@@ -16,11 +16,6 @@ import {Line} from './Line';
  * @param {('normal' | 'replace')} [options.imageBlend='normal'] - 线贴图混合方式。
  * @param {number} [options.iconStep=100] - 贴图在线图层上面排布的间隔。
  * @param {string} [options.color='#000'] - 线颜色。
- * @example
- * const symbol = new ImageLineSymbol({
- *  image: "xx.png"
- * });
- * @usage
  */
 export class ImageLine extends Line {
 

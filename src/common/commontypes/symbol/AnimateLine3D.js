@@ -18,9 +18,6 @@ import {Line} from './Line';
  * @param {('normal' | 'replace')} [options.textureBlend='normal'] - 纹理混合方式
  * @param {number} [options.iconStep=100] - 纹理贴图在线图层上面排布的间隔
  * @param {string} [options.color] - 线颜色。
- * @example
- * const symbol = new AnimateLineSymbol3D();
- * @usage
  */
 export class AnimateLine3D extends Line {
 

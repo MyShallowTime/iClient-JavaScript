@@ -13,12 +13,6 @@ import { LINE_DEFAULT_VALUE } from './DefaultValue';
  * @param {object} [options] - 参数。 
  * @param {number} [options.width = 1] - 线宽度。
  * @param {number} [options.opacity = 1] - 符号透明度。
- * @example
- * const symbol = new LineSymbol({
- *    width: 2,
- *    opacity: 0.8
- * });
- * @usage
  */
 export class Line extends Symbol {
 

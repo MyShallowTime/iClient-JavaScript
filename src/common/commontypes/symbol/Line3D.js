@@ -11,9 +11,6 @@ import {Line} from './Line';
  * @category Symbol Line
  * @extends {LineSymbol}
  * @param {object} options - 可选参数。
- * @example
- * const symbol = new LineSymbol3D();
- * @usage
  */
 export class Line3D extends Line {
 

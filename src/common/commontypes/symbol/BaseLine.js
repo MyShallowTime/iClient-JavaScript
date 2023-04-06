@@ -33,9 +33,6 @@ import {Line} from './Line';
  * @extends {LineSymbol}
  * @param {object} options - 可选参数。
  * @param {Linear | Solid | Dash} [options.pattern] - 线型模式。
- * @example
- * const symbol = new BaseLineSymbol();
- * @usage
  */
 export class BaseLine extends Line {
 
