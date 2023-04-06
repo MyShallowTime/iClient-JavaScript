@@ -14,7 +14,10 @@ import { LINE_DEFAULT_VALUE } from './DefaultValue';
  * @param {number} [options.width = 1] - 线宽度。
  * @param {number} [options.opacity = 1] - 符号透明度。
  * @example
- * const symbol = new LineSymbol();
+ * const symbol = new LineSymbol({
+ *    width: 2,
+ *    opacity: 0.8
+ * });
  * @usage
  */
 export class Line extends Symbol {
@@ -31,13 +34,13 @@ export class Line extends Symbol {
 
         /**
          * @member {number} LineSymbol.prototype.opacity
-         * @description 点符号的透明度，默认值：1
+         * @description 线符号的透明度，默认值：1
          */
         this.opacity = opacity ?? LINE_DEFAULT_VALUE.opacity;
 
         /**
          * @member {string} LineSymbol.prototype.type
-         * @description 点符号的类型。
+         * @description 线符号的类型。
          */
         this.type = "Line";
         this.CLASS_NAME = "SuperMap.Symbol.Line";

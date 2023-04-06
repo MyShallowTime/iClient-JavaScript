@@ -437,9 +437,19 @@ import {
   ImagePointSymbol,
   LineSymbol,
   SimpleLineSymbol,
-  ImageLineSymbol,
+  ArcLineSymbol,
+  GreatCircleLineSymbol,
+  SimpleImageLineSymbol,
+  ArcImageLineSymbol,
+  GreatCircleImageLineSymbol,
+  SimpleAnimateLineSymbol,
+  GreatCircleAnimateLineSymbol,
+  ArcAnimateLineSymbol,
+  ArcAnimateLineSymbol3D,
+  WallAnimateLineSymbol3D,
   PolygonSymbol,
   ImagePolygonSymbol,
+  WallLineSymbol3D,
   TextSymbol
 } from './index.all';
 
@@ -507,7 +517,17 @@ SuperMap.Symbol.SimplePoint = SimplePointSymbol;
 SuperMap.Symbol.ImagePoint = ImagePointSymbol;
 SuperMap.Symbol.Line = LineSymbol;
 SuperMap.Symbol.SimpleLine = SimpleLineSymbol;
-SuperMap.Symbol.ImageLine = ImageLineSymbol;
+SuperMap.Symbol.ArcLine = ArcLineSymbol;
+SuperMap.Symbol.GreatCircleLine = GreatCircleLineSymbol;
+SuperMap.Symbol.SimpleImageLine = SimpleImageLineSymbol;
+SuperMap.Symbol.ArcImageLine = ArcImageLineSymbol;
+SuperMap.Symbol.GreatCircleImageLine = GreatCircleImageLineSymbol;
+SuperMap.Symbol.SimpleAnimateLine = SimpleAnimateLineSymbol;
+SuperMap.Symbol.GreatCircleAnimateLine = GreatCircleAnimateLineSymbol;
+SuperMap.Symbol.ArcAnimateLine3D = ArcAnimateLineSymbol;
+SuperMap.Symbol.ArcAnimateLine3D = ArcAnimateLineSymbol3D;
+SuperMap.Symbol.WallAnimateLine3D = WallAnimateLineSymbol3D;
+SuperMap.Symbol.WallLineSymbol3D = WallLineSymbol3D;
 SuperMap.Symbol.Polygon = PolygonSymbol;
 SuperMap.Symbol.ImagePolygon = ImagePolygonSymbol;
 SuperMap.Symbol.Text = TextSymbol;

@@ -105,7 +105,17 @@ import {
     ImagePolygonSymbol,
     LineSymbol,
     SimpleLineSymbol,
-    ImageLineSymbol,
+    ArcLineSymbol,
+    GreatCircleLineSymbol,
+    SimpleImageLineSymbol,
+    ArcImageLineSymbol,
+    GreatCircleImageLineSymbol,
+    SimpleAnimateLineSymbol,
+    GreatCircleAnimateLineSymbol,
+    ArcAnimateLineSymbol,
+    ArcAnimateLineSymbol3D,
+    WallAnimateLineSymbol3D,
+    WallLineSymbol3D,
     TextSymbol
 } from './commontypes';
 import { Format, GeoJSONFormat, JSONFormat, WKTFormat } from './format';
@@ -720,6 +730,16 @@ export {
     ImagePolygonSymbol,
     LineSymbol,
     SimpleLineSymbol,
-    ImageLineSymbol,
+    ArcLineSymbol,
+    GreatCircleLineSymbol,
+    SimpleImageLineSymbol,
+    ArcImageLineSymbol,
+    GreatCircleImageLineSymbol,
+    SimpleAnimateLineSymbol,
+    GreatCircleAnimateLineSymbol,
+    ArcAnimateLineSymbol,
+    ArcAnimateLineSymbol3D,
+    WallAnimateLineSymbol3D,
+    WallLineSymbol3D,
     TextSymbol
 };

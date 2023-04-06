@@ -5,7 +5,8 @@ const COMMON_DEFAULT_VALUE = {
     rotate: 0,
     translate: [0, 0],
     offset: 0,
-    blur: 0
+    blur: 0,
+    height: 0
 }
 
 export const POINT_DEFAULT_VALUE = {
@@ -39,7 +40,19 @@ export const LINE_DEFAULT_VALUE = {
     translate: COMMON_DEFAULT_VALUE.translate,
     dasharray: [1],
     cap: 'butt',
-    join: 'miter'
+    join: 'miter',
+    iconStep: 100,
+    textureBlend: 'normal',
+    heightFixed: false,
+    rasingHeight: COMMON_DEFAULT_VALUE.height,
+    borderColor: COMMON_DEFAULT_VALUE.color,
+    borderWidth: 0,
+    arrowWidth: 2,
+    arrowHeight: 3,
+    tailWidth: 1,
+    segmentNumber: 30,
+    thetaOffset: 0.314,
+    iconStepCount: 1
 }
 
 export const POLYGON_DEFAULT_VALUE = {
