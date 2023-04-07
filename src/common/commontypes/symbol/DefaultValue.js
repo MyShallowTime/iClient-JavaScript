@@ -1,3 +1,4 @@
+import { number } from "../../../../libs/echarts/echarts-en"
 
 const COMMON_DEFAULT_VALUE = {
     color: '#000',
@@ -137,7 +138,15 @@ export const TEXT_DEFAULT_VALUE = {
     anchor: 'center',
     spacing: 0,
     allowOverlap: false,
-    padding: 0
+    padding: 0,
+    strokeColor:'#fff',
+    strokeWidth:0,
+    fontPath:'',
+    heightfixed:COMMON_DEFAULT_VALUE.heightfixed,
+    raisingHeiht:COMMON_DEFAULT_VALUE.raisingHeight,
+    gamma:2,
+    fontWeight:400,
+    blur:COMMON_DEFAULT_VALUE.blur
 }
 
 /**
