@@ -25,7 +25,8 @@ const SingleLineStyleSetting = (props: SingleLineStyleContentProps) => {
         blur: 0,
         join: 'miter',
         cap: 'butt',
-        translate: [0, 0]
+        translate: [0, 0],
+        image: ''
     };
 
     const [style, setStyle] = useState(defaultStyle);
@@ -50,11 +51,12 @@ const SingleLineStyleSetting = (props: SingleLineStyleContentProps) => {
             blur: getLayerPropertyStyle(layerId, 'blur'),
             join: getLayerPropertyStyle(layerId, 'join'),
             cap: getLayerPropertyStyle(layerId, 'cap'),
-            translate: getLayerPropertyStyle(layerId, 'translate')
+            translate: getLayerPropertyStyle(layerId, 'translate'),
+            image: getLayerPropertyStyle(layerId, 'image')
         });
     }, [layerId, symbolId, wholeWidth]);
 
-    const { width, color, offset, opacity, blur, join, cap, translate } = style;
+    const { width, color, offset, opacity, blur, join, cap, translate, image } = style;
 
     useEffect(() => {
         updateWholeWidth();
@@ -63,9 +65,9 @@ const SingleLineStyleSetting = (props: SingleLineStyleContentProps) => {
     return (
         <>
             <div className='style-setting-item'>
-                <EditorLayout title='颜色'>
+                {!image && <EditorLayout title='颜色'>
                     <ColorEditor color={color} onColorChange={onColorChange} />
-                </EditorLayout>
+                </EditorLayout>}
             </div>
             <div className='style-setting-item'>
                 <EditorLayout title='透明度'>

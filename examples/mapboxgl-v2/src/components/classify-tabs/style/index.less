@@ -1,29 +1,39 @@
-.symbol-setting-types {
+div.symbol-setting-types {
+    width: 280px;
+    height: 610px;
+    display: flex;
+
     div.fv-tabs-menus {
-        margin: 10px 0;
         border-bottom: 1px solid rgba(0, 0, 0, 0.15);
         padding: 0;
 
         .fv-tabs-menus-item {
-            &::after {
-                display: none;
+            padding-bottom: 7px;
+            font-weight: 500;
+            color: rgba(0, 0, 0, 0.65);
+            margin-right: 16px;
+            
+            &.fv-tabs-active {
+                color: rgba(0, 0, 0, 0.85);
             }
 
-            color: rgba(0, 0, 0, 0.65);
-            font-weight: 500;
-            padding: 8px;
-            height: 24px;
-            border-radius: 4px;
-            margin-bottom: 8px;
-            margin-right: 4px;
+            &::after {
+                width: 100%;
+                height: 2px;
+            }
         }
-
         .fv-tabs-active {
             color: #0081E2;
-            background: rgba(0, 0, 0, 0.06);
             border-radius: 4px;
         }
     }
+
+    .fv-tabs-content {
+        margin-left: -16px;
+        padding: 10px 16px;
+        background: #F5F5F5;
+    }
+
     .style-setting-search {
         margin-bottom: 12px;
     }

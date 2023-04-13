@@ -1,5 +1,4 @@
 import React from 'react';
-import ClassifyContentLayout from '../../components/classify-content-layout';
 import PanelLayout from '../../components/panel-layout'
 import PointBuiltInContent from '../classify-selector/PointBuiltInContent';
 import PointStyleSetting from '../style-setting-panel/PointStyleSetting';
@@ -19,9 +18,7 @@ const PointSetting = (props: PointSettingProps) => {
 
     return (
         <PanelLayout className='point-setting-panel' title={layerId} onClickClose={onClosePanal} >
-            <ClassifyContentLayout>
-                <PointBuiltInContent onIconClick={onIconClick} />
-            </ClassifyContentLayout>
+            <PointBuiltInContent onIconClick={onIconClick} />
             <PointStyleSetting layerId={layerId} getLayerPropertyStyle={getLayerPropertyStyle} changeLayerStyle={changeLayerStyle} symbolId={symbolId} getImageInfo={getImageInfo} />
         </PanelLayout >
     )

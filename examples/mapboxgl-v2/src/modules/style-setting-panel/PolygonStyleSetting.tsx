@@ -16,7 +16,8 @@ const PolygonStyleSetting = (props: PolygonStyleSettingtProps) => {
 
     const defaultStyle = {
         color: '#fff',
-        opacity: 1
+        opacity: 1,
+        image: ''
     };
 
     const [style, setStyle] = useState(defaultStyle);
@@ -29,11 +30,12 @@ const PolygonStyleSetting = (props: PolygonStyleSettingtProps) => {
     useEffect(() => {
         setStyle({
             color: getLayerPropertyStyle(layerId, 'color'),
-            opacity: getLayerPropertyStyle(layerId, 'opacity')
+            opacity: getLayerPropertyStyle(layerId, 'opacity'),
+            image: getLayerPropertyStyle(layerId, 'image')
         });
     }, [symbolId]);
 
-    const { color, opacity } = style;
+    const { color, opacity, image } = style;
 
     const onColorChange = (color: any) => {
         const { r, g, b, a } = color.rgb;
@@ -44,9 +46,9 @@ const PolygonStyleSetting = (props: PolygonStyleSettingtProps) => {
     return (
         <div className='style-setting-content'>
             <div className='style-setting-item'>
-                <EditorLayout title='颜色'>
+                {!image && <EditorLayout title='颜色'>
                     <ColorEditor color={color} onColorChange={onColorChange} />
-                </EditorLayout>
+                </EditorLayout>}
             </div>
             <div className='style-setting-item'>
                 <EditorLayout title='透明度'>

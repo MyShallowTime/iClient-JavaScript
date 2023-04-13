@@ -123,7 +123,7 @@ const SymbolSelector = (props: SymbolContentProps) => {
                 setSearchValue(v);
             }} />
             {searchValue ?
-                <ScrollPanel hideScrollX small style={{ width: "106%", height: 516 }}>
+                <ScrollPanel hideScrollX small style={{ height: 516 }}>
                     {getSearchResultSymbol()}
                 </ScrollPanel> :
                 <div className='symbol-content'>
@@ -133,7 +133,7 @@ const SymbolSelector = (props: SymbolContentProps) => {
                     {activeStyle && <EditorLayout title='风格'>
                         <SelectEditor options={activeStyleOptions} value={activeStyle} onChange={setActiveStyle} />
                     </EditorLayout>}
-                    <ScrollPanel hideScrollX small style={{ width: "106%", height: activeStyle ? 428 : 468, marginTop: 16 }}>
+                    <ScrollPanel hideScrollX small style={{ height: activeStyle ? 428 : 468, marginTop: 16 }}>
                         {
                             activeStyleOptions && activeStyle === 'all' ? getBaseAllSymbol() : getSymbol(ids)
                         }
