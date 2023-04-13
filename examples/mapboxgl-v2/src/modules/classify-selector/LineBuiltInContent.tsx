@@ -1,5 +1,5 @@
 import React from 'react';
-import { BasicCategoryOptions, BasicStyleIconIds, BasicCategoryStyles,AutoCategoryOptions, AutoCategoryStyles, AutoStyleIconIds, LandCategoryOptions, LandStyleIconIds } from '../../constants/LineInfo';
+import { BasicCategoryOptions, BasicStyleIconIds, BasicCategoryStyles,AutoCategoryOptions, AutoStyleIconIds, LandStyleIconIds } from '../../constants/LineInfo';
 import ClassifyTabs from '../../components/classify-tabs';
 import SymbolSelector from '../symbol-selector';
 
@@ -9,9 +9,9 @@ interface LineBuiltInContentProps {
 
 const LineBuiltInContent = (props: LineBuiltInContentProps) => {
     const { onIconClick } = props;
-    const baseSelectorContent = <SymbolSelector onIconClick={onIconClick} symbolType={'base'} options={BasicCategoryOptions} styles={BasicCategoryStyles} iconIds={BasicStyleIconIds} secondSelectionName='风格' type={'line'} />
-    const autoSelectorConent = <SymbolSelector onIconClick={onIconClick} symbolType={'auto'} options={AutoCategoryOptions} styles={AutoCategoryStyles} iconIds={AutoStyleIconIds} secondSelectionName='比例尺' type={'line'} />
-    const landSelectorContent = <SymbolSelector onIconClick={onIconClick} symbolType={'land'} options={LandCategoryOptions} iconIds={LandStyleIconIds} type={'line'} />
+    const baseSelectorContent = <SymbolSelector onIconClick={onIconClick} symbolType='base' options={BasicCategoryOptions} styles={BasicCategoryStyles} iconIds={BasicStyleIconIds}  type='line' />
+    const autoSelectorConent = <SymbolSelector onIconClick={onIconClick} symbolType='auto' options={AutoCategoryOptions} iconIds={AutoStyleIconIds} type='line' />
+    const landSelectorContent = <SymbolSelector onIconClick={onIconClick} symbolType='land' iconIds={LandStyleIconIds} type='line' />
 
     return (
         <ClassifyTabs

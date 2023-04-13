@@ -4,6 +4,7 @@ import SelectEditor from '../../components/select-editor';
 import './style';
 import IconCard from '../../components/icon-card';
 import EditorLayout from '../../components/editor-layout';
+import SearchEditor from '../../components/search-editor';
 interface SymbolContentProps {
     onIconClick: (id: string) => void;
     symbolType: string;
@@ -14,17 +15,15 @@ interface SymbolContentProps {
     styles?: any;
     iconIds?: any;
     type?: string;
-    secondSelectionName?: string;
 }
 
 const SymbolSelector = (props: SymbolContentProps) => {
-    const { symbolType, onIconClick, options, styles, iconIds, secondSelectionName, type } = props;
-
+    const { symbolType, onIconClick, options, styles, iconIds, type } = props;
     const [activeCategory, setActiveCategory] = useState<any>(options?.[0]?.value);
-
+    const [searchValue, setSearchValue] = useState('');
     const activeStyleOptions = styles?.[activeCategory];
 
-    ["base", 'auto'].includes(symbolType) && activeStyleOptions && activeStyleOptions?.[0]?.value !== 'all' && activeStyleOptions.unshift({
+    symbolType === "base" && activeStyleOptions && activeStyleOptions?.[0]?.value !== 'all' && activeStyleOptions.unshift({
         "value": "all",
         "label": "全部"
     });
@@ -32,15 +31,15 @@ const SymbolSelector = (props: SymbolContentProps) => {
     const [activeStyle, setActiveStyle] = useState(activeStyleOptions?.[0]?.value);
 
     const getIds = (style) => {
-        const categoryIds = iconIds?.[activeCategory];
+        const categoryIds = iconIds?.[activeCategory] ?? iconIds;
         return (style ? categoryIds[style] : categoryIds) ?? [];
     }
 
     const [ids, setIds] = useState(getIds(activeStyle));
 
     useEffect(() => {
-        symbolType !== "land" && setActiveStyle(activeStyleOptions?.[0]?.value);
-    }, [activeCategory])
+        symbolType === "base" && setActiveStyle(activeStyleOptions?.[0]?.value);
+    }, [activeCategory]);
 
     useEffect(() => {
         const newStyle = activeStyleOptions?.[0].value;
@@ -63,7 +62,7 @@ const SymbolSelector = (props: SymbolContentProps) => {
                 label: activeStyleOption.label,
                 symbols: currentSymbol
             });
-        })
+        });
         return allSymbol.map((el, index) => {
             return (
                 <div className='symbol-setting-content' key={index}>
@@ -82,41 +81,6 @@ const SymbolSelector = (props: SymbolContentProps) => {
         })
     };
 
-    const getAutoAllSymbol = () => {
-        const allSymbol = [] as any[];
-        for (let i = 1; i < activeStyleOptions.length; i++) {
-            if (activeStyleOptions[i].value === 'dedup') {
-                continue;
-            }
-            iconIds[activeCategory][activeStyleOptions[i].value]?.map(({ id, name }) => {
-                allSymbol.push({ id, name });
-            });
-        };
-        return (
-            <div className='symbol-setting-content'>
-                <div className='symbol-setting-symbols'>
-                    {
-                        allSymbol.sort((a, b) => {
-                            const nameA = a.name.toUpperCase(); // ignore upper and lowercase
-                            const nameB = b.name.toUpperCase(); // ignore upper and lowercase
-                            if (nameA < nameB) {
-                                return -1;
-                            }
-                            if (nameA > nameB) {
-                                return 1;
-                            }
-                            // names must be equal
-                            return 0;
-                        }).map(({ id, name }) => {
-                            const src = `../../../static/images/${type}/${id}.png`
-                            return <IconCard key={type + id} src={src} title={name} onIconClick={() => {
-                                onIconClick(id)
-                            }} />
-                        })}
-                </div>
-            </div>
-        )
-    };
     const getSymbol = (symbolInfos) => {
         return symbolInfos?.map(({ id, name }) => {
             const src = `../../../static/images/${type}/${id}.png`
@@ -124,47 +88,58 @@ const SymbolSelector = (props: SymbolContentProps) => {
                 onIconClick(id)
             }} />
         })
-    }
-    const getSymbolContent = () => {
-        if (symbolType === 'base') {
-            return (
-                <div className="basic-symbol-content">
-                    {
-                        activeStyleOptions && activeStyle === 'all' ? getBaseAllSymbol() : getSymbol(ids)
-                    }
-                </div>
-            )
-        } else if (symbolType === "auto") {
-            return (
-                <div className="automake-symbol-content">
-                    {
-                        activeStyleOptions && activeStyle === 'all' ? getAutoAllSymbol() : getSymbol(iconIds[activeCategory][activeStyle])
-                    }
-                </div>
-            )
-        } else {
-            return (
-                <div className="land-symbol-content">
-                    {
-                        getSymbol(iconIds[activeCategory])
-                    }
-                </div>
-            )
-        }
     };
+
+    const getAllIconIds = (allIcons, iconIds) => {
+        if (Array.isArray(iconIds)) {
+            allIcons.push(...iconIds);
+        } else {
+            for (let ids in iconIds) {
+                if (Array.isArray(iconIds[ids])) {
+                    allIcons.push(...iconIds[ids]);
+                } else {
+                    getAllIconIds(allIcons, iconIds[ids]);
+                }
+            }
+        }
+        return allIcons;
+    };
+
+    const getSearchResultSymbol = () => {
+        const allIcons: { id: string, name: string }[] = [];
+        getAllIconIds(allIcons, iconIds);
+        const searchResutl = allIcons.filter((el) => el.name.includes(searchValue));
+        return searchResutl?.map(({ id, name }) => {
+            const src = `../../../static/images/${type}/${id}.png`;
+            return <IconCard key={type + id} src={src} title={name} onIconClick={() => {
+                onIconClick(id);
+            }} />
+        });
+    };
+
     return (
         <div>
-            <div>
-                <EditorLayout title='类别'>
-                    <SelectEditor options={options} value={activeCategory} onChange={setActiveCategory as any} />
-                </EditorLayout>
-                {activeStyle && <EditorLayout title={secondSelectionName}>
-                    <SelectEditor options={activeStyleOptions} value={activeStyle} onChange={setActiveStyle} />
-                </EditorLayout>}
-            </div>
-            <ScrollPanel hideScrollX small style={{ width: "106%", height: activeStyle ? 420 : 460, marginTop: 24 }}>
-                {getSymbolContent()}
-            </ScrollPanel>
+            <SearchEditor onSearchValueChange={(v) => {
+                setSearchValue(v);
+            }} />
+            {searchValue ?
+                <ScrollPanel hideScrollX small style={{ width: "106%", height: 516 }}>
+                    {getSearchResultSymbol()}
+                </ScrollPanel> :
+                <div className='symbol-content'>
+                    {options && <EditorLayout title='类别'>
+                        <SelectEditor options={options} value={activeCategory} onChange={setActiveCategory} />
+                    </EditorLayout>}
+                    {activeStyle && <EditorLayout title='风格'>
+                        <SelectEditor options={activeStyleOptions} value={activeStyle} onChange={setActiveStyle} />
+                    </EditorLayout>}
+                    <ScrollPanel hideScrollX small style={{ width: "106%", height: activeStyle ? 428 : 468, marginTop: 16 }}>
+                        {
+                            activeStyleOptions && activeStyle === 'all' ? getBaseAllSymbol() : getSymbol(ids)
+                        }
+                    </ScrollPanel>
+                </div>
+            }
         </div>
     )
 }

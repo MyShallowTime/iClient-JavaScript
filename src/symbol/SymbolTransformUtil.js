@@ -254,10 +254,10 @@ const symbolProperty = {
     },
     size: {
         type: 'layout',
-        name: 'icon-size',
-        transform: (v, imageWidth) => {
-            return v / (imageWidth ?? 1);
-        }
+        name: 'icon-size'
+        // transform: (v, imageWidth) => {
+        //     return v / (imageWidth ?? 100);
+        // }
     },
     image: {
         type: 'layout',

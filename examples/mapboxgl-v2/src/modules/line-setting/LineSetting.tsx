@@ -1,7 +1,6 @@
 import React from 'react';
 import ClassifyContentLayout from '../../components/classify-content-layout';
 import PanelLayout from '../../components/panel-layout';
-import SearchEditor from '../../components/search-editor';
 import LineBuiltInContent from '../classify-selector/LineBuiltInContent';
 import LineStyleSetting from '../style-setting-panel/LineStyleSetting';
 
@@ -19,7 +18,6 @@ const LineSetting = (props: LineSettingProps) => {
     const { layerId, symbolId, onIconClick, changeLayerStyle, getLayerPropertyStyle, getCompositeLayersIds, onClosePanal } = props;
 
     return <PanelLayout className='line-setting-panel' title={layerId} onClickClose={onClosePanal}>
-        <SearchEditor />
         <ClassifyContentLayout>
             <LineBuiltInContent onIconClick={onIconClick} />
         </ClassifyContentLayout>
