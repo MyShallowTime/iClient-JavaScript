@@ -1,1 +1,30 @@
-{"type":"ImageLine","image":"../static/images/line/43010202.png"}
+{
+    "type": "MultiLine",
+    "styles": [
+        {
+            "type": "Line",
+            "width": 3.02,
+            "color": "rgba(254, 0, 254, 1)",
+            "cap": "butt",
+            "join": "round"
+        },
+        {
+            "type": "Line",
+            "width": 2.27,
+            "color": "rgba(255, 255, 255, 1)",
+            "cap": "butt",
+            "join": "round"
+        },
+        {
+            "type": "Line",
+            "width": 1.13,
+            "color": "rgba(254, 0, 254, 1)",
+            "dasharray": [
+                6.69,
+                20.07
+            ],
+            "cap": "butt",
+            "join": "round"
+        }
+    ]
+}

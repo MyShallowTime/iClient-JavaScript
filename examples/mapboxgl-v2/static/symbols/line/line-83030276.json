@@ -1,1 +1,1 @@
-{"type":"ImageLine","image":"../static/images/line/83030276.png"}
+{"type":"MultiLine","styles":[{"type":"Line","width":6.05,"color":"rgba(235, 136, 70, 0.996078431372549)","cap":"square","join":"round"},{"type":"Line","width":0.38,"color":"rgba(38, 38, 38, 1)","cap":"round","join":"round"},{"type":"Line","width":0.38,"color":"rgba(0, 0, 0, 1)","dasharray":[99.47,29.84],"cap":"square","offset":-1.51,"join":"round"},{"type":"Line","width":0.38,"color":"rgba(0, 0, 0, 1)","dasharray":[99.47,29.84],"cap":"square","offset":1.51,"join":"round"}]}

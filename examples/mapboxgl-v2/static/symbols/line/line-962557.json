@@ -1,1 +1,40 @@
-{"type":"ImageLine","image":"../static/images/line/962557.png"}
+{
+    "type": "MultiLine",
+    "styles": [
+        {
+            "type": "Line",
+            "width": 0.38,
+            "color": "rgba(76, 76, 76, 1.0)",
+            "dasharray": [
+                39.79,
+                0
+            ],
+            "cap": "round",
+            "offset": -1.13,
+            "join": "round"
+        },
+        {
+            "type": "Line",
+            "width": 0.38,
+            "color": "rgba(77, 77, 77, 1.0)",
+            "dasharray": [
+                39.79,
+                0
+            ],
+            "cap": "round",
+            "offset": 1.13,
+            "join": "round"
+        },
+        {
+            "type": "Line",
+            "width": 1.13,
+            "color": "rgba(76, 76, 76, 1.0)",
+            "dasharray": [
+                0.72,
+                26.76
+            ],
+            "cap": "round",
+            "join": "round"
+        }
+    ]
+}

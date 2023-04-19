@@ -1,1 +1,1 @@
-{"type":"ImageLine","image":"../static/images/line/81051404.png"}
+{"type":"Line","width":0.76,"color":"rgba(0, 166, 80, 1.0)","dasharray":[0.5,7.96,0.5,7.96],"cap":"square","join":"round"}
