@@ -108,7 +108,7 @@ const TextStyleSetting = (props: TextStyleSettingProps) => {
                 </EditorLayout>
             </div>
             <div className='style-setting-item'>
-                <EditorLayout title='文字间距'>
+                <EditorLayout title='文本间距'>
                     <NumberEditor
                         min={0}
                         max={100}
