@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { ScrollPanel } from '@ispeco/iptl-components-react';
 import SingleLineStyleSetting from './SingleLineStyleSetting';
 import EditorLayout from '../../components/editor-layout';
 import NumberEditor from '../../components/number-editor';
@@ -30,7 +29,7 @@ const LineStyleSetting = (props: LineStyleSettingProps) => {
             (top > topBoundary || topBoundary === undefined) && (topBoundary = top);
             (bottom < bottomBoundary || bottomBoundary === undefined) && (bottomBoundary = bottom);
         });
-        setWholeWidth(topBoundary - bottomBoundary);
+        setWholeWidth(Number((topBoundary - bottomBoundary).toFixed(2)));
     };
 
     useEffect(() => {
@@ -49,6 +48,7 @@ const LineStyleSetting = (props: LineStyleSettingProps) => {
                     <NumberEditor
                         value={wholeWidth}
                         onChange={(v: any) => {
+                            if (v === 0) return;
                             const percent = v / wholeWidth;
                             lineIds.forEach(id => {
                                 changeLayerStyle(id, 'width', getLayerPropertyStyle(id, 'width') * percent);
