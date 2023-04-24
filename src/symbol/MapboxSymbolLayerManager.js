@@ -38,12 +38,16 @@ const MapboxSymbolLayerManager = (m) => {
          * @returns {Object}
          */
         symbolToLayerStyle(symbol) {
+            // TODO Point、Line、Polyogn需要移除
             const transRules = {
                 Point: transformSymbol2LayerInfo,
+                SimplePoint: transformSymbol2LayerInfo,
                 ImagePoint: transformSymbol2LayerInfo,
                 Line: lineSymbolToPaintLayout,
+                SimpleLine: lineSymbolToPaintLayout,
                 ImageLine: lineSymbolToPaintLayout,
                 Polygon: polygonSymbolToPaintLayout,
+                SimplePolygon: polygonSymbolToPaintLayout,
                 ImagePolygon: polygonSymbolToPaintLayout,
                 Text: textSymbolToPaintLayout
             };

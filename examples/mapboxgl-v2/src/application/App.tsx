@@ -126,6 +126,7 @@ const App = () => {
 
     // 点击切换
     const onIconClick = async (symbolId, layerId) => {
+        console.log(symbolId);
         if (!map) return;
         const type = getLayerType(layerId);
         // eslint-disable-next-line import/no-dynamic-require
