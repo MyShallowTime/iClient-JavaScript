@@ -8,7 +8,10 @@ interface NumberEditorProps extends InputNumberProps {
 }
 const NumberEditor = (props: NumberEditorProps) => {
     const { value, onChange, min, max, suffix, disabled = false, className, ...restProps } = props;
-
+    const onValueChange = (v) => {
+        if (v === null) return;
+        onChange?.(v);
+    }
     return (
         <InputNumber
             className={classnames('input-number-content', className)}
@@ -16,7 +19,7 @@ const NumberEditor = (props: NumberEditorProps) => {
             max={max}
             size={'middle'}
             value={value}
-            onChange={onChange}
+            onChange={onValueChange}
             suffix={suffix}
             disabled={disabled}
             {...restProps}

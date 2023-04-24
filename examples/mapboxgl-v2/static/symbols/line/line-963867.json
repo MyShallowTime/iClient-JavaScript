@@ -1,1 +1,1 @@
-{"type":"ImageLine","image":"../static/images/line/963867.png"}
+{"type":"MultiLine","styles":[{"type":"Line","width":0.38,"color":"#000","cap":"round","offset":-1.89,"join":"round"},{"type":"Line","width":0.38,"color":"#000","cap":"round","offset":1.89,"join":"round"}]}
