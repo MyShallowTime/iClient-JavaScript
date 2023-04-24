@@ -64,7 +64,7 @@ const SymbolContent = (props: SymbolContentProps) => {
             <SymbolLayoutPanel ids={BasicStyleIconIds} options={BasicCategoryOptions} styles={BasicCategoryStyles} type={type} />
             <div className='symbol-classify-title' id={type + '-auto'}>自动制图符号类</div>
             <SymbolLayoutPanel ids={AutoStyleIconIds} options={AutoCategoryOptions} type={type} />
-            <div className='symbol-classify-title' id={type + '-land'}>土地利用符号类</div>
+            <div className='symbol-classify-title' id={type + '-land'}>国土三调符号类</div>
             <SymbolLayoutPanel ids={LandStyleIconIds} options={LandCategoryOptions} type={type} />
         </div>
     )

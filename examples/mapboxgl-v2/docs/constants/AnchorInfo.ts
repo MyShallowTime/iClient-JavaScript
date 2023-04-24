@@ -12,7 +12,7 @@ export const anchorInfo = [
                 value: 'point-auto'
             },
             {
-                label: '土地利用符号类',
+                label: '国土三调符号类',
                 value: 'point-land'
             },
         ]
@@ -30,7 +30,7 @@ export const anchorInfo = [
                 value: 'line-auto'
             },
             {
-                label: '土地利用符号类',
+                label: '国土三调符号类',
                 value: 'line-land'
             },
         ]
@@ -48,7 +48,7 @@ export const anchorInfo = [
                 value: 'polygon-auto'
             },
             {
-                label: '土地利用符号类',
+                label: '国土三调符号类',
                 value: 'polygon-land'
             },
         ]
