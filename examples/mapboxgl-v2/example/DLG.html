@@ -5,20 +5,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
   <title>DLG_I49</title>
-  <!-- <link href='https://unpkg.com/maplibre-gl@2.4.0/dist/maplibre-gl.css' rel='stylesheet' /> -->
   <style>
     body {
       margin: 0;
-      overflow: hidden;
-      background: #fff;
-      width: 100%;
-      height: 100%
+      padding: 0;
     }
 
     #map {
-      position: relative;
-      top: 10px;
-      height: 900px;
+      position: absolute;
+      top: 0;
+      bottom: 0;
       width: 100%;
     }
   </style>
@@ -27,7 +23,6 @@
 <body>
   <div id="map"></div>
   <script src="../static/fonts/iconfont.js"></script>
-  <!-- <script type="text/javascript" src="https://unpkg.com/maplibre-gl@latest/dist/maplibre-gl.js"></script> -->
   <script type="text/javascript" src="../libs/maplibregl/maplibre-gl.js"></script>
   <script type="text/javascript" src="../libs/maplibregl/l7.js"></script>
   <script type="text/javascript" src="../libs/maplibregl/iclient-maplibregl-es6.js"></script>
@@ -46,21 +41,14 @@
           },
           "DLGI49": {
             "tiles": ["http://172.16.14.80:8090/iserver/services/map-DLG_100W/restjsr/v1/vectortile/maps/DLGI49/tiles/{z}/{x}/{y}.mvt"],
-            "bounds": [
-              -180,
-              -90,
-              180,
-              90
-            ],
             "type": "vector"
           }
         },
         "center": [
-        109.74224024430839,
-        34.055934678686114
+          110.66049081338542,
+          34.055934678686114
         ],
         "name": "DLGI49",
-        "sprite": "http://172.16.14.80:8090/iserver/services/map-DLG_100W/restjsr/v1/vectortile/maps/DLGI49/sprites/sprite",
         "layers": [/* {
           "id": "simple-tiles",
           "type": "raster",
@@ -69,11 +57,9 @@
           "maxzoom": 22
         } */],
         "zoom": 8.00721072893464,
-        "glyphs": "http://172.16.14.80:8090/iserver/services/map-DLG_100W/restjsr/v1/vectortile/maps/DLGI49/fonts/{fontstack}/{range}",
         "version": 8
       }
     });
-
 
     // 每个图层使用到的符号
     const lineSymbols = {
@@ -103,7 +89,6 @@
               "color": "rgba(247,201,221,1.00)"
             })
             Object.assign(newSymbol.styles[1], {
-              // 放大两倍
               "width": 0.76,
               "dasharray": [
                 12.44,
@@ -112,35 +97,7 @@
                 5,
                 2.5,
                 5
-              ],
-              // 沁沁导出的
-              // "dasharray": [
-              //   24.87,
-              //   4.97,
-              //   24.87,
-              //   9.95,
-              //   4.97,
-              //   9.95
-              // ],
-
-              // "dasharray": [
-              //   11.5,
-              //   2.5,
-              //   11.5,
-              //   4,
-              //   1,
-              //   4
-              // ],
-              // "width": 0.38,
-              // "dasharray": [
-              //   23,
-              //   5,
-              //   23,
-              //   8,
-              //   2,
-              //   8
-              // ],
-              // "color": "rgba(89,89,89,1.00)"
+              ]
             })
           } else if (symbolId === "630200") {
             Object.assign(newSymbol.styles[0], {
@@ -148,7 +105,6 @@
               "color": "rgba(254,152,254,1.00)"
             })
             Object.assign(newSymbol.styles[1], {
-              // 放大两倍之后，间隙值还要除以2
               "width": 0.76,
               "dasharray": [
                 12.44,
@@ -157,45 +113,11 @@
                 3.72,
                 2.49,
                 3.72
-              ],
-
-              // 放大三倍
-              // "width": 1.14,
-              // "dasharray": [
-              //   8.29,
-              //   2.45,
-              //   1.65,
-              //   2.45,
-              //   1.65,
-              //   2.45
-              // ],
-
-              // 沁沁导出的矢量瓦片风格的值，比例更接近符号编辑器里面的
-              // "dasharray": [
-              //   24.87,
-              //   14.92,
-              //   4.97,
-              //   14.92,
-              //   4.97,
-              //   14.92
-              // ],
-
-              // 发布的矢量瓦片style中的值
-              // "width": 0.38,
-              // "dasharray": [
-              //   23,
-              //   12,
-              //   1,
-              //   12,
-              //   1,
-              //   12
-              // ],
-              // "color": "rgba(51,44,43,1.00)"
+              ]
             })
           } else if (symbolId === "210101") {
             Object.assign(newSymbol, {
               "width": 1.14,
-              // "width": 0.38,
               "color": "rgba(0,162,233,1.00)"
             })
           } else if (symbolId === "420101") {

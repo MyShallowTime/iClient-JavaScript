@@ -5,20 +5,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
   <title>长江三角洲发展结构图</title>
-  <!-- <link href='https://unpkg.com/maplibre-gl@2.4.0/dist/maplibre-gl.css' rel='stylesheet' /> -->
   <style>
     body {
       margin: 0;
-      overflow: hidden;
-      background: #fff;
-      width: 100%;
-      height: 100%
+      padding: 0;
     }
 
     #map {
-      position: relative;
-      top: 10px;
-      height: 900px;
+      position: absolute;
+      top: 0;
+      bottom: 0;
       width: 100%;
     }
   </style>
@@ -27,7 +23,6 @@
 <body>
   <div id="map"></div>
   <script src="../static/fonts/iconfont.js"></script>
-  <!-- <script type="text/javascript" src="https://unpkg.com/maplibre-gl@latest/dist/maplibre-gl.js"></script> -->
   <script type="text/javascript" src="../libs/maplibregl/maplibre-gl.js"></script>
   <script type="text/javascript" src="../libs/maplibregl/l7.js"></script>
   <script type="text/javascript" src="../libs/maplibregl/iclient-maplibregl-es6.js"></script>
@@ -40,12 +35,6 @@
         "sources": {
           "长江三角洲发展结构图": {
             "tiles": ["http://172.16.14.80:8090/iserver/services/map-YangtzeRiverDelta/restjsr/v1/vectortile/maps/%E9%95%BF%E6%B1%9F%E4%B8%89%E8%A7%92%E6%B4%B2%E5%8F%91%E5%B1%95%E7%BB%93%E6%9E%84%E5%9B%BE/tiles/{z}/{x}/{y}.mvt"],
-            "bounds": [
-              -180,
-              -90,
-              180,
-              90
-            ],
             "type": "vector"
           },
           "sanjiaozhou": {
@@ -58,7 +47,6 @@
           31.426028827046886
         ],
         "name": "长江三角洲发展结构图",
-        "sprite": "http://172.16.14.80:8090/iserver/services/map-YangtzeRiverDelta/restjsr/v1/vectortile/maps/%E9%95%BF%E6%B1%9F%E4%B8%89%E8%A7%92%E6%B4%B2%E5%8F%91%E5%B1%95%E7%BB%93%E6%9E%84%E5%9B%BE/sprites/sprite",
         "layers": [],
         "zoom": 6.2,
         "glyphs": "http://172.16.14.80:8090/iserver/services/map-YangtzeRiverDelta/restjsr/v1/vectortile/maps/%E9%95%BF%E6%B1%9F%E4%B8%89%E8%A7%92%E6%B4%B2%E5%8F%91%E5%B1%95%E7%BB%93%E6%9E%84%E5%9B%BE/fonts/{fontstack}/{range}",
@@ -120,30 +108,15 @@
     }
     // 每个符号需要修改的参数
     const width = 0.76;
-    // const width = 0.38;
     const lineStyle = {
       color: "rgba(153,37,22,1.00)",
-      // 放大两倍
       width,
       dasharray: [
         15,
         6,
         2.5,
         6
-      ],
-      // 放大三倍
-      // dasharray: [
-      //   10,
-      //   4,
-      //   1.7,
-      //   4
-      // ],
-      // dasharray: [
-      //   30,
-      //   12,
-      //   5,
-      //   12
-      // ]
+      ]
     }
     const lineSymbols = {
       'Frame': {
@@ -158,26 +131,12 @@
       "City_L": {
         "cap": "square",
         width,
-        // 放大两倍
         "dasharray": [
           2.5,
           4,
           2.5,
           4
         ],
-        // 放大三倍
-        // "dasharray": [
-        //   1.7,
-        //   2.7,
-        //   1.7,
-        //   2.7
-        // ],
-        // "dasharray": [
-        //   5,
-        //   8,
-        //   5,
-        //   8
-        // ],
         "color": "rgba(153,37,22,1.00)"
       },
       "SuHuZheInside_L": lineStyle,
