@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import './style';
 import SymbolModal from '../modal';
+import classNames from 'classnames';
 
 interface IconCardContentProps {
     iconInfo: any;
@@ -18,11 +19,11 @@ const IconCard = (props: IconCardContentProps) => {
             <div className="icon-image" onClick={() => {
                 // modal.current.showModal();
             }}>
-                <div className='img-content'><img src={`../../static/images/${type}/${id}.png`} /></div>
-                <div className='img-title'>
+                <div className={classNames('img-content', { 'line-img-content': type === 'line' })}><img src={`../../static/images/${type}/${id}.png`} /></div>
+                <div className='img-title' title={title}>
                     {`Name: ${title}`}
                 </div>
-                <div className='img-id'>
+                <div className='img-id' title={`${type}-${id}`}>
                     {`ID: ${type}-${id}`}
                 </div>
             </div>
