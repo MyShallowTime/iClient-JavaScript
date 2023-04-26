@@ -58,9 +58,6 @@ const SingleLineStyleSetting = (props: SingleLineStyleContentProps) => {
 
     const { width, color, offset, opacity, blur, join, cap, translate, image } = style;
 
-    useEffect(() => {
-        updateWholeWidth();
-    }, [width, offset]);
 
     return (
         <>
@@ -89,6 +86,7 @@ const SingleLineStyleSetting = (props: SingleLineStyleContentProps) => {
                         value={width}
                         onChange={(v: any) => {
                             changeStyle('width', v);
+                            updateWholeWidth();
                         }}
                         min={0.01}
                         max={100}
@@ -103,6 +101,7 @@ const SingleLineStyleSetting = (props: SingleLineStyleContentProps) => {
                         value={offset}
                         onChange={(v: any) => {
                             changeStyle('offset', v);
+                            updateWholeWidth();
                         }}
                         min={-100}
                         max={100}
