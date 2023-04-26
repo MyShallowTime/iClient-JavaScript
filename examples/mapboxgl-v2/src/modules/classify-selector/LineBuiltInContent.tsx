@@ -1,5 +1,5 @@
 import React from 'react';
-import { BasicCategoryOptions, BasicStyleIconIds, BasicCategoryStyles,AutoCategoryOptions, AutoStyleIconIds, LandStyleIconIds } from '../../constants/LineInfo';
+import { BasicCategoryOptions, BasicStyleIconIds, BasicCategoryStyles,AutoCategoryOptions, AutoStyleIconIds, LandStyleIconIds } from '../../../static/symbol-infos/LineInfo';
 import ClassifyTabs from '../../components/classify-tabs';
 import SymbolSelector from '../symbol-selector';
 

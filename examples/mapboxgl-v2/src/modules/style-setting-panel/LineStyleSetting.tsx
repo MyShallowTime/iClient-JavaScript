@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { ScrollPanel } from '@ispeco/iptl-components-react';
 import SingleLineStyleSetting from './SingleLineStyleSetting';
 import EditorLayout from '../../components/editor-layout';
 import NumberEditor from '../../components/number-editor';
@@ -40,14 +39,13 @@ const LineStyleSetting = (props: LineStyleSettingProps) => {
 
     useEffect(() => {
         updateWholeWidth();
-    }, [lineIds])
+    }, [lineIds, symbolId]);
 
     const getDashArray = (id, percent) => {
        const beforeDash = getLayerPropertyStyle(id, 'dasharray'); 
        const result = beforeDash.map(v => {
             return v / percent;
        });
-       console.log(result);
        return result;
     }
 
@@ -58,6 +56,7 @@ const LineStyleSetting = (props: LineStyleSettingProps) => {
                     <NumberEditor
                         value={wholeWidth}
                         onChange={(v: any) => {
+                            if (v === 0) return;
                             const percent = v / wholeWidth;
                             lineIds.forEach(id => {
                                 changeLayerStyle(id, 'width', getLayerPropertyStyle(id, 'width') * percent);

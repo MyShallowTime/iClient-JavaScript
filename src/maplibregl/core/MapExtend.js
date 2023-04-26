@@ -79,7 +79,11 @@ export var MapExtend = (function () {
         });
     };
 
-    const getSymbol = () => {}
+    const getSymbol = (symbolId) => {
+        // eslint-disable-next-line import/no-dynamic-require
+        const symbolInfo = require(`../../../examples/mapboxgl-v2/static/symbols/${symbolId.split('-')[0]}/${symbolId}.json`);
+        return JSON.parse(JSON.stringify(symbolInfo));
+    }
 
     maplibregl.Map.prototype.loadSymbol = async function (symbol, callback) {
         let error;

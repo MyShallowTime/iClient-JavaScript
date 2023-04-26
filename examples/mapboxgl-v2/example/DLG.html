@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+  <title>DLG_I49</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    #map {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="map"></div>
+  <script src="../static/fonts/iconfont.js"></script>
+  <script type="text/javascript" src="../libs/maplibregl/maplibre-gl.js"></script>
+  <script type="text/javascript" src="../libs/maplibregl/l7.js"></script>
+  <script type="text/javascript" src="../libs/maplibregl/iclient-maplibregl-es6.js"></script>
+  <script type="text/javascript" src="../libs/maplibregl/iclient-maplibregl-mapextend.js"></script>
+  <script src="./Util.js"></script>
+  <script>
+    const url = "https://iserver.supermap.io/iserver/services/map-china400/rest/maps/China";
+    const map = new maplibregl.Map({
+      container: 'map',
+      style: {
+        "sources": {
+          "raster-tiles": {
+            "type": "raster",
+            "tiles": [url + '/zxyTileImage.png?z={z}&x={x}&y={y}'],
+            "tileSize": 256,
+          },
+          "DLGI49": {
+            "tiles": ["http://172.16.14.80:8090/iserver/services/map-DLG_100W/restjsr/v1/vectortile/maps/DLGI49/tiles/{z}/{x}/{y}.mvt"],
+            "type": "vector"
+          }
+        },
+        "center": [
+          110.66049081338542,
+          34.055934678686114
+        ],
+        "name": "DLGI49",
+        "layers": [/* {
+          "id": "simple-tiles",
+          "type": "raster",
+          "source": "raster-tiles",
+          "minzoom": 0,
+          "maxzoom": 22
+        } */],
+        "zoom": 8.00721072893464,
+        "version": 8
+      }
+    });
+
+    // 每个图层使用到的符号
+    const lineSymbols = {
+      630200: 63020004, // 省级行政区界线
+      640200: 64020004, // 地级行政区界线
+      210101: 21010104, // 地面河流
+      420101: 42010104, // 建成国道
+      420201: 42020104, // 建成省道
+      420202: 42020204, // 建筑中省道
+    }
+
+    // 批量加载Web符号
+    const loadSymbols = async () => {
+      for (let symbolId in lineSymbols) {
+        const symbol = lineSymbols[symbolId];
+        console.log(symbolId, symbol);
+        await map.loadSymbol(`line-${symbol}`, (_err, s) => {
+          console.log(JSON.parse(JSON.stringify(s)));
+          const newSymbol = s;
+          if (symbolId === "640200") {
+            Object.assign(newSymbol.styles[0], {
+              "width": 3.02,
+              "dasharray": [
+                5,
+                0
+              ],
+              "color": "rgba(247,201,221,1.00)"
+            })
+            Object.assign(newSymbol.styles[1], {
+              "width": 0.76,
+              "dasharray": [
+                12.44,
+                2.5,
+                12.44,
+                5,
+                2.5,
+                5
+              ]
+            })
+          } else if (symbolId === "630200") {
+            Object.assign(newSymbol.styles[0], {
+              "width": 5.67,
+              "color": "rgba(254,152,254,1.00)"
+            })
+            Object.assign(newSymbol.styles[1], {
+              "width": 0.76,
+              "dasharray": [
+                12.44,
+                3.72,
+                2.49,
+                3.72,
+                2.49,
+                3.72
+              ]
+            })
+          } else if (symbolId === "210101") {
+            Object.assign(newSymbol, {
+              "width": 1.14,
+              "color": "rgba(0,162,233,1.00)"
+            })
+          } else if (symbolId === "420101") {
+            Object.assign(newSymbol, {
+              "color": "rgba(255,0,0,1.00)"
+            })
+          }
+          map.addSymbol(`line-${symbol}`, newSymbol);
+        });
+      }
+    }
+
+    // 创建水系-线图层
+    const createHYDLLayer = () => {
+      map.addLayer({
+        "id": "HYDL@DLG_100W_unique_210101_0(0_24)",
+        "source": "DLGI49",
+        "source-layer": "HYDL@DLG_100W",
+        "type": "line",
+        "filter": [
+          "all",
+          [
+            "==",
+            "GB",
+            210101
+          ],
+          [
+            ">",
+            "NAME",
+            ""
+          ]
+        ],
+        "symbol": "line-21010104"
+      });
+    }
+
+    // 创建行政界线-线图层
+    const createBOULLayer = () => {
+      const layers = [{
+        "filter": [
+          "all",
+          [
+            "==",
+            "$type",
+            "LineString"
+          ],
+          [
+            "==",
+            "GB",
+            630200
+          ]
+        ],
+        "id": "BOUL@DLG_100W_unique_630200_0(0_24)",
+        "source": "DLGI49",
+        "source-layer": "BOUL@DLG_100W",
+        "type": "line"
+      }, {
+        "filter": [
+          "all",
+          [
+            "==",
+            "$type",
+            "LineString"
+          ],
+          [
+            "==",
+            "GB",
+            640200
+          ]
+        ],
+        "id": "BOUL@DLG_100W_unique_640200_0(0_24)",
+        "source": "DLGI49",
+        "source-layer": "BOUL@DLG_100W",
+        "type": "line"
+      }];
+      layers.forEach((layer) => {
+        const { id, source, filter, type } = layer;
+        map.addLayer({
+          id, source, filter, type,
+          "source-layer": layer["source-layer"],
+          "symbol": `line-${lineSymbols[filter[2][2]]}`
+        });
+      });
+    }
+
+    // 创建公路-线图层
+    const createLRDLLayer = () => {
+      const layers = [{
+        "filter": [
+          "all",
+          [
+            "==",
+            "$type",
+            "LineString"
+          ],
+          [
+            "==",
+            "GB",
+            420101
+          ],
+          [
+            "any",
+            [
+              "==",
+              "RTEG",
+              "一"
+            ],
+            [
+              "==",
+              "RTEG",
+              "高"
+            ]
+          ]
+        ],
+        "id": "LRDL@DLG_100W_unique_420101_0(0_24)",
+        "source": "DLGI49",
+        "source-layer": "LRDL@DLG_100W",
+        "type": "line"
+      }, {
+        "filter": [
+          "all",
+          [
+            "==",
+            "$type",
+            "LineString"
+          ],
+          [
+            "==",
+            "GB",
+            420201
+          ],
+          [
+            "any",
+            [
+              "==",
+              "RTEG",
+              "一"
+            ],
+            [
+              "==",
+              "RTEG",
+              "高"
+            ]
+          ]
+        ],
+        "id": "LRDL@DLG_100W_unique_420201_0(0_24)",
+        "source": "DLGI49",
+        "source-layer": "LRDL@DLG_100W",
+        "type": "line"
+      },
+      {
+        "filter": [
+          "all",
+          [
+            "==",
+            "$type",
+            "LineString"
+          ],
+          [
+            "==",
+            "GB",
+            420202
+          ],
+          [
+            "any",
+            [
+              "==",
+              "RTEG",
+              "一"
+            ],
+            [
+              "==",
+              "RTEG",
+              "高"
+            ]
+          ]
+        ],
+        "id": "LRDL@DLG_100W_unique_420202_0(0_24)",
+        "source": "DLGI49",
+        "source-layer": "LRDL@DLG_100W",
+        "type": "line"
+      }];
+      layers.forEach((layer) => {
+        const { id, source, filter, type } = layer;
+        map.addLayer({
+          id, source, filter, type,
+          "source-layer": layer["source-layer"],
+          "symbol": `line-${lineSymbols[filter[2][2]]}`
+        });
+      });
+    }
+
+    map.on('load', async () => {
+      window.map = map;
+      await loadSymbols();
+      createBOULLayer();
+      createHYDLLayer();
+      createLRDLLayer();
+    })
+  </script>
+</body>
+
+</html>

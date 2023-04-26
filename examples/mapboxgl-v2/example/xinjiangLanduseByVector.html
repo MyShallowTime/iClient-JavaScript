@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+    <title>新疆土地利用类型空间分布图</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #map {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="map"></div>
+    <script src="../static/fonts/iconfont.js"></script>
+    <script type="text/javascript" src="../libs/maplibregl/maplibre-gl.js"></script>
+    <script type="text/javascript" src="../libs/maplibregl/l7.js"></script>
+    <script type="text/javascript" src="../libs/maplibregl/iclient-maplibregl-es6.js"></script>
+    <script type="text/javascript" src="../libs/maplibregl/iclient-maplibregl-mapextend.js"></script>
+    <script>
+        const map = new maplibregl.Map({
+            container: 'map',
+            style: {
+                "sources": {
+                    "新疆土地利用类型空间分布图": {
+                        "tiles": ["http://172.16.14.80:8090/iserver/services/map-Xinjiang/restjsr/v1/vectortile/maps/%E6%96%B0%E7%96%86%E5%9C%9F%E5%9C%B0%E5%88%A9%E7%94%A8%E7%B1%BB%E5%9E%8B%E7%A9%BA%E9%97%B4%E5%88%86%E5%B8%83%E5%9B%BE/tiles/{z}/{x}/{y}.mvt"],
+                        "type": "vector"
+                    }
+                },
+                "center": [
+                    52.162787521388054,
+                    38.92632305943113
+                ],
+                "name": "新疆土地利用类型空间分布图",
+                "layers": [],
+                "zoom": 2.4590747,
+                "minzoom": 0,
+                "maxzoom": 24,
+                "version": 8
+            }
+        });
+
+        const symbols = {
+            landUseSymbol: {
+                color: [
+                    "match", ["get", "value"],
+                    11, "rgba( 253, 159, 221, 255)", //水田
+                    12, "rgba( 252, 223, 165, 255)", //旱地
+                    21, "rgba( 56, 142, 55, 255)",   //有林地
+                    22, "rgba( 84, 196, 0, 255)",    //疏林地
+                    23, "rgba( 181, 215, 182, 255)", //疏林地
+                    24, "rgba( 137, 206, 102, 255)", //其它林地
+                    31, "rgba( 191, 187, 65, 255)",  //高覆盖度草地
+                    32, "rgba( 226, 219, 129, 255)", //中覆盖度草地
+                    33, "rgba( 239, 234, 172, 255)", //低覆盖度草地
+                    41, "rgba( 16, 144, 191, 255)",  //河渠
+                    42, "rgba( 16, 144, 191, 255)",  //湖泊
+                    43, "rgba( 16, 144, 191, 255)",  //水库坑塘
+                    44, "rgba( 178, 162, 199, 255)", //永久性冰川雪地
+                    46, "rgba( 238, 234, 235, 255)", //滩地
+                    51, "rgba( 235, 104, 119, 255)", //城镇用地
+                    52, "rgba( 255, 139, 0, 255)",   //农村居民点
+                    53, "rgba( 240, 128, 127, 255)", //其它建设用地
+                    61, "rgba( 249, 244, 199, 255)", //沙地
+                    62, "rgba( 249, 168, 0, 255)",   //戈壁
+                    63, "rgba( 184, 224, 237, 255)", //盐碱地
+                    64, "rgba( 74, 221, 228, 255)",  //沼泽地
+                    65, "rgba( 237, 230, 230, 255)", //裸土地
+                    66, "rgba( 255, 208, 190, 255)", //裸岩石质地
+                    67, "rgba( 242, 242, 242, 255)", //其他
+                    "#000"
+                ]
+            },
+            waterSymbol: {
+                color: "rgba(16, 144, 191, 255)"
+            }
+        }
+        // 批量加载Web符号
+        const loadSymbols = async () => {
+            for (let symbolId in symbols) {
+                const symbol = symbols[symbolId];
+                await map.loadSymbol("polygon-0", (_err, newSymbol) => {
+                    Object.assign(newSymbol, symbol);
+                    map.addSymbol(symbolId, newSymbol);
+                });
+            }
+        }
+
+        // 添加土地利用图层
+        const createLandUseLayer = () => {
+            map.addLayer({
+                "id": "LandUse_R@Xinjiang(0_24)",
+                "source": "新疆土地利用类型空间分布图",
+                "source-layer": "LandUse_R@Xinjiang",
+                "type": "fill",
+                "minzoom": 0,
+                "maxzoom": 24,
+                symbol: "landUseSymbol"
+            });
+        }
+
+        // 添加水面
+        const createWaterLayer = () => {
+            map.addLayer({
+                "id": "Water_R@Xinjiang(0_24)",
+                "source": "新疆土地利用类型空间分布图",
+                "source-layer": "Water_R@Xinjiang",
+                "type": "fill",
+                symbol: "waterSymbol"
+            });
+        }
+
+        map.on('load', async () => {
+            window.map = map;
+            await loadSymbols();
+            createLandUseLayer();
+            createWaterLayer();
+        })
+    </script>
+</body>
+
+</html>
