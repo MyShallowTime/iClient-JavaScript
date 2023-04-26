@@ -4,15 +4,15 @@ export const anchorInfo = [
         value: 'point',
         children: [
             {
-                label: '基础符号类',
+                label: '基础符号',
                 value: 'point-base'
             },
             {
-                label: '自动制图符号类',
+                label: '自动制图符号',
                 value: 'point-auto'
             },
             {
-                label: '国土三调符号类',
+                label: '国土三调符号',
                 value: 'point-land'
             },
         ]
@@ -22,15 +22,15 @@ export const anchorInfo = [
         value: 'line',
         children: [
             {
-                label: '基础符号类',
+                label: '基础符号',
                 value: 'line-base'
             },
             {
-                label: '自动制图符号类',
+                label: '自动制图符号',
                 value: 'line-auto'
             },
             {
-                label: '国土三调符号类',
+                label: '国土三调符号',
                 value: 'line-land'
             },
         ]
@@ -40,15 +40,15 @@ export const anchorInfo = [
         value: 'polygon',
         children: [
             {
-                label: '基础符号类',
+                label: '基础符号',
                 value: 'polygon-base'
             },
             {
-                label: '自动制图符号类',
+                label: '自动制图符号',
                 value: 'polygon-auto'
             },
             {
-                label: '国土三调符号类',
+                label: '国土三调符号',
                 value: 'polygon-land'
             },
         ]
