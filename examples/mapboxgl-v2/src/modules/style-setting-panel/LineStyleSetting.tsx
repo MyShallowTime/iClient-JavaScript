@@ -40,7 +40,15 @@ const LineStyleSetting = (props: LineStyleSettingProps) => {
     useEffect(() => {
         updateWholeWidth();
     }, [lineIds, symbolId]);
-    
+
+    const getDashArray = (id, percent) => {
+       const beforeDash = getLayerPropertyStyle(id, 'dasharray'); 
+       const result = beforeDash.map(v => {
+            return v / percent;
+       });
+       return result;
+    }
+
     return (
         <div className='style-setting-content'>
             {!isSingleLine && <div className='style-setting-item'>
@@ -53,6 +61,7 @@ const LineStyleSetting = (props: LineStyleSettingProps) => {
                             lineIds.forEach(id => {
                                 changeLayerStyle(id, 'width', getLayerPropertyStyle(id, 'width') * percent);
                                 changeLayerStyle(id, 'offset', getLayerPropertyStyle(id, 'offset') * percent);
+                                changeLayerStyle(id, 'dasharray', getDashArray(id, percent));
                                 setWholeWidth(v);
                             });
                         }}

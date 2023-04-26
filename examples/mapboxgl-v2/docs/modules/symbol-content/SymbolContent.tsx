@@ -60,11 +60,11 @@ const SymbolContent = (props: SymbolContentProps) => {
     const { type, BasicStyleIconIds, BasicCategoryOptions, BasicCategoryStyles, AutoStyleIconIds, AutoCategoryOptions, LandStyleIconIds, LandCategoryOptions } = props;
     return (
         <div className='symbol-classify-content'>
-            <div className='symbol-classify-title' id={type + '-base'}>基础符号类</div>
+            <div className='symbol-classify-title' id={type + '-base'}>基础符号</div>
             <SymbolLayoutPanel ids={BasicStyleIconIds} options={BasicCategoryOptions} styles={BasicCategoryStyles} type={type} />
-            <div className='symbol-classify-title' id={type + '-auto'}>自动制图符号类</div>
+            <div className='symbol-classify-title' id={type + '-auto'}>自动制图符号</div>
             <SymbolLayoutPanel ids={AutoStyleIconIds} options={AutoCategoryOptions} type={type} />
-            <div className='symbol-classify-title' id={type + '-land'}>国土三调符号类</div>
+            <div className='symbol-classify-title' id={type + '-land'}>国土三调符号</div>
             <SymbolLayoutPanel ids={LandStyleIconIds} options={LandCategoryOptions} type={type} />
         </div>
     )
