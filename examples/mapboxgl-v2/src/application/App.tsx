@@ -11,7 +11,7 @@ const App = () => {
     const url = 'http://172.16.14.12:8090/iserver/services/map-china400/rest/maps/China';
     enum SymbolType {
         Polygon = 'Polygon',
-        Line = 'Line',
+        SimpleLine = 'SimpleLine',
         Point = 'Point',
         Text = 'Text'
     }
@@ -67,7 +67,7 @@ const App = () => {
             symbolId: 'polygon-23010124'
         });
         const provinceLineSymbol = await loadPreSymbol({
-            type: SymbolType.Line,
+            type: SymbolType.SimpleLine,
             symbolId: 'line-49050402'
         });
         const capitalSymbol = await loadPreSymbol({
@@ -89,7 +89,7 @@ const App = () => {
             color: '#F5F3F0'
         });
         const riverLineSymbol = loadCustomSymbol({
-            type: SymbolType.Line,
+            type: SymbolType.SimpleLine,
             cap: "round",
             color: "#91B9EA",
             dasharray: [26.67, 6.67],
