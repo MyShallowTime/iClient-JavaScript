@@ -29,7 +29,7 @@ const LineStyleSetting = (props: LineStyleSettingProps) => {
             (top > topBoundary || topBoundary === undefined) && (topBoundary = top);
             (bottom < bottomBoundary || bottomBoundary === undefined) && (bottomBoundary = bottom);
         });
-        setWholeWidth(Number((topBoundary - bottomBoundary).toFixed(2)));
+        setWholeWidth(topBoundary - bottomBoundary);
     };
 
     useEffect(() => {
@@ -39,8 +39,8 @@ const LineStyleSetting = (props: LineStyleSettingProps) => {
 
     useEffect(() => {
         updateWholeWidth();
-    }, [lineIds])
-
+    }, [lineIds, symbolId]);
+    
     return (
         <div className='style-setting-content'>
             {!isSingleLine && <div className='style-setting-item'>
