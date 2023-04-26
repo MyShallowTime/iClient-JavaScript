@@ -75,9 +75,7 @@
     const loadSymbols = async () => {
       for (let symbolId in lineSymbols) {
         const symbol = lineSymbols[symbolId];
-        console.log(symbolId, symbol);
         await map.loadSymbol(`line-${symbol}`, (_err, s) => {
-          console.log(JSON.parse(JSON.stringify(s)));
           const newSymbol = s;
           if (symbolId === "640200") {
             Object.assign(newSymbol.styles[0], {
