@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+  <title>土地利用</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    #map {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="map"></div>
+  <script src="../static/fonts/iconfont.js"></script>
+  <script type="text/javascript" src="../libs/maplibregl/maplibre-gl.js"></script>
+  <script type="text/javascript" src="../libs/maplibregl/l7.js"></script>
+  <script type="text/javascript" src="../libs/maplibregl/iclient-maplibregl-es6.js"></script>
+  <script type="text/javascript" src="../libs/maplibregl/iclient-maplibregl-mapextend.js"></script>
+  <script>
+    const map = new maplibregl.Map({
+      container: 'map',
+      style: {
+        "sources": {
+          "landuse": {
+            "tiles": ["http://172.16.14.80:8090/iserver/services/map-landuse/restjsr/v1/vectortile/maps/landuse/tiles/{z}/{x}/{y}.mvt"],
+            "type": "vector"
+          }
+        },
+        "center": [
+          108.9131713726414,
+          23.82622655814832
+        ],
+        "name": "landuse",
+        "layers": [],
+        "zoom": 12.3,
+        "version": 8
+      }
+    });
+    const polygonSymbols = {
+      "011": "polygon-83040554", //水田
+      "013": "polygon-83040556", //旱地
+      "021": "polygon-83040557", //果园
+      "023": "polygon-83040560", //其他园地
+      "031": "polygon-83040561", //有林地
+      "032": "polygon-83040565", //灌木林地
+      "033": "polygon-83040567", //其他林地
+      "043": "polygon-83040571", //其他草地
+      "127": "polygon-83040603", //裸地
+      "201": "polygon-83040819", //城市
+      "203": "polygon-83040821", //村庄
+      "101": "polygon-83040584", //铁路用地
+      "102": "polygon-83040586", //公路用地
+      "104": "polygon-83040589", //农村道路
+      "117": "polygon-83040593", //沟渠
+      "118": "polygon-83040595", //水工建筑
+      "122": "polygon-83040598", //设施农用地
+      "204": "polygon-83040822", //采矿用地
+      "205": "polygon-83040823", //风景名胜及特殊用地
+      "111": "polygon-0",        //河流水面
+      "112": "polygon-0",        //湖泊水面
+      "113": "polygon-0",        //水库水面
+      "114": "polygon-0",        //坑塘水面
+      "116": "polygon-0",        //内陆滩涂
+    };
+    const polygonStyle = {
+      "111": {
+        color: "rgba(163,214,245,1)"
+      }, //河流水面
+      "112": {
+        color: "rgba(163,214,245,1)"
+      }, //湖泊水面
+      "113": {
+        color: "rgba(163,214,245,1)"
+      }, //水库水面
+      "114": {
+        color: "rgba(144,170,207,1)"
+      }, //坑塘水面
+      "116": {
+        color: "rgba(179,222,248,1)"
+      }, //内陆滩涂
+    }
+
+    const lineSymbols = {
+      "102": "line-964458", //公路用地
+      "104": "line-964462", //农村道路
+      "111": "line-962613", //河流水面
+      "117": "line-962613", //河流水面
+    };
+    const lineStyle = {
+      "031": {
+        color: "rgba(40,140,0,1.00)"
+      },
+      "101": {
+        color: "rgba(163,214,245,1)"
+      },
+      "113": {
+        color: "rgba(163,214,245,1)"
+      },
+      "114": {
+        color: "rgba(144,170,207,1)"
+      },
+      "116": {
+        color: "rgba(179,222,248,1)"
+      },
+    }
+    // 批量加载符号
+    const loadSymbols = async () => {
+      for (let symbolId in polygonSymbols) {
+        await map.loadSymbol(polygonSymbols[symbolId], (_err, newSymbol) => {
+          Object.assign(newSymbol, polygonStyle[symbolId]);
+          map.addSymbol(symbolId, newSymbol);
+        });
+      }
+      for (let symbolId in lineSymbols) {
+        await map.loadSymbol(lineSymbols[symbolId], (_err, newSymbol) => {
+          // Object.assign(newSymbol, symbol);
+          map.addSymbol(symbolId + 'Line', newSymbol);
+        });
+      }
+    }
+    const createPolygonLayer = async (symbol) => {
+      map.addLayer({
+        "id": `landuse@landuse_${symbol}_(0_24)`,
+        "source": "landuse",
+        "source-layer": "landuse@landuse",
+        "type": "fill",
+        "filter": [
+          "all",
+          [
+            "==",
+            "$type",
+            "Polygon"
+          ],
+          [
+            "==",
+            "DLBM",
+            symbol
+          ]
+        ],
+        symbol
+      });
+    }
+    const createLineLayer = async (symbol) => {
+      map.addLayer({
+        "id": `pl@landuse_${symbol}_(0_24)`,
+        "source": "landuse",
+        "source-layer": "pl@landuse",
+        "type": "line",
+        "filter": [
+          "all",
+          [
+            "==",
+            "$type",
+            "LineString"
+          ],
+          [
+            "==",
+            "DLBM",
+            symbol
+          ]
+        ],
+        symbol: symbol + "Line"
+      });
+    }
+
+    map.on('load', async () => {
+      window.map = map;
+      await loadSymbols();
+      Object.keys(polygonSymbols).forEach(symbol => {
+        createPolygonLayer(symbol);
+      })
+      Object.keys(lineSymbols).forEach(symbol => {
+        createLineLayer(symbol);
+      })
+    })
+  </script>
+</body>
+
+</html>
