@@ -26,7 +26,7 @@ const App = () => {
 
     // 添加图层
     const loadPreSymbol = async (preSymbolInfo): Promise<string> => {
-        const { symbolId } = preSymbolInfo;
+        const { symbolId, type } = preSymbolInfo;
         // eslint-disable-next-line import/no-dynamic-require
         const symbolInfo = require(`../../static/symbols/${symbolId.split('-')[0]}/${symbolId}.json`);
         const id = uniqueId();
@@ -43,7 +43,9 @@ const App = () => {
     };
 
     const addMVTLayer = (layerId: string, sourceLayer: string, type: string, symbol: string, layersInfo): void => {
-        layersInfo.push({ id: layerId, type, sourceLayer, url });
+        if(type !== 'text') {
+            layersInfo.push({ id: layerId, type, sourceLayer, url });
+        }
         map.addLayer({
             "id": layerId,
             "type": "symbol",
@@ -51,6 +53,9 @@ const App = () => {
             "source-layer": sourceLayer,
             symbol
         });
+        if(type === 'point') {
+            map.setLayoutProperty(layerId, 'icon-allow-overlap', true);
+        }
     };
 
     const addStyle = async (): Promise<void> => {
@@ -74,16 +79,20 @@ const App = () => {
             type: SymbolType.Point,
             symbolId: 'point-83030559'
         });
-        const citySymbol = loadCustomSymbol({
+        const citySymbol = await loadPreSymbol({
             type: SymbolType.Point,
-            size: 8,
-            color: '#fff',
-            opacity: 1,
-            strokeColor: "rgba(208,2,27,1)",
-            strokeWidth: 2,
-            stroleOpacity: 0.8,
-            blur: 0.8
-        });
+            symbolId: 'point-909063'
+        })
+        // const citySymbol = loadCustomSymbol({
+        //     type: SymbolType.Point,
+        //     size: 8,
+        //     color: '#fff',
+        //     opacity: 1,
+        //     strokeColor: "rgba(208,2,27,1)",
+        //     strokeWidth: 2,
+        //     stroleOpacity: 0.8,
+        //     blur: 0.8
+        // });
         const chinaSymbol = loadCustomSymbol({
             type: SymbolType.Polygon,
             color: '#F5F3F0'
@@ -118,7 +127,7 @@ const App = () => {
         addMVTLayer('RiverLine', 'Main_River_ln@China', 'line', riverLineSymbol, newLayersInfo);
         addMVTLayer('provinceLine', 'China_Province_ln@China', 'line', provinceLineSymbol, newLayersInfo);
         addMVTLayer('capital', 'China_Capital_pt@China', 'point', capitalSymbol, newLayersInfo);
-        addMVTLayer('city', 'China_ProCenCity_pt@China', 'circle', citySymbol, newLayersInfo);
+        addMVTLayer('city', 'China_ProCenCity_pt@China', 'point', citySymbol, newLayersInfo);
         addMVTLayer('nationText', 'China_Nation_B_pt@China', 'text', nationTextSymbol, newLayersInfo);
         addMVTLayer('cityText', 'China_ProCenCity_pt@China', 'text', cityTextSymbol, newLayersInfo);
         setLayersInfo(newLayersInfo.reverse());

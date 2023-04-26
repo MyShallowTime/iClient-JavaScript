@@ -16,7 +16,7 @@ const Map = (props: MapProps) => {
       container: 'map',
       style: BaseMapStyle,
       center: [100, 35],
-      zoom: 2.9
+      zoom: 4.36
     });
     map.on('load', async () => {
       (window as any).map = map;
