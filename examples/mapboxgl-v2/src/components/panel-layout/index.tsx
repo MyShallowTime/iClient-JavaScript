@@ -22,7 +22,7 @@ const PanelLayout = (props: PanelLayoutProps) => {
                 onClick={onClickClose}
             />}
         </div>
-        <ScrollPanel style={{ height: 844 }}>
+        <ScrollPanel style={{ height: '100%' }}>
             <div className='style-setting-panel'>
                 {children}
             </div>
