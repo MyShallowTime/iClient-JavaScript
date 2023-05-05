@@ -8,7 +8,7 @@ import InputNumbersEditor from '../../components/input-numbers-editor';
 
 interface PointStyleSettingProps {
     layerId: string;
-    symbolId: string;
+    selectedSymbolId: string;
     changeLayerStyle: (layerId: string, key: string, value: any) => void;
     getLayerPropertyStyle: (id: string, key: string) => any;
     getImageInfo: (id: string) => any;
@@ -16,7 +16,7 @@ interface PointStyleSettingProps {
 
 
 const PointStyleSetting = (props: PointStyleSettingProps) => {
-    const { changeLayerStyle, layerId, getLayerPropertyStyle, getImageInfo, symbolId } = props;
+    const { changeLayerStyle, layerId, getLayerPropertyStyle, getImageInfo, selectedSymbolId } = props;
     const defaultStyle = {
         size: 1,
         color: '#fff',
@@ -35,7 +35,7 @@ const PointStyleSetting = (props: PointStyleSettingProps) => {
             opacity: getLayerPropertyStyle(layerId, 'opacity'),
             translate: getLayerPropertyStyle(layerId, 'translate')
         });
-    }, [symbolId]);
+    }, [selectedSymbolId]);
 
     const { size, color, translate, rotate, opacity } = style
     const isDataDrivenRotation = isArray(rotate) && isArray(rotate[1]);

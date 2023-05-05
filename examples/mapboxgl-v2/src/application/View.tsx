@@ -12,7 +12,8 @@ type PanelLayoutProps = {
     mapParams: MapProps,
     layerListParams: {
         layersInfo: any;
-        onIconClick: (symbolId: string, layerId: string) => Promise<void>
+        onIconClick: (symbolId: string, layerId: string) => Promise<void>;
+        setLayersInfo: React.Dispatch<React.SetStateAction<any[]>>;
     },
     styleSettingParams: {
         changeLayerStyle: (layerId: string, key: string, value: string) => void;
@@ -23,28 +24,29 @@ type PanelLayoutProps = {
 }
 
 const View = (props: PanelLayoutProps) => {
-    const { layersInfo, onIconClick } = props.layerListParams;
+    const { layersInfo, onIconClick, setLayersInfo } = props.layerListParams;
     const { changeLayerStyle, getLayerPropertyStyle, getCompositeLayersIds, getImageInfo } = props.styleSettingParams;
     const [layerId, setLayerId] = useState('');
     const type = layersInfo?.find(el => el?.id === layerId)?.type;
     const sourceLayer = layersInfo?.find(el => el?.id === layerId)?.sourceLayer;
     const url = layersInfo?.find(el => el?.id === layerId)?.url;
     const [isSettingOpen, setIsSettingOpen] = useState(false);
-    const [symbolId, setSymbolId] = useState('');
-
+    const selectedSymbolId = layersInfo.find(el => el.id === layerId)?.symbolId;
     const onClosePanal = () => {
         setIsSettingOpen(false);
     };
 
     const onClickCard = async (id) => {
-        if (id === symbolId) return;
+        if (id === selectedSymbolId) return;
         await onIconClick(id, layerId);
-        setSymbolId(id);
+        layersInfo.find(el => el.id === layerId).symbolId = id;
+        setLayersInfo([...layersInfo]);
     };
+
     const settingRender = {
-        line: <LineSetting key={layerId} layerId={layerId} symbolId={symbolId} onIconClick={onClickCard} getLayerPropertyStyle={getLayerPropertyStyle} changeLayerStyle={changeLayerStyle} getCompositeLayersIds={getCompositeLayersIds} onClosePanal={onClosePanal} />,
-        point: <PointSetting key={layerId} layerId={layerId} symbolId={symbolId} onIconClick={onClickCard} getLayerPropertyStyle={getLayerPropertyStyle} changeLayerStyle={changeLayerStyle} onClosePanal={onClosePanal} getImageInfo={getImageInfo} />,
-        polygon: <PolygonSetting key={layerId} layerId={layerId} symbolId={symbolId} onIconClick={onClickCard} getLayerPropertyStyle={getLayerPropertyStyle} changeLayerStyle={changeLayerStyle} onClosePanal={onClosePanal} />,
+        line: <LineSetting key={layerId} layerId={layerId} selectedSymbolId={selectedSymbolId} onIconClick={onClickCard} getLayerPropertyStyle={getLayerPropertyStyle} changeLayerStyle={changeLayerStyle} getCompositeLayersIds={getCompositeLayersIds} onClosePanal={onClosePanal} />,
+        point: <PointSetting key={layerId} layerId={layerId} selectedSymbolId={selectedSymbolId} onIconClick={onClickCard} getLayerPropertyStyle={getLayerPropertyStyle} changeLayerStyle={changeLayerStyle} onClosePanal={onClosePanal} getImageInfo={getImageInfo} />,
+        polygon: <PolygonSetting key={layerId} layerId={layerId} selectedSymbolId={selectedSymbolId} onIconClick={onClickCard} getLayerPropertyStyle={getLayerPropertyStyle} changeLayerStyle={changeLayerStyle} onClosePanal={onClosePanal} />,
         text: <TextSetting key={layerId} layerId={layerId} getLayerPropertyStyle={getLayerPropertyStyle} changeLayerStyle={changeLayerStyle} onClosePanal={onClosePanal} sourceLayer={sourceLayer} url={url} />,
         circle: <CircleSetting key={layerId} layerId={layerId} getLayerPropertyStyle={getLayerPropertyStyle} changeLayerStyle={changeLayerStyle} onClosePanal={onClosePanal} />
     };

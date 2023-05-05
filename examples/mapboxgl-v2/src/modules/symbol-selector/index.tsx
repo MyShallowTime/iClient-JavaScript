@@ -15,14 +15,14 @@ interface SymbolContentProps {
     styles?: any;
     iconIds?: any;
     type?: string;
+    selectedSymbolId?: string;
 }
 
 const SymbolSelector = (props: SymbolContentProps) => {
-    const { symbolType, onIconClick, options, styles, iconIds, type } = props;
+    const { symbolType, onIconClick, options, styles, iconIds, type, selectedSymbolId } = props;
     const [activeCategory, setActiveCategory] = useState<any>(options?.[0]?.value);
     const [searchValue, setSearchValue] = useState('');
     const activeStyleOptions = styles?.[activeCategory];
-
     symbolType === "base" && activeStyleOptions && activeStyleOptions?.[0]?.value !== 'all' && activeStyleOptions.unshift({
         "value": "all",
         "label": "全部"
@@ -34,7 +34,6 @@ const SymbolSelector = (props: SymbolContentProps) => {
         const categoryIds = iconIds?.[activeCategory] ?? iconIds;
         return (style ? categoryIds[style] : categoryIds) ?? [];
     }
-
     const [ids, setIds] = useState(getIds(activeStyle));
 
     useEffect(() => {
@@ -50,6 +49,16 @@ const SymbolSelector = (props: SymbolContentProps) => {
     useEffect(() => {
         setIds(getIds(activeStyle));
     }, [activeStyle]);
+
+    const getSymbol = (symbolInfos) => {
+        return symbolInfos?.map(({ id, name }) => {
+            const src = `../../../static/images/${type}/${id}.png`;
+            const newSymbolId = type + '-' + id;
+            return <IconCard key={type + id} src={src} title={name} onIconClick={() => {
+                onIconClick(newSymbolId);
+            }} isSelected={newSymbolId === selectedSymbolId} />
+        });
+    };
 
     const getBaseAllSymbol = () => {
         const allSymbol = [] as any[];
@@ -68,25 +77,10 @@ const SymbolSelector = (props: SymbolContentProps) => {
                 <div className='symbol-setting-content' key={index}>
                     <div className='symbol-setting-type-label'>{el.label}</div>
                     <div className='symbol-setting-symbols'>
-                        {
-                            el.symbols.map(({ id, name }) => {
-                                const src = `../../../static/images/${type}/${id}.png`
-                                return <IconCard key={type + id} src={src} title={name} onIconClick={() => {
-                                    onIconClick(id)
-                                }} />
-                            })}
+                        {getSymbol(el.symbols)}
                     </div>
                 </div>
             )
-        })
-    };
-
-    const getSymbol = (symbolInfos) => {
-        return symbolInfos?.map(({ id, name }) => {
-            const src = `../../../static/images/${type}/${id}.png`
-            return <IconCard key={type + id} src={src} title={name} onIconClick={() => {
-                onIconClick(id)
-            }} />
         })
     };
 
@@ -109,12 +103,7 @@ const SymbolSelector = (props: SymbolContentProps) => {
         const allIcons: { id: string, name: string }[] = [];
         getAllIconIds(allIcons, iconIds);
         const searchResutl = allIcons.filter((el) => el.name.includes(searchValue));
-        return searchResutl?.map(({ id, name }) => {
-            const src = `../../../static/images/${type}/${id}.png`;
-            return <IconCard key={type + id} src={src} title={name} onIconClick={() => {
-                onIconClick(id);
-            }} />
-        });
+        return getSymbol(searchResutl);
     };
 
     return (

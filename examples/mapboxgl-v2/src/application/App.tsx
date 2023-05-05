@@ -25,35 +25,40 @@ const App = () => {
     }
 
     // 添加图层
-    const loadPreSymbol = async (preSymbolInfo): Promise<string> => {
-        const { symbolId, type } = preSymbolInfo;
+    const loadPreSymbol = async (preSymbolInfo) => {
+        const { symbolId } = preSymbolInfo;
         // eslint-disable-next-line import/no-dynamic-require
         const symbolInfo = require(`../../static/symbols/${symbolId.split('-')[0]}/${symbolId}.json`);
         const id = uniqueId();
         await map.loadSymbol(cloneDeep(symbolInfo), (_err, symbol) => {
             map.addSymbol(id, symbol);
         });
-        return id;
+        return { id, symbolId };
     };
 
-    const loadCustomSymbol = (customSymbolInfo): string => {
+    const loadCustomSymbol = (customSymbolInfo) => {
+        let symbolId;
+        if (customSymbolInfo.type === SymbolType.Polygon) {
+            symbolId = 'polygon-0'
+        }
         const id = uniqueId();
         map.addSymbol(id, customSymbolInfo);
-        return id;
+        return { id, symbolId };
     };
 
-    const addMVTLayer = (layerId: string, sourceLayer: string, type: string, symbol: string, layersInfo): void => {
-        if(type !== 'text') {
-            layersInfo.push({ id: layerId, type, sourceLayer, url });
+    const addMVTLayer = (layerId: string, sourceLayer: string, type: string, symbol: any, layersInfo): void => {
+        const { id, symbolId } = symbol;
+        if (type !== 'text') {
+            layersInfo.push({ id: layerId, type, sourceLayer, url, symbolId });
         }
         map.addLayer({
             "id": layerId,
             "type": "symbol",
             "source": "ChinaSource",
             "source-layer": sourceLayer,
-            symbol
+            symbol: id
         });
-        if(type === 'point') {
+        if (type === 'point') {
             map.setLayoutProperty(layerId, 'icon-allow-overlap', true);
         }
     };
@@ -139,7 +144,7 @@ const App = () => {
         if (!map) return;
         const type = getLayerType(layerId);
         // eslint-disable-next-line import/no-dynamic-require
-        const symbolInfo = cloneDeep(require(`../../static/symbols/${type}/${type}-${symbolId}.json`));
+        const symbolInfo = cloneDeep(require(`../../static/symbols/${type}/${symbolId}.json`));
         console.log(symbolInfo, 'symbolInfo');
         const id = uniqueId();
         await map.loadSymbol(symbolInfo, (_err, symbol) => {
@@ -197,6 +202,7 @@ const App = () => {
     return <View
         layerListParams={{
             layersInfo,
+            setLayersInfo,
             onIconClick
         }}
         mapParams={{

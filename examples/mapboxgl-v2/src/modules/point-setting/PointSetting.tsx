@@ -5,8 +5,8 @@ import PointStyleSetting from '../style-setting-panel/PointStyleSetting';
 
 type PointSettingProps = {
     layerId: string;
-    symbolId: string;
-    onIconClick: (symbolId: string) => Promise<void>;
+    selectedSymbolId: string;
+    onIconClick: (selectedSymbolId: string) => Promise<void>;
     changeLayerStyle: (layerId: string, key: string, value: string) => void;
     getLayerPropertyStyle: (layerId: string, key: string) => any;
     onClosePanal: () => void;
@@ -14,12 +14,12 @@ type PointSettingProps = {
 }
 
 const PointSetting = (props: PointSettingProps) => {
-    const { layerId, symbolId, onIconClick, changeLayerStyle, getLayerPropertyStyle, onClosePanal, getImageInfo } = props;
+    const { layerId, selectedSymbolId, onIconClick, changeLayerStyle, getLayerPropertyStyle, onClosePanal, getImageInfo } = props;
 
     return (
         <PanelLayout className='point-setting-panel' title={layerId} onClickClose={onClosePanal} >
-            <PointBuiltInContent onIconClick={onIconClick} />
-            <PointStyleSetting layerId={layerId} getLayerPropertyStyle={getLayerPropertyStyle} changeLayerStyle={changeLayerStyle} symbolId={symbolId} getImageInfo={getImageInfo} />
+            <PointBuiltInContent onIconClick={onIconClick} selectedSymbolId={selectedSymbolId} />
+            <PointStyleSetting layerId={layerId} getLayerPropertyStyle={getLayerPropertyStyle} changeLayerStyle={changeLayerStyle} selectedSymbolId={selectedSymbolId} getImageInfo={getImageInfo} />
         </PanelLayout >
     )
 }

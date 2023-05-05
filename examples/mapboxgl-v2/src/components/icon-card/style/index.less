@@ -3,7 +3,9 @@
     margin: 0 8px 12px 0;
     cursor: pointer;
     display: inline-block;
-
+    &.selected .img-content{
+        border-color: #269FF0;
+    }
     .img-content {
         width: 56px;
         height: 42px;
@@ -11,6 +13,7 @@
         border-radius: 4px;
         display: flex;
         align-items: center;
+        border: 1px solid transparent;
 
         img {
             width: 50%;
