@@ -5,7 +5,7 @@ import NumberEditor from '../../components/number-editor';
 
 interface LineStyleSettingProps {
     layerId: string;
-    symbolId: string;
+    selectedSymbolId: string;
     changeLayerStyle: (layerId: string, key: string, value: any) => void;
     getLayerPropertyStyle: (id: string, key: string) => any;
     getCompositeLayersIds: (layerId: string) => string[];
@@ -13,7 +13,7 @@ interface LineStyleSettingProps {
 
 
 const LineStyleSetting = (props: LineStyleSettingProps) => {
-    const { changeLayerStyle, layerId, getLayerPropertyStyle, symbolId, getCompositeLayersIds } = props;
+    const { changeLayerStyle, layerId, getLayerPropertyStyle, selectedSymbolId, getCompositeLayersIds } = props;
     const [lineIds, setLineIds] = useState<string[]>([]);
     const [wholeWidth, setWholeWidth] = useState(0);
     const isSingleLine = lineIds.length === 1;
@@ -35,11 +35,11 @@ const LineStyleSetting = (props: LineStyleSettingProps) => {
     useEffect(() => {
         const ids = getCompositeLayersIds(layerId);
         setLineIds(ids ?? [layerId]);
-    }, [symbolId]);
+    }, [selectedSymbolId]);
 
     useEffect(() => {
         updateWholeWidth();
-    }, [lineIds, symbolId]);
+    }, [lineIds, selectedSymbolId]);
 
     const getDashArray = (id, percent) => {
        const beforeDash = getLayerPropertyStyle(id, 'dasharray'); 
@@ -76,7 +76,7 @@ const LineStyleSetting = (props: LineStyleSettingProps) => {
                 return (
                     <div key={id}>
                         {!isSingleLine && <div className='style-item-title'>{`线段${index + 1}:`}</div>}
-                        <SingleLineStyleSetting layerId={id} changeLayerStyle={changeLayerStyle} getLayerPropertyStyle={getLayerPropertyStyle} symbolId={symbolId} wholeWidth={wholeWidth} updateWholeWidth={updateWholeWidth} />
+                        <SingleLineStyleSetting layerId={id} changeLayerStyle={changeLayerStyle} getLayerPropertyStyle={getLayerPropertyStyle} selectedSymbolId={selectedSymbolId} wholeWidth={wholeWidth} updateWholeWidth={updateWholeWidth} />
                     </div>
                 )
             })}

@@ -7,12 +7,12 @@ interface PolygonStyleSettingtProps {
     layerId: string;
     changeLayerStyle: (layerId: string, key: string, value: any) => void;
     getLayerPropertyStyle: (id: string, key: string) => any;
-    symbolId: string;
+    selectedSymbolId: string;
 }
 
 
 const PolygonStyleSetting = (props: PolygonStyleSettingtProps) => {
-    const { changeLayerStyle, layerId, getLayerPropertyStyle, symbolId } = props;
+    const { changeLayerStyle, layerId, getLayerPropertyStyle, selectedSymbolId } = props;
 
     const defaultStyle = {
         color: '#fff',
@@ -33,7 +33,7 @@ const PolygonStyleSetting = (props: PolygonStyleSettingtProps) => {
             opacity: getLayerPropertyStyle(layerId, 'opacity'),
             image: getLayerPropertyStyle(layerId, 'image')
         });
-    }, [symbolId]);
+    }, [selectedSymbolId]);
 
     const { color, opacity, image } = style;
 

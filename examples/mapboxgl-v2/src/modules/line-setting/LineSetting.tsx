@@ -5,8 +5,8 @@ import LineStyleSetting from '../style-setting-panel/LineStyleSetting';
 
 type LineSettingProps = {
     layerId: string;
-    symbolId: string;
-    onIconClick: (symbolId: string) => Promise<void>;
+    selectedSymbolId: string;
+    onIconClick: (selectedSymbolId: string) => Promise<void>;
     changeLayerStyle: (layerId: string, key: string, value: string) => void;
     getLayerPropertyStyle: (layerId: string, key: string) => any;
     getCompositeLayersIds: (layerId: string) => string[];
@@ -14,12 +14,12 @@ type LineSettingProps = {
 };
 
 const LineSetting = (props: LineSettingProps) => {
-    const { layerId, symbolId, onIconClick, changeLayerStyle, getLayerPropertyStyle, getCompositeLayersIds, onClosePanal } = props;
+    const { layerId, selectedSymbolId, onIconClick, changeLayerStyle, getLayerPropertyStyle, getCompositeLayersIds, onClosePanal } = props;
 
     return (
         <PanelLayout className='line-setting-panel' title={layerId} onClickClose={onClosePanal}>
-            <LineBuiltInContent onIconClick={onIconClick} />
-            <LineStyleSetting layerId={layerId} getLayerPropertyStyle={getLayerPropertyStyle} changeLayerStyle={changeLayerStyle} symbolId={symbolId} getCompositeLayersIds={getCompositeLayersIds} />
+            <LineBuiltInContent onIconClick={onIconClick} selectedSymbolId={selectedSymbolId} key={layerId} />
+            <LineStyleSetting layerId={layerId} getLayerPropertyStyle={getLayerPropertyStyle} changeLayerStyle={changeLayerStyle} selectedSymbolId={selectedSymbolId} getCompositeLayersIds={getCompositeLayersIds} />
         </PanelLayout>
     )
 }

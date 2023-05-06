@@ -7,7 +7,7 @@ import InputNumbersEditor from '../../components/input-numbers-editor';
 
 interface SingleLineStyleContentProps {
     layerId: string;
-    symbolId: string;
+    selectedSymbolId: string;
     wholeWidth: number;
     changeLayerStyle: (layerId: string, key: string, value: any) => void;
     getLayerPropertyStyle: (id: string, key: string) => any;
@@ -15,7 +15,7 @@ interface SingleLineStyleContentProps {
 }
 
 const SingleLineStyleSetting = (props: SingleLineStyleContentProps) => {
-    const { layerId, symbolId, wholeWidth, changeLayerStyle, getLayerPropertyStyle, updateWholeWidth } = props;
+    const { layerId, selectedSymbolId, wholeWidth, changeLayerStyle, getLayerPropertyStyle, updateWholeWidth } = props;
 
     const defaultStyle = {
         width: 1,
@@ -54,7 +54,7 @@ const SingleLineStyleSetting = (props: SingleLineStyleContentProps) => {
             translate: getLayerPropertyStyle(layerId, 'translate'),
             image: getLayerPropertyStyle(layerId, 'image')
         });
-    }, [layerId, symbolId, wholeWidth]);
+    }, [layerId, selectedSymbolId, wholeWidth]);
 
     const { width, color, offset, opacity, blur, join, cap, translate, image } = style;
 
