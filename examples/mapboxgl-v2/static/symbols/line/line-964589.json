@@ -1,1 +1,1 @@
-{"type":"MultiLine","styles":[{"type":"SimpleLine","color":"rgba(210,210,210,1.00)","width":11.72,"cap":"butt"},{"type":"SimpleLine","color":"rgba(254,253,169,1.00)","width":9.83,"cap":"round"}]}
+{"type":"MultiLine","styles":[{"type":"SimpleLine","width":11.72,"color":"rgba(210, 210, 210, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":9.83,"color":"rgba(254, 253, 169, 1.00)","cap":"round","join":"round"}]}
