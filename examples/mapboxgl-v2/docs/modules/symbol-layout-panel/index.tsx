@@ -38,14 +38,20 @@ const SymbolLayoutPanel = (props: SymbolLayoutPanelProps) => {
         }
     }) : [];
 
+    const getIconCards = (symbolInfos) => {
+        return symbolInfos?.map((i) => {
+            return <IconCard iconInfo={i} type={type} key={type + i.id} />
+        })
+    };
+
     const getSymbolConent = () => {
         if (!options) {
             return (
                 <div className='symbol-layout-item'>
                     <div className='symbol-category-content'>
-                        {ids.map((i) => {
-                            return <IconCard iconInfo={i} type={type} key={type + i.id} />
-                        })}
+                        {
+                            getIconCards(ids)
+                        }
                     </div>
                 </div>
             )
@@ -61,16 +67,12 @@ const SymbolLayoutPanel = (props: SymbolLayoutPanelProps) => {
                                     <div className='symbol-style' key={'style' + idx}>
                                         <div className='symbol-style-title'>{styleInfo.label}</div>
                                         <div className='symbol-style-content'>
-                                            {styleInfo?.styleIdsInfo?.map((i) => {
-                                                return <IconCard iconInfo={i} type={type} key={type + i.id} />
-                                            })}
+                                            {getIconCards(styleInfo?.styleIdsInfo)}
                                         </div>
                                     </div>
                                 )
                             })
-                            : info?.categoryIdsInfo?.map((i) => {
-                                return <IconCard iconInfo={i} type={type} key={type + i.id} />
-                            })}
+                            : getIconCards(info?.categoryIdsInfo)}
                     </div>
 
                 </div>
