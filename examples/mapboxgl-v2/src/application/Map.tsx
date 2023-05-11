@@ -11,8 +11,8 @@ const Map = (props: MapProps) => {
   const { onLoadedMap } = props;
 
   useEffect(() => {
-    const map = new (window as any).maplibregl.Map({
-    // const map = new window.mapboxgl.Map({
+    // const map = new (window as any).maplibregl.Map({
+    const map = new (window as any).mapboxgl.Map({
       container: 'map',
       style: BaseMapStyle,
       center: [100, 35],
@@ -24,7 +24,7 @@ const Map = (props: MapProps) => {
     });
   }, [])
 
-  return <div id={"map"}></div>
+  return <div id="map"></div>
 }
 
 export default Map;

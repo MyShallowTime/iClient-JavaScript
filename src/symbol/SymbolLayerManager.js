@@ -1,14 +1,12 @@
 import MapboxSymbolLayerManager from "./MapboxSymbolLayerManager";
 
 const SymbolLayerManager = () => {
-    const result = {};
-    return (type, map) => {
-        if(!result[type]) {
-            result[type] = {
-                mapbox: MapboxSymbolLayerManager
-            }[type]
+    let result;
+    return (map) => {
+        if(!result) {
+            result = MapboxSymbolLayerManager(map);
         }
-        return result[type]?.(map);
+        return result;
     }
 }
 export default SymbolLayerManager;

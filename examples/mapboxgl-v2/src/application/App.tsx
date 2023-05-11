@@ -3,7 +3,7 @@ import View from './View';
 import './style';
 import { cloneDeep, uniqueId } from 'lodash';
 import { getMapboxKey, isPaintKey } from '../utils/StyleSettingUtil';
-import '../../../../src/maplibregl/core/MapExtend';
+// import '../../../../src/mapboxgl/core/MapExtend';
 
 const App = () => {
     const [map, setMap] = useState<any>();

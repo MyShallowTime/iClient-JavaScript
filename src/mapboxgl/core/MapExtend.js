@@ -2,7 +2,7 @@
  * This program are made available under the terms of the Apache License, Version 2.0
  * which accompanies this distribution and is available at http://www.apache.org/licenses/LICENSE-2.0.html.*/
 import { Util } from '@supermap/iclient-common/commontypes/Util';
-import mapboxgl from 'mapbox-gl';
+// import mapboxgl from 'mapbox-gl';
 import CompositeLayersManager from '../../symbol/CompositeLayersManager';
 import SymbolLayerManager from '../../symbol/SymbolLayerManager';
 import SymbolManager from '../../symbol/SymbolManager';
@@ -12,6 +12,7 @@ import SymbolManager from '../../symbol/SymbolManager';
  * @description  扩展了 mapboxgl.Map 对图层相关的操作。
  * @private
  */
+ const mapboxgl = window.mapboxgl;
 export var MapExtend = (function () {
   mapboxgl.Map.prototype.overlayLayersManager = {};
   mapboxgl.Map.prototype.compositeLayersManager = CompositeLayersManager();
@@ -21,14 +22,8 @@ export var MapExtend = (function () {
   if (mapboxgl.Map.prototype.addLayerBak === undefined) {
     mapboxgl.Map.prototype.addLayerBak = mapboxgl.Map.prototype.addLayer;
     mapboxgl.Map.prototype.addLayer = function (layer, before) {
-      const id = layer.symbol;
-      if(id) {
-        const symbol = this.symbolManager.getSymbol(id);
-        if (!symbol) {
-          console.warn(`Symbol "${id}" could not be loaded. Please make sure you have added the symbol with map.addSymbol().`);
-          return;
-        }          
-        this.symbolLayerManager('mapbox', this).addLayer(layer, symbol, before);
+      if(layer.symbol) {
+        this.symbolLayerManager(this).addLayer(layer, layer.symbol, before);
         return this;
       }
 
@@ -135,13 +130,12 @@ export var MapExtend = (function () {
     );
   };
 
-  mapboxgl.Map.prototype.setSymbol = function (layerId, id) {
-    const symbol = this.symbolManager.getSymbol(id);
-    if (!symbol) {
-      console.warn(`Symbol "${id}" could not be loaded. Please make sure you have added the symbol with map.addSymbol().`);
-      return;
-    }
-    this.symbolLayerManager('mapbox', this).setSymbol(layerId, symbol);
+  mapboxgl.Map.prototype.setSymbol = function (layerId, symbol) {
+    this.symbolLayerManager(this).setSymbol(layerId, symbol);
+  };
+
+  mapboxgl.Map.prototype.setSymbolProperty = function (layerId, name, value) {
+    this.symbolLayerManager(this).setSymbolProperty(layerId, name, value);
   };
 
   if(!(mapboxgl.Map.prototype).setStyleBak) {
@@ -174,7 +168,11 @@ export var MapExtend = (function () {
     });
   };
 
-  const getSymbol = () => {}
+  const getSymbol = (symbolId) => {
+    // eslint-disable-next-line import/no-dynamic-require
+      const symbolInfo = require(`../../../examples/mapboxgl-v2/static/symbols/${symbolId.split('-')[0]}/${symbolId}.json`);
+      return JSON.parse(JSON.stringify(symbolInfo));
+  }
 
   mapboxgl.Map.prototype.loadSymbol = async function (symbol, callback) {
     let error;
@@ -268,3 +266,5 @@ export var MapExtend = (function () {
     }
   }
 })();
+window.mapboxgl = mapboxgl;
+
