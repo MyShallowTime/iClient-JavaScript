@@ -166,6 +166,8 @@ const MapboxSymbolLayerManager = (m) => {
          * @param {*} symbol 
          */
         addSimpleSymbol(layer, symbol, before) {
+            const properties = { ...layer?.paint, ...layer?.layout };
+            Object.assign(symbol, properties);
             const style = this.symbolToLayerStyle(symbol);
             const paint = {}, layout = {};
             // 过滤掉为undefined的key

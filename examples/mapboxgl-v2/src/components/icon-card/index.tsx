@@ -3,17 +3,22 @@ import './style';
 import classNames from 'classnames';
 
 interface IconCardContentProps {
-    src: string;
+    imgUrl?: string;
+    background?: string;
     title: string;
     onIconClick: () => void;
     isSelected?: boolean;
 }
 
 const IconCard = (props: IconCardContentProps) => {
-    const { src, title, isSelected, onIconClick } = props;
+    const { imgUrl, title, isSelected, background, onIconClick } = props;
     return (
         <div className={classNames("icon-image", { 'selected': isSelected })} onClick={onIconClick}>
-            <div className='img-content'><img src={src} /></div>
+            <div className='img-content'>
+                {
+                    imgUrl ? <img src={imgUrl} /> : <div style={{ background }} />
+                }
+            </div>
             <div className='title-content' title={title}>{title}</div>
         </div>
     )
