@@ -1336,7 +1336,7 @@ var map = {
 	"./line/line-964807.json": 34889,
 	"./line/line-964808.json": 20463,
 	"./line/line-964809.json": 51695,
-	"./line/line-964810.json": 30595,
+	"./line/line-9648100.json": 5181,
 	"./line/line-964811.json": 76694,
 	"./line/line-964812.json": 604,
 	"./line/line-964813.json": 25288,
@@ -28884,7 +28884,7 @@ module.exports = JSON.parse('{"size":5,"color":"#f00","opacity":1,"image":"../st
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(255,0,0,1.00)","width":0.38,"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(255, 0, 0, 1.00)","cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -28892,7 +28892,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(255,0,0,1.00)","width"
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -28900,7 +28900,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -28908,7 +28908,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -28916,7 +28916,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(192,192,192,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(192, 192, 192, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -28924,7 +28924,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(192,192,192,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(192,192,192,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(192, 192, 192, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -28932,7 +28932,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(192,192,192,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(192,192,192,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(192, 192, 192, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -28940,7 +28940,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(192,192,192,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(192,192,192,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(192, 192, 192, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -28948,7 +28948,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(192,192,192,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(192,192,192,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(192, 192, 192, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -28956,7 +28956,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(192,192,192,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(192,192,192,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(192, 192, 192, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -28964,7 +28964,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(192,192,192,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(192,192,192,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(192, 192, 192, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -28972,7 +28972,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(192,192,192,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(76,76,76,1.00)","width":0.38,"dasharray":[28,15],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(76, 76, 76, 1.00)","dasharray":[9.28,4.97],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -28980,7 +28980,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(76,76,76,1.00)","width
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(76,76,76,1.00)","width":0.38,"dasharray":[20,10],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(76, 76, 76, 1.00)","dasharray":[6.63,3.32],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -28988,7 +28988,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(76,76,76,1.00)","width
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,254,255,1.00)","width":0.38,"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 254, 255, 1.00)","cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -28996,7 +28996,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,254,255,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,254,255,1.00)","width":1.89,"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.89,"color":"rgba(0, 254, 255, 1.00)","cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -29004,7 +29004,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,254,255,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,254,255,1.00)","width":1.51,"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.51,"color":"rgba(0, 254, 255, 1.00)","cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -29012,7 +29012,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,254,255,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,254,255,1.00)","width":1.51,"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.51,"color":"rgba(0, 254, 255, 1.00)","cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -29020,7 +29020,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,254,255,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,254,255,1.00)","width":0.38,"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 254, 255, 1.00)","cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -29028,7 +29028,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,254,255,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,254,255,1.00)","width":0.38,"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 254, 255, 1.00)","cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -29036,7 +29036,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,254,255,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,254,255,1.00)","width":0.38,"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 254, 255, 1.00)","cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -29044,7 +29044,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,254,255,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","width":0.38,"dasharray":[16,16],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 255, 255, 1.00)","dasharray":[5.31,5.31],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -29052,7 +29052,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","width":0.38,"dasharray":[16,16],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 255, 255, 1.00)","dasharray":[5.31,5.31],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -29060,7 +29060,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","width":0.38,"dasharray":[10,10],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 255, 255, 1.00)","dasharray":[3.32,3.32],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -29084,7 +29084,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(181,207,255,1.00)","width":1.51,"dasharray":[11.25,3.25,0.75,3.25,0.75,3.25],"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.51,"color":"rgba(181, 207, 255, 1.00)","dasharray":[11.26,3.25,0.75,3.25,0.75,3.25],"cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -29092,7 +29092,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(181,207,255,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(181,207,255,1.00)","width":0.38,"dasharray":[45,13,3,13,3,13],"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(181, 207, 255, 1.00)","dasharray":[14.92,4.31,0.99,4.31,0.99,4.31],"cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -29100,7 +29100,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(181,207,255,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(181,207,255,1.00)","width":0.38,"dasharray":[45,13,3,13,3,13],"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(181, 207, 255, 1.00)","dasharray":[14.92,4.31,0.99,4.31,0.99,4.31],"cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -29108,7 +29108,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(181,207,255,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","width":0.38,"dasharray":[30,10],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 255, 255, 1.00)","dasharray":[9.95,3.32],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -29116,7 +29116,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","width":0.38,"dasharray":[30,10],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 255, 255, 1.00)","dasharray":[9.95,3.32],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -29124,7 +29124,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","width":0.38,"dasharray":[20,5],"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 255, 255, 1.00)","dasharray":[6.63,1.66],"cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -29132,7 +29132,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","width":1.51,"dasharray":[5,1.25],"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.51,"color":"rgba(0, 255, 255, 1.00)","dasharray":[5.01,1.25],"cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -29140,7 +29140,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","width":0.38,"dasharray":[20,5],"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 255, 255, 1.00)","dasharray":[6.63,1.66],"cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -29148,7 +29148,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","width":0.38,"dasharray":[20,5],"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 255, 255, 1.00)","dasharray":[6.63,1.66],"cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -29156,7 +29156,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(178,107,0,1.00)","width":0.38,"dasharray":[30,10],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(178, 107, 0, 1.00)","dasharray":[9.95,3.32],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -29164,7 +29164,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(178,107,0,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(178,107,0,1.00)","width":0.38,"dasharray":[30,10],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(178, 107, 0, 1.00)","dasharray":[9.95,3.32],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -29172,7 +29172,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(178,107,0,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(178,107,0,1.00)","width":0.38,"dasharray":[20,5],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(178, 107, 0, 1.00)","dasharray":[6.63,1.66],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -29180,7 +29180,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(178,107,0,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(178,107,0,1.00)","width":0.38,"dasharray":[30,10],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(178, 107, 0, 1.00)","dasharray":[9.95,3.32],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -29188,7 +29188,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(178,107,0,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(178,107,0,1.00)","width":0.38,"dasharray":[24,8],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(178, 107, 0, 1.00)","dasharray":[7.96,2.65],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -29196,7 +29196,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(178,107,0,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","width":1.51,"dasharray":[5,5],"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.51,"color":"rgba(0, 255, 255, 1.00)","dasharray":[5.01,5.01],"cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -29204,7 +29204,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","width":0.38,"dasharray":[20,20],"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 255, 255, 1.00)","dasharray":[6.63,6.63],"cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -29212,7 +29212,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","width":0.38,"dasharray":[20,20],"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 255, 255, 1.00)","dasharray":[6.63,6.63],"cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -29220,7 +29220,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","width":1.13,"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.13,"color":"rgba(0, 255, 255, 1.00)","cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -29228,7 +29228,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","width":1.13,"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.13,"color":"rgba(0, 255, 255, 1.00)","cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -29252,7 +29252,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,254,254,1.00)","width":1.13,"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.13,"color":"rgba(0, 254, 254, 1.00)","cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -29260,7 +29260,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,254,254,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","width":1.89,"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.89,"color":"rgba(0, 255, 255, 1.00)","cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -29268,7 +29268,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/22020202.png"}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":1.14,"color":"rgba(0, 255, 255, 1.00)","cap":"square","join":"round"},{"type":"SimpleLine","width":3.78,"color":"rgba(0, 255, 255, 1.00)","dasharray":[0.02,0.33,0.02,0.33],"cap":"square","offset":1.89,"join":"round"}]}');
 
 /***/ }),
 
@@ -29276,7 +29276,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,254,254,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 254, 254, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -29284,7 +29284,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,254,254,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","width":0.76,"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.52,"color":"rgba(0, 255, 255, 1.00)","cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -29292,7 +29292,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","width":0.76,"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.52,"color":"rgba(0, 255, 255, 1.00)","cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -29316,7 +29316,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,254,255,1.00)","width":1.13,"dasharray":[13.33,3.33],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.13,"color":"rgba(0, 254, 255, 1.00)","dasharray":[13.38,3.35],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -29324,7 +29324,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,254,255,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,254,255,1.00)","width":1.13,"dasharray":[13.33,3.33],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.13,"color":"rgba(0, 254, 255, 1.00)","dasharray":[13.38,3.35],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -29356,7 +29356,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,0,0,1.00)","width":1.13,"offset":1.51,"cap":"square"},{"type":"Line","color":"rgba(0,0,0,1.00)","width":1.13,"offset":-1.51,"cap":"square"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":1.13,"color":"rgba(0, 0, 0, 1.00)","cap":"square","offset":-1.51,"join":"round"},{"type":"SimpleLine","width":1.13,"color":"rgba(0, 0, 0, 1.00)","cap":"square","offset":1.51,"join":"round"}]}');
 
 /***/ }),
 
@@ -29364,7 +29364,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.76,"offset":1.51,"cap":"square"},{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.76,"offset":-1.51,"cap":"square"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":1.52,"color":"rgba(0, 0, 0, 1.00)","cap":"square","offset":-1.51,"join":"round"},{"type":"SimpleLine","width":1.52,"color":"rgba(0, 0, 0, 1.00)","cap":"square","offset":1.51,"join":"round"}]}');
 
 /***/ }),
 
@@ -29372,7 +29372,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.76,"offset":1.51,"cap":"square"},{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.76,"offset":-1.51,"cap":"square"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":1.52,"color":"rgba(0, 0, 0, 1.00)","cap":"square","offset":-1.51,"join":"round"},{"type":"SimpleLine","width":1.52,"color":"rgba(0, 0, 0, 1.00)","cap":"square","offset":1.51,"join":"round"}]}');
 
 /***/ }),
 
@@ -29380,7 +29380,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"offset":1.51,"cap":"square"},{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"offset":-1.51,"cap":"square"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","cap":"square","offset":-1.51,"join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","cap":"square","offset":1.51,"join":"round"}]}');
 
 /***/ }),
 
@@ -29388,7 +29388,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","width":0.38,"dasharray":[10,5],"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 255, 255, 1.00)","dasharray":[3.32,1.66],"cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -29396,7 +29396,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","width":0.38,"dasharray":[10,5],"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 255, 255, 1.00)","dasharray":[3.32,1.66],"cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -29404,7 +29404,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","width":0.38,"dasharray":[10,5],"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 255, 255, 1.00)","dasharray":[3.32,1.66],"cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -29412,7 +29412,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -29420,7 +29420,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -29428,7 +29428,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"dasharray":[12,10],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","dasharray":[3.98,3.32],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -29436,7 +29436,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"dasharray":[12,10],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","dasharray":[3.98,3.32],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -29444,7 +29444,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"dasharray":[12,10],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","dasharray":[3.98,3.32],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -29460,7 +29460,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(178,107,0,1.00)","width":0.76,"dasharray":[12,6],"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.52,"color":"rgba(178, 107, 0, 1.00)","dasharray":[5.96,2.98],"cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -29476,7 +29476,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","width":0.38,"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 255, 255, 1.00)","cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -29484,7 +29484,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","width":0.38,"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 255, 255, 1.00)","cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -29492,7 +29492,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","width":0.38,"dasharray":[30,10],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 255, 255, 1.00)","dasharray":[9.95,3.32],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -29500,7 +29500,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","width":0.38,"dasharray":[30,10],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 255, 255, 1.00)","dasharray":[9.95,3.32],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -29508,7 +29508,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","width":0.38,"dasharray":[24,8],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 255, 255, 1.00)","dasharray":[7.96,2.65],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -29516,7 +29516,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","width":0.38,"dasharray":[20,5],"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 255, 255, 1.00)","dasharray":[6.63,1.66],"cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -29524,7 +29524,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(178,107,0,1.00)","width":0.38,"dasharray":[24,8],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(178, 107, 0, 1.00)","dasharray":[7.96,2.65],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -29532,7 +29532,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(178,107,0,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(178,107,0,1.00)","width":0.38,"dasharray":[24,8],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(178, 107, 0, 1.00)","dasharray":[7.96,2.65],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -29540,7 +29540,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(178,107,0,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(178,107,0,1.00)","width":0.38,"dasharray":[24,8],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(178, 107, 0, 1.00)","dasharray":[7.96,2.65],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -29548,7 +29548,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(178,107,0,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(178,107,0,1.00)","width":0.38,"dasharray":[20,5],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(178, 107, 0, 1.00)","dasharray":[6.63,1.66],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -29556,7 +29556,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(178,107,0,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","width":0.38,"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 255, 255, 1.00)","cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -29564,7 +29564,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","width":0.38,"dasharray":[24,8],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 255, 255, 1.00)","dasharray":[7.96,2.65],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -29572,7 +29572,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","width":0.38,"dasharray":[20,5],"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 255, 255, 1.00)","dasharray":[6.63,1.66],"cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -29588,7 +29588,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(76,76,76,1.00)","width":0.38,"dasharray":[20,10],"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(76, 76, 76, 1.00)","dasharray":[6.63,3.32],"cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -29628,7 +29628,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,254,255,1.00)","width":0.76,"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.52,"color":"rgba(0, 254, 255, 1.00)","cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -29636,7 +29636,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,254,255,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,254,255,1.00)","width":0.76,"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.52,"color":"rgba(0, 254, 255, 1.00)","cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -29644,7 +29644,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,254,255,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,254,255,1.00)","width":0.76,"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.52,"color":"rgba(0, 254, 255, 1.00)","cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -29652,7 +29652,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,254,255,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,254,255,1.00)","width":0.76,"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.52,"color":"rgba(0, 254, 255, 1.00)","cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -29772,7 +29772,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","width":0.38,"dasharray":[20,20],"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 255, 255, 1.00)","dasharray":[6.63,6.63],"cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -29780,7 +29780,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","width":0.38,"dasharray":[20,20],"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 255, 255, 1.00)","dasharray":[6.63,6.63],"cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -29788,7 +29788,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","width":0.38,"dasharray":[10,10],"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 255, 255, 1.00)","dasharray":[3.32,3.32],"cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -29796,7 +29796,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","width":0.38,"dasharray":[10,10],"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 255, 255, 1.00)","dasharray":[3.32,3.32],"cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -29820,7 +29820,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","width":0.38,"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 255, 255, 1.00)","cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -29828,7 +29828,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(126,206,245,1.00)","width":1.51,"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.51,"color":"rgba(126, 206, 245, 1.00)","cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -29836,7 +29836,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(126,206,245,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","width":0.76,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.52,"color":"rgba(0, 255, 255, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -29844,7 +29844,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(126,206,245,1.00)","width":1.51,"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.51,"color":"rgba(126, 206, 245, 1.00)","cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -29868,7 +29868,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","width":0.38,"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 255, 255, 1.00)","cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -29908,7 +29908,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,254,255,1.00)","width":1.51,"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.51,"color":"rgba(0, 254, 255, 1.00)","cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -29916,7 +29916,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,254,255,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,254,255,1.00)","width":1.51,"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.51,"color":"rgba(0, 254, 255, 1.00)","cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -29924,7 +29924,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,254,255,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(115,178,255,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(115, 178, 255, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -29932,7 +29932,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(115,178,255,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(115,178,255,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(115, 178, 255, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -29980,7 +29980,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/27010114.png"}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":1.14,"color":"rgba(34, 30, 31, 1.00)","cap":"square","join":"round"},{"type":"SimpleLine","width":3.78,"color":"rgba(34, 30, 31, 1.00)","dasharray":[0.02,0.67,0.02,0.67],"cap":"square","offset":-1.89,"join":"round"},{"type":"SimpleLine","width":1.89,"color":"rgba(34, 30, 31, 1.00)","dasharray":[0.03,1.33,0.03,1.33],"cap":"square","offset":-0.94,"join":"round"}]}');
 
 /***/ }),
 
@@ -29988,7 +29988,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/27010124.png"}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":1.14,"color":"rgba(34, 30, 31, 1.00)","cap":"square","join":"round"},{"type":"SimpleLine","width":3.78,"color":"rgba(34, 30, 31, 1.00)","dasharray":[0.02,0.67,0.02,0.67],"cap":"square","offset":1.89,"join":"round"},{"type":"SimpleLine","width":1.89,"color":"rgba(34, 30, 31, 1.00)","dasharray":[0.03,1.33,0.03,1.33],"cap":"square","offset":0.94,"join":"round"}]}');
 
 /***/ }),
 
@@ -29996,7 +29996,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/27010134.png"}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":1.14,"color":"rgba(34, 30, 31, 1.00)","cap":"square","join":"round"},{"type":"SimpleLine","width":3.78,"color":"rgba(34, 30, 31, 1.00)","dasharray":[0.02,0.67,0.02,0.67],"cap":"square","offset":-1.89,"join":"round"},{"type":"SimpleLine","width":1.89,"color":"rgba(34, 30, 31, 1.00)","dasharray":[0.03,1.33,0.03,1.33],"cap":"square","offset":-0.94,"join":"round"}]}');
 
 /***/ }),
 
@@ -30004,7 +30004,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/27010144.png"}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":1.14,"color":"rgba(34, 30, 31, 1.00)","cap":"square","join":"round"},{"type":"SimpleLine","width":3.78,"color":"rgba(34, 30, 31, 1.00)","dasharray":[0.02,0.67,0.02,0.67],"cap":"square","offset":1.89,"join":"round"},{"type":"SimpleLine","width":1.89,"color":"rgba(34, 30, 31, 1.00)","dasharray":[0.03,1.33,0.03,1.33],"cap":"square","offset":0.94,"join":"round"}]}');
 
 /***/ }),
 
@@ -30092,7 +30092,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/27060014.png"}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":1.14,"color":"rgba(34, 30, 31, 1.00)","cap":"square","join":"round"},{"type":"SimpleLine","width":3.78,"color":"rgba(34, 30, 31, 1.00)","dasharray":[0.02,0.67,0.02,0.67],"cap":"square","offset":-1.89,"join":"round"},{"type":"SimpleLine","width":1.89,"color":"rgba(34, 30, 31, 1.00)","dasharray":[0.03,1.33,0.03,1.33],"cap":"square","offset":-0.94,"join":"round"}]}');
 
 /***/ }),
 
@@ -30100,7 +30100,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/27060024.png"}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":1.14,"color":"rgba(34, 30, 31, 1.00)","cap":"square","join":"round"},{"type":"SimpleLine","width":3.78,"color":"rgba(34, 30, 31, 1.00)","dasharray":[0.02,0.67,0.02,0.67],"cap":"square","offset":1.89,"join":"round"},{"type":"SimpleLine","width":1.89,"color":"rgba(34, 30, 31, 1.00)","dasharray":[0.03,1.33,0.03,1.33],"cap":"square","offset":0.94,"join":"round"}]}');
 
 /***/ }),
 
@@ -30108,7 +30108,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/27060034.png"}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":1.14,"color":"rgba(34, 30, 31, 1.00)","cap":"square","join":"round"},{"type":"SimpleLine","width":3.78,"color":"rgba(34, 30, 31, 1.00)","dasharray":[0.02,0.67,0.02,0.67],"cap":"square","offset":-1.89,"join":"round"},{"type":"SimpleLine","width":1.89,"color":"rgba(34, 30, 31, 1.00)","dasharray":[0.03,1.33,0.03,1.33],"cap":"square","offset":-0.94,"join":"round"}]}');
 
 /***/ }),
 
@@ -30116,7 +30116,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/27060044.png"}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":1.14,"color":"rgba(34, 30, 31, 1.00)","cap":"square","join":"round"},{"type":"SimpleLine","width":3.78,"color":"rgba(34, 30, 31, 1.00)","dasharray":[0.02,0.67,0.02,0.67],"cap":"square","offset":1.89,"join":"round"},{"type":"SimpleLine","width":1.89,"color":"rgba(34, 30, 31, 1.00)","dasharray":[0.03,1.33,0.03,1.33],"cap":"square","offset":0.94,"join":"round"}]}');
 
 /***/ }),
 
@@ -30172,7 +30172,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -30180,7 +30180,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -30188,7 +30188,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(76,76,76,1.00)","width":0.76,"dasharray":[5,2.5],"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.52,"color":"rgba(76, 76, 76, 1.00)","dasharray":[2.48,1.25],"cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -30196,7 +30196,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(76,76,76,1.00)","width
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(76,76,76,1.00)","width":0.38,"dasharray":[5,8],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(76, 76, 76, 1.00)","dasharray":[1.66,2.65],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -30204,7 +30204,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(76,76,76,1.00)","width
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"dasharray":[20,10],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","dasharray":[6.63,3.32],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -30212,7 +30212,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(76,76,76,1.00)","width":0.38,"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(76, 76, 76, 1.00)","cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -30244,7 +30244,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.76,"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.52,"color":"rgba(0, 0, 0, 1.00)","cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -30268,7 +30268,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"cap":"round"},{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"offset":1.89,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","cap":"round","join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","cap":"round","offset":-1.89,"join":"round"}]}');
 
 /***/ }),
 
@@ -30276,7 +30276,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"cap":"round"},{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"offset":1.13,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","cap":"round","join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","cap":"round","offset":-1.13,"join":"round"}]}');
 
 /***/ }),
 
@@ -30284,7 +30284,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"cap":"round"},{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"offset":1.89,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","cap":"round","join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","cap":"round","offset":-1.89,"join":"round"}]}');
 
 /***/ }),
 
@@ -30292,7 +30292,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","width":0.38,"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 255, 255, 1.00)","cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -30380,7 +30380,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/38020102.png"}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":1.52,"color":"rgba(76, 76, 76, 1.00)","cap":"square","join":"round"},{"type":"SimpleLine","width":3.78,"color":"rgba(76, 76, 76, 1.00)","dasharray":[0.1,0.5,0.1,0.5],"cap":"square","offset":-1.89,"join":"round"}]}');
 
 /***/ }),
 
@@ -30476,7 +30476,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,0,0,1.00)","width":3.02,"dasharray":[1.25,0.75],"cap":"butt"},{"type":"Line","color":"rgba(255,255,255,1.00)","width":2.27,"cap":"butt"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":3.02,"color":"rgba(0, 0, 0, 1.00)","dasharray":[1.25,0.75],"cap":"butt","join":"round"},{"type":"SimpleLine","width":2.27,"color":"rgba(255, 255, 255, 1.00)","cap":"butt","join":"round"}]}');
 
 /***/ }),
 
@@ -30484,7 +30484,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"dasharray":[10,10],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","dasharray":[3.32,3.32],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -30492,7 +30492,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"dasharray":[10,10],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","dasharray":[3.32,3.32],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -30500,7 +30500,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"offset":3.78,"cap":"round"},{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","cap":"round","offset":-3.78,"join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -30508,7 +30508,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,0,0,1.00)","width":3.78,"cap":"butt"},{"type":"Line","color":"rgba(255,255,255,1.00)","width":3.02,"dasharray":[10,10],"cap":"butt"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":3.78,"color":"rgba(0, 0, 0, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":3.02,"color":"rgba(255, 255, 255, 1.00)","dasharray":[10.01,10.01],"cap":"butt","join":"round"}]}');
 
 /***/ }),
 
@@ -30516,7 +30516,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(76,76,76,1.00)","width":2.27,"cap":"butt"},{"type":"Line","color":"rgba(255,255,255,1.00)","width":1.13,"dasharray":[20,20],"cap":"butt"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":2.27,"color":"rgba(76, 76, 76, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":1.13,"color":"rgba(255, 255, 255, 1.00)","dasharray":[20.07,20.07],"cap":"butt","join":"round"}]}');
 
 /***/ }),
 
@@ -30532,7 +30532,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,0,0,1.00)","width":7.94,"cap":"butt"},{"type":"Line","color":"rgba(255,255,255,1.00)","width":7.18,"dasharray":[4.21,4.21],"cap":"butt"},{"type":"Line","color":"rgba(0,0,0,1.00)","width":1.13,"dasharray":[26.67,26.67],"cap":"butt"},{"type":"Line","color":"rgba(255,255,255,1.00)","width":1.13,"dasharray":[26.67,26.67],"cap":"butt"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":7.94,"color":"rgba(0, 0, 0, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":7.18,"color":"rgba(255, 255, 255, 1.00)","dasharray":[4.21,4.21],"cap":"butt","join":"round"},{"type":"SimpleLine","width":1.13,"color":"rgba(0, 0, 0, 1.00)","dasharray":[26.76,26.76],"cap":"butt","join":"round"},{"type":"SimpleLine","width":1.13,"color":"rgba(255, 255, 255, 1.00)","dasharray":[26.76,26.76],"cap":"butt","join":"round"}]}');
 
 /***/ }),
 
@@ -30556,7 +30556,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/41010302.png"}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":3.78,"color":"rgba(0, 0, 0, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":3.02,"color":"rgba(255, 255, 255, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":3.02,"color":"rgba(0, 0, 0, 1.00)","dasharray":[0.13,10.01],"cap":"butt","join":"round"}]}');
 
 /***/ }),
 
@@ -30564,7 +30564,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/41010303.png"}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":2.27,"color":"rgba(76, 76, 76, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":1.13,"color":"rgba(255, 255, 255, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":2.27,"color":"rgba(76, 76, 76, 1.00)","dasharray":[0.17,9.99],"cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -30596,7 +30596,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,0,0,1.00)","width":3.02,"cap":"butt"},{"type":"Line","color":"rgba(255,255,255,1.00)","width":2.27,"dasharray":[6.67,6.67],"cap":"butt"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":3.02,"color":"rgba(0, 0, 0, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":2.27,"color":"rgba(255, 255, 255, 1.00)","dasharray":[6.66,6.66],"cap":"butt","join":"round"}]}');
 
 /***/ }),
 
@@ -30604,7 +30604,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(76,76,76,1.00)","width":1.89,"cap":"butt"},{"type":"Line","color":"rgba(255,255,255,1.00)","width":1.13,"dasharray":[10,10],"cap":"butt"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":1.89,"color":"rgba(76, 76, 76, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":1.13,"color":"rgba(255, 255, 255, 1.00)","dasharray":[10.04,10.04],"cap":"butt","join":"round"}]}');
 
 /***/ }),
 
@@ -30636,7 +30636,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(77,77,77,1.00)","width":2.27,"dasharray":[6.67,6.67],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":2.27,"color":"rgba(77, 77, 77, 1.00)","dasharray":[6.66,6.66],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -30644,7 +30644,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(77,77,77,1.00)","width
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"cap":"butt"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","cap":"butt","join":"round"}');
 
 /***/ }),
 
@@ -30652,7 +30652,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(76,76,76,1.00)","width":2.27,"cap":"butt"},{"type":"Line","color":"rgba(255,255,255,1.00)","width":1.13,"dasharray":[20,20],"cap":"butt"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":2.27,"color":"rgba(76, 76, 76, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":1.13,"color":"rgba(255, 255, 255, 1.00)","dasharray":[20.07,20.07],"cap":"butt","join":"round"}]}');
 
 /***/ }),
 
@@ -30660,7 +30660,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(77,77,77,1.00)","width":3.78,"cap":"butt"},{"type":"Line","color":"rgba(255,255,255,1.00)","width":3.02,"cap":"butt"},{"type":"Line","color":"rgba(77,77,77,1.00)","width":3.02,"dasharray":[12.5,12.5],"cap":"butt"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":3.78,"color":"rgba(77, 77, 77, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":3.02,"color":"rgba(255, 255, 255, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":3.02,"color":"rgba(77, 77, 77, 1.00)","dasharray":[12.52,12.52],"cap":"butt","join":"round"}]}');
 
 /***/ }),
 
@@ -30676,7 +30676,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(77,77,77,1.00)","width":2.27,"dasharray":[6.67,6.67],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":2.27,"color":"rgba(77, 77, 77, 1.00)","dasharray":[6.66,6.66],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -30684,7 +30684,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(77,77,77,1.00)","width
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,0,0,1.00)","width":4.54,"cap":"butt"},{"type":"Line","color":"rgba(255,255,77,1.00)","width":3.02,"cap":"butt"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":4.54,"color":"rgba(0, 0, 0, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":3.02,"color":"rgba(255, 255, 77, 1.00)","cap":"butt","join":"round"}]}');
 
 /***/ }),
 
@@ -30692,7 +30692,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,0,0,1.00)","width":4.54,"cap":"butt"},{"type":"Line","color":"rgba(255,255,51,1.00)","width":3.02,"cap":"butt"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":4.54,"color":"rgba(0, 0, 0, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":3.02,"color":"rgba(255, 255, 51, 1.00)","cap":"butt","join":"round"}]}');
 
 /***/ }),
 
@@ -30700,7 +30700,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(255,0,0,1.00)","width":1.51,"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.51,"color":"rgba(255, 0, 0, 1.00)","cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -30708,7 +30708,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(255,0,0,1.00)","width"
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,0,0,1.00)","width":4.54,"dasharray":[8.33,0.83],"cap":"butt"},{"type":"Line","color":"rgba(255,255,51,1.00)","width":3.02,"dasharray":[12.5,1.25],"cap":"butt"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":4.54,"color":"rgba(0, 0, 0, 1.00)","dasharray":[8.33,0.83],"cap":"butt","join":"round"},{"type":"SimpleLine","width":3.02,"color":"rgba(255, 255, 51, 1.00)","dasharray":[12.52,1.25],"cap":"butt","join":"round"}]}');
 
 /***/ }),
 
@@ -30716,7 +30716,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,0,0,1.00)","width":4.54,"dasharray":[8.33,0.83],"cap":"butt"},{"type":"Line","color":"rgba(255,255,51,1.00)","width":3.02,"dasharray":[12.5,1.25],"cap":"butt"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":4.54,"color":"rgba(0, 0, 0, 1.00)","dasharray":[8.33,0.83],"cap":"butt","join":"round"},{"type":"SimpleLine","width":3.02,"color":"rgba(255, 255, 51, 1.00)","dasharray":[12.52,1.25],"cap":"butt","join":"round"}]}');
 
 /***/ }),
 
@@ -30724,7 +30724,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(255,0,0,1.00)","width":1.51,"dasharray":[20,2.5],"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.51,"color":"rgba(255, 0, 0, 1.00)","dasharray":[20.03,2.5],"cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -30732,7 +30732,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(255,0,0,1.00)","width"
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(255,100,29,1.00)","width":4.54,"dasharray":[3.33,3.33],"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":4.54,"color":"rgba(255, 100, 29, 1.00)","dasharray":[3.33,3.33],"cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -30740,7 +30740,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(255,100,29,1.00)","wid
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(255,100,29,1.00)","width":4.54,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":4.54,"color":"rgba(255, 100, 29, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -30748,7 +30748,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(255,100,29,1.00)","wid
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,0,0,1.00)","width":3.4,"cap":"butt"},{"type":"Line","color":"rgba(255,179,166,1.00)","width":2.27,"cap":"butt"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":3.4,"color":"rgba(0, 0, 0, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":2.27,"color":"rgba(255, 179, 166, 1.00)","cap":"butt","join":"round"}]}');
 
 /***/ }),
 
@@ -30756,7 +30756,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,0,0,1.00)","width":4.54,"cap":"butt"},{"type":"Line","color":"rgba(255,179,166,1.00)","width":3.02,"cap":"butt"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":4.54,"color":"rgba(0, 0, 0, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":3.02,"color":"rgba(255, 179, 166, 1.00)","cap":"butt","join":"round"}]}');
 
 /***/ }),
 
@@ -30764,7 +30764,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(255,128,0,1.00)","width":1.51,"dasharray":[10,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.51,"color":"rgba(255, 128, 0, 1.00)","dasharray":[10.01,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -30772,7 +30772,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(255,128,0,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,0,0,1.00)","width":3.4,"dasharray":[11.11,1.11],"cap":"butt"},{"type":"Line","color":"rgba(255,179,166,1.00)","width":2.27,"dasharray":[16.67,1.67],"cap":"butt"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":3.4,"color":"rgba(0, 0, 0, 1.00)","dasharray":[11.12,1.11],"cap":"butt","join":"round"},{"type":"SimpleLine","width":2.27,"color":"rgba(255, 179, 166, 1.00)","dasharray":[16.65,1.67],"cap":"butt","join":"round"}]}');
 
 /***/ }),
 
@@ -30780,7 +30780,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,0,0,1.00)","width":4.54,"dasharray":[8.33,0.83],"cap":"butt"},{"type":"Line","color":"rgba(255,179,166,1.00)","width":3.02,"dasharray":[12.5,1.25],"cap":"butt"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":4.54,"color":"rgba(0, 0, 0, 1.00)","dasharray":[8.33,0.83],"cap":"butt","join":"round"},{"type":"SimpleLine","width":3.02,"color":"rgba(255, 179, 166, 1.00)","dasharray":[12.52,1.25],"cap":"butt","join":"round"}]}');
 
 /***/ }),
 
@@ -30788,7 +30788,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(255,128,0,1.00)","width":1.51,"dasharray":[20,2.5],"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.51,"color":"rgba(255, 128, 0, 1.00)","dasharray":[20.03,2.5],"cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -30796,7 +30796,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(255,128,0,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,0,0,1.00)","width":3.4,"cap":"butt"},{"type":"Line","color":"rgba(255,255,255,1.00)","width":2.27,"cap":"butt"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":3.4,"color":"rgba(0, 0, 0, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":2.27,"color":"rgba(255, 255, 255, 1.00)","cap":"butt","join":"round"}]}');
 
 /***/ }),
 
@@ -30804,7 +30804,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,0,0,1.00)","width":2.65,"cap":"butt"},{"type":"Line","color":"rgba(255,255,255,1.00)","width":1.89,"cap":"butt"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":2.65,"color":"rgba(0, 0, 0, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":1.89,"color":"rgba(255, 255, 255, 1.00)","cap":"butt","join":"round"}]}');
 
 /***/ }),
 
@@ -30812,7 +30812,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(255,51,255,1.00)","width":0.76,"dasharray":[20,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.52,"color":"rgba(255, 51, 255, 1.00)","dasharray":[9.95,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -30820,7 +30820,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(255,51,255,1.00)","wid
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,0,0,1.00)","width":3.4,"dasharray":[11.11,1.11],"cap":"butt"},{"type":"Line","color":"rgba(255,255,255,1.00)","width":2.27,"dasharray":[16.67,1.67],"cap":"butt"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":3.4,"color":"rgba(0, 0, 0, 1.00)","dasharray":[11.12,1.11],"cap":"butt","join":"round"},{"type":"SimpleLine","width":2.27,"color":"rgba(255, 255, 255, 1.00)","dasharray":[16.65,1.67],"cap":"butt","join":"round"}]}');
 
 /***/ }),
 
@@ -30828,7 +30828,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,0,0,1.00)","width":2.65,"dasharray":[14.29,1.43],"cap":"butt"},{"type":"Line","color":"rgba(255,255,255,1.00)","width":1.89,"dasharray":[20,2],"cap":"butt"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":2.65,"color":"rgba(0, 0, 0, 1.00)","dasharray":[14.26,1.43],"cap":"butt","join":"round"},{"type":"SimpleLine","width":1.89,"color":"rgba(255, 255, 255, 1.00)","dasharray":[20,2],"cap":"butt","join":"round"}]}');
 
 /***/ }),
 
@@ -30836,7 +30836,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(255,51,255,1.00)","width":0.76,"dasharray":[40,5],"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.52,"color":"rgba(255, 51, 255, 1.00)","dasharray":[19.89,2.48],"cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -30844,7 +30844,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(255,51,255,1.00)","wid
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,0,0,1.00)","width":3.4,"cap":"butt"},{"type":"Line","color":"rgba(255,255,255,1.00)","width":2.27,"cap":"butt"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":3.4,"color":"rgba(0, 0, 0, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":2.27,"color":"rgba(255, 255, 255, 1.00)","cap":"butt","join":"round"}]}');
 
 /***/ }),
 
@@ -30852,7 +30852,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,0,0,1.00)","width":2.65,"cap":"butt"},{"type":"Line","color":"rgba(255,255,255,1.00)","width":1.89,"cap":"butt"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":2.65,"color":"rgba(0, 0, 0, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":1.89,"color":"rgba(255, 255, 255, 1.00)","cap":"butt","join":"round"}]}');
 
 /***/ }),
 
@@ -30860,7 +30860,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(255,51,255,1.00)","width":0.76,"dasharray":[20,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.52,"color":"rgba(255, 51, 255, 1.00)","dasharray":[9.95,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -30868,7 +30868,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(255,51,255,1.00)","wid
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,0,0,1.00)","width":3.4,"cap":"butt"},{"type":"Line","color":"rgba(128,255,128,1.00)","width":2.27,"cap":"butt"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":3.4,"color":"rgba(0, 0, 0, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":2.27,"color":"rgba(128, 255, 128, 1.00)","cap":"butt","join":"round"}]}');
 
 /***/ }),
 
@@ -30876,7 +30876,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,0,0,1.00)","width":4.54,"cap":"butt"},{"type":"Line","color":"rgba(128,255,128,1.00)","width":3.02,"cap":"butt"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":4.54,"color":"rgba(0, 0, 0, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":3.02,"color":"rgba(128, 255, 128, 1.00)","cap":"butt","join":"round"}]}');
 
 /***/ }),
 
@@ -30884,7 +30884,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(255,51,255,1.00)","width":0.76,"dasharray":[20,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.52,"color":"rgba(255, 51, 255, 1.00)","dasharray":[9.95,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -30892,7 +30892,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(255,51,255,1.00)","wid
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,0,0,1.00)","width":3.4,"cap":"butt"},{"type":"Line","color":"rgba(255,255,255,1.00)","width":2.27,"cap":"butt"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":3.4,"color":"rgba(0, 0, 0, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":2.27,"color":"rgba(255, 255, 255, 1.00)","cap":"butt","join":"round"}]}');
 
 /***/ }),
 
@@ -30900,7 +30900,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -30908,7 +30908,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,0,0,1.00)","width":2.65,"cap":"butt"},{"type":"Line","color":"rgba(255,127,51,1.00)","width":1.51,"cap":"butt"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":2.65,"color":"rgba(0, 0, 0, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":1.51,"color":"rgba(255, 127, 51, 1.00)","cap":"butt","join":"round"}]}');
 
 /***/ }),
 
@@ -30916,7 +30916,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,0,0,1.00)","width":4.16,"dasharray":[9.09,0.91],"cap":"butt"},{"type":"Line","color":"rgba(255,127,51,1.00)","width":2.65,"dasharray":[14.29,1.43],"cap":"butt"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":4.16,"color":"rgba(0, 0, 0, 1.00)","dasharray":[9.09,0.91],"cap":"butt","join":"round"},{"type":"SimpleLine","width":2.65,"color":"rgba(255, 127, 51, 1.00)","dasharray":[14.26,1.43],"cap":"butt","join":"round"}]}');
 
 /***/ }),
 
@@ -30924,7 +30924,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,0,0,1.00)","width":4.16,"dasharray":[9.09,0.91],"cap":"butt"},{"type":"Line","color":"rgba(255,255,255,1.00)","width":2.65,"dasharray":[14.29,1.43],"cap":"butt"},{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"dasharray":[100,10],"cap":"butt"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":4.16,"color":"rgba(0, 0, 0, 1.00)","dasharray":[3.03,0.3],"cap":"butt","join":"round"},{"type":"SimpleLine","width":2.65,"color":"rgba(255, 255, 255, 1.00)","dasharray":[4.75,0.48],"cap":"butt","join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","dasharray":[33.16,3.32],"cap":"butt","join":"round"}]}');
 
 /***/ }),
 
@@ -30932,7 +30932,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(249,134,29,1.00)","width":3.78,"dasharray":[4,1],"cap":"butt"},{"type":"Line","color":"rgba(255,255,255,1.00)","width":3.02,"cap":"square"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":3.78,"color":"rgba(249, 134, 29, 1.00)","dasharray":[4,1],"cap":"butt","join":"round"},{"type":"SimpleLine","width":3.02,"color":"rgba(255, 255, 255, 1.00)","cap":"square","join":"round"}]}');
 
 /***/ }),
 
@@ -30940,7 +30940,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,0,0,1.00)","width":3.4,"cap":"butt"},{"type":"Line","color":"rgba(255,255,255,1.00)","width":1.51,"cap":"butt"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":3.4,"color":"rgba(0, 0, 0, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":1.51,"color":"rgba(255, 255, 255, 1.00)","cap":"butt","join":"round"}]}');
 
 /***/ }),
 
@@ -30948,7 +30948,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,0,0,1.00)","width":3.4,"dasharray":[4.44,1.11],"cap":"butt"},{"type":"Line","color":"rgba(255,255,255,1.00)","width":1.51,"dasharray":[10,2.5],"cap":"square"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":3.4,"color":"rgba(0, 0, 0, 1.00)","dasharray":[4.45,1.11],"cap":"butt","join":"round"},{"type":"SimpleLine","width":1.51,"color":"rgba(255, 255, 255, 1.00)","dasharray":[10.01,2.5],"cap":"square","join":"round"}]}');
 
 /***/ }),
 
@@ -30956,7 +30956,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(254,177,0,1.00)","width":5.29,"cap":"butt"},{"type":"Line","color":"rgba(255,255,255,1.00)","width":3.02,"cap":"butt"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":5.29,"color":"rgba(254, 177, 0, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":3.02,"color":"rgba(255, 255, 255, 1.00)","cap":"butt","join":"round"}]}');
 
 /***/ }),
 
@@ -30964,7 +30964,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(249,134,29,1.00)","width":3.78,"dasharray":[4,1],"cap":"butt"},{"type":"Line","color":"rgba(255,255,255,1.00)","width":3.02,"cap":"square"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":3.78,"color":"rgba(249, 134, 29, 1.00)","dasharray":[4,1],"cap":"butt","join":"round"},{"type":"SimpleLine","width":3.02,"color":"rgba(255, 255, 255, 1.00)","cap":"square","join":"round"}]}');
 
 /***/ }),
 
@@ -30972,7 +30972,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(255,120,0,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(255, 120, 0, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -30980,7 +30980,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(255,120,0,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(255,120,0,1.00)","width":0.38,"dasharray":[40,10],"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(255, 120, 0, 1.00)","dasharray":[13.26,3.32],"cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -31012,7 +31012,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(254,0,254,1.00)","width":3.78,"cap":"butt"},{"type":"Line","color":"rgba(255,255,255,1.00)","width":3.02,"cap":"butt"},{"type":"Line","color":"rgba(254,0,254,1.00)","width":2.27,"dasharray":[13.33,3.33],"cap":"butt"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":3.78,"color":"rgba(254, 0, 254, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":3.02,"color":"rgba(255, 255, 255, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":2.27,"color":"rgba(254, 0, 254, 1.00)","dasharray":[3.33,13.32],"cap":"butt","join":"round"}]}');
 
 /***/ }),
 
@@ -31020,7 +31020,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/43010202.png"}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":3.02,"color":"rgba(254, 0, 254, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":2.27,"color":"rgba(255, 255, 255, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":2.27,"color":"rgba(254, 0, 254, 1.00)","dasharray":[3.33,9.99],"cap":"butt","join":"round"}]}');
 
 /***/ }),
 
@@ -31028,7 +31028,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/43010204.png"}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":3.78,"color":"rgba(254, 0, 254, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":3.4,"color":"rgba(255, 255, 255, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":3.02,"color":"rgba(254, 0, 254, 1.00)","dasharray":[0.13,1.25,0.13,1.25,0.13,10.01],"cap":"butt","join":"round"}]}');
 
 /***/ }),
 
@@ -31036,7 +31036,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(76,76,76,1.00)","width":3.78,"cap":"butt"},{"type":"Line","color":"rgba(255,255,255,1.00)","width":3.02,"cap":"butt"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":3.78,"color":"rgba(76, 76, 76, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":3.02,"color":"rgba(255, 255, 255, 1.00)","cap":"butt","join":"round"}]}');
 
 /***/ }),
 
@@ -31044,7 +31044,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,0,0,1.00)","width":7.56,"cap":"butt"},{"type":"Line","color":"rgba(255,255,255,1.00)","width":6.05,"cap":"butt"},{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"dasharray":[40,60],"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":7.56,"color":"rgba(0, 0, 0, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":6.05,"color":"rgba(255, 255, 255, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","dasharray":[13.26,19.89],"cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -31052,7 +31052,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,0,0,1.00)","width":3.78,"cap":"butt"},{"type":"Line","color":"rgba(255,255,255,1.00)","width":2.65,"cap":"butt"},{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"dasharray":[40,60],"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":3.78,"color":"rgba(0, 0, 0, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":2.65,"color":"rgba(255, 255, 255, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","dasharray":[13.26,19.89],"cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -31068,7 +31068,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,0,0,1.00)","width":6.8,"cap":"butt"},{"type":"Line","color":"rgba(255,255,255,1.00)","width":4.16,"cap":"butt"},{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"dasharray":[40,60],"cap":"butt"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":6.8,"color":"rgba(0, 0, 0, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":4.16,"color":"rgba(255, 255, 255, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","dasharray":[13.26,19.89],"cap":"butt","join":"round"}]}');
 
 /***/ }),
 
@@ -31084,7 +31084,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":1.51,"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.51,"color":"rgba(0, 0, 0, 1.00)","cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -31092,7 +31092,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":1
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,0,0,1.00)","width":6.05,"cap":"butt"},{"type":"Line","color":"rgba(255,255,255,1.00)","width":4.54,"cap":"butt"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":6.05,"color":"rgba(0, 0, 0, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":4.54,"color":"rgba(255, 255, 255, 1.00)","cap":"butt","join":"round"}]}');
 
 /***/ }),
 
@@ -31100,7 +31100,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(76,76,76,1.00)","width":0.76,"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.52,"color":"rgba(76, 76, 76, 1.00)","cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -31108,7 +31108,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(76,76,76,1.00)","width
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(156,156,156,1.00)","width":3.78,"cap":"butt"},{"type":"Line","color":"rgba(248,248,248,1.00)","width":2.27,"cap":"butt"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":3.78,"color":"rgba(156, 156, 156, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":2.27,"color":"rgba(248, 248, 248, 1.00)","cap":"butt","join":"round"}]}');
 
 /***/ }),
 
@@ -31116,7 +31116,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":1.13,"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.13,"color":"rgba(0, 0, 0, 1.00)","cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -31124,7 +31124,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":1
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,0,0,1.00)","width":4.54,"cap":"butt"},{"type":"Line","color":"rgba(255,255,255,1.00)","width":3.78,"cap":"butt"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":4.54,"color":"rgba(0, 0, 0, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":3.78,"color":"rgba(255, 255, 255, 1.00)","cap":"butt","join":"round"}]}');
 
 /***/ }),
 
@@ -31132,7 +31132,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(76,76,76,1.00)","width":2.65,"cap":"butt"},{"type":"Line","color":"rgba(255,255,255,1.00)","width":1.89,"cap":"butt"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":2.65,"color":"rgba(76, 76, 76, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":1.89,"color":"rgba(255, 255, 255, 1.00)","cap":"butt","join":"round"}]}');
 
 /***/ }),
 
@@ -31140,7 +31140,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.76,"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.52,"color":"rgba(0, 0, 0, 1.00)","cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -31148,7 +31148,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,0,0,1.00)","width":3.78,"cap":"butt"},{"type":"Line","color":"rgba(255,255,255,1.00)","width":3.02,"cap":"butt"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":3.78,"color":"rgba(0, 0, 0, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":3.02,"color":"rgba(255, 255, 255, 1.00)","cap":"butt","join":"round"}]}');
 
 /***/ }),
 
@@ -31156,7 +31156,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(76,76,76,1.00)","width":1.89,"cap":"butt"},{"type":"Line","color":"rgba(255,255,255,1.00)","width":1.13,"cap":"butt"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":1.89,"color":"rgba(76, 76, 76, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":1.13,"color":"rgba(255, 255, 255, 1.00)","cap":"butt","join":"round"}]}');
 
 /***/ }),
 
@@ -31164,7 +31164,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"dasharray":[10,10],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","dasharray":[3.32,3.32],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -31172,7 +31172,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(76,76,76,1.00)","width":3.78,"dasharray":[2,0.5],"cap":"butt"},{"type":"Line","color":"rgba(255,255,255,1.00)","width":2.27,"cap":"butt"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":3.78,"color":"rgba(76, 76, 76, 1.00)","dasharray":[2,0.5],"cap":"butt","join":"round"},{"type":"SimpleLine","width":2.27,"color":"rgba(255, 255, 255, 1.00)","cap":"butt","join":"round"}]}');
 
 /***/ }),
 
@@ -31180,7 +31180,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(156,156,156,1.00)","width":3.78,"cap":"butt"},{"type":"Line","color":"rgba(248,248,248,1.00)","width":2.27,"cap":"butt"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":3.78,"color":"rgba(156, 156, 156, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":2.27,"color":"rgba(248, 248, 248, 1.00)","cap":"butt","join":"round"}]}');
 
 /***/ }),
 
@@ -31188,7 +31188,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(156,156,156,1.00)","width":3.02,"cap":"square"},{"type":"Line","color":"rgba(248,248,248,1.00)","width":1.13,"cap":"square"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":3.02,"color":"rgba(156, 156, 156, 1.00)","cap":"square","join":"round"},{"type":"SimpleLine","width":1.13,"color":"rgba(248, 248, 248, 1.00)","cap":"square","join":"round"}]}');
 
 /***/ }),
 
@@ -31196,7 +31196,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(156,156,156,1.00)","width":2.27,"cap":"square"},{"type":"Line","color":"rgba(248,248,248,1.00)","width":0.76,"cap":"square"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":2.27,"color":"rgba(156, 156, 156, 1.00)","cap":"square","join":"round"},{"type":"SimpleLine","width":1.52,"color":"rgba(248, 248, 248, 1.00)","cap":"square","join":"round"}]}');
 
 /***/ }),
 
@@ -31204,7 +31204,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(167,169,172,1.00)","width":1.13,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.13,"color":"rgba(167, 169, 172, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -31212,7 +31212,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(167,169,172,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"dasharray":[80,20],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","dasharray":[26.53,6.63],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -31220,7 +31220,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(76,76,76,1.00)","width":1.13,"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.13,"color":"rgba(76, 76, 76, 1.00)","cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -31228,7 +31228,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(76,76,76,1.00)","width
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(76,76,76,1.00)","width":0.76,"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.52,"color":"rgba(76, 76, 76, 1.00)","cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -31236,7 +31236,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(76,76,76,1.00)","width
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(76,76,76,1.00)","width":0.76,"dasharray":[20,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.52,"color":"rgba(76, 76, 76, 1.00)","dasharray":[9.95,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -31244,7 +31244,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(76,76,76,1.00)","width
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"dasharray":[40,10],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","dasharray":[13.26,3.32],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -31252,7 +31252,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(76,76,76,1.00)","width":1.51,"dasharray":[10,2.5],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.51,"color":"rgba(76, 76, 76, 1.00)","dasharray":[10.01,2.5],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -31260,7 +31260,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(76,76,76,1.00)","width
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(76,76,76,1.00)","width":0.76,"dasharray":[20,5],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.52,"color":"rgba(76, 76, 76, 1.00)","dasharray":[9.95,2.48],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -31268,7 +31268,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(76,76,76,1.00)","width
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(76,76,76,1.00)","width":0.76,"dasharray":[20,5],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.52,"color":"rgba(76, 76, 76, 1.00)","dasharray":[9.95,2.48],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -31276,7 +31276,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(76,76,76,1.00)","width
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(76,76,76,1.00)","width":0.76,"dasharray":[10,5],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.52,"color":"rgba(76, 76, 76, 1.00)","dasharray":[4.97,2.48],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -31284,7 +31284,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(76,76,76,1.00)","width
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.76,"dasharray":[20,5],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.52,"color":"rgba(0, 0, 0, 1.00)","dasharray":[9.95,2.48],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -31292,7 +31292,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(76,76,76,1.00)","width":0.76,"dasharray":[10,5],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.52,"color":"rgba(76, 76, 76, 1.00)","dasharray":[4.97,2.48],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -31300,7 +31300,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(76,76,76,1.00)","width
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(76,76,76,1.00)","width":0.76,"dasharray":[10,5],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.52,"color":"rgba(76, 76, 76, 1.00)","dasharray":[4.97,2.48],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -31308,7 +31308,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(76,76,76,1.00)","width
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(76,76,76,1.00)","width":0.76,"dasharray":[10,5],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.52,"color":"rgba(76, 76, 76, 1.00)","dasharray":[4.97,2.48],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -31324,7 +31324,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(76,76,76,1.00)","width":0.76,"dasharray":[10,5],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.52,"color":"rgba(76, 76, 76, 1.00)","dasharray":[4.97,2.48],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -31332,7 +31332,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(76,76,76,1.00)","width
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(76,76,76,1.00)","width":0.76,"dasharray":[10,5],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.52,"color":"rgba(76, 76, 76, 1.00)","dasharray":[4.97,2.48],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -31340,7 +31340,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(76,76,76,1.00)","width
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(76,76,76,1.00)","width":0.76,"dasharray":[10,5],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.52,"color":"rgba(76, 76, 76, 1.00)","dasharray":[4.97,2.48],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -31348,7 +31348,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(76,76,76,1.00)","width
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/45010602.png"}');
 
 /***/ }),
 
@@ -31356,7 +31356,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"cap":"round"},{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"offset":1.51,"cap":"round"},{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"offset":-1.51,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","cap":"round","join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","cap":"round","offset":-1.51,"join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","cap":"round","offset":1.51,"join":"round"}]}');
 
 /***/ }),
 
@@ -31364,7 +31364,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,0,0,1.00)","width":3.78,"dasharray":[2,2],"cap":"butt"},{"type":"Line","color":"rgba(255,255,255,1.00)","width":3.02,"cap":"butt"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":3.78,"color":"rgba(0, 0, 0, 1.00)","dasharray":[2,2],"cap":"butt","join":"round"},{"type":"SimpleLine","width":3.02,"color":"rgba(255, 255, 255, 1.00)","cap":"butt","join":"round"}]}');
 
 /***/ }),
 
@@ -31372,7 +31372,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,0,0,1.00)","width":3.78,"dasharray":[2,2],"cap":"butt"},{"type":"Line","color":"rgba(255,255,255,1.00)","width":3.02,"cap":"butt"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":3.78,"color":"rgba(0, 0, 0, 1.00)","dasharray":[2,2],"cap":"butt","join":"round"},{"type":"SimpleLine","width":3.02,"color":"rgba(255, 255, 255, 1.00)","cap":"butt","join":"round"}]}');
 
 /***/ }),
 
@@ -31380,7 +31380,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"offset":-1.89,"cap":"round"},{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"offset":1.89,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","cap":"round","offset":1.89,"join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","cap":"round","offset":-1.89,"join":"round"}]}');
 
 /***/ }),
 
@@ -31388,7 +31388,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"offset":-1.13,"cap":"round"},{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"offset":1.13,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","cap":"round","offset":1.13,"join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","cap":"round","offset":-1.13,"join":"round"}]}');
 
 /***/ }),
 
@@ -31396,7 +31396,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"offset":-1.89,"cap":"round"},{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"offset":1.89,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","cap":"round","offset":1.89,"join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","cap":"round","offset":-1.89,"join":"round"}]}');
 
 /***/ }),
 
@@ -31404,7 +31404,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"offset":-1.89,"cap":"round"},{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"offset":1.89,"cap":"round"},{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"offset":3.02,"cap":"round"},{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"offset":-3.02,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","cap":"round","offset":1.89,"join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","cap":"round","offset":-1.89,"join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","cap":"round","offset":-3.02,"join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","cap":"round","offset":3.02,"join":"round"}]}');
 
 /***/ }),
 
@@ -31412,7 +31412,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"offset":-1.13,"cap":"butt"},{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"offset":1.13,"cap":"butt"},{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"offset":-2.27,"cap":"round"},{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"offset":2.27,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","cap":"butt","offset":1.13,"join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","cap":"butt","offset":-1.13,"join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","cap":"round","offset":2.27,"join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","cap":"round","offset":-2.27,"join":"round"}]}');
 
 /***/ }),
 
@@ -31420,7 +31420,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"offset":-1.89,"cap":"round"},{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"offset":1.89,"cap":"round"},{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"offset":3.02,"cap":"round"},{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"offset":-3.02,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","cap":"round","offset":1.89,"join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","cap":"round","offset":-1.89,"join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","cap":"round","offset":-3.02,"join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","cap":"round","offset":3.02,"join":"round"}]}');
 
 /***/ }),
 
@@ -31428,7 +31428,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(100,100,100,1.00)","width":0.38,"offset":-2.65,"cap":"square"},{"type":"Line","color":"rgba(100,100,100,1.00)","width":0.38,"offset":2.65,"cap":"square"},{"type":"Line","color":"rgba(100,100,100,1.00)","width":0.38,"cap":"square"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":1.14,"color":"rgba(100, 100, 100, 1.00)","cap":"square","offset":2.65,"join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(100, 100, 100, 1.00)","cap":"square","offset":-2.65,"join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(100, 100, 100, 1.00)","cap":"square","join":"round"}]}');
 
 /***/ }),
 
@@ -31436,7 +31436,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"offset":-2.27,"cap":"round"},{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"offset":2.27,"cap":"round"},{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","cap":"round","offset":2.27,"join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","cap":"round","offset":-2.27,"join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -31444,7 +31444,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(100,100,100,1.00)","width":0.38,"offset":-2.65,"cap":"square"},{"type":"Line","color":"rgba(100,100,100,1.00)","width":0.38,"offset":2.65,"cap":"square"},{"type":"Line","color":"rgba(100,100,100,1.00)","width":0.38,"cap":"square"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":1.14,"color":"rgba(100, 100, 100, 1.00)","cap":"square","offset":2.65,"join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(100, 100, 100, 1.00)","cap":"square","offset":-2.65,"join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(100, 100, 100, 1.00)","cap":"square","join":"round"}]}');
 
 /***/ }),
 
@@ -31452,7 +31452,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"offset":-1.89,"dasharray":[20,10],"cap":"round"},{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"offset":1.89,"dasharray":[20,10],"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","dasharray":[6.63,3.32],"cap":"round","offset":1.89,"join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","dasharray":[6.63,3.32],"cap":"round","offset":-1.89,"join":"round"}]}');
 
 /***/ }),
 
@@ -31460,7 +31460,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"offset":-1.89,"cap":"round"},{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"offset":1.89,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/45050102.png"}');
 
 /***/ }),
 
@@ -31468,7 +31468,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -31476,7 +31476,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -31484,7 +31484,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -31508,7 +31508,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -31516,7 +31516,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -31532,7 +31532,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -31540,7 +31540,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -31548,7 +31548,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -31564,7 +31564,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -31572,7 +31572,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,0,0,1.00)","width":3.78,"dasharray":[1.6,0.8],"cap":"butt"},{"type":"Line","color":"rgba(255,255,255,1.00)","width":3.02,"cap":"butt"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":3.78,"color":"rgba(0, 0, 0, 1.00)","dasharray":[1.6,0.8],"cap":"butt","join":"round"},{"type":"SimpleLine","width":3.02,"color":"rgba(255, 255, 255, 1.00)","cap":"butt","join":"round"}]}');
 
 /***/ }),
 
@@ -31580,7 +31580,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"offset":-0.76,"dasharray":[10,5],"cap":"round"},{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"offset":0.76,"dasharray":[10,5],"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","dasharray":[3.32,1.66],"cap":"round","offset":0.76,"join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","dasharray":[3.32,1.66],"cap":"round","offset":-0.76,"join":"round"}]}');
 
 /***/ }),
 
@@ -31588,7 +31588,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(76,76,76,1.00)","width":1.51,"dasharray":[2.5,1.25],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.51,"color":"rgba(76, 76, 76, 1.00)","dasharray":[2.5,1.25],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -31596,7 +31596,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(76,76,76,1.00)","width
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(76,76,76,1.00)","width":3.78,"dasharray":[1,0.5],"cap":"butt"},{"type":"Line","color":"rgba(255,255,255,1.00)","width":3.02,"cap":"butt"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":3.78,"color":"rgba(76, 76, 76, 1.00)","dasharray":[1,0.5],"cap":"butt","join":"round"},{"type":"SimpleLine","width":3.02,"color":"rgba(255, 255, 255, 1.00)","cap":"butt","join":"round"}]}');
 
 /***/ }),
 
@@ -31604,7 +31604,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"dasharray":[20,40],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","dasharray":[6.63,13.26],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -31612,7 +31612,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(76,76,76,1.00)","width":3.78,"dasharray":[1,0.5],"cap":"butt"},{"type":"Line","color":"rgba(255,255,255,1.00)","width":3.02,"cap":"butt"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":3.78,"color":"rgba(76, 76, 76, 1.00)","dasharray":[1,0.5],"cap":"butt","join":"round"},{"type":"SimpleLine","width":3.02,"color":"rgba(255, 255, 255, 1.00)","cap":"butt","join":"round"}]}');
 
 /***/ }),
 
@@ -31620,7 +31620,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"dasharray":[20,40],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","dasharray":[6.63,13.26],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -31628,7 +31628,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(76,76,76,1.00)","width":3.78,"dasharray":[1,0.5],"cap":"butt"},{"type":"Line","color":"rgba(255,255,255,1.00)","width":3.02,"cap":"butt"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":3.78,"color":"rgba(76, 76, 76, 1.00)","dasharray":[1,0.5],"cap":"butt","join":"round"},{"type":"SimpleLine","width":3.02,"color":"rgba(255, 255, 255, 1.00)","cap":"butt","join":"round"}]}');
 
 /***/ }),
 
@@ -31636,7 +31636,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"offset":-0.76,"dasharray":[10,5],"cap":"round"},{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"offset":0.76,"dasharray":[10,5],"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","dasharray":[3.32,1.66],"cap":"round","offset":0.76,"join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","dasharray":[3.32,1.66],"cap":"round","offset":-0.76,"join":"round"}]}');
 
 /***/ }),
 
@@ -31660,7 +31660,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":1.51,"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.51,"color":"rgba(0, 0, 0, 1.00)","cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -31668,7 +31668,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":1
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/46020003.png"}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":1.51,"color":"rgba(0, 0, 0, 1.00)","dasharray":[0.13,0.13,0.13,1.25],"cap":"square","join":"round"},{"type":"SimpleLine","width":1.52,"color":"rgba(0, 0, 0, 1.00)","cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -31684,7 +31684,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","width":0.76,"dasharray":[10,5],"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.52,"color":"rgba(0, 255, 255, 1.00)","dasharray":[4.97,2.48],"cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -31692,7 +31692,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","width":0.76,"dasharray":[10,5],"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.52,"color":"rgba(0, 255, 255, 1.00)","dasharray":[4.97,2.48],"cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -31700,7 +31700,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"dasharray":[20,10],"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","dasharray":[6.63,3.32],"cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -31708,7 +31708,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"dasharray":[20,10],"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","dasharray":[6.63,3.32],"cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -31716,7 +31716,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"dasharray":[30,10],"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","dasharray":[9.95,3.32],"cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -31764,7 +31764,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -31780,7 +31780,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":1.89,"dasharray":[4,2],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.89,"color":"rgba(0, 0, 0, 1.00)","dasharray":[4,2],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -31788,7 +31788,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":1
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(76,76,76,1.00)","width":1.51,"dasharray":[2.5,1.25],"cap":"butt"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.51,"color":"rgba(76, 76, 76, 1.00)","dasharray":[2.5,1.25],"cap":"butt","join":"round"}');
 
 /***/ }),
 
@@ -31796,7 +31796,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(76,76,76,1.00)","width
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(76,76,76,1.00)","width":1.13,"dasharray":[3.33,1.67],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.13,"color":"rgba(76, 76, 76, 1.00)","dasharray":[3.35,1.67],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -31804,7 +31804,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(76,76,76,1.00)","width
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":1.89,"dasharray":[4,2],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.89,"color":"rgba(0, 0, 0, 1.00)","dasharray":[4,2],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -31812,7 +31812,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":1
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(76,76,76,1.00)","width":1.51,"dasharray":[2.5,1.25],"cap":"butt"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.51,"color":"rgba(76, 76, 76, 1.00)","dasharray":[2.5,1.25],"cap":"butt","join":"round"}');
 
 /***/ }),
 
@@ -31820,7 +31820,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(76,76,76,1.00)","width
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(76,76,76,1.00)","width":1.13,"dasharray":[3.33,1.67],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.13,"color":"rgba(76, 76, 76, 1.00)","dasharray":[3.35,1.67],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -31828,7 +31828,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(76,76,76,1.00)","width
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":1.13,"dasharray":[6.67,3.33],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.13,"color":"rgba(0, 0, 0, 1.00)","dasharray":[6.69,3.35],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -31836,7 +31836,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":1
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(76,76,76,1.00)","width":1.51,"dasharray":[2.5,1.25],"cap":"butt"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.51,"color":"rgba(76, 76, 76, 1.00)","dasharray":[2.5,1.25],"cap":"butt","join":"round"}');
 
 /***/ }),
 
@@ -31844,7 +31844,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(76,76,76,1.00)","width
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(76,76,76,1.00)","width":0.38,"dasharray":[10,5],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(76, 76, 76, 1.00)","dasharray":[3.32,1.66],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -31852,7 +31852,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(76,76,76,1.00)","width
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":1.13,"dasharray":[1.67,5.33],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.13,"color":"rgba(0, 0, 0, 1.00)","dasharray":[1.67,5.35],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -31860,7 +31860,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":1
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(76,76,76,1.00)","width":0.38,"dasharray":[5,10],"cap":"butt"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(76, 76, 76, 1.00)","dasharray":[1.66,3.32],"cap":"butt","join":"round"}');
 
 /***/ }),
 
@@ -31876,7 +31876,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":1.13,"dasharray":[1.67,5.33],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.13,"color":"rgba(0, 0, 0, 1.00)","dasharray":[1.67,5.35],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -31884,7 +31884,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":1
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(76,76,76,1.00)","width":0.38,"dasharray":[5,10],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(76, 76, 76, 1.00)","dasharray":[1.66,3.32],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -31908,7 +31908,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"dasharray":[20,10],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","dasharray":[6.63,3.32],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -31916,7 +31916,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"cap":"round"}');
+module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/49050801.png"}');
 
 /***/ }),
 
@@ -31932,7 +31932,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"cap":"round"}');
+module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/51010101.png"}');
 
 /***/ }),
 
@@ -31956,7 +31956,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"cap":"round"}');
+module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/51020101.png"}');
 
 /***/ }),
 
@@ -31972,7 +31972,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"cap":"butt"}');
+module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/51030201.png"}');
 
 /***/ }),
 
@@ -31988,7 +31988,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"dasharray":[60,0],"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","dasharray":[19.89,0],"cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -32012,7 +32012,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(76,76,76,1.00)","width":0.38,"dasharray":[10,5],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(76, 76, 76, 1.00)","dasharray":[3.32,1.66],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -32060,7 +32060,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"dasharray":[40,10],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","dasharray":[13.26,3.32],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -32068,7 +32068,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(76,76,76,1.00)","width":0.76,"dasharray":[10,2.5],"cap":"butt"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.52,"color":"rgba(76, 76, 76, 1.00)","dasharray":[4.97,1.25],"cap":"butt","join":"round"}');
 
 /***/ }),
 
@@ -32076,7 +32076,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(76,76,76,1.00)","width
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -32124,7 +32124,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"dasharray":[40,10],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","dasharray":[13.26,3.32],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -32132,7 +32132,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(76,76,76,1.00)","width":0.76,"dasharray":[10,2.5],"cap":"butt"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.52,"color":"rgba(76, 76, 76, 1.00)","dasharray":[4.97,1.25],"cap":"butt","join":"round"}');
 
 /***/ }),
 
@@ -32140,7 +32140,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(76,76,76,1.00)","width
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -32188,7 +32188,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"dasharray":[40,10],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","dasharray":[13.26,3.32],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -32196,7 +32196,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(76,76,76,1.00)","width":0.76,"dasharray":[10,2.5],"cap":"butt"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.52,"color":"rgba(76, 76, 76, 1.00)","dasharray":[4.97,1.25],"cap":"butt","join":"round"}');
 
 /***/ }),
 
@@ -32204,7 +32204,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(76,76,76,1.00)","width
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -32228,7 +32228,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -32236,7 +32236,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(192,192,192,1.00)","width":0.38,"dasharray":[50,20],"cap":"square"}');
+module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/54300804.png"}');
 
 /***/ }),
 
@@ -32244,7 +32244,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(192,192,192,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(192,192,192,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/54310004.png"}');
 
 /***/ }),
 
@@ -32252,7 +32252,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(192,192,192,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(192,192,192,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/54310014.png"}');
 
 /***/ }),
 
@@ -32260,7 +32260,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(192,192,192,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(192,192,192,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/54310024.png"}');
 
 /***/ }),
 
@@ -32268,7 +32268,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(192,192,192,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(192,192,192,1.00)","width":0.38,"dasharray":[50,20],"cap":"square"}');
+module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/54310034.png"}');
 
 /***/ }),
 
@@ -32276,7 +32276,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(192,192,192,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"dasharray":[40,10],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","dasharray":[13.26,3.32],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -32284,7 +32284,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"dasharray":[40,10],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","dasharray":[13.26,3.32],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -32292,7 +32292,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"dasharray":[40,10],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","dasharray":[13.26,3.32],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -32308,7 +32308,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -32316,7 +32316,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(192,192,192,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/54510604.png"}');
 
 /***/ }),
 
@@ -32332,7 +32332,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -32348,7 +32348,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -32364,7 +32364,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -32380,7 +32380,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -32484,7 +32484,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":1.89,"dasharray":[7.2,2,0.6,2,0.6,2],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.89,"color":"rgba(0, 0, 0, 1.00)","dasharray":[7.2,2,0.6,2,0.6,2],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -32492,7 +32492,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":1
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(255,179,255,1.00)","width":9.45,"cap":"square"},{"type":"Line","color":"rgba(1,1,1,1.00)","width":0.38,"dasharray":[23,12,1,12,1,12],"cap":"square"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":9.45,"color":"rgba(255, 179, 255, 1.00)","cap":"square","join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(1, 1, 1, 1.00)","dasharray":[7.62,3.98,0.33,3.98,0.33,3.98],"cap":"square","join":"round"}]}');
 
 /***/ }),
 
@@ -32500,7 +32500,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":2.27,"dasharray":[7.5,2.17,0.5,2.17,0.5,2.17],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":2.27,"color":"rgba(0, 0, 0, 1.00)","dasharray":[7.49,2.16,0.5,2.16,0.5,2.16],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -32508,7 +32508,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":2
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":1.89,"dasharray":[7.2,2,0.6,2,0.6,2],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.89,"color":"rgba(0, 0, 0, 1.00)","dasharray":[7.2,2,0.6,2,0.6,2],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -32524,7 +32524,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":2.27,"dasharray":[7.5,2.5,2.5,2.5],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":2.27,"color":"rgba(0, 0, 0, 1.00)","dasharray":[7.49,2.5,2.5,2.5],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -32532,7 +32532,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":2
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":1.89,"dasharray":[7.2,2,0.6,2,0.6,2],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.89,"color":"rgba(0, 0, 0, 1.00)","dasharray":[7.2,2,0.6,2,0.6,2],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -32540,7 +32540,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":1
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":1.51,"dasharray":[9,2,9,3.25,0.5,3.25],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.51,"color":"rgba(0, 0, 0, 1.00)","dasharray":[9.01,2,9.01,3.25,0.5,3.25],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -32548,7 +32548,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":1
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(254,179,254,1.00)","width":5.67,"dasharray":[2.67,0],"cap":"square"},{"type":"Line","color":"rgba(0,0,0,1.00)","width":1.13,"dasharray":[7.67,1.67,7.67,2.67,0.67,2.67],"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":5.67,"color":"rgba(254, 179, 254, 1.00)","dasharray":[2.67,0],"cap":"square","join":"round"},{"type":"SimpleLine","width":1.13,"color":"rgba(0, 0, 0, 1.00)","dasharray":[7.69,1.67,7.69,2.67,0.67,2.67],"cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -32556,7 +32556,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":1.89,"dasharray":[9,2,9,3.2,0.6,3.2],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.89,"color":"rgba(0, 0, 0, 1.00)","dasharray":[9,2,9,3.2,0.6,3.2],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -32564,7 +32564,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":1
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":1.51,"dasharray":[9,2,9,3.25,0.5,3.25],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.51,"color":"rgba(0, 0, 0, 1.00)","dasharray":[9.01,2,9.01,3.25,0.5,3.25],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -32580,7 +32580,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":1.89,"dasharray":[9,2,9,2,3,2],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.89,"color":"rgba(0, 0, 0, 1.00)","dasharray":[9,2,9,2,3,2],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -32588,7 +32588,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":1
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":1.51,"dasharray":[9,2,9,3.25,0.5,3.25],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.51,"color":"rgba(0, 0, 0, 1.00)","dasharray":[9.01,2,9.01,3.25,0.5,3.25],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -32596,7 +32596,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":1
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(1,1,1,1.00)","width":1.13,"dasharray":[12,4.33,0.67,4.33],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.13,"color":"rgba(1, 1, 1, 1.00)","dasharray":[12.04,4.35,0.67,4.35],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -32604,7 +32604,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(1,1,1,1.00)","width":1
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.76,"dasharray":[11.5,4.5,2.5,4.5],"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.52,"color":"rgba(0, 0, 0, 1.00)","dasharray":[5.71,2.23,1.25,2.23],"cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -32612,7 +32612,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(1,1,1,1.00)","width":1.51,"dasharray":[11.25,4.25,0.25,4.25],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.51,"color":"rgba(1, 1, 1, 1.00)","dasharray":[11.26,4.26,0.25,4.26],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -32620,7 +32620,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(1,1,1,1.00)","width":1
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(1,1,1,1.00)","width":1.13,"dasharray":[12,4.33,0.67,4.33],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.13,"color":"rgba(1, 1, 1, 1.00)","dasharray":[12.04,4.35,0.67,4.35],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -32636,7 +32636,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":1.51,"dasharray":[11.25,2.5,3.75,2.5],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.51,"color":"rgba(0, 0, 0, 1.00)","dasharray":[11.26,2.5,3.75,2.5],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -32644,7 +32644,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":1
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(1,1,1,1.00)","width":1.13,"dasharray":[12,4.33,0.67,4.33],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.13,"color":"rgba(1, 1, 1, 1.00)","dasharray":[12.04,4.35,0.67,4.35],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -32652,7 +32652,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(1,1,1,1.00)","width":1
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.76,"dasharray":[18,4,18,5.5,0.5,6,0.5,5.5],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.52,"color":"rgba(0, 0, 0, 1.00)","dasharray":[8.96,1.99,8.96,2.73,0.25,2.98,0.25,2.73],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -32660,7 +32660,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.76,"dasharray":[18,4,18,5.5,0.5,6,0.5,5.5],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.52,"color":"rgba(0, 0, 0, 1.00)","dasharray":[8.96,1.99,8.96,2.73,0.25,2.98,0.25,2.73],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -32668,7 +32668,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"dasharray":[36,8,36,11,1,12,1,11],"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","dasharray":[11.94,2.65,11.94,3.65,0.33,3.98,0.33,3.65],"cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -32676,7 +32676,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":1.13,"dasharray":[15,3.33,15,4.67,0.67,4.33,0.67,4.67],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.13,"color":"rgba(0, 0, 0, 1.00)","dasharray":[15.05,3.35,15.05,4.68,0.67,4.35,0.67,4.68],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -32684,7 +32684,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":1
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":1.13,"dasharray":[15,3.33,15,5,5,5],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.13,"color":"rgba(0, 0, 0, 1.00)","dasharray":[15.05,3.35,15.05,5.02,5.02,5.02],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -32692,7 +32692,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":1
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.76,"dasharray":[18,4,18,5.5,0.5,6,0.5,5.5],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.52,"color":"rgba(0, 0, 0, 1.00)","dasharray":[8.96,1.99,8.96,2.73,0.25,2.98,0.25,2.73],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -32812,7 +32812,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.76,"dasharray":[20,5,20,5,20,4.5,1,4.5],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.52,"color":"rgba(0, 0, 0, 1.00)","dasharray":[9.95,2.48,9.95,2.48,9.95,2.23,0.5,2.23],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -32820,7 +32820,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(178,107,0,1.00)","width":0.38,"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(178, 107, 0, 1.00)","cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -32828,7 +32828,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(178,107,0,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(178,107,0,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(178, 107, 0, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -32836,7 +32836,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(178,107,0,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(178,107,0,1.00)","width":0.38,"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(178, 107, 0, 1.00)","cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -32844,7 +32844,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(178,107,0,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(178,107,0,1.00)","width":0.38,"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(178, 107, 0, 1.00)","cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -32852,7 +32852,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(178,107,0,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(178,107,0,1.00)","width":0.38,"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(178, 107, 0, 1.00)","cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -32860,7 +32860,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(178,107,0,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(178,107,0,1.00)","width":1.13,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.13,"color":"rgba(178, 107, 0, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -32868,7 +32868,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(178,107,0,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(178,107,0,1.00)","width":0.76,"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.52,"color":"rgba(178, 107, 0, 1.00)","cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -32876,7 +32876,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(178,107,0,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(178,107,0,1.00)","width":0.76,"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.52,"color":"rgba(178, 107, 0, 1.00)","cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -32884,7 +32884,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(178,107,0,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(178,107,0,1.00)","width":0.76,"dasharray":[30,5],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.52,"color":"rgba(178, 107, 0, 1.00)","dasharray":[14.92,2.48],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -32892,7 +32892,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(178,107,0,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(178,107,0,1.00)","width":0.38,"dasharray":[90,10],"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(178, 107, 0, 1.00)","dasharray":[29.84,3.32],"cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -32900,7 +32900,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(178,107,0,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(178,107,0,1.00)","width":0.38,"dasharray":[50,10],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(178, 107, 0, 1.00)","dasharray":[16.58,3.32],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -32908,7 +32908,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(178,107,0,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(220,190,132,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(220, 190, 132, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -32916,7 +32916,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(220,190,132,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(178,107,0,1.00)","width":0.38,"dasharray":[40,10],"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(178, 107, 0, 1.00)","dasharray":[13.26,3.32],"cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -32924,7 +32924,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(178,107,0,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(178,107,0,1.00)","width":0.38,"dasharray":[20,10],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(178, 107, 0, 1.00)","dasharray":[6.63,3.32],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -32932,7 +32932,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(178,107,0,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(220,190,132,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(220, 190, 132, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -32940,7 +32940,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(220,190,132,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(178,107,0,1.00)","width":0.38,"dasharray":[100,10],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(178, 107, 0, 1.00)","dasharray":[33.16,3.32],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -32948,7 +32948,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(178,107,0,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(178,107,0,1.00)","width":0.38,"dasharray":[100,10],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(178, 107, 0, 1.00)","dasharray":[33.16,3.32],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -32956,7 +32956,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(178,107,0,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(178,107,0,1.00)","width":0.76,"dasharray":[50,5],"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.52,"color":"rgba(178, 107, 0, 1.00)","dasharray":[24.87,2.48],"cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -32964,7 +32964,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(178,107,0,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 255, 255, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -32972,7 +32972,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","width":0.38,"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 255, 255, 1.00)","cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -32980,7 +32980,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 255, 255, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -32988,7 +32988,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","width":1.13,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.13,"color":"rgba(0, 255, 255, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -32996,7 +32996,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","width":0.76,"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.52,"color":"rgba(0, 255, 255, 1.00)","cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -33004,7 +33004,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","width":0.76,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.52,"color":"rgba(0, 255, 255, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -33012,7 +33012,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(178,107,0,1.00)","width":2.27,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":2.27,"color":"rgba(178, 107, 0, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -33020,7 +33020,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(178,107,0,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(178,107,0,1.00)","width":0.38,"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(178, 107, 0, 1.00)","cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -33028,7 +33028,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(178,107,0,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(179,107,0,1.00)","width":0.38,"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(179, 107, 0, 1.00)","cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -33036,7 +33036,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(179,107,0,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","width":0.76,"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.52,"color":"rgba(0, 255, 255, 1.00)","cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -33044,7 +33044,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 255, 255, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -33052,7 +33052,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","width":0.38,"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 255, 255, 1.00)","cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -33060,7 +33060,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","width":0.76,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.52,"color":"rgba(0, 255, 255, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -33068,7 +33068,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","width":0.38,"dasharray":[90,10],"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 255, 255, 1.00)","dasharray":[29.84,3.32],"cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -33076,7 +33076,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","width":0.76,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.52,"color":"rgba(0, 255, 255, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -33084,7 +33084,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 255, 255, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -33092,7 +33092,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 255, 255, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -33100,7 +33100,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 255, 255, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -33108,7 +33108,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/75010402.png"}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":1.14,"color":"rgba(34, 30, 31, 1.00)","cap":"square","join":"round"},{"type":"SimpleLine","width":3.78,"color":"rgba(34, 30, 31, 1.00)","dasharray":[0.02,0.67,0.02,0.67],"cap":"square","offset":1.89,"join":"round"},{"type":"SimpleLine","width":1.89,"color":"rgba(34, 30, 31, 1.00)","dasharray":[0.03,1.33,0.03,1.33],"cap":"square","offset":0.94,"join":"round"}]}');
 
 /***/ }),
 
@@ -33116,7 +33116,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/75010604.png"}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":1.14,"color":"rgba(34, 30, 31, 1.00)","cap":"square","join":"round"},{"type":"SimpleLine","width":1.89,"color":"rgba(34, 30, 31, 1.00)","dasharray":[0.03,0.67,0.03,0.67],"cap":"square","offset":0.94,"join":"round"}]}');
 
 /***/ }),
 
@@ -33124,7 +33124,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(76,76,76,1.00)","width":0.38,"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(76, 76, 76, 1.00)","cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -33140,7 +33140,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(178,107,0,1.00)","width":0.38,"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(178, 107, 0, 1.00)","cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -33148,7 +33148,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(178,107,0,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(178,107,0,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(178, 107, 0, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -33156,7 +33156,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(178,107,0,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/75060004.png"}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":1.14,"color":"rgba(178, 107, 0, 1.00)","cap":"square","join":"round"},{"type":"SimpleLine","width":1.13,"color":"rgba(178, 107, 0, 1.00)","dasharray":[0.06,0.56],"cap":"square","offset":0.57,"join":"round"}]}');
 
 /***/ }),
 
@@ -33396,7 +33396,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","width":0.38,"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 255, 255, 1.00)","cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -33404,7 +33404,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","width":0.38,"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 255, 255, 1.00)","cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -33428,7 +33428,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,255,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 255, 255, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -33452,7 +33452,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/75090704.png"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.52,"color":"rgba(0, 147, 221, 1.00)","dasharray":[0.99,4.97,0.99,4.97],"cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -33460,7 +33460,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(229,185,97,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(229, 185, 97, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -33476,7 +33476,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/75091034.png"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":2.27,"color":"rgba(185, 124, 13, 1.00)","dasharray":[0.08,2.08,0.08,0.08],"cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -33524,7 +33524,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/75100604.png"}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":1.14,"color":"rgba(178, 107, 0, 1.00)","cap":"square","join":"round"},{"type":"SimpleLine","width":4.16,"color":"rgba(178, 107, 0, 1.00)","dasharray":[0.02,0.15],"cap":"square","offset":2.08,"join":"round"}]}');
 
 /***/ }),
 
@@ -33636,7 +33636,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -33644,7 +33644,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/76030202.png"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":3.78,"color":"rgba(220, 190, 132, 1.00)","dasharray":[0.1,1,0.1,1],"cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -33684,7 +33684,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,166,82,1.00)","width":2.27,"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":2.27,"color":"rgba(0, 166, 82, 1.00)","cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -33844,7 +33844,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -33852,7 +33852,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -33860,7 +33860,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/81050804.png"}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":4.54,"color":"rgba(0, 0, 0, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":3.02,"color":"rgba(255, 255, 255, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":3.78,"color":"rgba(0, 0, 0, 1.00)","dasharray":[0.1,10,0.1,1,0.1,1],"cap":"butt","join":"round"}]}');
 
 /***/ }),
 
@@ -33876,7 +33876,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/81051404.png"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.52,"color":"rgba(0, 166, 80, 1.00)","dasharray":[0.25,3.98,0.25,3.98],"cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -33884,7 +33884,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,0,1.00)","width":0.38,"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 255, 0, 1.00)","cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -33932,7 +33932,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(255,0,0,1.00)","width":2.27,"cap":"square"},{"type":"Line","color":"rgba(255,255,255,1.00)","width":1.13,"dasharray":[13.33,6.67,13.33,13.33,13.33,13.33],"cap":"square"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":2.27,"color":"rgba(255, 0, 0, 1.00)","cap":"square","join":"round"},{"type":"SimpleLine","width":1.13,"color":"rgba(255, 255, 255, 1.00)","dasharray":[13.38,6.69,13.38,13.38,13.38,13.38],"cap":"square","join":"round"}]}');
 
 /***/ }),
 
@@ -33940,7 +33940,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,0,0,1.00)","width":2.27,"cap":"round"},{"type":"Line","color":"rgba(255,255,255,1.00)","width":1.51,"dasharray":[10,5,10,10,10,10],"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":2.27,"color":"rgba(0, 0, 0, 1.00)","cap":"round","join":"round"},{"type":"SimpleLine","width":1.51,"color":"rgba(255, 255, 255, 1.00)","dasharray":[10.01,5.01,10.01,10.01,10.01,10.01],"cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -33948,7 +33948,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/83030269.png"}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":1.14,"color":"rgba(255, 0, 0, 1.00)","dasharray":[23.21,9.95,106.09,0],"cap":"round","offset":-1.13,"join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(255, 0, 0, 1.00)","dasharray":[23.21,9.95,106.09,0],"cap":"round","offset":1.13,"join":"round"}]}');
 
 /***/ }),
 
@@ -33956,7 +33956,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(221,19,123,1.00)","width":1.13,"dasharray":[10,10,10,10,10,10,99,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.13,"color":"rgba(221, 19, 123, 1.00)","dasharray":[10.04,10.04,10.04,10.04,10.04,10.04,99.34,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -33964,7 +33964,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(221,19,123,1.00)","wid
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(145,96,81,1.00)","width":0.76,"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.52,"color":"rgba(145, 96, 81, 1.00)","cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -33972,7 +33972,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(145,96,81,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(207,156,173,1.00)","width":0.76,"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.52,"color":"rgba(207, 156, 173, 1.00)","cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -33980,7 +33980,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(207,156,173,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(145,96,81,1.00)","width":0.38,"dasharray":[40,10],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(145, 96, 81, 1.00)","dasharray":[13.26,3.32],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -33988,7 +33988,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(145,96,81,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(255,0,0,1.00)","width":3.78,"cap":"round"},{"type":"Line","color":"rgba(255,255,255,1.00)","width":3.02,"dasharray":[8.75,2.5,8.75,8.75],"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":3.78,"color":"rgba(255, 0, 0, 1.00)","cap":"round","join":"round"},{"type":"SimpleLine","width":3.02,"color":"rgba(255, 255, 255, 1.00)","dasharray":[8.76,2.5,8.76,8.76],"cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -33996,7 +33996,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,0,0,1.00)","width":3.78,"cap":"round"},{"type":"Line","color":"rgba(255,255,255,1.00)","width":2.65,"dasharray":[10,2.86,10,10],"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":3.78,"color":"rgba(0, 0, 0, 1.00)","cap":"round","join":"round"},{"type":"SimpleLine","width":2.65,"color":"rgba(255, 255, 255, 1.00)","dasharray":[9.98,2.85,9.98,9.98],"cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -34004,7 +34004,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/83030276.png"}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":6.05,"color":"rgba(235, 136, 70, 1.00)","cap":"square","join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(38, 38, 38, 1.00)","cap":"round","join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","dasharray":[33.16,9.95],"cap":"square","offset":-1.51,"join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","dasharray":[33.16,9.95],"cap":"square","offset":1.51,"join":"round"}]}');
 
 /***/ }),
 
@@ -34012,7 +34012,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/83030277.png"}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":4.54,"color":"rgba(255, 239, 94, 1.00)","cap":"round","join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","dasharray":[33.16,9.95],"cap":"round","offset":-1.13,"join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","dasharray":[33.16,9.95],"cap":"round","offset":1.13,"join":"round"}]}');
 
 /***/ }),
 
@@ -34020,7 +34020,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/83030278.png"}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":3.4,"color":"rgba(242, 174, 146, 1.00)","cap":"round","join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","dasharray":[33.16,9.95],"cap":"round","offset":-0.76,"join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","dasharray":[33.16,9.95],"cap":"round","offset":0.76,"join":"round"}]}');
 
 /***/ }),
 
@@ -34028,7 +34028,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(170,114,109,1.00)","width":1.51,"dasharray":[12.5,2.5,12.5,2.5,35.5,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.51,"color":"rgba(170, 114, 109, 1.00)","dasharray":[12.52,2.5,12.52,2.5,35.54,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -34036,7 +34036,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(170,114,109,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(145,96,81,1.00)","width":1.13,"dasharray":[13.33,3.33],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.13,"color":"rgba(145, 96, 81, 1.00)","dasharray":[13.38,3.35],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -34044,7 +34044,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(145,96,81,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(255,0,0,1.00)","width":3.02,"cap":"round"},{"type":"Line","color":"rgba(255,255,255,1.00)","width":1.51,"dasharray":[12.5,5,12.5,12.5,12.5,12.5],"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":3.02,"color":"rgba(255, 0, 0, 1.00)","cap":"round","join":"round"},{"type":"SimpleLine","width":1.51,"color":"rgba(255, 255, 255, 1.00)","dasharray":[12.52,5.01,12.52,12.52,12.52,12.52],"cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -34052,7 +34052,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,0,0,1.00)","width":3.02,"cap":"round"},{"type":"Line","color":"rgba(255,255,255,1.00)","width":1.51,"dasharray":[12.5,5,12.5,12.5,12.5,12.5],"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":3.02,"color":"rgba(0, 0, 0, 1.00)","cap":"round","join":"round"},{"type":"SimpleLine","width":1.51,"color":"rgba(255, 255, 255, 1.00)","dasharray":[12.52,5.01,12.52,12.52,12.52,12.52],"cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -34060,7 +34060,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/83030283.png"}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":4.16,"color":"rgba(235, 136, 70, 1.00)","cap":"square","join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","dasharray":[33.16,9.95],"cap":"square","offset":-1.13,"join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","dasharray":[33.16,9.95],"cap":"square","offset":1.13,"join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","cap":"square","join":"round"}]}');
 
 /***/ }),
 
@@ -34068,7 +34068,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/83030284.png"}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":3.02,"color":"rgba(255, 239, 94, 1.00)","cap":"round","join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","dasharray":[33.16,9.95],"cap":"round","offset":-0.76,"join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","dasharray":[33.16,9.95],"cap":"round","offset":0.76,"join":"round"}]}');
 
 /***/ }),
 
@@ -34076,7 +34076,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/83030285.png"}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":3.02,"color":"rgba(242, 174, 146, 1.00)","cap":"square","join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","dasharray":[33.16,9.95],"cap":"square","offset":-0.76,"join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","dasharray":[33.16,9.95],"cap":"square","offset":0.76,"join":"round"}]}');
 
 /***/ }),
 
@@ -34084,7 +34084,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(164,107,90,1.00)","width":1.13,"dasharray":[16.67,3.33,16.67,3.33,47.33,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.13,"color":"rgba(164, 107, 90, 1.00)","dasharray":[16.73,3.35,16.73,3.35,47.5,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -34092,7 +34092,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(164,107,90,1.00)","wid
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(145,96,81,1.00)","width":0.76,"dasharray":[20,5],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.52,"color":"rgba(145, 96, 81, 1.00)","dasharray":[9.95,2.48],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -34100,7 +34100,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(145,96,81,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,146,63,1.00)","width":1.51,"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.51,"color":"rgba(0, 146, 63, 1.00)","cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -34148,7 +34148,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":1.51,"dasharray":[5,5],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.51,"color":"rgba(0, 0, 0, 1.00)","dasharray":[5.01,5.01],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -34180,7 +34180,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":1.13,"dasharray":[16.67,3.33,8.33,3.33],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.13,"color":"rgba(0, 0, 0, 1.00)","dasharray":[16.73,3.35,8.36,3.35],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -34220,7 +34220,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(77,73,72,1.00)","width":0.76,"dasharray":[10,5,10,5,10,5,0.5,5,0.5,5],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.52,"color":"rgba(77, 73, 72, 1.00)","dasharray":[4.97,2.48,4.97,2.48,4.97,2.48,0.25,2.48,0.25,2.48],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -34228,7 +34228,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(77,73,72,1.00)","width
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(77,73,72,1.00)","width":0.76,"dasharray":[0.5,5],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.52,"color":"rgba(77, 73, 72, 1.00)","dasharray":[0.25,2.48],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -34236,7 +34236,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(77,73,72,1.00)","width
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(77,73,72,1.00)","width":0.38,"dasharray":[20,10],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(77, 73, 72, 1.00)","dasharray":[6.63,3.32],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -34244,7 +34244,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(77,73,72,1.00)","width
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(255,0,0,1.00)","width":0.76,"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.52,"color":"rgba(255, 0, 0, 1.00)","cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -34252,7 +34252,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(255,0,0,1.00)","width"
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(255,0,0,1.00)","width":0.38,"dasharray":[15,8],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.52,"color":"rgba(255, 0, 0, 1.00)","dasharray":[3.73,1.99],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -34260,7 +34260,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(255,0,0,1.00)","width"
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":1.13,"dasharray":[13.33,6.67],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.13,"color":"rgba(0, 0, 0, 1.00)","dasharray":[13.38,6.69],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -34276,7 +34276,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -34292,7 +34292,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":1.13,"dasharray":[15,3.33,15,5,5,5],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.13,"color":"rgba(0, 0, 0, 1.00)","dasharray":[15.05,3.35,15.05,5.02,5.02,5.02],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -34300,7 +34300,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":1
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":1.51,"dasharray":[11.25,2.5,3.75,2.5],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.51,"color":"rgba(0, 0, 0, 1.00)","dasharray":[11.26,2.5,3.75,2.5],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -34308,7 +34308,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":1
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":1.89,"dasharray":[9,2,9,2,3,2],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.89,"color":"rgba(0, 0, 0, 1.00)","dasharray":[9,2,9,2,3,2],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -34316,7 +34316,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":1
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":2.27,"dasharray":[7.5,2.5,2.5,2.5],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":2.27,"color":"rgba(0, 0, 0, 1.00)","dasharray":[7.49,2.5,2.5,2.5],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -34356,7 +34356,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.76,"dasharray":[20,5,20,5,20,4.5,1,4.5],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.52,"color":"rgba(0, 0, 0, 1.00)","dasharray":[9.95,2.48,9.95,2.48,9.95,2.23,0.5,2.23],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -34364,7 +34364,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":1.13,"dasharray":[15,3.33,15,4.67,0.67,4.33,0.67,4.67],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.13,"color":"rgba(0, 0, 0, 1.00)","dasharray":[15.05,3.35,15.05,4.68,0.67,4.35,0.67,4.68],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -34372,7 +34372,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":1
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(1,1,1,1.00)","width":1.51,"dasharray":[11.25,4.25,0.25,4.25],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.51,"color":"rgba(1, 1, 1, 1.00)","dasharray":[11.26,4.26,0.25,4.26],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -34380,7 +34380,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(1,1,1,1.00)","width":1
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":1.89,"dasharray":[9,2,9,3.2,0.6,3.2],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.89,"color":"rgba(0, 0, 0, 1.00)","dasharray":[9,2,9,3.2,0.6,3.2],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -34388,7 +34388,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":1
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":1.89,"dasharray":[9,2,9,2,9,3.2,0.6,3.2],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.89,"color":"rgba(0, 0, 0, 1.00)","dasharray":[9,2,9,2,9,3.2,0.6,3.2],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -34396,7 +34396,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":1
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":2.27,"dasharray":[7.5,2.17,0.5,2.17,0.5,2.17],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":2.27,"color":"rgba(0, 0, 0, 1.00)","dasharray":[7.49,2.16,0.5,2.16,0.5,2.16],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -34412,7 +34412,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":1.13,"dasharray":[15,3.33,15,5,5,5],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.13,"color":"rgba(0, 0, 0, 1.00)","dasharray":[15.05,3.35,15.05,5.02,5.02,5.02],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -34420,7 +34420,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":1
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":1.51,"dasharray":[11.25,2.5,3.75,2.5],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.51,"color":"rgba(0, 0, 0, 1.00)","dasharray":[11.26,2.5,3.75,2.5],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -34428,7 +34428,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":1
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":1.89,"dasharray":[9,2,9,2,3,2],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.89,"color":"rgba(0, 0, 0, 1.00)","dasharray":[9,2,9,2,3,2],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -34436,7 +34436,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":1
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":2.27,"dasharray":[7.5,2.5,2.5,2.5],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":2.27,"color":"rgba(0, 0, 0, 1.00)","dasharray":[7.49,2.5,2.5,2.5],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -34476,7 +34476,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.76,"dasharray":[20,5,20,5,20,4.5,1,4.5],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.52,"color":"rgba(0, 0, 0, 1.00)","dasharray":[9.95,2.48,9.95,2.48,9.95,2.23,0.5,2.23],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -34484,7 +34484,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":1.13,"dasharray":[15,3.33,15,4.67,0.67,4.33,0.67,4.67],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.13,"color":"rgba(0, 0, 0, 1.00)","dasharray":[15.05,3.35,15.05,4.68,0.67,4.35,0.67,4.68],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -34492,7 +34492,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":1
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(1,1,1,1.00)","width":1.51,"dasharray":[11.25,4.25,0.25,4.25],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.51,"color":"rgba(1, 1, 1, 1.00)","dasharray":[11.26,4.26,0.25,4.26],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -34500,7 +34500,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(1,1,1,1.00)","width":1
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":1.89,"dasharray":[9,2,9,3.2,0.6,3.2],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.89,"color":"rgba(0, 0, 0, 1.00)","dasharray":[9,2,9,3.2,0.6,3.2],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -34508,7 +34508,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":1
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":1.89,"dasharray":[9,2,9,2,9,3.2,0.6,3.2],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.89,"color":"rgba(0, 0, 0, 1.00)","dasharray":[9,2,9,2,9,3.2,0.6,3.2],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -34516,7 +34516,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":1
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":2.27,"dasharray":[7.5,2.17,0.5,2.17,0.5,2.17],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":2.27,"color":"rgba(0, 0, 0, 1.00)","dasharray":[7.49,2.16,0.5,2.16,0.5,2.16],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -34564,7 +34564,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.76,"dasharray":[18,4,18,5.5,0.5,6,0.5,5.5],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.52,"color":"rgba(0, 0, 0, 1.00)","dasharray":[8.96,1.99,8.96,2.73,0.25,2.98,0.25,2.73],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -34572,7 +34572,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(1,1,1,1.00)","width":1.13,"dasharray":[12,4.33,0.67,4.33],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.13,"color":"rgba(1, 1, 1, 1.00)","dasharray":[12.04,4.35,0.67,4.35],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -34580,7 +34580,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(1,1,1,1.00)","width":1
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":1.51,"dasharray":[9,2,9,3.25,0.5,3.25],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.51,"color":"rgba(0, 0, 0, 1.00)","dasharray":[9.01,2,9.01,3.25,0.5,3.25],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -34588,7 +34588,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":1
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":1.51,"dasharray":[9,2,9,2,9,3.25,0.5,3.25],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.51,"color":"rgba(0, 0, 0, 1.00)","dasharray":[9.01,2,9.01,2,9.01,3.25,0.5,3.25],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -34596,7 +34596,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":1
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":1.89,"dasharray":[7.2,2,0.6,2,0.6,2],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.89,"color":"rgba(0, 0, 0, 1.00)","dasharray":[7.2,2,0.6,2,0.6,2],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -34644,7 +34644,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(1,1,1,1.00)","width":0.76,"dasharray":[13.5,5,0.5,5],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.52,"color":"rgba(1, 1, 1, 1.00)","dasharray":[6.71,2.48,0.25,2.48],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -34652,7 +34652,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(1,1,1,1.00)","width":0
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":1.13,"dasharray":[9,2,9,3.33,0.33,3.33],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.13,"color":"rgba(0, 0, 0, 1.00)","dasharray":[9.03,2.01,9.03,3.35,0.34,3.35],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -34660,7 +34660,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":1
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":1.13,"dasharray":[9,2,9,2,9,3.33,0.33,3.33],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.13,"color":"rgba(0, 0, 0, 1.00)","dasharray":[9.03,2.01,9.03,2.01,9.03,3.35,0.34,3.35],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -34668,7 +34668,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":1
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":1.51,"dasharray":[6.75,2,0.25,2.25,0.25,2],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.51,"color":"rgba(0, 0, 0, 1.00)","dasharray":[6.75,2,0.25,2.25,0.25,2],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -34700,7 +34700,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(1,1,1,1.00)","width":0.76,"dasharray":[11.5,4,1,4],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.52,"color":"rgba(1, 1, 1, 1.00)","dasharray":[5.71,1.99,0.5,1.99],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -34708,7 +34708,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(1,1,1,1.00)","width":0
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.76,"offset":2.27,"dasharray":[40,10],"cap":"round"},{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.76,"offset":-2.27,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":1.52,"color":"rgba(0, 0, 0, 1.00)","dasharray":[19.89,4.97],"cap":"round","offset":-2.27,"join":"round"},{"type":"SimpleLine","width":1.52,"color":"rgba(0, 0, 0, 1.00)","cap":"round","offset":2.27,"join":"round"}]}');
 
 /***/ }),
 
@@ -34716,7 +34716,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":1.13,"dasharray":[13.33,3.33],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.13,"color":"rgba(0, 0, 0, 1.00)","dasharray":[13.38,3.35],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -34724,7 +34724,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":1
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":1.13,"dasharray":[26.67,6.67],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.13,"color":"rgba(0, 0, 0, 1.00)","dasharray":[26.76,6.69],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -34732,7 +34732,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":1
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,0,0,1.00)","width":6.05,"cap":"round"},{"type":"Line","color":"rgba(255,255,255,1.00)","width":3.4,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":6.05,"color":"rgba(0, 0, 0, 1.00)","cap":"round","join":"round"},{"type":"SimpleLine","width":3.4,"color":"rgba(255, 255, 255, 1.00)","cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -34740,7 +34740,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,0,0,1.00)","width":7.56,"cap":"round"},{"type":"Line","color":"rgba(255,255,255,1.00)","width":4.54,"cap":"round"},{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"dasharray":[50,80],"cap":"square"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":7.56,"color":"rgba(0, 0, 0, 1.00)","cap":"round","join":"round"},{"type":"SimpleLine","width":4.54,"color":"rgba(255, 255, 255, 1.00)","cap":"round","join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","dasharray":[16.58,26.53],"cap":"square","join":"round"}]}');
 
 /***/ }),
 
@@ -34748,7 +34748,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(254,177,0,1.00)","width":5.29,"cap":"round"},{"type":"Line","color":"rgba(255,255,255,1.00)","width":3.02,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":5.29,"color":"rgba(254, 177, 0, 1.00)","cap":"round","join":"round"},{"type":"SimpleLine","width":3.02,"color":"rgba(255, 255, 255, 1.00)","cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -34756,7 +34756,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(127,255,127,1.00)","width":6.05,"cap":"round"},{"type":"Line","color":"rgba(255,255,255,1.00)","width":3.78,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":6.05,"color":"rgba(127, 255, 127, 1.00)","cap":"round","join":"round"},{"type":"SimpleLine","width":3.78,"color":"rgba(255, 255, 255, 1.00)","cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -34764,7 +34764,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(255,0,0,1.00)","width":7.56,"cap":"round"},{"type":"Line","color":"rgba(255,255,255,1.00)","width":5.29,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":7.56,"color":"rgba(255, 0, 0, 1.00)","cap":"round","join":"round"},{"type":"SimpleLine","width":5.29,"color":"rgba(255, 255, 255, 1.00)","cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -34780,7 +34780,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(255,0,254,1.00)","width":4.54,"cap":"round"},{"type":"Line","color":"rgba(255,255,255,1.00)","width":1.89,"offset":-0.76,"cap":"round"},{"type":"Line","color":"rgba(255,0,254,1.00)","width":1.89,"offset":-0.76,"dasharray":[4,16],"cap":"butt"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":4.54,"color":"rgba(255, 0, 254, 1.00)","cap":"round","join":"round"},{"type":"SimpleLine","width":1.89,"color":"rgba(255, 255, 255, 1.00)","cap":"round","offset":0.76,"join":"round"},{"type":"SimpleLine","width":1.89,"color":"rgba(255, 0, 254, 1.00)","dasharray":[4,16],"cap":"butt","offset":0.76,"join":"round"}]}');
 
 /***/ }),
 
@@ -34788,7 +34788,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.76,"offset":2.27,"dasharray":[40,10],"cap":"round"},{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.76,"offset":-2.27,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":1.52,"color":"rgba(0, 0, 0, 1.00)","dasharray":[19.89,4.97],"cap":"round","offset":-2.27,"join":"round"},{"type":"SimpleLine","width":1.52,"color":"rgba(0, 0, 0, 1.00)","cap":"round","offset":2.27,"join":"round"}]}');
 
 /***/ }),
 
@@ -34796,7 +34796,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":1.13,"dasharray":[13.33,3.33],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.13,"color":"rgba(0, 0, 0, 1.00)","dasharray":[13.38,3.35],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -34804,7 +34804,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":1
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":1.13,"dasharray":[26.67,6.67],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.13,"color":"rgba(0, 0, 0, 1.00)","dasharray":[26.76,6.69],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -34812,7 +34812,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":1
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,0,0,1.00)","width":6.05,"cap":"round"},{"type":"Line","color":"rgba(255,255,255,1.00)","width":3.4,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":6.05,"color":"rgba(0, 0, 0, 1.00)","cap":"round","join":"round"},{"type":"SimpleLine","width":3.4,"color":"rgba(255, 255, 255, 1.00)","cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -34820,7 +34820,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,0,0,1.00)","width":7.56,"cap":"round"},{"type":"Line","color":"rgba(255,255,255,1.00)","width":4.54,"cap":"round"},{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"dasharray":[50,80],"cap":"square"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":7.56,"color":"rgba(0, 0, 0, 1.00)","cap":"round","join":"round"},{"type":"SimpleLine","width":4.54,"color":"rgba(255, 255, 255, 1.00)","cap":"round","join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","dasharray":[16.58,26.53],"cap":"square","join":"round"}]}');
 
 /***/ }),
 
@@ -34828,7 +34828,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(254,177,0,1.00)","width":5.29,"cap":"round"},{"type":"Line","color":"rgba(255,255,255,1.00)","width":3.02,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":5.29,"color":"rgba(254, 177, 0, 1.00)","cap":"round","join":"round"},{"type":"SimpleLine","width":3.02,"color":"rgba(255, 255, 255, 1.00)","cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -34836,7 +34836,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,255,0,1.00)","width":6.05,"cap":"round"},{"type":"Line","color":"rgba(255,255,255,1.00)","width":3.78,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":6.05,"color":"rgba(0, 255, 0, 1.00)","cap":"round","join":"round"},{"type":"SimpleLine","width":3.78,"color":"rgba(255, 255, 255, 1.00)","cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -34844,7 +34844,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(254,0,0,1.00)","width":7.56,"cap":"round"},{"type":"Line","color":"rgba(255,255,255,1.00)","width":5.29,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":7.56,"color":"rgba(254, 0, 0, 1.00)","cap":"round","join":"round"},{"type":"SimpleLine","width":5.29,"color":"rgba(255, 255, 255, 1.00)","cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -34876,7 +34876,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(77,77,77,1.00)","width":0.76,"dasharray":[10,5],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.52,"color":"rgba(77, 77, 77, 1.00)","dasharray":[4.97,2.48],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -34884,7 +34884,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(77,77,77,1.00)","width
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(76,76,76,1.00)","width":1.13,"dasharray":[13.33,3.33],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.13,"color":"rgba(76, 76, 76, 1.00)","dasharray":[13.38,3.35],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -34892,7 +34892,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(76,76,76,1.00)","width
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,0,0,1.00)","width":3.4,"dasharray":[11.11,1.11],"cap":"butt"},{"type":"Line","color":"rgba(127,255,127,1.00)","width":2.27,"dasharray":[16.67,1.67],"cap":"butt"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":3.4,"color":"#000","dasharray":[11.12,1.11],"cap":"butt","join":"round"},{"type":"SimpleLine","width":2.27,"color":"rgba(127, 255, 127, 1.00)","dasharray":[16.65,1.67],"cap":"butt","join":"round"}]}');
 
 /***/ }),
 
@@ -34900,7 +34900,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,0,0,1.00)","width":3.4,"dasharray":[11.11,1.11],"cap":"butt"},{"type":"Line","color":"rgba(255,179,166,1.00)","width":2.27,"dasharray":[16.67,1.67],"cap":"butt"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":3.4,"color":"rgba(0, 0, 0, 1.00)","dasharray":[11.12,1.11],"cap":"butt","join":"round"},{"type":"SimpleLine","width":2.27,"color":"rgba(255, 179, 166, 1.00)","dasharray":[16.65,1.67],"cap":"butt","join":"round"}]}');
 
 /***/ }),
 
@@ -34908,7 +34908,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,0,0,1.00)","width":4.54,"dasharray":[8.33,0.83],"cap":"butt"},{"type":"Line","color":"rgba(254,255,51,1.00)","width":3.02,"dasharray":[12.5,1.25],"cap":"butt"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":4.54,"color":"rgba(0, 0, 0, 1.00)","dasharray":[8.33,0.83],"cap":"butt","join":"round"},{"type":"SimpleLine","width":3.02,"color":"rgba(254, 255, 51, 1.00)","dasharray":[12.52,1.25],"cap":"butt","join":"round"}]}');
 
 /***/ }),
 
@@ -34924,7 +34924,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(76,76,76,1.00)","width":0.38,"offset":1.13,"dasharray":[40,0],"cap":"round"},{"type":"Line","color":"rgba(76,76,76,1.00)","width":0.38,"offset":-1.13,"dasharray":[40,0],"cap":"round"},{"type":"Line","color":"rgba(77,77,77,1.00)","width":2.27,"dasharray":[6.67,6.67],"cap":"butt"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":1.14,"color":"rgba(76, 76, 76, 1.00)","dasharray":[13.26,0],"cap":"round","offset":-1.13,"join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(76, 76, 76, 1.00)","dasharray":[13.26,0],"cap":"round","offset":1.13,"join":"round"},{"type":"SimpleLine","width":2.27,"color":"rgba(77, 77, 77, 1.00)","dasharray":[2.22,2.22],"cap":"butt","join":"round"}]}');
 
 /***/ }),
 
@@ -34940,7 +34940,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(77,77,77,1.00)","width":1.13,"dasharray":[13.33,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.13,"color":"rgba(77, 77, 77, 1.00)","dasharray":[13.38,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -34948,7 +34948,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(77,77,77,1.00)","width
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(254,0,254,1.00)","width":0.38,"offset":1.13,"dasharray":[40,0],"cap":"round"},{"type":"Line","color":"rgba(255,0,254,1.00)","width":1.89,"dasharray":[12,4],"cap":"square"},{"type":"Line","color":"rgba(254,0,254,1.00)","width":0.38,"offset":-1.13,"dasharray":[40,0],"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":1.14,"color":"rgba(254, 0, 254, 1.00)","dasharray":[13.26,0],"cap":"round","offset":-1.13,"join":"round"},{"type":"SimpleLine","width":1.89,"color":"rgba(255, 0, 254, 1.00)","dasharray":[1.33,4],"cap":"square","join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(254, 0, 254, 1.00)","dasharray":[13.26,0],"cap":"round","offset":1.13,"join":"round"}]}');
 
 /***/ }),
 
@@ -34964,7 +34964,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,0,0,1.00)","width":3.4,"cap":"round"},{"type":"Line","color":"rgba(127,255,127,1.00)","width":2.27,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":3.4,"color":"rgba(0, 0, 0, 1.00)","cap":"round","join":"round"},{"type":"SimpleLine","width":2.27,"color":"rgba(127, 255, 127, 1.00)","cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -34972,7 +34972,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,0,0,1.00)","width":3.4,"cap":"round"},{"type":"Line","color":"rgba(255,179,166,1.00)","width":2.27,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":3.4,"color":"rgba(0, 0, 0, 1.00)","cap":"round","join":"round"},{"type":"SimpleLine","width":2.27,"color":"rgba(255, 179, 166, 1.00)","cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -34980,7 +34980,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,0,0,1.00)","width":4.54,"dasharray":[3.33,0],"cap":"round"},{"type":"Line","color":"rgba(254,255,51,1.00)","width":3.02,"dasharray":[5,0],"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":4.54,"color":"rgba(0, 0, 0, 1.00)","dasharray":[3.33,0],"cap":"round","join":"round"},{"type":"SimpleLine","width":3.02,"color":"rgba(254, 255, 51, 1.00)","dasharray":[5.01,0],"cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -34988,7 +34988,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,0,0,1.00)","width":6.05,"cap":"butt"},{"type":"Line","color":"rgba(255,127,51,1.00)","width":4.54,"cap":"butt"},{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"cap":"butt"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":6.05,"color":"rgba(0, 0, 0, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":4.54,"color":"rgba(255, 127, 51, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","cap":"butt","join":"round"}]}');
 
 /***/ }),
 
@@ -35004,7 +35004,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(77,77,77,1.00)","width":0.38,"offset":1.51,"dasharray":[40,0],"cap":"round"},{"type":"Line","color":"rgba(77,77,77,1.00)","width":3.02,"dasharray":[10,10],"cap":"round"},{"type":"Line","color":"rgba(77,77,77,1.00)","width":0.38,"offset":-1.51,"dasharray":[40,0],"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":1.14,"color":"rgba(77, 77, 77, 1.00)","dasharray":[13.26,0],"cap":"round","offset":-1.51,"join":"round"},{"type":"SimpleLine","width":3.02,"color":"rgba(77, 77, 77, 1.00)","dasharray":[3.34,3.34],"cap":"round","join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(77, 77, 77, 1.00)","dasharray":[13.26,0],"cap":"round","offset":1.51,"join":"round"}]}');
 
 /***/ }),
 
@@ -35012,7 +35012,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,0,0,1.00)","width":1.89,"dasharray":[20,2],"cap":"butt"},{"type":"Line","color":"rgba(255,255,255,1.00)","width":1.13,"dasharray":[33.33,3.33],"cap":"butt"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":1.89,"color":"rgba(0, 0, 0, 1.00)","dasharray":[20,2],"cap":"butt","join":"round"},{"type":"SimpleLine","width":1.13,"color":"rgba(255, 255, 255, 1.00)","dasharray":[33.45,3.35],"cap":"butt","join":"round"}]}');
 
 /***/ }),
 
@@ -35020,7 +35020,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,0,0,1.00)","width":3.02,"dasharray":[12.5,1.25],"cap":"butt"},{"type":"Line","color":"rgba(127,255,127,1.00)","width":1.89,"dasharray":[20,2],"cap":"butt"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":3.02,"color":"rgba(0, 0, 0, 1.00)","dasharray":[12.52,1.25],"cap":"butt","join":"round"},{"type":"SimpleLine","width":1.89,"color":"rgba(127, 255, 127, 1.00)","dasharray":[20,2],"cap":"butt","join":"round"}]}');
 
 /***/ }),
 
@@ -35028,7 +35028,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,0,0,1.00)","width":3.02,"dasharray":[12.5,1.25],"cap":"butt"},{"type":"Line","color":"rgba(255,179,166,1.00)","width":1.89,"dasharray":[20,2],"cap":"butt"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":3.02,"color":"rgba(0, 0, 0, 1.00)","dasharray":[12.52,1.25],"cap":"butt","join":"round"},{"type":"SimpleLine","width":1.89,"color":"rgba(255, 179, 166, 1.00)","dasharray":[20,2],"cap":"butt","join":"round"}]}');
 
 /***/ }),
 
@@ -35036,7 +35036,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,0,0,1.00)","width":3.02,"dasharray":[12.5,1.25],"cap":"butt"},{"type":"Line","color":"rgba(254,255,51,1.00)","width":1.89,"dasharray":[20,2],"cap":"butt"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":3.02,"color":"rgba(0, 0, 0, 1.00)","dasharray":[12.52,1.25],"cap":"butt","join":"round"},{"type":"SimpleLine","width":1.89,"color":"rgba(254, 255, 51, 1.00)","dasharray":[20,2],"cap":"butt","join":"round"}]}');
 
 /***/ }),
 
@@ -35044,7 +35044,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,0,0,1.00)","width":4.16,"dasharray":[9.09,0.91],"cap":"butt"},{"type":"Line","color":"rgba(255,127,51,1.00)","width":2.65,"dasharray":[14.29,1.43],"cap":"butt"},{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"dasharray":[100,10],"cap":"butt"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":4.16,"color":"rgba(0, 0, 0, 1.00)","dasharray":[3.03,0.3],"cap":"butt","join":"round"},{"type":"SimpleLine","width":2.65,"color":"rgba(255, 127, 51, 1.00)","dasharray":[4.75,0.48],"cap":"butt","join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","dasharray":[33.16,3.32],"cap":"butt","join":"round"}]}');
 
 /***/ }),
 
@@ -35052,7 +35052,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/962575.png"}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":1.14,"color":"rgba(77, 77, 77, 1.00)","cap":"round","offset":-1.13,"join":"round"},{"type":"SimpleLine","width":2.27,"color":"rgba(76, 76, 76, 1.00)","dasharray":[0.06,3.33,0.06,2.22],"cap":"round","join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(77, 77, 77, 1.00)","cap":"round","offset":1.13,"join":"round"}]}');
 
 /***/ }),
 
@@ -35068,7 +35068,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/962577.png"}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":1.89,"color":"rgba(76, 76, 76, 1.00)","dasharray":[2,2],"cap":"square","join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(77, 77, 77, 1.00)","cap":"round","offset":-0.57,"join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(77, 77, 77, 1.00)","cap":"round","offset":0.57,"join":"round"}]}');
 
 /***/ }),
 
@@ -35076,7 +35076,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/962578.png"}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":1.14,"color":"rgba(76, 76, 76, 1.00)","dasharray":[13.26,0],"cap":"round","offset":-1.13,"join":"round"},{"type":"SimpleLine","width":2.27,"color":"rgba(76, 76, 76, 1.00)","dasharray":[0.06,1.67,0.06,2.22],"cap":"round","join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(76, 76, 76, 1.00)","dasharray":[13.26,0],"cap":"round","offset":1.13,"join":"round"}]}');
 
 /***/ }),
 
@@ -35084,7 +35084,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(76,76,76,1.00)","width":0.76,"dasharray":[10,5],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.52,"color":"rgba(76, 76, 76, 1.00)","dasharray":[4.97,2.48],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -35092,7 +35092,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(76,76,76,1.00)","width
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(77,77,77,1.00)","width":0.76,"dasharray":[20,5],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.52,"color":"rgba(77, 77, 77, 1.00)","dasharray":[9.95,2.48],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -35100,7 +35100,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(77,77,77,1.00)","width
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(77,77,77,1.00)","width":0.38,"dasharray":[40,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(77, 77, 77, 1.00)","dasharray":[13.26,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -35108,7 +35108,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(77,77,77,1.00)","width
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"offset":1.89,"cap":"round"},{"type":"Line","color":"rgba(0,0,0,1.00)","width":1.13,"dasharray":[33.33,1],"cap":"round"},{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"offset":-1.89,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","cap":"round","offset":-1.89,"join":"round"},{"type":"SimpleLine","width":1.13,"color":"rgba(0, 0, 0, 1.00)","dasharray":[0.33,11.15],"cap":"round","join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","cap":"round","offset":1.89,"join":"round"}]}');
 
 /***/ }),
 
@@ -35116,7 +35116,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"offset":1.89,"cap":"round"},{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"dasharray":[40,60],"cap":"square"},{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"offset":-1.89,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","cap":"round","offset":-1.89,"join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","dasharray":[13.26,19.89],"cap":"square","join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","cap":"round","offset":1.89,"join":"round"}]}');
 
 /***/ }),
 
@@ -35124,7 +35124,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(254,0,254,1.00)","width":0.38,"offset":1.13,"cap":"round"},{"type":"Line","color":"rgba(255,0,254,1.00)","width":1.89,"dasharray":[12,4],"cap":"square"},{"type":"Line","color":"rgba(254,0,254,1.00)","width":0.38,"offset":-1.13,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":1.14,"color":"rgba(254, 0, 254, 1.00)","cap":"round","offset":-1.13,"join":"round"},{"type":"SimpleLine","width":1.89,"color":"rgba(255, 0, 254, 1.00)","dasharray":[1.33,4],"cap":"square","join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(254, 0, 254, 1.00)","cap":"round","offset":1.13,"join":"round"}]}');
 
 /***/ }),
 
@@ -35140,7 +35140,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,0,0,1.00)","width":1.89,"cap":"round"},{"type":"Line","color":"rgba(255,255,255,1.00)","width":1.13,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":1.89,"color":"rgba(0, 0, 0, 1.00)","cap":"round","join":"round"},{"type":"SimpleLine","width":1.13,"color":"rgba(255, 255, 255, 1.00)","cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -35148,7 +35148,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,0,0,1.00)","width":3.02,"cap":"round"},{"type":"Line","color":"rgba(127,255,127,1.00)","width":1.89,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":3.02,"color":"rgba(0, 0, 0, 1.00)","cap":"round","join":"round"},{"type":"SimpleLine","width":1.89,"color":"rgba(127, 255, 127, 1.00)","cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -35156,7 +35156,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,0,0,1.00)","width":3.02,"cap":"round"},{"type":"Line","color":"rgba(255,179,166,1.00)","width":1.89,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":3.02,"color":"rgba(0, 0, 0, 1.00)","cap":"round","join":"round"},{"type":"SimpleLine","width":1.89,"color":"rgba(255, 179, 166, 1.00)","cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -35164,7 +35164,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,0,0,1.00)","width":3.02,"cap":"round"},{"type":"Line","color":"rgba(254,255,51,1.00)","width":1.89,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":3.02,"color":"rgba(0, 0, 0, 1.00)","cap":"round","join":"round"},{"type":"SimpleLine","width":1.89,"color":"rgba(254, 255, 51, 1.00)","cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -35172,7 +35172,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,0,0,1.00)","width":4.16,"cap":"round"},{"type":"Line","color":"rgba(255,127,51,1.00)","width":2.65,"cap":"round"},{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":4.16,"color":"rgba(0, 0, 0, 1.00)","cap":"round","join":"round"},{"type":"SimpleLine","width":2.65,"color":"rgba(255, 127, 51, 1.00)","cap":"round","join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -35188,7 +35188,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(77,77,77,1.00)","width":0.38,"offset":1.13,"dasharray":[40,0],"cap":"round"},{"type":"Line","color":"rgba(77,77,77,1.00)","width":2.27,"dasharray":[10,10],"cap":"square"},{"type":"Line","color":"rgba(77,77,77,1.00)","width":0.38,"offset":-1.13,"dasharray":[40,0],"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":1.14,"color":"rgba(77, 77, 77, 1.00)","dasharray":[13.26,0],"cap":"round","offset":-1.13,"join":"round"},{"type":"SimpleLine","width":2.27,"color":"rgba(77, 77, 77, 1.00)","dasharray":[3.33,3.33],"cap":"square","join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(77, 77, 77, 1.00)","dasharray":[13.26,0],"cap":"round","offset":1.13,"join":"round"}]}');
 
 /***/ }),
 
@@ -35196,7 +35196,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(77,77,77,1.00)","width":0.38,"dasharray":[20,10],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(77, 77, 77, 1.00)","dasharray":[6.63,3.32],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -35204,7 +35204,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(77,77,77,1.00)","width
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(76,76,76,1.00)","width":0.38,"dasharray":[40,10],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(76, 76, 76, 1.00)","dasharray":[13.26,3.32],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -35212,7 +35212,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(76,76,76,1.00)","width
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(77,77,77,1.00)","width":0.76,"dasharray":[20,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.52,"color":"rgba(77, 77, 77, 1.00)","dasharray":[9.95,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -35220,7 +35220,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(77,77,77,1.00)","width
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(254,50,253,1.00)","width":0.76,"dasharray":[40,5],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.52,"color":"rgba(254, 50, 253, 1.00)","dasharray":[19.89,2.48],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -35228,7 +35228,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(254,50,253,1.00)","wid
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(254,127,0,1.00)","width":1.51,"dasharray":[20,2.5],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.51,"color":"rgba(254, 127, 0, 1.00)","dasharray":[20.03,2.5],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -35236,7 +35236,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(254,127,0,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(254,0,0,1.00)","width":1.51,"dasharray":[20,2.5],"cap":"butt"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.51,"color":"rgba(254, 0, 0, 1.00)","dasharray":[20.03,2.5],"cap":"butt","join":"round"}');
 
 /***/ }),
 
@@ -35244,7 +35244,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(254,0,0,1.00)","width"
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,0,0,1.00)","width":2.65,"dasharray":[14.29,1.43],"cap":"butt"},{"type":"Line","color":"rgba(255,127,51,1.00)","width":1.51,"dasharray":[25,2.5],"cap":"butt"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":2.65,"color":"rgba(0, 0, 0, 1.00)","dasharray":[14.26,1.43],"cap":"butt","join":"round"},{"type":"SimpleLine","width":1.51,"color":"rgba(255, 127, 51, 1.00)","dasharray":[25.03,2.5],"cap":"butt","join":"round"}]}');
 
 /***/ }),
 
@@ -35268,7 +35268,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(255,51,254,1.00)","width":0.76,"dasharray":[20,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.52,"color":"rgba(255, 51, 254, 1.00)","dasharray":[9.95,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -35276,7 +35276,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(255,51,254,1.00)","wid
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(254,127,0,1.00)","width":1.51,"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.51,"color":"rgba(254, 127, 0, 1.00)","cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -35284,7 +35284,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(254,127,0,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(254,0,0,1.00)","width":1.51,"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.51,"color":"rgba(254, 0, 0, 1.00)","cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -35292,7 +35292,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(254,0,0,1.00)","width"
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,0,0,1.00)","width":2.65,"cap":"round"},{"type":"Line","color":"rgba(255,127,51,1.00)","width":1.51,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":2.65,"color":"rgba(0, 0, 0, 1.00)","cap":"round","join":"round"},{"type":"SimpleLine","width":1.51,"color":"rgba(255, 127, 51, 1.00)","cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -35340,7 +35340,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,254,255,1.00)","width":0.38,"dasharray":[40,10],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 254, 255, 1.00)","dasharray":[13.26,3.32],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -35348,7 +35348,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,254,255,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,254,254,1.00)","width":6.05,"cap":"round"},{"type":"Line","color":"rgba(229,255,255,1.00)","width":4.54,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":6.05,"color":"rgba(0, 254, 254, 1.00)","cap":"round","join":"round"},{"type":"SimpleLine","width":4.54,"color":"rgba(229, 255, 255, 1.00)","cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -35356,7 +35356,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,254,255,1.00)","width":1.89,"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.89,"color":"rgba(0, 254, 255, 1.00)","cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -35364,7 +35364,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,254,255,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,254,255,1.00)","width":0.76,"dasharray":[20,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.52,"color":"rgba(0, 254, 255, 1.00)","dasharray":[9.95,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -35396,7 +35396,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,254,255,1.00)","width":6.05,"cap":"round"},{"type":"Line","color":"rgba(229,255,255,1.00)","width":3.78,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":6.05,"color":"rgba(0, 254, 255, 1.00)","cap":"round","join":"round"},{"type":"SimpleLine","width":3.78,"color":"rgba(229, 255, 255, 1.00)","cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -35404,7 +35404,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,254,255,1.00)","width":1.89,"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.89,"color":"rgba(0, 254, 255, 1.00)","cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -35412,7 +35412,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,254,255,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,254,255,1.00)","width":0.76,"dasharray":[20,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.52,"color":"rgba(0, 254, 255, 1.00)","dasharray":[9.95,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -35420,7 +35420,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,254,255,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"offset":1.13,"dasharray":[40,0],"cap":"round"},{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"offset":-1.13,"dasharray":[40,0],"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","dasharray":[13.26,0],"cap":"round","offset":-1.13,"join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","dasharray":[13.26,0],"cap":"round","offset":1.13,"join":"round"}]}');
 
 /***/ }),
 
@@ -35460,7 +35460,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,254,255,1.00)","width":4.54,"dasharray":[3.33,0],"cap":"round"},{"type":"Line","color":"rgba(204,255,255,1.00)","width":3.02,"dasharray":[5,0],"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":4.54,"color":"rgba(0, 254, 255, 1.00)","dasharray":[3.33,0],"cap":"round","join":"round"},{"type":"SimpleLine","width":3.02,"color":"rgba(204, 255, 255, 1.00)","dasharray":[5.01,0],"cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -35468,7 +35468,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,254,255,1.00)","width":1.51,"dasharray":[10,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.51,"color":"rgba(0, 254, 255, 1.00)","dasharray":[10.01,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -35476,7 +35476,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,254,255,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,254,255,1.00)","width":0.38,"dasharray":[40,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 254, 255, 1.00)","dasharray":[13.26,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -35524,7 +35524,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,254,254,1.00)","width":0.38,"dasharray":[40,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 254, 254, 1.00)","dasharray":[13.26,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -35532,7 +35532,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,254,254,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,254,254,1.00)","width":1.13,"dasharray":[13.33,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.13,"color":"rgba(0, 254, 254, 1.00)","dasharray":[13.38,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -35564,7 +35564,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,254,255,1.00)","width":1.51,"dasharray":[10,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.51,"color":"rgba(0, 254, 255, 1.00)","dasharray":[10.01,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -35572,7 +35572,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,254,255,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,254,255,1.00)","width":0.38,"dasharray":[40,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 254, 255, 1.00)","dasharray":[13.26,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -35580,7 +35580,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,254,255,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"offset":1.51,"cap":"round"},{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"offset":-1.51,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","cap":"round","offset":-1.51,"join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","cap":"round","offset":1.51,"join":"round"}]}');
 
 /***/ }),
 
@@ -35620,7 +35620,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,254,255,1.00)","width":6.05,"cap":"round"},{"type":"Line","color":"rgba(215,254,254,1.00)","width":3.78,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":6.05,"color":"rgba(0, 254, 255, 1.00)","cap":"round","join":"round"},{"type":"SimpleLine","width":3.78,"color":"rgba(215, 254, 254, 1.00)","cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -35628,7 +35628,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,254,255,1.00)","width":1.89,"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.89,"color":"rgba(0, 254, 255, 1.00)","cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -35636,7 +35636,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,254,255,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,254,255,1.00)","width":0.76,"dasharray":[20,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.52,"color":"rgba(0, 254, 255, 1.00)","dasharray":[9.95,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -35652,7 +35652,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(254,179,254,1.00)","width":5.67,"cap":"round"},{"type":"Line","color":"rgba(0,0,0,1.00)","width":1.13,"dasharray":[7.67,2.33,0.33,2.33,0.33,2.33],"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":5.67,"color":"rgba(254, 179, 254, 1.00)","cap":"round","join":"round"},{"type":"SimpleLine","width":1.13,"color":"rgba(0, 0, 0, 1.00)","dasharray":[7.69,2.35,0.34,2.35,0.34,2.35],"cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -35660,7 +35660,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(254,179,254,1.00)","width":5.67,"dasharray":[2.67,0],"cap":"round"},{"type":"Line","color":"rgba(0,0,0,1.00)","width":1.13,"dasharray":[6.67,1.67,6.67,1.67,6.67,1.33,0.67,1.33],"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":5.67,"color":"rgba(254, 179, 254, 1.00)","dasharray":[2.67,0],"cap":"round","join":"round"},{"type":"SimpleLine","width":1.13,"color":"rgba(0, 0, 0, 1.00)","dasharray":[6.69,1.67,6.69,1.67,6.69,1.34,0.67,1.34],"cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -35668,7 +35668,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(254,179,254,1.00)","width":3.78,"dasharray":[4,0],"cap":"round"},{"type":"Line","color":"rgba(0,0,0,1.00)","width":1.13,"dasharray":[7.67,1.67,7.67,2.67,0.67,2.67],"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":3.78,"color":"rgba(254, 179, 254, 1.00)","dasharray":[4,0],"cap":"round","join":"round"},{"type":"SimpleLine","width":1.13,"color":"rgba(0, 0, 0, 1.00)","dasharray":[7.69,1.67,7.69,2.67,0.67,2.67],"cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -35700,7 +35700,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(255,0,254,1.00)","width":6.8,"cap":"round"},{"type":"Line","color":"rgba(255,255,255,1.00)","width":4.16,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":6.8,"color":"rgba(255, 0, 254, 1.00)","cap":"round","join":"round"},{"type":"SimpleLine","width":4.16,"color":"rgba(255, 255, 255, 1.00)","cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -35708,7 +35708,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/963430.png"}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":3.78,"color":"rgba(255, 255, 255, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(254, 0, 254, 1.00)","cap":"round","offset":-1.89,"join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(254, 0, 254, 1.00)","cap":"round","offset":1.89,"join":"round"},{"type":"SimpleLine","width":3.78,"color":"rgba(254, 0, 254, 1.00)","dasharray":[0.03,0.33,0.03,0.33,0.03,2.67],"cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -35724,7 +35724,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(255,255,255,1.00)","width":3.4,"cap":"butt"},{"type":"Line","color":"rgba(254,0,254,1.00)","width":0.38,"offset":1.89,"cap":"round"},{"type":"Line","color":"rgba(254,0,254,1.00)","width":0.38,"offset":-1.89,"cap":"round"},{"type":"Line","color":"rgba(254,0,254,1.00)","width":3.4,"dasharray":[8.89,2.22],"cap":"square"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":3.4,"color":"rgba(255, 255, 255, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(254, 0, 254, 1.00)","cap":"round","offset":-1.89,"join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(254, 0, 254, 1.00)","cap":"round","offset":1.89,"join":"round"},{"type":"SimpleLine","width":3.4,"color":"rgba(254, 0, 254, 1.00)","dasharray":[0.74,2.96],"cap":"square","join":"round"}]}');
 
 /***/ }),
 
@@ -35732,7 +35732,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(255,255,255,1.00)","width":3.4,"cap":"butt"},{"type":"Line","color":"rgba(254,0,254,1.00)","width":0.38,"offset":2.27,"cap":"round"},{"type":"Line","color":"rgba(254,0,254,1.00)","width":0.38,"offset":-2.27,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":3.4,"color":"rgba(255, 255, 255, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(254, 0, 254, 1.00)","cap":"round","offset":-2.27,"join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(254, 0, 254, 1.00)","cap":"round","offset":2.27,"join":"round"}]}');
 
 /***/ }),
 
@@ -35740,7 +35740,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,0,0,1.00)","width":3.4,"dasharray":[11.11,1.11],"cap":"butt"},{"type":"Line","color":"rgba(255,255,255,1.00)","width":1.51,"dasharray":[25,2.5],"cap":"butt"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":3.4,"color":"rgba(0, 0, 0, 1.00)","dasharray":[11.12,1.11],"cap":"butt","join":"round"},{"type":"SimpleLine","width":1.51,"color":"rgba(255, 255, 255, 1.00)","dasharray":[25.03,2.5],"cap":"butt","join":"round"}]}');
 
 /***/ }),
 
@@ -35748,7 +35748,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,0,0,1.00)","width":6.8,"dasharray":[2.22,0],"cap":"round"},{"type":"Line","color":"rgba(255,255,255,1.00)","width":4.16,"dasharray":[3.64,0],"cap":"round"},{"type":"Line","color":"rgba(0,0,0,1.00)","width":1.13,"dasharray":[1.33,32],"cap":"square"},{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"dasharray":[40,60],"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":6.8,"color":"rgba(0, 0, 0, 1.00)","dasharray":[0.74,0],"cap":"round","join":"round"},{"type":"SimpleLine","width":4.16,"color":"rgba(255, 255, 255, 1.00)","dasharray":[1.21,0],"cap":"round","join":"round"},{"type":"SimpleLine","width":1.13,"color":"rgba(0, 0, 0, 1.00)","dasharray":[0.45,10.7],"cap":"square","join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","dasharray":[13.26,19.89],"cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -35756,7 +35756,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,0,0,1.00)","width":6.8,"dasharray":[2.22,0],"cap":"round"},{"type":"Line","color":"rgba(255,255,255,1.00)","width":4.16,"dasharray":[3.64,0],"cap":"round"},{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"dasharray":[40,60],"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":6.8,"color":"rgba(0, 0, 0, 1.00)","dasharray":[0.74,0],"cap":"round","join":"round"},{"type":"SimpleLine","width":4.16,"color":"rgba(255, 255, 255, 1.00)","dasharray":[1.21,0],"cap":"round","join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","dasharray":[13.26,19.89],"cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -35764,7 +35764,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,0,0,1.00)","width":3.4,"dasharray":[4.44,0],"cap":"round"},{"type":"Line","color":"rgba(255,255,255,1.00)","width":1.51,"dasharray":[10,0],"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":3.4,"color":"rgba(0, 0, 0, 1.00)","dasharray":[4.45,0],"cap":"round","join":"round"},{"type":"SimpleLine","width":1.51,"color":"rgba(255, 255, 255, 1.00)","dasharray":[10.01,0],"cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -35772,7 +35772,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,0,0,1.00)","width":3.78,"cap":"butt"},{"type":"Line","color":"rgba(255,255,255,1.00)","width":1.51,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":3.78,"color":"rgba(0, 0, 0, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":1.51,"color":"rgba(255, 255, 255, 1.00)","cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -35780,7 +35780,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(173,113,0,1.00)","width":4.54,"cap":"round"},{"type":"Line","color":"rgba(255,255,115,1.00)","width":2.27,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":4.54,"color":"rgba(173, 113, 0, 1.00)","cap":"round","join":"round"},{"type":"SimpleLine","width":2.27,"color":"rgba(255, 255, 115, 1.00)","cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -35796,7 +35796,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"cap":"round"}');
+module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/963862.png"}');
 
 /***/ }),
 
@@ -35804,7 +35804,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"cap":"round"}');
+module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/963863.png"}');
 
 /***/ }),
 
@@ -35836,7 +35836,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/963867.png"}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":1.14,"color":"#000","cap":"round","offset":-1.89,"join":"round"},{"type":"SimpleLine","width":1.14,"color":"#000","cap":"round","offset":1.89,"join":"round"}]}');
 
 /***/ }),
 
@@ -35988,7 +35988,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":3.02,"dasharray":[12.5,2.25,1.5,2.25],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":3.02,"color":"#000","dasharray":[12.52,2.25,1.5,2.25],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -35996,7 +35996,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":3
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":2.27,"dasharray":[15,3,2,3,2,3],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":2.27,"color":"#000","dasharray":[14.99,3,2,3,2,3],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -36004,7 +36004,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":2
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"dasharray":[90,15,15,15,15,15],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.13,"color":"#000","dasharray":[30.11,5.02,5.02,5.02,5.02,5.02],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -36012,7 +36012,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"dasharray":[90,15,15,15],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.13,"color":"#000","dasharray":[30.11,5.02,5.02,5.02],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -36020,7 +36020,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"dasharray":[60,60],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"#000","dasharray":[19.89,19.89],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -36028,7 +36028,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"dasharray":[40,6,6,6],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"#000","dasharray":[13.26,1.99,1.99,1.99],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -36036,7 +36036,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"dasharray":[20,20],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"#000","dasharray":[6.63,6.63],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -36044,7 +36044,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"dasharray":[10,10],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"#000","dasharray":[3.32,3.32],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -36052,7 +36052,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"dasharray":[6,6],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"#000","dasharray":[1.99,1.99],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -36060,7 +36060,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"#000","cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -36068,7 +36068,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(229,185,97,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(229, 185, 97, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -36076,7 +36076,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(229,185,97,1.00)","wid
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(229,185,97,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(229, 185, 97, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -36084,7 +36084,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(229,185,97,1.00)","wid
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(229,185,97,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(229, 185, 97, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -36092,7 +36092,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(229,185,97,1.00)","wid
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(229,185,97,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(229, 185, 97, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -36100,7 +36100,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(229,185,97,1.00)","wid
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(229,185,97,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(229, 185, 97, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -36108,7 +36108,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(229,185,97,1.00)","wid
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(229,185,97,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(229, 185, 97, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -36116,7 +36116,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(229,185,97,1.00)","wid
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(229,185,97,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(229, 185, 97, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -36132,7 +36132,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(184,221,165,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(184, 221, 165, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -36140,7 +36140,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(184,221,165,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,178,80,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 178, 80, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -36156,7 +36156,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.76,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.52,"color":"#000","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -36164,7 +36164,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(242,245,240,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(242, 245, 240, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -36172,7 +36172,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(242,245,240,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(207,222,200,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(207, 222, 200, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -36180,7 +36180,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(207,222,200,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,146,63,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 146, 63, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -36196,7 +36196,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/963915.png"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":3.78,"color":"rgba(220, 190, 132, 1.00)","dasharray":[0.1,2,0.1,2],"cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -36212,7 +36212,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/963917.png"}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":1.14,"color":"rgba(220, 190, 132, 1.00)","cap":"square","join":"round"},{"type":"SimpleLine","width":3.78,"color":"rgba(220, 190, 132, 1.00)","dasharray":[0.02,0.33,0.02,0.33],"cap":"square","offset":1.89,"join":"round"}]}');
 
 /***/ }),
 
@@ -36220,7 +36220,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/963918.png"}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":1.14,"color":"rgba(220, 190, 132, 1.00)","cap":"square","join":"round"},{"type":"SimpleLine","width":3.78,"color":"rgba(220, 190, 132, 1.00)","dasharray":[0.02,0.33,0.02,0.33],"cap":"square","offset":1.89,"join":"round"}]}');
 
 /***/ }),
 
@@ -36268,7 +36268,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,147,221,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 147, 221, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -36276,7 +36276,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,147,221,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,147,221,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 147, 221, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -36284,7 +36284,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,147,221,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,147,221,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 147, 221, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -36308,7 +36308,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/963929.png"}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":1.14,"color":"rgba(220, 190, 132, 1.00)","cap":"square","join":"round"},{"type":"SimpleLine","width":3.78,"color":"rgba(220, 190, 132, 1.00)","dasharray":[0.02,0.67,0.02,0.67],"cap":"square","offset":1.89,"join":"round"}]}');
 
 /***/ }),
 
@@ -36324,7 +36324,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/963931.png"}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":1.14,"color":"rgba(220, 190, 132, 1.00)","cap":"square","join":"round"},{"type":"SimpleLine","width":3.78,"color":"rgba(220, 190, 132, 1.00)","dasharray":[0.02,0.67,0.02,0.67],"cap":"square","offset":1.89,"join":"round"}]}');
 
 /***/ }),
 
@@ -36332,7 +36332,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(220,190,132,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(220, 190, 132, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -36340,7 +36340,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(220,190,132,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(220,190,132,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(220, 190, 132, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -36348,7 +36348,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(220,190,132,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,147,221,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 147, 221, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -36356,7 +36356,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,147,221,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,147,221,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 147, 221, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -36364,7 +36364,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,147,221,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,147,221,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 147, 221, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -36372,7 +36372,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,147,221,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,147,221,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 147, 221, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -36380,7 +36380,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,147,221,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,147,221,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 147, 221, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -36388,7 +36388,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,147,221,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(220,190,132,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(220, 190, 132, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -36396,7 +36396,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(220,190,132,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,147,221,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 147, 221, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -36404,7 +36404,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,147,221,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,147,221,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 147, 221, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -36412,7 +36412,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,147,221,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(220,190,132,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(220, 190, 132, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -36420,7 +36420,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(220,190,132,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(220,190,132,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(220, 190, 132, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -36428,7 +36428,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(220,190,132,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(220,190,132,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(220, 190, 132, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -36436,7 +36436,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(220,190,132,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"#000","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -36444,7 +36444,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(220,190,132,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(220, 190, 132, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -36452,7 +36452,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(220,190,132,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(220,190,132,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(220, 190, 132, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -36460,7 +36460,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(220,190,132,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(220,190,132,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(220, 190, 132, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -36468,7 +36468,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(220,190,132,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(220,190,132,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(220, 190, 132, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -36476,7 +36476,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(220,190,132,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(192,192,192,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(192, 192, 192, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -36484,7 +36484,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(192,192,192,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(192,192,192,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/963981.png"}');
 
 /***/ }),
 
@@ -36492,7 +36492,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(192,192,192,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(192,192,192,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(192, 192, 192, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -36500,7 +36500,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(192,192,192,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(192,192,192,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/963983.png"}');
 
 /***/ }),
 
@@ -36508,7 +36508,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(192,192,192,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(192,192,192,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(192, 192, 192, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -36516,7 +36516,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(192,192,192,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(192,192,192,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/963985.png"}');
 
 /***/ }),
 
@@ -36524,7 +36524,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(192,192,192,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(192,192,192,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(192, 192, 192, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -36532,7 +36532,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(192,192,192,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(192,192,192,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(192, 192, 192, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -36540,7 +36540,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(192,192,192,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(192,192,192,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(192, 192, 192, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -36548,7 +36548,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(192,192,192,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(192,192,192,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(192, 192, 192, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -36556,7 +36556,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(192,192,192,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(192,192,192,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(192, 192, 192, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -36564,7 +36564,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(192,192,192,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(192,192,192,1.00)","width":0.38,"dasharray":[60,20],"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(192, 192, 192, 1.00)","dasharray":[19.89,6.63],"cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -36572,7 +36572,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(192,192,192,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(192,192,192,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/963992.png"}');
 
 /***/ }),
 
@@ -36580,7 +36580,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(192,192,192,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(192,192,192,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/963993.png"}');
 
 /***/ }),
 
@@ -36588,7 +36588,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(192,192,192,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(192,192,192,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(192, 192, 192, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -36596,7 +36596,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(192,192,192,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(192,192,192,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(192, 192, 192, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -36604,7 +36604,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(192,192,192,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(192,192,192,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(192, 192, 192, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -36612,7 +36612,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(192,192,192,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(192,192,192,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(192, 192, 192, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -36620,7 +36620,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(192,192,192,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(192,192,192,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(192, 192, 192, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -36636,7 +36636,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(192,192,192,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(192, 192, 192, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -36644,7 +36644,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(192,192,192,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(192,192,192,1.00)","width":0.38,"dasharray":[60,20],"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(192, 192, 192, 1.00)","dasharray":[19.89,6.63],"cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -36652,7 +36652,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(192,192,192,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(192,192,192,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(192, 192, 192, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -36660,7 +36660,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(192,192,192,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(192,192,192,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(192, 192, 192, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -36668,7 +36668,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(192,192,192,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(192,192,192,1.00)","width":0.38,"dasharray":[60,20],"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(192, 192, 192, 1.00)","dasharray":[19.89,6.63],"cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -36676,7 +36676,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(192,192,192,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(192,192,192,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/964005.png"}');
 
 /***/ }),
 
@@ -36684,7 +36684,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(192,192,192,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(192,192,192,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(192, 192, 192, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -36692,7 +36692,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(192,192,192,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(192,192,192,1.00)","width":0.38,"dasharray":[60,20],"cap":"square"}');
+module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/964007.png"}');
 
 /***/ }),
 
@@ -36708,7 +36708,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(192,192,192,1.00)","width":0.38,"dasharray":[60,20],"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(192, 192, 192, 1.00)","dasharray":[19.89,6.63],"cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -36716,7 +36716,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(192,192,192,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(192,192,192,1.00)","width":0.38,"dasharray":[60,20],"cap":"square"}');
+module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/964010.png"}');
 
 /***/ }),
 
@@ -36724,7 +36724,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(192,192,192,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(192,192,192,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(192, 192, 192, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -36732,7 +36732,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(192,192,192,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(192,192,192,1.00)","width":0.38,"dasharray":[40,10],"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(192, 192, 192, 1.00)","dasharray":[13.26,3.32],"cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -36740,7 +36740,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(192,192,192,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(192,192,192,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(192, 192, 192, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -36748,7 +36748,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(192,192,192,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(192,192,192,1.00)","width":0.38,"dasharray":[40,10],"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(192, 192, 192, 1.00)","dasharray":[13.26,3.32],"cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -36756,7 +36756,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(192,192,192,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(192,192,192,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(192, 192, 192, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -36764,7 +36764,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(192,192,192,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(143,84,68,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(143, 84, 68, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -36772,7 +36772,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(143,84,68,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(143,84,68,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(143, 84, 68, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -36780,7 +36780,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(143,84,68,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(143,84,68,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(143, 84, 68, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -36788,7 +36788,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(143,84,68,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(143,84,68,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(143, 84, 68, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -36796,7 +36796,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(143,84,68,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(143,84,68,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(143, 84, 68, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -36804,7 +36804,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(143,84,68,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(143,84,68,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(143, 84, 68, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -36812,7 +36812,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(143,84,68,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(143,84,68,1.00)","width":0.38,"dasharray":[20,20],"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(143, 84, 68, 1.00)","dasharray":[6.63,6.63],"cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -36820,7 +36820,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(143,84,68,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(143,84,68,1.00)","width":0.38,"dasharray":[10,10],"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(143, 84, 68, 1.00)","dasharray":[3.32,3.32],"cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -36828,7 +36828,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(143,84,68,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(143,84,68,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(143, 84, 68, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -36852,7 +36852,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/964105.png"}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":1.52,"color":"rgba(191, 191, 191, 1.00)","cap":"square","join":"round"},{"type":"SimpleLine","width":3.78,"color":"rgba(191, 191, 191, 1.00)","dasharray":[0.13,2,0.13,2],"cap":"square","offset":-1.89,"join":"round"}]}');
 
 /***/ }),
 
@@ -36868,7 +36868,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(191,191,191,1.00)","width":0.38,"offset":-1.13,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(191, 191, 191, 1.00)","cap":"square","offset":1.13,"join":"round"}');
 
 /***/ }),
 
@@ -36884,7 +36884,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(100,100,100,1.00)","width":0.38,"offset":2.65,"cap":"square"},{"type":"Line","color":"rgba(100,100,100,1.00)","width":0.38,"offset":-2.65,"cap":"square"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":1.14,"color":"rgba(100, 100, 100, 1.00)","cap":"square","offset":-2.65,"join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(100, 100, 100, 1.00)","cap":"square","offset":2.65,"join":"round"}]}');
 
 /***/ }),
 
@@ -36892,7 +36892,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(191,191,191,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(191, 191, 191, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -36900,7 +36900,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(191,191,191,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"#000","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -36908,7 +36908,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(191,191,191,1.00)","width":0.38,"dasharray":[20,20],"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(191, 191, 191, 1.00)","dasharray":[6.63,6.63],"cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -36916,7 +36916,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(191,191,191,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(191,191,191,1.00)","width":0.38,"dasharray":[20,20],"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(191, 191, 191, 1.00)","dasharray":[6.63,6.63],"cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -36924,7 +36924,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(191,191,191,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(191,191,191,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(191, 191, 191, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -36932,7 +36932,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(191,191,191,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(191,191,191,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(191, 191, 191, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -36940,7 +36940,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(191,191,191,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(191,191,191,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(191, 191, 191, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -36948,7 +36948,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(191,191,191,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(191,191,191,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(191, 191, 191, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -36956,7 +36956,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(191,191,191,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(191,191,191,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(191, 191, 191, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -36964,7 +36964,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(191,191,191,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(225,225,225,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(225, 225, 225, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -36972,7 +36972,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(225,225,225,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(255,220,233,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(255, 220, 233, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -36980,7 +36980,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(255,220,233,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/964121.png"}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":1.14,"color":"rgba(191, 191, 191, 1.00)","cap":"square","join":"round"},{"type":"SimpleLine","width":5.67,"color":"rgba(191, 191, 191, 1.00)","dasharray":[0.01,0.67,0.01,0.67],"cap":"square","offset":2.83,"join":"round"}]}');
 
 /***/ }),
 
@@ -36988,7 +36988,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/964122.png"}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":1.14,"color":"rgba(191, 191, 191, 1.00)","cap":"square","offset":-1.89,"join":"round"},{"type":"SimpleLine","width":5.67,"color":"rgba(191, 191, 191, 1.00)","dasharray":[0.01,0.67,0.01,0.67],"cap":"square","offset":2.83,"join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(191, 191, 191, 1.00)","cap":"square","join":"round"}]}');
 
 /***/ }),
 
@@ -37004,7 +37004,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/964124.png"}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":1.14,"color":"rgba(191, 191, 191, 1.00)","cap":"square","offset":3.78,"join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(191, 191, 191, 1.00)","cap":"square","join":"round"},{"type":"SimpleLine","width":7.56,"color":"rgba(191, 191, 191, 1.00)","dasharray":[0.01,0.17,0.01,0.17],"cap":"square","offset":-3.78,"join":"round"}]}');
 
 /***/ }),
 
@@ -37012,7 +37012,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/964125.png"}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":1.14,"color":"rgba(191, 191, 191, 1.00)","cap":"square","join":"round"},{"type":"SimpleLine","width":6.8,"color":"rgba(191, 191, 191, 1.00)","dasharray":[0.02,0.33,0.02,0.33],"cap":"square","join":"round"}]}');
 
 /***/ }),
 
@@ -37020,7 +37020,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(192,192,192,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(192, 192, 192, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -37028,7 +37028,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(192,192,192,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(192,192,192,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(192, 192, 192, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -37036,7 +37036,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(192,192,192,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(192,192,192,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(192, 192, 192, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -37044,7 +37044,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(192,192,192,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(192,192,192,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(192, 192, 192, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -37052,7 +37052,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(192,192,192,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"dasharray":[10,5],"cap":"round"},{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"offset":1.89,"dasharray":[10,5],"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","dasharray":[3.32,1.66],"cap":"round","join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","dasharray":[3.32,1.66],"cap":"round","offset":-1.89,"join":"round"}]}');
 
 /***/ }),
 
@@ -37060,7 +37060,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"dasharray":[10,5],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","dasharray":[3.32,1.66],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -37068,7 +37068,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(190,130,90,1.00)","width":1.13,"dasharray":[13.33,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.13,"color":"rgba(190, 130, 90, 1.00)","dasharray":[13.38,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -37076,7 +37076,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(190,130,90,1.00)","wid
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(190,130,90,1.00)","width":0.38,"dasharray":[40,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(190, 130, 90, 1.00)","dasharray":[13.26,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -37084,7 +37084,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(190,130,90,1.00)","wid
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,150,220,1.00)","width":0.76,"dasharray":[10,5],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.52,"color":"rgba(0, 150, 220, 1.00)","dasharray":[4.97,2.48],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -37092,7 +37092,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,150,220,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,150,220,1.00)","width":0.38,"dasharray":[40,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 150, 220, 1.00)","dasharray":[13.26,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -37100,7 +37100,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,150,220,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"dasharray":[40,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 0, 0, 1.00)","dasharray":[13.26,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -37108,7 +37108,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(255,0,0,1.00)","width":0.76,"dasharray":[7.5,4],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.52,"color":"rgba(255, 0, 0, 1.00)","dasharray":[3.73,1.99],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -37116,7 +37116,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(255,0,0,1.00)","width"
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(255,0,0,1.00)","width":0.76,"dasharray":[20,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.52,"color":"rgba(255, 0, 0, 1.00)","dasharray":[9.95,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -37124,7 +37124,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(255,0,0,1.00)","width"
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.76,"dasharray":[10,5],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.52,"color":"rgba(0, 0, 0, 1.00)","dasharray":[4.97,2.48],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -37140,7 +37140,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.76,"dasharray":[10,5,10,5,10,3,1.5,3,1.5,3],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.52,"color":"rgba(0, 0, 0, 1.00)","dasharray":[4.97,2.48,4.97,2.48,4.97,1.5,0.74,1.5,0.74,1.5],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -37156,7 +37156,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":1.13,"dasharray":[13.33,3.33,13.33,4,1,4,1,4],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.13,"color":"rgba(0, 0, 0, 1.00)","dasharray":[13.38,3.35,13.38,4.02,1,4.02,1,4.02],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -37180,7 +37180,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":1.89,"dasharray":[8,2.4,0.6,2.4,0.6,2.4],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.89,"color":"rgba(0, 0, 0, 1.00)","dasharray":[8,2.4,0.6,2.4,0.6,2.4],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -37204,7 +37204,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/964455.png"}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":1.52,"color":"rgba(0, 0, 0, 1.00)","dasharray":[9.95,0],"cap":"round","join":"round"},{"type":"SimpleLine","width":3.78,"color":"rgba(0, 0, 0, 1.00)","dasharray":[0.13,0.5],"cap":"butt","offset":1.89,"join":"round"}]}');
 
 /***/ }),
 
@@ -37212,7 +37212,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(170,85,80,1.00)","width":0.76,"dasharray":[20,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.52,"color":"rgba(170, 85, 80, 1.00)","dasharray":[9.95,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -37220,7 +37220,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(170,85,80,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(170,85,80,1.00)","width":1.51,"dasharray":[10,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.51,"color":"rgba(170, 85, 80, 1.00)","dasharray":[10.01,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -37228,7 +37228,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(170,85,80,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(170,85,80,1.00)","width":2.27,"dasharray":[6.67,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":2.27,"color":"rgba(170, 85, 80, 1.00)","dasharray":[6.66,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -37252,7 +37252,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(40,140,0,1.00)","width":1.51,"dasharray":[10,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.51,"color":"rgba(40, 140, 0, 1.00)","dasharray":[10.01,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -37260,7 +37260,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(40,140,0,1.00)","width
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(170,85,80,1.00)","width":0.76,"dasharray":[20,5],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.52,"color":"rgba(170, 85, 80, 1.00)","dasharray":[9.95,2.48],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -37268,7 +37268,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(170,85,80,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/964463.png"}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":1.52,"color":"rgba(230, 130, 100, 1.00)","dasharray":[9.95,0],"cap":"round","join":"round"},{"type":"SimpleLine","width":7.56,"color":"rgba(230, 130, 100, 1.00)","dasharray":[0.03,0.25],"cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -37284,7 +37284,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(149,84,54,1.00)","width":0.38,"dasharray":[20,5],"cap":"butt"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(149, 84, 54, 1.00)","dasharray":[6.63,1.66],"cap":"butt","join":"round"}');
 
 /***/ }),
 
@@ -37292,7 +37292,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(149,84,54,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/964466.png"}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":5.67,"color":"rgba(237, 28, 36, 1.00)","dasharray":[0.03,0.33],"cap":"butt","offset":2.83,"join":"round"},{"type":"SimpleLine","width":4.54,"color":"rgba(237, 28, 36, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":3.02,"color":"rgba(255, 255, 255, 1.00)","cap":"butt","join":"round"}]}');
 
 /***/ }),
 
@@ -37300,7 +37300,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(237,28,36,1.00)","width":4.54,"cap":"butt"},{"type":"Line","color":"rgba(255,255,255,1.00)","width":2.27,"cap":"butt"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":4.54,"color":"rgba(237, 28, 36, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":2.27,"color":"rgba(255, 255, 255, 1.00)","cap":"butt","join":"round"}]}');
 
 /***/ }),
 
@@ -37308,7 +37308,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(237,28,36,1.00)","width":0.38,"cap":"butt"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(237, 28, 36, 1.00)","cap":"butt","join":"round"}');
 
 /***/ }),
 
@@ -37316,7 +37316,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(237,28,36,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(167,169,172,1.00)","width":1.13,"dasharray":[16.67,3.33],"cap":"butt"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.13,"color":"rgba(167, 169, 172, 1.00)","dasharray":[16.73,3.35],"cap":"butt","join":"round"}');
 
 /***/ }),
 
@@ -37324,7 +37324,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(167,169,172,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(167,169,172,1.00)","width":1.89,"dasharray":[10,2],"cap":"butt"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.89,"color":"rgba(167, 169, 172, 1.00)","dasharray":[10,2],"cap":"butt","join":"round"}');
 
 /***/ }),
 
@@ -37332,7 +37332,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(167,169,172,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(147,149,152,1.00)","width":2.27,"dasharray":[8.33,1.67],"cap":"butt"},{"type":"Line","color":"rgba(255,255,255,1.00)","width":1.13,"dasharray":[16.67,3.33],"cap":"butt"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":2.27,"color":"rgba(147, 149, 152, 1.00)","dasharray":[8.33,1.67],"cap":"butt","join":"round"},{"type":"SimpleLine","width":1.13,"color":"rgba(255, 255, 255, 1.00)","dasharray":[16.73,3.35],"cap":"butt","join":"round"}]}');
 
 /***/ }),
 
@@ -37340,7 +37340,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(147,149,152,1.00)","width":3.02,"dasharray":[7.5,0.75],"cap":"butt"},{"type":"Line","color":"rgba(255,242,0,1.00)","width":1.89,"dasharray":[12,1.2],"cap":"butt"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":3.02,"color":"rgba(147, 149, 152, 1.00)","dasharray":[7.51,0.75],"cap":"butt","join":"round"},{"type":"SimpleLine","width":1.89,"color":"rgba(255, 242, 0, 1.00)","dasharray":[12,1.2],"cap":"butt","join":"round"}]}');
 
 /***/ }),
 
@@ -37348,7 +37348,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(167,169,172,1.00)","width":1.13,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.13,"color":"rgba(167, 169, 172, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -37356,7 +37356,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(167,169,172,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(167,169,172,1.00)","width":1.89,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.89,"color":"rgba(167, 169, 172, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -37364,7 +37364,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(167,169,172,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(147,149,152,1.00)","width":2.27,"cap":"square"},{"type":"Line","color":"rgba(255,255,255,1.00)","width":1.13,"cap":"butt"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":2.27,"color":"rgba(147, 149, 152, 1.00)","cap":"square","join":"round"},{"type":"SimpleLine","width":1.13,"color":"rgba(255, 255, 255, 1.00)","cap":"butt","join":"round"}]}');
 
 /***/ }),
 
@@ -37372,7 +37372,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(147,149,152,1.00)","width":3.02,"cap":"square"},{"type":"Line","color":"rgba(255,242,0,1.00)","width":1.89,"cap":"square"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":3.02,"color":"rgba(147, 149, 152, 1.00)","cap":"square","join":"round"},{"type":"SimpleLine","width":1.89,"color":"rgba(255, 242, 0, 1.00)","cap":"square","join":"round"}]}');
 
 /***/ }),
 
@@ -37388,7 +37388,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(147,149,152,1.00)","width":4.54,"cap":"square"},{"type":"Line","color":"rgba(255,255,255,1.00)","width":1.89,"dasharray":[12,12],"cap":"square"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":4.54,"color":"rgba(147, 149, 152, 1.00)","cap":"square","join":"round"},{"type":"SimpleLine","width":1.89,"color":"rgba(255, 255, 255, 1.00)","dasharray":[12,12],"cap":"square","join":"round"}]}');
 
 /***/ }),
 
@@ -37420,7 +37420,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/964482.png"}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":4.54,"color":"rgba(35, 31, 32, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":3.02,"color":"rgba(255, 255, 255, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":2.27,"color":"rgba(35, 31, 32, 1.00)","dasharray":[0.08,0.83,0.08,0.83],"cap":"butt","offset":3.4,"join":"round"}]}');
 
 /***/ }),
 
@@ -37428,7 +37428,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/964483.png"}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":3.02,"color":"rgba(255, 255, 255, 1.00)","cap":"butt","offset":-1.51,"join":"round"},{"type":"SimpleLine","width":2.27,"color":"rgba(35, 31, 32, 1.00)","dasharray":[0.03,0.28,0.03,0.28],"cap":"butt","offset":1.89,"join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(35, 31, 32, 1.00)","dasharray":[3.32,1.66],"cap":"butt","offset":-4.54,"join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(35, 31, 32, 1.00)","cap":"butt","offset":0.38,"join":"round"}]}');
 
 /***/ }),
 
@@ -37436,7 +37436,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/964484.png"}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":4.54,"color":"rgba(0, 174, 239, 1.00)","dasharray":[0.01,0.21,0.01,0.21],"cap":"butt","offset":2.27,"join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(0, 174, 239, 1.00)","cap":"butt","join":"round"}]}');
 
 /***/ }),
 
@@ -37444,7 +37444,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/964485.png"}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":4.54,"color":"rgba(149, 84, 54, 1.00)","dasharray":[0.01,0.21,0.01,0.21],"cap":"butt","offset":2.27,"join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(149, 84, 54, 1.00)","cap":"butt","join":"round"}]}');
 
 /***/ }),
 
@@ -37460,7 +37460,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(57,170,0,1.00)","width":4.54,"cap":"butt"},{"type":"Line","color":"rgba(255,255,255,1.00)","width":1.89,"cap":"butt"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":4.54,"color":"rgba(57, 170, 0, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":1.89,"color":"rgba(255, 255, 255, 1.00)","cap":"butt","join":"round"}]}');
 
 /***/ }),
 
@@ -37468,7 +37468,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(237,28,36,1.00)","width":4.54,"dasharray":[1.25,0.83],"cap":"butt"},{"type":"Line","color":"rgba(255,255,255,1.00)","width":1.89,"dasharray":[3,2],"cap":"butt"}]}');
+module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/964488.png"}');
 
 /***/ }),
 
@@ -37476,7 +37476,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(35,31,32,1.00)","width":3.78,"cap":"butt"},{"type":"Line","color":"rgba(255,255,255,1.00)","width":0.38,"cap":"butt"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":3.78,"color":"rgba(35, 31, 32, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(255, 255, 255, 1.00)","cap":"butt","join":"round"}]}');
 
 /***/ }),
 
@@ -37484,7 +37484,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(35,31,32,1.00)","width":3.78,"dasharray":[1,1.5],"cap":"butt"},{"type":"Line","color":"rgba(255,255,255,1.00)","width":0.38,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":3.78,"color":"rgba(35, 31, 32, 1.00)","dasharray":[0.5,0.33],"cap":"butt","join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(255, 255, 255, 1.00)","cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -37492,7 +37492,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,0,0,1.00)","width":4.54,"cap":"butt"},{"type":"Line","color":"rgba(255,255,255,1.00)","width":1.89,"cap":"butt"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":4.54,"color":"#000","cap":"butt","join":"round"},{"type":"SimpleLine","width":1.89,"color":"rgba(255, 255, 255, 1.00)","cap":"butt","join":"round"}]}');
 
 /***/ }),
 
@@ -37500,7 +37500,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(35,31,32,1.00)","width":4.54,"cap":"butt"},{"type":"Line","color":"rgba(255,255,255,1.00)","width":1.89,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":4.54,"color":"rgba(35, 31, 32, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":1.89,"color":"rgba(255, 255, 255, 1.00)","cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -37524,7 +37524,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(207,229,174,1.00)","width":11.34,"cap":"butt"},{"type":"Line","color":"rgba(0,0,0,1.00)","width":3.02,"cap":"butt"},{"type":"Line","color":"rgba(255,255,255,1.00)","width":1.13,"cap":"butt"}]}');
+module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/964495.png"}');
 
 /***/ }),
 
@@ -37532,7 +37532,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,174,239,1.00)","width":0.38,"dasharray":[30,10],"cap":"butt"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 174, 239, 1.00)","dasharray":[9.95,3.32],"cap":"butt","join":"round"}');
 
 /***/ }),
 
@@ -37540,7 +37540,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,174,239,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(236,0,140,1.00)","width":0.38,"dasharray":[30,10],"cap":"butt"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(236, 0, 140, 1.00)","dasharray":[9.95,3.32],"cap":"butt","join":"round"}');
 
 /***/ }),
 
@@ -37548,7 +37548,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(236,0,140,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(236,0,140,1.00)","width":0.38,"dasharray":[30,10],"cap":"butt"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(236, 0, 140, 1.00)","dasharray":[9.95,3.32],"cap":"butt","join":"round"}');
 
 /***/ }),
 
@@ -37572,7 +37572,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/964501.png"}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":1.52,"color":"rgba(35, 31, 32, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":6.05,"color":"rgba(35, 31, 32, 1.00)","dasharray":[0.07,0.63,0.07,0.63],"cap":"butt","join":"round"}]}');
 
 /***/ }),
 
@@ -37580,7 +37580,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/964502.png"}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":1.52,"color":"rgba(237, 28, 36, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":7.56,"color":"rgba(237, 28, 36, 1.00)","dasharray":[0.03,0.5,0.03,0.5],"cap":"butt","join":"round"}]}');
 
 /***/ }),
 
@@ -37596,7 +37596,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,174,239,1.00)","width":0.38,"dasharray":[15,5],"cap":"butt"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 174, 239, 1.00)","dasharray":[4.97,1.66],"cap":"butt","join":"round"}');
 
 /***/ }),
 
@@ -37604,7 +37604,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,174,239,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,174,239,1.00)","width":0.38,"dasharray":[15,5],"cap":"butt"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 174, 239, 1.00)","dasharray":[4.97,1.66],"cap":"butt","join":"round"}');
 
 /***/ }),
 
@@ -37612,7 +37612,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,174,239,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,174,239,1.00)","width":0.38,"cap":"butt"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 174, 239, 1.00)","cap":"butt","join":"round"}');
 
 /***/ }),
 
@@ -37620,7 +37620,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,174,239,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,174,239,1.00)","width":0.38,"dasharray":[20,5],"cap":"butt"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 174, 239, 1.00)","dasharray":[6.63,1.66],"cap":"butt","join":"round"}');
 
 /***/ }),
 
@@ -37628,7 +37628,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,174,239,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/964508.png"}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":3.02,"color":"rgba(0, 174, 239, 1.00)","cap":"square","join":"round"},{"type":"SimpleLine","width":1.13,"color":"rgba(171, 225, 250, 1.00)","cap":"square","join":"round"}]}');
 
 /***/ }),
 
@@ -37636,7 +37636,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(241,237,229,1.00)","width":4.54,"cap":"round"},{"type":"Line","color":"rgba(255,255,254,1.00)","width":2.27,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":4.54,"color":"rgba(241, 237, 229, 1.00)","cap":"round","join":"round"},{"type":"SimpleLine","width":2.27,"color":"rgba(255, 255, 254, 1.00)","cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -37644,7 +37644,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(234,136,17,1.00)","width":18.14,"cap":"butt"},{"type":"Line","color":"rgba(245,190,120,1.00)","width":16.63,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":18.14,"color":"rgba(234, 136, 17, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":16.63,"color":"rgba(245, 190, 120, 1.00)","cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -37652,7 +37652,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(172,107,0,1.00)","width":16.63,"cap":"butt"},{"type":"Line","color":"rgba(255,206,16,1.00)","width":15.12,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":16.63,"color":"rgba(172, 107, 0, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":15.12,"color":"rgba(255, 206, 16, 1.00)","cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -37660,7 +37660,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(220,170,60,1.00)","width":15.87,"cap":"butt"},{"type":"Line","color":"rgba(250,230,100,1.00)","width":14.36,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":15.87,"color":"rgba(220, 170, 60, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":14.36,"color":"rgba(250, 230, 100, 1.00)","cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -37668,7 +37668,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(220,170,60,1.00)","width":13.61,"cap":"butt"},{"type":"Line","color":"rgba(250,230,100,1.00)","width":12.09,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":13.61,"color":"rgba(220, 170, 60, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":12.09,"color":"rgba(250, 230, 100, 1.00)","cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -37676,7 +37676,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(210,210,210,1.00)","width":12.09,"cap":"butt"},{"type":"Line","color":"rgba(254,253,169,1.00)","width":10.58,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":12.09,"color":"rgba(210, 210, 210, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":10.58,"color":"rgba(254, 253, 169, 1.00)","cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -37684,7 +37684,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(234,136,17,1.00)","width":5.29,"cap":"butt"},{"type":"Line","color":"rgba(245,190,120,1.00)","width":2.65,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":5.29,"color":"rgba(234, 136, 17, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":2.65,"color":"rgba(245, 190, 120, 1.00)","cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -37692,7 +37692,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(172,107,0,1.00)","width":2.65,"cap":"butt"},{"type":"Line","color":"rgba(255,206,16,1.00)","width":1.51,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":2.65,"color":"rgba(172, 107, 0, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":1.51,"color":"rgba(255, 206, 16, 1.00)","cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -37700,7 +37700,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(210,210,210,1.00)","width":5.29,"cap":"butt"},{"type":"Line","color":"rgba(254,253,169,1.00)","width":2.65,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":5.29,"color":"rgba(210, 210, 210, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":2.65,"color":"rgba(254, 253, 169, 1.00)","cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -37708,7 +37708,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(234,136,17,1.00)","width":9.45,"cap":"butt"},{"type":"Line","color":"rgba(245,190,120,1.00)","width":7.94,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":9.45,"color":"rgba(234, 136, 17, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":7.94,"color":"rgba(245, 190, 120, 1.00)","cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -37716,7 +37716,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(234,136,17,1.00)","width":8.31,"cap":"butt"},{"type":"Line","color":"rgba(245,190,120,1.00)","width":6.8,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":8.31,"color":"rgba(234, 136, 17, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":6.8,"color":"rgba(245, 190, 120, 1.00)","cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -37724,7 +37724,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(220,170,60,1.00)","width":8.31,"cap":"butt"},{"type":"Line","color":"rgba(250,230,100,1.00)","width":6.8,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":8.31,"color":"rgba(220, 170, 60, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":6.8,"color":"rgba(250, 230, 100, 1.00)","cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -37732,7 +37732,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(220,170,60,1.00)","width":7.56,"cap":"butt"},{"type":"Line","color":"rgba(250,230,100,1.00)","width":6.05,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":7.56,"color":"rgba(220, 170, 60, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":6.05,"color":"rgba(250, 230, 100, 1.00)","cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -37740,7 +37740,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(220,170,60,1.00)","width":6.8,"cap":"butt"},{"type":"Line","color":"rgba(250,230,100,1.00)","width":5.29,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":6.8,"color":"rgba(220, 170, 60, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":5.29,"color":"rgba(250, 230, 100, 1.00)","cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -37748,7 +37748,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(220,170,60,1.00)","width":6.05,"cap":"butt"},{"type":"Line","color":"rgba(250,230,100,1.00)","width":4.54,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":6.05,"color":"rgba(220, 170, 60, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":4.54,"color":"rgba(250, 230, 100, 1.00)","cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -37756,7 +37756,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(234,136,17,1.00)","width":15.12,"cap":"butt"},{"type":"Line","color":"rgba(245,190,120,1.00)","width":13.61,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":15.12,"color":"rgba(234, 136, 17, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":13.61,"color":"rgba(245, 190, 120, 1.00)","cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -37764,7 +37764,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(172,107,0,1.00)","width":13.98,"cap":"butt"},{"type":"Line","color":"rgba(255,206,16,1.00)","width":12.85,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":13.98,"color":"rgba(172, 107, 0, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":12.85,"color":"rgba(255, 206, 16, 1.00)","cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -37772,7 +37772,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(220,170,60,1.00)","width":12.85,"cap":"butt"},{"type":"Line","color":"rgba(250,230,100,1.00)","width":11.34,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":12.85,"color":"rgba(220, 170, 60, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":11.34,"color":"rgba(250, 230, 100, 1.00)","cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -37780,7 +37780,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(220,170,60,1.00)","width":11.34,"cap":"butt"},{"type":"Line","color":"rgba(250,230,100,1.00)","width":9.83,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":11.34,"color":"rgba(220, 170, 60, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":9.83,"color":"rgba(250, 230, 100, 1.00)","cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -37788,7 +37788,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(210,210,210,1.00)","width":11.72,"cap":"butt"},{"type":"Line","color":"rgba(254,253,169,1.00)","width":9.83,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":11.72,"color":"rgba(210, 210, 210, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":9.83,"color":"rgba(254, 253, 169, 1.00)","cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -37796,7 +37796,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(210,210,210,1.00)","width":7.94,"cap":"butt"},{"type":"Line","color":"rgba(254,253,169,1.00)","width":6.05,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":7.94,"color":"rgba(210, 210, 210, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":6.05,"color":"rgba(254, 253, 169, 1.00)","cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -37804,7 +37804,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(210,210,210,1.00)","width":11.34,"cap":"butt"},{"type":"Line","color":"rgba(254,253,169,1.00)","width":9.83,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":11.34,"color":"rgba(210, 210, 210, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":9.83,"color":"rgba(254, 253, 169, 1.00)","cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -37812,7 +37812,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(172,107,0,1.00)","width":6.8,"cap":"butt"},{"type":"Line","color":"rgba(255,206,16,1.00)","width":6.05,"cap":"square"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":6.8,"color":"rgba(172, 107, 0, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":6.05,"color":"rgba(255, 206, 16, 1.00)","cap":"square","join":"round"}]}');
 
 /***/ }),
 
@@ -37820,7 +37820,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(172,107,0,1.00)","width":5.67,"cap":"butt"},{"type":"Line","color":"rgba(255,206,16,1.00)","width":4.91,"cap":"square"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":5.67,"color":"rgba(172, 107, 0, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":4.91,"color":"rgba(255, 206, 16, 1.00)","cap":"square","join":"round"}]}');
 
 /***/ }),
 
@@ -37828,7 +37828,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(210,210,210,1.00)","width":5.67,"cap":"butt"},{"type":"Line","color":"rgba(254,253,169,1.00)","width":4.54,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":5.67,"color":"rgba(210, 210, 210, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":4.54,"color":"rgba(254, 253, 169, 1.00)","cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -37836,7 +37836,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(234,136,17,1.00)","width":12.85,"cap":"butt"},{"type":"Line","color":"rgba(245,190,120,1.00)","width":11.34,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":12.85,"color":"rgba(234, 136, 17, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":11.34,"color":"rgba(245, 190, 120, 1.00)","cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -37844,7 +37844,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(172,107,0,1.00)","width":12.09,"cap":"butt"},{"type":"Line","color":"rgba(255,206,16,1.00)","width":10.58,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":12.09,"color":"rgba(172, 107, 0, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":10.58,"color":"rgba(255, 206, 16, 1.00)","cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -37852,7 +37852,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(195,183,147,1.00)","width":11.34,"cap":"butt"},{"type":"Line","color":"rgba(250,246,162,1.00)","width":9.83,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":11.34,"color":"rgba(195, 183, 147, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":9.83,"color":"rgba(250, 246, 162, 1.00)","cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -37860,7 +37860,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(219,219,219,1.00)","width":10.58,"cap":"butt"},{"type":"Line","color":"rgba(255,255,221,1.00)","width":9.07,"cap":"square"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":10.58,"color":"rgba(219, 219, 219, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":9.07,"color":"rgba(255, 255, 221, 1.00)","cap":"square","join":"round"}]}');
 
 /***/ }),
 
@@ -37868,7 +37868,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(219,219,219,1.00)","width":9.45,"cap":"butt"},{"type":"Line","color":"rgba(255,255,221,1.00)","width":8.31,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":9.45,"color":"rgba(219, 219, 219, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":8.31,"color":"rgba(255, 255, 221, 1.00)","cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -37876,7 +37876,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(219,219,219,1.00)","width":8.31,"cap":"butt"},{"type":"Line","color":"rgba(255,255,221,1.00)","width":7.18,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":8.31,"color":"rgba(219, 219, 219, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":7.18,"color":"rgba(255, 255, 221, 1.00)","cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -37884,7 +37884,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(234,136,17,1.00)","width":9.07,"cap":"butt"},{"type":"Line","color":"rgba(245,190,120,1.00)","width":7.56,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":9.07,"color":"rgba(234, 136, 17, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":7.56,"color":"rgba(245, 190, 120, 1.00)","cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -37892,7 +37892,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(172,107,0,1.00)","width":8.31,"cap":"butt"},{"type":"Line","color":"rgba(255,206,16,1.00)","width":6.8,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":8.31,"color":"rgba(172, 107, 0, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":6.8,"color":"rgba(255, 206, 16, 1.00)","cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -37900,7 +37900,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(195,183,147,1.00)","width":6.8,"cap":"butt"},{"type":"Line","color":"rgba(250,246,162,1.00)","width":5.29,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":6.8,"color":"rgba(195, 183, 147, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":5.29,"color":"rgba(250, 246, 162, 1.00)","cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -37908,7 +37908,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(219,219,219,1.00)","width":6.05,"cap":"butt"},{"type":"Line","color":"rgba(255,255,221,1.00)","width":4.54,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":6.05,"color":"rgba(219, 219, 219, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":4.54,"color":"rgba(255, 255, 221, 1.00)","cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -37916,7 +37916,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(219,219,219,1.00)","width":5.29,"cap":"butt"},{"type":"Line","color":"rgba(255,255,221,1.00)","width":3.78,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":5.29,"color":"rgba(219, 219, 219, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":3.78,"color":"rgba(255, 255, 221, 1.00)","cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -37924,7 +37924,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(219,219,219,1.00)","width":4.91,"cap":"butt"},{"type":"Line","color":"rgba(255,255,221,1.00)","width":3.4,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":4.91,"color":"rgba(219, 219, 219, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":3.4,"color":"rgba(255, 255, 221, 1.00)","cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -37932,7 +37932,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(234,136,17,1.00)","width":16.63,"cap":"butt"},{"type":"Line","color":"rgba(245,190,120,1.00)","width":15.12,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":16.63,"color":"rgba(234, 136, 17, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":15.12,"color":"rgba(245, 190, 120, 1.00)","cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -37940,7 +37940,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(172,107,0,1.00)","width":15.87,"cap":"butt"},{"type":"Line","color":"rgba(255,206,16,1.00)","width":14.36,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":15.87,"color":"rgba(172, 107, 0, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":14.36,"color":"rgba(255, 206, 16, 1.00)","cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -37948,7 +37948,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(195,183,147,1.00)","width":15.12,"cap":"butt"},{"type":"Line","color":"rgba(250,246,162,1.00)","width":13.61,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":15.12,"color":"rgba(195, 183, 147, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":13.61,"color":"rgba(250, 246, 162, 1.00)","cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -37956,7 +37956,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(219,219,219,1.00)","width":14.36,"cap":"butt"},{"type":"Line","color":"rgba(255,255,221,1.00)","width":12.85,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":14.36,"color":"rgba(219, 219, 219, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":12.85,"color":"rgba(255, 255, 221, 1.00)","cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -37964,7 +37964,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(219,219,219,1.00)","width":12.85,"cap":"butt"},{"type":"Line","color":"rgba(255,255,221,1.00)","width":11.34,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":12.85,"color":"rgba(219, 219, 219, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":11.34,"color":"rgba(255, 255, 221, 1.00)","cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -37972,7 +37972,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(219,219,219,1.00)","width":9.83,"cap":"butt"},{"type":"Line","color":"rgba(255,255,221,1.00)","width":8.31,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":9.83,"color":"rgba(219, 219, 219, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":8.31,"color":"rgba(255, 255, 221, 1.00)","cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -37980,7 +37980,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(219,219,219,1.00)","width":5.67,"cap":"butt"},{"type":"Line","color":"rgba(255,255,221,1.00)","width":4.54,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":5.67,"color":"rgba(219, 219, 219, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":4.54,"color":"rgba(255, 255, 221, 1.00)","cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -37988,7 +37988,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(195,183,147,1.00)","width":3.4,"cap":"butt"},{"type":"Line","color":"rgba(250,246,162,1.00)","width":1.89,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":3.4,"color":"rgba(195, 183, 147, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":1.89,"color":"rgba(250, 246, 162, 1.00)","cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -37996,7 +37996,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(219,219,219,1.00)","width":8.31,"cap":"butt"},{"type":"Line","color":"rgba(255,255,221,1.00)","width":7.18,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":8.31,"color":"rgba(219, 219, 219, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":7.18,"color":"rgba(255, 255, 221, 1.00)","cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -38004,7 +38004,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(219,219,219,1.00)","width":5.29,"cap":"butt"},{"type":"Line","color":"rgba(255,255,221,1.00)","width":4.16,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":5.29,"color":"rgba(219, 219, 219, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":4.16,"color":"rgba(255, 255, 221, 1.00)","cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -38012,7 +38012,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(216,216,216,1.00)","width":4.54,"cap":"butt"},{"type":"Line","color":"rgba(255,255,255,1.00)","width":3.02,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":4.54,"color":"rgba(216, 216, 216, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":3.02,"color":"rgba(255, 255, 255, 1.00)","cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -38020,7 +38020,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(219,219,219,1.00)","width":2.65,"cap":"butt"},{"type":"Line","color":"rgba(255,255,221,1.00)","width":1.51,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":2.65,"color":"rgba(219, 219, 219, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":1.51,"color":"rgba(255, 255, 221, 1.00)","cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -38028,7 +38028,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(84,141,212,1.00)","width":0.38,"dasharray":[20,20],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(84, 141, 212, 1.00)","dasharray":[6.63,6.63],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38036,7 +38036,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(84,141,212,1.00)","wid
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(210,210,210,1.00)","width":5.67,"cap":"butt"},{"type":"Line","color":"rgba(254,253,169,1.00)","width":3.78,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":5.67,"color":"rgba(210, 210, 210, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":3.78,"color":"rgba(254, 253, 169, 1.00)","cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -38044,7 +38044,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(172,107,0,1.00)","width":5.67,"cap":"butt"},{"type":"Line","color":"rgba(255,206,16,1.00)","width":4.54,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":5.67,"color":"rgba(172, 107, 0, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":4.54,"color":"rgba(255, 206, 16, 1.00)","cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -38052,7 +38052,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(210,210,210,1.00)","width":6.8,"cap":"butt"},{"type":"Line","color":"rgba(254,253,169,1.00)","width":5.29,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":6.8,"color":"rgba(210, 210, 210, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":5.29,"color":"rgba(254, 253, 169, 1.00)","cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -38060,7 +38060,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(172,107,0,1.00)","width":6.8,"cap":"butt"},{"type":"Line","color":"rgba(255,206,16,1.00)","width":6.43,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":6.8,"color":"rgba(172, 107, 0, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":6.43,"color":"rgba(255, 206, 16, 1.00)","cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -38068,7 +38068,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(210,210,210,1.00)","width":9.83,"cap":"butt"},{"type":"Line","color":"rgba(254,253,169,1.00)","width":8.31,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":9.83,"color":"rgba(210, 210, 210, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":8.31,"color":"rgba(254, 253, 169, 1.00)","cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -38076,7 +38076,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(172,107,0,1.00)","width":12.09,"cap":"butt"},{"type":"Line","color":"rgba(255,206,16,1.00)","width":9.83,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":12.09,"color":"rgba(172, 107, 0, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":9.83,"color":"rgba(255, 206, 16, 1.00)","cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -38084,7 +38084,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,141,158,1.00)","width":1.89,"dasharray":[8,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.89,"color":"rgba(0, 141, 158, 1.00)","dasharray":[8,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38092,7 +38092,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,141,158,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(1,155,193,1.00)","width":1.89,"dasharray":[8,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.89,"color":"rgba(1, 155, 193, 1.00)","dasharray":[8,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38100,7 +38100,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(1,155,193,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(209,151,8,1.00)","width":1.89,"dasharray":[8,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.89,"color":"rgba(209, 151, 8, 1.00)","dasharray":[8,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38108,7 +38108,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(209,151,8,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,141,158,1.00)","width":1.89,"dasharray":[8,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.89,"color":"rgba(0, 141, 158, 1.00)","dasharray":[8,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38116,7 +38116,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,141,158,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(140,195,31,1.00)","width":1.89,"dasharray":[8,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.89,"color":"rgba(140, 195, 31, 1.00)","dasharray":[8,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38124,7 +38124,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(140,195,31,1.00)","wid
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(246,230,0,1.00)","width":1.89,"dasharray":[8,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.89,"color":"rgba(246, 230, 0, 1.00)","dasharray":[8,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38132,7 +38132,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(246,230,0,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(105,52,124,1.00)","width":1.89,"dasharray":[8,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.89,"color":"rgba(105, 52, 124, 1.00)","dasharray":[8,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38140,7 +38140,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(105,52,124,1.00)","wid
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(229,0,117,1.00)","width":1.89,"dasharray":[8,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.89,"color":"rgba(229, 0, 117, 1.00)","dasharray":[8,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38148,7 +38148,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(229,0,117,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(164,154,188,1.00)","width":1.89,"dasharray":[8,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.89,"color":"rgba(164, 154, 188, 1.00)","dasharray":[8,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38156,7 +38156,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(164,154,188,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,102,204,1.00)","width":1.89,"dasharray":[8,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.89,"color":"rgba(0, 102, 204, 1.00)","dasharray":[8,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38164,7 +38164,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,102,204,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(167,28,129,1.00)","width":1.89,"dasharray":[8,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.89,"color":"rgba(167, 28, 129, 1.00)","dasharray":[8,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38172,7 +38172,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(167,28,129,1.00)","wid
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(1,154,107,1.00)","width":1.89,"dasharray":[8,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.89,"color":"rgba(1, 154, 107, 1.00)","dasharray":[8,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38180,7 +38180,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(1,154,107,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(1,155,193,1.00)","width":1.89,"dasharray":[8,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.89,"color":"rgba(1, 155, 193, 1.00)","dasharray":[8,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38188,7 +38188,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(1,155,193,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(214,166,162,1.00)","width":2.27,"dasharray":[6.67,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":2.27,"color":"rgba(214, 166, 162, 1.00)","dasharray":[6.66,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38196,7 +38196,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(214,166,162,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(219,131,179,1.00)","width":2.27,"dasharray":[6.67,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":2.27,"color":"rgba(219, 131, 179, 1.00)","dasharray":[6.66,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38204,7 +38204,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(219,131,179,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(228,96,34,1.00)","width":1.89,"dasharray":[8,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.89,"color":"rgba(228, 96, 34, 1.00)","dasharray":[8,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38212,7 +38212,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(228,96,34,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(238,50,41,1.00)","width":1.89,"dasharray":[8,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.89,"color":"rgba(238, 50, 41, 1.00)","dasharray":[8,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38220,7 +38220,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(238,50,41,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(54,184,84,1.00)","width":1.89,"dasharray":[8,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.89,"color":"rgba(54, 184, 84, 1.00)","dasharray":[8,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38228,7 +38228,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(54,184,84,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(255,216,35,1.00)","width":1.89,"dasharray":[8,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.89,"color":"rgba(255, 216, 35, 1.00)","dasharray":[8,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38236,7 +38236,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(255,216,35,1.00)","wid
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(50,1,119,1.00)","width":1.89,"dasharray":[8,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.89,"color":"rgba(50, 1, 119, 1.00)","dasharray":[8,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38244,7 +38244,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(50,1,119,1.00)","width
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(130,48,148,1.00)","width":1.89,"dasharray":[8,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.89,"color":"rgba(130, 48, 148, 1.00)","dasharray":[8,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38252,7 +38252,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(130,48,148,1.00)","wid
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(206,4,122,1.00)","width":1.89,"dasharray":[8,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.89,"color":"rgba(206, 4, 122, 1.00)","dasharray":[8,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38260,7 +38260,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(206,4,122,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(243,86,15,1.00)","width":1.89,"dasharray":[8,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.89,"color":"rgba(243, 86, 15, 1.00)","dasharray":[8,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38268,7 +38268,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(243,86,15,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,140,193,1.00)","width":1.89,"dasharray":[8,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.89,"color":"rgba(0, 140, 193, 1.00)","dasharray":[8,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38276,7 +38276,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,140,193,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(145,197,219,1.00)","width":1.89,"dasharray":[8,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.89,"color":"rgba(145, 197, 219, 1.00)","dasharray":[8,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38284,7 +38284,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(145,197,219,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(199,175,211,1.00)","width":1.89,"dasharray":[8,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.89,"color":"rgba(199, 175, 211, 1.00)","dasharray":[8,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38292,7 +38292,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(199,175,211,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(142,35,35,1.00)","width":1.89,"dasharray":[8,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.89,"color":"rgba(142, 35, 35, 1.00)","dasharray":[8,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38300,7 +38300,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(142,35,35,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(244,184,210,1.00)","width":1.89,"dasharray":[8,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.89,"color":"rgba(244, 184, 210, 1.00)","dasharray":[8,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38308,7 +38308,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(244,184,210,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(255,216,35,1.00)","width":1.89,"dasharray":[8,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.89,"color":"rgba(255, 216, 35, 1.00)","dasharray":[8,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38316,7 +38316,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(255,216,35,1.00)","wid
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,102,204,1.00)","width":1.89,"dasharray":[8,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.89,"color":"rgba(0, 102, 204, 1.00)","dasharray":[8,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38324,7 +38324,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,102,204,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(234,102,50,1.00)","width":1.89,"dasharray":[8,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.89,"color":"rgba(234, 102, 50, 1.00)","dasharray":[8,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38332,7 +38332,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(234,102,50,1.00)","wid
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,153,0,1.00)","width":1.89,"dasharray":[8,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.89,"color":"rgba(0, 153, 0, 1.00)","dasharray":[8,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38340,7 +38340,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,153,0,1.00)","width"
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(234,102,50,1.00)","width":1.89,"dasharray":[8,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.89,"color":"rgba(234, 102, 50, 1.00)","dasharray":[8,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38348,7 +38348,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(234,102,50,1.00)","wid
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(255,0,0,1.00)","width":1.89,"dasharray":[8,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.89,"color":"rgba(255, 0, 0, 1.00)","dasharray":[8,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38356,7 +38356,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(255,0,0,1.00)","width"
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,161,204,1.00)","width":1.89,"dasharray":[8,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.89,"color":"rgba(0, 161, 204, 1.00)","dasharray":[8,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38364,7 +38364,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,161,204,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,161,204,1.00)","width":1.89,"dasharray":[8,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.89,"color":"rgba(0, 161, 204, 1.00)","dasharray":[8,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38372,7 +38372,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,161,204,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(201,232,135,1.00)","width":1.89,"dasharray":[8,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.89,"color":"rgba(201, 232, 135, 1.00)","dasharray":[8,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38380,7 +38380,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(201,232,135,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,219,124,1.00)","width":1.89,"dasharray":[8,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.89,"color":"rgba(0, 219, 124, 1.00)","dasharray":[8,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38388,7 +38388,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,219,124,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(255,194,53,1.00)","width":2.27,"dasharray":[6.67,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":2.27,"color":"rgba(255, 194, 53, 1.00)","dasharray":[6.66,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38396,7 +38396,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(255,194,53,1.00)","wid
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,217,254,1.00)","width":2.27,"dasharray":[6.67,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":2.27,"color":"rgba(0, 217, 254, 1.00)","dasharray":[6.66,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38404,7 +38404,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,217,254,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(255,86,69,1.00)","width":2.27,"dasharray":[6.67,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":2.27,"color":"rgba(255, 86, 69, 1.00)","dasharray":[6.66,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38412,7 +38412,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(255,86,69,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(156,141,213,1.00)","width":2.27,"dasharray":[6.67,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":2.27,"color":"rgba(156, 141, 213, 1.00)","dasharray":[6.66,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38420,7 +38420,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(156,141,213,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(92,184,229,1.00)","width":2.27,"dasharray":[6.67,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":2.27,"color":"rgba(92, 184, 229, 1.00)","dasharray":[6.66,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38428,7 +38428,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(92,184,229,1.00)","wid
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(92,184,229,1.00)","width":2.27,"dasharray":[6.67,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":2.27,"color":"rgba(92, 184, 229, 1.00)","dasharray":[6.66,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38436,7 +38436,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(92,184,229,1.00)","wid
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(214,53,66,1.00)","width":1.89,"dasharray":[8,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.89,"color":"rgba(214, 53, 66, 1.00)","dasharray":[8,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38444,7 +38444,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(214,53,66,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,102,204,1.00)","width":1.89,"dasharray":[8,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.89,"color":"rgba(0, 102, 204, 1.00)","dasharray":[8,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38452,7 +38452,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,102,204,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(236,106,0,1.00)","width":1.89,"dasharray":[8,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.89,"color":"rgba(236, 106, 0, 1.00)","dasharray":[8,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38460,7 +38460,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(236,106,0,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(214,53,66,1.00)","width":1.89,"dasharray":[8,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.89,"color":"rgba(214, 53, 66, 1.00)","dasharray":[8,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38468,7 +38468,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(214,53,66,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(44,196,39,1.00)","width":1.89,"dasharray":[8,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.89,"color":"rgba(44, 196, 39, 1.00)","dasharray":[8,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38476,7 +38476,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(44,196,39,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(73,122,204,1.00)","width":1.89,"dasharray":[8,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.89,"color":"rgba(73, 122, 204, 1.00)","dasharray":[8,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38484,7 +38484,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(73,122,204,1.00)","wid
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(240,100,132,1.00)","width":1.89,"dasharray":[8,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.89,"color":"rgba(240, 100, 132, 1.00)","dasharray":[8,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38492,7 +38492,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(240,100,132,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(214,110,147,1.00)","width":1.89,"dasharray":[8,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.89,"color":"rgba(214, 110, 147, 1.00)","dasharray":[8,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38500,7 +38500,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(214,110,147,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(251,52,29,1.00)","width":1.89,"dasharray":[8,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.89,"color":"rgba(251, 52, 29, 1.00)","dasharray":[8,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38508,7 +38508,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(251,52,29,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(251,243,36,1.00)","width":2.27,"dasharray":[6.67,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":2.27,"color":"rgba(251, 243, 36, 1.00)","dasharray":[6.66,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38516,7 +38516,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(251,243,36,1.00)","wid
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,171,211,1.00)","width":1.89,"dasharray":[8,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.89,"color":"rgba(0, 171, 211, 1.00)","dasharray":[8,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38524,7 +38524,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,171,211,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(227,73,73,1.00)","width":1.89,"dasharray":[8,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.89,"color":"rgba(227, 73, 73, 1.00)","dasharray":[8,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38532,7 +38532,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(227,73,73,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(255,187,51,1.00)","width":2.27,"dasharray":[6.67,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":2.27,"color":"rgba(255, 187, 51, 1.00)","dasharray":[6.66,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38540,7 +38540,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(255,187,51,1.00)","wid
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(225,5,5,1.00)","width":1.89,"dasharray":[8,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.89,"color":"rgba(225, 5, 5, 1.00)","dasharray":[8,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38548,7 +38548,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(225,5,5,1.00)","width"
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,102,204,1.00)","width":1.89,"dasharray":[8,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.89,"color":"rgba(0, 102, 204, 1.00)","dasharray":[8,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38556,7 +38556,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,102,204,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(237,156,199,1.00)","width":1.89,"dasharray":[8,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.89,"color":"rgba(237, 156, 199, 1.00)","dasharray":[8,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38564,7 +38564,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(237,156,199,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(51,204,0,1.00)","width":1.89,"dasharray":[8,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.89,"color":"rgba(51, 204, 0, 1.00)","dasharray":[8,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38572,7 +38572,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(51,204,0,1.00)","width
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,102,204,1.00)","width":1.89,"dasharray":[8,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.89,"color":"rgba(0, 102, 204, 1.00)","dasharray":[8,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38580,7 +38580,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,102,204,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,102,204,1.00)","width":1.89,"dasharray":[8,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.89,"color":"rgba(0, 102, 204, 1.00)","dasharray":[8,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38588,7 +38588,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,102,204,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,102,204,1.00)","width":1.89,"dasharray":[8,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.89,"color":"rgba(0, 102, 204, 1.00)","dasharray":[8,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38596,7 +38596,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,102,204,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,102,204,1.00)","width":1.89,"dasharray":[8,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.89,"color":"rgba(0, 102, 204, 1.00)","dasharray":[8,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38604,7 +38604,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,102,204,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(214,52,65,1.00)","width":1.89,"dasharray":[8,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.89,"color":"rgba(214, 52, 65, 1.00)","dasharray":[8,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38612,7 +38612,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(214,52,65,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(107,179,71,1.00)","width":1.89,"dasharray":[8,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.89,"color":"rgba(107, 179, 71, 1.00)","dasharray":[8,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38620,7 +38620,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(107,179,71,1.00)","wid
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(204,82,82,1.00)","width":1.89,"dasharray":[8,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.89,"color":"rgba(204, 82, 82, 1.00)","dasharray":[8,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38628,7 +38628,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(204,82,82,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(207,137,187,1.00)","width":1.89,"dasharray":[8,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.89,"color":"rgba(207, 137, 187, 1.00)","dasharray":[8,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38636,7 +38636,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(207,137,187,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(219,55,43,1.00)","width":1.89,"dasharray":[8,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.89,"color":"rgba(219, 55, 43, 1.00)","dasharray":[8,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38644,7 +38644,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(219,55,43,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(204,0,0,1.00)","width":1.89,"dasharray":[8,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.89,"color":"rgba(204, 0, 0, 1.00)","dasharray":[8,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38652,7 +38652,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(204,0,0,1.00)","width"
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(204,0,0,1.00)","width":1.89,"dasharray":[8,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.89,"color":"rgba(204, 0, 0, 1.00)","dasharray":[8,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38660,7 +38660,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(204,0,0,1.00)","width"
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(179,179,179,1.00)","width":2.27,"dasharray":[6.67,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":2.27,"color":"rgba(179, 179, 179, 1.00)","dasharray":[6.66,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38668,7 +38668,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(179,179,179,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(7,32,138,1.00)","width":1.89,"dasharray":[8,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.89,"color":"rgba(7, 32, 138, 1.00)","dasharray":[8,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38676,7 +38676,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(7,32,138,1.00)","width
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,141,158,1.00)","width":3.02,"dasharray":[5,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":3.02,"color":"rgba(0, 141, 158, 1.00)","dasharray":[5.01,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38684,7 +38684,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,141,158,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(1,155,193,1.00)","width":3.02,"dasharray":[5,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":3.02,"color":"rgba(1, 155, 193, 1.00)","dasharray":[5.01,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38692,7 +38692,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(1,155,193,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(209,151,8,1.00)","width":3.02,"dasharray":[5,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":3.02,"color":"rgba(209, 151, 8, 1.00)","dasharray":[5.01,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38700,7 +38700,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(209,151,8,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,141,158,1.00)","width":3.02,"dasharray":[5,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":3.02,"color":"rgba(0, 141, 158, 1.00)","dasharray":[5.01,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38708,7 +38708,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,141,158,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(140,195,31,1.00)","width":3.02,"dasharray":[5,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":3.02,"color":"rgba(140, 195, 31, 1.00)","dasharray":[5.01,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38716,7 +38716,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(140,195,31,1.00)","wid
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(246,230,0,1.00)","width":3.02,"dasharray":[5,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":3.02,"color":"rgba(246, 230, 0, 1.00)","dasharray":[5.01,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38724,7 +38724,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(246,230,0,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(105,52,124,1.00)","width":3.02,"dasharray":[5,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":3.02,"color":"rgba(105, 52, 124, 1.00)","dasharray":[5.01,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38732,7 +38732,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(105,52,124,1.00)","wid
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(229,0,117,1.00)","width":3.02,"dasharray":[5,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":3.02,"color":"rgba(229, 0, 117, 1.00)","dasharray":[5.01,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38740,7 +38740,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(229,0,117,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(164,154,188,1.00)","width":3.02,"dasharray":[5,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":3.02,"color":"rgba(164, 154, 188, 1.00)","dasharray":[5.01,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38748,7 +38748,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(164,154,188,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,102,204,1.00)","width":3.02,"dasharray":[5,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":3.02,"color":"rgba(0, 102, 204, 1.00)","dasharray":[5.01,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38756,7 +38756,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,102,204,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(167,28,129,1.00)","width":3.02,"dasharray":[5,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":3.02,"color":"rgba(167, 28, 129, 1.00)","dasharray":[5.01,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38764,7 +38764,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(167,28,129,1.00)","wid
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(1,154,107,1.00)","width":3.02,"dasharray":[5,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":3.02,"color":"rgba(1, 154, 107, 1.00)","dasharray":[5.01,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38772,7 +38772,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(1,154,107,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(1,155,193,1.00)","width":3.02,"dasharray":[5,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":3.02,"color":"rgba(1, 155, 193, 1.00)","dasharray":[5.01,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38780,7 +38780,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(1,155,193,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(214,166,162,1.00)","width":3.02,"dasharray":[5,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":3.02,"color":"rgba(214, 166, 162, 1.00)","dasharray":[5.01,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38788,7 +38788,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(214,166,162,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(219,131,179,1.00)","width":3.02,"dasharray":[5,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":3.02,"color":"rgba(219, 131, 179, 1.00)","dasharray":[5.01,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38796,7 +38796,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(219,131,179,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(228,96,34,1.00)","width":3.02,"dasharray":[5,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":3.02,"color":"rgba(228, 96, 34, 1.00)","dasharray":[5.01,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38804,7 +38804,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(228,96,34,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(204,0,0,1.00)","width":3.02,"dasharray":[5,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":3.02,"color":"rgba(204, 0, 0, 1.00)","dasharray":[5.01,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38812,7 +38812,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(204,0,0,1.00)","width"
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(204,0,0,1.00)","width":3.02,"dasharray":[5,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":3.02,"color":"rgba(204, 0, 0, 1.00)","dasharray":[5.01,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38820,7 +38820,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(204,0,0,1.00)","width"
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(238,50,41,1.00)","width":3.02,"dasharray":[5,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":3.02,"color":"rgba(238, 50, 41, 1.00)","dasharray":[5.01,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38828,7 +38828,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(238,50,41,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(54,184,84,1.00)","width":3.02,"dasharray":[5,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":3.02,"color":"rgba(54, 184, 84, 1.00)","dasharray":[5.01,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38836,7 +38836,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(54,184,84,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(255,216,35,1.00)","width":3.02,"dasharray":[5,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":3.02,"color":"rgba(255, 216, 35, 1.00)","dasharray":[5.01,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38844,7 +38844,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(255,216,35,1.00)","wid
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(50,1,119,1.00)","width":3.02,"dasharray":[5,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":3.02,"color":"rgba(50, 1, 119, 1.00)","dasharray":[5.01,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38852,7 +38852,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(50,1,119,1.00)","width
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(130,48,148,1.00)","width":3.02,"dasharray":[5,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":3.02,"color":"rgba(130, 48, 148, 1.00)","dasharray":[5.01,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38860,7 +38860,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(130,48,148,1.00)","wid
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(206,4,122,1.00)","width":3.02,"dasharray":[5,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":3.02,"color":"rgba(206, 4, 122, 1.00)","dasharray":[5.01,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38868,7 +38868,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(206,4,122,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(243,86,15,1.00)","width":3.02,"dasharray":[5,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":3.02,"color":"rgba(243, 86, 15, 1.00)","dasharray":[5.01,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38876,7 +38876,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(243,86,15,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,140,193,1.00)","width":3.02,"dasharray":[5,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":3.02,"color":"rgba(0, 140, 193, 1.00)","dasharray":[5.01,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38884,7 +38884,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,140,193,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(145,197,219,1.00)","width":3.02,"dasharray":[5,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":3.02,"color":"rgba(145, 197, 219, 1.00)","dasharray":[5.01,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38892,7 +38892,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(145,197,219,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(199,175,211,1.00)","width":3.02,"dasharray":[5,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":3.02,"color":"rgba(199, 175, 211, 1.00)","dasharray":[5.01,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38900,7 +38900,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(199,175,211,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(142,35,35,1.00)","width":3.02,"dasharray":[5,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":3.02,"color":"rgba(142, 35, 35, 1.00)","dasharray":[5.01,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38908,7 +38908,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(142,35,35,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(244,184,210,1.00)","width":3.02,"dasharray":[5,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":3.02,"color":"rgba(244, 184, 210, 1.00)","dasharray":[5.01,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38916,7 +38916,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(244,184,210,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(179,179,179,1.00)","width":3.02,"dasharray":[5,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":3.02,"color":"rgba(179, 179, 179, 1.00)","dasharray":[5.01,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38924,7 +38924,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(179,179,179,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(255,216,35,1.00)","width":3.02,"dasharray":[5,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":3.02,"color":"rgba(255, 216, 35, 1.00)","dasharray":[5.01,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38932,7 +38932,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(255,216,35,1.00)","wid
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,102,204,1.00)","width":3.02,"dasharray":[5,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":3.02,"color":"rgba(0, 102, 204, 1.00)","dasharray":[5.01,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38940,7 +38940,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,102,204,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(234,102,50,1.00)","width":3.02,"dasharray":[5,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":3.02,"color":"rgba(234, 102, 50, 1.00)","dasharray":[5.01,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38948,7 +38948,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(234,102,50,1.00)","wid
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,153,0,1.00)","width":3.02,"dasharray":[5,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":3.02,"color":"rgba(0, 153, 0, 1.00)","dasharray":[5.01,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38956,7 +38956,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,153,0,1.00)","width"
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(234,102,50,1.00)","width":3.02,"dasharray":[5,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":3.02,"color":"rgba(234, 102, 50, 1.00)","dasharray":[5.01,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38964,7 +38964,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(234,102,50,1.00)","wid
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(255,0,0,1.00)","width":3.02,"dasharray":[5,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":3.02,"color":"rgba(255, 0, 0, 1.00)","dasharray":[5.01,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38972,7 +38972,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(255,0,0,1.00)","width"
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,161,204,1.00)","width":3.02,"dasharray":[5,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":3.02,"color":"rgba(0, 161, 204, 1.00)","dasharray":[5.01,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38980,7 +38980,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,161,204,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,161,204,1.00)","width":3.02,"dasharray":[5,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":3.02,"color":"rgba(0, 161, 204, 1.00)","dasharray":[5.01,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38988,7 +38988,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,161,204,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(201,232,135,1.00)","width":3.02,"dasharray":[5,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":3.02,"color":"rgba(201, 232, 135, 1.00)","dasharray":[5.01,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -38996,7 +38996,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(201,232,135,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,219,124,1.00)","width":3.02,"dasharray":[5,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":3.02,"color":"rgba(0, 219, 124, 1.00)","dasharray":[5.01,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -39004,7 +39004,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,219,124,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(255,194,53,1.00)","width":3.02,"dasharray":[5,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":3.02,"color":"rgba(255, 194, 53, 1.00)","dasharray":[5.01,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -39012,7 +39012,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(255,194,53,1.00)","wid
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,217,254,1.00)","width":3.02,"dasharray":[5,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":3.02,"color":"rgba(0, 217, 254, 1.00)","dasharray":[5.01,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -39020,7 +39020,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,217,254,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(255,86,69,1.00)","width":3.02,"dasharray":[5,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":3.02,"color":"rgba(255, 86, 69, 1.00)","dasharray":[5.01,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -39028,7 +39028,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(255,86,69,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(156,141,213,1.00)","width":3.02,"dasharray":[5,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":3.02,"color":"rgba(156, 141, 213, 1.00)","dasharray":[5.01,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -39036,7 +39036,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(156,141,213,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(92,184,229,1.00)","width":3.02,"dasharray":[5,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":3.02,"color":"rgba(92, 184, 229, 1.00)","dasharray":[5.01,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -39044,7 +39044,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(92,184,229,1.00)","wid
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(92,184,229,1.00)","width":3.02,"dasharray":[5,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":3.02,"color":"rgba(92, 184, 229, 1.00)","dasharray":[5.01,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -39052,7 +39052,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(92,184,229,1.00)","wid
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(214,53,66,1.00)","width":3.02,"dasharray":[5,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":3.02,"color":"rgba(214, 53, 66, 1.00)","dasharray":[5.01,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -39060,7 +39060,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(214,53,66,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,102,204,1.00)","width":3.02,"dasharray":[5,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":3.02,"color":"rgba(0, 102, 204, 1.00)","dasharray":[5.01,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -39068,7 +39068,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,102,204,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(236,106,0,1.00)","width":3.02,"dasharray":[5,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":3.02,"color":"rgba(236, 106, 0, 1.00)","dasharray":[5.01,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -39076,7 +39076,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(236,106,0,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(214,53,66,1.00)","width":3.02,"dasharray":[5,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":3.02,"color":"rgba(214, 53, 66, 1.00)","dasharray":[5.01,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -39084,7 +39084,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(214,53,66,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(44,196,39,1.00)","width":3.02,"dasharray":[5,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":3.02,"color":"rgba(44, 196, 39, 1.00)","dasharray":[5.01,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -39092,7 +39092,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(44,196,39,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(73,122,204,1.00)","width":3.02,"dasharray":[5,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":3.02,"color":"rgba(73, 122, 204, 1.00)","dasharray":[5.01,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -39100,7 +39100,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(73,122,204,1.00)","wid
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(240,100,132,1.00)","width":3.02,"dasharray":[5,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":3.02,"color":"rgba(240, 100, 132, 1.00)","dasharray":[5.01,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -39108,7 +39108,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(240,100,132,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(214,110,147,1.00)","width":3.02,"dasharray":[5,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":3.02,"color":"rgba(214, 110, 147, 1.00)","dasharray":[5.01,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -39116,7 +39116,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(214,110,147,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(251,52,29,1.00)","width":3.02,"dasharray":[5,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":3.02,"color":"rgba(251, 52, 29, 1.00)","dasharray":[5.01,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -39124,7 +39124,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(251,52,29,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(251,243,36,1.00)","width":3.02,"dasharray":[5,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":3.02,"color":"rgba(251, 243, 36, 1.00)","dasharray":[5.01,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -39132,7 +39132,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(251,243,36,1.00)","wid
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,171,211,1.00)","width":3.02,"dasharray":[5,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":3.02,"color":"rgba(0, 171, 211, 1.00)","dasharray":[5.01,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -39140,7 +39140,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,171,211,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(7,32,138,1.00)","width":3.02,"dasharray":[5,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":3.02,"color":"rgba(7, 32, 138, 1.00)","dasharray":[5.01,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -39148,7 +39148,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(7,32,138,1.00)","width
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(227,73,73,1.00)","width":3.02,"dasharray":[5,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":3.02,"color":"rgba(227, 73, 73, 1.00)","dasharray":[5.01,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -39156,7 +39156,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(227,73,73,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(255,187,51,1.00)","width":3.02,"dasharray":[5,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":3.02,"color":"rgba(255, 187, 51, 1.00)","dasharray":[5.01,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -39164,7 +39164,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(255,187,51,1.00)","wid
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(225,5,5,1.00)","width":3.02,"dasharray":[5,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":3.02,"color":"rgba(225, 5, 5, 1.00)","dasharray":[5.01,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -39172,7 +39172,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(225,5,5,1.00)","width"
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,102,204,1.00)","width":3.02,"dasharray":[5,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":3.02,"color":"rgba(0, 102, 204, 1.00)","dasharray":[5.01,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -39180,7 +39180,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,102,204,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(237,156,199,1.00)","width":3.02,"dasharray":[5,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":3.02,"color":"rgba(237, 156, 199, 1.00)","dasharray":[5.01,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -39188,7 +39188,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(237,156,199,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(51,204,0,1.00)","width":3.02,"dasharray":[5,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":3.02,"color":"rgba(51, 204, 0, 1.00)","dasharray":[5.01,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -39196,7 +39196,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(51,204,0,1.00)","width
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,102,204,1.00)","width":3.02,"dasharray":[5,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":3.02,"color":"rgba(0, 102, 204, 1.00)","dasharray":[5.01,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -39204,7 +39204,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,102,204,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,102,204,1.00)","width":3.02,"dasharray":[5,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":3.02,"color":"rgba(0, 102, 204, 1.00)","dasharray":[5.01,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -39212,7 +39212,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,102,204,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,102,204,1.00)","width":3.02,"dasharray":[5,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":3.02,"color":"rgba(0, 102, 204, 1.00)","dasharray":[5.01,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -39220,7 +39220,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,102,204,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,102,204,1.00)","width":3.02,"dasharray":[5,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":3.02,"color":"rgba(0, 102, 204, 1.00)","dasharray":[5.01,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -39228,7 +39228,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,102,204,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(214,52,65,1.00)","width":3.02,"dasharray":[5,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":3.02,"color":"rgba(214, 52, 65, 1.00)","dasharray":[5.01,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -39236,7 +39236,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(214,52,65,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(107,179,71,1.00)","width":3.02,"dasharray":[5,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":3.02,"color":"rgba(107, 179, 71, 1.00)","dasharray":[5.01,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -39244,7 +39244,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(107,179,71,1.00)","wid
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(204,82,82,1.00)","width":3.02,"dasharray":[5,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":3.02,"color":"rgba(204, 82, 82, 1.00)","dasharray":[5.01,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -39252,7 +39252,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(204,82,82,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(207,137,187,1.00)","width":3.02,"dasharray":[5,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":3.02,"color":"rgba(207, 137, 187, 1.00)","dasharray":[5.01,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -39260,7 +39260,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(207,137,187,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(219,55,43,1.00)","width":3.02,"dasharray":[5,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":3.02,"color":"rgba(219, 55, 43, 1.00)","dasharray":[5.01,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -39268,7 +39268,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(219,55,43,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(216,216,216,1.00)","width":10.58,"cap":"butt"},{"type":"Line","color":"rgba(255,255,255,1.00)","width":6.8,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":10.58,"color":"rgba(216, 216, 216, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":6.8,"color":"rgba(255, 255, 255, 1.00)","cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -39276,7 +39276,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(216,216,216,1.00)","width":6.43,"cap":"butt"},{"type":"Line","color":"rgba(255,255,255,1.00)","width":4.16,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":6.43,"color":"rgba(216, 216, 216, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":4.16,"color":"rgba(255, 255, 255, 1.00)","cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -39284,7 +39284,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(216,216,216,1.00)","width":7.56,"cap":"butt"},{"type":"Line","color":"rgba(255,255,255,1.00)","width":5.29,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":7.56,"color":"rgba(216, 216, 216, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":5.29,"color":"rgba(255, 255, 255, 1.00)","cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -39292,7 +39292,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(219,219,219,1.00)","width":6.8,"cap":"butt"},{"type":"Line","color":"rgba(255,255,221,1.00)","width":5.29,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":6.8,"color":"rgba(219, 219, 219, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":5.29,"color":"rgba(255, 255, 221, 1.00)","cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -39300,7 +39300,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(172,107,0,1.00)","width":9.83,"cap":"butt"},{"type":"Line","color":"rgba(255,206,16,1.00)","width":8.31,"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":9.83,"color":"rgba(172, 107, 0, 1.00)","cap":"butt","join":"round"},{"type":"SimpleLine","width":8.31,"color":"rgba(255, 206, 16, 1.00)","cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -39308,7 +39308,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(190,130,90,1.00)","width":0.38,"dasharray":[40,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(190, 130, 90, 1.00)","dasharray":[13.26,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -39316,7 +39316,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(190,130,90,1.00)","wid
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(190,130,90,1.00)","width":1.13,"dasharray":[13.33,0],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.13,"color":"rgba(190, 130, 90, 1.00)","dasharray":[13.38,0],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -39324,7 +39324,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(190,130,90,1.00)","wid
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(100,100,100,1.00)","width":0.38,"dasharray":[20,10],"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(100, 100, 100, 1.00)","dasharray":[6.63,3.32],"cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -39340,7 +39340,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(4,50,180,1.00)","width":0.38,"dasharray":[40,50],"cap":"square"},{"type":"Line","color":"rgba(4,50,180,1.00)","width":0.38,"dasharray":[5,85],"cap":"round"},{"type":"Line","color":"rgba(4,50,180,1.00)","width":0.38,"dasharray":[5,85],"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":1.14,"color":"rgba(4, 50, 180, 1.00)","dasharray":[13.26,16.58],"cap":"square","join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(4, 50, 180, 1.00)","dasharray":[1.66,28.18],"cap":"round","join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(4, 50, 180, 1.00)","dasharray":[1.66,28.18],"cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -39348,7 +39348,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(4,50,180,1.00)","width":0.38,"dasharray":[20,30],"cap":"square"},{"type":"Line","color":"rgba(4,50,180,1.00)","width":0.38,"dasharray":[5,45],"cap":"square"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":1.14,"color":"rgba(4, 50, 180, 1.00)","dasharray":[6.63,9.95],"cap":"square","join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(4, 50, 180, 1.00)","dasharray":[1.66,14.92],"cap":"square","join":"round"}]}');
 
 /***/ }),
 
@@ -39356,7 +39356,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(4,50,180,1.00)","width":1.89,"dasharray":[4,4],"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.89,"color":"rgba(4, 50, 180, 1.00)","dasharray":[4,4],"cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -39364,7 +39364,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(4,50,180,1.00)","width
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(191,191,191,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/964799.png"}');
 
 /***/ }),
 
@@ -39372,7 +39372,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(191,191,191,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(191,191,191,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(191, 191, 191, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -39388,7 +39388,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(4,100,125,1.00)","width":0.76,"cap":"square"},{"type":"Line","color":"rgba(255,255,255,1.00)","width":0.38,"dasharray":[40,40],"cap":"square"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":0.76,"color":"rgba(4, 100, 125, 1.00)","cap":"square","join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(255, 255, 255, 1.00)","dasharray":[13.26,13.26],"cap":"square","join":"round"}]}');
 
 /***/ }),
 
@@ -39396,7 +39396,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,0,0,1.00)","width":0.38,"dasharray":[20,10],"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"#000","dasharray":[6.63,3.32],"cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -39412,7 +39412,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(100,100,100,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(100, 100, 100, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -39420,7 +39420,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(100,100,100,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(100,100,100,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(100, 100, 100, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -39428,7 +39428,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(100,100,100,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(100,100,100,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(100, 100, 100, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -39436,7 +39436,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(100,100,100,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(100,100,100,1.00)","width":0.38,"offset":3.78,"dasharray":[20,20],"cap":"square"},{"type":"Line","color":"rgba(100,100,100,1.00)","width":0.38,"offset":-3.78,"dasharray":[20,20],"cap":"square"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":1.14,"color":"rgba(100, 100, 100, 1.00)","dasharray":[6.63,6.63],"cap":"square","offset":-3.78,"join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(100, 100, 100, 1.00)","dasharray":[6.63,6.63],"cap":"square","offset":3.78,"join":"round"}]}');
 
 /***/ }),
 
@@ -39444,15 +39444,15 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[]}');
+module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/964809.png"}');
 
 /***/ }),
 
-/***/ 30595:
+/***/ 5181:
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(100,100,100,1.00)","width":0.38,"offset":3.78,"dasharray":[20,20],"cap":"square"},{"type":"Line","color":"rgba(100,100,100,1.00)","width":0.38,"offset":-3.78,"dasharray":[20,20],"cap":"square"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","color":"rgba(100,100,100,1.00)","width":0.38,"offset":3.78,"dasharray":[20,20],"cap":"square"},{"type":"SimpleLine","color":"rgba(100,100,100,1.00)","width":0.38,"offset":-3.78,"dasharray":[20,20],"cap":"square"}]}');
 
 /***/ }),
 
@@ -39460,7 +39460,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(100,100,100,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(100, 100, 100, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -39468,7 +39468,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(100,100,100,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(100,100,100,1.00)","width":0.38,"offset":-1.89,"cap":"square"},{"type":"Line","color":"rgba(100,100,100,1.00)","width":0.38,"offset":1.89,"cap":"square"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":1.14,"color":"rgba(100, 100, 100, 1.00)","cap":"square","offset":1.89,"join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(100, 100, 100, 1.00)","cap":"square","offset":-1.89,"join":"round"}]}');
 
 /***/ }),
 
@@ -39484,7 +39484,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(100,100,100,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(100, 100, 100, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -39492,7 +39492,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(100,100,100,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(100,100,100,1.00)","width":0.38,"offset":-1.89,"cap":"square"},{"type":"Line","color":"rgba(100,100,100,1.00)","width":0.38,"offset":1.89,"cap":"square"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":1.14,"color":"rgba(100, 100, 100, 1.00)","cap":"square","offset":1.89,"join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(100, 100, 100, 1.00)","cap":"square","offset":-1.89,"join":"round"}]}');
 
 /***/ }),
 
@@ -39500,7 +39500,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(100,100,100,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(100, 100, 100, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -39508,7 +39508,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(100,100,100,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(100,100,100,1.00)","width":0.38,"offset":-2.65,"cap":"square"},{"type":"Line","color":"rgba(100,100,100,1.00)","width":0.38,"offset":2.65,"cap":"square"},{"type":"Line","color":"rgba(181,178,181,1.00)","width":0.38,"cap":"square"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":1.14,"color":"rgba(100, 100, 100, 1.00)","cap":"square","offset":2.65,"join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(100, 100, 100, 1.00)","cap":"square","offset":-2.65,"join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(181, 178, 181, 1.00)","cap":"square","join":"round"}]}');
 
 /***/ }),
 
@@ -39516,7 +39516,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(100,100,100,1.00)","width":0.38,"offset":-1.89,"cap":"square"},{"type":"Line","color":"rgba(100,100,100,1.00)","width":0.38,"offset":1.89,"cap":"square"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":1.14,"color":"rgba(100, 100, 100, 1.00)","cap":"square","offset":1.89,"join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(100, 100, 100, 1.00)","cap":"square","offset":-1.89,"join":"round"}]}');
 
 /***/ }),
 
@@ -39524,7 +39524,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(100,100,100,1.00)","width":0.38,"offset":1.89,"cap":"square"},{"type":"Line","color":"rgba(100,100,100,1.00)","width":0.38,"offset":-1.89,"cap":"square"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":1.14,"color":"rgba(100, 100, 100, 1.00)","cap":"square","offset":-1.89,"join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(100, 100, 100, 1.00)","cap":"square","offset":1.89,"join":"round"}]}');
 
 /***/ }),
 
@@ -39532,7 +39532,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(100,100,100,1.00)","width":0.38,"offset":1.89,"dasharray":[20,20],"cap":"square"},{"type":"Line","color":"rgba(100,100,100,1.00)","width":0.38,"offset":-1.89,"dasharray":[20,20],"cap":"square"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":1.14,"color":"rgba(100, 100, 100, 1.00)","dasharray":[6.63,6.63],"cap":"square","offset":-1.89,"join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(100, 100, 100, 1.00)","dasharray":[6.63,6.63],"cap":"square","offset":1.89,"join":"round"}]}');
 
 /***/ }),
 
@@ -39540,7 +39540,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(100,100,100,1.00)","width":1.13,"dasharray":[20,6.67],"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.13,"color":"rgba(100, 100, 100, 1.00)","dasharray":[20.07,6.69],"cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -39556,7 +39556,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(100,100,100,1.00)","width":0.38,"dasharray":[20,20],"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(100, 100, 100, 1.00)","dasharray":[6.63,6.63],"cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -39564,7 +39564,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(100,100,100,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(100,100,100,1.00)","width":0.38,"dasharray":[20,20],"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(100, 100, 100, 1.00)","dasharray":[6.63,6.63],"cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -39572,7 +39572,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(100,100,100,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(245,202,122,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(245, 202, 122, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -39580,7 +39580,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(245,202,122,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(100,100,100,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(100, 100, 100, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -39588,7 +39588,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(100,100,100,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(248,248,248,1.00)","width":3.02,"cap":"square"},{"type":"Line","color":"rgba(156,156,156,1.00)","width":0.38,"offset":1.13,"dasharray":[20,20],"cap":"square"},{"type":"Line","color":"rgba(156,156,156,1.00)","width":0.38,"offset":-1.13,"dasharray":[20,20],"cap":"square"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":3.02,"color":"rgba(248, 248, 248, 1.00)","cap":"square","join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(156, 156, 156, 1.00)","dasharray":[6.63,6.63],"cap":"square","offset":-1.13,"join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(156, 156, 156, 1.00)","dasharray":[6.63,6.63],"cap":"square","offset":1.13,"join":"round"}]}');
 
 /***/ }),
 
@@ -39596,7 +39596,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(156,156,156,1.00)","width":2.27,"cap":"square"},{"type":"Line","color":"rgba(248,248,248,1.00)","width":0.76,"cap":"square"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":2.27,"color":"rgba(156, 156, 156, 1.00)","cap":"square","join":"round"},{"type":"SimpleLine","width":1.52,"color":"rgba(248, 248, 248, 1.00)","cap":"square","join":"round"}]}');
 
 /***/ }),
 
@@ -39604,7 +39604,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(156,156,156,1.00)","width":3.02,"cap":"square"},{"type":"Line","color":"rgba(248,248,248,1.00)","width":1.13,"cap":"square"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":3.02,"color":"rgba(156, 156, 156, 1.00)","cap":"square","join":"round"},{"type":"SimpleLine","width":1.13,"color":"rgba(248, 248, 248, 1.00)","cap":"square","join":"round"}]}');
 
 /***/ }),
 
@@ -39612,7 +39612,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(156,156,156,1.00)","width":3.78,"cap":"square"},{"type":"Line","color":"rgba(248,248,248,1.00)","width":2.27,"cap":"square"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":3.78,"color":"rgba(156, 156, 156, 1.00)","cap":"square","join":"round"},{"type":"SimpleLine","width":2.27,"color":"rgba(248, 248, 248, 1.00)","cap":"square","join":"round"}]}');
 
 /***/ }),
 
@@ -39620,7 +39620,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(191,191,191,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(191, 191, 191, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -39628,7 +39628,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(191,191,191,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(255,154,29,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(255, 154, 29, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -39636,7 +39636,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(255,154,29,1.00)","wid
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(255,120,0,1.00)","width":2.27,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":2.27,"color":"rgba(255, 120, 0, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -39644,7 +39644,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(255,120,0,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(255,120,0,1.00)","width":1.51,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.51,"color":"rgba(255, 120, 0, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -39652,7 +39652,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(255,120,0,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(255,120,0,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(255, 120, 0, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -39660,7 +39660,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(255,120,0,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(255,100,29,1.00)","width":4.54,"cap":"square"},{"type":"Line","color":"rgba(250,151,72,1.00)","width":3.02,"cap":"square"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":4.54,"color":"rgba(255, 100, 29, 1.00)","cap":"square","join":"round"},{"type":"SimpleLine","width":3.02,"color":"rgba(250, 151, 72, 1.00)","cap":"square","join":"round"}]}');
 
 /***/ }),
 
@@ -39668,7 +39668,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(191,191,191,1.00)","width":0.38,"offset":1.51,"cap":"square"},{"type":"Line","color":"rgba(191,191,191,1.00)","width":0.38,"offset":-1.51,"cap":"square"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":1.14,"color":"rgba(191, 191, 191, 1.00)","cap":"square","offset":-1.51,"join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(191, 191, 191, 1.00)","cap":"square","offset":1.51,"join":"round"}]}');
 
 /***/ }),
 
@@ -39676,7 +39676,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(255,102,0,1.00)","width":3.78,"cap":"square"},{"type":"Line","color":"rgba(255,255,255,1.00)","width":2.27,"dasharray":[10,10],"cap":"square"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":3.78,"color":"rgba(255, 102, 0, 1.00)","cap":"square","join":"round"},{"type":"SimpleLine","width":2.27,"color":"rgba(255, 255, 255, 1.00)","dasharray":[9.99,9.99],"cap":"square","join":"round"}]}');
 
 /***/ }),
 
@@ -39684,7 +39684,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(170,102,205,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(170, 102, 205, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -39692,7 +39692,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(170,102,205,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(170,102,205,1.00)","width":3.78,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":3.78,"color":"rgba(170, 102, 205, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -39700,7 +39700,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(170,102,205,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(170,102,205,1.00)","width":1.89,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.89,"color":"rgba(170, 102, 205, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -39708,7 +39708,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(170,102,205,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(170,102,205,1.00)","width":5.67,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":5.67,"color":"rgba(170, 102, 205, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -39716,7 +39716,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(170,102,205,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(170,170,170,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(170, 170, 170, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -39724,7 +39724,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(170,170,170,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(97,186,144,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(97, 186, 144, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -39732,7 +39732,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(97,186,144,1.00)","wid
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(255,211,127,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(255, 211, 127, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -39740,7 +39740,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(255,211,127,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(180,180,0,1.00)","width":1.89,"dasharray":[8,8],"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.89,"color":"rgba(180, 180, 0, 1.00)","dasharray":[8,8],"cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -39748,7 +39748,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(180,180,0,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(180,180,0,1.00)","width":1.89,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.89,"color":"rgba(180, 180, 0, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -39756,7 +39756,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(180,180,0,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(180,180,0,1.00)","width":2.27,"dasharray":[6.67,6.67],"cap":"square"},{"type":"Line","color":"rgba(253,253,61,1.00)","width":1.51,"dasharray":[10,10],"cap":"square"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":2.27,"color":"rgba(180, 180, 0, 1.00)","dasharray":[6.66,6.66],"cap":"square","join":"round"},{"type":"SimpleLine","width":1.51,"color":"rgba(253, 253, 61, 1.00)","dasharray":[10.01,10.01],"cap":"square","join":"round"}]}');
 
 /***/ }),
 
@@ -39764,7 +39764,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(180,180,0,1.00)","width":2.27,"cap":"square"},{"type":"Line","color":"rgba(253,253,61,1.00)","width":1.51,"cap":"square"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":2.27,"color":"rgba(180, 180, 0, 1.00)","cap":"square","join":"round"},{"type":"SimpleLine","width":1.51,"color":"rgba(253, 253, 61, 1.00)","cap":"square","join":"round"}]}');
 
 /***/ }),
 
@@ -39772,7 +39772,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(255,150,0,1.00)","width":1.51,"dasharray":[10,10],"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.51,"color":"rgba(255, 150, 0, 1.00)","dasharray":[10.01,10.01],"cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -39780,7 +39780,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(255,150,0,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(255,150,0,1.00)","width":1.89,"dasharray":[8,8],"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.89,"color":"rgba(255, 150, 0, 1.00)","dasharray":[8,8],"cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -39788,7 +39788,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(255,150,0,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(255,150,0,1.00)","width":1.51,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.51,"color":"rgba(255, 150, 0, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -39796,7 +39796,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(255,150,0,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(255,150,0,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(255, 150, 0, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -39804,7 +39804,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(255,150,0,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(255,165,56,1.00)","width":4.16,"dasharray":[3.64,3.64],"cap":"square"},{"type":"Line","color":"rgba(230,176,106,1.00)","width":3.02,"dasharray":[5,5],"cap":"square"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":4.16,"color":"rgba(255, 165, 56, 1.00)","dasharray":[3.63,3.63],"cap":"square","join":"round"},{"type":"SimpleLine","width":3.02,"color":"rgba(230, 176, 106, 1.00)","dasharray":[5.01,5.01],"cap":"square","join":"round"}]}');
 
 /***/ }),
 
@@ -39812,7 +39812,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(255,165,56,1.00)","width":4.16,"cap":"square"},{"type":"Line","color":"rgba(230,176,106,1.00)","width":3.02,"cap":"square"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":4.16,"color":"rgba(255, 165, 56, 1.00)","cap":"square","join":"round"},{"type":"SimpleLine","width":3.02,"color":"rgba(230, 176, 106, 1.00)","cap":"square","join":"round"}]}');
 
 /***/ }),
 
@@ -39820,7 +39820,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(255,120,0,1.00)","width":2.27,"dasharray":[6.67,6.67],"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":2.27,"color":"rgba(255, 120, 0, 1.00)","dasharray":[6.66,6.66],"cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -39828,7 +39828,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(255,120,0,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(255,120,0,1.00)","width":1.51,"dasharray":[10,10],"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.51,"color":"rgba(255, 120, 0, 1.00)","dasharray":[10.01,10.01],"cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -39836,7 +39836,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(255,120,0,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(255,120,0,1.00)","width":0.38,"dasharray":[40,40],"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(255, 120, 0, 1.00)","dasharray":[13.26,13.26],"cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -39844,7 +39844,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(255,120,0,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(255,154,29,1.00)","width":0.38,"dasharray":[40,40],"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(255, 154, 29, 1.00)","dasharray":[13.26,13.26],"cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -39852,7 +39852,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(255,154,29,1.00)","wid
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(255,154,29,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(255, 154, 29, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -39860,7 +39860,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(255,154,29,1.00)","wid
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(255,120,0,1.00)","width":2.27,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":2.27,"color":"rgba(255, 120, 0, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -39868,7 +39868,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(255,120,0,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(255,120,0,1.00)","width":1.89,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.89,"color":"rgba(255, 120, 0, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -39876,7 +39876,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(255,120,0,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(255,120,0,1.00)","width":0.38,"cap":"butt"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(255, 120, 0, 1.00)","cap":"butt","join":"round"}');
 
 /***/ }),
 
@@ -39884,7 +39884,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(255,120,0,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(255,100,29,1.00)","width":4.54,"dasharray":[3.33,3.33],"cap":"square"},{"type":"Line","color":"rgba(250,151,72,1.00)","width":2.27,"dasharray":[6.67,6.67],"cap":"square"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":4.54,"color":"rgba(255, 100, 29, 1.00)","dasharray":[3.33,3.33],"cap":"square","join":"round"},{"type":"SimpleLine","width":2.27,"color":"rgba(250, 151, 72, 1.00)","dasharray":[6.66,6.66],"cap":"square","join":"round"}]}');
 
 /***/ }),
 
@@ -39892,7 +39892,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(255,100,29,1.00)","width":4.54,"cap":"square"},{"type":"Line","color":"rgba(250,151,72,1.00)","width":3.02,"cap":"square"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":4.54,"color":"rgba(255, 100, 29, 1.00)","cap":"square","join":"round"},{"type":"SimpleLine","width":3.02,"color":"rgba(250, 151, 72, 1.00)","cap":"square","join":"round"}]}');
 
 /***/ }),
 
@@ -39900,7 +39900,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(255,211,127,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(255, 211, 127, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -39908,7 +39908,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(255,211,127,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(255,100,0,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(255, 100, 0, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -39916,7 +39916,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(255,100,0,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(255,120,0,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(255, 120, 0, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -39924,7 +39924,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(255,120,0,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(4,100,125,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(4, 100, 125, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -39932,7 +39932,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(4,100,125,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(156,156,156,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(156, 156, 156, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -39940,7 +39940,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(156,156,156,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(156,156,156,1.00)","width":3.78,"cap":"square"},{"type":"Line","color":"rgba(255,255,255,1.00)","width":1.89,"dasharray":[9,9],"cap":"square"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":3.78,"color":"rgba(156, 156, 156, 1.00)","cap":"square","join":"round"},{"type":"SimpleLine","width":1.89,"color":"rgba(255, 255, 255, 1.00)","dasharray":[9,9],"cap":"square","join":"round"}]}');
 
 /***/ }),
 
@@ -39948,7 +39948,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,0,0,1.00)","width":3.4,"cap":"round"},{"type":"Line","color":"rgba(255,255,255,1.00)","width":1.13,"dasharray":[15,15],"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":3.4,"color":"#000","cap":"round","join":"round"},{"type":"SimpleLine","width":1.13,"color":"rgba(255, 255, 255, 1.00)","dasharray":[15.05,15.05],"cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -39956,7 +39956,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,0,0,1.00)","width":4.54,"cap":"round"},{"type":"Line","color":"rgba(255,255,255,1.00)","width":2.27,"dasharray":[10,10],"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":4.54,"color":"#000","cap":"round","join":"round"},{"type":"SimpleLine","width":2.27,"color":"rgba(255, 255, 255, 1.00)","dasharray":[9.99,9.99],"cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -39964,7 +39964,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(0,0,0,1.00)","width":5.67,"cap":"round"},{"type":"Line","color":"rgba(255,255,255,1.00)","width":3.4,"dasharray":[10,10],"cap":"round"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":5.67,"color":"#000","cap":"round","join":"round"},{"type":"SimpleLine","width":3.4,"color":"rgba(255, 255, 255, 1.00)","dasharray":[10.01,10.01],"cap":"round","join":"round"}]}');
 
 /***/ }),
 
@@ -39972,7 +39972,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(108,108,108,1.00)","width":0.38,"dasharray":[40,10,40,10,40,20],"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(108, 108, 108, 1.00)","dasharray":[13.26,3.32,13.26,3.32,13.26,6.63],"cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -39980,7 +39980,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(108,108,108,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(108,108,108,1.00)","width":0.38,"dasharray":[40,10,40,10,40,9,2,9],"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(108, 108, 108, 1.00)","dasharray":[13.26,3.32,13.26,3.32,13.26,2.98,0.67,2.98],"cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -39988,7 +39988,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(108,108,108,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(102,2,255,1.00)","width":0.38,"dasharray":[40,20],"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(102, 2, 255, 1.00)","dasharray":[13.26,6.63],"cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -39996,7 +39996,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(102,2,255,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,0,1.00)","width":0.38,"dasharray":[40,20],"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 255, 0, 1.00)","dasharray":[13.26,6.63],"cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -40004,7 +40004,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,255,0,1.00)","width"
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(255,102,0,1.00)","width":0.38,"dasharray":[20,20],"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(255, 102, 0, 1.00)","dasharray":[6.63,6.63],"cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -40012,7 +40012,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(255,102,0,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(221,19,123,1.00)","width":0.38,"dasharray":[20,20],"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(221, 19, 123, 1.00)","dasharray":[6.63,6.63],"cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -40020,7 +40020,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(221,19,123,1.00)","wid
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(200,200,200,1.00)","width":0.38,"dasharray":[36,8,36,8,10,10],"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(200, 200, 200, 1.00)","dasharray":[11.94,2.65,11.94,2.65,3.32,3.32],"cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -40028,7 +40028,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(200,200,200,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(200,200,200,1.00)","width":0.38,"dasharray":[36,8,36,11,1,12,1,11],"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(200, 200, 200, 1.00)","dasharray":[11.94,2.65,11.94,3.65,0.33,3.98,0.33,3.65],"cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -40036,7 +40036,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(200,200,200,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(204,204,204,1.00)","width":0.38,"dasharray":[30,10],"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(204, 204, 204, 1.00)","dasharray":[9.95,3.32],"cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -40044,7 +40044,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(204,204,204,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(204,204,204,1.00)","width":0.38,"dasharray":[23,8,2,8],"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(204, 204, 204, 1.00)","dasharray":[7.62,2.65,0.67,2.65],"cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -40052,7 +40052,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(204,204,204,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(178,178,178,1.00)","width":0.38,"dasharray":[40,20],"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(178, 178, 178, 1.00)","dasharray":[13.26,6.63],"cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -40060,7 +40060,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(178,178,178,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(178,178,178,1.00)","width":0.38,"dasharray":[40,120],"cap":"square"},{"type":"Line","color":"rgba(178,178,178,1.00)","width":0.38,"dasharray":[40,120],"cap":"square"},{"type":"Line","color":"rgba(178,178,178,1.00)","width":0.38,"dasharray":[1,160],"cap":"square"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":1.14,"color":"rgba(178, 178, 178, 1.00)","dasharray":[13.26,39.78],"cap":"square","join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(178, 178, 178, 1.00)","dasharray":[13.26,39.78],"cap":"square","join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(178, 178, 178, 1.00)","dasharray":[0.33,53.04],"cap":"square","join":"round"}]}');
 
 /***/ }),
 
@@ -40076,7 +40076,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(225,225,225,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(225, 225, 225, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -40084,7 +40084,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(225,225,225,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(1,1,1,1.00)","width":0.38,"dasharray":[30,10],"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(1, 1, 1, 1.00)","dasharray":[9.95,3.32],"cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -40092,7 +40092,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(1,1,1,1.00)","width":0
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(1,1,1,1.00)","width":0.38,"dasharray":[23,7,1,7,1,7],"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(1, 1, 1, 1.00)","dasharray":[7.62,2.32,0.33,2.32,0.33,2.32],"cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -40116,7 +40116,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(174,174,174,1.00)","width":0.38,"dasharray":[40,10],"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(174, 174, 174, 1.00)","dasharray":[13.26,3.32],"cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -40124,7 +40124,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(174,174,174,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(174,174,174,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(174, 174, 174, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -40132,7 +40132,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(174,174,174,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(204,204,204,1.00)","width":0.38,"dasharray":[40,10],"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(204, 204, 204, 1.00)","dasharray":[13.26,3.32],"cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -40140,7 +40140,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(204,204,204,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(204,204,204,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(204, 204, 204, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -40148,7 +40148,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(204,204,204,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(225,225,225,1.00)","width":0.38,"dasharray":[40,10],"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(225, 225, 225, 1.00)","dasharray":[13.26,3.32],"cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -40156,7 +40156,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(225,225,225,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(225,225,225,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(225, 225, 225, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -40180,7 +40180,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(225,225,225,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(225, 225, 225, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -40188,7 +40188,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(225,225,225,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(175,175,175,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(175, 175, 175, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -40196,7 +40196,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(175,175,175,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(205,205,205,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(205, 205, 205, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -40204,7 +40204,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(205,205,205,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(225,225,225,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(225, 225, 225, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -40212,7 +40212,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(225,225,225,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(181,207,255,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(181, 207, 255, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -40220,7 +40220,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(181,207,255,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(181,207,255,1.00)","width":0.38,"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(181, 207, 255, 1.00)","cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -40228,7 +40228,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(181,207,255,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(181,207,255,1.00)","width":0.38,"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(181, 207, 255, 1.00)","cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -40236,7 +40236,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(181,207,255,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(181,207,255,1.00)","width":0.38,"cap":"round"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(181, 207, 255, 1.00)","cap":"round","join":"round"}');
 
 /***/ }),
 
@@ -40244,7 +40244,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(181,207,255,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(181,207,255,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(181, 207, 255, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -40252,7 +40252,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(181,207,255,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(181,207,255,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(181, 207, 255, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -40260,7 +40260,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(181,207,255,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/964911.png"}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":1.14,"color":"rgba(181, 207, 255, 1.00)","cap":"square","join":"round"},{"type":"SimpleLine","width":3.78,"color":"rgba(181, 207, 255, 1.00)","dasharray":[0.02,0.33,0.02,0.33],"cap":"square","offset":-1.89,"join":"round"}]}');
 
 /***/ }),
 
@@ -40268,7 +40268,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(181,207,255,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(181, 207, 255, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -40276,7 +40276,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(181,207,255,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(52,52,52,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(52, 52, 52, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -40284,7 +40284,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(52,52,52,1.00)","width
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(181,207,255,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(181, 207, 255, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -40292,7 +40292,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(181,207,255,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(100,100,100,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(100, 100, 100, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -40300,7 +40300,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(100,100,100,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(100,100,100,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(100, 100, 100, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -40308,7 +40308,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(100,100,100,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(100,100,100,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(100, 100, 100, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -40316,7 +40316,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(100,100,100,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(100,100,100,1.00)","width":0.38,"dasharray":[20,20],"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(100, 100, 100, 1.00)","dasharray":[6.63,6.63],"cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -40324,7 +40324,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(100,100,100,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(181,207,255,1.00)","width":0.38,"dasharray":[20,20],"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(181, 207, 255, 1.00)","dasharray":[6.63,6.63],"cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -40332,7 +40332,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(181,207,255,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,102,255,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 102, 255, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -40340,7 +40340,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,102,255,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(255,51,0,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(255, 51, 0, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -40348,7 +40348,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(255,51,0,1.00)","width
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(204,153,0,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(204, 153, 0, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -40356,7 +40356,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(204,153,0,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(255,192,0,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(255, 192, 0, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -40364,7 +40364,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(255,192,0,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(152,171,41,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(152, 171, 41, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -40372,7 +40372,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(152,171,41,1.00)","wid
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(143,130,68,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(143, 130, 68, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -40380,7 +40380,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(143,130,68,1.00)","wid
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(143,84,63,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(143, 84, 63, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -40388,7 +40388,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(143,84,63,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(143,84,63,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(143, 84, 63, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -40404,7 +40404,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(181,207,255,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(181, 207, 255, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -40412,7 +40412,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(181,207,255,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(181,207,255,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(181, 207, 255, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -40420,7 +40420,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(181,207,255,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,124,195,1.00)","width":3.78,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":3.78,"color":"rgba(0, 124, 195, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -40436,7 +40436,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,124,195,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 124, 195, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -40444,7 +40444,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,124,195,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(143,84,68,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(143, 84, 68, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -40452,7 +40452,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(143,84,68,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(0,124,195,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(0, 124, 195, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -40460,7 +40460,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(0,124,195,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(181,207,255,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(181, 207, 255, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -40476,7 +40476,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(100,100,100,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(100, 100, 100, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -40484,7 +40484,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(100,100,100,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(181,207,255,1.00)","width":0.38,"dasharray":[20,20],"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(181, 207, 255, 1.00)","dasharray":[6.63,6.63],"cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -40492,7 +40492,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(181,207,255,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(100,100,100,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(100, 100, 100, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -40508,7 +40508,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(181,207,255,1.00)","width":0.38,"dasharray":[20,20],"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(181, 207, 255, 1.00)","dasharray":[6.63,6.63],"cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -40524,7 +40524,7 @@ module.exports = JSON.parse('{"type":"ImageLine","image":"../static/images/line/
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(181,207,255,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(181, 207, 255, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -40532,7 +40532,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(181,207,255,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(181,207,255,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(181, 207, 255, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -40540,7 +40540,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(181,207,255,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(143,84,63,1.00)","width":0.38,"dasharray":[20,20],"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(143, 84, 63, 1.00)","dasharray":[6.63,6.63],"cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -40548,7 +40548,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(143,84,63,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(143,84,63,1.00)","width":0.38,"dasharray":[20,20],"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(143, 84, 63, 1.00)","dasharray":[6.63,6.63],"cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -40556,7 +40556,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(143,84,63,1.00)","widt
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(181,207,255,1.00)","width":0.38,"dasharray":[20,20],"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(181, 207, 255, 1.00)","dasharray":[6.63,6.63],"cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -40564,7 +40564,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(181,207,255,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(181,207,255,1.00)","width":0.38,"dasharray":[45,13,3,13,3,13],"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(181, 207, 255, 1.00)","dasharray":[14.92,4.31,0.99,4.31,0.99,4.31],"cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -40572,7 +40572,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(181,207,255,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(181,207,255,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(181, 207, 255, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -40580,7 +40580,7 @@ module.exports = JSON.parse('{"type":"Line","color":"rgba(181,207,255,1.00)","wi
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color":"rgba(255,255,255,1.00)","width":0.38,"cap":"square"},{"type":"Line","color":"rgba(255,255,255,1.00)","width":0.38,"cap":"square"}]}');
+module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"SimpleLine","width":1.14,"color":"rgba(255, 255, 255, 1.00)","cap":"square","join":"round"},{"type":"SimpleLine","width":1.14,"color":"rgba(255, 255, 255, 1.00)","cap":"square","join":"round"}]}');
 
 /***/ }),
 
@@ -40588,7 +40588,7 @@ module.exports = JSON.parse('{"type":"MultiLine","styles":[{"type":"Line","color
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"Line","color":"rgba(181,207,255,1.00)","width":0.38,"cap":"square"}');
+module.exports = JSON.parse('{"type":"SimpleLine","width":1.14,"color":"rgba(181, 207, 255, 1.00)","cap":"square","join":"round"}');
 
 /***/ }),
 
@@ -59340,7 +59340,7 @@ module.exports = JSON.parse('{"type":"ImagePoint","image":"../static/images/poin
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"type":"SimplePolygon","color":"rgba( 255, 255, 255, 255)"}');
+module.exports = JSON.parse('{"type":"Polygon","color":"#F5F5F5"}');
 
 /***/ }),
 
@@ -68111,6 +68111,8 @@ var MapboxSymbolLayerManager = function MapboxSymbolLayerManager(m) {
      * @param {*} symbol 
      */
     addSimpleSymbol: function addSimpleSymbol(layer, symbol, before) {
+      var properties = MapboxSymbolLayerManager_objectSpread(MapboxSymbolLayerManager_objectSpread({}, layer === null || layer === void 0 ? void 0 : layer.paint), layer === null || layer === void 0 ? void 0 : layer.layout);
+      Object.assign(symbol, properties);
       var style = this.symbolToLayerStyle(symbol);
       var paint = {},
         layout = {};
