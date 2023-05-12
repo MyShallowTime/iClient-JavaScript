@@ -1,1 +1,1 @@
-{"type":"SimpleLine","width":1.14,"color":"#000","dasharray":[3.32,3.32],"cap":"round","join":"round"}
+{"paint":{"line-width":1.14,"line-color":"#000","line-dasharray":[3.32,3.32]},"layout":{"line-cap":"round","line-join":"round"}}

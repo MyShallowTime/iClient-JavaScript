@@ -1,1 +1,1 @@
-{"type":"SimpleLine","width":3.78,"color":"rgba(220, 190, 132, 1.00)","dasharray":[0.1,1,0.1,1],"cap":"square","join":"round"}
+{"paint":{"line-width":3.78,"line-color":"rgba(220, 190, 132, 1.00)","line-dasharray":[0.1,1,0.1,1]},"layout":{"line-cap":"square","line-join":"round"}}
