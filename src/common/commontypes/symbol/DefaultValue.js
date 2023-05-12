@@ -91,6 +91,58 @@ export const LINE_DEFAULT_VALUE = {
     iconStepCount: 1
 }
 
+// mapbox key对应的默认样式
+export const MAPBOX_CIRCLE_DEFAULT = {
+    paint: {
+        'circle-blur': SIMPLE_POINT_DEFAULT_VALUE.blur,
+        'circle-color': SIMPLE_POINT_DEFAULT_VALUE.color,
+        'circle-opacity': SIMPLE_POINT_DEFAULT_VALUE.opacity,
+        'circle-radius': SIMPLE_POINT_DEFAULT_VALUE.size / 2,
+        'circle-stroke-color': SIMPLE_POINT_DEFAULT_VALUE.strokeColor,
+        'circle-stroke-width': SIMPLE_POINT_DEFAULT_VALUE.strokeWidth,
+        'circle-stroke-opacity': SIMPLE_POINT_DEFAULT_VALUE.strokeOpacity,
+        'circle-translate': SIMPLE_POINT_DEFAULT_VALUE.translate
+        // 符号库暂未支持的属性
+        // 'circle-translate-anchor': symbolInfo.translateAnchor
+    },
+    layout: {
+        visibility: 'visible'
+    }
+}
+
+export const MAPBOX_SYMBOL_DEFAULT = {
+    paint: {
+        'icon-color': SIMPLE_POINT_DEFAULT_VALUE.color,
+        'icon-opacity': SIMPLE_POINT_DEFAULT_VALUE.opacity,
+        'icon-translate': SIMPLE_POINT_DEFAULT_VALUE.translate
+    },
+    layout: {
+        'icon-size': SIMPLE_POINT_DEFAULT_VALUE.size,
+        'icon-rotate': COMMON_DEFAULT_VALUE.rotate
+    }
+}
+export const MAPBOX_LINE_DEFAULT = {
+    paint: {
+        'line-color': LINE_DEFAULT_VALUE.color,
+        'line-width': LINE_DEFAULT_VALUE.width,
+        'line-opacity': LINE_DEFAULT_VALUE.opacity,
+        'line-dasharray': LINE_DEFAULT_VALUE.dasharray,
+        'line-translate': LINE_DEFAULT_VALUE.translate,
+        'line-offset': LINE_DEFAULT_VALUE.offset,
+        'line-blur': LINE_DEFAULT_VALUE.blur
+    },
+    layout: {
+        'line-join': LINE_DEFAULT_VALUE.join,
+        'line-cap': LINE_DEFAULT_VALUE.cap
+    }
+}
+export const MAPBOX_FILL_DEFAULT = {
+    paint: {
+        "fill-color": COMMON_DEFAULT_VALUE.color,
+        'fill-opacity': COMMON_DEFAULT_VALUE.opacity
+    }
+}
+
 export const POLYGON_DEFAULT_VALUE = {
     opacity: COMMON_DEFAULT_VALUE.opacity
 }
@@ -189,4 +241,11 @@ const Point3DShapeType = {
 export {
     SimplePointShapeType,
     Point3DShapeType
+}
+
+export const LayerType = {
+    circle: 'circle',
+    symbol: 'symbol',
+    line: 'line',
+    fill: 'fill'
 }

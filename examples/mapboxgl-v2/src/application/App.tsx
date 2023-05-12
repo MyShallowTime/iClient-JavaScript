@@ -3,12 +3,12 @@ import View from './View';
 import './style';
 import { cloneDeep, uniqueId } from 'lodash';
 import { getMapboxKey, isPaintKey } from '../utils/StyleSettingUtil';
-import '../../../../src/maplibregl/core/MapExtend';
+import '../../../../src/mapboxgl/core/MapExtend';
 
 const App = () => {
     const [map, setMap] = useState<any>();
     const [layersInfo, setLayersInfo] = useState<any[]>([]);
-    const url = 'http://172.16.14.12:8090/iserver/services/map-china400/rest/maps/China';
+    const url = 'http://172.16.14.182:8090/iserver/services/map-China100/rest/maps/China';
     enum SymbolType {
         Polygon = 'Polygon',
         SimpleLine = 'SimpleLine',
@@ -46,14 +46,22 @@ const App = () => {
         return { id, symbolId };
     };
 
-    const addMVTLayer = (layerId: string, sourceLayer: string, type: string, symbol: any, layersInfo): void => {
+    const addMVTLayer = (options: {
+        layerId: string; 
+        sourceLayer: string;
+        type: string;
+        layerType: string;
+        symbol: any; 
+        layersInfo: any;
+    }): void => {
+        const {layerId, sourceLayer, type, layerType, symbol, layersInfo} = options;
         const { id, symbolId } = symbol;
         if (type !== 'text') {
             layersInfo.push({ id: layerId, type, sourceLayer, url, symbolId });
         }
         map.addLayer({
             "id": layerId,
-            "type": "symbol",
+            "type": layerType,
             "source": "ChinaSource",
             "source-layer": sourceLayer,
             symbol: id
@@ -87,7 +95,7 @@ const App = () => {
         const citySymbol = await loadPreSymbol({
             type: SymbolType.Point,
             symbolId: 'point-909063'
-        })
+        });
         // const citySymbol = loadCustomSymbol({
         //     type: SymbolType.Point,
         //     size: 8,
@@ -100,41 +108,110 @@ const App = () => {
         // });
         const chinaSymbol = loadCustomSymbol({
             type: SymbolType.Polygon,
-            color: '#F5F3F0'
+            paint: {
+                'fill-color': '#F5F3F0'
+            }
         });
         const riverLineSymbol = loadCustomSymbol({
-            type: SymbolType.SimpleLine,
-            cap: "round",
-            color: "#91B9EA",
-            dasharray: [26.67, 6.67],
-            width: 1
+            paint: {
+                'line-color': "#91B9EA",
+                'line-dasharray': [26.67, 6.67],
+                'line-width': 1
+            },
+            layout: {
+                'line-cap': "round"
+            }
         });
         const nationTextSymbol = loadCustomSymbol({
             type: SymbolType.Text,
-            field: '{NAME}',
-            size: 20,
-            color: '#F5A623',
-            opacity: 1,
-            fontFamily: ['Microsoft YaHei Bold']
+            paint: {
+                'icon-color': '#F5A623',
+                'icon-opacity': 1
+            },
+            layout: {
+                'text-field': '{NAME}',
+                'icon-size': 20
+                // fontFamily: ['Microsoft YaHei Bold'] // TODO
+            }
         });
         const cityTextSymbol = loadCustomSymbol({
             type: SymbolType.Text,
-            field: '{NAME}',
-            size: 12,
-            color: '#000',
-            opacity: 0.8,
-            translate: [28, 10],
-            allowOverlap: true
+            paint: {
+                'icon-color': '#000',
+                'icon-opacity': 0.8,
+                'icon-translate': [28, 10]
+            },
+            layout: {
+                'text-field': '{NAME}',
+                'icon-size': 12,
+                'text-allow-overlap': true
+            }
         });
 
-        addMVTLayer('chinaPolygon', 'China_Province_pg@China', 'polygon', chinaSymbol, newLayersInfo);
-        addMVTLayer('riverpolygon', 'Main_River_pg@China', 'polygon', riverPolygonSymbol, newLayersInfo);
-        addMVTLayer('RiverLine', 'Main_River_ln@China', 'line', riverLineSymbol, newLayersInfo);
-        addMVTLayer('provinceLine', 'China_Province_ln@China', 'line', provinceLineSymbol, newLayersInfo);
-        addMVTLayer('capital', 'China_Capital_pt@China', 'point', capitalSymbol, newLayersInfo);
-        addMVTLayer('city', 'China_ProCenCity_pt@China', 'point', citySymbol, newLayersInfo);
-        addMVTLayer('nationText', 'China_Nation_B_pt@China', 'text', nationTextSymbol, newLayersInfo);
-        addMVTLayer('cityText', 'China_ProCenCity_pt@China', 'text', cityTextSymbol, newLayersInfo);
+        addMVTLayer({
+            layerId:'chinaPolygon', 
+            sourceLayer:'China_Province_pg@China', 
+            type:'polygon', 
+            layerType: 'fill',
+            symbol: chinaSymbol, 
+            layersInfo: newLayersInfo
+        });
+        addMVTLayer({
+            layerId:'riverpolygon', 
+            sourceLayer: 'Main_River_pg@China', 
+            type:'polygon', 
+            layerType: 'fill',
+            symbol: riverPolygonSymbol, 
+            layersInfo: newLayersInfo
+        });
+        addMVTLayer({
+            layerId:'RiverLine', 
+            sourceLayer: 'Main_River_ln@China', 
+            type:'line', 
+            layerType: 'line',
+            symbol: riverLineSymbol, 
+            layersInfo: newLayersInfo
+        });
+        addMVTLayer({
+            layerId:'provinceLine', 
+            sourceLayer: 'China_Province_ln@China', 
+            type:'line', 
+            layerType: 'line',
+            symbol: provinceLineSymbol, 
+            layersInfo: newLayersInfo
+        });
+        addMVTLayer({
+            layerId:'capital', 
+            sourceLayer: 'China_Capital_pt@China', 
+            type:'point', 
+            layerType: 'symbol',
+            symbol: capitalSymbol, 
+            layersInfo: newLayersInfo
+        });
+        addMVTLayer({
+            layerId:'city', 
+            sourceLayer: 'China_ProCenCity_pt@China', 
+            type:'point', 
+            layerType: 'symbol',
+            symbol: citySymbol, 
+            layersInfo: newLayersInfo
+        });
+        addMVTLayer({
+            layerId:'nationText', 
+            sourceLayer: 'China_Nation_B_pt@China', 
+            type:'text', 
+            layerType: 'symbol',
+            symbol: nationTextSymbol, 
+            layersInfo: newLayersInfo
+        });
+        addMVTLayer({
+            layerId:'cityText', 
+            sourceLayer: 'China_ProCenCity_pt@China', 
+            type:'text', 
+            layerType: 'symbol',
+            symbol: cityTextSymbol, 
+            layersInfo: newLayersInfo
+        });
         setLayersInfo(newLayersInfo.reverse());
     };
 
@@ -174,6 +251,7 @@ const App = () => {
         const compositeLayerId = map.compositeLayersManager.getCompositeLayerId(layerId);
         const type = getLayerType(compositeLayerId ?? layerId);
         const layer = getLayer(layerId);
+        const mapboxKey = type && getMapboxKey[type](key);
 
         if (type === 'point' && key === 'color') {
             const ImageId: string = layer?.layout?.['icon-image'];
@@ -181,16 +259,16 @@ const App = () => {
                 const sdfImageId = uniqueId('sdf_');
                 const image = map.symbolManager.getImageInfo(ImageId);
                 map.addImage(sdfImageId, image, { sdf: true });
-                map.setSymbolProperty(layerId, 'image', sdfImageId);
+                map.setSymbolProperty(layerId, 'icon-image', sdfImageId);
             }
         } else if (type === 'line' && key === 'visibility') {
             const layerIds = map.compositeLayersManager.getLayers(layerId) ?? [layerId];
             layerIds.forEach((layerId) => {
-                map.setSymbolProperty(layerId, key, value);
+                map.setSymbolProperty(layerId, mapboxKey, value);
             });
             return;
         }
-        map.setSymbolProperty(layerId, key, value);
+        map.setSymbolProperty(layerId, mapboxKey, value);
     };
 
     const getCompositeLayersIds = (layerId: string): string[] => {

@@ -1,6 +1,22 @@
+import {LayerType} from "@supermap/iclient-common/commontypes/symbol/DefaultValue";
 import { Util } from "@supermap/iclient-common/commontypes/Util";
-import { lineSymbolToPaintLayout, getCircleProperty, getSymbolProperty, polygonSymbolToPaintLayout, textSymbolToPaintLayout, transformSymbol2LayerInfo, getLineProperty, getFillProperty, getTextProperty } from "./SymbolTransformUtil";
+import {isArray} from "lodash";
+import { lineSymbolToPaintLayout, polygonSymbolToPaintLayout, /* textSymbolToPaintLayout, */ transformSymbol2LayerInfo, isPaintKey } from "./SymbolTransformUtil";
 
+// 判断符号类型
+const GET_TYPE_RULE = [{
+    prefix: 'line-',
+    type: LayerType.line
+}, {
+    prefix: 'fill-',
+    type: LayerType.fill
+}];
+const TRANSFORM_SYMBOL_RULE = {
+    [LayerType.symbol]: transformSymbol2LayerInfo,
+    [LayerType.circle]: transformSymbol2LayerInfo,
+    [LayerType.line]: lineSymbolToPaintLayout,
+    [LayerType.fill]: polygonSymbolToPaintLayout
+};
 /**
  * 符号图层管理器
  * @returns {Object}
@@ -13,8 +29,8 @@ const MapboxSymbolLayerManager = (m) => {
          * @param {*} type 
          * @returns {boolean}
          */
-        isMultiSymbol(type) {
-            return ['MultiLine'].includes(type);
+        isMultiSymbol(symbol) {
+            return isArray(symbol);
         },
     
         /**
@@ -25,11 +41,30 @@ const MapboxSymbolLayerManager = (m) => {
          */
         addLayer(layer, symbol, before) {
             delete layer.symbol;
-            if(this.isMultiSymbol(symbol.type)) {
+            if(this.isMultiSymbol(symbol)) {
                 this.addMultiSymbol(layer, symbol, before);
                 return;
             }
             this.addSimpleSymbol(layer, symbol, before);
+        },
+
+        /**
+         * 通过符号属性获取该符号类型
+         * @param {*} symbol 
+         * @returns 
+         */
+        getSymbolType(symbol) {
+            const {paint = {}, layout = {}} = symbol;
+            const keys = Object.keys(paint).concat(Object.keys(layout));
+            let type;
+            for(const v of GET_TYPE_RULE) {
+                const isMatch = keys.some(k => k.startsWith(v.prefix));
+                if(isMatch) {
+                    type = v.type;
+                    break;
+                }
+            }
+            return type ?? LayerType.symbol;
         },
 
         /**
@@ -38,20 +73,8 @@ const MapboxSymbolLayerManager = (m) => {
          * @returns {Object}
          */
         symbolToLayerStyle(symbol) {
-            // TODO Point、Line、Polyogn需要移除
-            const transRules = {
-                Point: transformSymbol2LayerInfo,
-                SimplePoint: transformSymbol2LayerInfo,
-                ImagePoint: transformSymbol2LayerInfo,
-                Line: lineSymbolToPaintLayout,
-                SimpleLine: lineSymbolToPaintLayout,
-                ImageLine: lineSymbolToPaintLayout,
-                Polygon: polygonSymbolToPaintLayout,
-                SimplePolygon: polygonSymbolToPaintLayout,
-                ImagePolygon: polygonSymbolToPaintLayout,
-                Text: textSymbolToPaintLayout
-            };
-            return transRules[symbol.type]?.(symbol) ?? {};
+            const type = this.getSymbolType(symbol);
+            return TRANSFORM_SYMBOL_RULE[type]?.(symbol) ?? {};
         },
     
         /**
@@ -64,10 +87,10 @@ const MapboxSymbolLayerManager = (m) => {
             const paint = {}, layout = {};
             // 过滤掉为undefined的key
             // layers.layerId.paint.fill-pattern: 'undefined' value invalid. Use null instead.
-            Object.keys(style.paint).forEach(k => {
+            Object.keys(style.paint ?? {}).forEach(k => {
                 style.paint[k] !== undefined && (paint[k] = style.paint[k]);
             })
-            Object.keys(style.layout).forEach(k => {
+            Object.keys(style.layout ?? {}).forEach(k => {
                 style.layout[k] !== undefined && (layout[k] = style.layout[k]);
             })
             map.addLayerBak({...layer, ...style, paint, layout}, before);
@@ -93,47 +116,34 @@ const MapboxSymbolLayerManager = (m) => {
          * @param symbol 
          * @returns {undefined}
          */
-        setSymbol(layerId, symbol) {
+        setSymbol(layerId, oldSymbol ,symbol) {
             const layerIds = map.compositeLayersManager.getLayers(layerId) ?? [layerId];
-            const removeLayerIds = layerIds.slice(symbol.styles?.length ?? 1);
+            const removeLayerIds = layerIds.slice(symbol.length ?? 1);
             removeLayerIds.forEach((l) => {
                 map.removeLayer(l);
                 map.compositeLayersManager.removeLayer(layerId, l);
             })
-            if(this.isMultiSymbol(symbol.type)) {
-                this.setMultiSymbol(layerId, symbol, layerIds);
+            if(this.isMultiSymbol(symbol)) {
+                this.setMultiSymbol(layerId, oldSymbol, symbol, layerIds);
                 return;
             }
-            this.setSimpleSymbol(layerId, symbol);
+            this.setSimpleSymbol(layerId, oldSymbol, symbol);
         },
 
         /**
          * 更新图层上的symbol属性
          * @param layerId 
-         * @param symbol 
+         * @param name mapbox key
+         * @param value 样式值
          * @returns {undefined}
          */
         setSymbolProperty(layerId, name, value) {
-            const imageInfo = map.symbolManager.getImageInfoByLayerId(layerId);
-            const symbolInfo = map.symbolManager.getSymbolByLayerId(layerId);
-            const layer = map.getLayer(layerId);
-            const transRules = {
-                circle: getCircleProperty,
-                symbol: getSymbolProperty,
-                line: getLineProperty,
-                fill: getFillProperty,
-                text: getTextProperty
-            };
-            const key = symbolInfo?.type === 'Text' ? 'text' : layer?.type;
-            const result = transRules[key]?.(name, value, imageInfo?.width);
-            if(result) {
-                const {type, name, value} = result;
-                const rule = {
-                    paint: 'setPaintProperty',
-                    layout: 'setLayoutProperty'
-                }
-                map[rule[type]](layerId, name, value);
+            const type = isPaintKey(name) ? 'paint' : 'layout';
+            const rule = {
+                paint: 'setPaintProperty',
+                layout: 'setLayoutProperty'
             }
+            map[rule[type]](layerId, name, value);
         },
 
         /**
@@ -141,15 +151,18 @@ const MapboxSymbolLayerManager = (m) => {
          * @param layerId 
          * @param symbol 
          */
-        setSimpleSymbol(layerId, symbol) {
+        setSimpleSymbol(layerId, oldSymbol, symbol) {
+            const {paint: oldPaint = {}, layout: oldLayout = {}} = oldSymbol;
             const layerInfo = this.symbolToLayerStyle(symbol);
-            const {paint, layout} = layerInfo;
-            Object.keys(paint).forEach(key => {
+            const {paint, layout} = layerInfo, paintKeys = Object.keys(paint).concat(Object.keys(oldPaint)), 
+                layoutKeys = Object.keys(layout).concat(Object.keys(oldLayout));
+
+            paintKeys.forEach(key => {
                 map.setPaintProperty(layerId, key, paint[key]);
-            })
-            Object.keys(layout).forEach(key => {
+            });
+            layoutKeys.forEach(key => {
                 map.setLayoutProperty(layerId, key, layout[key]);
-            })
+            });
         },
     
         /**
@@ -158,12 +171,11 @@ const MapboxSymbolLayerManager = (m) => {
          * @param {*} symbol 
          * @param {*} layerIds 
          */
-        setMultiSymbol(layerId, symbol, layerIds) {
-            const { styles } = symbol;
-            styles.forEach((style, index) => {
+        setMultiSymbol(layerId, oldSymbol, symbol, layerIds) {
+            symbol.forEach((style, index) => {
                 let id = layerIds[index];
                 if (layerIds[index]) {
-                    this.setSimpleSymbol(layerIds[index], style);
+                    this.setSimpleSymbol(layerIds[index], oldSymbol, style);
                 } else {
                     const layer = map.getLayer(layerId);
                     const layers = map.getStyle().layers;
@@ -184,6 +196,48 @@ const MapboxSymbolLayerManager = (m) => {
                 }
                 map.compositeLayersManager.addLayer(layerId, id);
             });
+        },
+        getImageKey(symbol) {
+            const symbolType = this.getSymbolType(symbol);
+            const IMAGE_MAPBOX_KEY = {
+                [LayerType.symbol]: {
+                    type: 'layout',
+                    name: 'icon-image'
+                },
+                [LayerType.line]:  {
+                    type: 'paint',
+                    name: 'line-pattern'  
+                },
+                [LayerType.fill]:  {
+                    type: 'paint',
+                    name: 'fill-pattern'  
+                }
+            }
+            const result = IMAGE_MAPBOX_KEY[symbolType];
+            return result;
+        },
+        /**
+         * 更新符号图片对应的属性值
+         * @param {*} symbol 
+         * @param {*} imageId 
+         * @returns 
+         */
+        updateImageProperty(symbol, imageId) {
+            const {type, name} = this.getImageKey(symbol);
+            symbol[type][name] = imageId;
+            return symbol;
+        },
+        /**
+         * 获取符号中关于图片的属性值
+         * @param {*} symbol 
+         * @returns 
+         */
+        getImage(symbol) {
+            // 图片出图的只会是单图层
+            if(isArray(symbol)) {return;}
+            
+            const {type, name} = this.getImageKey(symbol);
+            return symbol[type]?.[name];
         }
     }
 };

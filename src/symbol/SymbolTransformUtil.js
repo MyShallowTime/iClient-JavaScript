@@ -1,4 +1,4 @@
-import {  IMAGE_POINT_DEFAULT_VALUE, LINE_DEFAULT_VALUE, POLYGON_DEFAULT_VALUE, SIMPLE_POINT_DEFAULT_VALUE, TEXT_DEFAULT_VALUE } from "@supermap/iclient-common/commontypes/symbol/DefaultValue";
+import { TEXT_DEFAULT_VALUE, MAPBOX_LINE_DEFAULT, MAPBOX_FILL_DEFAULT, MAPBOX_SYMBOL_DEFAULT, MAPBOX_CIRCLE_DEFAULT } from "@supermap/iclient-common/commontypes/symbol/DefaultValue";
 
 /**
  * 根据symbol类型，获取图层类型
@@ -6,20 +6,10 @@ import {  IMAGE_POINT_DEFAULT_VALUE, LINE_DEFAULT_VALUE, POLYGON_DEFAULT_VALUE, 
  * @returns {string}
  */
 export function getLayerTypeByRender(symbolInfo) {
-    // renderSetting中以下key值满足这些条件，即可使用circle图层渲染，否则使用'symbol'
-    const CircleRenderSymbolRules = {
-        textField: ['', undefined],
-        shape: ['', undefined, 'circle'],
-        image: ['', undefined, 'circle'],
-        anchor: [undefined, 'center'],
-        allowOverlap: [undefined, true],
-        ignorePlacement: [undefined, true]
-    };
-    // 需要渲染的参数
-    const keys = Object.keys(CircleRenderSymbolRules);
-    // 是否含有仅symbol才可渲染的参数，如果symbolProperty.length>0则说明有
-    const symbolProperty = keys.filter((key) => !CircleRenderSymbolRules[key].includes(symbolInfo[key]));
-    return symbolProperty.length ? 'symbol' : 'circle';
+    const {paint = {}, layout = {}} = symbolInfo;
+    const keys = Object.keys(paint).concat(Object.keys(layout));
+    const isCircle = keys.some(v => v.startsWith('circle-'));
+    return isCircle ? 'circle' : 'symbol';
 }
 
 /**
@@ -28,22 +18,10 @@ export function getLayerTypeByRender(symbolInfo) {
  * @returns {Object}
  */
 export function getSymbolPaintLayout(symbolInfo) {
+    const {paint={}, layout={}} = symbolInfo;
     return {
-        paint: {
-            'icon-color': symbolInfo.color ?? IMAGE_POINT_DEFAULT_VALUE.color,
-            'icon-opacity': symbolInfo.opacity ?? IMAGE_POINT_DEFAULT_VALUE.opacity,
-            'icon-translate': symbolInfo.translate ?? IMAGE_POINT_DEFAULT_VALUE.translate
-        },
-        layout: {
-            'icon-size': symbolInfo.size ?? IMAGE_POINT_DEFAULT_VALUE.size,
-            'icon-image': symbolInfo.image,
-            'icon-rotate': symbolInfo.rotate ?? IMAGE_POINT_DEFAULT_VALUE.rotate
-            // 符号库暂未支持的属性
-            // 'icon-anchor': symbolInfo.anchor,
-            // 'icon-allow-overlap': symbolInfo.allowOverlap,
-            // 'icon-ignore-placement': symbolInfo.ignorePlacement,
-            // 'symbol-placement': symbolInfo.symbolPlacement
-        }
+        paint: Object.assign({}, MAPBOX_SYMBOL_DEFAULT.paint, paint),
+        layout: Object.assign({}, MAPBOX_SYMBOL_DEFAULT.layout, layout)
     }
 
 }
@@ -54,22 +32,10 @@ export function getSymbolPaintLayout(symbolInfo) {
  * @returns {Object}
  */
 export function getCirclePaintLayout(symbolInfo) {
+    const {paint={}, layout={}} = symbolInfo;
     return {
-        paint: {
-            'circle-blur': symbolInfo.blur ?? SIMPLE_POINT_DEFAULT_VALUE.blur,
-            'circle-color': symbolInfo.color ?? SIMPLE_POINT_DEFAULT_VALUE.color,
-            'circle-opacity': symbolInfo.opacity ?? SIMPLE_POINT_DEFAULT_VALUE.opacity,
-            'circle-radius': symbolInfo.size / 2 ?? SIMPLE_POINT_DEFAULT_VALUE.size / 2,
-            'circle-stroke-color': symbolInfo.strokeColor ?? SIMPLE_POINT_DEFAULT_VALUE.strokeColor,
-            'circle-stroke-width': symbolInfo.strokeWidth ?? SIMPLE_POINT_DEFAULT_VALUE.strokeWidth,
-            'circle-stroke-opacity': symbolInfo.strokeOpacity ?? SIMPLE_POINT_DEFAULT_VALUE.strokeOpacity,
-            'circle-translate': symbolInfo.translate ?? SIMPLE_POINT_DEFAULT_VALUE.translate
-            // 符号库暂未支持的属性
-            // 'circle-translate-anchor': symbolInfo.translateAnchor
-        },
-        layout: {
-            visibility: 'visible'
-        }
+        paint: Object.assign({}, MAPBOX_CIRCLE_DEFAULT.paint, paint),
+        layout: Object.assign({}, MAPBOX_CIRCLE_DEFAULT.layout, layout)
     }
 }
 
@@ -99,32 +65,12 @@ export function transformSymbol2LayerInfo(symbolInfo) {
  * @returns {Object}
  */
 export function lineSymbolToPaintLayout(symbolInfo) {
-    const {opacity, color, width, offset, translate, blur, dasharray, image, cap, join} = symbolInfo;
-    
+    const {paint={}, layout={}} = symbolInfo;
     return {
         type: 'line',
-        paint: {
-            "line-opacity": opacity ?? LINE_DEFAULT_VALUE.opacity,
-            "line-color": color ?? LINE_DEFAULT_VALUE.color,
-            "line-width": width ?? LINE_DEFAULT_VALUE.width,
-            "line-offset": offset ?? LINE_DEFAULT_VALUE.offset,
-            "line-translate": translate ?? LINE_DEFAULT_VALUE.translate,
-            "line-blur": blur ?? LINE_DEFAULT_VALUE.blur,
-            "line-dasharray": dasharray ?? LINE_DEFAULT_VALUE.dasharray,
-            "line-pattern": image
-            // 符号库暂未支持的属性
-            // "line-translate-anchor": "",
-            // "line-gap-width": "",
-            // "line-gradient": ""
-        },
-        layout: {
-            "line-cap": cap ?? LINE_DEFAULT_VALUE.cap,
-            "line-join": join ?? LINE_DEFAULT_VALUE.join
-            // 符号库暂未支持的属性
-            // "line-miter-limit": "",
-            // "line-round-limit": "",
-            // "line-sort-key": ""
-        }
+
+        paint: Object.assign({}, MAPBOX_LINE_DEFAULT.paint, paint),
+        layout: Object.assign({}, MAPBOX_LINE_DEFAULT.layout, layout)
     }
 }
 /**
@@ -133,24 +79,12 @@ export function lineSymbolToPaintLayout(symbolInfo) {
  * @returns {Object} 
  */
 export function polygonSymbolToPaintLayout(symbolInfo) {
-    const {opacity, color, image} = symbolInfo;
-
+    const {paint={}, layout={}} = symbolInfo;
     return {
         type: 'fill',
-        paint: {
-            "fill-opacity": opacity ?? POLYGON_DEFAULT_VALUE.opacity,
-            "fill-color": color ?? POLYGON_DEFAULT_VALUE.color,
-            "fill-pattern": image
-            // 符号库暂未支持的属性
-            // "fill-antialias": "",
-            // "fill-outline-color": "",
-            // "fill-translate": "",
-            // "fill-translate-anchor": "",
-        },
-        layout: {
-            // 符号库暂未支持的属性
-            // "fill-sort-key": "";
-        }
+        // 需要加上fill-pattern这样从图片=>矢量，图片才会被清空
+        paint: Object.assign({}, MAPBOX_FILL_DEFAULT.paint, paint),
+        layout: Object.assign({}, layout)
     }
 }
 
@@ -192,19 +126,16 @@ export function textSymbolToPaintLayout(symbolInfo) {
     }
 }
 const circleProperty = {
-    color: {
-        type: 'paint',
-        name: 'circle-color'
+    'circle-color': {
+        type: 'paint'
     },
-    opacity: {
-        type: 'paint',
-        name: 'circle-opacity'
+    'circle-opacity': {
+        type: 'paint'
     },
-    radius: {
-        type: 'paint',
-        name: 'circle-radius'
+    'circle-radius': {
+        type: 'paint'
     },
-    strokeColor: {
+    'circle-stroke-color': {
         type: 'paint',
         name: 'circle-stroke-color'
     },
@@ -425,4 +356,38 @@ export function getTextProperty(key, value) {
             value
         }
     }
+}
+export const isPaintKey = (key) => {
+    return [
+        'icon-color',
+        'icon-opacity',
+        'icon-translate',
+        'line-opacity',
+        'line-blur',
+        'line-translate',
+        'line-color',
+        'line-width',
+        'line-offset',
+        'line-dasharray',
+        'line-pattern',
+        'fill-color',
+        'fill-opacity',
+        'fill-pattern',
+        'fill-outline-color',
+        'text-color',
+        'text-halo-blur',
+        'text-halo-color',
+        'text-halo-width',
+        'text-opacity',
+        'text-translate',
+        'text-translate-anchor',
+        'circle-blur',
+        'circle-color',
+        'circle-opacity',
+        'circle-translate',
+        'circle-radius',
+        'circle-stroke-color',
+        'circle-stroke-opacity',
+        'circle-stroke-width'
+    ].includes(key);
 }
