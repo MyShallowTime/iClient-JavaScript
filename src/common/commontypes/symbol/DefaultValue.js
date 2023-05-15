@@ -25,7 +25,7 @@ export const IMAGE_POINT_DEFAULT_VALUE = {
 }
 
 export const SIMPLE_POINT_DEFAULT_VALUE = {
-    size: 0.16,
+    size: 1,
     ...POINT_DEFAULT_VALUE,
     shape: 'circle',
     strokeColor: '#FFF',
@@ -95,7 +95,7 @@ export const MAPBOX_CIRCLE_DEFAULT = {
         'circle-blur': SIMPLE_POINT_DEFAULT_VALUE.blur,
         'circle-color': SIMPLE_POINT_DEFAULT_VALUE.color,
         'circle-opacity': SIMPLE_POINT_DEFAULT_VALUE.opacity,
-        'circle-radius': SIMPLE_POINT_DEFAULT_VALUE.size / 2,
+        'circle-radius': 5,
         'circle-stroke-color': SIMPLE_POINT_DEFAULT_VALUE.strokeColor,
         'circle-stroke-width': SIMPLE_POINT_DEFAULT_VALUE.strokeWidth,
         'circle-stroke-opacity': SIMPLE_POINT_DEFAULT_VALUE.strokeOpacity,
@@ -107,16 +107,65 @@ export const MAPBOX_CIRCLE_DEFAULT = {
         visibility: 'visible'
     }
 }
-
+export const TEXT_DEFAULT_VALUE = {
+    size: 16,
+    color: COMMON_DEFAULT_VALUE.color,
+    opacity: COMMON_DEFAULT_VALUE.opacity,
+    translate: COMMON_DEFAULT_VALUE.translate,
+    fontFamily: ["Open Sans Regular","Arial Unicode MS Regular"],
+    haloWidth: 0,
+    anchor: 'center',
+    spacing: 0,
+    allowOverlap: false,
+    padding: 0,
+    strokeColor:'#fff',
+    strokeWidth:0,
+    fontPath:'',
+    heightfixed:COMMON_DEFAULT_VALUE.heightfixed,
+    raisingHeiht:COMMON_DEFAULT_VALUE.raisingHeight,
+    gamma:2,
+    fontWeight:400,
+    blur:COMMON_DEFAULT_VALUE.blur
+}
+const MAPBOX_TEXT_DEFAULT = {
+    paint: {
+        'text-color': TEXT_DEFAULT_VALUE.color,
+        'text-opacity': TEXT_DEFAULT_VALUE.opacity,
+        'text-translate': TEXT_DEFAULT_VALUE.translate,
+        'text-halo-width': TEXT_DEFAULT_VALUE.haloWidth
+        // 符号库暂未支持的属性
+        // 'text-halo-blur': symbolInfo.textHaloBlur,
+        // 'text-halo-color': symbolInfo.textHaloColor,
+        // 'text-translate-anchor': symbolInfo.textTranslateAnchor
+    },
+    layout: {
+        'text-field': TEXT_DEFAULT_VALUE.field,
+        'text-size': TEXT_DEFAULT_VALUE.size,
+        'text-font': TEXT_DEFAULT_VALUE.fontFamily,
+        'text-anchor': TEXT_DEFAULT_VALUE.anchor,
+        'text-allow-overlap': TEXT_DEFAULT_VALUE.allowOverlap,
+        'text-padding': TEXT_DEFAULT_VALUE.padding,
+        'text-letter-spacing': TEXT_DEFAULT_VALUE.spacing
+        // 符号库暂未支持的属性
+        // 'text-ignore-placement': symbolInfo.textIgnorePlacement,
+        // 'text-justify': symbolInfo.justify,
+        // 'text-line-height': symbolInfo.lineHeight,
+        // 'text-max-width': symbolInfo.maxWidth,
+        // 'text-rotate': symbolInfo.textRotate,
+        // 'text-transform': symbolInfo.transform,
+    }
+}
 export const MAPBOX_SYMBOL_DEFAULT = {
     paint: {
         'icon-color': SIMPLE_POINT_DEFAULT_VALUE.color,
         'icon-opacity': SIMPLE_POINT_DEFAULT_VALUE.opacity,
-        'icon-translate': SIMPLE_POINT_DEFAULT_VALUE.translate
+        'icon-translate': SIMPLE_POINT_DEFAULT_VALUE.translate,
+        ...MAPBOX_TEXT_DEFAULT.paint
     },
     layout: {
         'icon-size': SIMPLE_POINT_DEFAULT_VALUE.size,
-        'icon-rotate': COMMON_DEFAULT_VALUE.rotate
+        'icon-rotate': COMMON_DEFAULT_VALUE.rotate,
+        ...MAPBOX_TEXT_DEFAULT.layout
     }
 }
 export const MAPBOX_LINE_DEFAULT = {
@@ -176,27 +225,6 @@ export const POLYGON_3D_DEFAULT_VALUE = {
     sidesurface: true,
     raisingHeight: COMMON_DEFAULT_VALUE.raisingHeight,
     heightfixed: COMMON_DEFAULT_VALUE.heightfixed
-}
-
-export const TEXT_DEFAULT_VALUE = {
-    size: 16,
-    color: COMMON_DEFAULT_VALUE.color,
-    opacity: COMMON_DEFAULT_VALUE.opacity,
-    translate: COMMON_DEFAULT_VALUE.translate,
-    fontFamily: ["Open Sans Regular","Arial Unicode MS Regular"],
-    haloWidth: 0,
-    anchor: 'center',
-    spacing: 0,
-    allowOverlap: false,
-    padding: 0,
-    strokeColor:'#fff',
-    strokeWidth:0,
-    fontPath:'',
-    heightfixed:COMMON_DEFAULT_VALUE.heightfixed,
-    raisingHeiht:COMMON_DEFAULT_VALUE.raisingHeight,
-    gamma:2,
-    fontWeight:400,
-    blur:COMMON_DEFAULT_VALUE.blur
 }
 
 /**

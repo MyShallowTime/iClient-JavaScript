@@ -3,7 +3,7 @@ import View from './View';
 import './style';
 import { cloneDeep, uniqueId } from 'lodash';
 import { getMapboxKey, isPaintKey } from '../utils/StyleSettingUtil';
-import '../../../../src/mapboxgl/core/MapExtend';
+// import '../../../../src/mapboxgl/core/MapExtend';
 
 const App = () => {
     const [map, setMap] = useState<any>();
@@ -26,11 +26,13 @@ const App = () => {
 
     // 添加图层
     const loadPreSymbol = async (preSymbolInfo) => {
-        const { symbolId } = preSymbolInfo;
+        const { symbolId, style = {} } = preSymbolInfo;
         // eslint-disable-next-line import/no-dynamic-require
         const symbolInfo = require(`../../static/symbols/${symbolId.split('-')[0]}/${symbolId}.json`);
         const id = uniqueId();
         await map.loadSymbol(cloneDeep(symbolInfo), (_err, symbol) => {
+            style.paint &&  Object.assign(symbol.paint, style.paint);
+            style.layout &&  Object.assign(symbol.layout, style.layout);
             map.addSymbol(id, symbol);
         });
         return { id, symbolId };
@@ -66,9 +68,6 @@ const App = () => {
             "source-layer": sourceLayer,
             symbol: id
         });
-        if (type === 'point') {
-            map.setLayoutProperty(layerId, 'icon-allow-overlap', true);
-        }
     };
 
     const addStyle = async (): Promise<void> => {
@@ -87,10 +86,22 @@ const App = () => {
             symbolId: 'line-49050402'
         });
         const capitalSymbol = await loadPreSymbol({
-            symbolId: 'point-83030559'
+            symbolId: 'point-83030559',
+            style: {
+                layout: {
+                    'icon-size': 0.16,
+                    'icon-allow-overlap': true
+                }
+            }
         });
         const citySymbol = await loadPreSymbol({
-            symbolId: 'point-909063'
+            symbolId: 'point-909063',
+            style: {
+                layout: {
+                    'icon-size': 0.16,
+                    'icon-allow-overlap': true
+                }
+            }
         });
         // const citySymbol = loadCustomSymbol({
         //     type: SymbolType.Point,
@@ -119,24 +130,24 @@ const App = () => {
         });
         const nationTextSymbol = loadCustomSymbol({
             paint: {
-                'icon-color': '#F5A623',
-                'icon-opacity': 1
+                'text-color': '#F5A623',
+                'text-opacity': 1
             },
             layout: {
                 'text-field': '{NAME}',
-                'icon-size': 20
-                // fontFamily: ['Microsoft YaHei Bold'] // TODO
+                'text-size': 20,
+                'text-font': ['Microsoft YaHei Bold'] 
             }
         });
         const cityTextSymbol = loadCustomSymbol({
             paint: {
-                'icon-color': '#000',
-                'icon-opacity': 0.8,
-                'icon-translate': [28, 10]
+                'text-color': '#000',
+                'text-opacity': 0.8,
+                'text-translate': [28, 10]
             },
             layout: {
                 'text-field': '{NAME}',
-                'icon-size': 12,
+                'text-size': 12,
                 'text-allow-overlap': true
             }
         });
@@ -218,6 +229,10 @@ const App = () => {
         console.log(symbolInfo, 'symbolInfo');
         const id = uniqueId();
         await map.loadSymbol(symbolInfo, (_err, symbol) => {
+            if(type === 'point') {
+                symbol.layout['icon-allow-overlap'] = true;
+                symbol.layout['icon-size'] = 0.16;
+            }
             map.addSymbol(id, symbol);
         });
         map.setSymbol(layerId, id);

@@ -1,4 +1,4 @@
-import {LayerType} from "@supermap/iclient-common/commontypes/symbol/DefaultValue";
+import {LayerType} from "./DefaultValue";
 import { Util } from "@supermap/iclient-common/commontypes/Util";
 import {isArray} from "lodash";
 import { isPaintKey } from "./SymbolTransformUtil";
@@ -10,6 +10,9 @@ const GET_TYPE_RULE = [{
 }, {
     prefix: 'fill-',
     type: LayerType.fill
+}, {
+    prefix: 'circle-',
+    type: LayerType.circle
 }];
 /**
  * 符号图层管理器
@@ -214,16 +217,16 @@ const MapboxSymbolLayerManager = (m) => {
                     map.compositeLayersManager.removeLayer(layerId, l);
                 })
                 if (this.isMultiSymbol(symbol)) {
-                    this.setMultiSymbol(layerId, oldSymbol, symbol, layerIds);
+                    this.setMultiSymbol(layerId, symbol, layerIds);
                     return;
                 }
                 const layerInfo = symbol;
-                this.setSimpleSymbol(layerId, oldSymbol, layerInfo);
+                this.setSimpleSymbol(layerId, layerInfo);
             } else {
                 const symbolInfos = this.getAllSymbolInfos(symbolInfo.slice(2));
                 const paint = this.getExpression("paint", symbolInfos, symbolInfo);
                 const layout = this.getExpression("layout", symbolInfos, symbolInfo);
-                this.setSimpleSymbol(layerId, oldSymbol, {paint, layout});
+                this.setSimpleSymbol(layerId, {paint, layout});
             }
         },
 
@@ -248,12 +251,15 @@ const MapboxSymbolLayerManager = (m) => {
          * @param layerId 
          * @param symbol 
          */
-        setSimpleSymbol(layerId, oldSymbol, symbol) {
-            const {paint: oldPaint = {}, layout: oldLayout = {}} = oldSymbol;
+        setSimpleSymbol(layerId, symbol) {
+            const layers = map.getStyle().layers, layer = layers.find(l => l.id === layerId);  
+            if(!layer) {return;}
+
+            const {paint: oldPaint = {}, layout: oldLayout = {}} = layer;
             const layerInfo = symbol;
             const {paint = {}, layout = {}} = layerInfo, paintKeys = Object.keys(paint).concat(Object.keys(oldPaint)), 
                 layoutKeys = Object.keys(layout).concat(Object.keys(oldLayout));
-
+  
             Array.from(new Set(paintKeys)).forEach(key => {
                 map.setPaintProperty(layerId, key, paint[key]);
             });
@@ -268,11 +274,11 @@ const MapboxSymbolLayerManager = (m) => {
          * @param {*} symbol 
          * @param {*} layerIds 
          */
-        setMultiSymbol(layerId, oldSymbol, symbol, layerIds) {
+        setMultiSymbol(layerId, symbol, layerIds) {
             symbol.forEach((style, index) => {
                 let id = layerIds[index];
                 if (layerIds[index]) {
-                    this.setSimpleSymbol(layerIds[index], oldSymbol, style);
+                    this.setSimpleSymbol(layerIds[index], style);
                 } else {
                     const layer = map.getLayer(layerId);
                     const layers = map.getStyle().layers;
