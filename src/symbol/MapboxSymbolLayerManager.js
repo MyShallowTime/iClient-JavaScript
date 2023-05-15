@@ -70,6 +70,9 @@ const MapboxSymbolLayerManager = (m) => {
                 const expressionRest = this.getStyleExpression(style, symbolInfos, type, k);
                 if (expressionRest.length > 0) {
                     result[k] = [...expression, ...expressionRest];
+                    if (expressionRest.length % 2 === 0) {
+                        result[k].push(result[k][result[k].length - 1]);
+                    }
                 }
             })
             return result;
@@ -90,7 +93,7 @@ const MapboxSymbolLayerManager = (m) => {
                         return;
                     }
                     //换成最新的数据结构, 暂时不考虑数组情况
-                    if(!symbolInfo.length) {
+                    if (!symbolInfo.length) {
                         symbolInfos[value] = this.symbolToLayerStyle(symbolInfo);
                     }
                 }
@@ -109,6 +112,53 @@ const MapboxSymbolLayerManager = (m) => {
             const paint = this.getExpression("paint", symbolInfos, symbol);
             const layout = this.getExpression("layout", symbolInfos, symbol);
             map.addLayerBak({ ...layer, paint, layout }, before);
+        },
+
+        /**
+         * 将symbol为表达式的线图层拆分为多图层
+         * @param {*} layer 
+         * @param {*} symbol 
+         * @returns 
+         */
+        getExpresionLineLayers(layer, symbol) {
+            const layers = [];
+            const filter = ["all"];
+            if(layer.filter) {
+                filter.push(layer.filter);
+            }
+            const expression = symbol.slice(2);
+            expression.forEach((r, index) => {
+                if (index % 2 === 1) {
+                    layers.push({
+                        ...layer, "filter": [
+                            ...filter,
+                            [
+                                "==",
+                                symbol[1][1],
+                                expression[index - 1]
+                            ]
+                        ], symbol: r
+                    });
+                } else if (index === expression.length - 1) {
+                    layers.unshift({ ...layer, symbol: r });
+                }
+            });
+            return layers;
+        },
+
+        /**
+         * 添加symbol为表达式的线图层
+         * @param {*} layer 
+         * @param {*} symbol 
+         * @param {*} before 
+         */
+        addExpressionLineLayer(layer, symbol, before) {
+            const layers = this.getExpresionLineLayers(layer, symbol);
+            layers.forEach((l, index) => {
+                l.id = index === 0 ? layer.id : Util.createUniqueID('SuperMap.Symbol_');
+                map.addLayer(l, before);
+                map.compositeLayersManager.addLayer(layer.id, l.id);
+            })
         },
 
         /**
@@ -132,6 +182,8 @@ const MapboxSymbolLayerManager = (m) => {
                     }
                     this.addSimpleSymbol(layer, symbolInfo, before);
                 }
+            } else if (layer.type === 'line') {
+                this.addExpressionLineLayer(layer, symbol, before);
             } else {
                 this.addExpressionSymbolLayer(layer, symbol, before);
             }
@@ -224,7 +276,7 @@ const MapboxSymbolLayerManager = (m) => {
                 const symbolInfos = this.getAllSymbolInfos(symbolInfo.slice(2));
                 const paint = this.getExpression("paint", symbolInfos, symbolInfo);
                 const layout = this.getExpression("layout", symbolInfos, symbolInfo);
-                this.setSimpleSymbol(layerId, {paint, layout});
+                this.setSimpleSymbol(layerId, { paint, layout });
             }
         },
 

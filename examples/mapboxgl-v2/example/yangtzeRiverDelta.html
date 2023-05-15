@@ -11,40 +11,22 @@
       padding: 0;
     }
 
-    .content {
+    #map {
       position: absolute;
       top: 0;
       bottom: 0;
       width: 100%;
-      display: flex;
-    }
-
-    #map {
-      width: 100%;
-      height: 100%;
-    }
-
-    img {
-      flex-shrink: 0;
-      width: 250px;
-      height: fit-content;
     }
   </style>
 </head>
 
 <body>
-  <div class="content">
-    <div id="map"></div>
-    <img alt="" src="./imgs/yang.jpg"></img>
-  </div>
-  <script src="../static/fonts/iconfont.js"></script>
-  <script type="text/javascript" src="../libs/maplibregl/maplibre-gl.js"></script>
-  <script type="text/javascript" src="../libs/maplibregl/l7.js"></script>
-  <script type="text/javascript" src="../libs/maplibregl/iclient-maplibregl-es6.js"></script>
-  <script type="text/javascript" src="../libs/maplibregl/iclient-maplibregl-mapextend.js"></script>
+  <div id="map"></div>
+  <script type="text/javascript" src="https://iclient.supermap.io/web/libs/mapbox-gl-js/1.13.2/mapbox-gl.js"></script>
+  <script type="text/javascript" src="../libs/mapboxgl/iclient-mapboxgl.js"></script>
   <script src="./datas/sanjiaozhou.js"></script>
   <script>
-    const map = new maplibregl.Map({
+    const map = new mapboxgl.Map({
       container: 'map',
       style: {
         "sources": {
@@ -69,224 +51,193 @@
       }
     });
 
-    const polygonSymbols = {
-      'Frame': {
-        type: 'SimplePolygon',
-        color: "rgba(211,237,251,1.00)"
-      },
-      'Province_R': {
-        type: 'SimplePolygon',
-        color: "rgba(255,250,237,1.00)"
-      },
-      'SuHuZhe_R': {
-        type: 'SimplePolygon',
-        color: "rgba(255,255,247,1.00)"
-      },
-      'Reservoir_R': {
-        type: 'SimplePolygon',
-        color: "rgba(211,237,251,1.00)"
-      },
-      'Lake_R': {
-        type: 'SimplePolygon',
-        color: "rgba(211,237,251,1.00)"
-      },
-      'River_R': {
-        type: 'SimplePolygon',
-        color: "rgba(211,237,251,1.00)"
-      },
-      'MainRiver_R': {
-        type: 'SimplePolygon',
-        color: "rgba(211,237,251,1.00)"
-      },
-      'SuHuZheInsideBuffer': {
-        type: 'SimplePolygon',
-        color: "rgba(255,153,139,1.00)"
-      },
-      "SuHuZheBuffer2": {
-        type: 'SimplePolygon',
-        "color": "rgba(255,198,191,1.00)",
-      },
-      "SuHuZheBuffer1": {
-        type: 'SimplePolygon',
-        "color": "rgba(255,153,140,1.00)",
-      },
-    }
-
-    // 每个图层对应的Web符号ID
-    const lineSymbol = {
-      'Frame': "line-963945",             //直线
-      'Province_L': "line-63020102",      //省级行政区界线
-      'Coast_L': "line-25020001",         //海岸线
-      'City_L': "line-64020101",          //地级行政区界线
-      'SuHuZheInside_L': "line-63020102", //省级行政区界线
-      'SuHuZhe_L': "line-63020102"        //省级行政区界线
-    }
-    // 每个符号需要修改的参数
-    const width = 0.76;
-    const lineStyle = {
-      color: "rgba(153,37,22,1.00)",
-      width,
-      dasharray: [
-        15,
-        6,
-        2.5,
-        6
-      ]
-    }
-    const lineSymbols = {
-      'Frame': {
-        color: "rgba(0,0,0,1.00)",
-        width
-      },
-      'Province_L': lineStyle,
-      "Coast_L": {
-        width,
-        "color": "rgba(129,216,216,1.00)"
-      },
-      "City_L": {
-        "cap": "square",
-        width,
-        "dasharray": [
-          2.5,
-          4,
-          2.5,
-          4
-        ],
-        "color": "rgba(153,37,22,1.00)"
-      },
-      "SuHuZheInside_L": lineStyle,
-      "SuHuZhe_L": lineStyle
-    }
-
     // 批量加载符号
     const loadSymbols = async () => {
-      for (let symbolId in polygonSymbols) {
-        const symbol = polygonSymbols[symbolId];
-        await map.loadSymbol("polygon-0", (_err, newSymbol) => {
-          Object.assign(newSymbol, symbol);
+      const symbols = [
+        "polygon-955463", //Frame
+        "polygon-955464", //Province_R
+        "polygon-955514", //SuHuZhe_R
+        "polygon-955441", //SuHuZheInsideBuffer
+        "polygon-955383", //SuHuZheBuffer2
+        "polygon-955453", //SuHuZheBuffer1
+        "line-963945",    //直线
+        "line-63020102",  //省级行政区界线
+        "line-25020001",  //海岸线
+        "line-64020101",  //地级行政区界线
+        "line-63020102",  //省级行政区界线
+        "line-63020102"   //省级行政区界线
+      ]
+      for (let symbolId of symbols) {
+        await map.loadSymbol(symbolId, (_err, newSymbol) => {
           map.addSymbol(symbolId, newSymbol);
         });
       }
-      for (let symbolId in lineSymbols) {
-        const symbol = lineSymbols[symbolId];
-        await map.loadSymbol(lineSymbol[symbolId], (_err, newSymbol) => {
-          Object.assign(newSymbol, symbol);
-          map.addSymbol(symbolId + 'Line', newSymbol);
-        });
-      }
     }
 
-    const createPolygonLayer = async (symbol) => {
+    const createPolygonLayer = async (name, symbolId) => {
       map.addLayer({
-        "id": `${symbol}@YangtzeRiverDelta(0_24)`,
+        "id": `${name}@YangtzeRiverDelta(0_24)`,
         "source": "长江三角洲发展结构图",
-        "source-layer": `${symbol}@YangtzeRiverDelta`,
+        "source-layer": `${name}@YangtzeRiverDelta`,
         "type": "fill",
-        symbol
+        "symbol": symbolId
       });
     }
 
-    const createLineLayer = async (symbol) => {
+    const createLineLayer = async (name, symbolId) => {
       map.addLayer({
-        "id": `${symbol + 'Line'}@YangtzeRiverDelta(0_24)`,
+        "id": `${name + 'Line'}@YangtzeRiverDelta(0_24)`,
         "source": "长江三角洲发展结构图",
-        "source-layer": `${symbol}@YangtzeRiverDelta`,
+        "source-layer": `${name}@YangtzeRiverDelta`,
         "type": "line",
-        symbol: symbol + 'Line'
+        "symbol": symbolId
       });
     }
+
     // 三角洲发展结构图
     const createDevelopLayer = async () => {
-      const symbolId = 'road';
-      const symbol = {
-        type: 'SimpleLine',
-        width: 8,
-        color: [
-          "match", ["get", "dataViz_title"],
-          "nanjing", "rgba( 221, 88, 117, 255)",
-          "hangzhou", "rgba( 221, 88, 117, 255)",
-          "ningbo", "rgba( 221, 88, 117, 255)",
-          "hufa", "rgba( 75, 109, 199, 255)",
-          "yanjiang", "rgba( 75, 109, 199, 255)",
-          "hangyong", "rgba( 75, 109, 199, 255)",
-          "shanghai", "rgba( 197, 39, 72, 255)",
-          "quyu", "rgba( 197, 39, 72, 255)",
-          "yanhai", "rgba( 220, 186, 63, 255)",
-          "sujiahang", "rgba( 226, 205, 129, 255)",
-          "#000"
-        ],
-        dasharray: [2, 0.5],
-        cap: 'butt'
-      };
       await map.loadSymbol(`line-63020102`, (_err, newSymbol) => {
-        Object.assign(newSymbol, symbol);
-        map.addSymbol(symbolId, newSymbol);
+        Object.assign(newSymbol, {
+          width: 8,
+          dasharray: [2, 0.5],
+          cap: 'butt'
+        });
+        map.addSymbol("line-custom-63020102", newSymbol);
       });
       map.addLayer({
         "id": "line",
         "source": "sanjiaozhou",
         "type": "line",
-        "symbol": symbolId
+        "paint": {
+          "line-color": [
+            "match", ["get", "dataViz_title"],
+            "nanjing", "rgba( 221, 88, 117, 255)",
+            "hangzhou", "rgba( 221, 88, 117, 255)",
+            "ningbo", "rgba( 221, 88, 117, 255)",
+            "hufa", "rgba( 75, 109, 199, 255)",
+            "yanjiang", "rgba( 75, 109, 199, 255)",
+            "hangyong", "rgba( 75, 109, 199, 255)",
+            "shanghai", "rgba( 197, 39, 72, 255)",
+            "quyu", "rgba( 197, 39, 72, 255)",
+            "yanhai", "rgba( 220, 186, 63, 255)",
+            "sujiahang", "rgba( 226, 205, 129, 255)",
+            "#000"
+          ]
+        },
+        "symbol": "line-custom-63020102"
       });
-      await map.loadSymbol({
-        type: "Text",
-        field: "{dataViz_description}",
-        color: symbol.color,
-        size: 18,
-        anchor: [
-          "match", ["get", "dataViz_title"],
-          "yanjiang", "bottom",
-          "yanhai", "bottom",
-          "top"
-        ]
-      }, (_err, symbol) => {
-        map.addSymbol('text', symbol);
-      });
-      map.addLayer({
-        "id": "symbol",
-        "source": "sanjiaozhou",
-        "type": "symbol",
-        "symbol": 'text'
-      });
-      map.setLayoutProperty('symbol', "symbol-placement", 'line');
     }
     // 省会城市名称
     const createTextLayer = async () => {
-      const symbolId = 'capitalText';
-      const symbol = {
-        type: 'Text',
-        size: 12,
-        field: "{Name}",
-        allowOverlap: true,
-        translate: [6.89, 0],
-        rotate: 360
-      };
-      map.addSymbol(symbolId, symbol);
       map.addLayer({
         "id": "ProvinceCapital_P@YangtzeRiverDelta#1(0_24)",
+        "type": "symbol",
         "source": "长江三角洲发展结构图",
         "source-layer": "ProvinceCapital_P@YangtzeRiverDelta",
-        "type": "symbol",
-        "symbol": symbolId
+        "layout": {
+          "text-field": "{Name}",
+          "text-size": 12,
+          "text-allow-overlap": true,
+        },
+        "paint": {
+          "text-color": "#000",
+          "text-translate": [
+            6.89,
+            0
+          ]
+        }
       });
       map.addLayer({
         "id": "City_P@YangtzeRiverDelta#1",
+        "type": "symbol",
         "source": "长江三角洲发展结构图",
         "source-layer": "City_P@YangtzeRiverDelta",
+        "layout": {
+          "text-field": "{Name}",
+          "text-size": 12,
+          "text-allow-overlap": true,
+        },
+        "paint": {
+          "text-color": "#000",
+          "text-translate": [
+            6.89,
+            0
+          ],
+        }
+      });
+      map.addLayer({
+        "id": "symbol",
         "type": "symbol",
-        "symbol": symbolId
+        "source": "sanjiaozhou",
+        "layout": {
+          "text-field": "{dataViz_description}",
+          "text-size": 18,
+          "text-anchor": [
+            "match",
+            [
+              "get",
+              "dataViz_title"
+            ],
+            "yanjiang",
+            "bottom",
+            "yanhai",
+            "bottom",
+            "top"
+          ],
+          "text-allow-overlap": false,
+          "symbol-placement": "line"
+        },
+        "paint": {
+          "text-color": [
+            "match",
+            [
+              "get",
+              "dataViz_title"
+            ],
+            "nanjing",
+            "rgba( 221, 88, 117, 255)",
+            "hangzhou",
+            "rgba( 221, 88, 117, 255)",
+            "ningbo",
+            "rgba( 221, 88, 117, 255)",
+            "hufa",
+            "rgba( 75, 109, 199, 255)",
+            "yanjiang",
+            "rgba( 75, 109, 199, 255)",
+            "hangyong",
+            "rgba( 75, 109, 199, 255)",
+            "shanghai",
+            "rgba( 197, 39, 72, 255)",
+            "quyu",
+            "rgba( 197, 39, 72, 255)",
+            "yanhai",
+            "rgba( 220, 186, 63, 255)",
+            "sujiahang",
+            "rgba( 226, 205, 129, 255)",
+            "#000"
+          ]
+        }
       });
     }
 
     map.on('load', async () => {
       window.map = map;
       await loadSymbols();
-      Object.keys(polygonSymbols).forEach(symbol => {
-        createPolygonLayer(symbol);
-      })
-      Object.keys(lineSymbols).forEach(symbol => {
-        createLineLayer(symbol);
-      })
+      createPolygonLayer("Frame", "polygon-955463");
+      createPolygonLayer("Province_R", "polygon-955464");
+      createPolygonLayer("SuHuZhe_R", "polygon-955514");
+      createPolygonLayer("Lake_R", "polygon-955463");
+      createPolygonLayer("River_R", "polygon-955463");
+      createPolygonLayer("MainRiver_R", "polygon-955463");
+      createPolygonLayer("SuHuZheInsideBuffer", "polygon-955441");
+      createPolygonLayer("SuHuZheBuffer2", "polygon-955383");
+      createPolygonLayer("SuHuZheBuffer1", "polygon-955453");
+      createLineLayer('Frame', "line-963945");
+      createLineLayer('Province_L', "line-63020102");
+      createLineLayer('Coast_L', "line-25020001");
+      createLineLayer('City_L', "line-64020101");
+      createLineLayer('SuHuZheInside_L', "line-63020102");
+      createLineLayer('SuHuZhe_L', "line-63020102");
       createTextLayer();
       createDevelopLayer();
     })

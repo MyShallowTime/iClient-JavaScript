@@ -11,38 +11,21 @@
             padding: 0;
         }
 
-        .content {
+        #map {
             position: absolute;
             top: 0;
             bottom: 0;
             width: 100%;
-            display: flex;
-        }
-
-        #map {
-            width: 100%;
-            height: 100%;
-        }
-
-        img {
-            flex-shrink: 0;
-            margin-right: 60px;
         }
     </style>
 </head>
 
 <body>
-    <div class="content">
-        <div id="map"></div>
-        <img alt="" src="./imgs/xinjianglengend.png"></img>
-    </div>
-    <script src="../static/fonts/iconfont.js"></script>
-    <script type="text/javascript" src="../libs/maplibregl/maplibre-gl.js"></script>
-    <script type="text/javascript" src="../libs/maplibregl/l7.js"></script>
-    <script type="text/javascript" src="../libs/maplibregl/iclient-maplibregl-es6.js"></script>
-    <script type="text/javascript" src="../libs/maplibregl/iclient-maplibregl-mapextend.js"></script>
+    <div id="map"></div>
+    <script type="text/javascript" src="https://iclient.supermap.io/web/libs/mapbox-gl-js/1.13.2/mapbox-gl.js"></script>
+    <script type="text/javascript" src="../libs/mapboxgl/iclient-mapboxgl.js"></script>
     <script>
-        const map = new maplibregl.Map({
+        const map = new mapboxgl.Map({
             container: 'map',
             style: {
                 "sources": {
@@ -64,48 +47,37 @@
             }
         });
 
-        const symbols = {
-            landUseSymbol: {
-                color: [
-                    "match", ["get", "value"],
-                    11, "rgba( 253, 159, 221, 255)", //水田
-                    12, "rgba( 252, 223, 165, 255)", //旱地
-                    21, "rgba( 56, 142, 55, 255)",   //有林地
-                    22, "rgba( 84, 196, 0, 255)",    //疏林地
-                    23, "rgba( 181, 215, 182, 255)", //疏林地
-                    24, "rgba( 137, 206, 102, 255)", //其它林地
-                    31, "rgba( 191, 187, 65, 255)",  //高覆盖度草地
-                    32, "rgba( 226, 219, 129, 255)", //中覆盖度草地
-                    33, "rgba( 239, 234, 172, 255)", //低覆盖度草地
-                    41, "rgba( 16, 144, 191, 255)",  //河渠
-                    42, "rgba( 16, 144, 191, 255)",  //湖泊
-                    43, "rgba( 16, 144, 191, 255)",  //水库坑塘
-                    44, "rgba( 178, 162, 199, 255)", //永久性冰川雪地
-                    46, "rgba( 238, 234, 235, 255)", //滩地
-                    51, "rgba( 235, 104, 119, 255)", //城镇用地
-                    52, "rgba( 255, 139, 0, 255)",   //农村居民点
-                    53, "rgba( 240, 128, 127, 255)", //其它建设用地
-                    61, "rgba( 249, 244, 199, 255)", //沙地
-                    62, "rgba( 249, 168, 0, 255)",   //戈壁
-                    63, "rgba( 184, 224, 237, 255)", //盐碱地
-                    64, "rgba( 74, 221, 228, 255)",  //沼泽地
-                    65, "rgba( 237, 230, 230, 255)", //裸土地
-                    66, "rgba( 255, 208, 190, 255)", //裸岩石质地
-                    67, "rgba( 242, 242, 242, 255)", //其他
-                    "#000"
-                ]
-            },
-            waterSymbol: {
-                color: "rgba(16, 144, 191, 255)"
-            }
-        }
         // 批量加载Web符号
         const loadSymbols = async () => {
-            for (let symbolId in symbols) {
-                const symbol = symbols[symbolId];
-                await map.loadSymbol("polygon-0", (_err, newSymbol) => {
-                    Object.assign(newSymbol, symbol);
-                    map.addSymbol(symbolId, newSymbol);
+            const symbols = [
+                "polygon-83040647",
+                "polygon-83040649",
+                "polygon-83040654",
+                "polygon-83040658",
+                "polygon-83040655",
+                "polygon-83040660",
+                "polygon-83040661",
+                "polygon-83040663",
+                "polygon-83040664",
+                "polygon-83040691",
+                "polygon-83040686",
+                "polygon-83040688",
+                "polygon-83040694",
+                "polygon-83040690",
+                "polygon-83040669",
+                "polygon-83040670",
+                "polygon-83040703",
+                "polygon-83040648",
+                "polygon-83040698",
+                "polygon-83040692",
+                "polygon-83040700",
+                "polygon-83040701",
+                "polygon-83040695",
+                "polygon-83040686"
+            ];
+            for (let symbolId of symbols) {
+                await map.loadSymbol(symbolId, (_err, symbol) => {
+                    map.addSymbol(symbolId, symbol);
                 });
             }
         }
@@ -117,9 +89,33 @@
                 "source": "新疆土地利用类型空间分布图",
                 "source-layer": "LandUse_R@Xinjiang",
                 "type": "fill",
-                "minzoom": 0,
-                "maxzoom": 24,
-                symbol: "landUseSymbol"
+                "symbol": [
+                    "match", ["get", "value"],
+                    11, "polygon-83040647", //水田
+                    12, "polygon-83040649", //旱地
+                    21, "polygon-83040654", //有林地
+                    22, "polygon-83040658", //疏林地
+                    23, "polygon-83040655", //疏林地
+                    24, "polygon-83040660", //其它林地
+                    31, "polygon-83040661", //高覆盖度草地
+                    32, "polygon-83040663", //中覆盖度草地
+                    33, "polygon-83040664", //低覆盖度草地
+                    41, "polygon-83040691", //河渠
+                    42, "polygon-83040686", //湖泊
+                    43, "polygon-83040688", //水库坑塘
+                    44, "polygon-83040694", //永久性冰川雪地
+                    46, "polygon-83040690", //滩地
+                    51, "polygon-83040669", //城镇用地
+                    52, "polygon-83040670", //农村居民点
+                    53, "polygon-83040703", //其它建设用地
+                    61, "polygon-83040648", //水浇地
+                    62, "polygon-83040649", //戈壁
+                    63, "polygon-83040698", //盐碱地
+                    64, "polygon-83040692", //沼泽地
+                    65, "polygon-83040700", //裸土地
+                    66, "polygon-83040701", //裸岩石质地
+                    "polygon-83040695",     //其他
+                ]
             });
         }
 
@@ -130,12 +126,11 @@
                 "source": "新疆土地利用类型空间分布图",
                 "source-layer": "Water_R@Xinjiang",
                 "type": "fill",
-                symbol: "waterSymbol"
+                symbol: "polygon-83040686"
             });
         }
 
         map.on('load', async () => {
-            window.map = map;
             await loadSymbols();
             createLandUseLayer();
             createWaterLayer();
