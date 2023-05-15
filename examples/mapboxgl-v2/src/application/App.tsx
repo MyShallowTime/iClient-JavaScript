@@ -81,19 +81,15 @@ const App = () => {
         const newLayersInfo = [];
 
         const riverPolygonSymbol = await loadPreSymbol({
-            type: SymbolType.Polygon,
             symbolId: 'polygon-23010124'
         });
         const provinceLineSymbol = await loadPreSymbol({
-            type: SymbolType.SimpleLine,
             symbolId: 'line-49050402'
         });
         const capitalSymbol = await loadPreSymbol({
-            type: SymbolType.Point,
             symbolId: 'point-83030559'
         });
         const citySymbol = await loadPreSymbol({
-            type: SymbolType.Point,
             symbolId: 'point-909063'
         });
         // const citySymbol = loadCustomSymbol({
@@ -107,7 +103,6 @@ const App = () => {
         //     blur: 0.8
         // });
         const chinaSymbol = loadCustomSymbol({
-            type: SymbolType.Polygon,
             paint: {
                 'fill-color': '#F5F3F0'
             }
@@ -123,7 +118,6 @@ const App = () => {
             }
         });
         const nationTextSymbol = loadCustomSymbol({
-            type: SymbolType.Text,
             paint: {
                 'icon-color': '#F5A623',
                 'icon-opacity': 1
@@ -135,7 +129,6 @@ const App = () => {
             }
         });
         const cityTextSymbol = loadCustomSymbol({
-            type: SymbolType.Text,
             paint: {
                 'icon-color': '#000',
                 'icon-opacity': 0.8,

@@ -101,7 +101,7 @@ const MapboxSymbolLayerManager = (m) => {
                     }
                     //换成最新的数据结构, 暂时不考虑数组情况
                     if(!symbolInfo.length) {
-                        symbolInfos[value] = this.symbolToLayerStyle(symbolInfo);
+                        symbolInfos[value] = symbolInfo;
                     }
                 }
             });
@@ -169,22 +169,6 @@ const MapboxSymbolLayerManager = (m) => {
         },
 
         /**
-         * 符号转换成图层样式
-         * @param symbol 
-         * @returns {Object}
-         */
-        symbolToLayerStyle(symbol) {
-            const type = this.getSymbolType(symbol);
-            const {paint, layout} = symbol;
-            return {
-                type,
-                paint,
-                layout
-            }
-            // return TRANSFORM_SYMBOL_RULE[type]?.(symbol) ?? {};
-        },
-
-        /**
          * 添加单个符号
          * @param {*} layer 
          * @param {*} symbol 
@@ -192,17 +176,7 @@ const MapboxSymbolLayerManager = (m) => {
         addSimpleSymbol(layer, symbol, before) {
             const properties = { ...layer?.paint, ...layer?.layout };
             Object.assign(symbol, properties);
-            const style = this.symbolToLayerStyle(symbol);
-            const paint = {}, layout = {};
-            // 过滤掉为undefined的key
-            // layers.layerId.paint.fill-pattern: 'undefined' value invalid. Use null instead.
-            Object.keys(style.paint ?? {}).forEach(k => {
-                style.paint[k] !== undefined && (paint[k] = style.paint[k]);
-            })
-            Object.keys(style.layout ?? {}).forEach(k => {
-                style.layout[k] !== undefined && (layout[k] = style.layout[k]);
-            })
-            map.addLayerBak({ ...layer, ...style, paint, layout }, before);
+            map.addLayerBak({ ...layer, ...symbol }, before);
         },
 
         /**
@@ -243,7 +217,7 @@ const MapboxSymbolLayerManager = (m) => {
                     this.setMultiSymbol(layerId, oldSymbol, symbol, layerIds);
                     return;
                 }
-                const layerInfo = this.symbolToLayerStyle(symbol);
+                const layerInfo = symbol;
                 this.setSimpleSymbol(layerId, oldSymbol, layerInfo);
             } else {
                 const symbolInfos = this.getAllSymbolInfos(symbolInfo.slice(2));
@@ -276,7 +250,7 @@ const MapboxSymbolLayerManager = (m) => {
          */
         setSimpleSymbol(layerId, oldSymbol, symbol) {
             const {paint: oldPaint = {}, layout: oldLayout = {}} = oldSymbol;
-            const layerInfo = this.symbolToLayerStyle(symbol);
+            const layerInfo = symbol;
             const {paint = {}, layout = {}} = layerInfo, paintKeys = Object.keys(paint).concat(Object.keys(oldPaint)), 
                 layoutKeys = Object.keys(layout).concat(Object.keys(oldLayout));
 
@@ -309,7 +283,9 @@ const MapboxSymbolLayerManager = (m) => {
                     }
                     const { source, sourceLayer, filter } = layer;
                     id = Util.createUniqueID('SuperMap.Symbol_');
+                    const type = this.getSymbolType(style);
                     const layerInfo = {
+                        type,
                         id,
                         source: source,
                         "source-layer": sourceLayer
