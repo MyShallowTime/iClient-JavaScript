@@ -74,7 +74,13 @@ const MapboxSymbolLayerManager = (m) => {
          */
         symbolToLayerStyle(symbol) {
             const type = this.getSymbolType(symbol);
-            return TRANSFORM_SYMBOL_RULE[type]?.(symbol) ?? {};
+            const {paint, layout} = symbol;
+            return {
+                type,
+                paint,
+                layout
+            }
+            // return TRANSFORM_SYMBOL_RULE[type]?.(symbol) ?? {};
         },
     
         /**
@@ -154,13 +160,13 @@ const MapboxSymbolLayerManager = (m) => {
         setSimpleSymbol(layerId, oldSymbol, symbol) {
             const {paint: oldPaint = {}, layout: oldLayout = {}} = oldSymbol;
             const layerInfo = this.symbolToLayerStyle(symbol);
-            const {paint, layout} = layerInfo, paintKeys = Object.keys(paint).concat(Object.keys(oldPaint)), 
+            const {paint = {}, layout = {}} = layerInfo, paintKeys = Object.keys(paint).concat(Object.keys(oldPaint)), 
                 layoutKeys = Object.keys(layout).concat(Object.keys(oldLayout));
 
-            paintKeys.forEach(key => {
+            Array.from(new Set(paintKeys)).forEach(key => {
                 map.setPaintProperty(layerId, key, paint[key]);
             });
-            layoutKeys.forEach(key => {
+            Array.from(new Set(layoutKeys)).forEach(key => {
                 map.setLayoutProperty(layerId, key, layout[key]);
             });
         },

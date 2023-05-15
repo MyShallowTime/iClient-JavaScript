@@ -31,20 +31,20 @@ const TextStyleSetting = (props: TextStyleSettingProps) => {
 
     useEffect(() => {
         setStyle({
-            size: getLayerPropertyStyle(layerId, 'size'),
-            color: getLayerPropertyStyle(layerId, 'color'),
-            opacity: getLayerPropertyStyle(layerId, 'opacity'),
-            anchor: getLayerPropertyStyle(layerId, 'anchor'),
-            allowOverlap: getLayerPropertyStyle(layerId, 'allowOverlap'),
-            haloWidth: getLayerPropertyStyle(layerId, 'haloWidth'),
-            spacing: getLayerPropertyStyle(layerId, 'spacing'),
-            fontFamily: getLayerPropertyStyle(layerId, 'fontFamily'),
-            field: getLayerPropertyStyle(layerId, 'field'),
-            translate: getLayerPropertyStyle(layerId, 'translate')
+            size: getLayerPropertyStyle(layerId, 'size') ?? defaultStyle.size,
+            color: getLayerPropertyStyle(layerId, 'color') ?? defaultStyle.color,
+            opacity: getLayerPropertyStyle(layerId, 'opacity') ?? defaultStyle.opacity,
+            anchor: getLayerPropertyStyle(layerId, 'anchor') ?? defaultStyle.anchor,
+            allowOverlap: getLayerPropertyStyle(layerId, 'allowOverlap') ?? defaultStyle.allowOverlap,
+            haloWidth: getLayerPropertyStyle(layerId, 'haloWidth') ?? defaultStyle.haloWidth,
+            spacing: getLayerPropertyStyle(layerId, 'spacing') ?? defaultStyle.spacing,
+            fontFamily: getLayerPropertyStyle(layerId, 'fontFamily') ?? defaultStyle.fontFamily,
+            field: getLayerPropertyStyle(layerId, 'field') ?? defaultStyle.field,
+            translate: getLayerPropertyStyle(layerId, 'translate') ?? defaultStyle.translate
         });
     }, [layerId]);
 
-    const { size, color, opacity, anchor, allowOverlap, haloWidth, spacing, fontFamily, field, translate } = style;
+    const { size, color, opacity, anchor, allowOverlap, haloWidth, spacing, fontFamily, field, translate=[] } = style;
 
     const changeStyle = (key, value): void => {
         changeLayerStyle(layerId, key, value);

@@ -23,7 +23,7 @@ const LineStyleSetting = (props: LineStyleSettingProps) => {
         let bottomBoundary;
         lineIds.forEach((id) => {
             const width = getLayerPropertyStyle(id, 'width');
-            const offset = getLayerPropertyStyle(id, 'offset');
+            const offset = getLayerPropertyStyle(id, 'offset') ?? 0;
             const top = offset + width / 2;
             const bottom = offset - width / 2;
             (top > topBoundary || topBoundary === undefined) && (topBoundary = top);

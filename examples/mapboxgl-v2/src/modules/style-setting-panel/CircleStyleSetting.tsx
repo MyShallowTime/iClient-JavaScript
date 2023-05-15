@@ -26,18 +26,18 @@ const CircleStyleSetting = (props: CircleStyleSettingProps) => {
 
     useEffect(() => {
         setStyle({
-            radius: getLayerPropertyStyle(layerId, 'radius'),
-            color: getLayerPropertyStyle(layerId, 'color'),
-            opacity: getLayerPropertyStyle(layerId, 'opacity'),
-            blur: getLayerPropertyStyle(layerId, 'blur'),
-            strokeColor: getLayerPropertyStyle(layerId, 'strokeColor'),
-            strokeOpacity: getLayerPropertyStyle(layerId, 'strokeOpacity'),
-            strokeWidth: getLayerPropertyStyle(layerId, 'strokeWidth'),
-            translate: getLayerPropertyStyle(layerId, 'translate')
+            radius: getLayerPropertyStyle(layerId, 'radius') ?? defaultStyle.radius,
+            color: getLayerPropertyStyle(layerId, 'color') ?? defaultStyle.color,
+            opacity: getLayerPropertyStyle(layerId, 'opacity') ?? defaultStyle.opacity,
+            blur: getLayerPropertyStyle(layerId, 'blur') ?? defaultStyle.blur,
+            strokeColor: getLayerPropertyStyle(layerId, 'strokeColor') ?? defaultStyle.strokeColor,
+            strokeOpacity: getLayerPropertyStyle(layerId, 'strokeOpacity') ?? defaultStyle.strokeOpacity,
+            strokeWidth: getLayerPropertyStyle(layerId, 'strokeWidth') ?? defaultStyle.strokeWidth,
+            translate: getLayerPropertyStyle(layerId, 'translate') ?? defaultStyle.translate
         });
     }, [layerId]);
 
-    const { radius, color, translate, opacity, blur, strokeColor, strokeOpacity, strokeWidth } = style;
+    const { radius, color, translate=[], opacity, blur, strokeColor, strokeOpacity, strokeWidth } = style;
 
     const changeStyle = (key, value): void => {
         changeLayerStyle(layerId, key, value);

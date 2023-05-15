@@ -29,9 +29,9 @@ const PolygonStyleSetting = (props: PolygonStyleSettingtProps) => {
 
     useEffect(() => {
         setStyle({
-            color: getLayerPropertyStyle(layerId, 'color'),
-            opacity: getLayerPropertyStyle(layerId, 'opacity'),
-            image: getLayerPropertyStyle(layerId, 'image')
+            color: getLayerPropertyStyle(layerId, 'color') ?? defaultStyle.color,
+            opacity: getLayerPropertyStyle(layerId, 'opacity') ?? defaultStyle.opacity,
+            image: getLayerPropertyStyle(layerId, 'image') ?? defaultStyle.image
         });
     }, [selectedSymbolId]);
 

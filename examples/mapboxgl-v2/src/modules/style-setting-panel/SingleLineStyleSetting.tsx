@@ -44,19 +44,19 @@ const SingleLineStyleSetting = (props: SingleLineStyleContentProps) => {
 
     useEffect(() => {
         setStyle({
-            width: getLayerPropertyStyle(layerId, 'width'),
-            color: getLayerPropertyStyle(layerId, 'color'),
-            offset: getLayerPropertyStyle(layerId, 'offset'),
-            opacity: getLayerPropertyStyle(layerId, 'opacity'),
-            blur: getLayerPropertyStyle(layerId, 'blur'),
-            join: getLayerPropertyStyle(layerId, 'join'),
-            cap: getLayerPropertyStyle(layerId, 'cap'),
-            translate: getLayerPropertyStyle(layerId, 'translate'),
-            image: getLayerPropertyStyle(layerId, 'image')
+            width: getLayerPropertyStyle(layerId, 'width') ?? defaultStyle.width,
+            color: getLayerPropertyStyle(layerId, 'color') ?? defaultStyle.color,
+            offset: getLayerPropertyStyle(layerId, 'offset') ?? defaultStyle.offset,
+            opacity: getLayerPropertyStyle(layerId, 'opacity') ?? defaultStyle.opacity,
+            blur: getLayerPropertyStyle(layerId, 'blur') ?? defaultStyle.blur,
+            join: getLayerPropertyStyle(layerId, 'join') ?? defaultStyle.join,
+            cap: getLayerPropertyStyle(layerId, 'cap') ?? defaultStyle.cap,
+            translate: getLayerPropertyStyle(layerId, 'translate') ?? defaultStyle.translate,
+            image: getLayerPropertyStyle(layerId, 'image') ?? defaultStyle.image
         });
     }, [layerId, selectedSymbolId, wholeWidth]);
 
-    const { width, color, offset, opacity, blur, join, cap, translate, image } = style;
+    const { width, color, offset, opacity, blur, join, cap, translate=[], image } = style;
 
 
     return (

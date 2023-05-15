@@ -1,5 +1,3 @@
-import { number } from "../../../../libs/echarts/echarts-en"
-
 const COMMON_DEFAULT_VALUE = {
     color: '#000',
     opacity: 1,
