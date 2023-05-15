@@ -52,9 +52,11 @@ const SymbolSelector = (props: SymbolContentProps) => {
 
     const getSymbol = (symbolInfos) => {
         return symbolInfos?.map(({ id, name }) => {
-            const src = `../../../static/images/${type}/${id}.png`;
             const newSymbolId = type + '-' + id;
-            return <IconCard key={type + id} src={src} title={name} onIconClick={() => {
+            const isPolygon = type === 'polygon';
+            const { paint = {} } = isPolygon && require(`../../../static/symbols/polygon/${newSymbolId}.json`), 
+                {'fill-color': color, 'fill-pattern': image} = paint;
+            return <IconCard key={type + id} background={color} imgUrl={isPolygon ? image : `../../../static/images/${type}/${id}.png`} title={name} onIconClick={() => {
                 onIconClick(newSymbolId);
             }} isSelected={newSymbolId === selectedSymbolId} />
         });

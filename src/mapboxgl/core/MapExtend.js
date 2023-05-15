@@ -22,15 +22,8 @@ export var MapExtend = (function () {
   if (mapboxgl.Map.prototype.addLayerBak === undefined) {
     mapboxgl.Map.prototype.addLayerBak = mapboxgl.Map.prototype.addLayer;
     mapboxgl.Map.prototype.addLayer = function (layer, before) {
-      const id = layer.symbol;
-      if(id) {
-        const symbol = this.symbolManager.getSymbol(id);
-        if (!symbol) {
-          console.warn(`Symbol "${id}" could not be loaded. Please make sure you have added the symbol with map.addSymbol().`);
-          return;
-        }     
-        this.symbolManager.setSymbolTolayer(layer.id, id);     
-        this.symbolLayerManager('mapbox', this).addLayer(layer, symbol, before);
+      if(layer.symbol) {
+        this.symbolLayerManager(this).addLayer(layer, layer.symbol, before);
         return this;
       }
 
@@ -137,18 +130,12 @@ export var MapExtend = (function () {
     );
   };
 
-  mapboxgl.Map.prototype.setSymbol = function (layerId, id) {
-    const symbol = this.symbolManager.getSymbol(id);
-    if (!symbol) {
-      console.warn(`Symbol "${id}" could not be loaded. Please make sure you have added the symbol with map.addSymbol().`);
-      return;
-    }
-    const oldSymbol = this.symbolManager.getSymbolByLayerId(layerId);
-    this.symbolLayerManager('mapbox', this).setSymbol(layerId, oldSymbol, symbol);
+  mapboxgl.Map.prototype.setSymbol = function (layerId, symbol) {
+    this.symbolLayerManager(this).setSymbol(layerId, symbol);
   };
 
   mapboxgl.Map.prototype.setSymbolProperty = function (layerId, name, value) {
-    this.symbolLayerManager('mapbox', this).setSymbolProperty(layerId, name, value);
+    this.symbolLayerManager(this).setSymbolProperty(layerId, name, value);
   };
 
   if(!(mapboxgl.Map.prototype).setStyleBak) {
@@ -189,12 +176,12 @@ export var MapExtend = (function () {
 
   // 从symbol中获取图片url
   const getImageUrl = (map, symbol) => {
-    return map.symbolLayerManager('mapbox', map).getImage(symbol);
+    return map.symbolLayerManager(map).getImage(symbol);
   }
 
   // 更新symbol的图片参数为图片id。imageUrl => imageId
   const updateImageProperty = (map, symbol, imageId) => {
-    map.symbolLayerManager('mapbox', map).updateImageProperty(symbol, imageId);
+    map.symbolLayerManager(map).updateImageProperty(symbol, imageId);
   }
 
   mapboxgl.Map.prototype.loadSymbol = async function (symbol, callback) {

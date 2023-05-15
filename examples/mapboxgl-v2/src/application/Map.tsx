@@ -25,7 +25,7 @@ const Map = (props: MapProps) => {
     });
   }, [])
 
-  return <div id={"map"}></div>
+  return <div id="map"></div>
 }
 
 export default Map;
