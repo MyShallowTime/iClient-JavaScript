@@ -13,10 +13,23 @@ const IconCard = (props: IconCardContentProps) => {
     const modal = useRef<any>(null);
     const title = iconInfo.name;
     const id = iconInfo.id;
-    const isPolygon = type === 'polygon';
-    // eslint-disable-next-line import/no-dynamic-require
-    const { color, image } = isPolygon && require(`../../../static/symbols/polygon/polygon-${id}.json`);
-    const imgUrl = isPolygon ? image : `../../static/images/${type}/${id}.png`;
+
+    const getImageUrl = (id) => {
+        const isPolygon = type === 'polygon';
+        if(isPolygon) {
+            const { paint = {} } = isPolygon && require(`../../../static/symbols/polygon/${type}-${id}.json`), 
+                {'fill-color': color, 'fill-pattern': imgId} = paint;   
+            return {
+                color,
+                imageUrl: imgId ? `../../../static/images/${type}/${imgId}.png`: undefined
+            }      
+        }
+        return {
+            imageUrl: `../../../static/images/${type}/${type}-${id}.png`
+        };
+    }
+
+    const {imageUrl: imgUrl, color} = getImageUrl(id);
     return (
         <>
             <div className="icon-image" onClick={() => {
