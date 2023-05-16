@@ -228,8 +228,8 @@ const MapboxSymbolLayerManager = (m) => {
          * @param {*} symbol 
          */
         addSimpleSymbol(layer, symbol, before) {
-            const properties = { ...layer?.paint, ...layer?.layout };
-            Object.assign(symbol, properties);
+            layer.paint && Object.assign(symbol.paint, layer.paint);
+            layer.layout && Object.assign(symbol.layout, layer.layout);
             map.addLayerBak({ ...layer, ...symbol }, before);
         },
 

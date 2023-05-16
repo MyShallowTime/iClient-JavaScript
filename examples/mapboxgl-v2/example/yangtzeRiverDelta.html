@@ -98,9 +98,13 @@
     const createDevelopLayer = async () => {
       await map.loadSymbol(`line-63020102`, (_err, newSymbol) => {
         Object.assign(newSymbol, {
-          width: 8,
-          dasharray: [2, 0.5],
-          cap: 'butt'
+          paint: {
+            "line-width": 8,
+            "line-dasharray": [2, 0.5]
+          },
+          layout: {
+            "line-cap": 'butt'
+          }
         });
         map.addSymbol("line-custom-63020102", newSymbol);
       });
