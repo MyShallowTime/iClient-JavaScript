@@ -176,7 +176,7 @@ export var MapExtend = (function () {
 
   // 从symbol中获取图片url
   const getImageUrl = (map, symbol) => {
-    return map.symbolLayerManager(map).getImage(symbol);
+    return map.symbolLayerManager(map).getImageUrl(symbol);
   }
 
   // 更新symbol的图片参数为图片id。imageUrl => imageId

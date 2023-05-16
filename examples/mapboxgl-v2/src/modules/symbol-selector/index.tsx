@@ -50,13 +50,26 @@ const SymbolSelector = (props: SymbolContentProps) => {
         setIds(getIds(activeStyle));
     }, [activeStyle]);
 
+    const getImageUrl = (id) => {
+        const isPolygon = type === 'polygon';
+        if(isPolygon) {
+            const { paint = {} } = isPolygon && require(`../../../static/symbols/polygon/${type}-${id}.json`), 
+                {'fill-color': color, 'fill-pattern': imgId} = paint;   
+            return {
+                color,
+                imageUrl: imgId ? `../../../static/images/${type}/${imgId}.png`: undefined
+            }      
+        }
+        return {
+            imageUrl: `../../../static/images/${type}/${type}-${id}.png`
+        };
+    }
+
     const getSymbol = (symbolInfos) => {
         return symbolInfos?.map(({ id, name }) => {
             const newSymbolId = type + '-' + id;
-            const isPolygon = type === 'polygon';
-            const { paint = {} } = isPolygon && require(`../../../static/symbols/polygon/${newSymbolId}.json`), 
-                {'fill-color': color, 'fill-pattern': image} = paint;
-            return <IconCard key={type + id} background={color} imgUrl={isPolygon ? image : `../../../static/images/${type}/${id}.png`} title={name} onIconClick={() => {
+            const {color, imageUrl} = getImageUrl(id);  
+            return <IconCard key={type + id} background={color} imgUrl={imageUrl} title={name} onIconClick={() => {
                 onIconClick(newSymbolId);
             }} isSelected={newSymbolId === selectedSymbolId} />
         });

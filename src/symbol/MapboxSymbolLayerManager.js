@@ -203,7 +203,6 @@ const MapboxSymbolLayerManager = (m) => {
          * @returns {undefined}
          */
         setSymbol(layerId, symbolInfo) {
-            const oldSymbol = map.symbolManager.getSymbolByLayerId(layerId);
             if (typeof symbolInfo === 'string') {
                 const symbol = map.symbolManager.getSymbol(symbolInfo);
                 if (!symbol) {
@@ -337,12 +336,22 @@ const MapboxSymbolLayerManager = (m) => {
          * @param {*} symbol 
          * @returns 
          */
-        getImage(symbol) {
+        getImageUrl(symbol) {
             // 图片出图的只会是单图层
             if(isArray(symbol)) {return;}
             
             const {type, name} = this.getImageKey(symbol);
-            return symbol[type]?.[name];
+            const imageId = symbol[type]?.[name];
+            if(!imageId) {return;}
+
+            const dirType = {
+                [LayerType.circle]: 'point',
+                [LayerType.symbol]: 'point',
+                [LayerType.line]: 'line',
+                [LayerType.fill]: 'polygon'
+            }
+            const layerType = this.getSymbolType(symbol);
+            return  `../static/images/${dirType[layerType]}/${imageId}.png` 
         }
     }
 };
