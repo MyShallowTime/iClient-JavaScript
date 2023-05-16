@@ -46,10 +46,6 @@ export var MapExtend = (function () {
         this.symbolLayerManager('mapbox', this).setSymbol(layerId, symbol);
     };
 
-    maplibregl.Map.prototype.setSymbolProperty = function (layerId, name, value) {
-        this.symbolLayerManager('mapbox', this).setSymbolProperty(layerId, name, value);
-    };
-
     if(!(maplibregl.Map.prototype).setStyleBak) {
         (maplibregl.Map.prototype).setStyleBak = maplibregl.Map.prototype.setStyle;
         maplibregl.Map.prototype.setStyle = function (style, options) {

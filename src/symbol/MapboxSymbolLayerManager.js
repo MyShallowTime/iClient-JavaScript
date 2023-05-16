@@ -1,7 +1,6 @@
 import {LayerType} from "./DefaultValue";
 import { Util } from "@supermap/iclient-common/commontypes/Util";
 import {isArray} from "lodash";
-import { isPaintKey } from "./SymbolTransformUtil";
 
 // 判断符号类型
 const GET_TYPE_RULE = [{
@@ -227,22 +226,6 @@ const MapboxSymbolLayerManager = (m) => {
                 const layout = this.getExpression("layout", symbolInfos, symbolInfo);
                 this.setSimpleSymbol(layerId, {paint, layout});
             }
-        },
-
-        /**
-         * 更新图层上的symbol属性
-         * @param layerId 
-         * @param name mapbox key
-         * @param value 样式值
-         * @returns {undefined}
-         */
-        setSymbolProperty(layerId, name, value) {
-            const type = isPaintKey(name) ? 'paint' : 'layout';
-            const rule = {
-                paint: 'setPaintProperty',
-                layout: 'setLayoutProperty'
-            }
-            map[rule[type]](layerId, name, value);
         },
 
         /**

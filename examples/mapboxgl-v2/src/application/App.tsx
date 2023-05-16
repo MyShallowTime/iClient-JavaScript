@@ -5,6 +5,10 @@ import { cloneDeep, uniqueId } from 'lodash';
 import { getMapboxKey, isPaintKey } from '../utils/StyleSettingUtil';
 // import '../../../../src/mapboxgl/core/MapExtend';
 
+const SET_PROPERTY_RULE = {
+    paint: 'setPaintProperty',
+    layout: 'setLayoutProperty'
+}
 const App = () => {
     const [map, setMap] = useState<any>();
     const [layersInfo, setLayersInfo] = useState<any[]>([]);
@@ -260,6 +264,7 @@ const App = () => {
         const type = getLayerType(compositeLayerId ?? layerId);
         const layer = getLayer(layerId);
         const mapboxKey = type && getMapboxKey[type](key);
+        const paintOrLayout = isPaintKey(mapboxKey) ? 'paint' : 'layout';
 
         if (type === 'point' && key === 'color') {
             const ImageId: string = layer?.layout?.['icon-image'];
@@ -267,16 +272,16 @@ const App = () => {
                 const sdfImageId = uniqueId('sdf_');
                 const image = map.symbolManager.getImageInfo(ImageId);
                 map.addImage(sdfImageId, image, { sdf: true });
-                map.setSymbolProperty(layerId, 'icon-image', sdfImageId);
+                map.setLayoutProperty(layerId, 'icon-image', sdfImageId);
             }
         } else if (type === 'line' && key === 'visibility') {
             const layerIds = map.compositeLayersManager.getLayers(layerId) ?? [layerId];
             layerIds.forEach((layerId) => {
-                map.setSymbolProperty(layerId, mapboxKey, value);
+                map[SET_PROPERTY_RULE[paintOrLayout]](layerId, mapboxKey, value);
             });
             return;
         }
-        map.setSymbolProperty(layerId, mapboxKey, value);
+        map[SET_PROPERTY_RULE[paintOrLayout]](layerId, mapboxKey, value);
     };
 
     const getCompositeLayersIds = (layerId: string): string[] => {

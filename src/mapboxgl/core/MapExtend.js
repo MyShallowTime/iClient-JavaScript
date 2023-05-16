@@ -134,10 +134,6 @@ export var MapExtend = (function () {
     this.symbolLayerManager(this).setSymbol(layerId, symbol);
   };
 
-  mapboxgl.Map.prototype.setSymbolProperty = function (layerId, name, value) {
-    this.symbolLayerManager(this).setSymbolProperty(layerId, name, value);
-  };
-
   if(!(mapboxgl.Map.prototype).setStyleBak) {
     (mapboxgl.Map.prototype).setStyleBak = mapboxgl.Map.prototype.setStyle;
     mapboxgl.Map.prototype.setStyle = function (style, options) {
