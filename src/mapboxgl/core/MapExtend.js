@@ -196,7 +196,7 @@ export var MapExtend = (function () {
           message: 'this symbol.image is not found.'
         }
       } else {
-        updateImageProperty(this, symbol, imageId);
+        updateImageProperty(this, symbolInfo, imageId);
       }
     }
     // 这里需不需要创建对应的符号类?

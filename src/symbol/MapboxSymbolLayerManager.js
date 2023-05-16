@@ -239,8 +239,7 @@ const MapboxSymbolLayerManager = (m) => {
          * @param {*} symbol 
          */
         addMultiSymbol(layer, symbol, before) {
-            const { styles } = symbol;
-            styles.forEach((style, index) => {
+            symbol.forEach((style, index) => {
                 const id = index === 0 ? layer.id : Util.createUniqueID('SuperMap.Symbol_');
                 this.addSimpleSymbol({ ...layer, id }, style, before);
                 map.compositeLayersManager.addLayer(layer.id, id);
