@@ -54,7 +54,8 @@ const SymbolSelector = (props: SymbolContentProps) => {
         return symbolInfos?.map(({ id, name }) => {
             const newSymbolId = type + '-' + id;
             const isPolygon = type === 'polygon';
-            const { color, image } = isPolygon && require(`../../../static/symbols/polygon/${newSymbolId}.json`);
+            const { paint = {} } = isPolygon && require(`../../../static/symbols/polygon/${newSymbolId}.json`), 
+                {'fill-color': color, 'fill-pattern': image} = paint;
             return <IconCard key={type + id} background={color} imgUrl={isPolygon ? image : `../../../static/images/${type}/${id}.png`} title={name} onIconClick={() => {
                 onIconClick(newSymbolId);
             }} isSelected={newSymbolId === selectedSymbolId} />

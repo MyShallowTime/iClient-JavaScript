@@ -12,12 +12,13 @@ const Map = (props: MapProps) => {
 
   useEffect(() => {
     // const map = new (window as any).maplibregl.Map({
-    const map = new (window as any).mapboxgl.Map({
+    const map = new window.mapboxgl.Map({
       container: 'map',
       style: BaseMapStyle,
       center: [100, 35],
       zoom: 4.36
     });
+
     map.on('load', async () => {
       (window as any).map = map;
       onLoadedMap(map);

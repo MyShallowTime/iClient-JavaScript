@@ -19,7 +19,7 @@ const PointStyleSetting = (props: PointStyleSettingProps) => {
     const { changeLayerStyle, layerId, getLayerPropertyStyle, getImageInfo, selectedSymbolId } = props;
     const defaultStyle = {
         size: 1,
-        color: '#fff',
+        color: '#000',
         rotate: 0,
         opacity: 1,
         translate: [0, 0]
@@ -28,16 +28,15 @@ const PointStyleSetting = (props: PointStyleSettingProps) => {
 
     useEffect(() => {
         setStyle({
-            ...style,
-            size: getLayerPropertyStyle(layerId, 'size'),
-            color: getLayerPropertyStyle(layerId, 'color'),
-            rotate: getLayerPropertyStyle(layerId, 'rotate'),
-            opacity: getLayerPropertyStyle(layerId, 'opacity'),
-            translate: getLayerPropertyStyle(layerId, 'translate')
+            size: getLayerPropertyStyle(layerId, 'size') ?? defaultStyle.size,
+            color: getLayerPropertyStyle(layerId, 'color') ?? defaultStyle.color,
+            rotate: getLayerPropertyStyle(layerId, 'rotate') ?? defaultStyle.rotate,
+            opacity: getLayerPropertyStyle(layerId, 'opacity') ?? defaultStyle.opacity,
+            translate: getLayerPropertyStyle(layerId, 'translate') ?? defaultStyle.translate
         });
     }, [selectedSymbolId]);
 
-    const { size, color, translate, rotate, opacity } = style
+    const { size, color, translate=[], rotate, opacity } = style
     const isDataDrivenRotation = isArray(rotate) && isArray(rotate[1]);
 
     const changeStyle = (key, value): void => {

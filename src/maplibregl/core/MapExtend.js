@@ -24,9 +24,10 @@ export var MapExtend = (function () {
         if(id) {
             const symbol = this.symbolManager.getSymbol(id);
             if (!symbol) {
-            console.warn(`Symbol "${id}" could not be loaded. Please make sure you have added the symbol with map.addSymbol().`);
-            return;
+                console.warn(`Symbol "${id}" could not be loaded. Please make sure you have added the symbol with map.addSymbol().`);
+                return;
             }          
+            this.symbolManager.setSymbolTolayer(layer.id, id);
             this.symbolManager.setSymbolTolayer(layer.id, id);
             this.symbolLayerManager('mapbox', this).addLayer(layer, symbol);
             return this;

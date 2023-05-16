@@ -12,7 +12,7 @@ import SymbolManager from '../../symbol/SymbolManager';
  * @description  扩展了 mapboxgl.Map 对图层相关的操作。
  * @private
  */
- const mapboxgl = window.mapboxgl;
+const mapboxgl = window.mapboxgl;
 export var MapExtend = (function () {
   mapboxgl.Map.prototype.overlayLayersManager = {};
   mapboxgl.Map.prototype.compositeLayersManager = CompositeLayersManager();
@@ -170,26 +170,37 @@ export var MapExtend = (function () {
 
   const getSymbol = (symbolId) => {
     // eslint-disable-next-line import/no-dynamic-require
-      const symbolInfo = require(`../../../examples/mapboxgl-v2/static/symbols/${symbolId.split('-')[0]}/${symbolId}.json`);
-      return JSON.parse(JSON.stringify(symbolInfo));
+    const symbolInfo = require(`../../../examples/mapboxgl-v2/static/symbols/${symbolId.split('-')[0]}/${symbolId}.json`);
+    return JSON.parse(JSON.stringify(symbolInfo));
+  }
+
+  // 从symbol中获取图片url
+  const getImageUrl = (map, symbol) => {
+    return map.symbolLayerManager(map).getImage(symbol);
+  }
+
+  // 更新symbol的图片参数为图片id。imageUrl => imageId
+  const updateImageProperty = (map, symbol, imageId) => {
+    map.symbolLayerManager(map).updateImageProperty(symbol, imageId);
   }
 
   mapboxgl.Map.prototype.loadSymbol = async function (symbol, callback) {
     let error;
     const symbolInfo = typeof symbol === 'string' ? await getSymbol(symbol) : symbol;
+    const imageUrl =  getImageUrl(this, symbolInfo);
     if(!symbolInfo) {
       error = {
         message: 'this symbol is not exists.'
       }
-    } else if(['ImagePoint', 'ImageLine', 'ImagePolygon'].includes(symbolInfo.type)) {
+    } else if(imageUrl) {
       // 如果需要使用到image 的需要loadimage
-      const imageId = await addImageToMap(this, symbolInfo.image);
+      const imageId = await addImageToMap(this, imageUrl);
       if(!imageId) {
         error = {
           message: 'this symbol.image is not found.'
         }
       } else {
-        symbolInfo.image = imageId;
+        updateImageProperty(this, symbol, imageId);
       }
     }
     // 这里需不需要创建对应的符号类?
@@ -267,4 +278,3 @@ export var MapExtend = (function () {
   }
 })();
 window.mapboxgl = mapboxgl;
-
