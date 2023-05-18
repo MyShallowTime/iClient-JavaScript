@@ -155,6 +155,7 @@ export var MapExtend = (function () {
           resolve(undefined);
           return;
         }
+        // TODO
         const id = Util.createUniqueID('SuperMap.Symbol_');
         map.addImage(id, image);
         // 为了解决sdf问题，需要把load后的image信息存下
@@ -180,6 +181,7 @@ export var MapExtend = (function () {
     map.symbolLayerManager(map).updateImageProperty(symbol, imageId);
   }
 
+  // symbol：symbolID/symbolJSON
   mapboxgl.Map.prototype.loadSymbol = async function (symbol, callback) {
     let error;
     const symbolInfo = typeof symbol === 'string' ? await getSymbol(symbol) : symbol;
