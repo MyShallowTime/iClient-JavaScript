@@ -21479,7 +21479,7 @@ var external_mapboxgl_default = /*#__PURE__*/__webpack_require__.n(external_mapb
  * 组合图层管理器
  * @returns {Object} 
  */
-const CompositeLayer = () => {
+ const CompositeLayersManager = () => {
     const layers = {};
     return {
         /**
@@ -21503,7 +21503,7 @@ const CompositeLayer = () => {
         removeLayer(id, childId) {
             if (childId) {
                 layers[id] = layers[id].filter(l => l !== childId);
-                if (layers[id].length < 2) {
+                if(layers[id].length < 2) {
                     delete layers[id];
                 }
                 return;
@@ -21535,7 +21535,7 @@ const CompositeLayer = () => {
     }
 };
 
-/* harmony default export */ const symbol_CompositeLayer = (CompositeLayer);
+/* harmony default export */ const CompositeLayer = (CompositeLayersManager);
 ;// CONCATENATED MODULE: ./src/common/commontypes/BaseTypes.js
 /* Copyright© 2000 - 2022 SuperMap Software Co.Ltd. All rights reserved.
  * This program are made available under the terms of the Apache License, Version 2.0
@@ -23792,7 +23792,7 @@ const SymbolLayer = () => {
 }
 /* harmony default export */ const symbol_SymbolLayer = (SymbolLayer);
 ;// CONCATENATED MODULE: ./src/mapboxgl/symbol/Symbol.js
-class Symbol_Symbol {
+class SymbolManager {
     symbols;// addSymbol接口添加的symbol信息
     images; // 在loadImage的时候存下image
     #layerSymbols; // 图层与symbol的映射关系
@@ -23836,7 +23836,7 @@ class Symbol_Symbol {
     }
 }
 
-/* harmony default export */ const symbol_Symbol = (Symbol_Symbol);
+/* harmony default export */ const symbol_Symbol = (SymbolManager);
 
 
 ;// CONCATENATED MODULE: ./src/mapboxgl/core/MapExtend.js
@@ -23856,7 +23856,7 @@ class Symbol_Symbol {
 // const mapboxgl = window.mapboxgl;
 var MapExtend = (function () {
   (external_mapboxgl_default()).Map.prototype.overlayLayersManager = {};
-  (external_mapboxgl_default()).Map.prototype.compositeLayersManager = symbol_CompositeLayer();
+  (external_mapboxgl_default()).Map.prototype.compositeLayersManager = CompositeLayer();
   (external_mapboxgl_default()).Map.prototype.symbolLayerManager = symbol_SymbolLayer();
   (external_mapboxgl_default()).Map.prototype.symbolManager = new symbol_Symbol();
 
@@ -23990,7 +23990,7 @@ var MapExtend = (function () {
   }
 
   ;(external_mapboxgl_default()).Map.prototype.addSymbolLibrary = async function (symbolLibrary) {
-    (external_mapboxgl_default()).Map.prototype.SymbolLibrary = symbolLibrary;
+    (external_mapboxgl_default()).Map.prototype.symbolLibrary = symbolLibrary;
   }
 
   (external_mapboxgl_default()).Map.prototype.loadSymbol = async function (symbol, callback) {
@@ -23999,12 +23999,14 @@ var MapExtend = (function () {
     if(typeof symbol === 'string') {
       symbolInfo = this.symbolManager.getSymbol(symbol);
       if (!symbolInfo) {
-        if(!this.SymbolLibrary) {
+        if(!this.symbolLibrary) {
           error = {
-            message: 'SymbolLibrary is not exists. please "addSymbolLibrary'
+            message: 'symbolLibrary is not exists. please "addSymbolLibrary'
           };
+          callback(error);
+          return;
         }
-        const symbolResult = await this.SymbolLibrary?.getSymbol?.(symbol);
+        const symbolResult = await this.symbolLibrary.getSymbol?.(symbol);
         if(!symbolResult) {
           error = {
               message: 'This symbol is not exists.'
@@ -39211,7 +39213,7 @@ Events.prototype.BROWSER_EVENTS = [
  * @classdesc Web 符号抽象类，描述地理要素的图形属性。
  * @usage
  */
-class commontypes_Symbol_Symbol {
+class Symbol_Symbol {
     constructor() {
         this.CLASS_NAME = "SuperMap.Symbol";
     }
@@ -39509,7 +39511,7 @@ const DefaultValue_LayerType = {
  * @param {string} [options.color = "#000"] - 符号颜色。
  * @param {number} [options.opacity = 1] - 符号透明度。
  */
-class Point_Point extends commontypes_Symbol_Symbol {
+class Point_Point extends Symbol_Symbol {
 
     constructor(options) {
         super();
@@ -39826,7 +39828,7 @@ class ImagePoint extends Point_Point {
  * @param {number} [options.width = 1] - 线宽度。
  * @param {number} [options.opacity = 1] - 符号透明度。
  */
-class Line extends commontypes_Symbol_Symbol {
+class Line extends Symbol_Symbol {
 
     constructor(options) {
         super();
@@ -41378,7 +41380,7 @@ class ArcLine3D extends (/* unused pure expression or super */ null && (Line3D))
  * @param {object} [options] - 参数。 
  * @param {number} [options.opacity = 1] - 符号透明度。
  */
-class Polygon_Polygon extends commontypes_Symbol_Symbol {
+class Polygon_Polygon extends Symbol_Symbol {
 
     constructor(options) {
         super();
@@ -41537,7 +41539,7 @@ class ImagePolygon extends Polygon_Polygon {
  * const symbol = new TextSymbol();
  * @usage
  */
-class Text extends commontypes_Symbol_Symbol {
+class Text extends Symbol_Symbol {
 
     constructor(options) {
         super();

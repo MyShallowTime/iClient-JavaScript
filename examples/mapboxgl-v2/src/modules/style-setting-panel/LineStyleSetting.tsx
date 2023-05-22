@@ -43,10 +43,23 @@ const LineStyleSetting = (props: LineStyleSettingProps) => {
 
     const getDashArray = (id, percent) => {
        const beforeDash = getLayerPropertyStyle(id, 'dasharray'); 
+       if(!beforeDash || beforeDash.length === 0) return;
        const result = beforeDash.map(v => {
             return v / percent;
        });
        return result;
+    }
+
+    const onWholeWidthChange = (v) => {
+        if (v === 0) return;
+        const percent = v / wholeWidth;
+        lineIds.forEach(id => {
+            const width = getLayerPropertyStyle(id, 'width'), offset = getLayerPropertyStyle(id, 'offset'), dasharray = getDashArray(id, percent);
+            width && changeLayerStyle(id, 'width', width * percent);
+            offset && changeLayerStyle(id, 'offset', offset * percent);
+            dasharray && changeLayerStyle(id, 'dasharray', dasharray);
+            setWholeWidth(v);
+        });
     }
 
     return (
@@ -55,16 +68,7 @@ const LineStyleSetting = (props: LineStyleSettingProps) => {
                 <EditorLayout title='整体线宽'>
                     <NumberEditor
                         value={wholeWidth}
-                        onChange={(v: any) => {
-                            if (v === 0) return;
-                            const percent = v / wholeWidth;
-                            lineIds.forEach(id => {
-                                changeLayerStyle(id, 'width', getLayerPropertyStyle(id, 'width') * percent);
-                                changeLayerStyle(id, 'offset', getLayerPropertyStyle(id, 'offset') * percent);
-                                changeLayerStyle(id, 'dasharray', getDashArray(id, percent));
-                                setWholeWidth(v);
-                            });
-                        }}
+                        onChange={onWholeWidthChange}
                         min={0.01}
                         max={100}
                         suffix={'PX'}
