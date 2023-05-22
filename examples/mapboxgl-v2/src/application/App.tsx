@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import View from './View';
 import './style';
-import { cloneDeep, uniqueId } from 'lodash';
+import { uniqueId } from 'lodash';
 import { getMapboxKey, isPaintKey } from '../utils/StyleSettingUtil';
 // import '../../../../src/mapboxgl/core/MapExtend';
 
@@ -25,16 +25,15 @@ const App = () => {
     }, [!!map]);
 
     const onLoadedMap = async (map: any) => {
+        map.addSymbolLibrary(new (window as any).SymbolLibrary("../../libs/symbol"));
         setMap(map);
     }
 
     // 添加图层
     const loadPreSymbol = async (preSymbolInfo) => {
         const { symbolId, style = {} } = preSymbolInfo;
-        // eslint-disable-next-line import/no-dynamic-require
-        const symbolInfo = require(`../../static/symbols/${symbolId.split('-')[0]}/${symbolId}.json`);
         const id = uniqueId();
-        await map.loadSymbol(cloneDeep(symbolInfo), (_err, symbol) => {
+        await map.loadSymbol(symbolId, (_err, symbol) => {
             style.paint &&  Object.assign(symbol.paint, style.paint);
             style.layout &&  Object.assign(symbol.layout, style.layout);
             map.addSymbol(id, symbol);
@@ -228,11 +227,8 @@ const App = () => {
         console.log(symbolId);
         if (!map) return;
         const type = getLayerType(layerId);
-        // eslint-disable-next-line import/no-dynamic-require
-        const symbolInfo = cloneDeep(require(`../../static/symbols/${type}/${symbolId}.json`));
-        console.log(symbolInfo, 'symbolInfo');
         const id = uniqueId();
-        await map.loadSymbol(symbolInfo, (_err, symbol) => {
+        await map.loadSymbol(symbolId, (_err, symbol) => {
             if(type === 'point') {
                 symbol.layout['icon-allow-overlap'] = true;
                 symbol.layout['icon-size'] = 0.16;
