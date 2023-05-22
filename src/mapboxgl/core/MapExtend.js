@@ -1,23 +1,22 @@
 /* Copyright© 2000 - 2022 SuperMap Software Co.Ltd. All rights reserved.
  * This program are made available under the terms of the Apache License, Version 2.0
  * which accompanies this distribution and is available at http://www.apache.org/licenses/LICENSE-2.0.html.*/
-import { Util } from '@supermap/iclient-common/commontypes/Util';
-// import mapboxgl from 'mapbox-gl';
-import CompositeLayersManager from '../../symbol/CompositeLayersManager';
-import SymbolLayerManager from '../../symbol/SymbolLayerManager';
-import SymbolManager from '../../symbol/SymbolManager';
+import mapboxgl from 'mapbox-gl';
+import CompositeLayer from '../symbol/CompositeLayer';
+import SymbolLayer from '../symbol/SymbolLayer';
+import Symbol from '../symbol/Symbol';
 
 /**
  * @function MapExtend
  * @description  扩展了 mapboxgl.Map 对图层相关的操作。
  * @private
  */
-const mapboxgl = window.mapboxgl;
+// const mapboxgl = window.mapboxgl;
 export var MapExtend = (function () {
   mapboxgl.Map.prototype.overlayLayersManager = {};
-  mapboxgl.Map.prototype.compositeLayersManager = CompositeLayersManager();
-  mapboxgl.Map.prototype.symbolLayerManager = SymbolLayerManager();
-  mapboxgl.Map.prototype.symbolManager = new SymbolManager();
+  mapboxgl.Map.prototype.compositeLayersManager = CompositeLayer();
+  mapboxgl.Map.prototype.symbolLayerManager = SymbolLayer();
+  mapboxgl.Map.prototype.symbolManager = new Symbol();
 
   if (mapboxgl.Map.prototype.addLayerBak === undefined) {
     mapboxgl.Map.prototype.addLayerBak = mapboxgl.Map.prototype.addLayer;
@@ -148,58 +147,42 @@ export var MapExtend = (function () {
     }
   }
 
-  const addImageToMap = (map, url) => {
-    return new Promise((resolve) => {
-      map.loadImage(url, (_error, image) => {
-        if(_error) {
-          resolve(undefined);
-          return;
-        }
-        const id = Util.createUniqueID('SuperMap.Symbol_');
-        map.addImage(id, image);
-        // 为了解决sdf问题，需要把load后的image信息存下
-        map.symbolManager.addImageInfo(id, image);
-        resolve(id);
-      });
-    });
-  };
-
-  const getSymbol = (symbolId) => {
-    // eslint-disable-next-line import/no-dynamic-require
-    const symbolInfo = require(`../../../examples/mapboxgl-v2/static/symbols/${symbolId.split('-')[0]}/${symbolId}.json`);
-    return JSON.parse(JSON.stringify(symbolInfo));
-  }
-
-  // 从symbol中获取图片url
-  const getImageUrl = (map, symbol) => {
-    return map.symbolLayerManager(map).getImageUrl(symbol);
-  }
-
-  // 更新symbol的图片参数为图片id。imageUrl => imageId
-  const updateImageProperty = (map, symbol, imageId) => {
-    map.symbolLayerManager(map).updateImageProperty(symbol, imageId);
+  mapboxgl.Map.prototype.addSymbolLibrary = async function (symbolLibrary) {
+    mapboxgl.Map.prototype.symbolLibrary = symbolLibrary;
   }
 
   mapboxgl.Map.prototype.loadSymbol = async function (symbol, callback) {
     let error;
-    const symbolInfo = typeof symbol === 'string' ? await getSymbol(symbol) : symbol;
-    const imageUrl =  getImageUrl(this, symbolInfo);
-    if(!symbolInfo) {
-      error = {
-        message: 'this symbol is not exists.'
-      }
-    } else if(imageUrl) {
-      // 如果需要使用到image 的需要loadimage
-      const imageId = await addImageToMap(this, imageUrl);
-      if(!imageId) {
-        error = {
-          message: 'this symbol.image is not found.'
+    let symbolInfo = symbol;
+    if(typeof symbol === 'string') {
+      symbolInfo = this.symbolManager.getSymbol(symbol);
+      if (!symbolInfo) {
+        if(!this.symbolLibrary) {
+          error = {
+            message: 'symbolLibrary is not exists. please "addSymbolLibrary'
+          };
+          callback(error);
+          return;
         }
-      } else {
-        updateImageProperty(this, symbolInfo, imageId);
+        const symbolResult = await this.symbolLibrary.getSymbol?.(symbol);
+        if(!symbolResult) {
+          error = {
+              message: 'This symbol is not exists.'
+          };
+        } else {
+          const {value, image} = symbolResult;
+          symbolInfo = value;
+          const {type, name} = this.symbolLayerManager(this).getImageKey(value);
+          const id = value[type]?.[name];
+          if(id) {
+            // 如果需要使用到image 的需要addImage
+            this.addImage(id, image);
+            // 为了解决sdf问题，需要把load后的image信息存下
+            this.symbolManager.addImageInfo(id, image);
+          }
+        }
       }
     }
-    // 这里需不需要创建对应的符号类?
     callback(error, symbolInfo);
   };
   
@@ -273,4 +256,4 @@ export var MapExtend = (function () {
     }
   }
 })();
-window.mapboxgl = mapboxgl;
+// window.mapboxgl = mapboxgl;
