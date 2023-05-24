@@ -2,9 +2,9 @@
 * This program are made available under the terms of the Apache License, Version 2.0
 * which accompanies this distribution and is available at http://www.apache.org/licenses/LICENSE-2.0.html.*/
 import { Util } from '@supermap/iclient-common/commontypes/Util';
-import CompositeLayersManager from '../../symbol/CompositeLayersManager';
-import SymbolLayerManager from '../../symbol/SymbolLayerManager';
-import SymbolManager from '../../symbol/SymbolManager';
+import CompositeLayer from '../../mapboxgl/symbol/CompositeLayer';
+import SymbolLayer from '../../mapboxgl/symbol/SymbolLayer';
+import Symbol from '../../mapboxgl/symbol/Symbol';
 
 /**
  * @function MapExtend
@@ -13,9 +13,9 @@ import SymbolManager from '../../symbol/SymbolManager';
  */
 const maplibregl = window.maplibregl;
 export var MapExtend = (function () {
-    maplibregl.Map.prototype.compositeLayersManager = CompositeLayersManager();
-    maplibregl.Map.prototype.symbolLayerManager = SymbolLayerManager();
-    maplibregl.Map.prototype.symbolManager = new SymbolManager();
+    maplibregl.Map.prototype.compositeLayersManager = CompositeLayer();
+    maplibregl.Map.prototype.symbolLayerManager = SymbolLayer();
+    maplibregl.Map.prototype.symbolManager = new Symbol();
 
     if (maplibregl.Map.prototype.iclientAddLayer === undefined) {
         maplibregl.Map.prototype.iclientAddLayer = maplibregl.Map.prototype.addLayer;

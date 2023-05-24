@@ -24,6 +24,7 @@
   <div id="map"></div>
   <script type="text/javascript" src="https://iclient.supermap.io/web/libs/mapbox-gl-js/1.13.2/mapbox-gl.js"></script>
   <script type="text/javascript" src="../libs/mapboxgl/iclient-mapboxgl.js"></script>
+  <script type="text/javascript" src="../libs/symbol/iclient-symbol.js"></script>
   <script src="./datas/sanjiaozhou.js"></script>
   <script>
     const map = new mapboxgl.Map({
@@ -225,6 +226,7 @@
     }
 
     map.on('load', async () => {
+      map.addSymbolLibrary(new SymbolLibrary("../libs/symbol"));
       window.map = map;
       await loadSymbols();
       createPolygonLayer("Frame", "polygon-955463");
