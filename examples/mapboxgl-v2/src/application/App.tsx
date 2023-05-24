@@ -25,7 +25,7 @@ const App = () => {
     }, [!!map]);
 
     const onLoadedMap = async (map: any) => {
-        map.addSymbolLibrary(new (window as any).SymbolLibrary("../../libs/symbol"));
+        map.addSymbolLibrary(new (window as any).mapboxgl.supermap.SymbolLibrary("../../libs/resources/symbols"));
         setMap(map);
     }
 

@@ -24,7 +24,6 @@
   <div id="map"></div>
   <script type="text/javascript" src="https://iclient.supermap.io/web/libs/mapbox-gl-js/1.13.2/mapbox-gl.js"></script>
   <script type="text/javascript" src="../libs/mapboxgl/iclient-mapboxgl.js"></script>
-  <script type="text/javascript" src="../libs/symbol/iclient-symbol.js"></script>
   <script>
     const url = "https://iserver.supermap.io/iserver/services/map-china400/rest/maps/China";
     const map = new mapboxgl.Map({
@@ -140,7 +139,7 @@
     }
 
     map.on('load', async () => {
-      map.addSymbolLibrary(new SymbolLibrary("../libs/symbol"));
+      map.addSymbolLibrary(new mapboxgl.supermap.SymbolLibrary("../libs/resources/symbols"));
       await loadSymbol("line-63020004");
       createBOULLayer(630200, "line-63020004");
       await loadSymbol("line-64020004");
