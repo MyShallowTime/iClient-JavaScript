@@ -14,6 +14,8 @@ import { ColorsPickerUtil } from './ColorsPickerUtil';
 import { ArrayStatistic } from './ArrayStatistic';
 import { getMeterPerMapUnit, getWrapNum, conversionDegree } from './MapCalculateUtil';
 
+import SymbolLibrary from './SymbolLibrary';
+
 export {
   setCORS,
   isCORS,
@@ -24,5 +26,6 @@ export {
   ArrayStatistic,
   getMeterPerMapUnit,
   getWrapNum,
-  conversionDegree
+  conversionDegree,
+  SymbolLibrary
 };

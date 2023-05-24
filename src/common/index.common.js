@@ -334,7 +334,8 @@ import {
     ArrayStatistic,
     getMeterPerMapUnit,
     getWrapNum,
-    conversionDegree
+    conversionDegree,
+    SymbolLibrary
 } from './util';
 import { CartoCSS, ThemeStyle } from './style';
 import {
@@ -497,7 +498,8 @@ export {
     ArrayStatistic,
     getMeterPerMapUnit,
     getWrapNum,
-    conversionDegree
+    conversionDegree,
+    SymbolLibrary
 };
 export { IManager, IManagerCreateNodeParam, IManagerServiceBase };
 export {

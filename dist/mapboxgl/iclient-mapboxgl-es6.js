@@ -21469,7 +21469,7 @@ var __webpack_exports__ = {};
 (() => {
 "use strict";
 
-// UNUSED EXPORTS: AddressMatchService, AggregationParameter, AggregationTypes, AlongLineDirection, AnalystAreaUnit, AnalystSizeUnit, ArcAnimateLineSymbol, ArcAnimateLineSymbol3D, ArcImageLineSymbol, ArcLineSymbol, AreaSolarRadiationParameters, ArrayStatistic, AttributesPopContainer, Bounds, Browser, BucketAggParameter, BucketAggType, BufferAnalystParameters, BufferDistance, BufferEndType, BufferRadiusUnit, BufferSetting, BuffersAnalystJobsParameter, BurstPipelineAnalystParameters, CartoCSS, ChartQueryFilterParameter, ChartQueryParameters, ChartService, ChartType, ChartView, ChartViewModel, CityTabsPage, ClientType, ClipAnalystMode, ClipParameter, ColorDictionary, ColorGradientType, ColorSpaceType, ColorsPickerUtil, CommonContainer, CommonServiceBase, CommonTheme, CommonUtil, ComponentsUtil, ComputeWeightMatrixParameters, CreateDatasetParameters, Credential, DataFlowService, DataFormat, DataItemOrderBy, DataItemType, DataReturnMode, DataReturnOption, DatasetBufferAnalystParameters, DatasetInfo, DatasetOverlayAnalystParameters, DatasetService, DatasetSurfaceAnalystParameters, DatasetThiessenAnalystParameters, DatasourceConnectionInfo, DatasourceService, DeckglLayer, DensityKernelAnalystParameters, DirectionType, DropDownBox, EditFeaturesParameters, EditType, ElasticSearch, EngineType, EntityType, Event, Events, Exponent, FGBLayer, FacilityAnalyst3DParameters, FacilityAnalystSinks3DParameters, FacilityAnalystSources3DParameters, FacilityAnalystStreamParameters, FacilityAnalystTracedown3DParameters, FacilityAnalystTraceup3DParameters, FacilityAnalystUpstream3DParameters, Feature, FeatureService, FeatureShapeFactory, FeatureTheme, FeatureThemeGraph, FeatureThemeRankSymbol, FeatureThemeVector, FeatureVector, FetchRequest, FieldParameters, FieldService, FieldStatisticsParameters, FieldsFilter, FileReaderUtil, FillGradientMode, FilterField, FilterParameter, FindClosestFacilitiesParameters, FindLocationParameters, FindMTSPPathsParameters, FindPathParameters, FindServiceAreasParameters, FindTSPPathsParameters, Format, GenerateSpatialDataParameters, GeoCodingParameter, GeoDecodingParameter, GeoFeature, GeoFeatureThemeLayer, GeoHashGridAggParameter, GeoJSONFormat, GeoRelationAnalystParameters, Geometry, GeometryBufferAnalystParameters, GeometryCollection, GeometryCurve, GeometryGeoText, GeometryLineString, GeometryLinearRing, GeometryMultiLineString, GeometryMultiPoint, GeometryMultiPolygon, GeometryOverlayAnalystParameters, GeometryPoint, GeometryPolygon, GeometryRectangle, GeometrySurfaceAnalystParameters, GeometryThiessenAnalystParameters, GeometryType, GeoprocessingService, GetFeatureMode, GetFeaturesByBoundsParameters, GetFeaturesByBufferParameters, GetFeaturesByGeometryParameters, GetFeaturesByIDsParameters, GetFeaturesBySQLParameters, GetFeaturesParametersBase, GetFeaturesServiceBase, GetGridCellInfosParameters, GraduatedMode, Graph, GraphAxesTextDisplayMode, GraphThemeLayer, Graphic, GraphicLayer, GraticuleLayer, GreatCircleAnimateLineSymbol, GreatCircleImageLineSymbol, GreatCircleLineSymbol, Grid, GridCellInfosService, GridType, HeatMapLayer, HillshadeParameter, IManager, IManagerCreateNodeParam, IManagerServiceBase, IPortal, IPortalAddDataParam, IPortalAddResourceParam, IPortalDataConnectionInfoParam, IPortalDataMetaInfoParam, IPortalDataStoreInfoParam, IPortalQueryParam, IPortalQueryResult, IPortalRegisterServiceParam, IPortalResource, IPortalServiceBase, IPortalShareEntity, IPortalShareParam, IPortalUser, ImageCollectionService, ImageGFAspect, ImageGFHillShade, ImageGFOrtho, ImageGFSlope, ImagePointSymbol, ImagePolygonSymbol, ImageRenderingRule, ImageSearchParameter, ImageService, ImageStretchOption, IndexTabsPageContainer, InterpolationAlgorithmType, InterpolationAnalystParameters, InterpolationDensityAnalystParameters, InterpolationIDWAnalystParameters, InterpolationKrigingAnalystParameters, InterpolationRBFAnalystParameters, JSONFormat, JoinItem, JoinType, KernelDensityJobParameter, KeyServiceParameter, Label, LabelBackShape, LabelImageCell, LabelMatrixCell, LabelMixedTextStyle, LabelOverLengthMode, LabelSymbolCell, LabelThemeCell, LabelThemeLayer, Lang, LayerInfoService, LayerStatus, LayerType, LineSymbol, LinkItem, Logo, LonLat, MapExtend, MapService, MappingParameters, MapvDataSet, MapvLayer, MapvRenderer, MathExpressionAnalysisParameters, MeasureMode, MeasureParameters, MeasureService, MessageBox, MetricsAggParameter, MetricsAggType, NDVIParameter, NavTabsPage, NetworkAnalyst3DService, NetworkAnalystService, NetworkAnalystServiceBase, Online, OnlineData, OnlineQueryDatasParameter, OnlineServiceBase, OrderBy, OrderType, OutputSetting, OutputType, OverlapDisplayedOptions, OverlayAnalystParameters, OverlayGeoJobParameter, OverlayOperationType, PaginationContainer, PermissionType, Pixel, PixelFormat, PointSymbol, PointWithMeasure, PolygonSymbol, PopContainer, ProcessingService, ProcessingServiceBase, QueryByBoundsParameters, QueryByDistanceParameters, QueryByGeometryParameters, QueryBySQLParameters, QueryOption, QueryParameters, QueryService, Range, RangeMode, RangeTheme3DLayer, RangeThemeLayer, RankSymbol, RankSymbolThemeLayer, RasterFunctionParameter, RasterFunctionType, ResourceType, Route, RouteCalculateMeasureParameters, RouteLocatorParameters, SearchMode, SearchType, SecurityManager, Select, ServerColor, ServerFeature, ServerGeometry, ServerInfo, ServerStyle, ServerTextStyle, ServerTheme, ServerType, ServiceBase, ServiceStatus, SetDatasourceParameters, SetLayerInfoParameters, SetLayerStatusParameters, SetLayersInfoParameters, ShapeParameters, ShapeParametersCircle, ShapeParametersImage, ShapeParametersLabel, ShapeParametersLine, ShapeParametersPoint, ShapeParametersPolygon, ShapeParametersRectangle, ShapeParametersSector, SideType, SimpleAnimateLineSymbol, SimpleImageLineSymbol, SimpleLineSymbol, SimplePointSymbol, SingleObjectQueryJobsParameter, Size, SmoothMethod, Sortby, SpatialAnalystBase, SpatialAnalystService, SpatialQueryMode, SpatialRelationType, StatisticAnalystMode, StatisticMode, StopQueryParameters, SummaryAttributesJobsParameter, SummaryMeshJobParameter, SummaryRegionJobParameter, SummaryType, SuperMap, SupplyCenter, SupplyCenterType, SurfaceAnalystMethod, SurfaceAnalystParameters, SurfaceAnalystParametersSetting, TemplateBase, TerrainCurvatureCalculationParameters, TextAlignment, TextSymbol, Theme3DLayer, ThemeDotDensity, ThemeFeature, ThemeGraduatedSymbol, ThemeGraduatedSymbolStyle, ThemeGraph, ThemeGraphAxes, ThemeGraphItem, ThemeGraphSize, ThemeGraphText, ThemeGraphTextFormat, ThemeGraphType, ThemeGridRange, ThemeGridRangeItem, ThemeGridUnique, ThemeGridUniqueItem, ThemeLabel, ThemeLabelAlongLine, ThemeLabelBackground, ThemeLabelItem, ThemeLabelText, ThemeLabelUniqueItem, ThemeLayer, ThemeMemoryData, ThemeOffset, ThemeParameters, ThemeRange, ThemeRangeItem, ThemeService, ThemeStyle, ThemeType, ThemeUnique, ThemeUniqueItem, ThiessenAnalystParameters, ThreeLayer, ThreeLayerRenderer, TimeControlBase, TimeFlowControl, TokenServiceParameter, TopologyValidatorJobsParameter, TopologyValidatorRule, TrafficTransferAnalystService, TransferLine, TransferPathParameters, TransferPreference, TransferSolutionParameters, TransferTactic, Transform, TransportationAnalystParameter, TransportationAnalystResultSetting, TurnType, UGCLayer, UGCLayerType, UGCMapLayer, UGCSubLayer, Unique, UniqueTheme3DLayer, UniqueThemeLayer, Unit, UpdateDatasetParameters, UpdateEdgeWeightParameters, UpdateTurnNodeWeightParameters, Util, VariogramMode, Vector, VectorClipJobsParameter, WKTFormat, WallAnimateLineSymbol3D, WallLineSymbol3D, WebExportFormatType, WebMap, WebPrintingJobContent, WebPrintingJobCustomItems, WebPrintingJobExportOptions, WebPrintingJobImage, WebPrintingJobLayers, WebPrintingJobLayoutOptions, WebPrintingJobLegendOptions, WebPrintingJobLittleMapOptions, WebPrintingJobNorthArrowOptions, WebPrintingJobParameters, WebPrintingJobScaleBarOptions, WebPrintingJobService, WebScaleOrientationType, WebScaleType, WebScaleUnit, conversionDegree, getDefaultVectorTileStyle, getMeterPerMapUnit, getWrapNum, isCORS, setBackground, setCORS, setPaintProperty
+// UNUSED EXPORTS: AddressMatchService, AggregationParameter, AggregationTypes, AlongLineDirection, AnalystAreaUnit, AnalystSizeUnit, ArcAnimateLineSymbol, ArcAnimateLineSymbol3D, ArcImageLineSymbol, ArcLineSymbol, AreaSolarRadiationParameters, ArrayStatistic, AttributesPopContainer, Bounds, Browser, BucketAggParameter, BucketAggType, BufferAnalystParameters, BufferDistance, BufferEndType, BufferRadiusUnit, BufferSetting, BuffersAnalystJobsParameter, BurstPipelineAnalystParameters, CartoCSS, ChartQueryFilterParameter, ChartQueryParameters, ChartService, ChartType, ChartView, ChartViewModel, CityTabsPage, ClientType, ClipAnalystMode, ClipParameter, ColorDictionary, ColorGradientType, ColorSpaceType, ColorsPickerUtil, CommonContainer, CommonServiceBase, CommonTheme, CommonUtil, ComponentsUtil, ComputeWeightMatrixParameters, CreateDatasetParameters, Credential, DataFlowService, DataFormat, DataItemOrderBy, DataItemType, DataReturnMode, DataReturnOption, DatasetBufferAnalystParameters, DatasetInfo, DatasetOverlayAnalystParameters, DatasetService, DatasetSurfaceAnalystParameters, DatasetThiessenAnalystParameters, DatasourceConnectionInfo, DatasourceService, DeckglLayer, DensityKernelAnalystParameters, DirectionType, DropDownBox, EditFeaturesParameters, EditType, ElasticSearch, EngineType, EntityType, Event, Events, Exponent, FGBLayer, FacilityAnalyst3DParameters, FacilityAnalystSinks3DParameters, FacilityAnalystSources3DParameters, FacilityAnalystStreamParameters, FacilityAnalystTracedown3DParameters, FacilityAnalystTraceup3DParameters, FacilityAnalystUpstream3DParameters, Feature, FeatureService, FeatureShapeFactory, FeatureTheme, FeatureThemeGraph, FeatureThemeRankSymbol, FeatureThemeVector, FeatureVector, FetchRequest, FieldParameters, FieldService, FieldStatisticsParameters, FieldsFilter, FileReaderUtil, FillGradientMode, FilterField, FilterParameter, FindClosestFacilitiesParameters, FindLocationParameters, FindMTSPPathsParameters, FindPathParameters, FindServiceAreasParameters, FindTSPPathsParameters, Format, GenerateSpatialDataParameters, GeoCodingParameter, GeoDecodingParameter, GeoFeature, GeoFeatureThemeLayer, GeoHashGridAggParameter, GeoJSONFormat, GeoRelationAnalystParameters, Geometry, GeometryBufferAnalystParameters, GeometryCollection, GeometryCurve, GeometryGeoText, GeometryLineString, GeometryLinearRing, GeometryMultiLineString, GeometryMultiPoint, GeometryMultiPolygon, GeometryOverlayAnalystParameters, GeometryPoint, GeometryPolygon, GeometryRectangle, GeometrySurfaceAnalystParameters, GeometryThiessenAnalystParameters, GeometryType, GeoprocessingService, GetFeatureMode, GetFeaturesByBoundsParameters, GetFeaturesByBufferParameters, GetFeaturesByGeometryParameters, GetFeaturesByIDsParameters, GetFeaturesBySQLParameters, GetFeaturesParametersBase, GetFeaturesServiceBase, GetGridCellInfosParameters, GraduatedMode, Graph, GraphAxesTextDisplayMode, GraphThemeLayer, Graphic, GraphicLayer, GraticuleLayer, GreatCircleAnimateLineSymbol, GreatCircleImageLineSymbol, GreatCircleLineSymbol, Grid, GridCellInfosService, GridType, HeatMapLayer, HillshadeParameter, IManager, IManagerCreateNodeParam, IManagerServiceBase, IPortal, IPortalAddDataParam, IPortalAddResourceParam, IPortalDataConnectionInfoParam, IPortalDataMetaInfoParam, IPortalDataStoreInfoParam, IPortalQueryParam, IPortalQueryResult, IPortalRegisterServiceParam, IPortalResource, IPortalServiceBase, IPortalShareEntity, IPortalShareParam, IPortalUser, ImageCollectionService, ImageGFAspect, ImageGFHillShade, ImageGFOrtho, ImageGFSlope, ImagePointSymbol, ImagePolygonSymbol, ImageRenderingRule, ImageSearchParameter, ImageService, ImageStretchOption, IndexTabsPageContainer, InterpolationAlgorithmType, InterpolationAnalystParameters, InterpolationDensityAnalystParameters, InterpolationIDWAnalystParameters, InterpolationKrigingAnalystParameters, InterpolationRBFAnalystParameters, JSONFormat, JoinItem, JoinType, KernelDensityJobParameter, KeyServiceParameter, Label, LabelBackShape, LabelImageCell, LabelMatrixCell, LabelMixedTextStyle, LabelOverLengthMode, LabelSymbolCell, LabelThemeCell, LabelThemeLayer, Lang, LayerInfoService, LayerStatus, LayerType, LineSymbol, LinkItem, Logo, LonLat, MapExtend, MapService, MappingParameters, MapvDataSet, MapvLayer, MapvRenderer, MathExpressionAnalysisParameters, MeasureMode, MeasureParameters, MeasureService, MessageBox, MetricsAggParameter, MetricsAggType, NDVIParameter, NavTabsPage, NetworkAnalyst3DService, NetworkAnalystService, NetworkAnalystServiceBase, Online, OnlineData, OnlineQueryDatasParameter, OnlineServiceBase, OrderBy, OrderType, OutputSetting, OutputType, OverlapDisplayedOptions, OverlayAnalystParameters, OverlayGeoJobParameter, OverlayOperationType, PaginationContainer, PermissionType, Pixel, PixelFormat, PointSymbol, PointWithMeasure, PolygonSymbol, PopContainer, ProcessingService, ProcessingServiceBase, QueryByBoundsParameters, QueryByDistanceParameters, QueryByGeometryParameters, QueryBySQLParameters, QueryOption, QueryParameters, QueryService, Range, RangeMode, RangeTheme3DLayer, RangeThemeLayer, RankSymbol, RankSymbolThemeLayer, RasterFunctionParameter, RasterFunctionType, ResourceType, Route, RouteCalculateMeasureParameters, RouteLocatorParameters, SearchMode, SearchType, SecurityManager, Select, ServerColor, ServerFeature, ServerGeometry, ServerInfo, ServerStyle, ServerTextStyle, ServerTheme, ServerType, ServiceBase, ServiceStatus, SetDatasourceParameters, SetLayerInfoParameters, SetLayerStatusParameters, SetLayersInfoParameters, ShapeParameters, ShapeParametersCircle, ShapeParametersImage, ShapeParametersLabel, ShapeParametersLine, ShapeParametersPoint, ShapeParametersPolygon, ShapeParametersRectangle, ShapeParametersSector, SideType, SimpleAnimateLineSymbol, SimpleImageLineSymbol, SimpleLineSymbol, SimplePointSymbol, SingleObjectQueryJobsParameter, Size, SmoothMethod, Sortby, SpatialAnalystBase, SpatialAnalystService, SpatialQueryMode, SpatialRelationType, StatisticAnalystMode, StatisticMode, StopQueryParameters, SummaryAttributesJobsParameter, SummaryMeshJobParameter, SummaryRegionJobParameter, SummaryType, SuperMap, SupplyCenter, SupplyCenterType, SurfaceAnalystMethod, SurfaceAnalystParameters, SurfaceAnalystParametersSetting, SymbolLibrary, TemplateBase, TerrainCurvatureCalculationParameters, TextAlignment, TextSymbol, Theme3DLayer, ThemeDotDensity, ThemeFeature, ThemeGraduatedSymbol, ThemeGraduatedSymbolStyle, ThemeGraph, ThemeGraphAxes, ThemeGraphItem, ThemeGraphSize, ThemeGraphText, ThemeGraphTextFormat, ThemeGraphType, ThemeGridRange, ThemeGridRangeItem, ThemeGridUnique, ThemeGridUniqueItem, ThemeLabel, ThemeLabelAlongLine, ThemeLabelBackground, ThemeLabelItem, ThemeLabelText, ThemeLabelUniqueItem, ThemeLayer, ThemeMemoryData, ThemeOffset, ThemeParameters, ThemeRange, ThemeRangeItem, ThemeService, ThemeStyle, ThemeType, ThemeUnique, ThemeUniqueItem, ThiessenAnalystParameters, ThreeLayer, ThreeLayerRenderer, TimeControlBase, TimeFlowControl, TokenServiceParameter, TopologyValidatorJobsParameter, TopologyValidatorRule, TrafficTransferAnalystService, TransferLine, TransferPathParameters, TransferPreference, TransferSolutionParameters, TransferTactic, Transform, TransportationAnalystParameter, TransportationAnalystResultSetting, TurnType, UGCLayer, UGCLayerType, UGCMapLayer, UGCSubLayer, Unique, UniqueTheme3DLayer, UniqueThemeLayer, Unit, UpdateDatasetParameters, UpdateEdgeWeightParameters, UpdateTurnNodeWeightParameters, Util, VariogramMode, Vector, VectorClipJobsParameter, WKTFormat, WallAnimateLineSymbol3D, WallLineSymbol3D, WebExportFormatType, WebMap, WebPrintingJobContent, WebPrintingJobCustomItems, WebPrintingJobExportOptions, WebPrintingJobImage, WebPrintingJobLayers, WebPrintingJobLayoutOptions, WebPrintingJobLegendOptions, WebPrintingJobLittleMapOptions, WebPrintingJobNorthArrowOptions, WebPrintingJobParameters, WebPrintingJobScaleBarOptions, WebPrintingJobService, WebScaleOrientationType, WebScaleType, WebScaleUnit, conversionDegree, getDefaultVectorTileStyle, getMeterPerMapUnit, getWrapNum, isCORS, setBackground, setCORS, setPaintProperty
 
 ;// CONCATENATED MODULE: external "mapboxgl"
 const external_mapboxgl_namespaceObject = mapboxgl;
@@ -25449,7 +25449,7 @@ class Bounds {
  * var point = new GeometryPoint(-111.04, 45.68);
  * @usage
  */
-class Point extends Geometry_Geometry {
+class Point_Point extends Geometry_Geometry {
 
 
     constructor(x, y, type, tag) {
@@ -25488,7 +25488,7 @@ class Point extends Geometry_Geometry {
      */
     clone(obj) {
         if (obj == null) {
-            obj = new Point(this.x, this.y);
+            obj = new Point_Point(this.x, this.y);
         }
 
         // catch any randomly tagged-on properties
@@ -26158,7 +26158,7 @@ class LineString extends Curve {
                 dRotationBegin = dRotationBegin * Math.PI / 180;
                 var x = centerPoint.x + R * Math.cos(dRotationBegin);
                 var y = centerPoint.y + R * Math.sin(dRotationBegin);
-                circlePoints.push(new Point(x, y));
+                circlePoints.push(new Point_Point(x, y));
             }
             circlePoints.push(p3);
         }
@@ -26386,7 +26386,7 @@ class LinearRing extends LineString {
  *  var  region = new GeometryPolygon([linearRings]);
  * @usage
  */
-class Polygon extends Collection {
+class Polygon_Polygon extends Collection {
 
 
     constructor(components) {
@@ -27580,7 +27580,7 @@ class ServerStyle {
  * @extends {GeometryPoint}
  * @usage
  */
-class PointWithMeasure extends Point {
+class PointWithMeasure extends Point_Point {
 
     constructor(options) {
         super(options);
@@ -30367,11 +30367,11 @@ class ServerGeometry {
             len = geoParts.length;
         if (len > 0) {
             if (len === 1) {
-                return new Point(geoPoints[0].x, geoPoints[0].y);
+                return new Point_Point(geoPoints[0].x, geoPoints[0].y);
             } else {
                 var pointList = [];
                 for (let i = 0; i < len; i++) {
-                    pointList.push(new Point(geoPoints[i].x, geoPoints[i].y));
+                    pointList.push(new Point_Point(geoPoints[i].x, geoPoints[i].y));
                 }
                 return new MultiPoint(pointList);
             }
@@ -30394,7 +30394,7 @@ class ServerGeometry {
             if (len === 1) {
                 let pointList = [];
                 for (let i = 0; i < geoParts[0]; i++) {
-                    pointList.push(new Point(geoPoints[i].x, geoPoints[i].y));
+                    pointList.push(new Point_Point(geoPoints[i].x, geoPoints[i].y));
                 }
                 //判断线是否闭合，如果闭合，则返回LinearRing，否则返回LineString
                 if (pointList[0].equals(pointList[geoParts[0] - 1])) {
@@ -30407,7 +30407,7 @@ class ServerGeometry {
                 for (let i = 0; i < len; i++) {
                     let pointList = [];
                     for (let j = 0; j < geoParts[i]; j++) {
-                        pointList.push(new Point(geoPoints[j].x, geoPoints[j].y));
+                        pointList.push(new Point_Point(geoPoints[j].x, geoPoints[j].y));
                     }
                     lineList.push(new LineString(pointList));
                     geoPoints.splice(0, geoParts[i]);
@@ -30437,7 +30437,7 @@ class ServerGeometry {
         if (len > 0) {
             if (len === 1) {
                 for (i = 0, pointList = []; i < geoParts[0]; i++) {
-                    pointList.push(new Point(geoPoints[i].x, geoPoints[i].y, geoPoints[i].type));
+                    pointList.push(new Point_Point(geoPoints[i].x, geoPoints[i].y, geoPoints[i].type));
                 }
                 //判断线是否闭合，如果闭合，则返回LinearRing，否则返回LineString
                 if (pointList[0].equals(pointList[geoParts[0] - 1])) {
@@ -30450,7 +30450,7 @@ class ServerGeometry {
             } else {
                 for (i = 0, lineList = []; i < len; i++) {
                     for (j = 0, pointList = []; j < geoParts[i]; j++) {
-                        pointList.push(new Point(geoPoints[j].x, geoPoints[j].y));
+                        pointList.push(new Point_Point(geoPoints[j].x, geoPoints[j].y));
                     }
                     lineEPS = LineString.createLineEPS(pointList);
                     lineList.push(new LineString(lineEPS));
@@ -30491,9 +30491,9 @@ class ServerGeometry {
         var pointList = [];
         if (len == 1) {
             for (let i = 0; i < geoPoints.length; i++) {
-                pointList.push(new Point(geoPoints[i].x, geoPoints[i].y));
+                pointList.push(new Point_Point(geoPoints[i].x, geoPoints[i].y));
             }
-            polygonArray.push(new Polygon([new LinearRing(pointList)]));
+            polygonArray.push(new Polygon_Polygon([new LinearRing(pointList)]));
             return new MultiPolygon(polygonArray);
         }
         //处理复杂面
@@ -30505,10 +30505,10 @@ class ServerGeometry {
         var CCWIdent = [];
         for (let i = 0, pointIndex = 0; i < len; i++) {
             for (let j = 0; j < geoParts[i]; j++) {
-                pointList.push(new Point(geoPoints[pointIndex + j].x, geoPoints[pointIndex + j].y));
+                pointList.push(new Point_Point(geoPoints[pointIndex + j].x, geoPoints[pointIndex + j].y));
             }
             pointIndex += geoParts[i];
-            var polygon = new Polygon([new LinearRing(pointList)]);
+            var polygon = new Polygon_Polygon([new LinearRing(pointList)]);
             pointList = [];
             polygonArrayTemp.push(polygon);
             if (geoTopo.length === 0) {
@@ -30569,7 +30569,7 @@ class ServerGeometry {
                             polygonArray[polyLength - 1].components.concat(CCWArray);
                     } else {
                         for (let k = 0, length = CCWArray.length; k < length; k++) {
-                            polygonArray.push(new Polygon(CCWArray));
+                            polygonArray.push(new Polygon_Polygon(CCWArray));
                         }
                     }
                 }
@@ -30598,11 +30598,11 @@ class ServerGeometry {
         var lineEPS;
         if (len == 1) {
             for (var i = 0; i < geoPoints.length; i++) {
-                pointList.push(new Point(geoPoints[i].x, geoPoints[i].y));
+                pointList.push(new Point_Point(geoPoints[i].x, geoPoints[i].y));
             }
 
             lineEPS = LineString.createLineEPS(pointList);
-            polygonArray.push(new Polygon([new LinearRing(lineEPS)]));
+            polygonArray.push(new Polygon_Polygon([new LinearRing(lineEPS)]));
             return new MultiPolygon(polygonArray);
         }
         //处理复杂面
@@ -30614,12 +30614,12 @@ class ServerGeometry {
         var CCWIdent = [];
         for (let i = 0, pointIndex = 0; i < len; i++) {
             for (let j = 0; j < geoParts[i]; j++) {
-                pointList.push(new Point(geoPoints[pointIndex + j].x, geoPoints[pointIndex + j].y));
+                pointList.push(new Point_Point(geoPoints[pointIndex + j].x, geoPoints[pointIndex + j].y));
             }
             pointIndex += geoParts[i];
 
             lineEPS = LineString.createLineEPS(pointList);
-            var polygon = new Polygon([new LinearRing(lineEPS)]);
+            var polygon = new Polygon_Polygon([new LinearRing(lineEPS)]);
             pointList = [];
             polygonArrayTemp.push(polygon);
             if (geoTopo.length === 0) {
@@ -30680,7 +30680,7 @@ class ServerGeometry {
                             polygonArray[polyLength - 1].components.concat(CCWArray);
                     } else {
                         for (let k = 0, length = CCWArray.length; k < length; k++) {
-                            polygonArray.push(new Polygon(CCWArray));
+                            polygonArray.push(new Polygon_Polygon(CCWArray));
                         }
                     }
                 }
@@ -30760,7 +30760,7 @@ class ServerGeometry {
                 let partPointsCount = vertices.length;
                 parts.push(partPointsCount);
                 for (let j = 0; j < partPointsCount; j++) {
-                    points.push(new Point(vertices[j].x, vertices[j].y));
+                    points.push(new Point_Point(vertices[j].x, vertices[j].y));
                 }
             }
             //这里className不是多点就全部是算线
@@ -30776,38 +30776,38 @@ class ServerGeometry {
                     const partPointsCount = vertices.length + 1;
                     parts.push(partPointsCount);
                     for (let k = 0; k < partPointsCount - 1; k++) {
-                        points.push(new Point(vertices[k].x, vertices[k].y));
+                        points.push(new Point_Point(vertices[k].x, vertices[k].y));
                     }
                     points.push(
-                        new Point(vertices[0].x, vertices[0].y)
+                        new Point_Point(vertices[0].x, vertices[0].y)
                     );
                 }
             }
             type = REST_GeometryType.REGION;
-        } else if (geometry instanceof Polygon) {
+        } else if (geometry instanceof Polygon_Polygon) {
             let ilen = icomponents.length;
             for (let i = 0; i < ilen; i++) {
                 const vertices = icomponents[i].getVertices();
                 let partPointsCount = vertices.length + 1;
                 parts.push(partPointsCount);
                 for (let j = 0; j < partPointsCount - 1; j++) {
-                  points.push(new Point(vertices[j].x, vertices[j].y));
+                  points.push(new Point_Point(vertices[j].x, vertices[j].y));
                 }
-                points.push(new Point(vertices[0].x, vertices[0].y));
+                points.push(new Point_Point(vertices[0].x, vertices[0].y));
             }
             type = REST_GeometryType.REGION;
         } else {
             const vertices = geometry.getVertices();
             let geometryVerticesCount = vertices.length;
             for (let j = 0; j < geometryVerticesCount; j++) {
-                points.push(new Point(vertices[j].x, vertices[j].y));
+                points.push(new Point_Point(vertices[j].x, vertices[j].y));
             }
             if (geometry instanceof LinearRing) {
-                points.push(new Point(vertices[0].x, vertices[0].y));
+                points.push(new Point_Point(vertices[0].x, vertices[0].y));
                 geometryVerticesCount++;
             }
             parts.push(geometryVerticesCount);
-            type = geometry instanceof Point ? REST_GeometryType.POINT : REST_GeometryType.LINE;
+            type = geometry instanceof Point_Point ? REST_GeometryType.POINT : REST_GeometryType.LINE;
         }
 
         return new ServerGeometry({
@@ -30930,7 +30930,7 @@ class GeoJSON extends JSONFormat {
                     array.length != 2) {
                     throw "Only 2D points are supported: " + array;
                 }
-                return new Point(array[0], array[1]);
+                return new Point_Point(array[0], array[1]);
             },
 
             /**
@@ -31010,7 +31010,7 @@ class GeoJSON extends JSONFormat {
                     r = new LinearRing(l.components);
                     rings.push(r);
                 }
-                return new Polygon(rings);
+                return new Polygon_Polygon(rings);
             },
 
             /**
@@ -31043,13 +31043,13 @@ class GeoJSON extends JSONFormat {
                 if (array.length != 2) {
                     throw "GeoJSON box coordinates must have 2 elements";
                 }
-                return new Polygon([
+                return new Polygon_Polygon([
                     new LinearRing([
-                        new Point(array[0][0], array[0][1]),
-                        new Point(array[1][0], array[0][1]),
-                        new Point(array[1][0], array[1][1]),
-                        new Point(array[0][0], array[1][1]),
-                        new Point(array[0][0], array[0][1])
+                        new Point_Point(array[0][0], array[0][1]),
+                        new Point_Point(array[1][0], array[0][1]),
+                        new Point_Point(array[1][0], array[1][1]),
+                        new Point_Point(array[0][0], array[1][1]),
+                        new Point_Point(array[0][0], array[0][1])
                     ])
                 ]);
             }
@@ -31644,11 +31644,11 @@ const core_Util_Util = {
     toSuperMapPoint(lnglat) {
         //客户端可传入 geojson 对象 或者 mapboxgl lnglat 点对象,或者是点数组
         if (isArray(lnglat)) {
-            return new Point(lnglat[0], lnglat[1]);
+            return new Point_Point(lnglat[0], lnglat[1]);
         } else if (lnglat.lng && lnglat.lat) {
-            return new Point(lnglat.lng, lnglat.lat);
+            return new Point_Point(lnglat.lng, lnglat.lat);
         }
-        return new Point(lnglat.geometry.coordinates[0], lnglat.geometry.coordinates[1]);
+        return new Point_Point(lnglat.geometry.coordinates[0], lnglat.geometry.coordinates[1]);
     },
     /**
      * @function Util.toSuperMapPolygon
@@ -31661,12 +31661,12 @@ const core_Util_Util = {
         const east = lnglatBounds.getEast();
         const sourth = lnglatBounds.getSouth();
         const north = lnglatBounds.getNorth();
-        return new Polygon([
+        return new Polygon_Polygon([
             new LinearRing([
-                new Point(west, sourth),
-                new Point(east, sourth),
-                new Point(east, north),
-                new Point(west, north)
+                new Point_Point(west, sourth),
+                new Point_Point(east, sourth),
+                new Point_Point(east, north),
+                new Point_Point(west, north)
             ])
         ]);
     },
@@ -31899,7 +31899,7 @@ class GeoText extends Geometry_Geometry {
      * @returns {GeometryPoint} 标签对象的质心。
      */
     getCentroid() {
-        return new Point(this.x, this.y);
+        return new Point_Point(this.x, this.y);
     }
 
     /**
@@ -32246,7 +32246,7 @@ class Theme {
         var resolution = this.layer.map.getResolution();
         var extent = this.layer.map.getExtent();
 
-        if (coordinate instanceof Point || coordinate instanceof GeoText) {
+        if (coordinate instanceof Point_Point || coordinate instanceof GeoText) {
             let x = (coordinate.x / resolution + (-extent.left / resolution));
             let y = ((extent.top / resolution) - coordinate.y / resolution);
             return [x, y];
@@ -32302,7 +32302,7 @@ class ThemeFeature {
             geometry = new GeoText(this.geometry[0], this.geometry[1], this.geometry[2]);
         }
         if (points.length > 1) {
-            geometry = new Point(points[0], points[1]);
+            geometry = new Point_Point(points[0], points[1]);
         }
         return new Vector(geometry, this.attributes);
     }
@@ -39202,23 +39202,6 @@ Events.prototype.BROWSER_EVENTS = [
   "contextmenu"
 ];
 
-;// CONCATENATED MODULE: ./src/common/commontypes/Symbol.js
-/* Copyright© 2000 - 2022 SuperMap Software Co.Ltd. All rights reserved.
- * This program are made available under the terms of the Apache License, Version 2.0
- * which accompanies this distribution and is available at http://www.apache.org/licenses/LICENSE-2.0.html.*/
-
-/**
- * @class Symbol
- * @category Symbol
- * @classdesc Web 符号抽象类，描述地理要素的图形属性。
- * @usage
- */
-class Symbol_Symbol {
-    constructor() {
-        this.CLASS_NAME = "SuperMap.Symbol";
-    }
-}
-
 ;// CONCATENATED MODULE: ./src/common/commontypes/symbol/DefaultValue.js
 const COMMON_DEFAULT_VALUE = {
     color: '#000',
@@ -39232,23 +39215,23 @@ const COMMON_DEFAULT_VALUE = {
     heightfixed: false
 }
 
-const POINT_DEFAULT_VALUE = {
+const DefaultValue_POINT_DEFAULT_VALUE = {
     color: COMMON_DEFAULT_VALUE.color,
     opacity: COMMON_DEFAULT_VALUE.opacity
 }
 
-const IMAGE_POINT_DEFAULT_VALUE = {
+const DefaultValue_IMAGE_POINT_DEFAULT_VALUE = {
     size: 0.16,
-    ...POINT_DEFAULT_VALUE,
+    ...DefaultValue_POINT_DEFAULT_VALUE,
     rotate: COMMON_DEFAULT_VALUE.rotate,
     translate: COMMON_DEFAULT_VALUE.translate,
     raisingHeight: COMMON_DEFAULT_VALUE.raisingHeight,
     heightfixed: COMMON_DEFAULT_VALUE.heightfixed
 }
 
-const SIMPLE_POINT_DEFAULT_VALUE = {
+const DefaultValue_SIMPLE_POINT_DEFAULT_VALUE = {
     size: 1,
-    ...POINT_DEFAULT_VALUE,
+    ...DefaultValue_POINT_DEFAULT_VALUE,
     shape: 'circle',
     strokeColor: '#FFF',
     strokeWidth: 0,
@@ -39314,14 +39297,14 @@ const DefaultValue_LINE_DEFAULT_VALUE = {
 // mapbox key对应的默认样式
 const MAPBOX_CIRCLE_DEFAULT = {
     paint: {
-        'circle-blur': SIMPLE_POINT_DEFAULT_VALUE.blur,
-        'circle-color': SIMPLE_POINT_DEFAULT_VALUE.color,
-        'circle-opacity': SIMPLE_POINT_DEFAULT_VALUE.opacity,
+        'circle-blur': DefaultValue_SIMPLE_POINT_DEFAULT_VALUE.blur,
+        'circle-color': DefaultValue_SIMPLE_POINT_DEFAULT_VALUE.color,
+        'circle-opacity': DefaultValue_SIMPLE_POINT_DEFAULT_VALUE.opacity,
         'circle-radius': 5,
-        'circle-stroke-color': SIMPLE_POINT_DEFAULT_VALUE.strokeColor,
-        'circle-stroke-width': SIMPLE_POINT_DEFAULT_VALUE.strokeWidth,
-        'circle-stroke-opacity': SIMPLE_POINT_DEFAULT_VALUE.strokeOpacity,
-        'circle-translate': SIMPLE_POINT_DEFAULT_VALUE.translate
+        'circle-stroke-color': DefaultValue_SIMPLE_POINT_DEFAULT_VALUE.strokeColor,
+        'circle-stroke-width': DefaultValue_SIMPLE_POINT_DEFAULT_VALUE.strokeWidth,
+        'circle-stroke-opacity': DefaultValue_SIMPLE_POINT_DEFAULT_VALUE.strokeOpacity,
+        'circle-translate': DefaultValue_SIMPLE_POINT_DEFAULT_VALUE.translate
         // 符号库暂未支持的属性
         // 'circle-translate-anchor': symbolInfo.translateAnchor
     },
@@ -39329,7 +39312,7 @@ const MAPBOX_CIRCLE_DEFAULT = {
         visibility: 'visible'
     }
 }
-const TEXT_DEFAULT_VALUE = {
+const DefaultValue_TEXT_DEFAULT_VALUE = {
     size: 16,
     color: COMMON_DEFAULT_VALUE.color,
     opacity: COMMON_DEFAULT_VALUE.opacity,
@@ -39351,23 +39334,23 @@ const TEXT_DEFAULT_VALUE = {
 }
 const MAPBOX_TEXT_DEFAULT = {
     paint: {
-        'text-color': TEXT_DEFAULT_VALUE.color,
-        'text-opacity': TEXT_DEFAULT_VALUE.opacity,
-        'text-translate': TEXT_DEFAULT_VALUE.translate,
-        'text-halo-width': TEXT_DEFAULT_VALUE.haloWidth
+        'text-color': DefaultValue_TEXT_DEFAULT_VALUE.color,
+        'text-opacity': DefaultValue_TEXT_DEFAULT_VALUE.opacity,
+        'text-translate': DefaultValue_TEXT_DEFAULT_VALUE.translate,
+        'text-halo-width': DefaultValue_TEXT_DEFAULT_VALUE.haloWidth
         // 符号库暂未支持的属性
         // 'text-halo-blur': symbolInfo.textHaloBlur,
         // 'text-halo-color': symbolInfo.textHaloColor,
         // 'text-translate-anchor': symbolInfo.textTranslateAnchor
     },
     layout: {
-        'text-field': TEXT_DEFAULT_VALUE.field,
-        'text-size': TEXT_DEFAULT_VALUE.size,
-        'text-font': TEXT_DEFAULT_VALUE.fontFamily,
-        'text-anchor': TEXT_DEFAULT_VALUE.anchor,
-        'text-allow-overlap': TEXT_DEFAULT_VALUE.allowOverlap,
-        'text-padding': TEXT_DEFAULT_VALUE.padding,
-        'text-letter-spacing': TEXT_DEFAULT_VALUE.spacing
+        'text-field': DefaultValue_TEXT_DEFAULT_VALUE.field,
+        'text-size': DefaultValue_TEXT_DEFAULT_VALUE.size,
+        'text-font': DefaultValue_TEXT_DEFAULT_VALUE.fontFamily,
+        'text-anchor': DefaultValue_TEXT_DEFAULT_VALUE.anchor,
+        'text-allow-overlap': DefaultValue_TEXT_DEFAULT_VALUE.allowOverlap,
+        'text-padding': DefaultValue_TEXT_DEFAULT_VALUE.padding,
+        'text-letter-spacing': DefaultValue_TEXT_DEFAULT_VALUE.spacing
         // 符号库暂未支持的属性
         // 'text-ignore-placement': symbolInfo.textIgnorePlacement,
         // 'text-justify': symbolInfo.justify,
@@ -39379,13 +39362,13 @@ const MAPBOX_TEXT_DEFAULT = {
 }
 const MAPBOX_SYMBOL_DEFAULT = {
     paint: {
-        'icon-color': SIMPLE_POINT_DEFAULT_VALUE.color,
-        'icon-opacity': SIMPLE_POINT_DEFAULT_VALUE.opacity,
-        'icon-translate': SIMPLE_POINT_DEFAULT_VALUE.translate,
+        'icon-color': DefaultValue_SIMPLE_POINT_DEFAULT_VALUE.color,
+        'icon-opacity': DefaultValue_SIMPLE_POINT_DEFAULT_VALUE.opacity,
+        'icon-translate': DefaultValue_SIMPLE_POINT_DEFAULT_VALUE.translate,
         ...MAPBOX_TEXT_DEFAULT.paint
     },
     layout: {
-        'icon-size': SIMPLE_POINT_DEFAULT_VALUE.size,
+        'icon-size': DefaultValue_SIMPLE_POINT_DEFAULT_VALUE.size,
         'icon-rotate': COMMON_DEFAULT_VALUE.rotate,
         ...MAPBOX_TEXT_DEFAULT.layout
     }
@@ -39412,30 +39395,30 @@ const MAPBOX_FILL_DEFAULT = {
     }
 }
 
-const POLYGON_DEFAULT_VALUE = {
+const DefaultValue_POLYGON_DEFAULT_VALUE = {
     opacity: COMMON_DEFAULT_VALUE.opacity
 }
 
 const IMAGE_POLYGON_DEFAULT_VALUE = {
-    ...POLYGON_DEFAULT_VALUE,
+    ...DefaultValue_POLYGON_DEFAULT_VALUE,
     color: COMMON_DEFAULT_VALUE.color
 }
 
 const SIMPLE_POLYGON_DEFAULT_VALUE = {
-    ...POINT_DEFAULT_VALUE,
+    ...DefaultValue_POINT_DEFAULT_VALUE,
     color: COMMON_DEFAULT_VALUE.color,
     raisingHeight: COMMON_DEFAULT_VALUE.raisingHeight,
     opacityLinearDir: COMMON_DEFAULT_VALUE.opacityLinearDir
 }
 
 const OCEAN_POLYGON_DEFAULT_VALUE = {
-    ...POINT_DEFAULT_VALUE,
+    ...DefaultValue_POINT_DEFAULT_VALUE,
     shallowWaterColor: '#6D99A8',
     deepWaterColor: '#0F121C'
 }
 
 const WATER_POLYGON_DEFAULT_VALUE = {
-    ...POINT_DEFAULT_VALUE,
+    ...DefaultValue_POINT_DEFAULT_VALUE,
     texture: 'https://gw.alipayobjects.com/mdn/rms_816329/afts/img/A*EojwT4VzSiYAAAAAAAAAAAAAARQnAQ',
     color: COMMON_DEFAULT_VALUE.color,
     speed: 0.1
@@ -39511,7 +39494,7 @@ const DefaultValue_LayerType = {
  * @param {string} [options.color = "#000"] - 符号颜色。
  * @param {number} [options.opacity = 1] - 符号透明度。
  */
-class Point_Point extends Symbol_Symbol {
+class symbol_Point_Point extends (/* unused pure expression or super */ null && (Symbol)) {
 
     constructor(options) {
         super();
@@ -39544,11 +39527,11 @@ class Point_Point extends Symbol_Symbol {
      */
     clone(obj) {
         if (obj == null) {
-            obj = new Point_Point();
+            obj = new symbol_Point_Point();
         }
 
         // catch any randomly tagged-on properties
-        Util_Util.applyDefaults(obj, this);
+        Util.applyDefaults(obj, this);
 
         return obj;
     }
@@ -39593,7 +39576,7 @@ class Point_Point extends Symbol_Symbol {
  * const symbol = new SimplePointSymbol();
  * @usage
  */
-class SimplePoint extends Point_Point {
+class SimplePoint extends (/* unused pure expression or super */ null && (Point)) {
 
     constructor(options) {
         super(options);
@@ -39672,7 +39655,7 @@ class SimplePoint extends Point_Point {
         }
 
         // catch any randomly tagged-on properties
-        Util_Util.applyDefaults(obj, this);
+        Util.applyDefaults(obj, this);
 
         return obj;
     }
@@ -39721,7 +39704,7 @@ class SimplePoint extends Point_Point {
  * });
  * @usage
  */
-class ImagePoint extends Point_Point {
+class ImagePoint extends (/* unused pure expression or super */ null && (Point)) {
 
     constructor(options) {
         super(options);
@@ -39790,7 +39773,7 @@ class ImagePoint extends Point_Point {
         }
 
         // catch any randomly tagged-on properties
-        Util_Util.applyDefaults(obj, this);
+        Util.applyDefaults(obj, this);
 
         return obj;
     }
@@ -39828,7 +39811,7 @@ class ImagePoint extends Point_Point {
  * @param {number} [options.width = 1] - 线宽度。
  * @param {number} [options.opacity = 1] - 符号透明度。
  */
-class Line extends Symbol_Symbol {
+class Line_Line extends (/* unused pure expression or super */ null && (Symbol)) {
 
     constructor(options) {
         super();
@@ -39838,13 +39821,13 @@ class Line extends Symbol_Symbol {
          * @member {number} LineSymbol.prototype.width
          * @description 线宽，默认值：1。
          */
-        this.width = width ?? DefaultValue_LINE_DEFAULT_VALUE.width;
+        this.width = width ?? LINE_DEFAULT_VALUE.width;
 
         /**
          * @member {number} LineSymbol.prototype.opacity
          * @description 线符号的透明度，默认值：1
          */
-        this.opacity = opacity ?? DefaultValue_LINE_DEFAULT_VALUE.opacity;
+        this.opacity = opacity ?? LINE_DEFAULT_VALUE.opacity;
 
         /**
          * @member {string} LineSymbol.prototype.type
@@ -39861,11 +39844,11 @@ class Line extends Symbol_Symbol {
      */
     clone(obj) {
         if (obj == null) {
-            obj = new Line();
+            obj = new Line_Line();
         }
 
         // catch any randomly tagged-on properties
-        Util_Util.applyDefaults(obj, this);
+        Util.applyDefaults(obj, this);
 
         return obj;
     }
@@ -39918,7 +39901,7 @@ class Line extends Symbol_Symbol {
  * @param {object} options - 可选参数。
  * @param {Linear | Solid | Dash} [options.pattern] - 线型模式。
  */
-class BaseLine extends Line {
+class BaseLine_BaseLine extends (/* unused pure expression or super */ null && (Line)) {
 
     constructor(option) {
         super();
@@ -39941,11 +39924,11 @@ class BaseLine extends Line {
      */
     clone(obj) {
         if (obj == null) {
-            obj = new BaseLine();
+            obj = new BaseLine_BaseLine();
         }
 
         // catch any randomly tagged-on properties
-        Util_Util.applyDefaults(obj, this);
+        Util.applyDefaults(obj, this);
 
         return obj;
     }
@@ -39987,7 +39970,7 @@ class BaseLine extends Line {
  * @param {number} [options.offset=0] - 线偏移。
  * @usage
  */
-class SimpleLine extends BaseLine {
+class SimpleLine extends (/* unused pure expression or super */ null && (BaseLine)) {
 
     constructor(options) {
         super(options);
@@ -40003,62 +39986,62 @@ class SimpleLine extends BaseLine {
          * @member {boolean} SimpleLineSymbol.prototype.heightFixed
          * @description 抬升高度是否随 zoom 变化。
          */
-        this.heightFixed = heightFixed ?? DefaultValue_LINE_DEFAULT_VALUE.heightFixed;
+        this.heightFixed = heightFixed ?? LINE_DEFAULT_VALUE.heightFixed;
 
         /**
          * @member {number} SimpleLineSymbol.prototype.rasingHeight
          * @description 抬升高度。
          */
-        this.rasingHeight = rasingHeight ?? DefaultValue_LINE_DEFAULT_VALUE.rasingHeight
+        this.rasingHeight = rasingHeight ?? LINE_DEFAULT_VALUE.rasingHeight
 
         /**
          * @member {number} SimpleLineSymbol.prototype.borderColor
          * @description 图形边框颜色。
          */
-        this.borderColor = borderColor ?? DefaultValue_LINE_DEFAULT_VALUE.borderColor;
+        this.borderColor = borderColor ?? LINE_DEFAULT_VALUE.borderColor;
 
         /**
          * @member {number} SimpleLineSymbol.prototype.borderWidth
          * @description 图形边框半径。
          */
-        this.borderWidth = borderWidth ?? DefaultValue_LINE_DEFAULT_VALUE.borderWidth;
+        this.borderWidth = borderWidth ?? LINE_DEFAULT_VALUE.borderWidth;
 
         /**
          * @member {string} SimpleLineSymbol.prototype.cap
          * @description 线端点样式，
          */
-        this.cap = cap ?? DefaultValue_LINE_DEFAULT_VALUE.cap;
+        this.cap = cap ?? LINE_DEFAULT_VALUE.cap;
 
         /**
          * @member {string} SimpleLineSymbol.prototype.join
          * @description 线连接样式
          */
-        this.join = join ?? DefaultValue_LINE_DEFAULT_VALUE.join;
+        this.join = join ?? LINE_DEFAULT_VALUE.join;
 
         /**
          * @member {number} SimpleLineSymbol.prototype.arrowWidth
          * @description 箭头的宽度。
          */
-        this.arrowWidth = arrowWidth ?? DefaultValue_LINE_DEFAULT_VALUE.arrowWidth;
+        this.arrowWidth = arrowWidth ?? LINE_DEFAULT_VALUE.arrowWidth;
 
         /**
          * @member {number} SimpleLineSymbol.prototype.arrowHeight
          * @description 箭头的长度。
          */
-        this.arrowHeight = arrowHeight ?? DefaultValue_LINE_DEFAULT_VALUE.arrowHeight;
+        this.arrowHeight = arrowHeight ?? LINE_DEFAULT_VALUE.arrowHeight;
 
         /**
          * @member {number} SimpleLineSymbol.prototype.tailWidth
          * @description 箭头尾部宽度。
          */
-        this.tailWidth = tailWidth ?? DefaultValue_LINE_DEFAULT_VALUE.tailWidth;
+        this.tailWidth = tailWidth ?? LINE_DEFAULT_VALUE.tailWidth;
 
 
         /**
          * @member {number} SimpleLineSymbol.prototype.offset
          * @description 线偏移。
          */
-        this.offset = offset ?? DefaultValue_LINE_DEFAULT_VALUE.offset;
+        this.offset = offset ?? LINE_DEFAULT_VALUE.offset;
       
         this.type = "SimpleLine";
         this.CLASS_NAME = "SuperMap.Symbol.SimpleLine";
@@ -40075,7 +40058,7 @@ class SimpleLine extends BaseLine {
         }
 
         // catch any randomly tagged-on properties
-        Util_Util.applyDefaults(obj, this);
+        Util.applyDefaults(obj, this);
 
         return obj;
     }
@@ -40117,7 +40100,7 @@ class SimpleLine extends BaseLine {
  * @param {number} [options.segmentNumber=30] - 弧线分段，分段越多越平滑，消耗越大。
  * @usage
  */
-class GreatCircleLine extends BaseLine {
+class GreatCircleLine extends (/* unused pure expression or super */ null && (BaseLine)) {
     constructor(options) {
         super(options);
         const { segmentNumber } = options ?? {};
@@ -40126,7 +40109,7 @@ class GreatCircleLine extends BaseLine {
          * @member {number} GreatCircleLineSymbol.prototype.segmentNumber
          * @description 弧线分段，分段越多越平滑，消耗越大。
          */
-        this.segmentNumber = segmentNumber ?? DefaultValue_LINE_DEFAULT_VALUE.segmentNumber;
+        this.segmentNumber = segmentNumber ?? LINE_DEFAULT_VALUE.segmentNumber;
       
         this.type = "GreatCircleLine";
         this.CLASS_NAME = "SuperMap.Symbol.GreatCircleLine";
@@ -40143,7 +40126,7 @@ class GreatCircleLine extends BaseLine {
         }
 
         // catch any randomly tagged-on properties
-        Util_Util.applyDefaults(obj, this);
+        Util.applyDefaults(obj, this);
 
         return obj;
     }
@@ -40176,7 +40159,7 @@ class GreatCircleLine extends BaseLine {
  * @param {number} [options.thetaOffset=0.314] - 弧线的弧度参数。
  * @usage       
  */
-class ArcLine extends BaseLine {
+class ArcLine extends (/* unused pure expression or super */ null && (BaseLine)) {
     constructor(options) {
         super(options);
         const { segmentNumber, thetaOffset } = options ?? {};
@@ -40185,13 +40168,13 @@ class ArcLine extends BaseLine {
          * @member {number} ArcLineSymbol.prototype.segmentNumber
          * @description 弧线分段，分段越多越平滑，消耗越大。
          */
-        this.segmentNumber = segmentNumber ?? DefaultValue_LINE_DEFAULT_VALUE.segmentNumber;
+        this.segmentNumber = segmentNumber ?? LINE_DEFAULT_VALUE.segmentNumber;
 
         /**
          * @member {number} ArcLineSymbol.prototype.thetaOffset
          * @description 弧线的弧度参数。
          */
-        this.thetaOffset = thetaOffset ?? DefaultValue_LINE_DEFAULT_VALUE.segmentNumber;
+        this.thetaOffset = thetaOffset ?? LINE_DEFAULT_VALUE.segmentNumber;
       
         this.type = "ArcLine";
         this.CLASS_NAME = "SuperMap.Symbol.ArcLine";
@@ -40208,7 +40191,7 @@ class ArcLine extends BaseLine {
         }
 
         // catch any randomly tagged-on properties
-        Util_Util.applyDefaults(obj, this);
+        Util.applyDefaults(obj, this);
 
         return obj;
     }
@@ -40243,7 +40226,7 @@ class ArcLine extends BaseLine {
  * @param {number} [options.iconStep=100] - 贴图在线图层上面排布的间隔。
  * @param {string} [options.color='#000'] - 线颜色。
  */
-class ImageLine extends Line {
+class ImageLine_ImageLine extends (/* unused pure expression or super */ null && (Line)) {
 
     constructor(options) {
         super(options);
@@ -40259,19 +40242,19 @@ class ImageLine extends Line {
          * @member {('normal' | 'replace')} ImageLineSymbol.prototype.imageBlend
          * @description 线贴图混合方式。
          */
-        this.imageBlend = imageBlend ?? DefaultValue_LINE_DEFAULT_VALUE.textureBlend;
+        this.imageBlend = imageBlend ?? LINE_DEFAULT_VALUE.textureBlend;
 
         /**
          * @member {number} ImageLineSymbol.prototype.iconStep
          * @description 贴图在线图层上面排布的间隔。
          */
-        this.iconStep = iconStep ?? DefaultValue_LINE_DEFAULT_VALUE.iconStep;
+        this.iconStep = iconStep ?? LINE_DEFAULT_VALUE.iconStep;
 
         /**
          * @member {string} ImageLineSymbol.prototype.color
          * @description 线颜色。
          */
-        this.color = color ?? DefaultValue_LINE_DEFAULT_VALUE.color;
+        this.color = color ?? LINE_DEFAULT_VALUE.color;
       
         this.type = "ImageLine";
         this.CLASS_NAME = "SuperMap.Symbol.ImageLine";
@@ -40284,13 +40267,13 @@ class ImageLine extends Line {
      */
     clone(obj) {
         if (obj == null) {
-            obj = new ImageLine({
+            obj = new ImageLine_ImageLine({
                 image: this.image
             });
         }
 
         // catch any randomly tagged-on properties
-        Util_Util.applyDefaults(obj, this);
+        Util.applyDefaults(obj, this);
 
         return obj;
     }
@@ -40339,7 +40322,7 @@ class ImageLine extends Line {
  * });
  * @usage
  */
-class SimpleImageLine extends ImageLine {
+class SimpleImageLine extends (/* unused pure expression or super */ null && (ImageLine)) {
 
     constructor(options) {
         super(options);
@@ -40355,61 +40338,61 @@ class SimpleImageLine extends ImageLine {
          * @member {boolean} SimpleImageLineSymbol.prototype.heightFixed
          * @description 抬升高度是否随 zoom 变化。
          */
-        this.heightFixed = heightFixed ?? DefaultValue_LINE_DEFAULT_VALUE.heightFixed;
+        this.heightFixed = heightFixed ?? LINE_DEFAULT_VALUE.heightFixed;
   
         /**
          * @member {number} SimpleImageLineSymbol.prototype.rasingHeight
          * @description 抬升高度。
          */
-        this.rasingHeight = rasingHeight ?? DefaultValue_LINE_DEFAULT_VALUE.rasingHeight
+        this.rasingHeight = rasingHeight ?? LINE_DEFAULT_VALUE.rasingHeight
   
         /**
          * @member {number} SimpleImageLineSymbol.prototype.borderColor
          * @description 图形边框颜色。
          */
-        this.borderColor = borderColor ?? DefaultValue_LINE_DEFAULT_VALUE.borderColor;
+        this.borderColor = borderColor ?? LINE_DEFAULT_VALUE.borderColor;
   
         /**
          * @member {number} SimpleImageLineSymbol.prototype.borderWidth
          * @description 图形边框半径。
          */
-        this.borderWidth = borderWidth ?? DefaultValue_LINE_DEFAULT_VALUE.borderWidth;
+        this.borderWidth = borderWidth ?? LINE_DEFAULT_VALUE.borderWidth;
   
         /**
          * @member {string} SimpleImageLineSymbol.prototype.cap
          * @description 线端点样式，
          */
-        this.cap = cap ?? DefaultValue_LINE_DEFAULT_VALUE.cap;
+        this.cap = cap ?? LINE_DEFAULT_VALUE.cap;
   
         /**
          * @member {string} SimpleImageLineSymbol.prototype.join
          * @description 线连接样式
          */
-        this.join = join ?? DefaultValue_LINE_DEFAULT_VALUE.join;
+        this.join = join ?? LINE_DEFAULT_VALUE.join;
   
         /**
          * @member {number} SimpleImageLineSymbol.prototype.arrowWidth
          * @description 箭头的宽度。
          */
-        this.arrowWidth = arrowWidth ?? DefaultValue_LINE_DEFAULT_VALUE.arrowWidth;
+        this.arrowWidth = arrowWidth ?? LINE_DEFAULT_VALUE.arrowWidth;
   
         /**
          * @member {number} SimpleImageLineSymbol.prototype.arrowHeight
          * @description 箭头的长度。
          */
-        this.arrowHeight = arrowHeight ?? DefaultValue_LINE_DEFAULT_VALUE.arrowHeight;
+        this.arrowHeight = arrowHeight ?? LINE_DEFAULT_VALUE.arrowHeight;
   
         /**
          * @member {number} SimpleImageLineSymbol.prototype.tailWidth
          * @description 箭头尾部宽度。
          */
-        this.tailWidth = tailWidth ?? DefaultValue_LINE_DEFAULT_VALUE.tailWidth;
+        this.tailWidth = tailWidth ?? LINE_DEFAULT_VALUE.tailWidth;
   
         /**
          * @member {number} SimpleImageLineSymbol.prototype.offset
          * @description 线偏移。
          */
-        this.offset = offset ?? DefaultValue_LINE_DEFAULT_VALUE.offset;
+        this.offset = offset ?? LINE_DEFAULT_VALUE.offset;
       
         this.type = "SimpleImageLine";
         this.CLASS_NAME = "SuperMap.Symbol.SimpleImageLine";
@@ -40426,7 +40409,7 @@ class SimpleImageLine extends ImageLine {
         }
 
         // catch any randomly tagged-on properties
-        Util_Util.applyDefaults(obj, this);
+        Util.applyDefaults(obj, this);
 
         return obj;
     }
@@ -40471,7 +40454,7 @@ class SimpleImageLine extends ImageLine {
  * const symbol = new ArcImageLineSymbol();
  * @usage       
  */
-class ArcImageLine extends ImageLine {
+class ArcImageLine extends (/* unused pure expression or super */ null && (ImageLine)) {
     constructor(options) {
         super(options);
         const { segmentNumber, thetaOffset } = options ?? {};
@@ -40480,13 +40463,13 @@ class ArcImageLine extends ImageLine {
          * @member {number} ArcImageLineSymbol.prototype.segmentNumber
          * @description 弧线分段，分段越多越平滑，消耗越大。
          */
-        this.segmentNumber = segmentNumber ?? DefaultValue_LINE_DEFAULT_VALUE.segmentNumber;
+        this.segmentNumber = segmentNumber ?? LINE_DEFAULT_VALUE.segmentNumber;
 
         /**
          * @member {number} ArcImageLineSymbol.prototype.thetaOffset
          * @description 弧线的弧度参数。。
          */
-        this.thetaOffset = thetaOffset ?? DefaultValue_LINE_DEFAULT_VALUE.segmentNumber;
+        this.thetaOffset = thetaOffset ?? LINE_DEFAULT_VALUE.segmentNumber;
       
         this.type = "ArcImageLine";
         this.CLASS_NAME = "SuperMap.Symbol.ArcImageLine";
@@ -40503,7 +40486,7 @@ class ArcImageLine extends ImageLine {
         }
 
         // catch any randomly tagged-on properties
-        Util_Util.applyDefaults(obj, this);
+        Util.applyDefaults(obj, this);
 
         return obj;
     }
@@ -40538,7 +40521,7 @@ class ArcImageLine extends ImageLine {
  * const symbol = new GreatCircleImageLineSymbol();
  * @usage
  */
-class GreatCircleImageLine extends BaseLine {
+class GreatCircleImageLine extends (/* unused pure expression or super */ null && (BaseLine)) {
     constructor(options) {
         super(options);
         const { segmentNumber } = options ?? {};
@@ -40547,7 +40530,7 @@ class GreatCircleImageLine extends BaseLine {
          * @member {number} GreatCircleImageLineSymbol.prototype.segmentNumber
          * @description 弧线分段，分段越多越平滑，消耗越大。
          */
-        this.segmentNumber = segmentNumber ?? DefaultValue_LINE_DEFAULT_VALUE.segmentNumber;
+        this.segmentNumber = segmentNumber ?? LINE_DEFAULT_VALUE.segmentNumber;
       
         this.type = "GreatCircleImageLine";
         this.CLASS_NAME = "SuperMap.Symbol.GreatCircleImageLine";
@@ -40564,7 +40547,7 @@ class GreatCircleImageLine extends BaseLine {
         }
 
         // catch any randomly tagged-on properties
-        Util_Util.applyDefaults(obj, this);
+        Util.applyDefaults(obj, this);
 
         return obj;
     }
@@ -40600,7 +40583,7 @@ class GreatCircleImageLine extends BaseLine {
  * @param {number} [options.iconStep=100] - 纹理贴图在线图层上面排布的间隔
  * @param {string} [options.color='#000'] - 线颜色。
  */
-class AnimateLine extends Line {
+class AnimateLine_AnimateLine extends (/* unused pure expression or super */ null && (Line)) {
 
     constructor(options) {
         super(options);
@@ -40659,11 +40642,11 @@ class AnimateLine extends Line {
      */
     clone(obj) {
         if (obj == null) {
-            obj = new AnimateLine();
+            obj = new AnimateLine_AnimateLine();
         }
 
         // catch any randomly tagged-on properties
-        Util_Util.applyDefaults(obj, this);
+        Util.applyDefaults(obj, this);
 
         return obj;
     }
@@ -40713,7 +40696,7 @@ class AnimateLine extends Line {
  * const symbol = new SimpleAnimateLine();
  * @usage
  */
-class SimpleAnimateLine extends AnimateLine {
+class SimpleAnimateLine extends (/* unused pure expression or super */ null && (AnimateLine)) {
 
     constructor(options) {
         super(options);
@@ -40729,61 +40712,61 @@ class SimpleAnimateLine extends AnimateLine {
          * @member {boolean} SimpleAnimateLineSymbol.prototype.heightFixed
          * @description 抬升高度是否随 zoom 变化。
          */
-        this.heightFixed = heightFixed ?? DefaultValue_LINE_DEFAULT_VALUE.heightFixed;
+        this.heightFixed = heightFixed ?? LINE_DEFAULT_VALUE.heightFixed;
   
         /**
          * @member {number} SimpleAnimateLineSymbol.prototype.rasingHeight
          * @description 抬升高度。
          */
-        this.rasingHeight = rasingHeight ?? DefaultValue_LINE_DEFAULT_VALUE.rasingHeight
+        this.rasingHeight = rasingHeight ?? LINE_DEFAULT_VALUE.rasingHeight
   
         /**
          * @member {number} SimpleAnimateLineSymbol.prototype.borderColor
          * @description 图形边框颜色。
          */
-        this.borderColor = borderColor ?? DefaultValue_LINE_DEFAULT_VALUE.borderColor;
+        this.borderColor = borderColor ?? LINE_DEFAULT_VALUE.borderColor;
   
         /**
          * @member {number} SimpleAnimateLineSymbol.prototype.borderWidth
          * @description 图形边框半径。
          */
-        this.borderWidth = borderWidth ?? DefaultValue_LINE_DEFAULT_VALUE.borderWidth;
+        this.borderWidth = borderWidth ?? LINE_DEFAULT_VALUE.borderWidth;
   
         /**
          * @member {string} SimpleAnimateLineSymbol.prototype.cap
          * @description 线端点样式，
          */
-        this.cap = cap ?? DefaultValue_LINE_DEFAULT_VALUE.cap;
+        this.cap = cap ?? LINE_DEFAULT_VALUE.cap;
   
         /**
          * @member {string} SimpleAnimateLineSymbol.prototype.join
          * @description 线连接样式
          */
-        this.join = join ?? DefaultValue_LINE_DEFAULT_VALUE.join;
+        this.join = join ?? LINE_DEFAULT_VALUE.join;
   
         /**
          * @member {number} SimpleAnimateLineSymbol.prototype.arrowWidth
          * @description 箭头的宽度。
          */
-        this.arrowWidth = arrowWidth ?? DefaultValue_LINE_DEFAULT_VALUE.arrowWidth;
+        this.arrowWidth = arrowWidth ?? LINE_DEFAULT_VALUE.arrowWidth;
   
         /**
          * @member {number} SimpleAnimateLineSymbol.prototype.arrowHeight
          * @description 箭头的长度。
          */
-        this.arrowHeight = arrowHeight ?? DefaultValue_LINE_DEFAULT_VALUE.arrowHeight;
+        this.arrowHeight = arrowHeight ?? LINE_DEFAULT_VALUE.arrowHeight;
   
         /**
          * @member {number} SimpleAnimateLineSymbol.prototype.tailWidth
          * @description 箭头尾部宽度。
          */
-        this.tailWidth = tailWidth ?? DefaultValue_LINE_DEFAULT_VALUE.tailWidth;
+        this.tailWidth = tailWidth ?? LINE_DEFAULT_VALUE.tailWidth;
   
         /**
          * @member {number} SimpleAnimateLineSymbol.prototype.offset
          * @description 线偏移。
          */
-        this.offset = offset ?? DefaultValue_LINE_DEFAULT_VALUE.offset;
+        this.offset = offset ?? LINE_DEFAULT_VALUE.offset;
       
         this.type = "SimpleAnimateLine";
         this.CLASS_NAME = "SuperMap.Symbol.SimpleAnimateLine";
@@ -40800,7 +40783,7 @@ class SimpleAnimateLine extends AnimateLine {
         }
 
         // catch any randomly tagged-on properties
-        Util_Util.applyDefaults(obj, this);
+        Util.applyDefaults(obj, this);
 
         return obj;
     }
@@ -40845,7 +40828,7 @@ class SimpleAnimateLine extends AnimateLine {
  * const symbol = new AnimateLineSymbol();
  * @usage       
  */
-class ArcAnimateLine extends AnimateLine {
+class ArcAnimateLine extends (/* unused pure expression or super */ null && (AnimateLine)) {
     constructor(options) {
         super(options);
         const { segmentNumber, thetaOffset } = options ?? {};
@@ -40854,13 +40837,13 @@ class ArcAnimateLine extends AnimateLine {
          * @member {number} ArcAnimateLineSymbol.prototype.segmentNumber
          * @description 弧线分段，分段越多越平滑，消耗越大。
          */
-        this.segmentNumber = segmentNumber ?? DefaultValue_LINE_DEFAULT_VALUE.segmentNumber;
+        this.segmentNumber = segmentNumber ?? LINE_DEFAULT_VALUE.segmentNumber;
 
         /**
          * @member {number} ArcAnimateLineSymbol.prototype.thetaOffset
          * @description 弧线的弧度参数。。
          */
-        this.thetaOffset = thetaOffset ?? DefaultValue_LINE_DEFAULT_VALUE.segmentNumber;
+        this.thetaOffset = thetaOffset ?? LINE_DEFAULT_VALUE.segmentNumber;
       
         this.type = "ArcAnimateLine";
         this.CLASS_NAME = "SuperMap.Symbol.ArcAnimateLine";
@@ -40877,7 +40860,7 @@ class ArcAnimateLine extends AnimateLine {
         }
 
         // catch any randomly tagged-on properties
-        Util_Util.applyDefaults(obj, this);
+        Util.applyDefaults(obj, this);
 
         return obj;
     }
@@ -40912,7 +40895,7 @@ class ArcAnimateLine extends AnimateLine {
  * const symbol = new GreatCircleAnimateLineSymbol();
  * @usage
  */
-class GreatCircleAnimateLine extends AnimateLine {
+class GreatCircleAnimateLine extends (/* unused pure expression or super */ null && (AnimateLine)) {
     constructor(options) {
         super(options);
         const { segmentNumber } = options ?? {};
@@ -40921,7 +40904,7 @@ class GreatCircleAnimateLine extends AnimateLine {
          * @member {number} GreatCircleAnimateLineSymbol.prototype.segmentNumber
          * @description 弧线分段，分段越多越平滑，消耗越大。
          */
-        this.segmentNumber = segmentNumber ?? DefaultValue_LINE_DEFAULT_VALUE.segmentNumber;
+        this.segmentNumber = segmentNumber ?? LINE_DEFAULT_VALUE.segmentNumber;
       
         this.type = "GreatCircleAnimateLine";
         this.CLASS_NAME = "SuperMap.Symbol.GreatCircleAnimateLine";
@@ -40938,7 +40921,7 @@ class GreatCircleAnimateLine extends AnimateLine {
         }
 
         // catch any randomly tagged-on properties
-        Util_Util.applyDefaults(obj, this);
+        Util.applyDefaults(obj, this);
 
         return obj;
     }
@@ -40974,7 +40957,7 @@ class GreatCircleAnimateLine extends AnimateLine {
  * @param {number} [options.iconStep=100] - 纹理贴图在线图层上面排布的间隔
  * @param {string} [options.color] - 线颜色。
  */
-class AnimateLine3D extends Line {
+class AnimateLine3D_AnimateLine3D extends (/* unused pure expression or super */ null && (Line)) {
 
     constructor(options) {
         super(options);
@@ -41034,11 +41017,11 @@ class AnimateLine3D extends Line {
      */
     clone(obj) {
         if (obj == null) {
-            obj = new AnimateLine3D();
+            obj = new AnimateLine3D_AnimateLine3D();
         }
 
         // catch any randomly tagged-on properties
-        Util_Util.applyDefaults(obj, this);
+        Util.applyDefaults(obj, this);
 
         return obj;
     }
@@ -41078,7 +41061,7 @@ class AnimateLine3D extends Line {
  * const symbol = new ArcAnimateLine3D();
  * @usage       
  */
-class ArcAnimateLine3D extends AnimateLine3D {
+class ArcAnimateLine3D extends (/* unused pure expression or super */ null && (AnimateLine3D)) {
     constructor(options) {
         super(options);
         const { segmentNumber } = options ?? {};
@@ -41087,7 +41070,7 @@ class ArcAnimateLine3D extends AnimateLine3D {
          * @member {number} ArcAnimateLineSymbol3D.prototype.segmentNumber
          * @description 弧线分段，分段越多越平滑，消耗越大。
          */
-        this.segmentNumber = segmentNumber ?? DefaultValue_LINE_DEFAULT_VALUE.segmentNumber;
+        this.segmentNumber = segmentNumber ?? LINE_DEFAULT_VALUE.segmentNumber;
       
         this.type = "ArcAnimateLine3D";
         this.CLASS_NAME = "SuperMap.Symbol.ArcAnimateLine3D";
@@ -41104,7 +41087,7 @@ class ArcAnimateLine3D extends AnimateLine3D {
         }
 
         // catch any randomly tagged-on properties
-        Util_Util.applyDefaults(obj, this);
+        Util.applyDefaults(obj, this);
 
         return obj;
     }
@@ -41136,7 +41119,7 @@ class ArcAnimateLine3D extends AnimateLine3D {
  * @param {number} [options.iconStepCount=1] - 纹理贴图间隔。
  * @usage       
  */
-class WallAnimateLine3D extends AnimateLine3D {
+class WallAnimateLine3D extends (/* unused pure expression or super */ null && (AnimateLine3D)) {
     constructor(options) {
         super(options);
         const { iconStepCount } = options ?? {};
@@ -41145,7 +41128,7 @@ class WallAnimateLine3D extends AnimateLine3D {
          * @member {number} WallAnimateLineSymbol3D.prototype.iconStepCount
          * @description 纹理贴图间隔。
          */
-        this.iconStepCount = iconStepCount ?? DefaultValue_LINE_DEFAULT_VALUE.iconStepCount;
+        this.iconStepCount = iconStepCount ?? LINE_DEFAULT_VALUE.iconStepCount;
       
         this.type = "WallAnimateLine3D";
         this.CLASS_NAME = "SuperMap.Symbol.WallAnimateLine3D";
@@ -41162,7 +41145,7 @@ class WallAnimateLine3D extends AnimateLine3D {
         }
 
         // catch any randomly tagged-on properties
-        Util_Util.applyDefaults(obj, this);
+        Util.applyDefaults(obj, this);
 
         return obj;
     }
@@ -41191,7 +41174,7 @@ class WallAnimateLine3D extends AnimateLine3D {
  * @extends {LineSymbol}
  * @param {object} options - 可选参数。
  */
-class Line3D_Line3D extends Line {
+class Line3D_Line3D extends (/* unused pure expression or super */ null && (Line)) {
 
     constructor(option) {
         super();
@@ -41212,7 +41195,7 @@ class Line3D_Line3D extends Line {
         }
 
         // catch any randomly tagged-on properties
-        Util_Util.applyDefaults(obj, this);
+        Util.applyDefaults(obj, this);
 
         return obj;
     }
@@ -41247,7 +41230,7 @@ class Line3D_Line3D extends Line {
  * const symbol = new WallLineSymbol3D();
  * @usage
  */
-class WallLine3D extends Line3D_Line3D {
+class WallLine3D extends (/* unused pure expression or super */ null && (Line3D)) {
 
     constructor(option) {
         super();
@@ -41263,7 +41246,7 @@ class WallLine3D extends Line3D_Line3D {
          * @member {number} WallAnimateLineSymbol3D.prototype.iconStepCount
          * @description 纹理贴图间隔。
          */
-         this.iconStepCount = iconStepCount ?? DefaultValue_LINE_DEFAULT_VALUE.iconStepCount;
+         this.iconStepCount = iconStepCount ?? LINE_DEFAULT_VALUE.iconStepCount;
       
         this.type = "WallLine3D";
         this.CLASS_NAME = "SuperMap.Symbol.WallLine3D";
@@ -41280,7 +41263,7 @@ class WallLine3D extends Line3D_Line3D {
         }
 
         // catch any randomly tagged-on properties
-        Util_Util.applyDefaults(obj, this);
+        Util.applyDefaults(obj, this);
 
         return obj;
     }
@@ -41380,7 +41363,7 @@ class ArcLine3D extends (/* unused pure expression or super */ null && (Line3D))
  * @param {object} [options] - 参数。 
  * @param {number} [options.opacity = 1] - 符号透明度。
  */
-class Polygon_Polygon extends Symbol_Symbol {
+class symbol_Polygon_Polygon extends (/* unused pure expression or super */ null && (Symbol)) {
 
     constructor(options) {
         super();
@@ -41407,11 +41390,11 @@ class Polygon_Polygon extends Symbol_Symbol {
      */
     clone(obj) {
         if (obj == null) {
-            obj = new Polygon_Polygon();
+            obj = new symbol_Polygon_Polygon();
         }
 
         // catch any randomly tagged-on properties
-        Util_Util.applyDefaults(obj, this);
+        Util.applyDefaults(obj, this);
 
         return obj;
     }
@@ -41447,7 +41430,7 @@ class Polygon_Polygon extends Symbol_Symbol {
  * });
  * @usage
  */
-class ImagePolygon extends Polygon_Polygon {
+class ImagePolygon extends (/* unused pure expression or super */ null && (Polygon)) {
 
     constructor(options) {
         super(options);
@@ -41486,7 +41469,7 @@ class ImagePolygon extends Polygon_Polygon {
         }
 
         // catch any randomly tagged-on properties
-        Util_Util.applyDefaults(obj, this);
+        Util.applyDefaults(obj, this);
 
         return obj;
     }
@@ -41539,7 +41522,7 @@ class ImagePolygon extends Polygon_Polygon {
  * const symbol = new TextSymbol();
  * @usage
  */
-class Text extends Symbol_Symbol {
+class Text extends (/* unused pure expression or super */ null && (Symbol)) {
 
     constructor(options) {
         super();
@@ -41677,7 +41660,7 @@ class Text extends Symbol_Symbol {
         }
 
         // catch any randomly tagged-on properties
-        Util_Util.applyDefaults(obj, this);
+        Util.applyDefaults(obj, this);
 
         return obj;
     }
@@ -47646,7 +47629,7 @@ class ThemeLayer_Theme {
      */
     getLocalXY(coordinate) {
         var pixelP, map = this.map;
-        if (coordinate instanceof Point || coordinate instanceof GeoText) {
+        if (coordinate instanceof Point_Point || coordinate instanceof GeoText) {
             let tempPoint = map.project(new (external_mapboxgl_default()).LngLat(coordinate.x, coordinate.y));
             pixelP = [tempPoint.x, tempPoint.y];
         }
@@ -48429,7 +48412,7 @@ class feature_Point_Point extends ShapeParameters {
  * @param {Array} pointList - 线要素节点数组，二维数组。
  * @usage
  */
-class Line_Line extends ShapeParameters {
+class feature_Line_Line extends ShapeParameters {
     constructor(pointList) {
         super(pointList);
         /**
@@ -50813,7 +50796,7 @@ class ShapeFactory {
             Util_Util.copyAttributesWithClip(shape, sps, ['x', 'y', 'style', 'highlightStyle']);
 
             return shape;
-        } else if (sps instanceof Line_Line) {        // 线
+        } else if (sps instanceof feature_Line_Line) {        // 线
             //检查参数 pointList 是否存在
             if (!sps.pointList) {
                 return null;
@@ -51204,7 +51187,7 @@ class ShapeFactory {
                 // 参考线
                 if (isAddRefLine) {
                     // 参考线参数对象
-                    var refLineSP = new Line_Line([
+                    var refLineSP = new feature_Line_Line([
                         [dvb[0], thckY],
                         [dvb[2], thckY]
                     ]);
@@ -51312,7 +51295,7 @@ class ShapeFactory {
         pois = xMainPois;
 
         // 坐标轴参数对象
-        var axisSP = new Line_Line(pois);
+        var axisSP = new feature_Line_Line(pois);
         // 坐标轴默认style
         axisSP.style = {
             strokeLinecap: "butt",
@@ -51683,11 +51666,11 @@ class ThemeVector extends Theme {
             this.multiLineStringToTF(geometry);
         } else if (geometry instanceof MultiPolygon) {
             this.multiPolygonToTF(geometry);
-        } else if (geometry instanceof Polygon) {
+        } else if (geometry instanceof Polygon_Polygon) {
             this.polygonToTF(geometry);
         } else if (geometry instanceof Collection) {
             //独立几何体
-        } else if (geometry instanceof Point) {
+        } else if (geometry instanceof Point_Point) {
             this.pointToTF(geometry);
         } else if (geometry instanceof Rectangle) {
             this.rectangleToTF(geometry);
@@ -57434,7 +57417,7 @@ class HeatMapLayer extends (external_mapboxgl_default()).Evented {
      */
     getPixelXY(coordinate) {
         var pixelP, map = this.map;
-        if (coordinate instanceof Point || coordinate instanceof GeoText) {
+        if (coordinate instanceof Point_Point || coordinate instanceof GeoText) {
             let tempPoint = map.project(new (external_mapboxgl_default()).LngLat(coordinate.x, coordinate.y));
             pixelP = {x: parseInt(tempPoint.x), y: parseInt(tempPoint.y)};
         }
@@ -68177,9 +68160,9 @@ class FeatureService extends ServiceBase {
                 params.geometry = core_Util_Util.toSuperMapPolygon(params.geometry);
                 params.geometry.SRID = 4326;
             } else if (params.geometry instanceof (external_mapboxgl_default()).Point) {
-                params.geometry = new Point(params.geometry.x, params.geometry.y);
+                params.geometry = new Point_Point(params.geometry.x, params.geometry.y);
             } else if (params.geometry instanceof (external_mapboxgl_default()).LngLat) {
-                params.geometry = new Point(params.geometry.lng, params.geometry.lat);
+                params.geometry = new Point_Point(params.geometry.lng, params.geometry.lat);
                 params.geometry.SRID = 4326;
             } else if (!(params.geometry instanceof Geometry_Geometry)) {
                 params.geometry = core_Util_Util.toSuperMapGeometry(params.geometry);
@@ -82202,11 +82185,11 @@ class QueryService_QueryService extends ServiceBase {
 
         if (params.geometry) {
             if (params.geometry instanceof (external_mapboxgl_default()).LngLat) {
-                params.geometry = new Point(params.geometry.lng, params.geometry.lat);
+                params.geometry = new Point_Point(params.geometry.lng, params.geometry.lat);
             }
 
             if (params.geometry instanceof (external_mapboxgl_default()).Point) {
-                params.geometry = new Point(params.geometry.x, params.geometry.y);
+                params.geometry = new Point_Point(params.geometry.x, params.geometry.y);
             }
 
             if (params.geometry instanceof (external_mapboxgl_default()).LngLatBounds) {
@@ -88514,7 +88497,7 @@ class WebPrintingJobService extends ServiceBase {
                 x: point[0],
                 y: point[1]
             };
-        } else if (point instanceof Point || point instanceof (external_mapboxgl_default()).Point) {
+        } else if (point instanceof Point_Point || point instanceof (external_mapboxgl_default()).Point) {
             return {
                 x: point.x,
                 y: point.y
@@ -89220,7 +89203,7 @@ class WKT extends Format {
              */
             'point': function (str) {
                 var coords = StringExt.trim(str).split(this.regExes.spaces);
-                return new Vector(new Point(coords[0], coords[1])
+                return new Vector(new Point_Point(coords[0], coords[1])
                 );
             },
 
@@ -89296,7 +89279,7 @@ class WKT extends Format {
                     components.push(linearring);
                 }
                 return new Vector(
-                    new Polygon(components)
+                    new Polygon_Polygon(components)
                 );
             },
 
@@ -97519,10 +97502,88 @@ class ColorsPickerUtil  {
     }
 
 }
+;// CONCATENATED MODULE: ./src/common/util/SymbolLibrary.js
+/* Copyright© 2000 - 2022 SuperMap Software Co.Ltd. All rights reserved.
+ * This program are made available under the terms of the Apache License, Version 2.0
+ * which accompanies this distribution and is available at http://www.apache.org/licenses/LICENSE-2.0.html.*/
+/**
+ * @class SymbolLibrary
+ * @deprecatedclass SuperMap.SymbolLibrary
+ * @category Symbol
+ * @classdesc 符号库。
+ * @param {string} url - 预定义符号资源地址。
+ * @usage
+ */
+class SymbolLibrary {
+  constructor(url) {
+    this.url = url;
+  }
+
+  /**
+   * @function SymbolLibrary.prototype.getImage
+   * @param {string} url - 预定义符号资源地址。
+   * @returns {Image} image。
+   * @description 获取image
+   */
+  async getImage(url) {
+    return new Promise((resolve) => {
+      const image = new Image();
+      image.src = url;
+      image.onload = (content) => {
+        resolve(content ? image : null);
+      };
+      image.onerror = () => {
+        resolve(null);
+      };
+    });
+  }
+
+  /**
+   * @function SymbolLibrary.prototype.getJson
+   * @param {string} url - 预定义符号资源地址。
+   * @returns {JSON} Json
+   * @description 获取Json
+   */
+  async getJson(url) {
+    return fetch(url, {
+      method: "GET"
+    }).then(response => {
+      if (!response.ok) {
+        return;
+      }
+      return response.json();
+    });
+  }
+
+  /**
+   * @function SymbolLibrary.prototype.getSymbol
+   * @param {string} symbolId - 预定义符号ID。
+   * @description 获取预定义符号信息。
+   * @returns {object} symbol + image。
+   */
+  async getSymbol(symbolId) {
+    const url = `${this.url}/${symbolId}/${symbolId}`;
+    const value = await this.getJson(`${url}.json`);
+    if (!value) {
+      return null;
+    }
+    const image = await this.getImage(`${url}.png`);
+    return {
+      value,
+      image
+    }
+  }
+}
+
+/* harmony default export */ const util_SymbolLibrary = (SymbolLibrary);
+
+
 ;// CONCATENATED MODULE: ./src/common/util/index.js
 /* Copyright© 2000 - 2022 SuperMap Software Co.Ltd. All rights reserved.
  * This program are made available under the terms of the Apache License, Version 2.0
  * which accompanies this distribution and is available at http://www.apache.org/licenses/LICENSE-2.0.html.*/
+
+
 
 
 
@@ -104125,7 +104186,7 @@ class overlay_Line_Line extends Graph_Graph {
         }
 
         // 折线参数对象
-        var lineSP = new Line_Line(poiLists);
+        var lineSP = new feature_Line_Line(poiLists);
         lineSP.style = ShapeFactory.ShapeStyleTool({strokeColor: "#ee9900"}, sets.lineStyle);
         // 禁止事件响应
         lineSP.clickable = false;
@@ -109096,26 +109157,9 @@ SuperMap.Geometry.LineString = LineString;
 SuperMap.Geometry.MultiLineString = MultiLineString;
 SuperMap.Geometry.MultiPoint = MultiPoint;
 SuperMap.Geometry.MultiPolygon = MultiPolygon;
-SuperMap.Geometry.Point = Point;
-SuperMap.Geometry.Polygon = Polygon;
+SuperMap.Geometry.Point = Point_Point;
+SuperMap.Geometry.Polygon = Polygon_Polygon;
 SuperMap.Geometry.Rectangle = Rectangle;
-SuperMap.Symbol.SimplePoint = SimplePoint;
-SuperMap.Symbol.ImagePoint = ImagePoint;
-SuperMap.Symbol.SimpleLine = SimpleLine;
-SuperMap.Symbol.ArcLine = ArcLine;
-SuperMap.Symbol.GreatCircleLine = GreatCircleLine;
-SuperMap.Symbol.SimpleImageLine = SimpleImageLine;
-SuperMap.Symbol.ArcImageLine = ArcImageLine;
-SuperMap.Symbol.GreatCircleImageLine = GreatCircleImageLine;
-SuperMap.Symbol.SimpleAnimateLine = SimpleAnimateLine;
-SuperMap.Symbol.GreatCircleAnimateLine = GreatCircleAnimateLine;
-SuperMap.Symbol.ArcAnimateLine3D = ArcAnimateLine;
-SuperMap.Symbol.ArcAnimateLine3D = ArcAnimateLine3D;
-SuperMap.Symbol.WallAnimateLine3D = WallAnimateLine3D;
-SuperMap.Symbol.WallLineSymbol3D = WallLine3D;
-SuperMap.Symbol.Polygon = Polygon_Polygon;
-SuperMap.Symbol.ImagePolygon = ImagePolygon;
-SuperMap.Symbol.Text = Text;
 // Components
 SuperMap.Components.Chart = ChartView;
 SuperMap.Components.ChartViewModel = ChartViewModel;
@@ -109437,7 +109481,7 @@ SuperMap.Feature.ShapeParameters = ShapeParameters;
 SuperMap.Feature.ShapeParameters.Circle = Circle_Circle;
 SuperMap.Feature.ShapeParameters.Image = Image_Image;
 SuperMap.Feature.ShapeParameters.Label = Label;
-SuperMap.Feature.ShapeParameters.Line = Line_Line;
+SuperMap.Feature.ShapeParameters.Line = feature_Line_Line;
 SuperMap.Feature.ShapeParameters.Point = feature_Point_Point;
 SuperMap.Feature.ShapeParameters.Polygon = feature_Polygon_Polygon;
 SuperMap.Feature.ShapeParameters.Rectangle = Rectangle_Rectangle;
@@ -109463,6 +109507,7 @@ SuperMap.ElasticSearch = ElasticSearch;
 // util
 SuperMap.ArrayStatistic = ArrayStatistic;
 SuperMap.ColorsPickerUtil = ColorsPickerUtil;
+SuperMap.SymbolLibrary = util_SymbolLibrary;
 
 // REST
 SuperMap.DataFormat = DataFormat;

@@ -432,23 +432,7 @@ import {
   WebPrintingService,
   ImageCollectionService,
   ImageService,
-  SimplePointSymbol,
-  ImagePointSymbol,
-  SimpleLineSymbol,
-  ArcLineSymbol,
-  GreatCircleLineSymbol,
-  SimpleImageLineSymbol,
-  ArcImageLineSymbol,
-  GreatCircleImageLineSymbol,
-  SimpleAnimateLineSymbol,
-  GreatCircleAnimateLineSymbol,
-  ArcAnimateLineSymbol,
-  ArcAnimateLineSymbol3D,
-  WallAnimateLineSymbol3D,
-  PolygonSymbol,
-  ImagePolygonSymbol,
-  WallLineSymbol3D,
-  TextSymbol
+  SymbolLibrary
 } from './index.all';
 
 import { INCHES_PER_UNIT, METERS_PER_INCH, DOTS_PER_INCH, IS_GECKO } from './commontypes/Util';
@@ -510,23 +494,6 @@ SuperMap.Geometry.MultiPolygon = GeometryMultiPolygon;
 SuperMap.Geometry.Point = GeometryPoint;
 SuperMap.Geometry.Polygon = GeometryPolygon;
 SuperMap.Geometry.Rectangle = GeometryRectangle;
-SuperMap.Symbol.SimplePoint = SimplePointSymbol;
-SuperMap.Symbol.ImagePoint = ImagePointSymbol;
-SuperMap.Symbol.SimpleLine = SimpleLineSymbol;
-SuperMap.Symbol.ArcLine = ArcLineSymbol;
-SuperMap.Symbol.GreatCircleLine = GreatCircleLineSymbol;
-SuperMap.Symbol.SimpleImageLine = SimpleImageLineSymbol;
-SuperMap.Symbol.ArcImageLine = ArcImageLineSymbol;
-SuperMap.Symbol.GreatCircleImageLine = GreatCircleImageLineSymbol;
-SuperMap.Symbol.SimpleAnimateLine = SimpleAnimateLineSymbol;
-SuperMap.Symbol.GreatCircleAnimateLine = GreatCircleAnimateLineSymbol;
-SuperMap.Symbol.ArcAnimateLine3D = ArcAnimateLineSymbol;
-SuperMap.Symbol.ArcAnimateLine3D = ArcAnimateLineSymbol3D;
-SuperMap.Symbol.WallAnimateLine3D = WallAnimateLineSymbol3D;
-SuperMap.Symbol.WallLineSymbol3D = WallLineSymbol3D;
-SuperMap.Symbol.Polygon = PolygonSymbol;
-SuperMap.Symbol.ImagePolygon = ImagePolygonSymbol;
-SuperMap.Symbol.Text = TextSymbol;
 // Components
 SuperMap.Components.Chart = ChartView;
 SuperMap.Components.ChartViewModel = ChartViewModel;
@@ -874,6 +841,7 @@ SuperMap.ElasticSearch = ElasticSearch;
 // util
 SuperMap.ArrayStatistic = ArrayStatistic;
 SuperMap.ColorsPickerUtil = ColorsPickerUtil;
+SuperMap.SymbolLibrary = SymbolLibrary;
 
 // REST
 SuperMap.DataFormat = DataFormat;
