@@ -34,8 +34,7 @@ module.exports = WebpackMerge(baseConfig, {
     }),
     new HtmlWebpackPlugin({
       filename: 'index.html',
-      excludeChunks: ['landuse'],
-      template: path.resolve(__dirname, '../src/index.html')
+      template: path.resolve(__dirname, '../index.html')
     }),
     new OpenBrowserPlugin({
       url: `http://127.0.0.1:${PORT}/index.html`
