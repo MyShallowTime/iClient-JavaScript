@@ -14,7 +14,7 @@ interface SymbolModalProps {
 const SymbolModal = (props: SymbolModalProps) => {
     const { modalRef, type, title, id } = props;
     // eslint-disable-next-line import/no-dynamic-require
-    const symbolInfo = require(`../../../static/symbols/${type}/${type}-${id}.json`);
+    const symbolInfo = require(`../../../libs/resources/symbols/${type}-${id}/${type}-${id}.json`);
     const symbol = JSON.stringify(symbolInfo);
 
     return (

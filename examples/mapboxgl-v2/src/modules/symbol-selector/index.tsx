@@ -53,7 +53,7 @@ const SymbolSelector = (props: SymbolContentProps) => {
     const getImageUrl = (id) => {
         const isPolygon = type === 'polygon';
         if(isPolygon) {
-            const { paint = {} } = isPolygon && require(`../../../static/symbols/polygon/${type}-${id}.json`), 
+            const { paint = {} } = isPolygon && require(`../../../libs/resources/symbols/${type}-${id}/${type}-${id}.json`), 
                 {'fill-color': color, 'fill-pattern': imgId} = paint;   
             return {
                 color,
