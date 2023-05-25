@@ -21,7 +21,7 @@ const SymbolModal = (props: SymbolModalProps) => {
         <Modal ref={modalRef} header={`${title}`} hideFooter className='symbol-icon-modal'>
             <div className='symbol-thumbnail-content'>
                 <div className='symbol-thumbnail'>
-                    <img src={`../../static/images/${type}/${id}.png`} />
+                    <img src={`../../../libs/resources/symbols/${type}-${id}/${type}-${id}.png`} />
                 </div>
             </div>
             <div className='symbol-block-content'>

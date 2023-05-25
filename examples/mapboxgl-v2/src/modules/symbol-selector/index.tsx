@@ -57,11 +57,11 @@ const SymbolSelector = (props: SymbolContentProps) => {
                 {'fill-color': color, 'fill-pattern': imgId} = paint;   
             return {
                 color,
-                imageUrl: imgId ? `../../../static/images/${type}/${imgId}.png`: undefined
+                imageUrl: imgId ? `../../../libs/resources/symbols/${type}-${id}/${type}-${id}.png`: undefined
             }      
         }
         return {
-            imageUrl: `../../../static/images/${type}/${type}-${id}.png`
+            imageUrl: `../../../libs/resources/symbols/${type}-${id}/${type}-${id}.png`
         };
     }
 
