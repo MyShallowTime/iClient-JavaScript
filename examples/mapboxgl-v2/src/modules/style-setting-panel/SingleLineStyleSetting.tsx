@@ -15,7 +15,7 @@ interface SingleLineStyleContentProps {
 }
 
 const SingleLineStyleSetting = (props: SingleLineStyleContentProps) => {
-    const { layerId, selectedSymbolId, wholeWidth, changeLayerStyle, getLayerPropertyStyle, updateWholeWidth } = props;
+    const { layerId, selectedSymbolId, wholeWidth, changeLayerStyle, getLayerPropertyStyle, updateWholeWidth, getDashArray } = props;
 
     const defaultStyle = {
         width: 1,
@@ -58,6 +58,11 @@ const SingleLineStyleSetting = (props: SingleLineStyleContentProps) => {
 
     const { width, color, offset, opacity, blur, join, cap, translate=[], image } = style;
 
+    const changeDashArray = (percent) => {
+        const result = getDashArray(layerId,percent);
+        changeStyle('dasharray', result);
+    }
+
 
     return (
         <>
@@ -85,8 +90,10 @@ const SingleLineStyleSetting = (props: SingleLineStyleContentProps) => {
                     <NumberEditor
                         value={width}
                         onChange={(v: any) => {
+                            const percent = v / getLayerPropertyStyle(layerId, 'width');
                             changeStyle('width', v);
                             updateWholeWidth();
+                            changeDashArray(percent);
                         }}
                         min={0.01}
                         max={100}
