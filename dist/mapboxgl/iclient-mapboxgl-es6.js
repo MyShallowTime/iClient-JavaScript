@@ -23619,10 +23619,8 @@ const MapboxSymbolLayer = (m) => {
                     }
                     this.addSimpleSymbol(layer, symbolInfo, before);
                 }
-            } else if (layer.type === 'line') {
-                this.addExpressionLineLayer(layer, symbol, before);
             } else {
-                this.addExpressionSymbolLayer(layer, symbol, before);
+                this.addExpressionLineLayer(layer, symbol, before);
             }
             delete layer.symbol;
         },
