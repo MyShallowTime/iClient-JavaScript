@@ -2,11 +2,9 @@ import React, { useState } from 'react';
 import LayerList from '../modules/layer-list/LayerList';
 import LineSetting from '../modules/line-setting/LineSetting';
 import PointSetting from '../modules/point-setting/PointSetting';
-import TextSetting from '../modules/text-setting/TextSetting';
 import PolygonSetting from '../modules/polygon-setting/PolygonSetting';
 import Map, { MapProps } from './Map';
 import './ComponentsStyle';
-import CircleSetting from '../modules/circle-setting/CircleSetting';
 
 type PanelLayoutProps = {
     mapParams: MapProps,
