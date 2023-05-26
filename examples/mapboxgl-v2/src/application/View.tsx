@@ -28,8 +28,6 @@ const View = (props: PanelLayoutProps) => {
     const { changeLayerStyle, getLayerPropertyStyle, getCompositeLayersIds, getImageInfo } = props.styleSettingParams;
     const [layerId, setLayerId] = useState('');
     const type = layersInfo?.find(el => el?.id === layerId)?.type;
-    const sourceLayer = layersInfo?.find(el => el?.id === layerId)?.sourceLayer;
-    const url = layersInfo?.find(el => el?.id === layerId)?.url;
     const [isSettingOpen, setIsSettingOpen] = useState(false);
     const selectedSymbolId = layersInfo.find(el => el.id === layerId)?.symbolId;
     const onClosePanal = () => {
@@ -46,9 +44,7 @@ const View = (props: PanelLayoutProps) => {
     const settingRender = {
         line: <LineSetting key={layerId} layerId={layerId} selectedSymbolId={selectedSymbolId} onIconClick={onClickCard} getLayerPropertyStyle={getLayerPropertyStyle} changeLayerStyle={changeLayerStyle} getCompositeLayersIds={getCompositeLayersIds} onClosePanal={onClosePanal} />,
         point: <PointSetting key={layerId} layerId={layerId} selectedSymbolId={selectedSymbolId} onIconClick={onClickCard} getLayerPropertyStyle={getLayerPropertyStyle} changeLayerStyle={changeLayerStyle} onClosePanal={onClosePanal} getImageInfo={getImageInfo} />,
-        polygon: <PolygonSetting key={layerId} layerId={layerId} selectedSymbolId={selectedSymbolId} onIconClick={onClickCard} getLayerPropertyStyle={getLayerPropertyStyle} changeLayerStyle={changeLayerStyle} onClosePanal={onClosePanal} />,
-        text: <TextSetting key={layerId} layerId={layerId} getLayerPropertyStyle={getLayerPropertyStyle} changeLayerStyle={changeLayerStyle} onClosePanal={onClosePanal} sourceLayer={sourceLayer} url={url} />,
-        circle: <CircleSetting key={layerId} layerId={layerId} getLayerPropertyStyle={getLayerPropertyStyle} changeLayerStyle={changeLayerStyle} onClosePanal={onClosePanal} />
+        polygon: <PolygonSetting key={layerId} layerId={layerId} selectedSymbolId={selectedSymbolId} onIconClick={onClickCard} getLayerPropertyStyle={getLayerPropertyStyle} changeLayerStyle={changeLayerStyle} onClosePanal={onClosePanal} />
     };
 
     return <>

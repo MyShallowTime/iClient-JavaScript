@@ -13,12 +13,7 @@ const App = () => {
     const [map, setMap] = useState<any>();
     const [layersInfo, setLayersInfo] = useState<any[]>([]);
     const url = 'http://172.16.14.182:8090/iserver/services/map-China100/rest/maps/China';
-    enum SymbolType {
-        Polygon = 'Polygon',
-        SimpleLine = 'SimpleLine',
-        Point = 'Point',
-        Text = 'Text'
-    }
+
     // 初始化
     useEffect(() => {
         !!map && addStyle();
@@ -43,7 +38,7 @@ const App = () => {
 
     const loadCustomSymbol = (customSymbolInfo) => {
         let symbolId;
-        if (customSymbolInfo.type === SymbolType.Polygon) {
+        if (customSymbolInfo?.paint?.['fill-color'] && !customSymbolInfo?.paint?.['fill-pattern']) {
             symbolId = 'polygon-0'
         }
         const id = uniqueId();
@@ -106,16 +101,7 @@ const App = () => {
                 }
             }
         });
-        // const citySymbol = loadCustomSymbol({
-        //     type: SymbolType.Point,
-        //     size: 8,
-        //     color: '#fff',
-        //     opacity: 1,
-        //     strokeColor: "rgba(208,2,27,1)",
-        //     strokeWidth: 2,
-        //     stroleOpacity: 0.8,
-        //     blur: 0.8
-        // });
+
         const chinaSymbol = loadCustomSymbol({
             paint: {
                 'fill-color': '#F5F3F0'

@@ -14,7 +14,7 @@ interface SymbolContentProps {
     }[];
     styles?: any;
     iconIds?: any;
-    type?: string;
+    type: string;
     selectedSymbolId?: string;
 }
 
@@ -27,7 +27,11 @@ const SymbolSelector = (props: SymbolContentProps) => {
         "value": "all",
         "label": "全部"
     });
-
+    const imgClass = {
+        line: 'img-line',
+        point: 'img-point',
+        polygon: 'img-polygon'
+    }
     const [activeStyle, setActiveStyle] = useState(activeStyleOptions?.[0]?.value);
 
     const getIds = (style) => {
@@ -69,7 +73,7 @@ const SymbolSelector = (props: SymbolContentProps) => {
         return symbolInfos?.map(({ id, name }) => {
             const newSymbolId = type + '-' + id;
             const {color, imageUrl} = getImageUrl(id);  
-            return <IconCard key={type + id} background={color} imgUrl={imageUrl} title={name} onIconClick={() => {
+            return <IconCard key={type + id} background={color} imgUrl={imageUrl} title={name} imgClassName={imgClass[type]} onIconClick={() => {
                 onIconClick(newSymbolId);
             }} isSelected={newSymbolId === selectedSymbolId} />
         });

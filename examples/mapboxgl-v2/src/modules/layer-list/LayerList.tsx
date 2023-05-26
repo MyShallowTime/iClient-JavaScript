@@ -16,8 +16,6 @@ const LayerList = (props: LayerListProps) => {
 
     const iconName = {
         point: "ms-icons-type-point",
-        circle: "ms-icons-type-point",
-        text: "ms-icons-symbol-text",
         line: "ms-icons-type-line",
         polygon: "ms-icons-type-face"
     }
