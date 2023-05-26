@@ -14,14 +14,14 @@ interface SymbolModalProps {
 const SymbolModal = (props: SymbolModalProps) => {
     const { modalRef, type, title, id } = props;
     // eslint-disable-next-line import/no-dynamic-require
-    const symbolInfo = require(`../../../static/symbols/${type}/${type}-${id}.json`);
+    const symbolInfo = require(`../../../libs/resources/symbols/${type}-${id}/${type}-${id}.json`);
     const symbol = JSON.stringify(symbolInfo);
 
     return (
         <Modal ref={modalRef} header={`${title}`} hideFooter className='symbol-icon-modal'>
             <div className='symbol-thumbnail-content'>
                 <div className='symbol-thumbnail'>
-                    <img src={`../../static/images/${type}/${id}.png`} />
+                    <img src={`../../../libs/resources/symbols/${type}-${id}/${type}-${id}.png`} />
                 </div>
             </div>
             <div className='symbol-block-content'>

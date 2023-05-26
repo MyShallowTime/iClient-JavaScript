@@ -41,8 +41,8 @@ const LineStyleSetting = (props: LineStyleSettingProps) => {
         updateWholeWidth();
     }, [lineIds, selectedSymbolId]);
 
-    const getDashArray = (id, percent) => {
-       const beforeDash = getLayerPropertyStyle(id, 'dasharray'); 
+    const getDashArray = (layerId, percent) => {
+        const beforeDash = getLayerPropertyStyle(layerId, 'dasharray'); 
        if(!beforeDash || beforeDash.length === 0) return;
        const result = beforeDash.map(v => {
             return v / percent;
@@ -54,7 +54,8 @@ const LineStyleSetting = (props: LineStyleSettingProps) => {
         if (v === 0) return;
         const percent = v / wholeWidth;
         lineIds.forEach(id => {
-            const width = getLayerPropertyStyle(id, 'width'), offset = getLayerPropertyStyle(id, 'offset'), dasharray = getDashArray(id, percent);
+            const width = getLayerPropertyStyle(id, 'width'), offset = getLayerPropertyStyle(id, 'offset'), 
+                dasharray = getDashArray(id, percent);
             width && changeLayerStyle(id, 'width', width * percent);
             offset && changeLayerStyle(id, 'offset', offset * percent);
             dasharray && changeLayerStyle(id, 'dasharray', dasharray);
@@ -80,7 +81,7 @@ const LineStyleSetting = (props: LineStyleSettingProps) => {
                 return (
                     <div key={id}>
                         {!isSingleLine && <div className='style-item-title'>{`线段${index + 1}:`}</div>}
-                        <SingleLineStyleSetting layerId={id} changeLayerStyle={changeLayerStyle} getLayerPropertyStyle={getLayerPropertyStyle} selectedSymbolId={selectedSymbolId} wholeWidth={wholeWidth} updateWholeWidth={updateWholeWidth} />
+                        <SingleLineStyleSetting layerId={id} changeLayerStyle={changeLayerStyle} getLayerPropertyStyle={getLayerPropertyStyle} selectedSymbolId={selectedSymbolId} wholeWidth={wholeWidth} updateWholeWidth={updateWholeWidth} getDashArray={getDashArray} />
                     </div>
                 )
             })}
