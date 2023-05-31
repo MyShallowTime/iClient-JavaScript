@@ -37,7 +37,7 @@ const IconCard = (props: IconCardContentProps) => {
             }}>
                 <div className={classNames('img-content', { 'line-img-content': type === 'line' })}>
                     {imgUrl ?
-                        <img src={imgUrl} /> :
+                        <div style={{backgroundImage: `url(${imgUrl})`}}></div> :
                         <div style={{ background: color }} />}
                 </div>
                 <div className='img-title' title={title}>
