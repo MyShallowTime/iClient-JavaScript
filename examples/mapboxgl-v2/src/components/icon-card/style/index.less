@@ -1,13 +1,14 @@
 .icon-image {
-    width: 56px;
+    width: 57px;
+    height: 100px;
     margin: 0 8px 12px 0;
-    cursor: pointer;
     display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
     &.selected .img-content{
         border-color: #269FF0;
     }
     .img-content {
-        width: 56px;
         height: 42px;
         background: #FFFFFF;
         border-radius: 4px;
@@ -36,18 +37,23 @@
     .title-content {
         text-align: start;
         margin-top: 4px;
-        width: 56px;
-        height: 40px;
+        width: 60px;
         font-size: 12px;
-        font-family: MicrosoftYaHei;
         color: rgba(255, 255, 255, 0.65);
-        line-height: 20px;
-        display: -webkit-box;
-        overflow: hidden;
-        -webkit-box-orient: vertical;
-        -webkit-line-clamp: 2;
-        word-break: break-all;
         color: rgba(0, 0, 0, 0.45);
+        .icon-title {
+            display: -webkit-box;
+            overflow: hidden;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            word-break: break-all;
+            margin-bottom: 4px;
+        }
+        .icon-id {
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
     }
 }
 
