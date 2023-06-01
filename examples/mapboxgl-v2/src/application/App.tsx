@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import View from './View';
 import './style';
-import { uniqueId } from 'lodash';
+import { isArray, uniqueId } from 'lodash';
 import { getMapboxKey, isPaintKey } from '../utils/StyleSettingUtil';
 // import '../../../../src/mapboxgl/core/MapExtend';
 
@@ -83,6 +83,9 @@ const App = () => {
         const provinceLineSymbol = await loadPreSymbol({
             symbolId: 'line-49050402'
         });
+        const MainRoadLineLineSymbol = await loadPreSymbol({
+            symbolId: 'line-42100004'
+        });
         const capitalSymbol = await loadPreSymbol({
             symbolId: 'point-83030559',
             style: {
@@ -158,9 +161,9 @@ const App = () => {
             layersInfo: newLayersInfo
         });
         addMVTLayer({
-            layerId:'RiverLine',
-            sourceLayer: 'Main_River_ln@China',
-            type:'line',
+            layerId:'riverLine', 
+            sourceLayer: 'Main_River_ln@China', 
+            type:'line', 
             layerType: 'line',
             symbol: riverLineSymbol,
             layersInfo: newLayersInfo
@@ -174,9 +177,17 @@ const App = () => {
             layersInfo: newLayersInfo
         });
         addMVTLayer({
-            layerId:'capital',
-            sourceLayer: 'China_Capital_pt@China',
-            type:'point',
+            layerId:'mainRoadLine', 
+            sourceLayer: 'Main_Road_L@China', 
+            type:'line', 
+            layerType: 'line',
+            symbol: MainRoadLineLineSymbol,
+            layersInfo: newLayersInfo
+        });
+        addMVTLayer({
+            layerId:'capital', 
+            sourceLayer: 'China_Capital_pt@China', 
+            type:'point', 
             layerType: 'symbol',
             symbol: capitalSymbol,
             layersInfo: newLayersInfo
@@ -208,17 +219,26 @@ const App = () => {
         setLayersInfo(newLayersInfo.reverse());
     };
 
+    const hideSymbol = (symbol) => {
+        isArray(symbol) ?
+            symbol.forEach(s => {
+                s.layout = Object.assign(s.layout ?? {}, { visibility: 'none' });
+            }) :
+            symbol.layout = Object.assign(symbol.layout ?? {}, { visibility: 'none' });
+    };
     // 点击切换
     const onIconClick = async (symbolId, layerId) => {
-        console.log(symbolId);
         if (!map) return;
         const type = getLayerType(layerId);
         const id = uniqueId();
         await map.loadSymbol(symbolId, (_err, symbol) => {
-            if(type === 'point') {
+            if (type === 'point') {
                 symbol.layout['icon-allow-overlap'] = true;
                 symbol.layout['icon-size'] = 0.16;
             }
+            // TODO 暂时这样处理，待symbol是否设置visibility明确后优化
+            // 图层隐藏状态下切换符号，隐藏新符号
+            getLayerPropertyStyle(layerId, 'visibility') === 'none' && hideSymbol(symbol);
             map.addSymbol(id, symbol);
         });
         map.setSymbol(layerId, id);

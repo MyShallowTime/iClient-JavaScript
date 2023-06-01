@@ -4,7 +4,6 @@ import SelectEditor from '../../components/select-editor';
 import './style';
 import IconCard from '../../components/icon-card';
 import EditorLayout from '../../components/editor-layout';
-import SearchEditor from '../../components/search-editor';
 interface SymbolContentProps {
     onIconClick: (id: string) => void;
     symbolType: string;
@@ -16,12 +15,12 @@ interface SymbolContentProps {
     iconIds?: any;
     type: string;
     selectedSymbolId?: string;
+    searchValue: string;
 }
 
 const SymbolSelector = (props: SymbolContentProps) => {
-    const { symbolType, onIconClick, options, styles, iconIds, type, selectedSymbolId } = props;
+    const { symbolType, onIconClick, options, styles, iconIds, type, selectedSymbolId, searchValue } = props;
     const [activeCategory, setActiveCategory] = useState<any>(options?.[0]?.value);
-    const [searchValue, setSearchValue] = useState('');
     const activeStyleOptions = styles?.[activeCategory];
     symbolType === "base" && activeStyleOptions && activeStyleOptions?.[0]?.value !== 'all' && activeStyleOptions.unshift({
         "value": "all",
@@ -73,7 +72,7 @@ const SymbolSelector = (props: SymbolContentProps) => {
         return symbolInfos?.map(({ id, name }) => {
             const newSymbolId = type + '-' + id;
             const {color, imageUrl} = getImageUrl(id);  
-            return <IconCard key={type + id} background={color} imgUrl={imageUrl} title={name} imgClassName={imgClass[type]} onIconClick={() => {
+            return <IconCard key={type + id} background={color} imgUrl={imageUrl} title={name} id={id} imgClassName={imgClass[type]} onIconClick={() => {
                 onIconClick(newSymbolId);
             }} isSelected={newSymbolId === selectedSymbolId} />
         });
@@ -121,15 +120,12 @@ const SymbolSelector = (props: SymbolContentProps) => {
     const getSearchResultSymbol = () => {
         const allIcons: { id: string, name: string }[] = [];
         getAllIconIds(allIcons, iconIds);
-        const searchResutl = allIcons.filter((el) => el.name.includes(searchValue));
+        const searchResutl = allIcons.filter((el) => (el.name.includes(searchValue) || el.id.includes(searchValue)));
         return getSymbol(searchResutl);
     };
 
     return (
         <div>
-            <SearchEditor onSearchValueChange={(v) => {
-                setSearchValue(v);
-            }} />
             {searchValue ?
                 <ScrollPanel hideScrollX small style={{ height: 516 }}>
                     {getSearchResultSymbol()}
@@ -141,7 +137,7 @@ const SymbolSelector = (props: SymbolContentProps) => {
                     {activeStyle && <EditorLayout title='风格'>
                         <SelectEditor options={activeStyleOptions} value={activeStyle} onChange={setActiveStyle} />
                     </EditorLayout>}
-                    <ScrollPanel hideScrollX small style={{ height: activeStyle ? 428 : 468, marginTop: 16 }}>
+                    <ScrollPanel hideScrollX small style={{ height: activeStyle ? 477 : 517, marginTop: 16 }}>
                         {
                             activeStyleOptions && activeStyle === 'all' ? getBaseAllSymbol() : getSymbol(ids)
                         }
