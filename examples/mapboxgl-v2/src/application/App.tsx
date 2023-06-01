@@ -20,7 +20,7 @@ const App = () => {
     }, [!!map]);
 
     const onLoadedMap = async (map: any) => {
-        map.addSymbolLibrary(new (window as any).mapboxgl.supermap.SymbolLibrary("../../libs/resources/symbols"));
+        (window as any).mapboxgl.supermap.WebSymbol.symbolUrl = "../../libs/resources/symbols";
         setMap(map);
     }
 
@@ -47,11 +47,11 @@ const App = () => {
     };
 
     const addMVTLayer = (options: {
-        layerId: string; 
+        layerId: string;
         sourceLayer: string;
         type: string;
         layerType: string;
-        symbol: any; 
+        symbol: any;
         layersInfo: any;
     }): void => {
         const {layerId, sourceLayer, type, layerType, symbol, layersInfo} = options;
@@ -125,7 +125,7 @@ const App = () => {
             layout: {
                 'text-field': '{NAME}',
                 'text-size': 20,
-                'text-font': ['Microsoft YaHei Bold'] 
+                'text-font': ['Microsoft YaHei Bold']
             }
         });
         const cityTextSymbol = loadCustomSymbol({
@@ -142,67 +142,67 @@ const App = () => {
         });
 
         addMVTLayer({
-            layerId:'chinaPolygon', 
-            sourceLayer:'China_Province_pg@China', 
-            type:'polygon', 
+            layerId:'chinaPolygon',
+            sourceLayer:'China_Province_pg@China',
+            type:'polygon',
             layerType: 'fill',
-            symbol: chinaSymbol, 
+            symbol: chinaSymbol,
             layersInfo: newLayersInfo
         });
         addMVTLayer({
-            layerId:'riverpolygon', 
-            sourceLayer: 'Main_River_pg@China', 
-            type:'polygon', 
+            layerId:'riverpolygon',
+            sourceLayer: 'Main_River_pg@China',
+            type:'polygon',
             layerType: 'fill',
-            symbol: riverPolygonSymbol, 
+            symbol: riverPolygonSymbol,
             layersInfo: newLayersInfo
         });
         addMVTLayer({
-            layerId:'RiverLine', 
-            sourceLayer: 'Main_River_ln@China', 
-            type:'line', 
+            layerId:'RiverLine',
+            sourceLayer: 'Main_River_ln@China',
+            type:'line',
             layerType: 'line',
-            symbol: riverLineSymbol, 
+            symbol: riverLineSymbol,
             layersInfo: newLayersInfo
         });
         addMVTLayer({
-            layerId:'provinceLine', 
-            sourceLayer: 'China_Province_ln@China', 
-            type:'line', 
+            layerId:'provinceLine',
+            sourceLayer: 'China_Province_ln@China',
+            type:'line',
             layerType: 'line',
-            symbol: provinceLineSymbol, 
+            symbol: provinceLineSymbol,
             layersInfo: newLayersInfo
         });
         addMVTLayer({
-            layerId:'capital', 
-            sourceLayer: 'China_Capital_pt@China', 
-            type:'point', 
+            layerId:'capital',
+            sourceLayer: 'China_Capital_pt@China',
+            type:'point',
             layerType: 'symbol',
-            symbol: capitalSymbol, 
+            symbol: capitalSymbol,
             layersInfo: newLayersInfo
         });
         addMVTLayer({
-            layerId:'city', 
-            sourceLayer: 'China_ProCenCity_pt@China', 
-            type:'point', 
+            layerId:'city',
+            sourceLayer: 'China_ProCenCity_pt@China',
+            type:'point',
             layerType: 'symbol',
-            symbol: citySymbol, 
+            symbol: citySymbol,
             layersInfo: newLayersInfo
         });
         addMVTLayer({
-            layerId:'nationText', 
-            sourceLayer: 'China_Nation_B_pt@China', 
-            type:'text', 
+            layerId:'nationText',
+            sourceLayer: 'China_Nation_B_pt@China',
+            type:'text',
             layerType: 'symbol',
-            symbol: nationTextSymbol, 
+            symbol: nationTextSymbol,
             layersInfo: newLayersInfo
         });
         addMVTLayer({
-            layerId:'cityText', 
-            sourceLayer: 'China_ProCenCity_pt@China', 
-            type:'text', 
+            layerId:'cityText',
+            sourceLayer: 'China_ProCenCity_pt@China',
+            type:'text',
             layerType: 'symbol',
-            symbol: cityTextSymbol, 
+            symbol: cityTextSymbol,
             layersInfo: newLayersInfo
         });
         setLayersInfo(newLayersInfo.reverse());

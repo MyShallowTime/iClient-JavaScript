@@ -432,7 +432,7 @@ import {
   WebPrintingService,
   ImageCollectionService,
   ImageService,
-  SymbolLibrary
+  WebSymbol
 } from './index.all';
 
 import { INCHES_PER_UNIT, METERS_PER_INCH, DOTS_PER_INCH, IS_GECKO } from './commontypes/Util';
@@ -841,7 +841,7 @@ SuperMap.ElasticSearch = ElasticSearch;
 // util
 SuperMap.ArrayStatistic = ArrayStatistic;
 SuperMap.ColorsPickerUtil = ColorsPickerUtil;
-SuperMap.SymbolLibrary = SymbolLibrary;
+SuperMap.WebSymbol = WebSymbol;
 
 // REST
 SuperMap.DataFormat = DataFormat;
