@@ -17,7 +17,7 @@ const IconCard = (props: IconCardContentProps) => {
         <div className={classNames("icon-image", { 'selected': isSelected })} onClick={onIconClick}>
             <div className='img-content'>
                 {
-                    imgUrl ? <img src={imgUrl} className={imgClassName} /> : <div className={imgClassName} style={{ background }} />
+                    imgUrl ? <div style={{backgroundImage: `url(${imgUrl})`}} className={imgClassName}></div> : <div className={imgClassName} style={{ background }} />
                 }
             </div>
             <div className='title-content' title={title}>{title}</div>
