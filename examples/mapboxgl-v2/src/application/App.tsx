@@ -83,6 +83,9 @@ const App = () => {
         const provinceLineSymbol = await loadPreSymbol({
             symbolId: 'line-49050402'
         });
+        const MainRoadLineLineSymbol = await loadPreSymbol({
+            symbolId: 'line-42100004'
+        });
         const capitalSymbol = await loadPreSymbol({
             symbolId: 'point-83030559',
             style: {
@@ -158,7 +161,7 @@ const App = () => {
             layersInfo: newLayersInfo
         });
         addMVTLayer({
-            layerId:'RiverLine', 
+            layerId:'riverLine', 
             sourceLayer: 'Main_River_ln@China', 
             type:'line', 
             layerType: 'line',
@@ -171,6 +174,14 @@ const App = () => {
             type:'line', 
             layerType: 'line',
             symbol: provinceLineSymbol, 
+            layersInfo: newLayersInfo
+        });
+        addMVTLayer({
+            layerId:'mainRoadLine', 
+            sourceLayer: 'Main_Road_L@China', 
+            type:'line', 
+            layerType: 'line',
+            symbol: MainRoadLineLineSymbol,
             layersInfo: newLayersInfo
         });
         addMVTLayer({
@@ -210,7 +221,6 @@ const App = () => {
 
     // 点击切换
     const onIconClick = async (symbolId, layerId) => {
-        console.log(symbolId);
         if (!map) return;
         const type = getLayerType(layerId);
         const id = uniqueId();
