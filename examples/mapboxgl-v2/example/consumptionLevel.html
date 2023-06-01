@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+  <title>等级符号专题图</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    #map {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div id="map"></div>
+  <script type="text/javascript" src="https://iclient.supermap.io/web/libs/mapbox-gl-js/1.13.2/mapbox-gl.js"></script>
+  <script type="text/javascript" src="../libs/mapboxgl/iclient-mapboxgl.js"></script>
+  <script>
+    const map = new mapboxgl.Map({
+      container: 'map',
+      style: {
+        "glyphs": "https://iserver.supermap.io/iserver/services/map-china400/rest/maps/China/tileFeature/sdffonts/{fontstack}/{range}.pbf",
+        "sources": {
+          "china": {
+            "tiles": [
+              "https://iserver.supermap.io/iserver/services/map-china400/rest/maps/China/tileFeature.mvt?returnAttributes=true&z={z}&x={x}&y={y}"
+            ],
+            "type": "vector"
+          },
+          "raster-tiles": {
+            "tiles": [
+              "https://iserver.supermap.io/iserver/services/map-china400/rest/maps/China/zxyTileImage.png?z={z}&x={x}&y={y}"
+            ],
+            "type": "raster"
+          }
+        },
+        "name": "等级符号专题图",
+        "layers": [{
+          "id": "simple-tiles",
+          "type": "raster",
+          "source": "raster-tiles"
+        }],
+        "minzoom": 0,
+        "maxzoom": 24,
+        "version": 8
+      },
+      center: [102.85, 37.20],
+      zoom: 3.5
+    });
+
+
+    // 添加土地利用图层
+    const createConsumptionLevel = () => {
+      map.addLayer({
+        "id": "China_Province_pg@China#point",
+        "source": "china",
+        "source-layer": "China_Province_pg@China",
+        "type": "symbol",
+        "symbol": "point-311",
+        "layout": {
+          "icon-size": [
+            "interpolate",
+            ['linear'],
+            ['get', 'GDP_2009'],
+            1,
+            0.3,
+            40000,
+            2
+          ]
+        }
+      });
+    }
+
+    map.on('load', async () => {
+      window.map = map;
+      map.addSymbolLibrary(new mapboxgl.supermap.SymbolLibrary("../libs/resources/symbols"));
+      await map.loadSymbol("point-311", (_err, symbol) => {
+        map.addSymbol("point-311", symbol);
+      });
+      createConsumptionLevel();
+    });
+
+  </script>
+</body>
+
+</html>
