@@ -139,7 +139,7 @@
     }
 
     map.on('load', async () => {
-      map.addSymbolLibrary(new mapboxgl.supermap.SymbolLibrary("../libs/resources/symbols"));
+      window.mapboxgl.supermap.WebSymbol.symbolUrl = "../libs/resources/symbols";
       await loadSymbol("line-63020004");
       createBOULLayer(630200, "line-63020004");
       await loadSymbol("line-64020004");

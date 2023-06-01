@@ -334,9 +334,9 @@ import {
     ArrayStatistic,
     getMeterPerMapUnit,
     getWrapNum,
-    conversionDegree,
-    SymbolLibrary
+    conversionDegree
 } from './util';
+
 import { CartoCSS, ThemeStyle } from './style';
 import {
     FeatureThemeGraph,
@@ -352,7 +352,8 @@ import {
     ShapeParametersPolygon,
     ShapeParametersRectangle,
     ShapeParametersSector,
-    FeatureTheme
+    FeatureTheme,
+    WebSymbol
 } from './overlay';
 import {
     MessageBox,
@@ -498,8 +499,7 @@ export {
     ArrayStatistic,
     getMeterPerMapUnit,
     getWrapNum,
-    conversionDegree,
-    SymbolLibrary
+    conversionDegree
 };
 export { IManager, IManagerCreateNodeParam, IManagerServiceBase };
 export {
@@ -743,5 +743,6 @@ export {
     ArcAnimateLineSymbol3D,
     WallAnimateLineSymbol3D,
     WallLineSymbol3D,
-    TextSymbol
+    TextSymbol,
+    WebSymbol
 };

@@ -147,9 +147,6 @@ export var MapExtend = (function () {
     }
   }
 
-  mapboxgl.Map.prototype.addSymbolLibrary = async function (symbolLibrary) {
-    mapboxgl.Map.prototype.symbolLibrary = symbolLibrary;
-  }
 
   mapboxgl.Map.prototype.loadSymbol = async function (symbol, callback) {
     let error;
@@ -157,14 +154,14 @@ export var MapExtend = (function () {
     if(typeof symbol === 'string') {
       symbolInfo = this.symbolManager.getSymbol(symbol);
       if (!symbolInfo) {
-        if(!this.symbolLibrary) {
+        if(!mapboxgl.supermap.WebSymbol.symbolUrl) {
           error = {
-            message: 'symbolLibrary is not exists. please "addSymbolLibrary'
+            message: 'symbolUrl of WebSymbol is null. '
           };
           callback(error);
           return;
         }
-        const symbolResult = await this.symbolLibrary.getSymbol?.(symbol);
+        const symbolResult = await mapboxgl.supermap.WebSymbol.getSymbol?.(symbol);
         if(!symbolResult) {
           error = {
               message: 'This symbol is not exists.'
@@ -185,7 +182,7 @@ export var MapExtend = (function () {
     }
     callback(error, symbolInfo);
   };
-  
+
   mapboxgl.Map.prototype.addSymbol = function (id, symbol) {
     if (this.symbolManager.getSymbol(id)) {
       return this.fire('error', {
@@ -194,7 +191,7 @@ export var MapExtend = (function () {
     }
     this.symbolManager.addSymbol(id, symbol);
   };
-  
+
   mapboxgl.Map.prototype.hasSymbol = function(id) {
     if (!id) {
         this.fire('error', {

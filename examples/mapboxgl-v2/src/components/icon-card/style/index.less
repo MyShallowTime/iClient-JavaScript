@@ -1,3 +1,4 @@
+@margin-value: 2px;
 .icon-image {
     width: 57px;
     height: 100px;
@@ -17,21 +18,27 @@
         justify-content: center;
         border: 1px solid transparent;
 
-        .img-point {
-            width: 55%;
-            height: auto;
-            margin: 0 auto;
+        .img-point,
+        .img-line,
+        .img-polygon {
+            width: calc(100% - @margin-value);
+            height: calc(100% - @margin-value);
+            background-position:center;
+        }
+
+
+        .img-point,
+        .img-polygon {
+            background-size: contain;
+            background-repeat: no-repeat;
         }
 
         .img-line {
-            width: 96%;
+            background-repeat: repeat-x;
+            background-position:center;
+            transform: rotateX(180deg);
         }
 
-        .img-polygon {
-            width: 70%;
-            height: 75%;
-            margin: 0 auto;  
-        }
     }
 
     .title-content {

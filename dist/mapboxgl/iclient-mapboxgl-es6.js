@@ -21469,7 +21469,7 @@ var __webpack_exports__ = {};
 (() => {
 "use strict";
 
-// UNUSED EXPORTS: AddressMatchService, AggregationParameter, AggregationTypes, AlongLineDirection, AnalystAreaUnit, AnalystSizeUnit, ArcAnimateLineSymbol, ArcAnimateLineSymbol3D, ArcImageLineSymbol, ArcLineSymbol, AreaSolarRadiationParameters, ArrayStatistic, AttributesPopContainer, Bounds, Browser, BucketAggParameter, BucketAggType, BufferAnalystParameters, BufferDistance, BufferEndType, BufferRadiusUnit, BufferSetting, BuffersAnalystJobsParameter, BurstPipelineAnalystParameters, CartoCSS, ChartQueryFilterParameter, ChartQueryParameters, ChartService, ChartType, ChartView, ChartViewModel, CityTabsPage, ClientType, ClipAnalystMode, ClipParameter, ColorDictionary, ColorGradientType, ColorSpaceType, ColorsPickerUtil, CommonContainer, CommonServiceBase, CommonTheme, CommonUtil, ComponentsUtil, ComputeWeightMatrixParameters, CreateDatasetParameters, Credential, DataFlowService, DataFormat, DataItemOrderBy, DataItemType, DataReturnMode, DataReturnOption, DatasetBufferAnalystParameters, DatasetInfo, DatasetOverlayAnalystParameters, DatasetService, DatasetSurfaceAnalystParameters, DatasetThiessenAnalystParameters, DatasourceConnectionInfo, DatasourceService, DeckglLayer, DensityKernelAnalystParameters, DirectionType, DropDownBox, EditFeaturesParameters, EditType, ElasticSearch, EngineType, EntityType, Event, Events, Exponent, FGBLayer, FacilityAnalyst3DParameters, FacilityAnalystSinks3DParameters, FacilityAnalystSources3DParameters, FacilityAnalystStreamParameters, FacilityAnalystTracedown3DParameters, FacilityAnalystTraceup3DParameters, FacilityAnalystUpstream3DParameters, Feature, FeatureService, FeatureShapeFactory, FeatureTheme, FeatureThemeGraph, FeatureThemeRankSymbol, FeatureThemeVector, FeatureVector, FetchRequest, FieldParameters, FieldService, FieldStatisticsParameters, FieldsFilter, FileReaderUtil, FillGradientMode, FilterField, FilterParameter, FindClosestFacilitiesParameters, FindLocationParameters, FindMTSPPathsParameters, FindPathParameters, FindServiceAreasParameters, FindTSPPathsParameters, Format, GenerateSpatialDataParameters, GeoCodingParameter, GeoDecodingParameter, GeoFeature, GeoFeatureThemeLayer, GeoHashGridAggParameter, GeoJSONFormat, GeoRelationAnalystParameters, Geometry, GeometryBufferAnalystParameters, GeometryCollection, GeometryCurve, GeometryGeoText, GeometryLineString, GeometryLinearRing, GeometryMultiLineString, GeometryMultiPoint, GeometryMultiPolygon, GeometryOverlayAnalystParameters, GeometryPoint, GeometryPolygon, GeometryRectangle, GeometrySurfaceAnalystParameters, GeometryThiessenAnalystParameters, GeometryType, GeoprocessingService, GetFeatureMode, GetFeaturesByBoundsParameters, GetFeaturesByBufferParameters, GetFeaturesByGeometryParameters, GetFeaturesByIDsParameters, GetFeaturesBySQLParameters, GetFeaturesParametersBase, GetFeaturesServiceBase, GetGridCellInfosParameters, GraduatedMode, Graph, GraphAxesTextDisplayMode, GraphThemeLayer, Graphic, GraphicLayer, GraticuleLayer, GreatCircleAnimateLineSymbol, GreatCircleImageLineSymbol, GreatCircleLineSymbol, Grid, GridCellInfosService, GridType, HeatMapLayer, HillshadeParameter, IManager, IManagerCreateNodeParam, IManagerServiceBase, IPortal, IPortalAddDataParam, IPortalAddResourceParam, IPortalDataConnectionInfoParam, IPortalDataMetaInfoParam, IPortalDataStoreInfoParam, IPortalQueryParam, IPortalQueryResult, IPortalRegisterServiceParam, IPortalResource, IPortalServiceBase, IPortalShareEntity, IPortalShareParam, IPortalUser, ImageCollectionService, ImageGFAspect, ImageGFHillShade, ImageGFOrtho, ImageGFSlope, ImagePointSymbol, ImagePolygonSymbol, ImageRenderingRule, ImageSearchParameter, ImageService, ImageStretchOption, IndexTabsPageContainer, InterpolationAlgorithmType, InterpolationAnalystParameters, InterpolationDensityAnalystParameters, InterpolationIDWAnalystParameters, InterpolationKrigingAnalystParameters, InterpolationRBFAnalystParameters, JSONFormat, JoinItem, JoinType, KernelDensityJobParameter, KeyServiceParameter, Label, LabelBackShape, LabelImageCell, LabelMatrixCell, LabelMixedTextStyle, LabelOverLengthMode, LabelSymbolCell, LabelThemeCell, LabelThemeLayer, Lang, LayerInfoService, LayerStatus, LayerType, LineSymbol, LinkItem, Logo, LonLat, MapExtend, MapService, MappingParameters, MapvDataSet, MapvLayer, MapvRenderer, MathExpressionAnalysisParameters, MeasureMode, MeasureParameters, MeasureService, MessageBox, MetricsAggParameter, MetricsAggType, NDVIParameter, NavTabsPage, NetworkAnalyst3DService, NetworkAnalystService, NetworkAnalystServiceBase, Online, OnlineData, OnlineQueryDatasParameter, OnlineServiceBase, OrderBy, OrderType, OutputSetting, OutputType, OverlapDisplayedOptions, OverlayAnalystParameters, OverlayGeoJobParameter, OverlayOperationType, PaginationContainer, PermissionType, Pixel, PixelFormat, PointSymbol, PointWithMeasure, PolygonSymbol, PopContainer, ProcessingService, ProcessingServiceBase, QueryByBoundsParameters, QueryByDistanceParameters, QueryByGeometryParameters, QueryBySQLParameters, QueryOption, QueryParameters, QueryService, Range, RangeMode, RangeTheme3DLayer, RangeThemeLayer, RankSymbol, RankSymbolThemeLayer, RasterFunctionParameter, RasterFunctionType, ResourceType, Route, RouteCalculateMeasureParameters, RouteLocatorParameters, SearchMode, SearchType, SecurityManager, Select, ServerColor, ServerFeature, ServerGeometry, ServerInfo, ServerStyle, ServerTextStyle, ServerTheme, ServerType, ServiceBase, ServiceStatus, SetDatasourceParameters, SetLayerInfoParameters, SetLayerStatusParameters, SetLayersInfoParameters, ShapeParameters, ShapeParametersCircle, ShapeParametersImage, ShapeParametersLabel, ShapeParametersLine, ShapeParametersPoint, ShapeParametersPolygon, ShapeParametersRectangle, ShapeParametersSector, SideType, SimpleAnimateLineSymbol, SimpleImageLineSymbol, SimpleLineSymbol, SimplePointSymbol, SingleObjectQueryJobsParameter, Size, SmoothMethod, Sortby, SpatialAnalystBase, SpatialAnalystService, SpatialQueryMode, SpatialRelationType, StatisticAnalystMode, StatisticMode, StopQueryParameters, SummaryAttributesJobsParameter, SummaryMeshJobParameter, SummaryRegionJobParameter, SummaryType, SuperMap, SupplyCenter, SupplyCenterType, SurfaceAnalystMethod, SurfaceAnalystParameters, SurfaceAnalystParametersSetting, SymbolLibrary, TemplateBase, TerrainCurvatureCalculationParameters, TextAlignment, TextSymbol, Theme3DLayer, ThemeDotDensity, ThemeFeature, ThemeGraduatedSymbol, ThemeGraduatedSymbolStyle, ThemeGraph, ThemeGraphAxes, ThemeGraphItem, ThemeGraphSize, ThemeGraphText, ThemeGraphTextFormat, ThemeGraphType, ThemeGridRange, ThemeGridRangeItem, ThemeGridUnique, ThemeGridUniqueItem, ThemeLabel, ThemeLabelAlongLine, ThemeLabelBackground, ThemeLabelItem, ThemeLabelText, ThemeLabelUniqueItem, ThemeLayer, ThemeMemoryData, ThemeOffset, ThemeParameters, ThemeRange, ThemeRangeItem, ThemeService, ThemeStyle, ThemeType, ThemeUnique, ThemeUniqueItem, ThiessenAnalystParameters, ThreeLayer, ThreeLayerRenderer, TimeControlBase, TimeFlowControl, TokenServiceParameter, TopologyValidatorJobsParameter, TopologyValidatorRule, TrafficTransferAnalystService, TransferLine, TransferPathParameters, TransferPreference, TransferSolutionParameters, TransferTactic, Transform, TransportationAnalystParameter, TransportationAnalystResultSetting, TurnType, UGCLayer, UGCLayerType, UGCMapLayer, UGCSubLayer, Unique, UniqueTheme3DLayer, UniqueThemeLayer, Unit, UpdateDatasetParameters, UpdateEdgeWeightParameters, UpdateTurnNodeWeightParameters, Util, VariogramMode, Vector, VectorClipJobsParameter, WKTFormat, WallAnimateLineSymbol3D, WallLineSymbol3D, WebExportFormatType, WebMap, WebPrintingJobContent, WebPrintingJobCustomItems, WebPrintingJobExportOptions, WebPrintingJobImage, WebPrintingJobLayers, WebPrintingJobLayoutOptions, WebPrintingJobLegendOptions, WebPrintingJobLittleMapOptions, WebPrintingJobNorthArrowOptions, WebPrintingJobParameters, WebPrintingJobScaleBarOptions, WebPrintingJobService, WebScaleOrientationType, WebScaleType, WebScaleUnit, conversionDegree, getDefaultVectorTileStyle, getMeterPerMapUnit, getWrapNum, isCORS, setBackground, setCORS, setPaintProperty
+// UNUSED EXPORTS: AddressMatchService, AggregationParameter, AggregationTypes, AlongLineDirection, AnalystAreaUnit, AnalystSizeUnit, ArcAnimateLineSymbol, ArcAnimateLineSymbol3D, ArcImageLineSymbol, ArcLineSymbol, AreaSolarRadiationParameters, ArrayStatistic, AttributesPopContainer, Bounds, Browser, BucketAggParameter, BucketAggType, BufferAnalystParameters, BufferDistance, BufferEndType, BufferRadiusUnit, BufferSetting, BuffersAnalystJobsParameter, BurstPipelineAnalystParameters, CartoCSS, ChartQueryFilterParameter, ChartQueryParameters, ChartService, ChartType, ChartView, ChartViewModel, CityTabsPage, ClientType, ClipAnalystMode, ClipParameter, ColorDictionary, ColorGradientType, ColorSpaceType, ColorsPickerUtil, CommonContainer, CommonServiceBase, CommonTheme, CommonUtil, ComponentsUtil, ComputeWeightMatrixParameters, CreateDatasetParameters, Credential, DataFlowService, DataFormat, DataItemOrderBy, DataItemType, DataReturnMode, DataReturnOption, DatasetBufferAnalystParameters, DatasetInfo, DatasetOverlayAnalystParameters, DatasetService, DatasetSurfaceAnalystParameters, DatasetThiessenAnalystParameters, DatasourceConnectionInfo, DatasourceService, DeckglLayer, DensityKernelAnalystParameters, DirectionType, DropDownBox, EditFeaturesParameters, EditType, ElasticSearch, EngineType, EntityType, Event, Events, Exponent, FGBLayer, FacilityAnalyst3DParameters, FacilityAnalystSinks3DParameters, FacilityAnalystSources3DParameters, FacilityAnalystStreamParameters, FacilityAnalystTracedown3DParameters, FacilityAnalystTraceup3DParameters, FacilityAnalystUpstream3DParameters, Feature, FeatureService, FeatureShapeFactory, FeatureTheme, FeatureThemeGraph, FeatureThemeRankSymbol, FeatureThemeVector, FeatureVector, FetchRequest, FieldParameters, FieldService, FieldStatisticsParameters, FieldsFilter, FileReaderUtil, FillGradientMode, FilterField, FilterParameter, FindClosestFacilitiesParameters, FindLocationParameters, FindMTSPPathsParameters, FindPathParameters, FindServiceAreasParameters, FindTSPPathsParameters, Format, GenerateSpatialDataParameters, GeoCodingParameter, GeoDecodingParameter, GeoFeature, GeoFeatureThemeLayer, GeoHashGridAggParameter, GeoJSONFormat, GeoRelationAnalystParameters, Geometry, GeometryBufferAnalystParameters, GeometryCollection, GeometryCurve, GeometryGeoText, GeometryLineString, GeometryLinearRing, GeometryMultiLineString, GeometryMultiPoint, GeometryMultiPolygon, GeometryOverlayAnalystParameters, GeometryPoint, GeometryPolygon, GeometryRectangle, GeometrySurfaceAnalystParameters, GeometryThiessenAnalystParameters, GeometryType, GeoprocessingService, GetFeatureMode, GetFeaturesByBoundsParameters, GetFeaturesByBufferParameters, GetFeaturesByGeometryParameters, GetFeaturesByIDsParameters, GetFeaturesBySQLParameters, GetFeaturesParametersBase, GetFeaturesServiceBase, GetGridCellInfosParameters, GraduatedMode, Graph, GraphAxesTextDisplayMode, GraphThemeLayer, Graphic, GraphicLayer, GraticuleLayer, GreatCircleAnimateLineSymbol, GreatCircleImageLineSymbol, GreatCircleLineSymbol, Grid, GridCellInfosService, GridType, HeatMapLayer, HillshadeParameter, IManager, IManagerCreateNodeParam, IManagerServiceBase, IPortal, IPortalAddDataParam, IPortalAddResourceParam, IPortalDataConnectionInfoParam, IPortalDataMetaInfoParam, IPortalDataStoreInfoParam, IPortalQueryParam, IPortalQueryResult, IPortalRegisterServiceParam, IPortalResource, IPortalServiceBase, IPortalShareEntity, IPortalShareParam, IPortalUser, ImageCollectionService, ImageGFAspect, ImageGFHillShade, ImageGFOrtho, ImageGFSlope, ImagePointSymbol, ImagePolygonSymbol, ImageRenderingRule, ImageSearchParameter, ImageService, ImageStretchOption, IndexTabsPageContainer, InterpolationAlgorithmType, InterpolationAnalystParameters, InterpolationDensityAnalystParameters, InterpolationIDWAnalystParameters, InterpolationKrigingAnalystParameters, InterpolationRBFAnalystParameters, JSONFormat, JoinItem, JoinType, KernelDensityJobParameter, KeyServiceParameter, Label, LabelBackShape, LabelImageCell, LabelMatrixCell, LabelMixedTextStyle, LabelOverLengthMode, LabelSymbolCell, LabelThemeCell, LabelThemeLayer, Lang, LayerInfoService, LayerStatus, LayerType, LineSymbol, LinkItem, Logo, LonLat, MapExtend, MapService, MappingParameters, MapvDataSet, MapvLayer, MapvRenderer, MathExpressionAnalysisParameters, MeasureMode, MeasureParameters, MeasureService, MessageBox, MetricsAggParameter, MetricsAggType, NDVIParameter, NavTabsPage, NetworkAnalyst3DService, NetworkAnalystService, NetworkAnalystServiceBase, Online, OnlineData, OnlineQueryDatasParameter, OnlineServiceBase, OrderBy, OrderType, OutputSetting, OutputType, OverlapDisplayedOptions, OverlayAnalystParameters, OverlayGeoJobParameter, OverlayOperationType, PaginationContainer, PermissionType, Pixel, PixelFormat, PointSymbol, PointWithMeasure, PolygonSymbol, PopContainer, ProcessingService, ProcessingServiceBase, QueryByBoundsParameters, QueryByDistanceParameters, QueryByGeometryParameters, QueryBySQLParameters, QueryOption, QueryParameters, QueryService, Range, RangeMode, RangeTheme3DLayer, RangeThemeLayer, RankSymbol, RankSymbolThemeLayer, RasterFunctionParameter, RasterFunctionType, ResourceType, Route, RouteCalculateMeasureParameters, RouteLocatorParameters, SearchMode, SearchType, SecurityManager, Select, ServerColor, ServerFeature, ServerGeometry, ServerInfo, ServerStyle, ServerTextStyle, ServerTheme, ServerType, ServiceBase, ServiceStatus, SetDatasourceParameters, SetLayerInfoParameters, SetLayerStatusParameters, SetLayersInfoParameters, ShapeParameters, ShapeParametersCircle, ShapeParametersImage, ShapeParametersLabel, ShapeParametersLine, ShapeParametersPoint, ShapeParametersPolygon, ShapeParametersRectangle, ShapeParametersSector, SideType, SimpleAnimateLineSymbol, SimpleImageLineSymbol, SimpleLineSymbol, SimplePointSymbol, SingleObjectQueryJobsParameter, Size, SmoothMethod, Sortby, SpatialAnalystBase, SpatialAnalystService, SpatialQueryMode, SpatialRelationType, StatisticAnalystMode, StatisticMode, StopQueryParameters, SummaryAttributesJobsParameter, SummaryMeshJobParameter, SummaryRegionJobParameter, SummaryType, SuperMap, SupplyCenter, SupplyCenterType, SurfaceAnalystMethod, SurfaceAnalystParameters, SurfaceAnalystParametersSetting, TemplateBase, TerrainCurvatureCalculationParameters, TextAlignment, TextSymbol, Theme3DLayer, ThemeDotDensity, ThemeFeature, ThemeGraduatedSymbol, ThemeGraduatedSymbolStyle, ThemeGraph, ThemeGraphAxes, ThemeGraphItem, ThemeGraphSize, ThemeGraphText, ThemeGraphTextFormat, ThemeGraphType, ThemeGridRange, ThemeGridRangeItem, ThemeGridUnique, ThemeGridUniqueItem, ThemeLabel, ThemeLabelAlongLine, ThemeLabelBackground, ThemeLabelItem, ThemeLabelText, ThemeLabelUniqueItem, ThemeLayer, ThemeMemoryData, ThemeOffset, ThemeParameters, ThemeRange, ThemeRangeItem, ThemeService, ThemeStyle, ThemeType, ThemeUnique, ThemeUniqueItem, ThiessenAnalystParameters, ThreeLayer, ThreeLayerRenderer, TimeControlBase, TimeFlowControl, TokenServiceParameter, TopologyValidatorJobsParameter, TopologyValidatorRule, TrafficTransferAnalystService, TransferLine, TransferPathParameters, TransferPreference, TransferSolutionParameters, TransferTactic, Transform, TransportationAnalystParameter, TransportationAnalystResultSetting, TurnType, UGCLayer, UGCLayerType, UGCMapLayer, UGCSubLayer, Unique, UniqueTheme3DLayer, UniqueThemeLayer, Unit, UpdateDatasetParameters, UpdateEdgeWeightParameters, UpdateTurnNodeWeightParameters, Util, VariogramMode, Vector, VectorClipJobsParameter, WKTFormat, WallAnimateLineSymbol3D, WallLineSymbol3D, WebExportFormatType, WebMap, WebPrintingJobContent, WebPrintingJobCustomItems, WebPrintingJobExportOptions, WebPrintingJobImage, WebPrintingJobLayers, WebPrintingJobLayoutOptions, WebPrintingJobLegendOptions, WebPrintingJobLittleMapOptions, WebPrintingJobNorthArrowOptions, WebPrintingJobParameters, WebPrintingJobScaleBarOptions, WebPrintingJobService, WebScaleOrientationType, WebScaleType, WebScaleUnit, WebSymbol, conversionDegree, getDefaultVectorTileStyle, getMeterPerMapUnit, getWrapNum, isCORS, setBackground, setCORS, setPaintProperty
 
 ;// CONCATENATED MODULE: external "mapboxgl"
 const external_mapboxgl_namespaceObject = mapboxgl;
@@ -23457,7 +23457,7 @@ const MapboxSymbolLayer = (m) => {
          * 取所有symbol的key值合集，并过滤不支持数据驱动的参数
          * @param {*} symbolInfos 
          * @param {*} type 
-         * @returns 
+         * @returns {Array}
          */
         getKeys(symbolInfos, type) {
             return [...new Set(Object.values(symbolInfos).reduce((pre, s) => {
@@ -23472,7 +23472,7 @@ const MapboxSymbolLayer = (m) => {
          * @param {*} symbolInfos 
          * @param {*} type 
          * @param {*} key 
-         * @returns 
+         * @returns {Array}
          */
         getStyleExpression(expression, symbolInfos, type, key) {
             const result = [];
@@ -23493,7 +23493,7 @@ const MapboxSymbolLayer = (m) => {
          * @param {*} type 
          * @param {*} symbolInfos 
          * @param {*} symbolExpression 
-         * @returns 
+         * @returns {object}
          */
         getExpression(type, symbolInfos, symbolExpression) {
             // 表达式公式
@@ -23517,7 +23517,7 @@ const MapboxSymbolLayer = (m) => {
         /**
          * 解析数据驱动， 遍历数组, 请求symbol
          * @param {*} style 
-         * @returns 
+         * @returns {object}
          */
         getAllSymbolInfos(style) {
             const symbolInfos = {};
@@ -23554,7 +23554,7 @@ const MapboxSymbolLayer = (m) => {
          * 将symbol为表达式的线图层拆分为多图层
          * @param {*} layer 
          * @param {*} symbol 
-         * @returns 
+         * @returns {Array}
          */
         getExpresionLineLayers(layer, symbol) {
             const layers = [];
@@ -23628,7 +23628,7 @@ const MapboxSymbolLayer = (m) => {
         /**
          * 通过符号属性获取该符号类型
          * @param {*} symbol 
-         * @returns 
+         * @returns {string}
          */
         getSymbolType(symbol) {
             const { paint = {}, layout = {} } = symbol;
@@ -23757,6 +23757,12 @@ const MapboxSymbolLayer = (m) => {
                 map.compositeLayersManager.addLayer(layerId, id);
             });
         },
+
+        /**
+         * 获取不同图层类型使用image的属性名
+         * @param {object} symbol 
+         * @returns {object}
+         */
         getImageKey(symbol) {
             const symbolType = this.getSymbolType(symbol);
             const IMAGE_MAPBOX_KEY = {
@@ -23987,9 +23993,6 @@ var MapExtend = (function () {
     }
   }
 
-  ;(external_mapboxgl_default()).Map.prototype.addSymbolLibrary = async function (symbolLibrary) {
-    (external_mapboxgl_default()).Map.prototype.symbolLibrary = symbolLibrary;
-  }
 
   (external_mapboxgl_default()).Map.prototype.loadSymbol = async function (symbol, callback) {
     let error;
@@ -23997,14 +24000,14 @@ var MapExtend = (function () {
     if(typeof symbol === 'string') {
       symbolInfo = this.symbolManager.getSymbol(symbol);
       if (!symbolInfo) {
-        if(!this.symbolLibrary) {
+        if(!(external_mapboxgl_default()).supermap.WebSymbol.symbolUrl) {
           error = {
-            message: 'symbolLibrary is not exists. please "addSymbolLibrary'
+            message: 'symbolUrl of WebSymbol is null. '
           };
           callback(error);
           return;
         }
-        const symbolResult = await this.symbolLibrary.getSymbol?.(symbol);
+        const symbolResult = await external_mapboxgl_default().supermap.WebSymbol.getSymbol?.(symbol);
         if(!symbolResult) {
           error = {
               message: 'This symbol is not exists.'
@@ -24025,7 +24028,7 @@ var MapExtend = (function () {
     }
     callback(error, symbolInfo);
   };
-  
+
   (external_mapboxgl_default()).Map.prototype.addSymbol = function (id, symbol) {
     if (this.symbolManager.getSymbol(id)) {
       return this.fire('error', {
@@ -24034,7 +24037,7 @@ var MapExtend = (function () {
     }
     this.symbolManager.addSymbol(id, symbol);
   };
-  
+
   ;(external_mapboxgl_default()).Map.prototype.hasSymbol = function(id) {
     if (!id) {
         this.fire('error', {
@@ -97500,87 +97503,10 @@ class ColorsPickerUtil  {
     }
 
 }
-;// CONCATENATED MODULE: ./src/common/util/SymbolLibrary.js
-/* Copyright© 2000 - 2022 SuperMap Software Co.Ltd. All rights reserved.
- * This program are made available under the terms of the Apache License, Version 2.0
- * which accompanies this distribution and is available at http://www.apache.org/licenses/LICENSE-2.0.html.*/
-/**
- * @class SymbolLibrary
- * @deprecatedclass SuperMap.SymbolLibrary
- * @category Symbol
- * @classdesc 符号库。
- * @param {string} url - 预定义符号资源地址。
- * @usage
- */
-class SymbolLibrary {
-  constructor(url) {
-    this.url = url;
-  }
-
-  /**
-   * @function SymbolLibrary.prototype.getImage
-   * @param {string} url - 预定义符号资源地址。
-   * @returns {Image} image。
-   * @description 获取image
-   */
-  async getImage(url) {
-    return new Promise((resolve) => {
-      const image = new Image();
-      image.src = url;
-      image.onload = (content) => {
-        resolve(content ? image : null);
-      };
-      image.onerror = () => {
-        resolve(null);
-      };
-    });
-  }
-
-  /**
-   * @function SymbolLibrary.prototype.getJson
-   * @param {string} url - 预定义符号资源地址。
-   * @returns {JSON} Json
-   * @description 获取Json
-   */
-  async getJson(url) {
-    return fetch(url, {
-      method: "GET"
-    }).then(response => {
-      if (!response.ok) {
-        return;
-      }
-      return response.json();
-    });
-  }
-
-  /**
-   * @function SymbolLibrary.prototype.getSymbol
-   * @param {string} symbolId - 预定义符号ID。
-   * @description 获取预定义符号信息。
-   * @returns {object} symbol + image。
-   */
-  async getSymbol(symbolId) {
-    const url = `${this.url}/${symbolId}/${symbolId}`;
-    const value = await this.getJson(`${url}.json`);
-    if (!value) {
-      return null;
-    }
-    const image = await this.getImage(`${url}.png`);
-    return {
-      value,
-      image
-    }
-  }
-}
-
-/* harmony default export */ const util_SymbolLibrary = (SymbolLibrary);
-
-
 ;// CONCATENATED MODULE: ./src/common/util/index.js
 /* Copyright© 2000 - 2022 SuperMap Software Co.Ltd. All rights reserved.
  * This program are made available under the terms of the Apache License, Version 2.0
  * which accompanies this distribution and is available at http://www.apache.org/licenses/LICENSE-2.0.html.*/
-
 
 
 
@@ -104690,6 +104616,67 @@ class overlay_Point_Point extends Graph_Graph {
 
 }
 
+;// CONCATENATED MODULE: ./src/common/overlay/WebSymbol.js
+/* Copyright© 2000 - 2022 SuperMap Software Co.Ltd. All rights reserved.
+ * This program are made available under the terms of the Apache License, Version 2.0
+ * which accompanies this distribution and is available at http://www.apache.org/licenses/LICENSE-2.0.html.*/
+
+/**
+* @class WebSymbol
+* @deprecatedclass SuperMap.WebSymbol
+* @category WebSymbol
+* @classdesc 符号库。
+* @usage
+*/
+class WebSymbol {
+
+  constructor() {
+    /**
+     * @member WebSymbol.prototype.symbolUrl
+     * @description 符号资源路径。
+     */
+    this.symbolUrl = null;
+  }
+
+  /**
+   * @function WebSymbol.prototype.getSymbol
+   * @param {string} symbolId - 符号ID。
+   * @description 获取符号信息。
+   * @returns {object} 符号信息。
+   */
+  static async getSymbol(symbolId) {
+    const url = `${this.symbolUrl}/${symbolId}/${symbolId}`;
+
+    const value = await FetchRequest.get(`${url}.json`).then(response => {
+      if (!response.ok) {
+        return;
+      }
+      return response.json();
+    })
+      .catch(() => null);
+    if (!value) {
+      return null;
+    }
+
+    const image = await new Promise((resolve) => {
+      const image = new Image();
+      image.src = `${url}.png`;
+      image.onload = (content) => {
+        resolve(content ? image : null);
+      };
+      image.onerror = () => {
+        resolve(null);
+      };
+    });
+    return {
+      value,
+      image
+    }
+  }
+
+}
+
+
 ;// CONCATENATED MODULE: ./src/common/overlay/Ring.js
 /* Copyright© 2000 - 2022 SuperMap Software Co.Ltd. All rights reserved.
  * This program are made available under the terms of the Apache License, Version 2.0
@@ -105525,6 +105512,8 @@ class SmicStar extends (/* unused pure expression or super */ null && (Shape)) {
 /* Copyright© 2000 - 2022 SuperMap Software Co.Ltd. All rights reserved.
  * This program are made available under the terms of the Apache License, Version 2.0
  * which accompanies this distribution and is available at http://www.apache.org/licenses/LICENSE-2.0.html.*/
+
+
 
 
 
@@ -109089,6 +109078,7 @@ let ComponentsUtil = {
 
 
 
+
 ;// CONCATENATED MODULE: ./src/common/index.all.js
 
 
@@ -109505,7 +109495,7 @@ SuperMap.ElasticSearch = ElasticSearch;
 // util
 SuperMap.ArrayStatistic = ArrayStatistic;
 SuperMap.ColorsPickerUtil = ColorsPickerUtil;
-SuperMap.SymbolLibrary = util_SymbolLibrary;
+SuperMap.WebSymbol = WebSymbol;
 
 // REST
 SuperMap.DataFormat = DataFormat;
