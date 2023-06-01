@@ -225,7 +225,7 @@
     }
 
     map.on('load', async () => {
-      map.addSymbolLibrary(new mapboxgl.supermap.SymbolLibrary("../libs/resources/symbols"));
+      window.mapboxgl.supermap.WebSymbol.symbolUrl = "../libs/resources/symbols";
       window.map = map;
       await loadSymbols();
       createPolygonLayer("Frame", "polygon-955463");

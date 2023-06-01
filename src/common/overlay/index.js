@@ -9,6 +9,7 @@ import {Line as FeatureThemeLine } from './Line';
 import {Pie as FeatureThemePie } from './Pie';
 import {Point as FeatureThemePoint } from './Point';
 import {RankSymbol as FeatureThemeRankSymbol } from './RankSymbol';
+import {WebSymbol} from './WebSymbol';
 import {Ring as FeatureThemeRing } from './Ring';
 import {ThemeVector as FeatureThemeVector } from './ThemeVector';
 import {
@@ -50,3 +51,4 @@ export {
   FeatureTheme
 };
 export { LevelRenderer };
+export { WebSymbol };
