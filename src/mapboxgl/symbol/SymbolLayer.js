@@ -40,7 +40,7 @@ const MapboxSymbolLayer = (m) => {
          * 取所有symbol的key值合集，并过滤不支持数据驱动的参数
          * @param {*} symbolInfos 
          * @param {*} type 
-         * @returns 
+         * @returns {Array}
          */
         getKeys(symbolInfos, type) {
             return [...new Set(Object.values(symbolInfos).reduce((pre, s) => {
@@ -55,7 +55,7 @@ const MapboxSymbolLayer = (m) => {
          * @param {*} symbolInfos 
          * @param {*} type 
          * @param {*} key 
-         * @returns 
+         * @returns {Array}
          */
         getStyleExpression(expression, symbolInfos, type, key) {
             const result = [];
@@ -76,7 +76,7 @@ const MapboxSymbolLayer = (m) => {
          * @param {*} type 
          * @param {*} symbolInfos 
          * @param {*} symbolExpression 
-         * @returns 
+         * @returns {object}
          */
         getExpression(type, symbolInfos, symbolExpression) {
             // 表达式公式
@@ -100,7 +100,7 @@ const MapboxSymbolLayer = (m) => {
         /**
          * 解析数据驱动， 遍历数组, 请求symbol
          * @param {*} style 
-         * @returns 
+         * @returns {object}
          */
         getAllSymbolInfos(style) {
             const symbolInfos = {};
@@ -137,7 +137,7 @@ const MapboxSymbolLayer = (m) => {
          * 将symbol为表达式的线图层拆分为多图层
          * @param {*} layer 
          * @param {*} symbol 
-         * @returns 
+         * @returns {Array}
          */
         getExpresionLineLayers(layer, symbol) {
             const layers = [];
@@ -211,7 +211,7 @@ const MapboxSymbolLayer = (m) => {
         /**
          * 通过符号属性获取该符号类型
          * @param {*} symbol 
-         * @returns 
+         * @returns {string}
          */
         getSymbolType(symbol) {
             const { paint = {}, layout = {} } = symbol;
@@ -340,6 +340,12 @@ const MapboxSymbolLayer = (m) => {
                 map.compositeLayersManager.addLayer(layerId, id);
             });
         },
+
+        /**
+         * 获取不同图层类型使用image的属性名
+         * @param {object} symbol 
+         * @returns {object}
+         */
         getImageKey(symbol) {
             const symbolType = this.getSymbolType(symbol);
             const IMAGE_MAPBOX_KEY = {
