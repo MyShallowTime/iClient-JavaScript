@@ -393,7 +393,8 @@
         "name": "FGB"
       },
       "WebSymbol": {
-        "name": "WebSymbol"
+        "name": "Web 符号",
+        "name_en": "WebSymbol"
       }
     }
   },
