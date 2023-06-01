@@ -119,12 +119,11 @@
           "line-width": 0.38,
           "line-color": "rgba(74,74,74,1.00)"
         }
-      })
-    }
+      });
+    };
 
     map.on('load', async () => {
-      window.map = map;
-      map.addSymbolLibrary(new mapboxgl.supermap.SymbolLibrary("../libs/resources/symbols"));
+      window.mapboxgl.supermap.WebSymbol.symbolUrl = "../libs/resources/symbols";
       await loadSymbols();
       createLandUseLayer();
     });

@@ -83,8 +83,7 @@
     }
 
     map.on('load', async () => {
-      window.map = map;
-      map.addSymbolLibrary(new mapboxgl.supermap.SymbolLibrary("../libs/resources/symbols"));
+      window.mapboxgl.supermap.WebSymbol.symbolUrl = "../libs/resources/symbols";
       await map.loadSymbol("point-311", (_err, symbol) => {
         map.addSymbol("point-311", symbol);
       });
