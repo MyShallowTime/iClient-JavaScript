@@ -1,46 +1,23 @@
 import { Util } from "@supermap/iclient-common/commontypes/Util";
-import { isArray } from "lodash";
+import { getImageKey, getSymbolType, isMultiSymbol } from "./SymbolUtil";
 
-const LayerType = {
-    circle: 'circle',
-    symbol: 'symbol',
-    line: 'line',
-    fill: 'fill'
-}
-
-// 判断符号类型
-const GET_TYPE_RULE = [{
-    prefix: 'line-',
-    type: LayerType.line
-}, {
-    prefix: 'fill-',
-    type: LayerType.fill
-}, {
-    prefix: 'circle-',
-    type: LayerType.circle
-}];
+const SYMBOL_LAYER_PREFIX = "mapboxgl.supermap.layer_";
 
 /**
  * 符号图层管理器
  * @returns {Object}
+ * @private
  */
 const MapboxSymbolLayer = (m) => {
     const map = m;
     return {
-        /**
-         * 是否为组合符号
-         * @param {*} type 
-         * @returns {boolean}
-         */
-        isMultiSymbol(symbol) {
-            return isArray(symbol);
-        },
 
         /**
          * 取所有symbol的key值合集，并过滤不支持数据驱动的参数
          * @param {*} symbolInfos 
          * @param {*} type 
          * @returns {Array}
+         * @private
          */
         getKeys(symbolInfos, type) {
             return [...new Set(Object.values(symbolInfos).reduce((pre, s) => {
@@ -56,6 +33,7 @@ const MapboxSymbolLayer = (m) => {
          * @param {*} type 
          * @param {*} key 
          * @returns {Array}
+         * @private
          */
         getStyleExpression(expression, symbolInfos, type, key) {
             const result = [];
@@ -77,6 +55,7 @@ const MapboxSymbolLayer = (m) => {
          * @param {*} symbolInfos 
          * @param {*} symbolExpression 
          * @returns {object}
+         * @private
          */
         getExpression(type, symbolInfos, symbolExpression) {
             // 表达式公式
@@ -101,6 +80,7 @@ const MapboxSymbolLayer = (m) => {
          * 解析数据驱动， 遍历数组, 请求symbol
          * @param {*} style 
          * @returns {object}
+         * @private
          */
         getAllSymbolInfos(style) {
             const symbolInfos = {};
@@ -125,6 +105,7 @@ const MapboxSymbolLayer = (m) => {
          * @param {*} layer 
          * @param {*} symbol 
          * @param {*} before 
+         * @private
          */
         addExpressionSymbolLayer(layer, symbol, before) {
             const symbolInfos = this.getAllSymbolInfos(symbol.slice(2));
@@ -136,16 +117,16 @@ const MapboxSymbolLayer = (m) => {
         /**
          * 将symbol为表达式的线图层拆分为多图层
          * @param {*} layer 
-         * @param {*} symbol 
          * @returns {Array}
+         * @private
          */
-        getExpresionLineLayers(layer, symbol) {
+        getExpresionLineLayers(layer) {
             const layers = [];
             const filter = ["all"];
             if (layer.filter) {
                 filter.push(layer.filter);
             }
-            const expression = symbol.slice(2);
+            const expression = layer.symbol.slice(2);
             expression.forEach((r, index) => {
                 if (index % 2 === 1) {
                     layers.push({
@@ -153,7 +134,7 @@ const MapboxSymbolLayer = (m) => {
                             ...filter,
                             [
                                 "==",
-                                symbol[1][1],
+                                layer.symbol[1][1],
                                 expression[index - 1]
                             ]
                         ], symbol: r
@@ -168,13 +149,13 @@ const MapboxSymbolLayer = (m) => {
         /**
          * 添加symbol为表达式的线图层
          * @param {*} layer 
-         * @param {*} symbol 
          * @param {*} before 
+         * @private
          */
-        addExpressionLineLayer(layer, symbol, before) {
-            const layers = this.getExpresionLineLayers(layer, symbol);
+        addExpressionLineLayer(layer, before) {
+            const layers = this.getExpresionLineLayers(layer, layer.symbol);
             layers.forEach((l, index) => {
-                l.id = index === 0 ? layer.id : Util.createUniqueID('SuperMap.Symbol_');
+                l.id = index === 0 ? layer.id : Util.createUniqueID(SYMBOL_LAYER_PREFIX);
                 map.addLayer(l, before);
                 map.compositeLayersManager.addLayer(layer.id, l.id);
             })
@@ -183,54 +164,36 @@ const MapboxSymbolLayer = (m) => {
         /**
          * 符号转换成图层
          * @param {*} layer 
-         * @param {*} symbol 
+         * @param {*} before 
          * @returns {undefined}
+         * @private
          */
-        addLayer(layer, symbol, before) {
-            if (typeof symbol === 'string') {
+        addLayer(layer, before) {
+            if (typeof layer.symbol === 'string') {
                 const id = layer.symbol;
                 if (id) {
-                    map.symbolManager.setSymbolTolayer(layer.id, id);
                     const symbolInfo = map.symbolManager.getSymbol(id);
                     if (!symbolInfo) {
                         console.warn(`Symbol "${id}" could not be loaded. Please make sure you have added the symbol with map.addSymbol().`);
                         return;
                     }
-                    if (this.isMultiSymbol(symbolInfo)) {
+                    map.symbolManager.setSymbolTolayer(layer.id, id);
+                    if (isMultiSymbol(symbolInfo)) {
                         this.addMultiSymbol(layer, symbolInfo, before);
                         return;
                     }
                     this.addSimpleSymbol(layer, symbolInfo, before);
                 }
             } else {
-                this.addExpressionLineLayer(layer, symbol, before);
+                this.addExpressionLineLayer(layer, before);
             }
-            delete layer.symbol;
-        },
-
-        /**
-         * 通过符号属性获取该符号类型
-         * @param {*} symbol 
-         * @returns {string}
-         */
-        getSymbolType(symbol) {
-            const { paint = {}, layout = {} } = symbol;
-            const keys = Object.keys(paint).concat(Object.keys(layout));
-            let type;
-            for (const v of GET_TYPE_RULE) {
-                const isMatch = keys.some(k => k.startsWith(v.prefix));
-                if (isMatch) {
-                    type = v.type;
-                    break;
-                }
-            }
-            return type ?? LayerType.symbol;
         },
 
         /**
          * 添加单个符号
          * @param {*} layer 
          * @param {*} symbol 
+         * @private
          */
         addSimpleSymbol(layer, symbol, before) {
             layer.paint && Object.assign(symbol.paint, layer.paint);
@@ -242,10 +205,11 @@ const MapboxSymbolLayer = (m) => {
          * 添加组合符号
          * @param {*} layer 
          * @param {*} symbol 
+         * @private
          */
         addMultiSymbol(layer, symbol, before) {
             symbol.forEach((style, index) => {
-                const id = index === 0 ? layer.id : Util.createUniqueID('SuperMap.Symbol_');
+                const id = index === 0 ? layer.id : Util.createUniqueID(SYMBOL_LAYER_PREFIX);
                 this.addSimpleSymbol({ ...layer, id }, style, before);
                 map.compositeLayersManager.addLayer(layer.id, id);
             })
@@ -256,6 +220,7 @@ const MapboxSymbolLayer = (m) => {
          * @param layerId 
          * @param symbol 
          * @returns {undefined}
+         * @private
          */
         setSymbol(layerId, symbolInfo) {
             if (typeof symbolInfo === 'string') {
@@ -270,7 +235,7 @@ const MapboxSymbolLayer = (m) => {
                     map.removeLayer(l);
                     map.compositeLayersManager.removeLayer(layerId, l);
                 })
-                if (this.isMultiSymbol(symbol)) {
+                if (isMultiSymbol(symbol)) {
                     this.setMultiSymbol(layerId, symbol, layerIds);
                     return;
                 }
@@ -288,6 +253,7 @@ const MapboxSymbolLayer = (m) => {
          * 设置单个符号
          * @param layerId 
          * @param symbol 
+         * @private
          */
         setSimpleSymbol(layerId, symbol) {
             const layers = map.getStyle().layers, layer = layers.find(l => l.id === layerId);
@@ -311,6 +277,7 @@ const MapboxSymbolLayer = (m) => {
          * @param {*} layerId 
          * @param {*} symbol 
          * @param {*} layerIds 
+         * @private
          */
         setMultiSymbol(layerId, symbol, layerIds) {
             symbol.forEach((style, index) => {
@@ -319,15 +286,15 @@ const MapboxSymbolLayer = (m) => {
                     this.setSimpleSymbol(layerIds[index], style);
                 } else {
                     const layer = map.getLayer(layerId);
-                    const layers = map.getStyle().layers;
-                    const ids = map.compositeLayersManager.getLayers(layerId);
-                    const beforeIndex = layers.findIndex(el => el.id === ids[ids.length - 1]) + 1;
                     if (!layer) {
                         return;
                     }
                     const { source, sourceLayer, filter } = layer;
-                    id = Util.createUniqueID('SuperMap.Symbol_');
-                    const type = this.getSymbolType(style);
+                    const layers = map.getStyle().layers;
+                    const ids = map.compositeLayersManager.getLayers(layerId);
+                    const beforeIndex = layers.findIndex(el => el.id === ids[ids.length - 1]) + 1;
+                    id = Util.createUniqueID(SYMBOL_LAYER_PREFIX);
+                    const type = getSymbolType(style);
                     const layerInfo = {
                         type,
                         id,
@@ -342,28 +309,20 @@ const MapboxSymbolLayer = (m) => {
         },
 
         /**
-         * 获取不同图层类型使用image的属性名
-         * @param {object} symbol 
-         * @returns {object}
+         * 将预定义符号中的image添加到地图上
+         * @param {*} symbol 
+         * @param {*} image 
+         * @private
          */
-        getImageKey(symbol) {
-            const symbolType = this.getSymbolType(symbol);
-            const IMAGE_MAPBOX_KEY = {
-                [LayerType.symbol]: {
-                    type: 'layout',
-                    name: 'icon-image'
-                },
-                [LayerType.line]: {
-                    type: 'paint',
-                    name: 'line-pattern'
-                },
-                [LayerType.fill]: {
-                    type: 'paint',
-                    name: 'fill-pattern'
-                }
+        addSymbolImageToMap(symbol, image) {
+            const {type, name} = getImageKey(symbol);
+            const id = symbol[type]?.[name];
+            if(id) {
+              // 如果需要使用到image 的需要addImage
+              map.addImage(id, image);
+              // 为了解决sdf问题，需要把load后的image信息存下
+              map.symbolManager.addImageInfo(id, image);
             }
-            const result = IMAGE_MAPBOX_KEY[symbolType];
-            return result;
         }
     }
 };

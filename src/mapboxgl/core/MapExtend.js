@@ -5,6 +5,7 @@ import mapboxgl from 'mapbox-gl';
 import CompositeLayer from '../symbol/CompositeLayer';
 import SymbolLayer from '../symbol/SymbolLayer';
 import Symbol from '../symbol/Symbol';
+import { validateSymbol } from '../symbol/SymbolUtil';
 
 /**
  * @function MapExtend
@@ -22,7 +23,7 @@ export var MapExtend = (function () {
     mapboxgl.Map.prototype.addLayerBak = mapboxgl.Map.prototype.addLayer;
     mapboxgl.Map.prototype.addLayer = function (layer, before) {
       if(layer.symbol) {
-        this.symbolLayerManager(this).addLayer(layer, layer.symbol, before);
+        this.symbolLayerManager(this).addLayer(layer, before);
         return this;
       }
 
@@ -149,38 +150,32 @@ export var MapExtend = (function () {
 
 
   mapboxgl.Map.prototype.loadSymbol = async function (symbol, callback) {
-    let error;
-    let symbolInfo = symbol;
     if(typeof symbol === 'string') {
-      symbolInfo = this.symbolManager.getSymbol(symbol);
+      let symbolInfo = this.symbolManager.getSymbol(symbol);
       if (!symbolInfo) {
         if(!mapboxgl.supermap.WebSymbol.symbolUrl) {
-          error = {
-            message: 'symbolUrl of WebSymbol is null. '
-          };
-          callback(error);
+          callback({
+            message: 'SymbolUrl of WebSymbol is null. '
+          });
           return;
         }
         const symbolResult = await mapboxgl.supermap.WebSymbol.getSymbol?.(symbol);
         if(!symbolResult) {
-          error = {
-              message: 'This symbol is not exists.'
-          };
-        } else {
-          const {value, image} = symbolResult;
-          symbolInfo = value;
-          const {type, name} = this.symbolLayerManager(this).getImageKey(value);
-          const id = value[type]?.[name];
-          if(id) {
-            // 如果需要使用到image 的需要addImage
-            this.addImage(id, image);
-            // 为了解决sdf问题，需要把load后的image信息存下
-            this.symbolManager.addImageInfo(id, image);
-          }
+          callback({
+            message: 'This symbol is not exists.'
+          });
+          return;
         }
+        const {value, image} = symbolResult;
+        symbolInfo = value;
+        this.symbolLayerManager(this).addSymbolImageToMap(value, image);
       }
+      callback(null, symbolInfo);
+    } else {
+      callback({
+        message: 'Symbol id must be a string.'
+      });
     }
-    callback(error, symbolInfo);
   };
 
   mapboxgl.Map.prototype.addSymbol = function (id, symbol) {
@@ -189,7 +184,13 @@ export var MapExtend = (function () {
         error: new Error('An symbol with this name already exists.')
       });
     }
-    this.symbolManager.addSymbol(id, symbol);
+    if(validateSymbol(symbol)) {
+      this.symbolManager.addSymbol(id, symbol);
+    } else {
+      this.fire('error', {
+        error: new Error('Symbol is not supported expressions。')
+      });
+    }
   };
 
   mapboxgl.Map.prototype.hasSymbol = function(id) {
