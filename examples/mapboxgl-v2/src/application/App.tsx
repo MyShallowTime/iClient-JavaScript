@@ -12,7 +12,7 @@ const SET_PROPERTY_RULE = {
 const App = () => {
     const [map, setMap] = useState<any>();
     const [layersInfo, setLayersInfo] = useState<any[]>([]);
-    const url = 'http://172.16.14.182:8090/iserver/services/map-China100/rest/maps/China';
+    const url = 'https://iserver.supermap.io/iserver/services/map-china400/rest/maps/China';
 
     // 初始化
     useEffect(() => {
