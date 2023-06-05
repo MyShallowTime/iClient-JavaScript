@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { ScrollPanel } from '@ispeco/iptl-components-react';
-import SelectEditor from '../../components/select-editor';
 import './style';
 import IconCard from '../../components/icon-card';
-import EditorLayout from '../../components/editor-layout';
 import SearchEditor from '../../components/search-editor';
+import SymbolContent from './SymbolContent';
+import { updateUIContents } from './symbol-selector-util'
+
 interface SymbolContentProps {
     onIconClick: (id: string) => void;
     symbolType: string;
@@ -17,16 +18,23 @@ interface SymbolContentProps {
     type: string;
     selectedSymbolId?: string;
 }
-
+const defaultActiveAll = {
+    "value": "all",
+    "label": "全部"
+}
+type UIContentTypes = {
+    id:string,
+    name:string,
+    color?:string,
+    imageUrl?:string
+ }
 const SymbolSelector = (props: SymbolContentProps) => {
     const { symbolType, onIconClick, options, styles, iconIds, type, selectedSymbolId } = props;
     const [activeCategory, setActiveCategory] = useState<any>(options?.[0]?.value);
     const [searchValue, setSearchValue] = useState('');
+    const [UIContents, setUIContents] = useState<UIContentTypes[]>([]);// 类别 or 搜索下的所有图标列表
     const activeStyleOptions = styles?.[activeCategory];
-    symbolType === "base" && activeStyleOptions && activeStyleOptions?.[0]?.value !== 'all' && activeStyleOptions.unshift({
-        "value": "all",
-        "label": "全部"
-    });
+    symbolType === "base" && activeStyleOptions && activeStyleOptions?.[0]?.value !== 'all' && activeStyleOptions.unshift(defaultActiveAll);
     const imgClass = {
         line: 'img-line',
         point: 'img-point',
@@ -38,7 +46,7 @@ const SymbolSelector = (props: SymbolContentProps) => {
         const categoryIds = iconIds?.[activeCategory] ?? iconIds;
         return (style ? categoryIds[style] : categoryIds) ?? [];
     }
-    const [ids, setIds] = useState(getIds(activeStyle));
+    const ids = getIds(activeStyle);
 
     useEffect(() => {
         symbolType === "base" && setActiveStyle(activeStyleOptions?.[0]?.value);
@@ -47,107 +55,70 @@ const SymbolSelector = (props: SymbolContentProps) => {
     useEffect(() => {
         const newStyle = activeStyleOptions?.[0].value;
         setActiveStyle(newStyle);
-        setIds(getIds(newStyle));
     }, [activeCategory]);
 
-    useEffect(() => {
-        setIds(getIds(activeStyle));
-    }, [activeStyle]);
-
-    const getImageUrl = (id) => {
-        const isPolygon = type === 'polygon';
-        if(isPolygon) {
-            const { paint = {} } = isPolygon && require(`../../../libs/resources/symbols/${type}-${id}/${type}-${id}.json`), 
-                {'fill-color': color, 'fill-pattern': imgId} = paint;   
-            return {
-                color,
-                imageUrl: imgId ? `../../../libs/resources/symbols/${type}-${id}/${type}-${id}.png`: undefined
-            }      
-        }
-        return {
-            imageUrl: `../../../libs/resources/symbols/${type}-${id}/${type}-${id}.png`
-        };
+    const changeContentValues = async () => {
+        const newValues: any[] = await updateUIContents(searchValue, iconIds, activeStyleOptions, activeStyle, ids, type);
+        setUIContents(newValues)
     }
 
+    useEffect(() => {
+        changeContentValues();
+    }, [activeCategory]);
+
     const getSymbol = (symbolInfos) => {
-        return symbolInfos?.map(({ id, name }) => {
+        return symbolInfos?.map(({ id, name, color, imageUrl }) => {
             const newSymbolId = type + '-' + id;
-            const {color, imageUrl} = getImageUrl(id);  
-            return <IconCard key={type + id} background={color} imgUrl={imageUrl} title={name} imgClassName={imgClass[type]} onIconClick={() => {
-                onIconClick(newSymbolId);
-            }} isSelected={newSymbolId === selectedSymbolId} />
+            return <IconCard key={type + id}
+                background={color} imgUrl={imageUrl}
+                title={name}
+                imgClassName={imgClass[type]}
+                onIconClick={() => {
+                    onIconClick(newSymbolId);
+                }}
+                isSelected={newSymbolId === selectedSymbolId} />
         });
     };
 
-    const getBaseAllSymbol = () => {
-        const allSymbol = [] as any[];
-        activeStyleOptions.forEach((activeStyleOption) => {
-            const currentSymbol = [] as any[];
-            iconIds[activeCategory][activeStyleOption.value]?.map(({ id, name }) => {
-                currentSymbol.push({ id, name });
-            });
-            activeStyleOption.value !== 'all' && allSymbol.push({
-                label: activeStyleOption.label,
-                symbols: currentSymbol
-            });
-        });
-        return allSymbol.map((el, index) => {
-            return (
-                <div className='symbol-setting-content' key={index}>
-                    <div className='symbol-setting-type-label'>{el.label}</div>
+    const getRender = () => {
+        if (searchValue) {
+            return <ScrollPanel hideScrollX small style={{ height: 516 }}>
+                {getSymbol(UIContents)}
+            </ScrollPanel>
+        }
+
+        if (activeStyleOptions && activeStyle === 'all') {
+            return <SymbolContent
+                options={options}
+                activeCategory={activeCategory}
+                setActiveCategory={setActiveCategory}
+                activeStyle={activeStyle}
+                activeStyleOptions={activeStyleOptions}
+                setActiveStyle={setActiveStyle}>
+                <div className='symbol-setting-content'>
+                    <div className='symbol-setting-type-label'>{defaultActiveAll.label}</div>
                     <div className='symbol-setting-symbols'>
-                        {getSymbol(el.symbols)}
+                        {getSymbol(UIContents)}
                     </div>
                 </div>
-            )
-        })
-    };
-
-    const getAllIconIds = (allIcons, iconIds) => {
-        if (Array.isArray(iconIds)) {
-            allIcons.push(...iconIds);
-        } else {
-            for (let ids in iconIds) {
-                if (Array.isArray(iconIds[ids])) {
-                    allIcons.push(...iconIds[ids]);
-                } else {
-                    getAllIconIds(allIcons, iconIds[ids]);
-                }
-            }
+            </SymbolContent>
         }
-        return allIcons;
-    };
 
-    const getSearchResultSymbol = () => {
-        const allIcons: { id: string, name: string }[] = [];
-        getAllIconIds(allIcons, iconIds);
-        const searchResutl = allIcons.filter((el) => el.name.includes(searchValue));
-        return getSymbol(searchResutl);
-    };
+        return <SymbolContent
+            options={options}
+            activeCategory={activeCategory}
+            setActiveCategory={setActiveCategory}
+            activeStyle={activeStyle}
+            activeStyleOptions={activeStyleOptions}
+            setActiveStyle={setActiveStyle}>
+            {getSymbol(UIContents)}
+        </SymbolContent>
+    }
 
     return (
         <div>
-            <SearchEditor onSearchValueChange={(v) => {
-                setSearchValue(v);
-            }} />
-            {searchValue ?
-                <ScrollPanel hideScrollX small style={{ height: 516 }}>
-                    {getSearchResultSymbol()}
-                </ScrollPanel> :
-                <div className='symbol-content'>
-                    {options && <EditorLayout title='类别'>
-                        <SelectEditor options={options} value={activeCategory} onChange={setActiveCategory} />
-                    </EditorLayout>}
-                    {activeStyle && <EditorLayout title='风格'>
-                        <SelectEditor options={activeStyleOptions} value={activeStyle} onChange={setActiveStyle} />
-                    </EditorLayout>}
-                    <ScrollPanel hideScrollX small style={{ height: activeStyle ? 428 : 468, marginTop: 16 }}>
-                        {
-                            activeStyleOptions && activeStyle === 'all' ? getBaseAllSymbol() : getSymbol(ids)
-                        }
-                    </ScrollPanel>
-                </div>
-            }
+            <SearchEditor onSearchValueChange={(v) => setSearchValue(v)} />
+            {getRender()}
         </div>
     )
 }
