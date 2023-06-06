@@ -52,7 +52,7 @@ const getAllIconIds = (allIcons, iconIds) => {
     return allIcons;
 };
 
-export async function updateUIContents(searchValue, iconIds, activeStyleOptions, activeStyle, ids, type) {
+export async function updateUIContents(searchValue, iconIds, activeStyleOptions, activeStyle, ids, type,activeCategory) {
     const uiParams: any[] = [];
     if (searchValue) {
         const allIcons: { id: string, name: string }[] = [];
@@ -68,13 +68,16 @@ export async function updateUIContents(searchValue, iconIds, activeStyleOptions,
         return uiParams;
     }
     if (activeStyleOptions && activeStyle === 'all') {
-        const allSymbol = getBaseAllSymbol(activeStyleOptions, ids);
+        const symbolIds = iconIds[activeCategory]
+        const allSymbol = getBaseAllSymbol(activeStyleOptions, symbolIds);
         for (const item of allSymbol) {
-            const cardInfo = await getImageUrl(type, item.id);
-            uiParams.push({
-                ...item,
-                ...cardInfo
-            });
+            for(const citem of item.symbols){
+                const cardInfo = await getImageUrl(type, citem.id);
+                uiParams.push({
+                    ...citem,
+                    ...cardInfo
+                });
+            }
         }
         return uiParams
     }

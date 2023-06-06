@@ -58,13 +58,13 @@ const SymbolSelector = (props: SymbolContentProps) => {
     }, [activeCategory]);
 
     const changeContentValues = async () => {
-        const newValues: any[] = await updateUIContents(searchValue, iconIds, activeStyleOptions, activeStyle, ids, type);
+        const newValues: any[] = await updateUIContents(searchValue, iconIds, activeStyleOptions, activeStyle, ids, type,activeCategory);
         setUIContents(newValues)
     }
 
     useEffect(() => {
         changeContentValues();
-    }, [activeCategory]);
+    }, [activeCategory, searchValue, activeStyle]);
 
     const getSymbol = (symbolInfos) => {
         return symbolInfos?.map(({ id, name, color, imageUrl }) => {
