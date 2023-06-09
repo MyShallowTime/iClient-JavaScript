@@ -4,7 +4,7 @@ import './style';
 import { isArray, uniqueId } from 'lodash';
 import { getMapboxKey, isPaintKey } from '../utils/StyleSettingUtil';
 // import '../../../../src/mapboxgl/core/MapExtend';
-
+import {getSymbolBaseUrl} from '../utils/symbol-resource-util'
 const SET_PROPERTY_RULE = {
     paint: 'setPaintProperty',
     layout: 'setLayoutProperty'
@@ -20,7 +20,8 @@ const App = () => {
     }, [!!map]);
 
     const onLoadedMap = async (map: any) => {
-        (window as any).mapboxgl.supermap.WebSymbol.symbolUrl = "../../libs/resources/symbols";
+        const url = getSymbolBaseUrl();
+        (window as any).mapboxgl.supermap.WebSymbol.symbolUrl = url;
         setMap(map);
     }
 
