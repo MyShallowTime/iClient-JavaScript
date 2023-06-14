@@ -1,32 +1,36 @@
-/* Copyright© 2000 - 2022 SuperMap Software Co.Ltd. All rights reserved.
+/* Copyright© 2000 - 2023 SuperMap Software Co.Ltd. All rights reserved.
  * This program are made available under the terms of the Apache License, Version 2.0
  * which accompanies this distribution and is available at http://www.apache.org/licenses/LICENSE-2.0.html.*/
-import mapboxgl from 'mapbox-gl';
-import CompositeLayer from '../symbol/CompositeLayer';
-import SymbolLayer from '../symbol/SymbolLayer';
-import Symbol from '../symbol/Symbol';
-import { validateSymbol } from '../symbol/SymbolUtil';
+// import mapboxgl from 'mapbox-gl';
+import SymbolHandler from '../overlay/symbol/SymbolHandler';
 
 /**
  * @function MapExtend
  * @description  扩展了 mapboxgl.Map 对图层相关的操作。
  * @private
  */
-// const mapboxgl = window.mapboxgl;
+const mapboxgl = window.mapboxgl;
 export var MapExtend = (function () {
-  mapboxgl.Map.prototype.overlayLayersManager = {};
-  mapboxgl.Map.prototype.compositeLayersManager = CompositeLayer();
-  mapboxgl.Map.prototype.symbolLayerManager = SymbolLayer();
-  mapboxgl.Map.prototype.symbolManager = new Symbol();
+  /**
+   * 获取symbol管理
+   * @param {*} map 
+   * @returns {object}
+   */
+  const getSymbolHandler = (map) => {
+    if (!mapboxgl.Map.prototype.symbolHandler) {
+      mapboxgl.Map.prototype.symbolHandler = new SymbolHandler(map);
+    }
+    return mapboxgl.Map.prototype.symbolHandler;
+  }
 
+  mapboxgl.Map.prototype.overlayLayersManager = {};
   if (mapboxgl.Map.prototype.addLayerBak === undefined) {
     mapboxgl.Map.prototype.addLayerBak = mapboxgl.Map.prototype.addLayer;
     mapboxgl.Map.prototype.addLayer = function (layer, before) {
-      if(layer.symbol) {
-        this.symbolLayerManager(this).addLayer(layer, before);
+      if (layer.symbol) {
+        getSymbolHandler(this).addLayer(layer, before);
         return this;
       }
-
       if (layer.source || layer.type === 'custom' || layer.type === 'background') {
         this.addLayerBak(layer, before);
         return this;
@@ -130,84 +134,6 @@ export var MapExtend = (function () {
     );
   };
 
-  mapboxgl.Map.prototype.setSymbol = function (layerId, symbol) {
-    this.symbolLayerManager(this).setSymbol(layerId, symbol);
-  };
-
-  if(!(mapboxgl.Map.prototype).setStyleBak) {
-    (mapboxgl.Map.prototype).setStyleBak = mapboxgl.Map.prototype.setStyle;
-    mapboxgl.Map.prototype.setStyle = function (style, options) {
-      this.setStyleBak(style, options);
-      this.style.once('style.load', () => {
-        const symbolLayers = style.layers.filter(l => l.symbol);
-        symbolLayers.forEach((l) => {
-          this.setSymbol(l.id, l.symbol);
-        });
-      });
-      return this;
-    }
-  }
-
-
-  mapboxgl.Map.prototype.loadSymbol = async function (symbol, callback) {
-    if(typeof symbol === 'string') {
-      let symbolInfo = this.symbolManager.getSymbol(symbol);
-      if (!symbolInfo) {
-        if(!mapboxgl.supermap.WebSymbol.symbolUrl) {
-          callback({
-            message: 'SymbolUrl of WebSymbol is null. '
-          });
-          return;
-        }
-        const symbolResult = await mapboxgl.supermap.WebSymbol.getSymbol?.(symbol);
-        if(!symbolResult) {
-          callback({
-            message: 'This symbol is not exists.'
-          });
-          return;
-        }
-        const {value, image} = symbolResult;
-        symbolInfo = value;
-        this.symbolLayerManager(this).addSymbolImageToMap(value, image);
-      }
-      callback(null, symbolInfo);
-    } else {
-      callback({
-        message: 'Symbol id must be a string.'
-      });
-    }
-  };
-
-  mapboxgl.Map.prototype.addSymbol = function (id, symbol) {
-    if (this.symbolManager.getSymbol(id)) {
-      return this.fire('error', {
-        error: new Error('An symbol with this name already exists.')
-      });
-    }
-    if(validateSymbol(symbol)) {
-      this.symbolManager.addSymbol(id, symbol);
-    } else {
-      this.fire('error', {
-        error: new Error('Symbol is not supported expressions。')
-      });
-    }
-  };
-
-  mapboxgl.Map.prototype.hasSymbol = function(id) {
-    if (!id) {
-        this.fire('error', {
-          error: new Error('Missing required symbol id')
-        });
-        return false;
-    }
-
-    return !!this.symbolManager.getSymbol(id);
-  }
-
-  mapboxgl.Map.prototype.removeSymbol = function (id) {
-    this.symbolManager.removeSymbol(id);
-  };
-
   function addLayer(layer, map) {
     layer.onAdd && layer.onAdd(map);
   }
@@ -253,5 +179,131 @@ export var MapExtend = (function () {
       layer.parentNode.appendChild(layer);
     }
   }
+
+  /**
+   * 指定图层设置符号
+   * @param {string} layerId 
+   * @param {string} symbol 
+   */
+  mapboxgl.Map.prototype.setSymbol = function (layerId, symbol) {
+    getSymbolHandler(this).setSymbol(layerId, symbol);
+  };
+
+  /**
+   * Layer新增symbol属性
+   */
+  if (!(mapboxgl.Map.prototype).setStyleBak) {
+    (mapboxgl.Map.prototype).setStyleBak = mapboxgl.Map.prototype.setStyle;
+    mapboxgl.Map.prototype.setStyle = function (style, options) {
+      this.setStyleBak(style, options);
+      this.style.once('style.load', () => {
+        const symbolLayers = style.layers.filter(l => l.symbol);
+        symbolLayers.forEach((l) => {
+          this.setSymbol(l.id, l.symbol);
+        });
+      });
+      return this;
+    }
+  }
+
+  /**
+   * 加载Web符号
+   * @param {string} id 
+   * @param {function} callback 
+   * @returns {undefined}
+   */
+  mapboxgl.Map.prototype.loadSymbol = async function (id, callback) {
+    if (typeof id === 'string') {
+      let symbolInfo = getSymbolHandler(this).getSymbol(id);
+      if (!symbolInfo) {
+        if (!mapboxgl.supermap.WebSymbol.basePath) {
+          callback({
+            message: 'SymbolUrl of WebSymbol is null.'
+          });
+          return;
+        }
+        const symbolResult = await mapboxgl.supermap.WebSymbol.getSymbol?.(id);
+        if (!symbolResult) {
+          callback({
+            message: 'This symbol is not exists.'
+          });
+          return;
+        }
+        const { value, image } = symbolResult;
+        symbolInfo = value;
+        getSymbolHandler(this).addSymbolImageToMap(value, image);
+      }
+      callback(null, symbolInfo);
+    } else {
+      callback({
+        message: 'Symbol id must be a string.'
+      });
+    }
+  };
+
+  /**
+   * 添加符号
+   * @param {string} id 
+   * @param {object} symbol 
+   */
+  mapboxgl.Map.prototype.addSymbol = function (id, symbol) {
+    getSymbolHandler(this).addSymbol(id, symbol);
+  };
+
+  /**
+   * 判断符号是否存在
+   * @param {string} id 
+   */
+  mapboxgl.Map.prototype.hasSymbol = function (id) {
+    if (!id) {
+      this.fire('error', {
+        error: new Error('Missing required symbol id')
+      });
+      return false;
+    }
+
+    return !!getSymbolHandler(this).getSymbol(id);
+  };
+
+  /**
+   * 删除符号
+   * @param {string} id 
+   * @param {object} symbol 
+   */
+  mapboxgl.Map.prototype.removeSymbol = function (id) {
+    getSymbolHandler(this).removeSymbol(id);
+  };
+
+  /**
+   * 获取图层
+   * @param {string} id 
+   */
+  if (mapboxgl.Map.prototype.getLayerBak === undefined) {
+    mapboxgl.Map.prototype.getLayerBak = mapboxgl.Map.prototype.getLayer;
+    mapboxgl.Map.prototype.getLayer = function (layerId) {
+      return getSymbolHandler(this).getLayer(layerId);
+    };
+  }
+
+  /**
+   * 删除图层
+   * @param {string} layerId 
+   */
+  if (mapboxgl.Map.prototype.removeLayerBak === undefined) {
+    mapboxgl.Map.prototype.removeLayerBak = mapboxgl.Map.prototype.removeLayer;
+    mapboxgl.Map.prototype.removeLayer = function (layerId) {
+      getSymbolHandler(this).removeLayer(layerId);
+    };
+  }
+
+  /**
+   * 获取style
+   */
+  if (mapboxgl.Map.prototype.getStyleBak === undefined) {
+    mapboxgl.Map.prototype.getStyleBak = mapboxgl.Map.prototype.getStyle;
+    mapboxgl.Map.prototype.getStyle = function () {
+      return getSymbolHandler(this).getStyle();
+    };
+  }
 })();
-// window.mapboxgl = mapboxgl;
+window.mapboxgl = mapboxgl;

@@ -3,7 +3,7 @@ import View from './View';
 import './style';
 import { isArray, uniqueId } from 'lodash';
 import { getMapboxKey, isPaintKey } from '../utils/StyleSettingUtil';
-// import '../../../../src/mapboxgl/core/MapExtend';
+import '../../../../src/mapboxgl/core/MapExtend';
 
 const SET_PROPERTY_RULE = {
     paint: 'setPaintProperty',
@@ -20,7 +20,7 @@ const App = () => {
     }, [!!map]);
 
     const onLoadedMap = async (map: any) => {
-        (window as any).mapboxgl.supermap.WebSymbol.symbolUrl = "../../libs/resources/symbols";
+        (window as any).mapboxgl.supermap.WebSymbol.basePath = "../../libs/resources/symbols";
         setMap(map);
     }
 
@@ -29,8 +29,8 @@ const App = () => {
         const { symbolId, style = {} } = preSymbolInfo;
         const id = uniqueId();
         await map.loadSymbol(symbolId, (_err, symbol) => {
-            style.paint &&  Object.assign(symbol.paint, style.paint);
-            style.layout &&  Object.assign(symbol.layout, style.layout);
+            style.paint && Object.assign(symbol.paint, style.paint);
+            style.layout && Object.assign(symbol.layout, style.layout);
             map.addSymbol(id, symbol);
         });
         return { id, symbolId };
@@ -54,7 +54,7 @@ const App = () => {
         symbol: any;
         layersInfo: any;
     }): void => {
-        const {layerId, sourceLayer, type, layerType, symbol, layersInfo} = options;
+        const { layerId, sourceLayer, type, layerType, symbol, layersInfo } = options;
         const { id, symbolId } = symbol;
         if (type !== 'text') {
             layersInfo.push({ id: layerId, type, sourceLayer, url, symbolId });
@@ -145,73 +145,73 @@ const App = () => {
         });
 
         addMVTLayer({
-            layerId:'chinaPolygon',
-            sourceLayer:'China_Province_pg@China',
-            type:'polygon',
+            layerId: 'chinaPolygon',
+            sourceLayer: 'China_Province_pg@China',
+            type: 'polygon',
             layerType: 'fill',
             symbol: chinaSymbol,
             layersInfo: newLayersInfo
         });
         addMVTLayer({
-            layerId:'riverpolygon',
+            layerId: 'riverpolygon',
             sourceLayer: 'Main_River_pg@China',
-            type:'polygon',
+            type: 'polygon',
             layerType: 'fill',
             symbol: riverPolygonSymbol,
             layersInfo: newLayersInfo
         });
         addMVTLayer({
-            layerId:'riverLine', 
-            sourceLayer: 'Main_River_ln@China', 
-            type:'line', 
+            layerId: 'riverLine',
+            sourceLayer: 'Main_River_ln@China',
+            type: 'line',
             layerType: 'line',
             symbol: riverLineSymbol,
             layersInfo: newLayersInfo
         });
         addMVTLayer({
-            layerId:'provinceLine',
+            layerId: 'provinceLine',
             sourceLayer: 'China_Province_ln@China',
-            type:'line',
+            type: 'line',
             layerType: 'line',
             symbol: provinceLineSymbol,
             layersInfo: newLayersInfo
         });
         addMVTLayer({
-            layerId:'mainRoadLine', 
-            sourceLayer: 'Main_Road_L@China', 
-            type:'line', 
+            layerId: 'mainRoadLine',
+            sourceLayer: 'Main_Road_L@China',
+            type: 'line',
             layerType: 'line',
             symbol: MainRoadLineLineSymbol,
             layersInfo: newLayersInfo
         });
         addMVTLayer({
-            layerId:'capital', 
-            sourceLayer: 'China_Capital_pt@China', 
-            type:'point', 
+            layerId: 'capital',
+            sourceLayer: 'China_Capital_pt@China',
+            type: 'point',
             layerType: 'symbol',
             symbol: capitalSymbol,
             layersInfo: newLayersInfo
         });
         addMVTLayer({
-            layerId:'city',
+            layerId: 'city',
             sourceLayer: 'China_ProCenCity_pt@China',
-            type:'point',
+            type: 'point',
             layerType: 'symbol',
             symbol: citySymbol,
             layersInfo: newLayersInfo
         });
         addMVTLayer({
-            layerId:'nationText',
+            layerId: 'nationText',
             sourceLayer: 'China_Nation_B_pt@China',
-            type:'text',
+            type: 'text',
             layerType: 'symbol',
             symbol: nationTextSymbol,
             layersInfo: newLayersInfo
         });
         addMVTLayer({
-            layerId:'cityText',
+            layerId: 'cityText',
             sourceLayer: 'China_ProCenCity_pt@China',
-            type:'text',
+            type: 'text',
             layerType: 'symbol',
             symbol: cityTextSymbol,
             layersInfo: newLayersInfo
@@ -219,13 +219,6 @@ const App = () => {
         setLayersInfo(newLayersInfo.reverse());
     };
 
-    const hideSymbol = (symbol) => {
-        isArray(symbol) ?
-            symbol.forEach(s => {
-                s.layout = Object.assign(s.layout ?? {}, { visibility: 'none' });
-            }) :
-            symbol.layout = Object.assign(symbol.layout ?? {}, { visibility: 'none' });
-    };
     // 点击切换
     const onIconClick = async (symbolId, layerId) => {
         if (!map) return;
@@ -236,9 +229,6 @@ const App = () => {
                 symbol.layout['icon-allow-overlap'] = true;
                 symbol.layout['icon-size'] = 0.16;
             }
-            // TODO 暂时这样处理，待symbol是否设置visibility明确后优化
-            // 图层隐藏状态下切换符号，隐藏新符号
-            getLayerPropertyStyle(layerId, 'visibility') === 'none' && hideSymbol(symbol);
             map.addSymbol(id, symbol);
         });
         map.setSymbol(layerId, id);
@@ -253,8 +243,22 @@ const App = () => {
         return map.getStyle().layers.find(layer => layer?.id === layerId);
     };
 
+    /**以下三种方法都有点儿特殊化了 */
+    const getCompositeLayerId = (layerId: string): string => {
+        return map.symbolHandler.compositeSymbolRender.getLayerId(layerId);
+    };
+    // const getSymbol = (layerId: string) => {
+    //     return map.symbolHandler.getSymbol(layerId);
+    // }
+    const getCompositeLayersIds = (layerId: string): string[] => {
+        return map.symbolHandler.compositeSymbolRender.getLayerIds(layerId);
+    };
+    const getImageInfo = (id: string) => {
+        return map.symbolHandler.symbolManager.getImageInfo(id);
+    }
+
     const getLayerPropertyStyle = (layerId: string, key: string) => {
-        const compositeLayerId = map.compositeLayersManager.getCompositeLayerId(layerId);
+        const compositeLayerId = getCompositeLayerId(layerId);
         const type = getLayerType(compositeLayerId ?? layerId);
         const layer = getLayer(layerId);
         const mapboxKey = type && getMapboxKey[type](key);
@@ -262,7 +266,7 @@ const App = () => {
     };
 
     const changeLayerStyle = (layerId: string, key: string, value: string): void => {
-        const compositeLayerId = map.compositeLayersManager.getCompositeLayerId(layerId);
+        const compositeLayerId = getCompositeLayerId(layerId);
         const type = getLayerType(compositeLayerId ?? layerId);
         const layer = getLayer(layerId);
         const mapboxKey = type && getMapboxKey[type](key);
@@ -272,12 +276,12 @@ const App = () => {
             const ImageId: string = layer?.layout?.['icon-image'];
             if (ImageId && !ImageId.startsWith('sdf_')) {
                 const sdfImageId = uniqueId('sdf_');
-                const image = map.symbolManager.getImageInfo(ImageId);
+                const image = getImageInfo(ImageId);
                 map.addImage(sdfImageId, image, { sdf: true });
                 map.setLayoutProperty(layerId, 'icon-image', sdfImageId);
             }
         } else if (type === 'line' && key === 'visibility') {
-            const layerIds = map.compositeLayersManager.getLayers(layerId) ?? [layerId];
+            const layerIds = getCompositeLayersIds(layerId) ?? [layerId];
             layerIds.forEach((layerId) => {
                 map[SET_PROPERTY_RULE[paintOrLayout]](layerId, mapboxKey, value);
             });
@@ -286,28 +290,38 @@ const App = () => {
         map[SET_PROPERTY_RULE[paintOrLayout]](layerId, mapboxKey, value);
     };
 
-    const getCompositeLayersIds = (layerId: string): string[] => {
-        return map.compositeLayersManager.getLayers(layerId);
-    };
-    const getImageInfo = (id: string) => {
-        return map.symbolManager.getImageInfo(id);
+    // const testLayerId = "chinaPolygon";
+    const testLayerId = "mainRoadLine";
+    const getLayer2 = () => {
+        const layer = map.getLayer(testLayerId);
+        console.log(layer);
     }
-    return <View
-        layerListParams={{
-            layersInfo,
-            setLayersInfo,
-            onIconClick
-        }}
-        mapParams={{
-            onLoadedMap
-        }}
-        styleSettingParams={{
-            changeLayerStyle,
-            getLayerPropertyStyle,
-            getCompositeLayersIds,
-            getImageInfo
-        }}
-    />
+    const removerLayer = () => {
+        map.removeLayer(testLayerId);
+    }
+    const getStyle = () => {
+        console.log(map.getStyle());
+    }
+
+    return <div>
+        <button onClick={getLayer2}>getLayer</button>
+        <button onClick={removerLayer}>removerLayer</button>
+        <button onClick={getStyle}>getStyle</button><View
+            layerListParams={{
+                layersInfo,
+                setLayersInfo,
+                onIconClick
+            }}
+            mapParams={{
+                onLoadedMap
+            }}
+            styleSettingParams={{
+                changeLayerStyle,
+                getLayerPropertyStyle,
+                getCompositeLayersIds,
+                getImageInfo
+            }}
+        /></div>
 }
 
 export default App;
