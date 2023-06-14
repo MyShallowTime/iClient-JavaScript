@@ -19,12 +19,12 @@
     "release-leaflet-es5": "cross-env moduleVersion=es5 npm run deploy-leaflet ./src/leaflet/namespace.js ./src/leaflet/css/index.js && uglifyjs ./dist/leaflet/iclient-leaflet.js  --ecma 5 --comments /Copyright©/i -c -m -o ./dist/leaflet/iclient-leaflet.min.js && cleancss -o  ./dist/leaflet/iclient-leaflet.min.css ./dist/leaflet/iclient-leaflet.css",
     "release-openlayers-es5": "cross-env moduleVersion=es5 npm run deploy-openlayers ./src/openlayers/namespace.js ./src/openlayers/css/index.js  && uglifyjs ./dist/openlayers/iclient-openlayers.js  --ecma 5 --comments /Copyright©/i -c -m -o ./dist/openlayers/iclient-openlayers.min.js && cleancss -o  ./dist/openlayers/iclient-openlayers.min.css ./dist/openlayers/iclient-openlayers.css",
     "release-ol-es5": "cross-env moduleVersion=es5 npm run deploy-ol ./src/openlayers/namespace.js ./src/openlayers/css/index.js && uglifyjs ./dist/ol/iclient-ol.js  --ecma 5 --comments /Copyright©/i -c -m -o ./dist/ol/iclient-ol.min.js && cleancss -o  ./dist/ol/iclient-ol.min.css ./dist/ol/iclient-ol.css",
-    "release-mapboxgl-es5": "cross-env moduleVersion=es5 npm run deploy-mapboxgl ./src/mapboxgl/namespace.js ./src/mapboxgl/css/index.js && uglifyjs ./dist/mapboxgl/iclient-mapboxgl.js  --ecma 5 --comments /Copyright©/i -c -m -o ./dist/mapboxgl/iclient-mapboxgl.min.js && cleancss -o  ./dist/mapboxgl/iclient-mapboxgl.min.css ./dist/mapboxgl/iclient-mapboxgl.css && npm run deploy-symbol",
+    "release-mapboxgl-es5": "cross-env moduleVersion=es5 npm run deploy-mapboxgl ./src/mapboxgl/namespace.js ./src/mapboxgl/css/index.js && uglifyjs ./dist/mapboxgl/iclient-mapboxgl.js  --ecma 5 --comments /Copyright©/i -c -m -o ./dist/mapboxgl/iclient-mapboxgl.min.js && cleancss -o  ./dist/mapboxgl/iclient-mapboxgl.min.css ./dist/mapboxgl/iclient-mapboxgl.css",
     "release-classic-es5": "cross-env moduleVersion=es5 npm run deploy-classic ./src/classic/namespace.js  && uglifyjs ./dist/classic/iclient-classic.js  --ecma 5 --comments /Copyright©/i -c -m -o ./dist/classic/iclient-classic.min.js",
     "release-leaflet-es6": "cross-env moduleVersion=es6 npm run deploy-leaflet ./src/leaflet/namespace.js ./src/leaflet/css/index.js && node ./node_modules/uglify-es/bin/uglifyjs ./dist/leaflet/iclient-leaflet-es6.js  --ecma 6 --comments /Copyright©/i -c -m -o ./dist/leaflet/iclient-leaflet-es6.min.js && cleancss -o  ./dist/leaflet/iclient-leaflet.min.css ./dist/leaflet/iclient-leaflet.css",
     "release-openlayers-es6": "cross-env moduleVersion=es6 npm run deploy-openlayers ./src/openlayers/namespace.js ./src/openlayers/css/index.js  && node ./node_modules/uglify-es/bin/uglifyjs ./dist/openlayers/iclient-openlayers-es6.js  --ecma 6 --comments /Copyright©/i -c -m -o ./dist/openlayers/iclient-openlayers-es6.min.js && cleancss -o  ./dist/openlayers/iclient-openlayers.min.css ./dist/openlayers/iclient-openlayers.css",
     "release-ol-es6": "cross-env moduleVersion=es6 npm run deploy-ol ./src/openlayers/namespace.js ./src/openlayers/css/index.js && node ./node_modules/uglify-es/bin/uglifyjs ./dist/ol/iclient-ol-es6.js  --ecma 6 --comments /Copyright©/i -c -m -o ./dist/ol/iclient-ol-es6.min.js && cleancss -o  ./dist/ol/iclient-ol.min.css ./dist/ol/iclient-ol.css",
-    "release-mapboxgl-es6": "cross-env moduleVersion=es6 npm run deploy-mapboxgl ./src/mapboxgl/namespace.js ./src/mapboxgl/css/index.js && node ./node_modules/terser/bin/terser ./dist/mapboxgl/iclient-mapboxgl-es6.js  --ecma 6 --comments /Copyright©/i -c -m -o ./dist/mapboxgl/iclient-mapboxgl-es6.min.js && cleancss -o  ./dist/mapboxgl/iclient-mapboxgl.min.css ./dist/mapboxgl/iclient-mapboxgl.css && npm run deploy-symbol",
+    "release-mapboxgl-es6": "cross-env moduleVersion=es6 npm run deploy-mapboxgl ./src/mapboxgl/namespace.js ./src/mapboxgl/css/index.js && node ./node_modules/terser/bin/terser ./dist/mapboxgl/iclient-mapboxgl-es6.js  --ecma 6 --comments /Copyright©/i -c -m -o ./dist/mapboxgl/iclient-mapboxgl-es6.min.js && cleancss -o  ./dist/mapboxgl/iclient-mapboxgl.min.css ./dist/mapboxgl/iclient-mapboxgl.css",
     "release-classic-es6": "cross-env moduleVersion=es6 npm run deploy-classic ./src/classic/namespace.js  && node ./node_modules/uglify-es/bin/uglifyjs ./dist/classic/iclient-classic-es6.js  --ecma 6 --comments /Copyright©/i -c -m -o ./dist/classic/iclient-classic-es6.min.js",
     "deploy": "webpack --color",
     "deploy-leaflet": "webpack --config ./build/webpack.config.leaflet.js --color",
@@ -45,8 +45,7 @@
     "pre-publish": "node ./build/publish.js --leaflet && node  ./build/publish.js --openlayers && node  ./build/publish.js --mapboxgl && node  ./build/publish.js --classic",
     "publish": "npm run pre-publish && cd ./src/common && npm publish && cd ../leaflet && npm publish && cd ../openlayers && npm publish && cd ../mapboxgl && npm publish && cd ../classic && npm publish",
     "release-maplibregl-es5": "cross-env moduleVersion=es5 npm run deploy-maplibregl ./src/maplibregl/namespace.js",
-    "deploy-maplibregl": "webpack --config ./build/webpack.config.maplibregl.js --color",
-    "deploy-symbol": "copyfiles ./resources/symbols/** ./dist/"
+    "deploy-maplibregl": "webpack --config ./build/webpack.config.maplibregl.js --color"
   },
   "keywords": [
     "SuperMap",
@@ -84,7 +83,6 @@
     "chromedriver": "87.0.5",
     "clean-css-cli": "^4.3.0",
     "commander": "^9.0.0",
-    "copyfiles": "^2.4.1",
     "cross-env": "^7.0.2",
     "css-loader": "^6.7.1",
     "elasticsearch": "16.7.3",
