@@ -3,7 +3,8 @@ import View from './View';
 import './style';
 import { isArray, uniqueId } from 'lodash';
 import { getMapboxKey, isPaintKey } from '../utils/StyleSettingUtil';
-import '../../../../src/mapboxgl/core/MapExtend';
+// import '../../../../src/mapboxgl/core/MapExtend';
+import {getSymbolBaseUrl} from '../utils/symbol-resource-util';
 
 const SET_PROPERTY_RULE = {
     paint: 'setPaintProperty',
@@ -13,6 +14,8 @@ const App = () => {
     const [map, setMap] = useState<any>();
     const [layersInfo, setLayersInfo] = useState<any[]>([]);
     const url = 'http://172.16.14.182:8090/iserver/services/map-China100/rest/maps/China';
+    // const url = 'https://iserver.supermap.io/iserver/services/map-china400/rest/maps/China';
+    // const url ='http://support.supermap.com.cn:8090/iserver/services/map-china400/rest/maps/China'
 
     // 初始化
     useEffect(() => {
@@ -20,7 +23,8 @@ const App = () => {
     }, [!!map]);
 
     const onLoadedMap = async (map: any) => {
-        (window as any).mapboxgl.supermap.WebSymbol.basePath = "../../libs/resources/symbols";
+        const url = getSymbolBaseUrl();
+        (window as any).mapboxgl.supermap.WebSymbol.basePath = url;
         setMap(map);
     }
 
