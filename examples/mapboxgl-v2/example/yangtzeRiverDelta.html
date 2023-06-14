@@ -120,8 +120,7 @@
           }
         });
         map.addSymbol("line-custom-63020102", newSymbol);
-      });
-      map.addLayer({
+        map.addLayer({
         "id": "line",
         "source": "sanjiaozhou",
         "type": "line",
@@ -142,6 +141,7 @@
           ]
         },
         "symbol": "line-custom-63020102"
+      });
       });
     };
 
@@ -239,7 +239,7 @@
     };
 
     map.on('load', function () {
-      window.mapboxgl.supermap.WebSymbol.symbolUrl = "../libs/resources/symbols";
+      window.mapboxgl.supermap.WebSymbol.basePath = "../libs/resources/symbols";
       loadSymbols().then(function () {
         createPolygonLayer("Frame", "polygon-955463");
         createPolygonLayer("Province_R", "polygon-955464");

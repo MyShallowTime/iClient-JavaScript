@@ -173,7 +173,7 @@
     };
 
     map.on('load', function () {
-      window.mapboxgl.supermap.WebSymbol.symbolUrl = "../libs/resources/symbols";
+      window.mapboxgl.supermap.WebSymbol.basePath = "../libs/resources/symbols";
       loadSymbols()
         .then(function () {
           createBOULLayer(630200, "line-63020004");

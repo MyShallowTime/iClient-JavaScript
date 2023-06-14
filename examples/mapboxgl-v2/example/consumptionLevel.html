@@ -82,7 +82,7 @@
     };
 
     map.on('load', function () {
-      window.mapboxgl.supermap.WebSymbol.symbolUrl = "../libs/resources/symbols";
+      window.mapboxgl.supermap.WebSymbol.basePath = "../libs/resources/symbols";
       map.loadSymbol("point-311", function (_err, symbol) {
         if (!_err) {
           map.addSymbol("point-311", symbol);

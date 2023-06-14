@@ -238,7 +238,7 @@
     };
 
     map.on("load", function () {
-      window.mapboxgl.supermap.WebSymbol.symbolUrl = "../libs/resources/symbols";
+      window.mapboxgl.supermap.WebSymbol.basePath = "../libs/resources/symbols";
       createPopDensityPolygon();
       createProvinceLine();
       createProvinceCityPoint();
