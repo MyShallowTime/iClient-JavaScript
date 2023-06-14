@@ -2,141 +2,164 @@
 <html lang="zh">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
-    <title>新疆土地利用类型空间分布图</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+  <title>新疆土地利用类型空间分布图</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
 
-        #map {
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    #map {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+    }
+
+  </style>
 </head>
 
 <body>
-    <div id="map"></div>
+  <div id="map"></div>
     <script type="text/javascript" src="https://iclient.supermap.io/web/libs/mapbox-gl-js/1.13.2/mapbox-gl.js"></script>
     <script type="text/javascript" src="../libs/mapboxgl/iclient-mapboxgl.js"></script>
     <script>
-        const map = new mapboxgl.Map({
-            container: 'map',
-            style: {
-                "sources": {
-                    "新疆土地利用类型空间分布图": {
-                        "tiles": ["http://172.16.14.80:8090/iserver/services/map-Xinjiang/restjsr/v1/vectortile/maps/%E6%96%B0%E7%96%86%E5%9C%9F%E5%9C%B0%E5%88%A9%E7%94%A8%E7%B1%BB%E5%9E%8B%E7%A9%BA%E9%97%B4%E5%88%86%E5%B8%83%E5%9B%BE/tiles/{z}/{x}/{y}.mvt"],
-                        "type": "vector"
-                    }
-                },
-                "center": [
-                    52.162787521388054,
-                    38.92632305943113
-                ],
-                "name": "新疆土地利用类型空间分布图",
-                "layers": [],
-                "zoom": 2.4590747,
-                "minzoom": 0,
-                "maxzoom": 24,
-                "version": 8
-            }
+    var baseServiceUrl = "https://iserver.supermap.io/iserver/services/map-china400/rest/maps/China";
+    var serverUrl =
+      'https://giscloudsuite.supermap.io/iserver/services/map-Xinjiang/restjsr/v1/vectortile/maps/%E6%96%B0%E7%96%86%E5%9C%9F%E5%9C%B0%E5%88%A9%E7%94%A8%E7%B1%BB%E5%9E%8B%E7%A9%BA%E9%97%B4%E5%88%86%E5%B8%83%E5%9B%BE';
+    var map = new mapboxgl.Map({
+      container: 'map',
+      style: {
+        "sources": {
+          "raster-tiles": {
+            "tiles": [
+              baseServiceUrl + "/zxyTileImage.png?z={z}&x={x}&y={y}"
+            ],
+            "type": "raster"
+          },
+          "新疆土地利用类型空间分布图": {
+            "tiles": [
+              serverUrl + "/tiles/{z}/{x}/{y}.mvt"
+            ],
+            "type": "vector"
+          }
+        },
+
+        "name": "新疆土地利用类型空间分布图",
+        "layers": [{
+          "id": "simple-tiles",
+          "type": "raster",
+          "source": "raster-tiles"
+        }],
+        "version": 8
+      },
+      zoom: 4.4,
+      center: [
+        85.66,
+        42.2
+      ]
+    });
+
+    var loadSymbol = function (symbolId) {
+      return new Promise(function (resolve) {
+        map.loadSymbol(symbolId, function (_err, symbol) {
+          if (!_err) {
+            map.addSymbol(symbolId, symbol);
+            resolve();
+          }
         });
+      });
+    };
 
-        // 批量加载Web符号
-        const loadSymbols = async () => {
-            const symbols = [
-                "polygon-83040647",
-                "polygon-83040649",
-                "polygon-83040654",
-                "polygon-83040658",
-                "polygon-83040655",
-                "polygon-83040660",
-                "polygon-83040661",
-                "polygon-83040663",
-                "polygon-83040664",
-                "polygon-83040691",
-                "polygon-83040686",
-                "polygon-83040688",
-                "polygon-83040694",
-                "polygon-83040690",
-                "polygon-83040669",
-                "polygon-83040670",
-                "polygon-83040703",
-                "polygon-83040648",
-                "polygon-83040698",
-                "polygon-83040692",
-                "polygon-83040700",
-                "polygon-83040701",
-                "polygon-83040695",
-                "polygon-83040686"
-            ];
-            for (let symbolId of symbols) {
-                await map.loadSymbol(symbolId, (_err, symbol) => {
-                    map.addSymbol(symbolId, symbol);
-                });
-            }
-        }
+    var loadSymbols = function () {
+      var symbols = [
+        "polygon-83040647",
+        "polygon-83040649",
+        "polygon-83040654",
+        "polygon-83040658",
+        "polygon-83040655",
+        "polygon-83040660",
+        "polygon-83040661",
+        "polygon-83040663",
+        "polygon-83040664",
+        "polygon-83040691",
+        "polygon-83040686",
+        "polygon-83040688",
+        "polygon-83040694",
+        "polygon-83040690",
+        "polygon-83040669",
+        "polygon-83040670",
+        "polygon-83040703",
+        "polygon-83040648",
+        "polygon-83040698",
+        "polygon-83040692",
+        "polygon-83040700",
+        "polygon-83040701",
+        "polygon-83040695"
+      ];
+      var loadSymbolPromises = symbols.map(function (symbolId) {
+        return loadSymbol(symbolId);
+      });
+      return Promise.all(loadSymbolPromises);
+    };
 
-        // 添加土地利用图层
-        const createLandUseLayer = () => {
-            map.addLayer({
-                "id": "LandUse_R@Xinjiang(0_24)",
-                "source": "新疆土地利用类型空间分布图",
-                "source-layer": "LandUse_R@Xinjiang",
-                "type": "fill",
-                "symbol": [
-                    "match", ["get", "value"],
-                    11, "polygon-83040647", //水田
-                    12, "polygon-83040649", //旱地
-                    21, "polygon-83040654", //有林地
-                    22, "polygon-83040658", //疏林地
-                    23, "polygon-83040655", //疏林地
-                    24, "polygon-83040660", //其它林地
-                    31, "polygon-83040661", //高覆盖度草地
-                    32, "polygon-83040663", //中覆盖度草地
-                    33, "polygon-83040664", //低覆盖度草地
-                    41, "polygon-83040691", //河渠
-                    42, "polygon-83040686", //湖泊
-                    43, "polygon-83040688", //水库坑塘
-                    44, "polygon-83040694", //永久性冰川雪地
-                    46, "polygon-83040690", //滩地
-                    51, "polygon-83040669", //城镇用地
-                    52, "polygon-83040670", //农村居民点
-                    53, "polygon-83040703", //其它建设用地
-                    61, "polygon-83040648", //水浇地
-                    62, "polygon-83040649", //戈壁
-                    63, "polygon-83040698", //盐碱地
-                    64, "polygon-83040692", //沼泽地
-                    65, "polygon-83040700", //裸土地
-                    66, "polygon-83040701", //裸岩石质地
-                    "polygon-83040695",     //其他
-                ]
-            });
-        }
+    var createLandUseLayer = function () {
+      map.addLayer({
+        "id": "LandUse_R@Xinjiang(0_24)",
+        "source": "新疆土地利用类型空间分布图",
+        "source-layer": "LandUse_R@Xinjiang",
+        "type": "fill",
+        "symbol": [
+          "match", ["get", "value"],
+          11, "polygon-83040647", //水田
+          12, "polygon-83040649", //旱地
+          21, "polygon-83040654", //有林地
+          22, "polygon-83040658", //疏林地
+          23, "polygon-83040655", //疏林地
+          24, "polygon-83040660", //其它林地
+          31, "polygon-83040661", //高覆盖度草地
+          32, "polygon-83040663", //中覆盖度草地
+          33, "polygon-83040664", //低覆盖度草地
+          41, "polygon-83040691", //河渠
+          42, "polygon-83040686", //湖泊
+          43, "polygon-83040688", //水库坑塘
+          44, "polygon-83040694", //永久性冰川雪地
+          46, "polygon-83040690", //滩地
+          51, "polygon-83040669", //城镇用地
+          52, "polygon-83040670", //农村居民点
+          53, "polygon-83040703", //其它建设用地
+          61, "polygon-83040648", //水浇地
+          62, "polygon-83040649", //戈壁
+          63, "polygon-83040698", //盐碱地
+          64, "polygon-83040692", //沼泽地
+          65, "polygon-83040700", //裸土地
+          66, "polygon-83040701", //裸岩石质地
+          "polygon-83040695" //其他
+        ]
+      });
+    };
 
-        // 添加水面
-        const createWaterLayer = () => {
-            map.addLayer({
-                "id": "Water_R@Xinjiang(0_24)",
-                "source": "新疆土地利用类型空间分布图",
-                "source-layer": "Water_R@Xinjiang",
-                "type": "fill",
-                symbol: "polygon-83040686"
-            });
-        }
+    var createWaterLayer = function () {
+      map.addLayer({
+        "id": "Water_R@Xinjiang(0_24)",
+        "source": "新疆土地利用类型空间分布图",
+        "source-layer": "Water_R@Xinjiang",
+        "type": "fill",
+        "symbol": "polygon-83040686"
+      });
+    };
 
-        map.on('load', async () => {
-            window.mapboxgl.supermap.WebSymbol.symbolUrl = "../libs/resources/symbols";
-            await loadSymbols();
-            createLandUseLayer();
-            createWaterLayer();
-        })
-    </script>
+    map.on('load', function () {
+        window.mapboxgl.supermap.WebSymbol.symbolUrl = "../libs/resources/symbols";
+      loadSymbols().then(function () {
+        createLandUseLayer();
+        createWaterLayer();
+      });
+    });
+
+  </script>
 </body>
 
 </html>

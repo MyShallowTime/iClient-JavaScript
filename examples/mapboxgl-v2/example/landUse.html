@@ -17,6 +17,7 @@
       bottom: 0;
       width: 100%;
     }
+
   </style>
 </head>
 
@@ -25,29 +26,45 @@
   <script type="text/javascript" src="https://iclient.supermap.io/web/libs/mapbox-gl-js/1.13.2/mapbox-gl.js"></script>
   <script type="text/javascript" src="../libs/mapboxgl/iclient-mapboxgl.js"></script>
   <script>
-    const map = new mapboxgl.Map({
+    var serverUrl = "https://iserver.supermap.io/iserver/services/map-mvt-landuse2/rest/maps/landuse";
+    var map = new mapboxgl.Map({
       container: 'map',
       style: {
         "sources": {
           "landuse": {
-            "tiles": ["http://172.16.14.80:8090/iserver/services/map-landuse/restjsr/v1/vectortile/maps/landuse/tiles/{z}/{x}/{y}.mvt"],
+            "tiles": [
+              serverUrl + "/tileFeature.mvt?z={z}&x={x}&y={y}"
+            ],
             "type": "vector"
           }
         },
-        "center": [
-          108.9131713726414,
-          23.82622655814832
-        ],
         "name": "landuse",
         "layers": [],
-        "zoom": 12.3,
         "version": 8
-      }
+      },
+      minZoom: 11,
+      maxZoom: 15,
+      zoom: 13,
+      center: [
+        108.9131713726414,
+        23.82622655814832
+      ]
     });
 
+    var loadSymbol = function (symbolId) {
+      return new Promise(function (resolve) {
+        map.loadSymbol(symbolId, function (_err, symbol) {
+          if (!_err) {
+            map.addSymbol(symbolId, symbol);
+            resolve();
+          }
+        });
+      });
+    };
+
     // 批量加载符号
-    const loadSymbols = async () => {
-      const symbols = [
+    var loadSymbols = function () {
+      var symbols = [
         "polygon-83040584",
         "polygon-83040586",
         "polygon-83040589",
@@ -76,18 +93,17 @@
         'line-964462',
         'line-962613',
         'line-962613'
-      ]
-      for (let symbolId of symbols) {
-        await map.loadSymbol(symbolId, (_err, newSymbol) => {
-          map.addSymbol(symbolId, newSymbol);
-        });
-      }
-    }
+      ];
+      var loadSymbolPromises = symbols.map(function (symbolId) {
+        return loadSymbol(symbolId);
+      });
+      return Promise.all(loadSymbolPromises);
+    };
 
     // 添加面图层
-    const createPolygonLayer = async () => {
+    var createPolygonLayer = function () {
       map.addLayer({
-        "id": `landuse@landuse(0_24)`,
+        "id": "landuse@landuse(0_24)",
         "source": "landuse",
         "source-layer": "landuse@landuse",
         "type": "fill",
@@ -121,12 +137,12 @@
           "polygon-83040554"
         ]
       });
-    }
+    };
 
     // 添加线图层
-    const createLineLayer = async () => {
+    var createLineLayer = function () {
       map.addLayer({
-        "id": `pl@landuse(0_24)`,
+        "id": "pl@landuse(0_24)",
         "source": "landuse",
         "source-layer": "pl@landuse",
         "type": "line",
@@ -140,14 +156,16 @@
           "line-962613"
         ]
       });
-    }
+    };
 
-    map.on('load', async () => {
+    map.on('load', function () {
       window.mapboxgl.supermap.WebSymbol.symbolUrl = "../libs/resources/symbols";
-      await loadSymbols();
-      createPolygonLayer();
-      createLineLayer();
-    })
+      loadSymbols().then(function () {
+        createPolygonLayer();
+        createLineLayer();
+      });
+    });
+
   </script>
 </body>
 

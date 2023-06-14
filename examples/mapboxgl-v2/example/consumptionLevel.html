@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
-  <title>等级符号专题图</title>
+  <title>中国2019年各省份GDP</title>
   <style>
     body {
       margin: 0;
@@ -27,41 +27,40 @@
   <script type="text/javascript" src="https://iclient.supermap.io/web/libs/mapbox-gl-js/1.13.2/mapbox-gl.js"></script>
   <script type="text/javascript" src="../libs/mapboxgl/iclient-mapboxgl.js"></script>
   <script>
-    const map = new mapboxgl.Map({
+    var serviceUrl = "https://iserver.supermap.io/iserver/services/map-china400/rest/maps/China";
+    var map = new mapboxgl.Map({
       container: 'map',
       style: {
-        "glyphs": "https://iserver.supermap.io/iserver/services/map-china400/rest/maps/China/tileFeature/sdffonts/{fontstack}/{range}.pbf",
+        "glyphs": serviceUrl + "/tileFeature/sdffonts/{fontstack}/{range}.pbf",
         "sources": {
           "china": {
             "tiles": [
-              "https://iserver.supermap.io/iserver/services/map-china400/rest/maps/China/tileFeature.mvt?returnAttributes=true&z={z}&x={x}&y={y}"
+              serviceUrl + "/tileFeature.mvt?returnAttributes=true&z={z}&x={x}&y={y}"
             ],
             "type": "vector"
           },
           "raster-tiles": {
             "tiles": [
-              "https://iserver.supermap.io/iserver/services/map-china400/rest/maps/China/zxyTileImage.png?z={z}&x={x}&y={y}"
+              serviceUrl + "/zxyTileImage.png?z={z}&x={x}&y={y}"
             ],
             "type": "raster"
           }
         },
-        "name": "等级符号专题图",
+        "name": "中国2019年各省份GDP",
         "layers": [{
           "id": "simple-tiles",
           "type": "raster",
           "source": "raster-tiles"
         }],
-        "minzoom": 0,
-        "maxzoom": 24,
         "version": 8
       },
+      zoom: 3.5,
       center: [102.85, 37.20],
-      zoom: 3.5
     });
 
 
     // 添加土地利用图层
-    const createConsumptionLevel = () => {
+    var createConsumptionLevel = function () {
       map.addLayer({
         "id": "China_Province_pg@China#point",
         "source": "china",
@@ -80,14 +79,16 @@
           ]
         }
       });
-    }
+    };
 
-    map.on('load', async () => {
+    map.on('load', function () {
       window.mapboxgl.supermap.WebSymbol.symbolUrl = "../libs/resources/symbols";
-      await map.loadSymbol("point-311", (_err, symbol) => {
-        map.addSymbol("point-311", symbol);
+      map.loadSymbol("point-311", function (_err, symbol) {
+        if (!_err) {
+          map.addSymbol("point-311", symbol);
+          createConsumptionLevel();
+        }
       });
-      createConsumptionLevel();
     });
 
   </script>

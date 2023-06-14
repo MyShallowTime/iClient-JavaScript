@@ -17,6 +17,7 @@
       bottom: 0;
       width: 100%;
     }
+
   </style>
 </head>
 
@@ -26,12 +27,14 @@
   <script type="text/javascript" src="../libs/mapboxgl/iclient-mapboxgl.js"></script>
   <script src="./datas/sanjiaozhou.js"></script>
   <script>
-    const map = new mapboxgl.Map({
+    var serverUrl =
+      'https://giscloudsuite.supermap.io/iserver/services/map-YangtzeRiverDelta/restjsr/v1/vectortile/maps/%E9%95%BF%E6%B1%9F%E4%B8%89%E8%A7%92%E6%B4%B2%E5%8F%91%E5%B1%95%E7%BB%93%E6%9E%84%E5%9B%BE';
+    var map = new mapboxgl.Map({
       container: 'map',
       style: {
         "sources": {
           "长江三角洲发展结构图": {
-            "tiles": ["http://172.16.14.80:8090/iserver/services/map-YangtzeRiverDelta/restjsr/v1/vectortile/maps/%E9%95%BF%E6%B1%9F%E4%B8%89%E8%A7%92%E6%B4%B2%E5%8F%91%E5%B1%95%E7%BB%93%E6%9E%84%E5%9B%BE/tiles/{z}/{x}/{y}.mvt"],
+            "tiles": [serverUrl + "/tiles/{z}/{x}/{y}.mvt"],
             "type": "vector"
           },
           "sanjiaozhou": {
@@ -39,64 +42,74 @@
             data: sanjiaozhou
           }
         },
-        "center": [
-          119.39127282760124,
-          31.426028827046886
-        ],
         "name": "长江三角洲发展结构图",
         "layers": [],
-        "zoom": 6.2,
-        "glyphs": "http://172.16.14.80:8090/iserver/services/map-YangtzeRiverDelta/restjsr/v1/vectortile/maps/%E9%95%BF%E6%B1%9F%E4%B8%89%E8%A7%92%E6%B4%B2%E5%8F%91%E5%B1%95%E7%BB%93%E6%9E%84%E5%9B%BE/fonts/{fontstack}/{range}",
+        "glyphs": "https://giscloudsuite.supermap.io/iserver/services/map-YangtzeRiverDelta/restjsr/v1/vectortile/maps/%E9%95%BF%E6%B1%9F%E4%B8%89%E8%A7%92%E6%B4%B2%E5%8F%91%E5%B1%95%E7%BB%93%E6%9E%84%E5%9B%BE/fonts/{fontstack}/{range}",
         "version": 8
-      }
+      },
+      zoom: 6.2,
+      center: [
+        119.39127282760124,
+        31.426028827046886
+      ]
     });
 
+    var loadSymbol = function (symbolId) {
+      return new Promise(function (resolve) {
+        map.loadSymbol(symbolId, function (_err, symbol) {
+          if (!_err) {
+            map.addSymbol(symbolId, symbol);
+            resolve();
+          }
+        });
+      });
+    };
+
     // 批量加载符号
-    const loadSymbols = async () => {
-      const symbols = [
+    var loadSymbols = function () {
+      var symbols = [
         "polygon-955463", //Frame
         "polygon-955464", //Province_R
         "polygon-955514", //SuHuZhe_R
         "polygon-955441", //SuHuZheInsideBuffer
         "polygon-955383", //SuHuZheBuffer2
         "polygon-955453", //SuHuZheBuffer1
-        "line-963945",    //直线
-        "line-63020102",  //省级行政区界线
-        "line-25020001",  //海岸线
-        "line-64020101",  //地级行政区界线
-        "line-63020102",  //省级行政区界线
-        "line-63020102"   //省级行政区界线
-      ]
-      for (let symbolId of symbols) {
-        await map.loadSymbol(symbolId, (_err, newSymbol) => {
-          map.addSymbol(symbolId, newSymbol);
-        });
-      }
-    }
+        "line-963945", //直线
+        "line-63020102", //省级行政区界线
+        "line-25020001", //海岸线
+        "line-64020101", //地级行政区界线
+        "line-63020102", //省级行政区界线
+        "line-63020102" //省级行政区界线
+      ];
+      var loadSymbolPromises = symbols.map(function (symbolId) {
+        return loadSymbol(symbolId);
+      });
+      return Promise.all(loadSymbolPromises);
+    };
 
-    const createPolygonLayer = async (name, symbolId) => {
+    var createPolygonLayer = function (name, symbolId) {
       map.addLayer({
-        "id": `${name}@YangtzeRiverDelta(0_24)`,
+        "id": name + "@YangtzeRiverDelta(0_24)",
         "source": "长江三角洲发展结构图",
-        "source-layer": `${name}@YangtzeRiverDelta`,
+        "source-layer": name + "@YangtzeRiverDelta",
         "type": "fill",
         "symbol": symbolId
       });
-    }
+    };
 
-    const createLineLayer = async (name, symbolId) => {
+    var createLineLayer = function (name, symbolId) {
       map.addLayer({
-        "id": `${name + 'Line'}@YangtzeRiverDelta(0_24)`,
+        "id": name + 'Line@YangtzeRiverDelta(0_24)',
         "source": "长江三角洲发展结构图",
-        "source-layer": `${name}@YangtzeRiverDelta`,
+        "source-layer": name + "@YangtzeRiverDelta",
         "type": "line",
         "symbol": symbolId
       });
-    }
+    };
 
     // 三角洲发展结构图
-    const createDevelopLayer = async () => {
-      await map.loadSymbol(`line-63020102`, (_err, newSymbol) => {
+    var createDevelopLayer = function () {
+      map.loadSymbol("line-63020102", function (_err, newSymbol) {
         Object.assign(newSymbol, {
           paint: {
             "line-width": 8,
@@ -114,7 +127,7 @@
         "type": "line",
         "paint": {
           "line-color": [
-            "match", ["get", "dataViz_title"],
+            "match", ["get", "title"],
             "nanjing", "rgba( 221, 88, 117, 255)",
             "hangzhou", "rgba( 221, 88, 117, 255)",
             "ningbo", "rgba( 221, 88, 117, 255)",
@@ -130,9 +143,10 @@
         },
         "symbol": "line-custom-63020102"
       });
-    }
+    };
+
     // 省会城市名称
-    const createTextLayer = async () => {
+    var createTextLayer = function () {
       map.addLayer({
         "id": "ProvinceCapital_P@YangtzeRiverDelta#1(0_24)",
         "type": "symbol",
@@ -141,7 +155,7 @@
         "layout": {
           "text-field": "{Name}",
           "text-size": 12,
-          "text-allow-overlap": true,
+          "text-allow-overlap": true
         },
         "paint": {
           "text-color": "#000",
@@ -159,14 +173,14 @@
         "layout": {
           "text-field": "{Name}",
           "text-size": 12,
-          "text-allow-overlap": true,
+          "text-allow-overlap": true
         },
         "paint": {
           "text-color": "#000",
           "text-translate": [
             6.89,
             0
-          ],
+          ]
         }
       });
       map.addLayer({
@@ -174,13 +188,13 @@
         "type": "symbol",
         "source": "sanjiaozhou",
         "layout": {
-          "text-field": "{dataViz_description}",
+          "text-field": "{description}",
           "text-size": 18,
           "text-anchor": [
             "match",
             [
               "get",
-              "dataViz_title"
+              "title"
             ],
             "yanjiang",
             "bottom",
@@ -196,7 +210,7 @@
             "match",
             [
               "get",
-              "dataViz_title"
+              "title"
             ],
             "nanjing",
             "rgba( 221, 88, 117, 255)",
@@ -222,30 +236,31 @@
           ]
         }
       });
-    }
+    };
 
-    map.on('load', async () => {
+    map.on('load', function () {
       window.mapboxgl.supermap.WebSymbol.symbolUrl = "../libs/resources/symbols";
-      window.map = map;
-      await loadSymbols();
-      createPolygonLayer("Frame", "polygon-955463");
-      createPolygonLayer("Province_R", "polygon-955464");
-      createPolygonLayer("SuHuZhe_R", "polygon-955514");
-      createPolygonLayer("Lake_R", "polygon-955463");
-      createPolygonLayer("River_R", "polygon-955463");
-      createPolygonLayer("MainRiver_R", "polygon-955463");
-      createPolygonLayer("SuHuZheInsideBuffer", "polygon-955441");
-      createPolygonLayer("SuHuZheBuffer2", "polygon-955383");
-      createPolygonLayer("SuHuZheBuffer1", "polygon-955453");
-      createLineLayer('Frame', "line-963945");
-      createLineLayer('Province_L', "line-63020102");
-      createLineLayer('Coast_L', "line-25020001");
-      createLineLayer('City_L', "line-64020101");
-      createLineLayer('SuHuZheInside_L', "line-63020102");
-      createLineLayer('SuHuZhe_L', "line-63020102");
-      createTextLayer();
-      createDevelopLayer();
-    })
+      loadSymbols().then(function () {
+        createPolygonLayer("Frame", "polygon-955463");
+        createPolygonLayer("Province_R", "polygon-955464");
+        createPolygonLayer("SuHuZhe_R", "polygon-955514");
+        createPolygonLayer("Lake_R", "polygon-955463");
+        createPolygonLayer("River_R", "polygon-955463");
+        createPolygonLayer("MainRiver_R", "polygon-955463");
+        createPolygonLayer("SuHuZheInsideBuffer", "polygon-955441");
+        createPolygonLayer("SuHuZheBuffer2", "polygon-955383");
+        createPolygonLayer("SuHuZheBuffer1", "polygon-955453");
+        createLineLayer('Frame', "line-963945");
+        createLineLayer('Province_L', "line-63020102");
+        createLineLayer('Coast_L', "line-25020001");
+        createLineLayer('City_L', "line-64020101");
+        createLineLayer('SuHuZheInside_L', "line-63020102");
+        createLineLayer('SuHuZhe_L', "line-63020102");
+        createTextLayer();
+        createDevelopLayer();
+      });
+    });
+
   </script>
 </body>
 

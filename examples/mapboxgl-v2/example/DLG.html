@@ -17,6 +17,7 @@
       bottom: 0;
       width: 100%;
     }
+
   </style>
 </head>
 
@@ -25,36 +26,43 @@
   <script type="text/javascript" src="https://iclient.supermap.io/web/libs/mapbox-gl-js/1.13.2/mapbox-gl.js"></script>
   <script type="text/javascript" src="../libs/mapboxgl/iclient-mapboxgl.js"></script>
   <script>
-    const url = "https://iserver.supermap.io/iserver/services/map-china400/rest/maps/China";
-    const map = new mapboxgl.Map({
+    var baseServiceUrl = "https://iserver.supermap.io/iserver/services/map-china400/rest/maps/China";
+    var serverUrl = 'https://giscloudsuite.supermap.io/iserver/services/map-DLG_100W/restjsr/v1/vectortile/maps/DLGI49';
+    var map = new mapboxgl.Map({
       container: 'map',
       style: {
         "sources": {
+          "raster-tiles": {
+            "tiles": [
+              baseServiceUrl + "/zxyTileImage.png?z={z}&x={x}&y={y}"
+            ],
+            "type": "raster"
+          },
           "DLGI49": {
-            "tiles": ["http://172.16.14.80:8090/iserver/services/map-DLG_100W/restjsr/v1/vectortile/maps/DLGI49/tiles/{z}/{x}/{y}.mvt"],
+            "tiles": [
+              serverUrl + "/tiles/{z}/{x}/{y}.mvt"
+            ],
             "type": "vector"
           }
         },
-        "center": [
-          110.66049081338542,
-          34.055934678686114
-        ],
+
         "name": "DLGI49",
-        "layers": [],
-        "zoom": 8.00721072893464,
+        "layers": [{
+          "id": "simple-tiles",
+          "type": "raster",
+          "source": "raster-tiles"
+        }],
         "version": 8
-      }
+      },
+      center: [
+        110.52,
+        34.0
+      ],
+      zoom: 6.8
     });
 
-    // 加载符号
-    const loadSymbol = async (symbolId) => {
-      await map.loadSymbol(symbolId, (_err, newSymbol) => {
-        map.addSymbol(symbolId, newSymbol);
-      });
-    }
-
     // 创建行政界线-线图层
-    const createBOULLayer = (value, symbolId) => {
+    var createBOULLayer = function (value, symbolId) {
       map.addLayer({
         "filter": [
           "all",
@@ -69,18 +77,18 @@
             value
           ]
         ],
-        "id": `BOUL@DLG_100W_unique_${value}_0(0_24)`,
+        "id": "BOUL@DLG_100W_unique_" + value + "_0(0_24)",
         "source": "DLGI49",
         "source-layer": "BOUL@DLG_100W",
         "type": "line",
         "symbol": symbolId
       });
-    }
+    };
 
     // 创建水系-线图层
-    const createHYDLLayer = (value, symbolId) => {
+    var createHYDLLayer = function (value, symbolId) {
       map.addLayer({
-        "id": `HYDL@DLG_100W_unique_${value}_0(0_24)`,
+        "id": "HYDL@DLG_100W_unique_" + value + "_0(0_24)",
         "source": "DLGI49",
         "source-layer": "HYDL@DLG_100W",
         "type": "line",
@@ -99,10 +107,10 @@
         ],
         "symbol": symbolId
       });
-    }
+    };
 
     // 创建公路-线图层
-    const createLRDLLayer = (value, symbolId) => {
+    var createLRDLLayer = function (value, symbolId) {
       map.addLayer({
         "filter": [
           "all",
@@ -130,29 +138,53 @@
             ]
           ]
         ],
-        "id": `LRDL@DLG_100W_unique_${value}_0(0_24)`,
+        "id": "LRDL@DLG_100W_unique_" + value + "_0(0_24)",
         "source": "DLGI49",
         "source-layer": "LRDL@DLG_100W",
         "type": "line",
         "symbol": symbolId
       });
-    }
+    };
 
-    map.on('load', async () => {
+    var loadSymbol = function (symbolId) {
+      return new Promise(function (resolve) {
+        map.loadSymbol(symbolId, function (_err, symbol) {
+          if (!_err) {
+            map.addSymbol(symbolId, symbol);
+            resolve();
+          }
+        });
+      });
+    };
+
+    var loadSymbols = function () {
+      var symbols = [
+        "line-63020004",
+        "line-64020004",
+        "line-21010104",
+        "line-42010104",
+        "line-42020104",
+        "line-42020204"
+      ];
+      var loadSymbolPromises = symbols.map(function (symbolId) {
+        return loadSymbol(symbolId);
+      });
+      return Promise.all(loadSymbolPromises);
+    };
+
+    map.on('load', function () {
       window.mapboxgl.supermap.WebSymbol.symbolUrl = "../libs/resources/symbols";
-      await loadSymbol("line-63020004");
-      createBOULLayer(630200, "line-63020004");
-      await loadSymbol("line-64020004");
-      createBOULLayer(640200, "line-64020004");
-      await loadSymbol("line-21010104");
-      createHYDLLayer(210101, "line-21010104");
-      await loadSymbol("line-42010104");
-      createLRDLLayer(420101, "line-42010104");
-      await loadSymbol("line-42020104");
-      createLRDLLayer(420201, "line-42020104");
-      await loadSymbol("line-42020204");
-      createLRDLLayer(420202, "line-42020204");
-    })
+      loadSymbols()
+        .then(function () {
+          createBOULLayer(630200, "line-63020004");
+          createBOULLayer(640200, "line-64020004");
+          createHYDLLayer(210101, "line-21010104");
+          createLRDLLayer(420101, "line-42010104");
+          createLRDLLayer(420201, "line-42020104");
+          createLRDLLayer(420202, "line-42020204");
+        });
+    });
+
   </script>
 </body>
 

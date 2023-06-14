@@ -29,13 +29,14 @@
   <script type="text/javascript" src="../libs/mapboxgl/iclient-mapboxgl.js"></script>
 
   <script>
-    const map = new mapboxgl.Map({
+    var serviceUrl = "https://iserver.supermap.io/iserver/services/map-jingjin/rest/maps/京津地区土地利用现状图";
+    var map = new mapboxgl.Map({
       container: 'map',
       style: {
         "sources": {
           "raster-tiles": {
             "tiles": [
-              "https://iserver.supermap.io/iserver/services/map-jingjin/rest/maps/京津地区土地利用现状图"
+              serviceUrl
             ],
             "type": "raster",
             "rasterSource": 'iserver',
@@ -43,7 +44,7 @@
           },
           "jingjin": {
             "tiles": [
-              "https://iserver.supermap.io/iserver/services/map-jingjin/rest/maps/京津地区土地利用现状图/tileFeature.mvt?z={z}&x={x}&y={y}"
+              serviceUrl + "/tileFeature.mvt?z={z}&x={x}&y={y}"
             ],
             "type": "vector"
           }
@@ -54,18 +55,25 @@
           "type": "raster",
           "source": "raster-tiles"
         }],
-        "minzoom": 0,
-        "maxzoom": 22,
         "version": 8
       },
       center: [116.85, 40],
       zoom: 7,
       crs: 'EPSG:4326'
     });
-
+    var loadSymbol = function (symbolId) {
+      return new Promise(function (resolve) {
+        map.loadSymbol(symbolId, function (_err, symbol) {
+          if (!_err) {
+            map.addSymbol(symbolId, symbol);
+            resolve();
+          }
+        });
+      });
+    };
     // 批量加载Web符号
-    const loadSymbols = async () => {
-      const symbols = [
+    var loadSymbols = function () {
+      var symbols = [
         "polygon-83040571",
         "polygon-83040819",
         "polygon-83040565",
@@ -79,15 +87,14 @@
         "polygon-83040594",
         "polygon-0"
       ];
-      for (let symbolId of symbols) {
-        await map.loadSymbol(symbolId, (_err, symbol) => {
-          map.addSymbol(symbolId, symbol);
-        });
-      }
-    }
+      var loadSymbolPromises = symbols.map(function (symbolId) {
+        return loadSymbol(symbolId);
+      });
+      return Promise.all(loadSymbolPromises);
+    };
 
     // 添加土地利用图层
-    const createLandUseLayer = () => {
+    var createLandUseLayer = function () {
       map.addLayer({
         "id": "Landuse_R@Jingjin#fill",
         "source": "jingjin",
@@ -122,10 +129,11 @@
       });
     };
 
-    map.on('load', async () => {
+    map.on('load', function () {
       window.mapboxgl.supermap.WebSymbol.symbolUrl = "../libs/resources/symbols";
-      await loadSymbols();
-      createLandUseLayer();
+      loadSymbols().then(function () {
+        createLandUseLayer();
+      });
     });
 
   </script>
